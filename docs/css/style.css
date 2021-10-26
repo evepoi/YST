@@ -56,7 +56,7 @@ column col5 : 이미지, 영상설명 */
 }
 .column.col4 .img_col {text-align: center; width: 100%;}
 .column.col4 .img_map {text-align: center; width: 100%;}
-.column.col4 .img_exh {text-align: center; width: 49%; margin: 1%;}
+.column.col4 .img_yst {text-align: center; width: 49%; margin: 1%;}
 .column.col4 .img_art {text-align: center; width: 28%; margin: 1%;}
 .column.col4 .img_tab {text-align: center; margin: 1%;}
 .column.col4 .table {text-align: center; width: 100%; margin: 1%;}
