@@ -1,0 +1,1 @@
+nmlc --custom-tags="./YST/custom_tags.txt" --lang-dir="./YST/lang" --grf="YST.grf" YST.nml
