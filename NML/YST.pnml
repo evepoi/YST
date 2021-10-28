@@ -3581,8 +3581,8 @@ switch(FEAT_TRAINS, SELF, sw_HMX_engineH, cargo_subtype) {
 }
 
 switch(FEAT_TRAINS, SELF, sw_HMX_engineT, cargo_subtype) {
-    1: set_HMXR_engineT;    // 녹색
-    set_HMXG_engineT;
+    1: set_HMXG_engineT;    // 녹색
+    set_HMXR_engineT;
 }
 
 switch(FEAT_TRAINS, SELF, sw_HMX_engine, position_in_consist_from_end == 0 && num_vehs_in_consist > 1){
@@ -5939,7 +5939,7 @@ item(FEAT_TRAINS, TGV_Duplex){
     livery_override(YST_Passinger_Car) {
         default:                        sw_TGV_Duplex_wagon;
         cargo_subtype_text:             sw_TGV_Duplex_cargo_subtype_text;
-        cargo_capacity:                 85;
+        cargo_capacity:                 170;
         loading_speed:                  25;
         running_cost_factor:            150;}
         }
@@ -6071,7 +6071,7 @@ item(FEAT_TRAINS, TGV_Ouigo){
 
     livery_override(YST_Passinger_Car) {
         default:                        sw_TGV_Ouigo_wagon;
-        cargo_capacity:                 85;
+        cargo_capacity:                 170;
         loading_speed:                  25;
         running_cost_factor:            150;}
         }
