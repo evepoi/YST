@@ -1,0 +1,171 @@
+﻿/*--------------------------------------------------------------------
+	YSS 배 세트
+--------------------------------------------------------------------*/
+/*-------------------------------------------------------------------- 
+* 기본정보
+--------------------------------------------------------------------*/
+grf {
+	grfid: "YSS1";
+	name: string(STR_GRF_NAME_WITH_VER);
+	desc: string(STR_GRF_DESC);
+	version: 1;
+	min_compatible_version: 0;
+    
+/*--------------------------------------------------------------------
+1. 매개변수
+
+사용안함.
+--------------------------------------------------------------------*/
+}
+
+/*--------------------------------------------------------------------
+2. 공통 Template
+--------------------------------------------------------------------*/
+// Template - Purchase image
+template tmpl_purchase_detail(x, y, w, h, offX, offY) {
+    [   0,    0,    1,    1,    0,    0]
+    [   0,    0,    1,    1,    0,    0]
+    [   0,    0,    1,    1,    0,    0]
+    [   0,    0,    1,    1,    0,    0]
+    [   0,    0,    1,    1,    0,    0]
+    [   0,    0,    1,    1,    0,    0]
+    [   x,    y,    w,    h, offX, offY]
+    [   0,    0,    1,    1,    0,    0]
+}
+
+template tmpl_purchase_for_dualhead(x, y) {
+    tmpl_purchase_detail(x, y, 228, 64, -23, -7)
+}
+
+template tmpl_purchase(x, y) {
+    tmpl_purchase_detail(x, y, 228, 64, -10, -7)
+}
+
+template tmpl_wagon_purchase(x, y) {
+    tmpl_purchase_detail(x, y, 228, 64, -23, -7)
+}
+
+/*--------------------------------------------------------------------
+3. 공통 Template
+--------------------------------------------------------------------*/
+template tmpl_empty_VLCC(x, y) {
+    [x,       y,    63,   196,    -3,   -14]
+    [x+73,    y,   184,   107,    -14,   -9]
+    [x+267,   y,   228,    64,    -18,  -10]
+    [x+505,   y,   186,   134,    -6,   -10]
+    [x+701,   y,    64,   208,    -3,   -14]
+    [x+775,   y,   186,   134,    -14,   -9]
+    [x+971,   y,   228,    66,    -18,  -10]
+    [x+1213,  y,   185,   109,    -6,   -10]
+}
+
+template tmpl_loading_VLCC(x, y) {
+    [x,       y,    63,   192,    -3,   -14]
+    [x+73,    y,   184,   105,    -14,   -9]
+    [x+267,   y,   228,    64,    -18,  -10]
+    [x+505,   y,   186,   134,    -6,   -10]
+    [x+701,   y,    64,   200,    -3,   -14]
+    [x+775,   y,   186,   134,    -14,   -9]
+    [x+971,   y,   228,    66,    -18,  -10]
+    [x+1213,  y,   185,   109,    -6,   -10]
+}
+
+template tmple_full_VLCC(x, y) {
+    [x,       y,    64,   188,    -3,   -14]
+    [x+73,    y,   184,   101,    -14,   -9]
+    [x+267,   y,   228,    55,    -18,  -10]
+    [x+505,   y,   186,   134,    -6,   -10]
+    [x+701,   y,    64,   196,    -3,   -14]
+    [x+775,   y,   186,   134,    -14,   -9]
+    [x+971,   y,   228,    66,    -18,  -10]
+    [x+1213,  y,   185,   109,    -6,   -10]
+}
+
+/*--------------------------------------------------------------------
+4. Graphics
+--------------------------------------------------------------------*/
+/*--------------------------------------------------------------------
+4.1. VLCC
+--------------------------------------------------------------------*/
+spriteset(set_VLCC_purchase, "..\YSSset\Graphic\VLCC\VLCC.png"){
+	tmpl_purchase(0, 0)
+}
+
+spriteset(set_VLCC_empty, "..\YSSset\Graphic\VLCC\VLCC.png"){
+	tmpl_empty_VLCC(238, 0)
+}
+
+spriteset(set_VLCC_loading, "..\YSSset\Graphic\VLCC\VLCC.png"){
+	tmpl_loading_VLCC(238, 232)
+}
+
+spriteset(set_VLCC_loadingB, "..\YSSset\Graphic\VLCC\VLCC.png"){
+	tmple_full_VLCC(238, 486)
+}
+
+/*--------------------------------------------------------------------
+4.2 구매정보
+--------------------------------------------------------------------*/
+switch(FEAT_SHIPS, SELF, sw_VLCC_purchase, cargo_subtype) {
+    set_VLCC_purchase;
+}
+
+spritegroup sg_VLCC {
+    loading: [
+        set_VLCC_empty,
+        set_VLCC_loading,
+        set_VLCC_loadingB
+    ];
+    loaded: [
+        set_VLCC_empty,
+        set_VLCC_loading,
+        set_VLCC_loadingB
+    ];
+}
+
+switch(FEAT_SHIPS, SELF, sw_VLCC, cargo_subtype) {
+   1:sg_VLCC;
+   sg_VLCC;
+}
+
+/*--------------------------------------------------------------------
+4.3 스위치
+--------------------------------------------------------------------*/
+/*--------------------------------------------------------------------
+4.4. VLCC 배 정보
+--------------------------------------------------------------------*/
+item(FEAT_SHIPS, VLCC){
+	property {
+ 		name:							string(STR_VLCC_NAME);
+ 		climates_available:				ALL_CLIMATES;
+		introduction_date:				date(2020, 1, 1);
+        effect_spawn_model:				EFFECT_SPAWN_MODEL_DIESEL;
+		sprite_id:						SPRITE_ID_NEW_SHIP;
+                
+        //spec
+		speed:							50km/h;
+		        
+        //Model
+        model_life:						VEHICLE_NEVER_EXPIRES;
+        vehicle_life:					255;
+                
+        //Cargo
+        cargo_capacity:					255;
+        refittable_cargo_classes:		bitmask(CC_BULK);
+        non_refittable_cargo_classes:	bitmask(CC_PASSENGERS, CC_MAIL, CC_EXPRESS, CC_ARMOURED, CC_PIECE_GOODS, CC_LIQUID, CC_REFRIGERATED, CC_HAZARDOUS, CC_COVERED, CC_OVERSIZED, CC_POWDERIZED, CC_NON_POURABLE, CC_NEO_BULK);
+        
+        //Costs
+        refit_cost:						0;
+                
+        //Flags
+        misc_flags:						bitmask(SHIP_FLAG_2CC, SHIP_FLAG_AUTOREFIT);
+    }
+    
+	graphics {
+		default:						sw_VLCC;
+		purchase:						sw_VLCC_purchase;
+        loading_speed:					25;
+		cost_factor:					10;
+		running_cost_factor:			150;
+        }
+        }
