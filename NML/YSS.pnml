@@ -34,51 +34,51 @@ template tmpl_purchase_detail(x, y, w, h, offX, offY) {
 }
 
 template tmpl_purchase_for_dualhead(x, y) {
-    tmpl_purchase_detail(x, y, 228, 64, -23, -7)
+    tmpl_purchase_detail(x, y, 25, 7, -23, -7)
 }
 
 template tmpl_purchase(x, y) {
-    tmpl_purchase_detail(x, y, 228, 64, -10, -7)
+    tmpl_purchase_detail(x, y, 25, 7, -10, -7)
 }
 
 template tmpl_wagon_purchase(x, y) {
-    tmpl_purchase_detail(x, y, 228, 64, -23, -7)
+    tmpl_purchase_detail(x, y, 25, 7, -23, -7)
 }
 
 /*--------------------------------------------------------------------
 3. 공통 Template
 --------------------------------------------------------------------*/
 template tmpl_empty_VLCC(x, y) {
-    [x,       y,    63,   196,    -3,   -14]
-    [x+73,    y,   184,   107,    -14,   -9]
-    [x+267,   y,   228,    64,    -18,  -10]
-    [x+505,   y,   186,   134,    -6,   -10]
-    [x+701,   y,    64,   208,    -3,   -14]
-    [x+775,   y,   186,   134,    -14,   -9]
-    [x+971,   y,   228,    66,    -18,  -10]
-    [x+1213,  y,   185,   109,    -6,   -10]
+    [x,       y,    72,   224,    -3,   -14]
+    [x+82,    y,   209,   123,    -14,   -9]
+    [x+301,   y,   258,    73,    -18,  -10]
+    [x+569,   y,   210,   151,    -6,   -10]
+    [x+789,   y,    72,   235,    -3,   -14]
+    [x+871,   y,   210,   151,    -14,   -9]
+    [x+1091,   y,   258,    74,    -18,  -10]
+    [x+1359,  y,   209,   123,    -6,   -10]
 }
 
 template tmpl_loading_VLCC(x, y) {
-    [x,       y,    63,   192,    -3,   -14]
-    [x+73,    y,   184,   105,    -14,   -9]
-    [x+267,   y,   228,    64,    -18,  -10]
-    [x+505,   y,   186,   134,    -6,   -10]
-    [x+701,   y,    64,   200,    -3,   -14]
-    [x+775,   y,   186,   134,    -14,   -9]
-    [x+971,   y,   228,    66,    -18,  -10]
-    [x+1213,  y,   185,   109,    -6,   -10]
+    [x,       y,    72,   218,    -3,   -14]
+    [x+82,    y,   209,   120,    -14,   -9]
+    [x+301,   y,   258,    67,    -18,  -10]
+    [x+569,   y,   210,   145,    -6,   -10]
+    [x+789,   y,    72,   226,    -3,   -14]
+    [x+871,   y,   210,   145,    -14,   -9]
+    [x+1091,   y,   258,    74,    -18,  -10]
+    [x+1359,  y,   209,   120,    -6,   -10]
 }
 
 template tmple_full_VLCC(x, y) {
-    [x,       y,    64,   188,    -3,   -14]
-    [x+73,    y,   184,   101,    -14,   -9]
-    [x+267,   y,   228,    55,    -18,  -10]
-    [x+505,   y,   186,   134,    -6,   -10]
-    [x+701,   y,    64,   196,    -3,   -14]
-    [x+775,   y,   186,   134,    -14,   -9]
-    [x+971,   y,   228,    66,    -18,  -10]
-    [x+1213,  y,   185,   109,    -6,   -10]
+    [x,       y,    72,   214,    -3,   -14]
+    [x+82,    y,   209,   115,    -14,   -9]
+    [x+301,   y,   258,    61,    -18,  -10]
+    [x+569,   y,   210,   141,    -6,   -10]
+    [x+789,   y,    72,   222,    -3,   -14]
+    [x+871,   y,   210,   141,    -14,   -9]
+    [x+1091,   y,   258,    74,    -18,  -10]
+    [x+1359,  y,   209,   115,    -6,   -10]
 }
 
 /*--------------------------------------------------------------------
@@ -92,15 +92,15 @@ spriteset(set_VLCC_purchase, "..\YSSset\Graphic\VLCC\VLCC.png"){
 }
 
 spriteset(set_VLCC_empty, "..\YSSset\Graphic\VLCC\VLCC.png"){
-	tmpl_empty_VLCC(238, 0)
+	tmpl_empty_VLCC(35, 0)
 }
 
 spriteset(set_VLCC_loading, "..\YSSset\Graphic\VLCC\VLCC.png"){
-	tmpl_loading_VLCC(238, 232)
+	tmpl_loading_VLCC(35, 245)
 }
 
-spriteset(set_VLCC_loadingB, "..\YSSset\Graphic\VLCC\VLCC.png"){
-	tmple_full_VLCC(238, 486)
+spriteset(set_VLCC_full_ship, "..\YSSset\Graphic\VLCC\VLCC.png"){
+	tmple_full_VLCC(35, 481)
 }
 
 /*--------------------------------------------------------------------
@@ -114,12 +114,12 @@ spritegroup sg_VLCC {
     loading: [
         set_VLCC_empty,
         set_VLCC_loading,
-        set_VLCC_loadingB
+        set_VLCC_full_ship
     ];
     loaded: [
         set_VLCC_empty,
         set_VLCC_loading,
-        set_VLCC_loadingB
+        set_VLCC_full_ship
     ];
 }
 
