@@ -1,9 +1,0 @@
-﻿##grflangid 0x00
-
-# GRF name and description
-STR_GRF_NAME			:YSS 
-STR_GRF_NAME_WITH_VER   :YSS {VERSION}
-STR_GRF_DESC			:YSS GRF is Ship set. {} (Updated: {RECENT_UPDATED}){}{}{SILVER}+ Author: : Minen {} + VLCC : Dat Tree
-
-# Vehicle's name
-STR_VLCC_NAME 			:[YSS] VLCC
