@@ -17,12 +17,19 @@
 .header {height: 80px;}
 .header a {font-size: 40px;}
 
-/* 메뉴 */
+/* 전체메뉴 */
 .nav {overflow: hidden; padding: 20px 0;}
 .nav > div {text-align: center;}
-.nav > div li {float: left; width: 14%; margin: 1%;}
+.nav > div li {float: left; width: 18%; margin: 1%;}
 .nav > div li a {display: inline-block; transition: color 0.5s ease; font-size: 30px;}
 .nav > div li a:hover {color:#827717;}
+
+/* 민은월드메뉴 */
+.nav_minen {overflow: hidden; padding: 20px 0;}
+.nav_minen > div {text-align: center;}
+.nav_minen > div li {float: left; width: 48%; margin: 1%;}
+.nav_minen > div li a {display: inline-block; transition: color 0.5s ease; font-size: 30px;}
+.nav_minen > div li a:hover {color:#827717;}
 
 /* 컨텐츠
 column col1 : 제목
