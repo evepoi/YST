@@ -7,12 +7,13 @@ STR_GRF_DESC			:YST의 자체차량 NKX, YTX, VTX, HMX가 있습니다. {} (최�
 
 # Vehicle's name
 STR_YST_PASSINGER_NAME  :[YST] 공통객차
-STR_YST_PASSINGER2F_NAME  :[YST] Metro, HMX, NKX 2층
+STR_YST_PASSINGER2F_NAME:[YST] Metro, HMX, NKX 2층
 STR_500_NAME 			:[YST] 신칸센 500계
 STR_800_NAME 			:[YST] 신칸센 800계
 STR_AGV_NAME			:[YST] AGV
 STR_AVE_NAME			:[YST] AVE
 STR_AVE_Velaro_NAME	    :[YST] AVE Velaro
+STR_BB15048_NAME	    :[YST] BB15048
 STR_CR600_NAME			:[YST] CR600
 STR_CRH1_NAME	 		:[YST] CRH1
 STR_CRH3_NAME	 		:[YST] CRH3
@@ -26,14 +27,17 @@ STR_E300_NAME 			:[YST] E300
 STR_E320_NAME 			:[YST] E320
 STR_EMU_NAME		    :[YST] EMU
 STR_Glory_600_NAME		:[YST] Glory 600
+STR_GT26CW_NAME		    :[YST] GT26CW
 STR_HEMU_NAME       	:[YST] HEMU-430
 STR_HMX_NAME 			:[YST] HMX
 STR_ICE3_NAME 			:[YST] ICE3
 STR_ICE_SP_NAME         :[YST] ICE-SP
 STR_KTX_N_NAME          :[YST] KTX-N
 STR_N700_NAME 			:[YST] 신칸센 N700
+STR_NJ2_NAME 			:[YST] NJ2
 STR_NKX_NAME 			:[YST] NKX
 STR_TALGO250_NAME		:[YST] Talgo250
+STR_Tank_NAME		    :[YST] 유조차
 STR_TGV_OLD_NAME		:[YST] TGV Old
 STR_TGV_OLD_Pos_NAME    :[YST] TGV Old Pos
 STR_TGV_Pos_NAME        :[YST] TGV Pos
@@ -137,6 +141,9 @@ STR_REFIT_LIVERY_NKXB               :(NKX B도색)
 STR_REFIT_LIVERY_NKXC               :(NKX C도색)
 STR_REFIT_LIVERY_ALVIA              :(Alvia)
 STR_REFIT_LIVERY_APROSIYOB          :(Aprosiyob)
+STR_REFIT_LIVERY_TANKA              :(Tank A도색)
+STR_REFIT_LIVERY_TANKB              :(Tank B도색)
+STR_REFIT_LIVERY_TANKC              :(Tank C도색)
 STR_REFIT_LIVERY_TGV_OLD_POS        :(TGV Old Pos)
 STR_REFIT_LIVERY_TGV_OLD_LYAIR      :(TGV Old Lyair)
 STR_REFIT_LIVERY_TGV_OLD_THALYS     :(TGV Old Thalys)
