@@ -8,11 +8,11 @@ grf {
 	grfid: "YSN2";
 	name: string(STR_GRF_NAME_WITH_VER);
 	desc: string(STR_GRF_DESC);
-	version: 9;
-	min_compatible_version: 8;
+	version: 10;
+	min_compatible_version: 9;
     
 /*--------------------------------------------------------------------
-1. 매개변수
+매개변수
 
 사용안함.
 param 1 {
@@ -47,6 +47,28 @@ param 1 {
 }
 
 /*--------------------------------------------------------------------
+1. 화물테이블
+--------------------------------------------------------------------*/
+cargotable {
+    // TTD
+    PASS, COAL, MAIL, OIL_, LVST, GOOD, GRAI, WOOD, IORE, STEL, VALU, PAPR, WHEA, FOOD, GOLD, RUBR,
+    FRUT, MAIZ, CORE, WATR, DIAM, SUGR, BATT, BUBL, COLA, CTCD, FZDR, PLST, SWET, TOFF, TOYS,
+
+    // FIRS (under 4.0.0)
+    AORE, RCYC, SGBT, FICR, MNSP, METL,
+    
+    // FIRS (from 4.0.0)
+    ACID, BEER, STAL, ALUM, NH3_, BEAN, BDMT, CBLK, STCB, CASS, CSTI, CMNT, RFPR, CHLO, CLAY, SOAP,
+    CTAR, JAVA, COKE, COPR, EOIL, POWR, ENSP, BOOM, FMSP, FECR, FERT, FISH, GLAS, KAOL, LIME, MNO2,
+    MILK, NITR, NUTS, O2__, COAT, PEAT, PETR, PHOS, IRON, PIPE, PLAS, POTA, PORE, QLME, SALT, SAND,
+    SCMT, SLAG, SASH, LYE_, STST, STSE, STSH, STWR, GRVL, SULP, WDPR, TYRE, VBOD, VENG, VPTS, VEHI,
+    WOOL, ZINC
+}
+
+railtypetable {
+    RAIL, ELRL}
+
+/*--------------------------------------------------------------------
 2. 공통 Template
 --------------------------------------------------------------------*/
 // Template - Purchase image
@@ -62,15 +84,19 @@ template tmpl_purchase_detail(x, y, w, h, offX, offY) {
 }
 
 template tmpl_purchase_for_dualhead(x, y) {
-    tmpl_purchase_detail(x, y, 50, 14, -23, -7)
+    tmpl_purchase_detail(x, y, 70, 15, -25, -8)
 }
 
 template tmpl_purchase(x, y) {
-    tmpl_purchase_detail(x, y, 50, 14, -10, -7)
+    tmpl_purchase_detail(x, y, 70, 15, -25, -8)
+}
+
+template tmpl_single_purchase(x, y) {
+    tmpl_purchase_detail(x, y, 70, 15, -39, -8)
 }
 
 template tmpl_wagon_purchase(x, y) {
-    tmpl_purchase_detail(x, y, 50, 14, -23, -7)
+    tmpl_purchase_detail(x, y, 70, 15, -38, -8)
 }
 
 /*--------------------------------------------------------------------
@@ -96,7 +122,7 @@ template engine_r(x, y) {
     [x+13,    y,    21,    18,    -14,   -9]
     [x+39,    y,    32,    14,    -18,  -10]
     [x+76,    y,    21,    18,    -6,   -10]
-}
+    }
 
 template wagon_1F(x, y) {
     [x,       y,    8,     22,    -3,   -14]
@@ -209,11 +235,11 @@ switch(FEAT_TRAINS, SELF, sw_Passenger_wagon_cargo_subtype_text, vehicle_type_id
 5.1.1 Graphics
 --------------------------------------------------------------------*/
 spriteset(set_1F_wagon, "..\YSTset\Graphic\wagon\passenger_wagon.png") {
-    wagon_1F(60, 0)
+    wagon_1F(80, 0)
 }
 
 spriteset(set_1F_wagon_r, "..\YSTset\Graphic\wagon\passenger_wagon.png") {
-    wagon_1F_r(60, 0)
+    wagon_1F_r(80, 0)
 }
 
 /*--------------------------------------------------------------------
@@ -248,7 +274,7 @@ item (FEAT_TRAINS, YST_Passinger_Car){
  		climates_available:				ALL_CLIMATES;
 		track_type:						RAIL;
 		power:							0;
-		weight:							20 ton;
+		weight:							40 ton;
 		extra_weight_per_wagon:			20 ton;
 		tractive_effort_coefficient:	0.3;
 		cargo_capacity:					50;
@@ -282,11 +308,11 @@ item (FEAT_TRAINS, YST_Passinger_Car){
 5.2.1 Graphics
 --------------------------------------------------------------------*/
 spriteset(set_2F_wagon, "..\YSTset\Graphic\wagon\passenger_wagon.png") {
-    wagon_1F(60, 27)
+    wagon_1F(80, 27)
 }
 
 spriteset(set_2F_wagon_r, "..\YSTset\Graphic\wagon\passenger_wagon.png") {
-    wagon_1F_r(60, 27)
+    wagon_1F_r(80, 27)
 }
 
 /*--------------------------------------------------------------------
@@ -321,7 +347,7 @@ item (FEAT_TRAINS, YST_Passinger_2F_Car){
  		climates_available:				ALL_CLIMATES;
 		track_type:						RAIL;
 		power:							0;
-		weight:							20 ton;
+		weight:							80 ton;
 		extra_weight_per_wagon:			20 ton;
 		tractive_effort_coefficient:	0.3;
 		cargo_capacity:					100;
@@ -366,27 +392,27 @@ spriteset(set_500H_purchase, "..\YSTset\Graphic\locomotive\500\500.png"){
 }
 
 spriteset(set_500_engineH, "..\YSTset\Graphic\locomotive\500\500.png"){
-	engine(60, 0)
+	engine(80, 0)
 }
 
 spriteset(set_500_wagon_start, "..\YSTset\Graphic\locomotive\500\500.png"){
-	wagon_panto(60, 27)
+	wagon_panto(80, 27)
 }
 
 spriteset(set_500_wagon, "..\YSTset\Graphic\locomotive\500\500.png") {
-    wagon_1F(60, 54)
+    wagon_1F(80, 54)
 }
 
 spriteset(set_500_wagon_r, "..\YSTset\Graphic\locomotive\500\500.png") {
-    wagon_1F_r(60, 54)
+    wagon_1F_r(80, 54)
 }
 
 spriteset(set_500_wagon_end, "..\YSTset\Graphic\locomotive\500\500.png"){
-	wagon_panto(60, 81)
+	wagon_panto(80, 81)
 }
 
 spriteset(set_500_engineT, "..\YSTset\Graphic\locomotive\500\500.png"){
-	engine_r(60, 108)
+	engine_r(80, 108)
 }
 
 /*--------------------------------------------------------------------
@@ -397,27 +423,27 @@ spriteset(set_500_CoolH_purchase, "..\YSTset\Graphic\locomotive\500\500_Cool.png
 }
 
 spriteset(set_500_Cool_engineH, "..\YSTset\Graphic\locomotive\500\500_Cool.png"){
-	engine(60, 0)
+	engine(80, 0)
 }
 
 spriteset(set_500_Cool_wagon_start, "..\YSTset\Graphic\locomotive\500\500_Cool.png"){
-	wagon_panto(60, 27)
+	wagon_panto(80, 27)
 }
 
 spriteset(set_500_Cool_wagon, "..\YSTset\Graphic\locomotive\500\500_Cool.png") {
-    wagon_1F(60, 54)
+    wagon_1F(80, 54)
 }
 
 spriteset(set_500_Cool_wagon_r, "..\YSTset\Graphic\locomotive\500\500_Cool.png") {
-    wagon_1F_r(60, 54)
+    wagon_1F_r(80, 54)
 }
 
 spriteset(set_500_Cool_wagon_end, "..\YSTset\Graphic\locomotive\500\500_Cool.png"){
-	wagon_panto(60, 81)
+	wagon_panto(80, 81)
 }
 
 spriteset(set_500_Cool_engineT, "..\YSTset\Graphic\locomotive\500\500_Cool.png"){
-	engine_r(60, 108)
+	engine_r(80, 108)
 }
 
 /*--------------------------------------------------------------------
@@ -428,27 +454,27 @@ spriteset(set_500_SancheonH_purchase, "..\YSTset\Graphic\locomotive\500\500_Sanc
 }
 
 spriteset(set_500_Sancheon_engineH, "..\YSTset\Graphic\locomotive\500\500_Sancheon.png"){
-	engine(60, 0)
+	engine(80, 0)
 }
 
 spriteset(set_500_Sancheon_wagon_start, "..\YSTset\Graphic\locomotive\500\500_Sancheon.png"){
-	wagon_panto(60, 27)
+	wagon_panto(80, 27)
 }
 
 spriteset(set_500_Sancheon_wagon, "..\YSTset\Graphic\locomotive\500\500_Sancheon.png") {
-    wagon_1F(60, 54)
+    wagon_1F(80, 54)
 }
 
 spriteset(set_500_Sancheon_wagon_r, "..\YSTset\Graphic\locomotive\500\500_Sancheon.png") {
-    wagon_1F_r(60, 54)
+    wagon_1F_r(80, 54)
 }
 
 spriteset(set_500_Sancheon_wagon_end, "..\YSTset\Graphic\locomotive\500\500_Sancheon.png"){
-	wagon_panto(60, 81)
+	wagon_panto(80, 81)
 }
 
 spriteset(set_500_Sancheon_engineT, "..\YSTset\Graphic\locomotive\500\500_Sancheon.png"){
-	engine_r(60, 108)
+	engine_r(80, 108)
 }
 
 /*--------------------------------------------------------------------
@@ -459,27 +485,27 @@ spriteset(set_500_PatjugH_purchase, "..\YSTset\Graphic\locomotive\500\500_Patjug
 }
 
 spriteset(set_500_Patjug_engineH, "..\YSTset\Graphic\locomotive\500\500_Patjug.png"){
-	engine(60, 0)
+	engine(80, 0)
 }
 
 spriteset(set_500_Patjug_wagon_start, "..\YSTset\Graphic\locomotive\500\500_Patjug.png"){
-	wagon_panto(60, 27)
+	wagon_panto(80, 27)
 }
 
 spriteset(set_500_Patjug_wagon, "..\YSTset\Graphic\locomotive\500\500_Patjug.png") {
-    wagon_1F(60, 54)
+    wagon_1F(80, 54)
 }
 
 spriteset(set_500_Patjug_wagon_r, "..\YSTset\Graphic\locomotive\500\500_Patjug.png") {
-    wagon_1F_r(60, 54)
+    wagon_1F_r(80, 54)
 }
 
 spriteset(set_500_Patjug_wagon_end, "..\YSTset\Graphic\locomotive\500\500_Patjug.png"){
-	wagon_panto(60, 81)
+	wagon_panto(80, 81)
 }
 
 spriteset(set_500_Patjug_engineT, "..\YSTset\Graphic\locomotive\500\500_Patjug.png"){
-	engine_r(60, 108)
+	engine_r(80, 108)
 }
 
 
@@ -583,7 +609,7 @@ item(FEAT_TRAINS, S500){
  		name:							string(STR_500_NAME);
  		climates_available:				ALL_CLIMATES;
 		introduction_date:				date(1996, 1, 1);
-        track_type:						RAIL;
+        track_type:						ELRL;
         engine_class:					ENGINE_CLASS_ELECTRIC;
 		sprite_id:						SPRITE_ID_NEW_TRAIN;
         dual_headed:                    1;        
@@ -591,7 +617,7 @@ item(FEAT_TRAINS, S500){
         //spec
 		speed:							330km/h;
 		power:							10000 kW;
-		weight:							35 ton;
+		weight:							80 ton;
 		tractive_effort_coefficient:	0.3;
         air_drag_coefficient:           0.01;
         
@@ -603,8 +629,10 @@ item(FEAT_TRAINS, S500){
         
         //Cargo
         cargo_capacity:					53;
-        refittable_cargo_classes:		bitmask(CC_PASSENGERS);
-        non_refittable_cargo_classes:	bitmask();
+        refittable_cargo_classes:       NO_CARGO_CLASS;
+        non_refittable_cargo_classes:   NO_CARGO_CLASS;
+        cargo_allow_refit:              [PASS];
+        cargo_disallow_refit:           [];
         
         //Costs
         refit_cost:						0;
@@ -652,27 +680,27 @@ spriteset(set_800H_purchase, "..\YSTset\Graphic\locomotive\800\800.png"){
 }
 
 spriteset(set_800_engineH, "..\YSTset\Graphic\locomotive\800\800.png"){
-	engine(60, 0)
+	engine(80, 0)
 }
 
 spriteset(set_800_wagon_start, "..\YSTset\Graphic\locomotive\800\800.png"){
-	wagon_panto(60, 27)
+	wagon_panto(80, 27)
 }
 
 spriteset(set_800_wagon, "..\YSTset\Graphic\locomotive\800\800.png") {
-    wagon_1F(60, 54)
+    wagon_1F(80, 54)
 }
 
 spriteset(set_800_wagon_r, "..\YSTset\Graphic\locomotive\800\800.png") {
-    wagon_1F_r(60, 54)
+    wagon_1F_r(80, 54)
 }
 
 spriteset(set_800_wagon_end, "..\YSTset\Graphic\locomotive\800\800.png"){
-	wagon_panto(60, 81)
+	wagon_panto(80, 81)
 }
 
 spriteset(set_800_engineT, "..\YSTset\Graphic\locomotive\800\800.png"){
-	engine_r(60, 108)
+	engine_r(80, 108)
 }
 
 /*--------------------------------------------------------------------
@@ -717,7 +745,7 @@ item(FEAT_TRAINS, S800){
  		name:							string(STR_800_NAME);
  		climates_available:				ALL_CLIMATES;
 		introduction_date:				date(1996, 1, 1);
-        track_type:						RAIL;
+        track_type:						ELRL;
         engine_class:					ENGINE_CLASS_ELECTRIC;
 		sprite_id:						SPRITE_ID_NEW_TRAIN;
         dual_headed:                    1;        
@@ -725,7 +753,7 @@ item(FEAT_TRAINS, S800){
         //spec
 		speed:							260km/h;
 		power:							10000 kW;
-		weight:							35 ton;
+		weight:							80 ton;
 		tractive_effort_coefficient:	0.3;
         air_drag_coefficient:           0.01;
         
@@ -737,8 +765,10 @@ item(FEAT_TRAINS, S800){
         
         //Cargo
         cargo_capacity:					58;
-        refittable_cargo_classes:		bitmask(CC_PASSENGERS);
-        non_refittable_cargo_classes:	bitmask();
+        refittable_cargo_classes:       NO_CARGO_CLASS;
+        non_refittable_cargo_classes:   NO_CARGO_CLASS;
+        cargo_allow_refit:              [PASS];
+        cargo_disallow_refit:           [];
         
         //Costs
         refit_cost:						0;
@@ -787,27 +817,27 @@ spriteset(set_AGVH_purchase, "..\YSTset\Graphic\locomotive\AGV\AGV.png"){
 }
 
 spriteset(set_AGV_engineH, "..\YSTset\Graphic\locomotive\AGV\AGV.png"){
-	engine(60, 0)
+	engine(80, 0)
 }
 
 spriteset(set_AGV_wagon_start, "..\YSTset\Graphic\locomotive\AGV\AGV.png"){
-	wagon_panto(60, 27)
+	wagon_panto(80, 27)
 }
 
 spriteset(set_AGV_wagon, "..\YSTset\Graphic\locomotive\AGV\AGV.png") {
-    wagon_1F(60, 54)
+    wagon_1F(80, 54)
 }
 
 spriteset(set_AGV_wagon_r, "..\YSTset\Graphic\locomotive\AGV\AGV.png") {
-    wagon_1F_r(60, 54)
+    wagon_1F_r(80, 54)
 }
 
 spriteset(set_AGV_wagon_end, "..\YSTset\Graphic\locomotive\AGV\AGV.png"){
-	wagon_panto(60, 81)
+	wagon_panto(80, 81)
 }
 
 spriteset(set_AGV_engineT, "..\YSTset\Graphic\locomotive\AGV\AGV.png"){
-	engine_r(60, 108)
+	engine_r(80, 108)
 }
 
 /*--------------------------------------------------------------------
@@ -818,27 +848,27 @@ spriteset(set_AGV_Cool_purchase, "..\YSTset\Graphic\locomotive\AGV\AGV_Cool.png"
 }
 
 spriteset(set_AGV_Cool_engineH, "..\YSTset\Graphic\locomotive\AGV\AGV_Cool.png"){
-	engine(60, 0)
+	engine(80, 0)
 }
 
 spriteset(set_AGV_Cool_wagon_start, "..\YSTset\Graphic\locomotive\AGV\AGV_Cool.png"){
-	wagon_start(60, 27)
+	wagon_start(80, 27)
 }
 
 spriteset(set_AGV_Cool_wagon, "..\YSTset\Graphic\locomotive\AGV\AGV_Cool.png") {
-    wagon_1F(60, 54)
+    wagon_1F(80, 54)
 }
 
 spriteset(set_AGV_Cool_wagon_r, "..\YSTset\Graphic\locomotive\AGV\AGV_Cool.png") {
-    wagon_1F_r(60, 54)
+    wagon_1F_r(80, 54)
 }
 
 spriteset(set_AGV_Cool_wagon_end, "..\YSTset\Graphic\locomotive\AGV\AGV_Cool.png"){
-	wagon_start(60, 81)
+	wagon_start(80, 81)
 }
 
 spriteset(set_AGV_Cool_engineT, "..\YSTset\Graphic\locomotive\AGV\AGV_Cool.png"){
-	engine_r(60, 108)
+	engine_r(80, 108)
 }
 
 
@@ -927,7 +957,7 @@ item(FEAT_TRAINS, AGV){
  		name:							string(STR_AGV_NAME);
  		climates_available:				ALL_CLIMATES;
 		introduction_date:				date(2012, 1, 1);
-        track_type:						RAIL;
+        track_type:						ELRL;
         engine_class:					ENGINE_CLASS_ELECTRIC;
 		sprite_id:						SPRITE_ID_NEW_TRAIN;
         dual_headed:                    1;        
@@ -935,7 +965,7 @@ item(FEAT_TRAINS, AGV){
         //spec
 		speed:							330km/h;
 		power:							10000 kW;
-		weight:							35 ton;
+		weight:							80 ton;
 		tractive_effort_coefficient:	0.3;
         air_drag_coefficient:           0.01;
         
@@ -947,8 +977,10 @@ item(FEAT_TRAINS, AGV){
         
         //Cargo
         cargo_capacity:					85;
-        refittable_cargo_classes:		bitmask(CC_PASSENGERS);
-        non_refittable_cargo_classes:	bitmask();
+        refittable_cargo_classes:       NO_CARGO_CLASS;
+        non_refittable_cargo_classes:   NO_CARGO_CLASS;
+        cargo_allow_refit:              [PASS];
+        cargo_disallow_refit:           [];
         
         //Costs
         refit_cost:						0;
@@ -997,31 +1029,31 @@ spriteset(set_AVEH_purchase, "..\YSTset\Graphic\locomotive\AVE\AVE.png"){
 }
 
 spriteset(set_AVE_engineH, "..\YSTset\Graphic\locomotive\AVE\AVE.png"){
-	engine(60, 0)
+	engine(80, 0)
 }
 
 spriteset(set_AVE_wagon_start, "..\YSTset\Graphic\locomotive\AVE\AVE.png"){
-	wagon_start(60, 27)
+	wagon_start(80, 27)
 }
 
 spriteset(set_AVE_wagon, "..\YSTset\Graphic\locomotive\AVE\AVE.png") {
-    wagon_1F(60, 54)
+    wagon_1F(80, 54)
 }
 
 spriteset(set_AVE_wagon_r, "..\YSTset\Graphic\locomotive\AGV\AGV.png") {
-    wagon_1F_r(60, 54)
+    wagon_1F_r(80, 54)
 }
 
 spriteset(set_AVE_wagon_bar, "..\YSTset\Graphic\locomotive\AVE\AVE.png") {
-    wagon_bar(60, 81)
+    wagon_bar(80, 81)
 }
 
 spriteset(set_AVE_wagon_end, "..\YSTset\Graphic\locomotive\AVE\AVE.png"){
-	wagon_start(60, 108)
+	wagon_start(80, 108)
 }
 
 spriteset(set_AVE_engineT, "..\YSTset\Graphic\locomotive\AVE\AVE.png"){
-	engine_r(60, 135)
+	engine_r(80, 135)
 }
 
 /*--------------------------------------------------------------------
@@ -1073,7 +1105,7 @@ item(FEAT_TRAINS, AVE){
  		name:							string(STR_AVE_NAME);
  		climates_available:				ALL_CLIMATES;
 		introduction_date:				date(2012, 1, 1);
-        track_type:						RAIL;
+        track_type:						ELRL;
         engine_class:					ENGINE_CLASS_ELECTRIC;
 		sprite_id:						SPRITE_ID_NEW_TRAIN;
         dual_headed:                    1;        
@@ -1081,7 +1113,7 @@ item(FEAT_TRAINS, AVE){
         //spec
 		speed:							330km/h;
 		power:							10000 kW;
-		weight:							35 ton;
+		weight:							80 ton;
 		tractive_effort_coefficient:	0.3;
         air_drag_coefficient:           0.01;
         
@@ -1092,9 +1124,11 @@ item(FEAT_TRAINS, AVE){
 		reliability_decay:				0;
         
         //Cargo
-        cargo_capacity:					1;
-        refittable_cargo_classes:		bitmask(CC_PASSENGERS);
-        non_refittable_cargo_classes:	bitmask();
+        cargo_capacity:                 0;
+        refittable_cargo_classes:       NO_CARGO_CLASS;
+        non_refittable_cargo_classes:   NO_CARGO_CLASS;
+        cargo_allow_refit:              [PASS];
+        cargo_disallow_refit:           [];
         
         //Costs
         refit_cost:						0;
@@ -1138,27 +1172,27 @@ spriteset(set_AVE_VelaroH_purchase, "..\YSTset\Graphic\locomotive\AVE\AVE_Velaro
 }
 
 spriteset(set_AVE_Velaro_engineH, "..\YSTset\Graphic\locomotive\AVE\AVE_Velaro.png"){
-	engine(60, 0)
+	engine(80, 0)
 }
 
 spriteset(set_AVE_Velaro_wagon_start, "..\YSTset\Graphic\locomotive\AVE\AVE_Velaro.png"){
-	wagon_start(60, 27)
+	wagon_start(80, 27)
 }
 
 spriteset(set_AVE_Velaro_wagon, "..\YSTset\Graphic\locomotive\AVE\AVE_Velaro.png") {
-    wagon_1F(60, 54)
+    wagon_1F(80, 54)
 }
 
 spriteset(set_AVE_Velaro_wagon_r, "..\YSTset\Graphic\locomotive\AVE\AVE_Velaro.png") {
-    wagon_1F_r(60, 54)
+    wagon_1F_r(80, 54)
 }
 
 spriteset(set_AVE_Velaro_wagon_end, "..\YSTset\Graphic\locomotive\AVE\AVE_Velaro.png"){
-	wagon_start(60, 81)
+	wagon_start(80, 81)
 }
 
 spriteset(set_AVE_Velaro_engineT, "..\YSTset\Graphic\locomotive\AVE\AVE_Velaro.png"){
-	engine_r(60, 108)
+	engine_r(80, 108)
 }
 
 /*--------------------------------------------------------------------
@@ -1205,7 +1239,7 @@ item(FEAT_TRAINS, AVE_Velaro){
  		name:							string(STR_AVE_Velaro_NAME);
  		climates_available:				ALL_CLIMATES;
 		introduction_date:				date(2006, 1, 1);
-        track_type:						RAIL;
+        track_type:						ELRL;
         engine_class:					ENGINE_CLASS_ELECTRIC;
 		sprite_id:						SPRITE_ID_NEW_TRAIN;
         dual_headed:                    1;        
@@ -1213,7 +1247,7 @@ item(FEAT_TRAINS, AVE_Velaro){
         //spec
 		speed:							330km/h;
 		power:							10000 kW;
-		weight:							35 ton;
+		weight:							80 ton;
 		tractive_effort_coefficient:	0.3;
         air_drag_coefficient:           0.01;
         
@@ -1225,8 +1259,10 @@ item(FEAT_TRAINS, AVE_Velaro){
         
         //Cargo
         cargo_capacity:					30;
-        refittable_cargo_classes:		bitmask(CC_PASSENGERS);
-        non_refittable_cargo_classes:	bitmask();
+        refittable_cargo_classes:       NO_CARGO_CLASS;
+        non_refittable_cargo_classes:   NO_CARGO_CLASS;
+        cargo_allow_refit:              [PASS];
+        cargo_disallow_refit:           [];
         
         //Costs
         refit_cost:						0;
@@ -1270,27 +1306,27 @@ spriteset(set_CR600H_purchase, "..\YSTset\Graphic\locomotive\CR600\CR600.png"){
 }
 
 spriteset(set_CR600_engineH, "..\YSTset\Graphic\locomotive\CR600\CR600.png"){
-	engine(60, 0)
+	engine(80, 0)
 }
 
 spriteset(set_CR600_wagon_start, "..\YSTset\Graphic\locomotive\CR600\CR600.png"){
-	wagon_start(60, 27)
+	wagon_start(80, 27)
 }
 
 spriteset(set_CR600_wagon, "..\YSTset\Graphic\locomotive\CR600\CR600.png") {
-    wagon_1F(60, 54)
+    wagon_1F(80, 54)
 }
 
 spriteset(set_CR600_wagon_r, "..\YSTset\Graphic\locomotive\CR600\CR600.png") {
-    wagon_1F_r(60, 54)
+    wagon_1F_r(80, 54)
 }
 
 spriteset(set_CR600_wagon_end, "..\YSTset\Graphic\locomotive\CR600\CR600.png"){
-	wagon_start(60, 81)
+	wagon_start(80, 81)
 }
 
 spriteset(set_CR600_engineT, "..\YSTset\Graphic\locomotive\CR600\CR600.png"){
-	engine_r(60, 108)
+	engine_r(80, 108)
 }
 
 /*--------------------------------------------------------------------
@@ -1336,7 +1372,7 @@ item(FEAT_TRAINS, CR600){
  		name:							string(STR_CR600_NAME);
  		climates_available:				ALL_CLIMATES;
 		introduction_date:				date(2012, 1, 1);
-        track_type:						RAIL;
+        track_type:						ELRL;
         engine_class:					ENGINE_CLASS_ELECTRIC;
 		sprite_id:						SPRITE_ID_NEW_TRAIN;
         dual_headed:                    1;        
@@ -1344,7 +1380,7 @@ item(FEAT_TRAINS, CR600){
         //spec
 		speed:							600km/h;
 		power:							10000 kW;
-		weight:							35 ton;
+		weight:							80 ton;
 		tractive_effort_coefficient:	0.3;
         air_drag_coefficient:           0.01;
         
@@ -1356,8 +1392,10 @@ item(FEAT_TRAINS, CR600){
         
         //Cargo
         cargo_capacity:					45;
-        refittable_cargo_classes:		bitmask(CC_PASSENGERS);
-        non_refittable_cargo_classes:	bitmask();
+        refittable_cargo_classes:       NO_CARGO_CLASS;
+        non_refittable_cargo_classes:   NO_CARGO_CLASS;
+        cargo_allow_refit:              [PASS];
+        cargo_disallow_refit:           [];
         
         //Costs
         refit_cost:						0;
@@ -1401,27 +1439,27 @@ spriteset(set_CRH1H_purchase, "..\YSTset\Graphic\locomotive\CRH1\CRH1.png"){
 }
 
 spriteset(set_CRH1_engineH, "..\YSTset\Graphic\locomotive\CRH1\CRH1.png"){
-	engine(60, 0)
+	engine(80, 0)
 }
 
 spriteset(set_CRH1_wagon_start, "..\YSTset\Graphic\locomotive\CRH1\CRH1.png"){
-	wagon_start(60, 27)
+	wagon_start(80, 27)
 }
 
 spriteset(set_CRH1_wagon, "..\YSTset\Graphic\locomotive\CRH1\CRH1.png") {
-    wagon_1F(60, 54)
+    wagon_1F(80, 54)
 }
 
 spriteset(set_CRH1_wagon_r, "..\YSTset\Graphic\locomotive\CRH1\CRH1.png") {
-    wagon_1F_r(60, 54)
+    wagon_1F_r(80, 54)
 }
 
 spriteset(set_CRH1_wagon_end, "..\YSTset\Graphic\locomotive\CRH1\CRH1.png"){
-	wagon_start(60, 81)
+	wagon_start(80, 81)
 }
 
 spriteset(set_CRH1_engineT, "..\YSTset\Graphic\locomotive\CRH1\CRH1.png"){
-	engine_r(60, 108)
+	engine_r(80, 108)
 }
 
 /*--------------------------------------------------------------------
@@ -1468,7 +1506,7 @@ item(FEAT_TRAINS, CRH1){
  		name:							string(STR_CRH1_NAME);
  		climates_available:				ALL_CLIMATES;
 		introduction_date:				date(2007, 1, 1);
-        track_type:						RAIL;
+        track_type:						ELRL;
         engine_class:					ENGINE_CLASS_ELECTRIC;
 		sprite_id:						SPRITE_ID_NEW_TRAIN;
         dual_headed:                    1;        
@@ -1476,7 +1514,7 @@ item(FEAT_TRAINS, CRH1){
         //spec
 		speed:							280km/h;
 		power:							10000 kW;
-		weight:							35 ton;
+		weight:							80 ton;
 		tractive_effort_coefficient:	0.3;
         air_drag_coefficient:           0.01;
         
@@ -1488,8 +1526,10 @@ item(FEAT_TRAINS, CRH1){
         
         //Cargo
         cargo_capacity:					72;
-        refittable_cargo_classes:		bitmask(CC_PASSENGERS);
-        non_refittable_cargo_classes:	bitmask();
+        refittable_cargo_classes:       NO_CARGO_CLASS;
+        non_refittable_cargo_classes:   NO_CARGO_CLASS;
+        cargo_allow_refit:              [PASS];
+        cargo_disallow_refit:           [];
         
         //Costs
         refit_cost:						0;
@@ -1533,27 +1573,27 @@ spriteset(set_CRH3H_purchase, "..\YSTset\Graphic\locomotive\CRH3\CRH3.png"){
 }
 
 spriteset(set_CRH3_engineH, "..\YSTset\Graphic\locomotive\CRH3\CRH3.png"){
-	engine(60, 0)
+	engine(80, 0)
 }
 
 spriteset(set_CRH3_wagon_start, "..\YSTset\Graphic\locomotive\CRH3\CRH3.png"){
-	wagon_start(60, 27)
+	wagon_start(80, 27)
 }
 
 spriteset(set_CRH3_wagon, "..\YSTset\Graphic\locomotive\CRH3\CRH3.png") {
-    wagon_1F(60, 54)
+    wagon_1F(80, 54)
 }
 
 spriteset(set_CRH3_wagon_r, "..\YSTset\Graphic\locomotive\CRH3\CRH3.png") {
-    wagon_1F_r(60, 54)
+    wagon_1F_r(80, 54)
 }
 
 spriteset(set_CRH3_wagon_end, "..\YSTset\Graphic\locomotive\CRH3\CRH3.png"){
-	wagon_start(60, 81)
+	wagon_start(80, 81)
 }
 
 spriteset(set_CRH3_engineT, "..\YSTset\Graphic\locomotive\CRH3\CRH3.png"){
-	engine_r(60, 108)
+	engine_r(80, 108)
 }
 
 /*--------------------------------------------------------------------
@@ -1600,7 +1640,7 @@ item(FEAT_TRAINS, CRH3){
  		name:							string(STR_CRH3_NAME);
  		climates_available:				ALL_CLIMATES;
 		introduction_date:				date(2017, 1, 1);
-        track_type:						RAIL;
+        track_type:						ELRL;
         engine_class:					ENGINE_CLASS_ELECTRIC;
 		sprite_id:						SPRITE_ID_NEW_TRAIN;
         dual_headed:                    1;        
@@ -1608,7 +1648,7 @@ item(FEAT_TRAINS, CRH3){
         //spec
 		speed:							330km/h;
 		power:							10000 kW;
-		weight:							35 ton;
+		weight:							80 ton;
 		tractive_effort_coefficient:	0.3;
         air_drag_coefficient:           0.01;
         
@@ -1620,8 +1660,10 @@ item(FEAT_TRAINS, CRH3){
         
         //Cargo
         cargo_capacity:					30;
-        refittable_cargo_classes:		bitmask(CC_PASSENGERS);
-        non_refittable_cargo_classes:	bitmask();
+        refittable_cargo_classes:       NO_CARGO_CLASS;
+        non_refittable_cargo_classes:   NO_CARGO_CLASS;
+        cargo_allow_refit:              [PASS];
+        cargo_disallow_refit:           [];
         
         //Costs
         refit_cost:						0;
@@ -1668,27 +1710,27 @@ spriteset(set_CRH380AH_purchase, "..\YSTset\Graphic\locomotive\CRH380A\CRH380A.p
 }
 
 spriteset(set_CRH380A_engineH, "..\YSTset\Graphic\locomotive\CRH380A\CRH380A.png"){
-	engine(60, 0)
+	engine(80, 0)
 }
 
 spriteset(set_CRH380A_wagon_start, "..\YSTset\Graphic\locomotive\CRH380A\CRH380A.png"){
-	wagon_start(60, 27)
+	wagon_start(80, 27)
 }
 
 spriteset(set_CRH380A_wagon, "..\YSTset\Graphic\locomotive\CRH380A\CRH380A.png") {
-    wagon_1F(60, 54)
+    wagon_1F(80, 54)
 }
 
 spriteset(set_CRH380A_wagon_r, "..\YSTset\Graphic\locomotive\CRH380A\CRH380A.png") {
-    wagon_1F_r(60, 54)
+    wagon_1F_r(80, 54)
 }
 
 spriteset(set_CRH380A_wagon_end, "..\YSTset\Graphic\locomotive\CRH380A\CRH380A.png"){
-	wagon_start(60, 81)
+	wagon_start(80, 81)
 }
 
 spriteset(set_CRH380A_engineT, "..\YSTset\Graphic\locomotive\CRH380A\CRH380A.png"){
-	engine_r(60, 108)
+	engine_r(80, 108)
 }
 
 /*--------------------------------------------------------------------
@@ -1699,27 +1741,27 @@ spriteset(set_CRH380A_CoolH_purchase, "..\YSTset\Graphic\locomotive\CRH380A\CRH3
 }
 
 spriteset(set_CRH380A_Cool_engineH, "..\YSTset\Graphic\locomotive\CRH380A\CRH380A_Cool.png"){
-	engine(60, 0)
+	engine(80, 0)
 }
 
 spriteset(set_CRH380A_Cool_wagon_start, "..\YSTset\Graphic\locomotive\CRH380A\CRH380A_Cool.png"){
-	wagon_start(60, 27)
+	wagon_start(80, 27)
 }
 
 spriteset(set_CRH380A_Cool_wagon, "..\YSTset\Graphic\locomotive\CRH380A\CRH380A_Cool.png") {
-    wagon_1F(60, 54)
+    wagon_1F(80, 54)
 }
 
 spriteset(set_CRH380A_Cool_wagon_r, "..\YSTset\Graphic\locomotive\CRH380A\CRH380A_Cool.png") {
-    wagon_1F_r(60, 54)
+    wagon_1F_r(80, 54)
 }
 
 spriteset(set_CRH380A_Cool_wagon_end, "..\YSTset\Graphic\locomotive\CRH380A\CRH380A_Cool.png"){
-	wagon_start(60, 81)
+	wagon_start(80, 81)
 }
 
 spriteset(set_CRH380A_Cool_engineT, "..\YSTset\Graphic\locomotive\CRH380A\CRH380A_Cool.png"){
-	engine_r(60, 108)
+	engine_r(80, 108)
 }
 
 /*--------------------------------------------------------------------
@@ -1730,27 +1772,27 @@ spriteset(set_CRH380A_RedH_purchase, "..\YSTset\Graphic\locomotive\CRH380A\CRH38
 }
 
 spriteset(set_CRH380A_Red_engineH, "..\YSTset\Graphic\locomotive\CRH380A\CRH380A_Red.png"){
-	engine(60, 0)
+	engine(80, 0)
 }
 
 spriteset(set_CRH380A_Red_wagon_start, "..\YSTset\Graphic\locomotive\CRH380A\CRH380A_Red.png"){
-	wagon_start(60, 27)
+	wagon_start(80, 27)
 }
 
 spriteset(set_CRH380A_Red_wagon, "..\YSTset\Graphic\locomotive\CRH380A\CRH380A_Red.png") {
-    wagon_1F(60, 54)
+    wagon_1F(80, 54)
 }
 
 spriteset(set_CRH380A_Red_wagon_r, "..\YSTset\Graphic\locomotive\CRH380A\CRH380A_Red.png") {
-    wagon_1F_r(60, 54)
+    wagon_1F_r(80, 54)
 }
 
 spriteset(set_CRH380A_Red_wagon_end, "..\YSTset\Graphic\locomotive\CRH380A\CRH380A_Red.png"){
-	wagon_start(60, 81)
+	wagon_start(80, 81)
 }
 
 spriteset(set_CRH380A_Red_engineT, "..\YSTset\Graphic\locomotive\CRH380A\CRH380A_Red.png"){
-	engine_r(60, 108)
+	engine_r(80, 108)
 }
 
 /*--------------------------------------------------------------------
@@ -1813,7 +1855,7 @@ switch(FEAT_TRAINS, SELF, sw_CRH380A_wagon_end, cargo_subtype) {
 switch(FEAT_TRAINS, SELF, sw_CRH380A_speed, cargo_subtype) {
     0: return 380;
     1: return 428;
-    1: return 380;
+    2: return 380;
     return 380;
 }
 
@@ -1846,7 +1888,7 @@ item(FEAT_TRAINS, CRH380A){
  		name:							string(STR_CRH380A_NAME);
  		climates_available:				ALL_CLIMATES;
 		introduction_date:				date(2017, 1, 1);
-        track_type:						RAIL;
+        track_type:						ELRL;
         engine_class:					ENGINE_CLASS_ELECTRIC;
 		sprite_id:						SPRITE_ID_NEW_TRAIN;
         dual_headed:                    1;        
@@ -1854,7 +1896,7 @@ item(FEAT_TRAINS, CRH380A){
         //spec
 		speed:							380km/h;
 		power:							10000 kW;
-		weight:							35 ton;
+		weight:							80 ton;
 		tractive_effort_coefficient:	0.3;
         air_drag_coefficient:           0.01;
         
@@ -1866,8 +1908,10 @@ item(FEAT_TRAINS, CRH380A){
         
         //Cargo
         cargo_capacity:					46;
-        refittable_cargo_classes:		bitmask(CC_PASSENGERS);
-        non_refittable_cargo_classes:	bitmask();
+        refittable_cargo_classes:       NO_CARGO_CLASS;
+        non_refittable_cargo_classes:   NO_CARGO_CLASS;
+        cargo_allow_refit:              [PASS];
+        cargo_disallow_refit:           [];
         
         //Costs
         refit_cost:						0;
@@ -1914,27 +1958,27 @@ spriteset(set_CRH380A_TestH_purchase, "..\YSTset\Graphic\locomotive\CRH380A\CRH3
 }
 
 spriteset(set_CRH380A_Test_engineH, "..\YSTset\Graphic\locomotive\CRH380A\CRH380A_Test.png"){
-	engine(60, 0)
+	engine(80, 0)
 }
 
 spriteset(set_CRH380A_Test_wagon_start, "..\YSTset\Graphic\locomotive\CRH380A\CRH380A_Test.png"){
-	wagon_start(60, 27)
+	wagon_start(80, 27)
 }
 
 spriteset(set_CRH380A_Test_wagon, "..\YSTset\Graphic\locomotive\CRH380A\CRH380A_Test.png") {
-    wagon_1F(60, 54)
+    wagon_1F(80, 54)
 }
 
 spriteset(set_CRH380A_Test_wagon_r, "..\YSTset\Graphic\locomotive\CRH380A\CRH380A_Test.png") {
-    wagon_1F_r(60, 54)
+    wagon_1F_r(80, 54)
 }
 
 spriteset(set_CRH380A_Test_wagon_end, "..\YSTset\Graphic\locomotive\CRH380A\CRH380A_Test.png"){
-	wagon_start(60, 81)
+	wagon_start(80, 81)
 }
 
 spriteset(set_CRH380A_Test_engineT, "..\YSTset\Graphic\locomotive\CRH380A\CRH380A_Test.png"){
-	engine_r(60, 108)
+	engine_r(80, 108)
 }
 
 /*--------------------------------------------------------------------
@@ -1980,7 +2024,7 @@ item(FEAT_TRAINS, CRH380A_Test){
  		name:							string(STR_CRH380T_NAME);
  		climates_available:				ALL_CLIMATES;
 		introduction_date:				date(2017, 1, 1);
-        track_type:						RAIL;
+        track_type:						ELRL;
         engine_class:					ENGINE_CLASS_ELECTRIC;
 		sprite_id:						SPRITE_ID_NEW_TRAIN;
         dual_headed:                    1;        
@@ -1988,7 +2032,7 @@ item(FEAT_TRAINS, CRH380A_Test){
         //spec
 		speed:							600km/h;
 		power:							10000 kW;
-		weight:							35 ton;
+		weight:							80 ton;
 		tractive_effort_coefficient:	0.3;
         air_drag_coefficient:           0.01;
         
@@ -1999,9 +2043,11 @@ item(FEAT_TRAINS, CRH380A_Test){
 		reliability_decay:				0;
         
         //Cargo
-        cargo_capacity:					1;
-        refittable_cargo_classes:		bitmask(CC_PASSENGERS);
-        non_refittable_cargo_classes:	bitmask();
+        cargo_capacity:					0;
+        refittable_cargo_classes:       NO_CARGO_CLASS;
+        non_refittable_cargo_classes:   NO_CARGO_CLASS;
+        cargo_allow_refit:              [PASS];
+        cargo_disallow_refit:           [];
         
         //Costs
         refit_cost:						0;
@@ -2046,27 +2092,27 @@ spriteset(set_E5H_purchase, "..\YSTset\Graphic\locomotive\E5\E5.png"){
 }
 
 spriteset(set_E5_engineH, "..\YSTset\Graphic\locomotive\E5\E5.png"){
-	engine(60, 0)
+	engine(80, 0)
 }
 
 spriteset(set_E5_wagon_start, "..\YSTset\Graphic\locomotive\E5\E5.png"){
-	wagon_start(60, 27)
+	wagon_start(80, 27)
 }
 
 spriteset(set_E5_wagon, "..\YSTset\Graphic\locomotive\E5\E5.png") {
-    wagon_1F(60, 54)
+    wagon_1F(80, 54)
 }
 
 spriteset(set_E5_wagon_r, "..\YSTset\Graphic\locomotive\E5\E5.png") {
-    wagon_1F_r(60, 54)
+    wagon_1F_r(80, 54)
 }
 
 spriteset(set_E5_wagon_end, "..\YSTset\Graphic\locomotive\E5\E5.png"){
-	wagon_start(60, 81)
+	wagon_start(80, 81)
 }
 
 spriteset(set_E5_engineT, "..\YSTset\Graphic\locomotive\E5\E5.png"){
-	engine_r(60, 108)
+	engine_r(80, 108)
 }
 
 /*--------------------------------------------------------------------
@@ -2077,27 +2123,27 @@ spriteset(set_H5H_purchase, "..\YSTset\Graphic\locomotive\E5\H5.png"){
 }
 
 spriteset(set_H5_engineH, "..\YSTset\Graphic\locomotive\E5\H5.png"){
-	engine(60, 0)
+	engine(80, 0)
 }
 
 spriteset(set_H5_wagon_start, "..\YSTset\Graphic\locomotive\E5\H5.png"){
-	wagon_start(60, 27)
+	wagon_start(80, 27)
 }
 
 spriteset(set_H5_wagon, "..\YSTset\Graphic\locomotive\E5\H5.png") {
-    wagon_1F(60, 54)
+    wagon_1F(80, 54)
 }
 
 spriteset(set_H5_wagon_r, "..\YSTset\Graphic\locomotive\E5\H5.png") {
-    wagon_1F_r(60, 54)
+    wagon_1F_r(80, 54)
 }
 
 spriteset(set_H5_wagon_end, "..\YSTset\Graphic\locomotive\E5\H5.png"){
-	wagon_start(60, 81)
+	wagon_start(80, 81)
 }
 
 spriteset(set_H5_engineT, "..\YSTset\Graphic\locomotive\E5\H5.png"){
-	engine_r(60, 108)
+	engine_r(80, 108)
 }
 
 /*--------------------------------------------------------------------
@@ -2179,7 +2225,7 @@ item(FEAT_TRAINS, E5){
  		name:							string(STR_E5_NAME);
  		climates_available:				ALL_CLIMATES;
 		introduction_date:				date(2011, 1, 1);
-        track_type:						RAIL;
+        track_type:						ELRL;
         engine_class:					ENGINE_CLASS_ELECTRIC;
 		sprite_id:						SPRITE_ID_NEW_TRAIN;
         dual_headed:                    1;        
@@ -2187,7 +2233,7 @@ item(FEAT_TRAINS, E5){
         //spec
 		speed:							331km/h;
 		power:							10000 kW;
-		weight:							35 ton;
+		weight:							80 ton;
 		tractive_effort_coefficient:	0.3;
         air_drag_coefficient:           0.01;
         
@@ -2199,8 +2245,10 @@ item(FEAT_TRAINS, E5){
         
         //Cargo
         cargo_capacity:					20;
-        refittable_cargo_classes:		bitmask(CC_PASSENGERS);
-        non_refittable_cargo_classes:	bitmask();
+        refittable_cargo_classes:       NO_CARGO_CLASS;
+        non_refittable_cargo_classes:   NO_CARGO_CLASS;
+        cargo_allow_refit:              [PASS];
+        cargo_disallow_refit:           [];
         
         //Costs
         refit_cost:						0;
@@ -2246,27 +2294,27 @@ spriteset(set_E6H_purchase, "..\YSTset\Graphic\locomotive\E6\E6.png"){
 }
 
 spriteset(set_E6_engineH, "..\YSTset\Graphic\locomotive\E6\E6.png"){
-	engine(60, 0)
+	engine(80, 0)
 }
 
 spriteset(set_E6_wagon_start, "..\YSTset\Graphic\locomotive\E6\E6.png"){
-	wagon_start(60, 27)
+	wagon_start(80, 27)
 }
 
 spriteset(set_E6_wagon, "..\YSTset\Graphic\locomotive\E6\E6.png") {
-    wagon_1F(60, 54)
+    wagon_1F(80, 54)
 }
 
 spriteset(set_E6_wagon_r, "..\YSTset\Graphic\locomotive\E6\E6.png") {
-    wagon_1F_r(60, 54)
+    wagon_1F_r(80, 54)
 }
 
 spriteset(set_E6_wagon_end, "..\YSTset\Graphic\locomotive\E6\E6.png"){
-	wagon_start(60, 81)
+	wagon_start(80, 81)
 }
 
 spriteset(set_E6_engineT, "..\YSTset\Graphic\locomotive\E6\E6.png"){
-	engine_r(60, 108)
+	engine_r(80, 108)
 }
 
 /*--------------------------------------------------------------------
@@ -2313,7 +2361,7 @@ item(FEAT_TRAINS, E6){
  		name:							string(STR_E6_NAME);
  		climates_available:				ALL_CLIMATES;
 		introduction_date:				date(2011, 1, 1);
-        track_type:						RAIL;
+        track_type:						ELRL;
         engine_class:					ENGINE_CLASS_ELECTRIC;
 		sprite_id:						SPRITE_ID_NEW_TRAIN;
         dual_headed:                    1;        
@@ -2321,7 +2369,7 @@ item(FEAT_TRAINS, E6){
         //spec
 		speed:							331km/h;
 		power:							10000 kW;
-		weight:							35 ton;
+		weight:							80 ton;
 		tractive_effort_coefficient:	0.3;
         air_drag_coefficient:           0.01;
         
@@ -2333,8 +2381,10 @@ item(FEAT_TRAINS, E6){
         
         //Cargo
         cargo_capacity:					22;
-        refittable_cargo_classes:		bitmask(CC_PASSENGERS);
-        non_refittable_cargo_classes:	bitmask();
+        refittable_cargo_classes:       NO_CARGO_CLASS;
+        non_refittable_cargo_classes:   NO_CARGO_CLASS;
+        cargo_allow_refit:              [PASS];
+        cargo_disallow_refit:           [];
         
         //Costs
         refit_cost:						0;
@@ -2378,27 +2428,27 @@ spriteset(set_E7H_purchase, "..\YSTset\Graphic\locomotive\E7\E7.png"){
 }
 
 spriteset(set_E7_engineH, "..\YSTset\Graphic\locomotive\E7\E7.png"){
-	engine(60, 0)
+	engine(80, 0)
 }
 
 spriteset(set_E7_wagon_start, "..\YSTset\Graphic\locomotive\E7\E7.png"){
-	wagon_start(60, 27)
+	wagon_start(80, 27)
 }
 
 spriteset(set_E7_wagon, "..\YSTset\Graphic\locomotive\E7\E7.png") {
-    wagon_1F(60, 54)
+    wagon_1F(80, 54)
 }
 
 spriteset(set_E7_wagon_r, "..\YSTset\Graphic\locomotive\E7\E7.png") {
-    wagon_1F_r(60, 54)
+    wagon_1F_r(80, 54)
 }
 
 spriteset(set_E7_wagon_end, "..\YSTset\Graphic\locomotive\E7\E7.png"){
-	wagon_start(60, 81)
+	wagon_start(80, 81)
 }
 
 spriteset(set_E7_engineT, "..\YSTset\Graphic\locomotive\E7\E7.png"){
-	engine_r(60, 108)
+	engine_r(80, 108)
 }
 
 /*--------------------------------------------------------------------
@@ -2444,7 +2494,7 @@ item(FEAT_TRAINS, E7){
  		name:							string(STR_E7_NAME);
  		climates_available:				ALL_CLIMATES;
 		introduction_date:				date(2014, 1, 1);
-        track_type:						RAIL;
+        track_type:						ELRL;
         engine_class:					ENGINE_CLASS_ELECTRIC;
 		sprite_id:						SPRITE_ID_NEW_TRAIN;
         dual_headed:                    1;        
@@ -2452,7 +2502,7 @@ item(FEAT_TRAINS, E7){
         //spec
 		speed:							331km/h;
 		power:							10000 kW;
-		weight:							35 ton;
+		weight:							80 ton;
 		tractive_effort_coefficient:	0.3;
         air_drag_coefficient:           0.01;
         
@@ -2464,8 +2514,10 @@ item(FEAT_TRAINS, E7){
         
         //Cargo
         cargo_capacity:					50;
-        refittable_cargo_classes:		bitmask(CC_PASSENGERS);
-        non_refittable_cargo_classes:	bitmask();
+        refittable_cargo_classes:       NO_CARGO_CLASS;
+        non_refittable_cargo_classes:   NO_CARGO_CLASS;
+        cargo_allow_refit:              [PASS];
+        cargo_disallow_refit:           [];
         
         //Costs
         refit_cost:						0;
@@ -2512,31 +2564,31 @@ spriteset(set_E300H_purchase, "..\YSTset\Graphic\locomotive\E300\E300.png"){
 }
 
 spriteset(set_E300_engineH, "..\YSTset\Graphic\locomotive\E300\E300.png"){
-	engine(60, 0)
+	engine(80, 0)
 }
 
 spriteset(set_E300_wagon_start, "..\YSTset\Graphic\locomotive\E300\E300.png"){
-	wagon_start(60, 27)
+	wagon_start(80, 27)
 }
 
 spriteset(set_E300_wagon, "..\YSTset\Graphic\locomotive\E300\E300.png") {
-    wagon_1F(60, 54)
+    wagon_1F(80, 54)
 }
 
 spriteset(set_E300_wagon_r, "..\YSTset\Graphic\locomotive\E300\E300.png") {
-    wagon_1F_r(60, 54)
+    wagon_1F_r(80, 54)
 }
 
 spriteset(set_E300_wagon_bar, "..\YSTset\Graphic\locomotive\E300\E300.png") {
-    wagon_bar(60, 81)
+    wagon_bar(80, 81)
 }
 
 spriteset(set_E300_wagon_end, "..\YSTset\Graphic\locomotive\E300\E300.png"){
-	wagon_start(60, 108)
+	wagon_start(80, 108)
 }
 
 spriteset(set_E300_engineT, "..\YSTset\Graphic\locomotive\E300\E300.png"){
-	engine_r(60, 135)
+	engine_r(80, 135)
 }
 
 /*--------------------------------------------------------------------
@@ -2547,31 +2599,31 @@ spriteset(set_E300BH_purchase, "..\YSTset\Graphic\locomotive\E300\E300.png"){
 }
 
 spriteset(set_E300B_engineH, "..\YSTset\Graphic\locomotive\E300\E300.png"){
-	engine(60, 162)
+	engine(80, 162)
 }
 
 spriteset(set_E300B_wagon_start, "..\YSTset\Graphic\locomotive\E300\E300.png"){
-	wagon_start(60, 189)
+	wagon_start(80, 189)
 }
 
 spriteset(set_E300B_wagon, "..\YSTset\Graphic\locomotive\E300\E300.png") {
-    wagon_1F(60, 216)
+    wagon_1F(80, 216)
 }
 
 spriteset(set_E300B_wagon_r, "..\YSTset\Graphic\locomotive\E300\E300.png") {
-    wagon_1F_r(60, 216)
+    wagon_1F_r(80, 216)
 }
 
 spriteset(set_E300B_wagon_bar, "..\YSTset\Graphic\locomotive\E300\E300.png") {
-    wagon_bar(60, 243)
+    wagon_bar(80, 243)
 }
 
 spriteset(set_E300B_wagon_end, "..\YSTset\Graphic\locomotive\E300\E300.png"){
-	wagon_start(60, 270)
+	wagon_start(80, 270)
 }
 
 spriteset(set_E300B_engineT, "..\YSTset\Graphic\locomotive\E300\E300.png"){
-	engine_r(60, 297)
+	engine_r(80, 297)
 }
 
 /*--------------------------------------------------------------------
@@ -2672,7 +2724,7 @@ item(FEAT_TRAINS, E300){
  		name:							string(STR_E300_NAME);
  		climates_available:				ALL_CLIMATES;
 		introduction_date:				date(1992, 1, 1);
-        track_type:						RAIL;
+        track_type:						ELRL;
         engine_class:					ENGINE_CLASS_ELECTRIC;
 		sprite_id:						SPRITE_ID_NEW_TRAIN;
         dual_headed:                    1;        
@@ -2680,7 +2732,7 @@ item(FEAT_TRAINS, E300){
         //spec
 		speed:							331km/h;
 		power:							10000 kW;
-		weight:							35 ton;
+		weight:							80 ton;
 		tractive_effort_coefficient:	0.3;
         air_drag_coefficient:           0.01;
         
@@ -2691,9 +2743,11 @@ item(FEAT_TRAINS, E300){
 		reliability_decay:				0;
         
         //Cargo
-        cargo_capacity:					1;
-        refittable_cargo_classes:		bitmask(CC_PASSENGERS);
-        non_refittable_cargo_classes:	bitmask();
+        cargo_capacity:					0;
+        refittable_cargo_classes:       NO_CARGO_CLASS;
+        non_refittable_cargo_classes:   NO_CARGO_CLASS;
+        cargo_allow_refit:              [PASS];
+        cargo_disallow_refit:           [];
         
         //Costs
         refit_cost:						0;
@@ -2739,19 +2793,19 @@ spriteset(set_E320H_purchase, "..\YSTset\Graphic\locomotive\E320\E320.png"){
 }
 
 spriteset(set_E320_engineH, "..\YSTset\Graphic\locomotive\E320\E320.png"){
-	engine(60, 0)
+	engine(80, 0)
 }
 
 spriteset(set_E320_wagon, "..\YSTset\Graphic\locomotive\E320\E320.png") {
-    wagon_1F(60, 27)
+    wagon_1F(80, 27)
 }
 
 spriteset(set_E320_wagon_r, "..\YSTset\Graphic\locomotive\E320\E320.png") {
-    wagon_1F_r(60, 27)
+    wagon_1F_r(80, 27)
 }
 
 spriteset(set_E320_engineT, "..\YSTset\Graphic\locomotive\E320\E320.png"){
-	engine_r(60, 54)
+	engine_r(80, 54)
 }
 
 /*--------------------------------------------------------------------
@@ -2787,7 +2841,7 @@ item(FEAT_TRAINS, E320){
  		name:							string(STR_E320_NAME);
  		climates_available:				ALL_CLIMATES;
 		introduction_date:				date(2014, 1, 1);
-        track_type:						RAIL;
+        track_type:						ELRL;
         engine_class:					ENGINE_CLASS_ELECTRIC;
 		sprite_id:						SPRITE_ID_NEW_TRAIN;
         dual_headed:                    1;        
@@ -2795,7 +2849,7 @@ item(FEAT_TRAINS, E320){
         //spec
 		speed:							331km/h;
 		power:							10000 kW;
-		weight:							35 ton;
+		weight:							80 ton;
 		tractive_effort_coefficient:	0.3;
         air_drag_coefficient:           0.01;
         
@@ -2807,8 +2861,10 @@ item(FEAT_TRAINS, E320){
         
         //Cargo
         cargo_capacity:					30;
-        refittable_cargo_classes:		bitmask(CC_PASSENGERS);
-        non_refittable_cargo_classes:	bitmask();
+        refittable_cargo_classes:       NO_CARGO_CLASS;
+        non_refittable_cargo_classes:   NO_CARGO_CLASS;
+        cargo_allow_refit:              [PASS];
+        cargo_disallow_refit:           [];
         
         //Costs
         refit_cost:						0;
@@ -2855,27 +2911,27 @@ spriteset(set_EMU_250H_purchase, "..\YSTset\Graphic\locomotive\EMU\EMU_250.png")
 }
 
 spriteset(set_EMU_250_engineH, "..\YSTset\Graphic\locomotive\EMU\EMU_250.png"){
-	engine(60, 0)
+	engine(80, 0)
 }
 
 spriteset(set_EMU_250_wagon_start, "..\YSTset\Graphic\locomotive\EMU\EMU_250.png"){
-	wagon_start(60, 27)
+	wagon_start(80, 27)
 }
 
 spriteset(set_EMU_250_wagon, "..\YSTset\Graphic\locomotive\EMU\EMU_250.png") {
-    wagon_1F(60, 54)
+    wagon_1F(80, 54)
 }
 
 spriteset(set_EMU_250_wagon_r, "..\YSTset\Graphic\locomotive\EMU\EMU_250.png") {
-    wagon_1F_r(60, 54)
+    wagon_1F_r(80, 54)
 }
 
 spriteset(set_EMU_250_wagon_end, "..\YSTset\Graphic\locomotive\EMU\EMU_250.png"){
-	wagon_start(60, 81)
+	wagon_start(80, 81)
 }
 
 spriteset(set_EMU_250_engineT, "..\YSTset\Graphic\locomotive\EMU\EMU_250.png"){
-	engine_r(60, 108)
+	engine_r(80, 108)
 }
 
 /*--------------------------------------------------------------------
@@ -2886,27 +2942,27 @@ spriteset(set_EMU_300H_purchase, "..\YSTset\Graphic\locomotive\EMU\EMU_300.png")
 }
 
 spriteset(set_EMU_300_engineH, "..\YSTset\Graphic\locomotive\EMU\EMU_300.png"){
-	engine(60, 0)
+	engine(80, 0)
 }
 
 spriteset(set_EMU_300_wagon_start, "..\YSTset\Graphic\locomotive\EMU\EMU_300.png"){
-	wagon_start(60, 27)
+	wagon_start(80, 27)
 }
 
 spriteset(set_EMU_300_wagon, "..\YSTset\Graphic\locomotive\EMU\EMU_300.png") {
-    wagon_1F(60, 54)
+    wagon_1F(80, 54)
 }
 
 spriteset(set_EMU_300_wagon_r, "..\YSTset\Graphic\locomotive\EMU\EMU_300.png") {
-    wagon_1F_r(60, 54)
+    wagon_1F_r(80, 54)
 }
 
 spriteset(set_EMU_300_wagon_end, "..\YSTset\Graphic\locomotive\EMU\EMU_300.png"){
-	wagon_start(60, 81)
+	wagon_start(80, 81)
 }
 
 spriteset(set_EMU_300_engineT, "..\YSTset\Graphic\locomotive\EMU\EMU_300.png"){
-	engine_r(60, 108)
+	engine_r(80, 108)
 }
 
 
@@ -2995,14 +3051,14 @@ item(FEAT_TRAINS, EMU){
  		name:							string(STR_EMU_NAME);
  		climates_available:				ALL_CLIMATES;
 		introduction_date:				date(2020, 1, 1);
-        track_type:						RAIL;
+        track_type:						ELRL;
         engine_class:					ENGINE_CLASS_ELECTRIC;
 		sprite_id:						SPRITE_ID_NEW_TRAIN;
         dual_headed:                    1;        
         
         //spec
 		power:							10000 kW;
-		weight:							35 ton;
+		weight:							80 ton;
 		tractive_effort_coefficient:	0.3;
         air_drag_coefficient:           0.01;
         
@@ -3014,8 +3070,10 @@ item(FEAT_TRAINS, EMU){
         
         //Cargo
         cargo_capacity:					58;
-        refittable_cargo_classes:		bitmask(CC_PASSENGERS);
-        non_refittable_cargo_classes:	bitmask();
+        refittable_cargo_classes:       NO_CARGO_CLASS;
+        non_refittable_cargo_classes:   NO_CARGO_CLASS;
+        cargo_allow_refit:              [PASS];
+        cargo_disallow_refit:           [];
         
         //Costs
         cost_factor:					10;
@@ -3065,27 +3123,27 @@ spriteset(set_Glory_600AH_purchase, "..\YSTset\Graphic\locomotive\Glory_600\Glor
 }
 
 spriteset(set_Glory_600A_engineH, "..\YSTset\Graphic\locomotive\Glory_600\Glory_600.png"){
-	engine(60, 0)
+	engine(80, 0)
 }
 
 spriteset(set_Glory_600A_wagon_start, "..\YSTset\Graphic\locomotive\Glory_600\Glory_600.png"){
-	wagon_start(60, 27)
+	wagon_start(80, 27)
 }
 
 spriteset(set_Glory_600A_wagon, "..\YSTset\Graphic\locomotive\Glory_600\Glory_600.png") {
-    wagon_1F(60, 54)
+    wagon_1F(80, 54)
 }
 
 spriteset(set_Glory_600A_wagon_r, "..\YSTset\Graphic\locomotive\Glory_600\Glory_600.png") {
-    wagon_1F_r(60, 54)
+    wagon_1F_r(80, 54)
 }
 
 spriteset(set_Glory_600A_wagon_end, "..\YSTset\Graphic\locomotive\Glory_600\Glory_600.png"){
-	wagon_start(60, 81)
+	wagon_start(80, 81)
 }
 
 spriteset(set_Glory_600A_engineT, "..\YSTset\Graphic\locomotive\Glory_600\Glory_600.png"){
-	engine_r(60, 108)
+	engine_r(80, 108)
 }
 
 /*--------------------------------------------------------------------
@@ -3096,27 +3154,27 @@ spriteset(set_Glory_600BH_purchase, "..\YSTset\Graphic\locomotive\Glory_600\Glor
 }
 
 spriteset(set_Glory_600B_engineH, "..\YSTset\Graphic\locomotive\Glory_600\Glory_600.png"){
-	engine(60, 135)
+	engine(80, 135)
 }
 
 spriteset(set_Glory_600B_wagon_start, "..\YSTset\Graphic\locomotive\Glory_600\Glory_600.png"){
-	wagon_start(60, 162)
+	wagon_start(80, 162)
 }
 
 spriteset(set_Glory_600B_wagon, "..\YSTset\Graphic\locomotive\Glory_600\Glory_600.png") {
-    wagon_1F(60, 189)
+    wagon_1F(80, 189)
 }
 
 spriteset(set_Glory_600B_wagon_r, "..\YSTset\Graphic\locomotive\Glory_600\Glory_600.png") {
-    wagon_1F_r(60, 189)
+    wagon_1F_r(80, 189)
 }
 
 spriteset(set_Glory_600B_wagon_end, "..\YSTset\Graphic\locomotive\Glory_600\Glory_600.png"){
-	wagon_start(60, 216)
+	wagon_start(80, 216)
 }
 
 spriteset(set_Glory_600B_engineT, "..\YSTset\Graphic\locomotive\Glory_600\Glory_600.png"){
-	engine_r(60, 243)
+	engine_r(80, 243)
 }
 
 /*--------------------------------------------------------------------
@@ -3127,27 +3185,27 @@ spriteset(set_Glory_600CH_purchase, "..\YSTset\Graphic\locomotive\Glory_600\Glor
 }
 
 spriteset(set_Glory_600C_engineH, "..\YSTset\Graphic\locomotive\Glory_600\Glory_600.png"){
-	engine(60, 270)
+	engine(80, 270)
 }
 
 spriteset(set_Glory_600C_wagon_start, "..\YSTset\Graphic\locomotive\Glory_600\Glory_600.png"){
-	wagon_start(60, 297)
+	wagon_start(80, 297)
 }
 
 spriteset(set_Glory_600C_wagon, "..\YSTset\Graphic\locomotive\Glory_600\Glory_600.png") {
-    wagon_1F(60, 324)
+    wagon_1F(80, 324)
 }
 
 spriteset(set_Glory_600C_wagon_r, "..\YSTset\Graphic\locomotive\Glory_600\Glory_600.png") {
-    wagon_1F_r(60, 324)
+    wagon_1F_r(80, 324)
 }
 
 spriteset(set_Glory_600C_wagon_end, "..\YSTset\Graphic\locomotive\Glory_600\Glory_600.png"){
-	wagon_start(60, 351)
+	wagon_start(80, 351)
 }
 
 spriteset(set_Glory_600C_engineT, "..\YSTset\Graphic\locomotive\Glory_600\Glory_600.png"){
-	engine_r(60, 378)
+	engine_r(80, 378)
 }
 
 /*--------------------------------------------------------------------
@@ -3158,27 +3216,27 @@ spriteset(set_Glory_600DH_purchase, "..\YSTset\Graphic\locomotive\Glory_600\Glor
 }
 
 spriteset(set_Glory_600D_engineH, "..\YSTset\Graphic\locomotive\Glory_600\Glory_600.png"){
-	engine(60, 405)
+	engine(80, 405)
 }
 
 spriteset(set_Glory_600D_wagon_start, "..\YSTset\Graphic\locomotive\Glory_600\Glory_600.png"){
-	wagon_start(60, 432)
+	wagon_start(80, 432)
 }
 
 spriteset(set_Glory_600D_wagon, "..\YSTset\Graphic\locomotive\Glory_600\Glory_600.png") {
-    wagon_1F(60, 459)
+    wagon_1F(80, 459)
 }
 
 spriteset(set_Glory_600D_wagon_r, "..\YSTset\Graphic\locomotive\Glory_600\Glory_600.png") {
-    wagon_1F_r(60, 459)
+    wagon_1F_r(80, 459)
 }
 
 spriteset(set_Glory_600D_wagon_end, "..\YSTset\Graphic\locomotive\Glory_600\Glory_600.png"){
-	wagon_start(60, 486)
+	wagon_start(80, 486)
 }
 
 spriteset(set_Glory_600D_engineT, "..\YSTset\Graphic\locomotive\Glory_600\Glory_600.png"){
-	engine_r(60, 513)
+	engine_r(80, 513)
 }
 
 /*--------------------------------------------------------------------
@@ -3189,27 +3247,27 @@ spriteset(set_Glory_600EH_purchase, "..\YSTset\Graphic\locomotive\Glory_600\Glor
 }
 
 spriteset(set_Glory_600E_engineH, "..\YSTset\Graphic\locomotive\Glory_600\Glory_600.png"){
-	engine(60, 540)
+	engine(80, 540)
 }
 
 spriteset(set_Glory_600E_wagon_start, "..\YSTset\Graphic\locomotive\Glory_600\Glory_600.png"){
-	wagon_start(60, 567)
+	wagon_start(80, 567)
 }
 
 spriteset(set_Glory_600E_wagon, "..\YSTset\Graphic\locomotive\Glory_600\Glory_600.png") {
-    wagon_1F(60, 594)
+    wagon_1F(80, 594)
 }
 
 spriteset(set_Glory_600E_wagon_r, "..\YSTset\Graphic\locomotive\Glory_600\Glory_600.png") {
-    wagon_1F_r(60, 594)
+    wagon_1F_r(80, 594)
 }
 
 spriteset(set_Glory_600E_wagon_end, "..\YSTset\Graphic\locomotive\Glory_600\Glory_600.png"){
-	wagon_start(60, 621)
+	wagon_start(80, 621)
 }
 
 spriteset(set_Glory_600E_engineT, "..\YSTset\Graphic\locomotive\Glory_600\Glory_600.png"){
-	engine_r(60, 648)
+	engine_r(80, 648)
 }
 
 /*--------------------------------------------------------------------
@@ -3312,7 +3370,7 @@ item(FEAT_TRAINS, Glory_600){
  		name:							string(STR_Glory_600_NAME);
  		climates_available:				ALL_CLIMATES;
 		introduction_date:				date(2020, 1, 1);
-        track_type:						RAIL;
+        track_type:						ELRL;
         engine_class:					ENGINE_CLASS_ELECTRIC;
 		sprite_id:						SPRITE_ID_NEW_TRAIN;
         dual_headed:                    1;        
@@ -3320,7 +3378,7 @@ item(FEAT_TRAINS, Glory_600){
         //spec
 		speed:							600km/h;
 		power:							10000 kW;
-		weight:							35 ton;
+		weight:							80 ton;
 		tractive_effort_coefficient:	0.3;
         air_drag_coefficient:           0.01;
         
@@ -3331,9 +3389,11 @@ item(FEAT_TRAINS, Glory_600){
 		reliability_decay:				0;
         
         //Cargo
-        cargo_capacity:					1;
-        refittable_cargo_classes:		bitmask(CC_PASSENGERS);
-        non_refittable_cargo_classes:	bitmask();
+        cargo_capacity:					0;
+        refittable_cargo_classes:       NO_CARGO_CLASS;
+        non_refittable_cargo_classes:   NO_CARGO_CLASS;
+        cargo_allow_refit:              [PASS];
+        cargo_disallow_refit:           [];
         
         //Costs
         refit_cost:						0;
@@ -3380,23 +3440,23 @@ spriteset(set_HEMUH_purchase, "..\YSTset\Graphic\locomotive\HEMU\HEMU.png"){
 }
 
 spriteset(set_HEMU_engineH, "..\YSTset\Graphic\locomotive\HEMU\HEMU.png"){
-	engine(60, 0)
+	engine(80, 0)
 }
 
 spriteset(set_HEMU_wagon, "..\YSTset\Graphic\locomotive\HEMU\HEMU.png") {
-    wagon_1F(60, 27)
+    wagon_1F(80, 27)
 }
 
 spriteset(set_HEMU_wagon_r, "..\YSTset\Graphic\locomotive\HEMU\HEMU.png") {
-    wagon_1F_r(60, 27)
+    wagon_1F_r(80, 27)
 }
 
 spriteset(set_HEMU_wagon_bar, "..\YSTset\Graphic\locomotive\HEMU\HEMU.png") {
-    wagon_bar(60, 54)
+    wagon_bar(80, 54)
 }
 
 spriteset(set_HEMU_engineT, "..\YSTset\Graphic\locomotive\HEMU\HEMU.png"){
-	engine_r(60, 81)
+	engine_r(80, 81)
 }
 
 /*--------------------------------------------------------------------
@@ -3438,7 +3498,7 @@ item(FEAT_TRAINS, HEMU){
  		name:							string(STR_HEMU_NAME);
  		climates_available:				ALL_CLIMATES;
 		introduction_date:				date(2007, 1, 1);
-        track_type:						RAIL;
+        track_type:						ELRL;
         engine_class:					ENGINE_CLASS_ELECTRIC;
 		sprite_id:						SPRITE_ID_NEW_TRAIN;
         dual_headed:                    1;        
@@ -3446,7 +3506,7 @@ item(FEAT_TRAINS, HEMU){
         //spec
 		speed:							430km/h;
 		power:							10000 kW;
-		weight:							35 ton;
+		weight:							80 ton;
 		tractive_effort_coefficient:	0.3;
         air_drag_coefficient:           0.01;
         
@@ -3458,8 +3518,10 @@ item(FEAT_TRAINS, HEMU){
         
         //Cargo
         cargo_capacity:					60;
-        refittable_cargo_classes:		bitmask(CC_PASSENGERS);
-        non_refittable_cargo_classes:	bitmask();
+        refittable_cargo_classes:       NO_CARGO_CLASS;
+        non_refittable_cargo_classes:   NO_CARGO_CLASS;
+        cargo_allow_refit:              [PASS];
+        cargo_disallow_refit:           [];
         
         //Costs
         refit_cost:						0;
@@ -3506,27 +3568,27 @@ spriteset(set_HMXGH_purchase, "..\YSTset\Graphic\locomotive\HMX\HMX.png"){
 }
 
 spriteset(set_HMXG_engineH, "..\YSTset\Graphic\locomotive\HMX\HMX.png"){
-	engine(60, 0)
+	engine(80, 0)
 }
 
 spriteset(set_HMXG_1F_wagon, "..\YSTset\Graphic\locomotive\HMX\HMX.png") {
-    wagon_1F(60, 27)
+    wagon_1F(80, 27)
 }
 
 spriteset(set_HMXG_1F_wagon_r, "..\YSTset\Graphic\locomotive\HMX\HMX.png") {
-    wagon_1F_r(60, 27)
+    wagon_1F_r(80, 27)
 }
 
 spriteset(set_HMXG_2F_wagon, "..\YSTset\Graphic\locomotive\HMX\HMX.png") {
-    wagon_2F(60, 54)
+    wagon_2F(80, 54)
 }
 
 spriteset(set_HMXG_2F_wagon_r, "..\YSTset\Graphic\locomotive\HMX\HMX.png") {
-    wagon_2F_r(60, 54)
+    wagon_2F_r(80, 54)
 }
 
 spriteset(set_HMXG_engineT, "..\YSTset\Graphic\locomotive\HMX\HMX.png"){
-	engine_r(60, 81)
+	engine_r(80, 81)
 }
 
 /*--------------------------------------------------------------------
@@ -3537,27 +3599,27 @@ spriteset(set_HMXRH_purchase, "..\YSTset\Graphic\locomotive\HMX\HMX.png"){
 }
 
 spriteset(set_HMXR_engineH, "..\YSTset\Graphic\locomotive\HMX\HMX.png"){
-	engine(60, 108)
+	engine(80, 108)
 }
 
 spriteset(set_HMXR_1F_wagon, "..\YSTset\Graphic\locomotive\HMX\HMX.png") {
-    wagon_1F(60, 135)
+    wagon_1F(80, 135)
 }
 
 spriteset(set_HMXR_1F_wagon_r, "..\YSTset\Graphic\locomotive\HMX\HMX.png") {
-    wagon_1F_r(60, 135)
+    wagon_1F_r(80, 135)
 }
 
 spriteset(set_HMXR_2F_wagon, "..\YSTset\Graphic\locomotive\HMX\HMX.png") {
-    wagon_2F(60, 162)
+    wagon_2F(80, 162)
 }
 
 spriteset(set_HMXR_2F_wagon_r, "..\YSTset\Graphic\locomotive\HMX\HMX.png") {
-    wagon_2F_r(60, 162)
+    wagon_2F_r(80, 162)
 }
 
 spriteset(set_HMXR_engineT, "..\YSTset\Graphic\locomotive\HMX\HMX.png"){
-	engine_r(60, 189)
+	engine_r(80, 189)
 }
 
 /*--------------------------------------------------------------------
@@ -3634,7 +3696,7 @@ item(FEAT_TRAINS, HMX){
  		name:							string(STR_HMX_NAME);
  		climates_available:				ALL_CLIMATES;
 		introduction_date:				date(2020, 1, 1);
-        track_type:						RAIL;
+        track_type:						ELRL;
         engine_class:					ENGINE_CLASS_ELECTRIC;
 		sprite_id:						SPRITE_ID_NEW_TRAIN;
         dual_headed:                    1;        
@@ -3642,7 +3704,7 @@ item(FEAT_TRAINS, HMX){
         //spec
 		speed:							251km/h;
 		power:							10000 kW;
-		weight:							35 ton;
+		weight:							80 ton;
 		tractive_effort_coefficient:	0.3;
         air_drag_coefficient:           0.01;
         
@@ -3654,8 +3716,10 @@ item(FEAT_TRAINS, HMX){
         
         //Cargo
         cargo_capacity:					40;
-        refittable_cargo_classes:		bitmask(CC_PASSENGERS);
-        non_refittable_cargo_classes:	bitmask();
+        refittable_cargo_classes:       NO_CARGO_CLASS;
+        non_refittable_cargo_classes:   NO_CARGO_CLASS;
+        cargo_allow_refit:              [PASS];
+        cargo_disallow_refit:           [];
         
         //Costs
         refit_cost:						0;
@@ -3708,27 +3772,27 @@ spriteset(set_ICE3H_purchase, "..\YSTset\Graphic\locomotive\ICE3\ICE3.png"){
 }
 
 spriteset(set_ICE3_engineH, "..\YSTset\Graphic\locomotive\ICE3\ICE3.png"){
-	engine(60, 0)
+	engine(80, 0)
 }
 
 spriteset(set_ICE3_wagon_start, "..\YSTset\Graphic\locomotive\ICE3\ICE3.png"){
-	wagon_start(60, 27)
+	wagon_start(80, 27)
 }
 
 spriteset(set_ICE3_wagon, "..\YSTset\Graphic\locomotive\ICE3\ICE3.png") {
-    wagon_1F(60, 54)
+    wagon_1F(80, 54)
 }
 
 spriteset(set_ICE3_wagon_r, "..\YSTset\Graphic\locomotive\ICE3\ICE3.png") {
-    wagon_1F_r(60, 54)
+    wagon_1F_r(80, 54)
 }
 
 spriteset(set_ICE3_wagon_end, "..\YSTset\Graphic\locomotive\ICE3\ICE3.png"){
-	wagon_start(60, 81)
+	wagon_start(80, 81)
 }
 
 spriteset(set_ICE3_engineT, "..\YSTset\Graphic\locomotive\ICE3\ICE3.png"){
-	engine_r(60, 108)
+	engine_r(80, 108)
 }
 
 /*--------------------------------------------------------------------
@@ -3775,7 +3839,7 @@ item(FEAT_TRAINS, ICE3){
  		name:							string(STR_ICE3_NAME);
  		climates_available:				ALL_CLIMATES;
 		introduction_date:				date(1997, 1, 1);
-        track_type:						RAIL;
+        track_type:						ELRL;
         engine_class:					ENGINE_CLASS_ELECTRIC;
 		sprite_id:						SPRITE_ID_NEW_TRAIN;
         dual_headed:                    1;        
@@ -3783,7 +3847,7 @@ item(FEAT_TRAINS, ICE3){
         //spec
 		speed:							331km/h;
 		power:							10000 kW;
-		weight:							35 ton;
+		weight:							80 ton;
 		tractive_effort_coefficient:	0.3;
         air_drag_coefficient:           0.01;
         
@@ -3795,8 +3859,10 @@ item(FEAT_TRAINS, ICE3){
         
         //Cargo
         cargo_capacity:					30;
-        refittable_cargo_classes:		bitmask(CC_PASSENGERS);
-        non_refittable_cargo_classes:	bitmask();
+        refittable_cargo_classes:       NO_CARGO_CLASS;
+        non_refittable_cargo_classes:   NO_CARGO_CLASS;
+        cargo_allow_refit:              [PASS];
+        cargo_disallow_refit:           [];
         
         //Costs
         refit_cost:						0;
@@ -3843,27 +3909,27 @@ spriteset(set_ICE_SancheonH_purchase, "..\YSTset\Graphic\locomotive\ICE3\ICE_San
 }
 
 spriteset(set_ICE_Sancheon_engineH, "..\YSTset\Graphic\locomotive\ICE3\ICE_Sancheon.png"){
-	engine(60, 0)
+	engine(80, 0)
 }
 
 spriteset(set_ICE_Sancheon_wagon_start, "..\YSTset\Graphic\locomotive\ICE3\ICE_Sancheon.png"){
-	wagon_start(60, 27)
+	wagon_start(80, 27)
 }
 
 spriteset(set_ICE_Sancheon_wagon, "..\YSTset\Graphic\locomotive\ICE3\ICE_Sancheon.png") {
-    wagon_1F(60, 54)
+    wagon_1F(80, 54)
 }
 
 spriteset(set_ICE_Sancheon_wagon_r, "..\YSTset\Graphic\locomotive\ICE3\ICE_Sancheon.png") {
-    wagon_1F_r(60, 54)
+    wagon_1F_r(80, 54)
 }
 
 spriteset(set_ICE_Sancheon_wagon_end, "..\YSTset\Graphic\locomotive\ICE3\ICE_Sancheon.png"){
-	wagon_start(60, 81)
+	wagon_start(80, 81)
 }
 
 spriteset(set_ICE_Sancheon_engineT, "..\YSTset\Graphic\locomotive\ICE3\ICE_Sancheon.png"){
-	engine_r(60, 108)
+	engine_r(80, 108)
 }
 
 /*--------------------------------------------------------------------
@@ -3874,27 +3940,27 @@ spriteset(set_ICE_PatjugH_purchase, "..\YSTset\Graphic\locomotive\ICE3\ICE_Patju
 }
 
 spriteset(set_ICE_Patjug_engineH, "..\YSTset\Graphic\locomotive\ICE3\ICE_Patjug.png"){
-	engine(60, 0)
+	engine(80, 0)
 }
 
 spriteset(set_ICE_Patjug_wagon_start, "..\YSTset\Graphic\locomotive\ICE3\ICE_Patjug.png"){
-	wagon_start(60, 27)
+	wagon_start(80, 27)
 }
 
 spriteset(set_ICE_Patjug_wagon, "..\YSTset\Graphic\locomotive\ICE3\ICE_Patjug.png") {
-    wagon_1F(60, 54)
+    wagon_1F(80, 54)
 }
 
 spriteset(set_ICE_Patjug_wagon_r, "..\YSTset\Graphic\locomotive\ICE3\ICE_Patjug.png") {
-    wagon_1F_r(60, 54)
+    wagon_1F_r(80, 54)
 }
 
 spriteset(set_ICE_Patjug_wagon_end, "..\YSTset\Graphic\locomotive\ICE3\ICE_Patjug.png"){
-	wagon_start(60, 81)
+	wagon_start(80, 81)
 }
 
 spriteset(set_ICE_Patjug_engineT, "..\YSTset\Graphic\locomotive\ICE3\ICE_Patjug.png"){
-	engine_r(60, 108)
+	engine_r(80, 108)
 }
 
 /*--------------------------------------------------------------------
@@ -3976,7 +4042,7 @@ item(FEAT_TRAINS, ICE_SP){
  		name:							string(STR_ICE_SP_NAME);
  		climates_available:				ALL_CLIMATES;
 		introduction_date:				date(2020, 1, 1);
-        track_type:						RAIL;
+        track_type:						ELRL;
         engine_class:					ENGINE_CLASS_ELECTRIC;
 		sprite_id:						SPRITE_ID_NEW_TRAIN;
         dual_headed:                    1;        
@@ -3984,7 +4050,7 @@ item(FEAT_TRAINS, ICE_SP){
         //spec
 		speed:							331km/h;
 		power:							10000 kW;
-		weight:							35 ton;
+		weight:							80 ton;
 		tractive_effort_coefficient:	0.3;
         air_drag_coefficient:           0.01;
         
@@ -3996,8 +4062,10 @@ item(FEAT_TRAINS, ICE_SP){
         
         //Cargo
         cargo_capacity:					30;
-        refittable_cargo_classes:		bitmask(CC_PASSENGERS);
-        non_refittable_cargo_classes:	bitmask();
+        refittable_cargo_classes:       NO_CARGO_CLASS;
+        non_refittable_cargo_classes:   NO_CARGO_CLASS;
+        cargo_allow_refit:              [PASS];
+        cargo_disallow_refit:           [];
         
         //Costs
         refit_cost:						0;
@@ -4043,27 +4111,27 @@ spriteset(set_KTX_NH_purchase, "..\YSTset\Graphic\locomotive\KTX_N\KTX_N.png"){
 }
 
 spriteset(set_KTX_N_engineH, "..\YSTset\Graphic\locomotive\KTX_N\KTX_N.png"){
-	engine(60, 0)
+	engine(80, 0)
 }
 
 spriteset(set_KTX_N_wagon_start, "..\YSTset\Graphic\locomotive\KTX_N\KTX_N.png"){
-	wagon_start(60, 27)
+	wagon_start(80, 27)
 }
 
 spriteset(set_KTX_N_wagon, "..\YSTset\Graphic\locomotive\KTX_N\KTX_N.png") {
-    wagon_1F(60, 54)
+    wagon_1F(80, 54)
 }
 
 spriteset(set_KTX_N_wagon_r, "..\YSTset\Graphic\locomotive\KTX_N\KTX_N.png") {
-    wagon_1F_r(60, 54)
+    wagon_1F_r(80, 54)
 }
 
 spriteset(set_KTX_N_wagon_end, "..\YSTset\Graphic\locomotive\KTX_N\KTX_N.png"){
-	wagon_start(60, 81)
+	wagon_start(80, 81)
 }
 
 spriteset(set_KTX_N_engineT, "..\YSTset\Graphic\locomotive\KTX_N\KTX_N.png"){
-	engine_r(60, 108)
+	engine_r(80, 108)
 }
 
 /*--------------------------------------------------------------------
@@ -4110,7 +4178,7 @@ item(FEAT_TRAINS, KTX_N){
  		name:							string(STR_KTX_N_NAME);
  		climates_available:				ALL_CLIMATES;
 		introduction_date:				date(2020, 1, 1);
-        track_type:						RAIL;
+        track_type:						ELRL;
         engine_class:					ENGINE_CLASS_ELECTRIC;
 		sprite_id:						SPRITE_ID_NEW_TRAIN;
         dual_headed:                    1;        
@@ -4118,7 +4186,7 @@ item(FEAT_TRAINS, KTX_N){
         //spec
 		speed:							331km/h;
 		power:							10000 kW;
-		weight:							35 ton;
+		weight:							80 ton;
 		tractive_effort_coefficient:	0.3;
         air_drag_coefficient:           0.01;
         
@@ -4129,9 +4197,11 @@ item(FEAT_TRAINS, KTX_N){
 		reliability_decay:				0;
         
         //Cargo
-        cargo_capacity:					1;
-        refittable_cargo_classes:		bitmask(CC_PASSENGERS);
-        non_refittable_cargo_classes:	bitmask();
+        cargo_capacity:					0;
+        refittable_cargo_classes:       NO_CARGO_CLASS;
+        non_refittable_cargo_classes:   NO_CARGO_CLASS;
+        cargo_allow_refit:              [PASS];
+        cargo_disallow_refit:           [];
         
         //Costs
         refit_cost:						0;
@@ -4178,27 +4248,27 @@ spriteset(set_N700H_purchase, "..\YSTset\Graphic\locomotive\N700\N700.png"){
 }
 
 spriteset(set_N700_engineH, "..\YSTset\Graphic\locomotive\N700\N700.png"){
-	engine(60, 0)
+	engine(80, 0)
 }
 
 spriteset(set_N700_wagon_start, "..\YSTset\Graphic\locomotive\N700\N700.png"){
-	wagon_panto(60, 27)
+	wagon_panto(80, 27)
 }
 
 spriteset(set_N700_wagon, "..\YSTset\Graphic\locomotive\N700\N700.png") {
-    wagon_1F(60, 54)
+    wagon_1F(80, 54)
 }
 
 spriteset(set_N700_wagon_r, "..\YSTset\Graphic\locomotive\N700\N700.png") {
-    wagon_1F_r(60, 54)
+    wagon_1F_r(80, 54)
 }
 
 spriteset(set_N700_wagon_end, "..\YSTset\Graphic\locomotive\N700\N700.png"){
-	wagon_panto(60, 81)
+	wagon_panto(80, 81)
 }
 
 spriteset(set_N700_engineT, "..\YSTset\Graphic\locomotive\N700\N700.png"){
-	engine_r(60, 108)
+	engine_r(80, 108)
 }
 
 /*--------------------------------------------------------------------
@@ -4209,27 +4279,27 @@ spriteset(set_N700TH_purchase, "..\YSTset\Graphic\locomotive\N700\N700.png"){
 }
 
 spriteset(set_N700T_engineH, "..\YSTset\Graphic\locomotive\N700\N700.png"){
-	engine(60, 135)
+	engine(80, 135)
 }
 
 spriteset(set_N700T_wagon_start, "..\YSTset\Graphic\locomotive\N700\N700.png"){
-	wagon_panto(60, 162)
+	wagon_panto(80, 162)
 }
 
 spriteset(set_N700T_wagon, "..\YSTset\Graphic\locomotive\N700\N700.png") {
-    wagon_1F(60, 189)
+    wagon_1F(80, 189)
 }
 
 spriteset(set_N700T_wagon_r, "..\YSTset\Graphic\locomotive\N700\N700.png") {
-    wagon_1F_r(60, 189)
+    wagon_1F_r(80, 189)
 }
 
 spriteset(set_N700T_wagon_end, "..\YSTset\Graphic\locomotive\N700\N700.png"){
-	wagon_panto(60, 216)
+	wagon_panto(80, 216)
 }
 
 spriteset(set_N700T_engineT, "..\YSTset\Graphic\locomotive\N700\N700.png"){
-	engine_r(60, 243)
+	engine_r(80, 243)
 }
 
 /*--------------------------------------------------------------------
@@ -4310,7 +4380,7 @@ item(FEAT_TRAINS, N700){
  		name:							string(STR_N700_NAME);
  		climates_available:				ALL_CLIMATES;
 		introduction_date:				date(2007, 1, 1);
-        track_type:						RAIL;
+        track_type:						ELRL;
         engine_class:					ENGINE_CLASS_ELECTRIC;
 		sprite_id:						SPRITE_ID_NEW_TRAIN;
         dual_headed:                    1;        
@@ -4318,7 +4388,7 @@ item(FEAT_TRAINS, N700){
         //spec
 		speed:							331km/h;
 		power:							10000 kW;
-		weight:							35 ton;
+		weight:							80 ton;
 		tractive_effort_coefficient:	0.3;
         air_drag_coefficient:           0.01;
         
@@ -4330,8 +4400,10 @@ item(FEAT_TRAINS, N700){
         
         //Cargo
         cargo_capacity:					75;
-        refittable_cargo_classes:		bitmask(CC_PASSENGERS);
-        non_refittable_cargo_classes:	bitmask();
+        refittable_cargo_classes:       NO_CARGO_CLASS;
+        non_refittable_cargo_classes:   NO_CARGO_CLASS;
+        cargo_allow_refit:              [PASS];
+        cargo_disallow_refit:           [];
         
         //Costs
         refit_cost:						0;
@@ -4381,35 +4453,35 @@ spriteset(set_NKXAH_purchase, "..\YSTset\Graphic\locomotive\NKX\NKX.png"){
 }
 
 spriteset(set_NKXA_engineH, "..\YSTset\Graphic\locomotive\NKX\NKX.png"){
-	engine(60, 0)
+	engine(80, 0)
 }
 
 spriteset(set_NKXA_wagon_start, "..\YSTset\Graphic\locomotive\NKX\NKX.png"){
-	wagon_panto(60, 27)
+	wagon_panto(80, 27)
 }
 
 spriteset(set_NKXA_1F_wagon, "..\YSTset\Graphic\locomotive\NKX\NKX.png") {
-    wagon_1F(60, 54)
+    wagon_1F(80, 54)
 }
 
 spriteset(set_NKXA_1F_wagon_r, "..\YSTset\Graphic\locomotive\NKX\NKX.png") {
-    wagon_1F_r(60, 54)
+    wagon_1F_r(80, 54)
 }
 
 spriteset(set_NKXA_2F_wagon, "..\YSTset\Graphic\locomotive\NKX\NKX.png") {
-    wagon_2F(60, 81)
+    wagon_2F(80, 81)
 }
 
 spriteset(set_NKXA_2F_wagon_r, "..\YSTset\Graphic\locomotive\NKX\NKX.png") {
-    wagon_2F_r(60, 81)
+    wagon_2F_r(80, 81)
 }
 
 spriteset(set_NKXA_wagon_end, "..\YSTset\Graphic\locomotive\NKX\NKX.png"){
-	wagon_panto(60, 108)
+	wagon_panto(80, 108)
 }
 
 spriteset(set_NKXA_engineT, "..\YSTset\Graphic\locomotive\NKX\NKX.png"){
-	engine_r(60, 135)
+	engine_r(80, 135)
 }
 
 /*--------------------------------------------------------------------
@@ -4420,35 +4492,35 @@ spriteset(set_NKXBH_purchase, "..\YSTset\Graphic\locomotive\NKX\NKX.png"){
 }
 
 spriteset(set_NKXB_engineH, "..\YSTset\Graphic\locomotive\NKX\NKX.png"){
-	engine(60, 162)
+	engine(80, 162)
 }
 
 spriteset(set_NKXB_wagon_start, "..\YSTset\Graphic\locomotive\NKX\NKX.png"){
-	wagon_panto(60, 189)
+	wagon_panto(80, 189)
 }
 
 spriteset(set_NKXB_1F_wagon, "..\YSTset\Graphic\locomotive\NKX\NKX.png") {
-    wagon_1F(60, 216)
+    wagon_1F(80, 216)
 }
 
 spriteset(set_NKXB_1F_wagon_r, "..\YSTset\Graphic\locomotive\NKX\NKX.png") {
-    wagon_1F_r(60, 216)
+    wagon_1F_r(80, 216)
 }
 
 spriteset(set_NKXB_2F_wagon, "..\YSTset\Graphic\locomotive\NKX\NKX.png") {
-    wagon_2F(60, 243)
+    wagon_2F(80, 243)
 }
 
 spriteset(set_NKXB_2F_wagon_r, "..\YSTset\Graphic\locomotive\NKX\NKX.png") {
-    wagon_2F_r(60, 243)
+    wagon_2F_r(80, 243)
 }
 
 spriteset(set_NKXB_wagon_end, "..\YSTset\Graphic\locomotive\NKX\NKX.png"){
-	wagon_panto(60, 270)
+	wagon_panto(80, 270)
 }
 
 spriteset(set_NKXB_engineT, "..\YSTset\Graphic\locomotive\NKX\NKX.png"){
-	engine_r(60, 297)
+	engine_r(80, 297)
 }
 
 /*--------------------------------------------------------------------
@@ -4459,35 +4531,35 @@ spriteset(set_NKXCH_purchase, "..\YSTset\Graphic\locomotive\NKX\NKX.png"){
 }
 
 spriteset(set_NKXC_engineH, "..\YSTset\Graphic\locomotive\NKX\NKX.png"){
-	engine(60, 324)
+	engine(80, 324)
 }
 
 spriteset(set_NKXC_wagon_start, "..\YSTset\Graphic\locomotive\NKX\NKX.png"){
-	wagon_panto(60, 351)
+	wagon_panto(80, 351)
 }
 
 spriteset(set_NKXC_1F_wagon, "..\YSTset\Graphic\locomotive\NKX\NKX.png") {
-    wagon_1F(60, 378)
+    wagon_1F(80, 378)
 }
 
 spriteset(set_NKXC_1F_wagon_r, "..\YSTset\Graphic\locomotive\NKX\NKX.png") {
-    wagon_1F_r(60, 378)
+    wagon_1F_r(80, 378)
 }
 
 spriteset(set_NKXC_2F_wagon, "..\YSTset\Graphic\locomotive\NKX\NKX.png") {
-    wagon_2F(60, 405)
+    wagon_2F(80, 405)
 }
 
 spriteset(set_NKXC_2F_wagon_r, "..\YSTset\Graphic\locomotive\NKX\NKX.png") {
-    wagon_2F_r(60, 405)
+    wagon_2F_r(80, 405)
 }
 
 spriteset(set_NKXC_wagon_end, "..\YSTset\Graphic\locomotive\NKX\NKX.png"){
-	wagon_panto(60, 432)
+	wagon_panto(80, 432)
 }
 
 spriteset(set_NKXC_engineT, "..\YSTset\Graphic\locomotive\NKX\NKX.png"){
-	engine_r(60, 459)
+	engine_r(80, 459)
 }
 
 /*--------------------------------------------------------------------
@@ -4605,15 +4677,15 @@ item(FEAT_TRAINS, NKX){
  		name:							string(STR_NKX_NAME);
  		climates_available:				ALL_CLIMATES;
 		introduction_date:				date(2020, 1, 1);
-        track_type:						RAIL;
+        track_type:						ELRL;
         engine_class:					ENGINE_CLASS_ELECTRIC;
 		sprite_id:						SPRITE_ID_NEW_TRAIN;
         dual_headed:                    1;        
         
         //spec
-		speed:							150km/h;
+		speed:							180km/h;
 		power:							10000 kW;
-		weight:							35 ton;
+		weight:							80 ton;
 		tractive_effort_coefficient:	0.3;
         air_drag_coefficient:           0.01;
         
@@ -4625,8 +4697,10 @@ item(FEAT_TRAINS, NKX){
         
         //Cargo
         cargo_capacity:					72;
-        refittable_cargo_classes:		bitmask(CC_PASSENGERS);
-        non_refittable_cargo_classes:	bitmask();
+        refittable_cargo_classes:       NO_CARGO_CLASS;
+        non_refittable_cargo_classes:   NO_CARGO_CLASS;
+        cargo_allow_refit:              [PASS];
+        cargo_disallow_refit:           [];
         
         //Costs
         refit_cost:						0;
@@ -4682,27 +4756,27 @@ spriteset(set_ALVIAH_purchase, "..\YSTset\Graphic\locomotive\Talgo_250\Talgo_250
 }
 
 spriteset(set_ALVIA_engineH, "..\YSTset\Graphic\locomotive\Talgo_250\Talgo_250.png"){
-	engine(60, 0)
+	engine(80, 0)
 }
 
 spriteset(set_ALVIA_wagon_start, "..\YSTset\Graphic\locomotive\Talgo_250\Talgo_250.png"){
-	wagon_start(60, 27)
+	wagon_start(80, 27)
 }
 
 spriteset(set_ALVIA_wagon, "..\YSTset\Graphic\locomotive\Talgo_250\Talgo_250.png") {
-    wagon_1F_F(60, 54)
+    wagon_1F_F(80, 54)
 }
 
 spriteset(set_ALVIA_wagon_bar, "..\YSTset\Graphic\locomotive\Talgo_250\Talgo_250.png") {
-    wagon_bar(60, 81)
+    wagon_bar(80, 81)
 }
 
 spriteset(set_ALVIA_wagon_end, "..\YSTset\Graphic\locomotive\Talgo_250\Talgo_250.png"){
-	wagon_start(60, 108)
+	wagon_start(80, 108)
 }
 
 spriteset(set_ALVIA_engineT, "..\YSTset\Graphic\locomotive\Talgo_250\Talgo_250.png"){
-	engine_r(60, 135)
+	engine_r(80, 135)
 }
 
 /*--------------------------------------------------------------------
@@ -4713,27 +4787,27 @@ spriteset(set_APROSIYOBH_purchase, "..\YSTset\Graphic\locomotive\Talgo_250\Talgo
 }
 
 spriteset(set_APROSIYOB_engineH, "..\YSTset\Graphic\locomotive\Talgo_250\Talgo_250.png"){
-	engine(60, 162)
+	engine(80, 162)
 }
 
 spriteset(set_APROSIYOB_wagon_start, "..\YSTset\Graphic\locomotive\Talgo_250\Talgo_250.png"){
-	wagon_start(60, 189)
+	wagon_start(80, 189)
 }
 
 spriteset(set_APROSIYOB_wagon, "..\YSTset\Graphic\locomotive\Talgo_250\Talgo_250.png") {
-    wagon_1F_F(60, 216)
+    wagon_1F_F(80, 216)
 }
 
 spriteset(set_APROSIYOB_wagon_bar, "..\YSTset\Graphic\locomotive\Talgo_250\Talgo_250.png") {
-    wagon_bar(60, 243)
+    wagon_bar(80, 243)
 }
 
 spriteset(set_APROSIYOB_wagon_end, "..\YSTset\Graphic\locomotive\Talgo_250\Talgo_250.png"){
-	wagon_start(60, 270)
+	wagon_start(80, 270)
 }
 
 spriteset(set_APROSIYOB_engineT, "..\YSTset\Graphic\locomotive\Talgo_250\Talgo_250.png"){
-	engine_r(60, 297)
+	engine_r(80, 297)
 }
 
 /*--------------------------------------------------------------------
@@ -4815,7 +4889,7 @@ item(FEAT_TRAINS, TALGO){
  		name:							string(STR_TALGO250_NAME);
  		climates_available:				ALL_CLIMATES;
 		introduction_date:				date(2012, 1, 1);
-        track_type:						RAIL;
+        track_type:						ELRL;
         engine_class:					ENGINE_CLASS_ELECTRIC;
 		sprite_id:						SPRITE_ID_NEW_TRAIN;
         dual_headed:                    1;        
@@ -4823,7 +4897,7 @@ item(FEAT_TRAINS, TALGO){
         //spec
 		speed:							250km/h;
 		power:							10000 kW;
-		weight:							35 ton;
+		weight:							80 ton;
 		tractive_effort_coefficient:	0.3;
         air_drag_coefficient:           0.01;
         
@@ -4834,9 +4908,11 @@ item(FEAT_TRAINS, TALGO){
 		reliability_decay:				0;
         
         //Cargo
-        cargo_capacity:					1;
-        refittable_cargo_classes:		bitmask(CC_PASSENGERS);
-        non_refittable_cargo_classes:	bitmask();
+        cargo_capacity:					0;
+        refittable_cargo_classes:       NO_CARGO_CLASS;
+        non_refittable_cargo_classes:   NO_CARGO_CLASS;
+        cargo_allow_refit:              [PASS];
+        cargo_disallow_refit:           [];
         
         //Costs
         refit_cost:						0;
@@ -4882,27 +4958,27 @@ spriteset(set_Tgv_OldH_purchase, "..\YSTset\Graphic\locomotive\TGV\TGV_Old.png")
 }
 
 spriteset(set_Tgv_Old_engineH, "..\YSTset\Graphic\locomotive\TGV\TGV_Old.png"){
-	engine(60, 0)
+	engine(80, 0)
 }
 
 spriteset(set_Tgv_Old_wagon_start, "..\YSTset\Graphic\locomotive\TGV\TGV_Old.png"){
-	wagon_start(60, 27)
+	wagon_start(80, 27)
 }
 
 spriteset(set_Tgv_Old_wagon, "..\YSTset\Graphic\locomotive\TGV\TGV_Old.png") {
-    wagon_1F(60, 54)
+    wagon_1F(80, 54)
 }
 
 spriteset(set_Tgv_Old_wagon_r, "..\YSTset\Graphic\locomotive\TGV\TGV_Old.png") {
-    wagon_1F_r(60, 54)
+    wagon_1F_r(80, 54)
 }
 
 spriteset(set_Tgv_Old_wagon_end, "..\YSTset\Graphic\locomotive\TGV\TGV_Old.png"){
-	wagon_start(60, 81)
+	wagon_start(80, 81)
 }
 
 spriteset(set_Tgv_Old_engineT, "..\YSTset\Graphic\locomotive\TGV\TGV_Old.png"){
-	engine_r(60, 108)
+	engine_r(80, 108)
 }
 
 /*--------------------------------------------------------------------
@@ -4949,7 +5025,7 @@ item(FEAT_TRAINS, TGV_OLD){
  		name:							string(STR_TGV_OLD_NAME);
  		climates_available:				ALL_CLIMATES;
 		introduction_date:				date(1978, 1, 1);
-        track_type:						RAIL;
+        track_type:						ELRL;
         engine_class:					ENGINE_CLASS_ELECTRIC;
 		sprite_id:						SPRITE_ID_NEW_TRAIN;
         dual_headed:                    1;        
@@ -4957,7 +5033,7 @@ item(FEAT_TRAINS, TGV_OLD){
         //spec
 		speed:							331km/h;
 		power:							10000 kW;
-		weight:							35 ton;
+		weight:							80 ton;
 		tractive_effort_coefficient:	0.3;
         air_drag_coefficient:           0.01;
         
@@ -4968,9 +5044,11 @@ item(FEAT_TRAINS, TGV_OLD){
 		reliability_decay:				0;
         
         //Cargo
-        cargo_capacity:					1;
-        refittable_cargo_classes:		bitmask(CC_PASSENGERS);
-        non_refittable_cargo_classes:	bitmask();
+        cargo_capacity:					0;
+        refittable_cargo_classes:       NO_CARGO_CLASS;
+        non_refittable_cargo_classes:   NO_CARGO_CLASS;
+        cargo_allow_refit:              [PASS];
+        cargo_disallow_refit:           [];
         
         //Costs
         refit_cost:						0;
@@ -5017,31 +5095,31 @@ spriteset(set_TGV_OLD_PosH_purchase, "..\YSTset\Graphic\locomotive\TGV\TGV_OLD_P
 }
 
 spriteset(set_TGV_OLD_Pos_engineH, "..\YSTset\Graphic\locomotive\TGV\TGV_OLD_POS.png"){
-	engine(60, 0)
+	engine(80, 0)
 }
 
 spriteset(set_TGV_OLD_Pos_wagon_start, "..\YSTset\Graphic\locomotive\TGV\TGV_OLD_POS.png"){
-	wagon_start(60, 27)
+	wagon_start(80, 27)
 }
 
 spriteset(set_TGV_OLD_Pos_wagon_nomal, "..\YSTset\Graphic\locomotive\TGV\TGV_OLD_POS.png") {
-    wagon_1F_F(60, 54)
+    wagon_1F_F(80, 54)
 }
 
 spriteset(set_TGV_OLD_Pos_wagon_bar, "..\YSTset\Graphic\locomotive\TGV\TGV_OLD_POS.png") {
-    wagon_bar(60, 81)
+    wagon_bar(80, 81)
 }
 
 spriteset(set_TGV_OLD_Pos_wagon_special, "..\YSTset\Graphic\locomotive\TGV\TGV_OLD_POS.png") {
-    wagon_1F_F(60, 108)
+    wagon_1F_F(80, 108)
 }
 
 spriteset(set_TGV_OLD_Pos_wagon_end, "..\YSTset\Graphic\locomotive\TGV\TGV_OLD_POS.png"){
-	wagon_start(60, 135)
+	wagon_start(80, 135)
 }
 
 spriteset(set_TGV_OLD_Pos_engineT, "..\YSTset\Graphic\locomotive\TGV\TGV_OLD_POS.png"){
-	engine_r(60, 162)
+	engine_r(80, 162)
 }
 
 /*--------------------------------------------------------------------
@@ -5052,27 +5130,27 @@ spriteset(set_TGV_OLD_LyairH_purchase, "..\YSTset\Graphic\locomotive\TGV\TGV_OLD
 }
 
 spriteset(set_TGV_OLD_Lyair_engineH, "..\YSTset\Graphic\locomotive\TGV\TGV_OLD_POS.png"){
-	engine(60, 189)
+	engine(80, 189)
 }
 
 spriteset(set_TGV_OLD_Lyair_wagon_start, "..\YSTset\Graphic\locomotive\TGV\TGV_OLD_POS.png"){
-	wagon_start(60, 216)
+	wagon_start(80, 216)
 }
 
 spriteset(set_TGV_OLD_Lyair_wagon_nomal, "..\YSTset\Graphic\locomotive\TGV\TGV_OLD_POS.png") {
-    wagon_1F_F(60, 243)
+    wagon_1F_F(80, 243)
 }
 
 spriteset(set_TGV_OLD_Lyair_wagon_bar, "..\YSTset\Graphic\locomotive\TGV\TGV_OLD_POS.png") {
-    wagon_bar(60, 270)
+    wagon_bar(80, 270)
 }
 
 spriteset(set_TGV_OLD_Lyair_wagon_end, "..\YSTset\Graphic\locomotive\TGV\TGV_OLD_POS.png"){
-	wagon_start(60, 297)
+	wagon_start(80, 297)
 }
 
 spriteset(set_TGV_OLD_Lyair_engineT, "..\YSTset\Graphic\locomotive\TGV\TGV_OLD_POS.png"){
-	engine_r(60, 324)
+	engine_r(80, 324)
 }
 
 /*--------------------------------------------------------------------
@@ -5083,27 +5161,27 @@ spriteset(set_TGV_OLD_ThalysH_purchase, "..\YSTset\Graphic\locomotive\TGV\TGV_OL
 }
 
 spriteset(set_TGV_OLD_Thalys_engineH, "..\YSTset\Graphic\locomotive\TGV\TGV_OLD_POS.png"){
-	engine(60, 351)
+	engine(80, 351)
 }
 
 spriteset(set_TGV_OLD_Thalys_wagon_start, "..\YSTset\Graphic\locomotive\TGV\TGV_OLD_POS.png"){
-	wagon_start(60, 378)
+	wagon_start(80, 378)
 }
 
 spriteset(set_TGV_OLD_Thalys_wagon, "..\YSTset\Graphic\locomotive\TGV\TGV_OLD_POS.png") {
-    wagon_1F_F(60, 405)
+    wagon_1F_F(80, 405)
 }
 
 spriteset(set_TGV_OLD_Thalys_wagon_bar, "..\YSTset\Graphic\locomotive\TGV\TGV_OLD_POS.png") {
-    wagon_bar(60, 432)
+    wagon_bar(80, 432)
 }
 
 spriteset(set_TGV_OLD_Thalys_wagon_end, "..\YSTset\Graphic\locomotive\TGV\TGV_OLD_POS.png"){
-	wagon_start(60, 459)
+	wagon_start(80, 459)
 }
 
 spriteset(set_TGV_OLD_Thalys_engineT, "..\YSTset\Graphic\locomotive\TGV\TGV_OLD_POS.png"){
-	engine_r(60, 486)
+	engine_r(80, 486)
 }
 
 /*--------------------------------------------------------------------
@@ -5200,7 +5278,7 @@ item(FEAT_TRAINS, TGV_OLD_Pos){
  		name:							string(STR_TGV_OLD_Pos_NAME);
  		climates_available:				ALL_CLIMATES;
 		introduction_date:				date(1978, 1, 1);
-        track_type:						RAIL;
+        track_type:						ELRL;
         engine_class:					ENGINE_CLASS_ELECTRIC;
 		sprite_id:						SPRITE_ID_NEW_TRAIN;
         dual_headed:                    1;        
@@ -5208,7 +5286,7 @@ item(FEAT_TRAINS, TGV_OLD_Pos){
         //spec
 		speed:							331km/h;
 		power:							10000 kW;
-		weight:							35 ton;
+		weight:							80 ton;
 		tractive_effort_coefficient:	0.3;
         air_drag_coefficient:           0.01;
         
@@ -5219,9 +5297,11 @@ item(FEAT_TRAINS, TGV_OLD_Pos){
 		reliability_decay:				0;
         
         //Cargo
-        cargo_capacity:					1;
-        refittable_cargo_classes:		bitmask(CC_PASSENGERS);
-        non_refittable_cargo_classes:	bitmask();
+        cargo_capacity:					0;
+        refittable_cargo_classes:       NO_CARGO_CLASS;
+        non_refittable_cargo_classes:   NO_CARGO_CLASS;
+        cargo_allow_refit:              [PASS];
+        cargo_disallow_refit:           [];
         
         //Costs
         refit_cost:						0;
@@ -5270,31 +5350,31 @@ spriteset(set_TGV_PosH_purchase, "..\YSTset\Graphic\locomotive\TGV\TGV_POS.png")
 }
 
 spriteset(set_TGV_Pos_engineH, "..\YSTset\Graphic\locomotive\TGV\TGV_POS.png"){
-	engine(60, 0)
+	engine(80, 0)
 }
 
 spriteset(set_TGV_Pos_wagon_start, "..\YSTset\Graphic\locomotive\TGV\TGV_POS.png"){
-	wagon_start(60, 27)
+	wagon_start(80, 27)
 }
 
 spriteset(set_TGV_Pos_wagon_nomal, "..\YSTset\Graphic\locomotive\TGV\TGV_POS.png") {
-    wagon_1F_F(60, 54)
+    wagon_1F_F(80, 54)
 }
 
 spriteset(set_TGV_Pos_wagon_bar, "..\YSTset\Graphic\locomotive\TGV\TGV_POS.png") {
-    wagon_bar(60, 81)
+    wagon_bar(80, 81)
 }
 
 spriteset(set_TGV_Pos_wagon_special, "..\YSTset\Graphic\locomotive\TGV\TGV_POS.png") {
-    wagon_1F_F(60, 108)
+    wagon_1F_F(80, 108)
 }
 
 spriteset(set_TGV_Pos_wagon_end, "..\YSTset\Graphic\locomotive\TGV\TGV_POS.png"){
-	wagon_start(60, 135)
+	wagon_start(80, 135)
 }
 
 spriteset(set_TGV_Pos_engineT, "..\YSTset\Graphic\locomotive\TGV\TGV_POS.png"){
-	engine_r(60, 162)
+	engine_r(80, 162)
 }
 
 /*--------------------------------------------------------------------
@@ -5305,27 +5385,27 @@ spriteset(set_TGV_LyairH_purchase, "..\YSTset\Graphic\locomotive\TGV\TGV_POS.png
 }
 
 spriteset(set_TGV_Lyair_engineH, "..\YSTset\Graphic\locomotive\TGV\TGV_POS.png"){
-	engine(60, 189)
+	engine(80, 189)
 }
 
 spriteset(set_TGV_Lyair_wagon_start, "..\YSTset\Graphic\locomotive\TGV\TGV_POS.png"){
-	wagon_start(60, 216)
+	wagon_start(80, 216)
 }
 
 spriteset(set_TGV_Lyair_wagon_nomal, "..\YSTset\Graphic\locomotive\TGV\TGV_POS.png") {
-    wagon_1F_F(60, 243)
+    wagon_1F_F(80, 243)
 }
 
 spriteset(set_TGV_Lyair_wagon_bar, "..\YSTset\Graphic\locomotive\TGV\TGV_POS.png") {
-    wagon_bar(60, 270)
+    wagon_bar(80, 270)
 }
 
 spriteset(set_TGV_Lyair_wagon_end, "..\YSTset\Graphic\locomotive\TGV\TGV_POS.png"){
-	wagon_start(60, 297)
+	wagon_start(80, 297)
 }
 
 spriteset(set_TGV_Lyair_engineT, "..\YSTset\Graphic\locomotive\TGV\TGV_POS.png"){
-	engine_r(60, 324)
+	engine_r(80, 324)
 }
 
 /*--------------------------------------------------------------------
@@ -5336,27 +5416,27 @@ spriteset(set_TGV__ThalysH_purchase, "..\YSTset\Graphic\locomotive\TGV\TGV_POS.p
 }
 
 spriteset(set_TGV_Thalys_engineH, "..\YSTset\Graphic\locomotive\TGV\TGV_POS.png"){
-	engine(60, 351)
+	engine(80, 351)
 }
 
 spriteset(set_TGV_halys_wagon_start, "..\YSTset\Graphic\locomotive\TGV\TGV_POS.png"){
-	wagon_start(60, 378)
+	wagon_start(80, 378)
 }
 
 spriteset(set_TGV_Thalys_wagon, "..\YSTset\Graphic\locomotive\TGV\TGV_POS.png") {
-    wagon_1F_F(60, 405)
+    wagon_1F_F(80, 405)
 }
 
 spriteset(set_TGV_Thalys_wagon_bar, "..\YSTset\Graphic\locomotive\TGV\TGV_POS.png") {
-    wagon_bar(60, 432)
+    wagon_bar(80, 432)
 }
 
 spriteset(set_TGV_Thalys_wagon_end, "..\YSTset\Graphic\locomotive\TGV\TGV_POS.png"){
-	wagon_start(60, 459)
+	wagon_start(80, 459)
 }
 
 spriteset(set_TGV_Thalys_engineT, "..\YSTset\Graphic\locomotive\TGV\TGV_POS.png"){
-	engine_r(60, 486)
+	engine_r(80, 486)
 }
 
 /*--------------------------------------------------------------------
@@ -5453,7 +5533,7 @@ item(FEAT_TRAINS, TGV_Pos){
  		name:							string(STR_TGV_Pos_NAME);
  		climates_available:				ALL_CLIMATES;
 		introduction_date:				date(2006, 1, 1);
-        track_type:						RAIL;
+        track_type:						ELRL;
         engine_class:					ENGINE_CLASS_ELECTRIC;
 		sprite_id:						SPRITE_ID_NEW_TRAIN;
         dual_headed:                    1;        
@@ -5461,7 +5541,7 @@ item(FEAT_TRAINS, TGV_Pos){
         //spec
 		speed:							331km/h;
 		power:							10000 kW;
-		weight:							35 ton;
+		weight:							80 ton;
 		tractive_effort_coefficient:	0.3;
         air_drag_coefficient:           0.01;
         
@@ -5472,9 +5552,11 @@ item(FEAT_TRAINS, TGV_Pos){
 		reliability_decay:				0;
         
         //Cargo
-        cargo_capacity:					1;
-        refittable_cargo_classes:		bitmask(CC_PASSENGERS);
-        non_refittable_cargo_classes:	bitmask();
+        cargo_capacity:					0;
+        refittable_cargo_classes:       NO_CARGO_CLASS;
+        non_refittable_cargo_classes:   NO_CARGO_CLASS;
+        cargo_allow_refit:              [PASS];
+        cargo_disallow_refit:           [];
         
         //Costs
         refit_cost:						0;
@@ -5523,31 +5605,31 @@ spriteset(set_TGV_OLD_DuplexH_purchase, "..\YSTset\Graphic\locomotive\TGV\TGV_OL
 }
 
 spriteset(set_TGV_OLD_Duplex_engineH, "..\YSTset\Graphic\locomotive\TGV\TGV_OLD_Duplex.png"){
-	engine(60, 0)
+	engine(80, 0)
 }
 
 spriteset(set_TGV_OLD_Duplex_wagon_start, "..\YSTset\Graphic\locomotive\TGV\TGV_OLD_Duplex.png"){
-	wagon_start(60, 27)
+	wagon_start(80, 27)
 }
 
 spriteset(set_TGV_OLD_Duplex_wagon_nomal, "..\YSTset\Graphic\locomotive\TGV\TGV_OLD_Duplex.png") {
-    wagon_1F_F(60, 54)
+    wagon_1F_F(80, 54)
 }
 
 spriteset(set_TGV_OLD_Duplex_wagon_bar, "..\YSTset\Graphic\locomotive\TGV\TGV_OLD_Duplex.png") {
-    wagon_bar(60, 81)
+    wagon_bar(80, 81)
 }
 
 spriteset(set_TGV_OLD_Duplex_wagon_special, "..\YSTset\Graphic\locomotive\TGV\TGV_OLD_Duplex.png") {
-    wagon_1F_F(60, 108)
+    wagon_1F_F(80, 108)
 }
 
 spriteset(set_TGV_OLD_Duplex_wagon_end, "..\YSTset\Graphic\locomotive\TGV\TGV_OLD_Duplex.png"){
-	wagon_start(60, 135)
+	wagon_start(80, 135)
 }
 
 spriteset(set_TGV_OLD_Duplex_engineT, "..\YSTset\Graphic\locomotive\TGV\TGV_OLD_Duplex.png"){
-	engine_r(60, 162)
+	engine_r(80, 162)
 }
 
 /*--------------------------------------------------------------------
@@ -5558,31 +5640,31 @@ spriteset(set_TGV_OLD_Duplex_LyairH_purchase, "..\YSTset\Graphic\locomotive\TGV\
 }
 
 spriteset(set_TGV_OLD_Duplex_Lyair_engineH, "..\YSTset\Graphic\locomotive\TGV\TGV_OLD_Duplex.png"){
-	engine(60, 189)
+	engine(80, 189)
 }
 
 spriteset(set_TGV_OLD_Duplex_Lyair_wagon_start, "..\YSTset\Graphic\locomotive\TGV\TGV_OLD_Duplex.png"){
-	wagon_start(60, 216)
+	wagon_start(80, 216)
 }
 
 spriteset(set_TGV_OLD_Duplex_Lyair_wagon_nomal, "..\YSTset\Graphic\locomotive\TGV\TGV_OLD_Duplex.png") {
-    wagon_1F_F(60, 243)
+    wagon_1F_F(80, 243)
 }
 
 spriteset(set_TGV_OLD_Duplex_Lyair_wagon_bar, "..\YSTset\Graphic\locomotive\TGV\TGV_OLD_Duplex.png") {
-    wagon_bar(60, 270)
+    wagon_bar(80, 270)
 }
 
 spriteset(set_TGV_OLD_Duplex_Lyair_wagon_special, "..\YSTset\Graphic\locomotive\TGV\TGV_OLD_Duplex.png") {
-    wagon_1F_F(60, 297)
+    wagon_1F_F(80, 297)
 }
 
 spriteset(set_TGV_OLD_Duplex_Lyair_wagon_end, "..\YSTset\Graphic\locomotive\TGV\TGV_OLD_Duplex.png"){
-	wagon_start(60, 324)
+	wagon_start(80, 324)
 }
 
 spriteset(set_TGV_OLD_Duplex_Lyair_engineT, "..\YSTset\Graphic\locomotive\TGV\TGV_OLD_Duplex.png"){
-	engine_r(60, 351)
+	engine_r(80, 351)
 }
 
 /*--------------------------------------------------------------------
@@ -5677,7 +5759,7 @@ item(FEAT_TRAINS, TGV_OLD_Duplex){
  		name:							string(STR_TGV_OLD_Duplex_NAME);
  		climates_available:				ALL_CLIMATES;
 		introduction_date:				date(1994, 1, 1);
-        track_type:						RAIL;
+        track_type:						ELRL;
         engine_class:					ENGINE_CLASS_ELECTRIC;
 		sprite_id:						SPRITE_ID_NEW_TRAIN;
         dual_headed:                    1;        
@@ -5685,7 +5767,7 @@ item(FEAT_TRAINS, TGV_OLD_Duplex){
         //spec
 		speed:							331km/h;
 		power:							10000 kW;
-		weight:							35 ton;
+		weight:							80 ton;
 		tractive_effort_coefficient:	0.3;
         air_drag_coefficient:           0.01;
         
@@ -5696,9 +5778,11 @@ item(FEAT_TRAINS, TGV_OLD_Duplex){
 		reliability_decay:				0;
         
         //Cargo
-        cargo_capacity:				    1;
-        refittable_cargo_classes:		bitmask(CC_PASSENGERS);
-        non_refittable_cargo_classes:	bitmask();
+        cargo_capacity:				    0;
+        refittable_cargo_classes:       NO_CARGO_CLASS;
+        non_refittable_cargo_classes:   NO_CARGO_CLASS;
+        cargo_allow_refit:              [PASS];
+        cargo_disallow_refit:           [];
         
         //Costs
         refit_cost:						0;
@@ -5747,31 +5831,31 @@ spriteset(set_TGV_DuplexH_purchase, "..\YSTset\Graphic\locomotive\TGV\TGV_Duplex
 }
 
 spriteset(set_TGV_Duplex_engineH, "..\YSTset\Graphic\locomotive\TGV\TGV_Duplex.png"){
-	engine(60, 0)
+	engine(80, 0)
 }
 
 spriteset(set_TGV_Duplex_wagon_start, "..\YSTset\Graphic\locomotive\TGV\TGV_Duplex.png"){
-	wagon_start(60, 27)
+	wagon_start(80, 27)
 }
 
 spriteset(set_TGV_Duplex_wagon_nomal, "..\YSTset\Graphic\locomotive\TGV\TGV_Duplex.png") {
-    wagon_1F_F(60, 54)
+    wagon_1F_F(80, 54)
 }
 
 spriteset(set_TGV_Duplex_wagon_bar, "..\YSTset\Graphic\locomotive\TGV\TGV_Duplex.png") {
-    wagon_bar(60, 81)
+    wagon_bar(80, 81)
 }
 
 spriteset(set_TGV_Duplex_wagon_special, "..\YSTset\Graphic\locomotive\TGV\TGV_Duplex.png") {
-    wagon_1F_F(60, 108)
+    wagon_1F_F(80, 108)
 }
 
 spriteset(set_TGV_Duplex_wagon_end, "..\YSTset\Graphic\locomotive\TGV\TGV_Duplex.png"){
-	wagon_start(60, 135)
+	wagon_start(80, 135)
 }
 
 spriteset(set_TGV_Duplex_engineT, "..\YSTset\Graphic\locomotive\TGV\TGV_Duplex.png"){
-	engine_r(60, 162)
+	engine_r(80, 162)
 }
 
 /*--------------------------------------------------------------------
@@ -5782,27 +5866,27 @@ spriteset(set_TGV_Duplex_LyairH_purchase, "..\YSTset\Graphic\locomotive\TGV\TGV_
 }
 
 spriteset(set_TGV_Duplex_Lyair_engineH, "..\YSTset\Graphic\locomotive\TGV\TGV_Duplex.png"){
-	engine(60, 189)
+	engine(80, 189)
 }
 
 spriteset(set_TGV_Duplex_Lyair_wagon_start, "..\YSTset\Graphic\locomotive\TGV\TGV_Duplex.png"){
-	wagon_start(60, 216)
+	wagon_start(80, 216)
 }
 
 spriteset(set_TGV_Duplex_Lyair_wagon_nomal, "..\YSTset\Graphic\locomotive\TGV\TGV_Duplex.png") {
-    wagon_1F_F(60, 243)
+    wagon_1F_F(80, 243)
 }
 
 spriteset(set_TGV_Duplex_Lyair_wagon_bar, "..\YSTset\Graphic\locomotive\TGV\TGV_Duplex.png") {
-    wagon_bar(60, 270)
+    wagon_bar(80, 270)
 }
 
 spriteset(set_TGV_Duplex_Lyair_wagon_end, "..\YSTset\Graphic\locomotive\TGV\TGV_Duplex.png"){
-	wagon_start(60, 297)
+	wagon_start(80, 297)
 }
 
 spriteset(set_TGV_Duplex_Lyair_engineT, "..\YSTset\Graphic\locomotive\TGV\TGV_Duplex.png"){
-	engine_r(60, 324)
+	engine_r(80, 324)
 }
 
 /*--------------------------------------------------------------------
@@ -5892,7 +5976,7 @@ item(FEAT_TRAINS, TGV_Duplex){
  		name:							string(STR_TGV_Duplex_NAME);
  		climates_available:				ALL_CLIMATES;
 		introduction_date:				date(1994, 1, 1);
-        track_type:						RAIL;
+        track_type:						ELRL;
         engine_class:					ENGINE_CLASS_ELECTRIC;
 		sprite_id:						SPRITE_ID_NEW_TRAIN;
         dual_headed:                    1;        
@@ -5900,7 +5984,7 @@ item(FEAT_TRAINS, TGV_Duplex){
         //spec
 		speed:							331km/h;
 		power:							10000 kW;
-		weight:							35 ton;
+		weight:							80 ton;
 		tractive_effort_coefficient:	0.3;
         air_drag_coefficient:           0.01;
         
@@ -5911,9 +5995,11 @@ item(FEAT_TRAINS, TGV_Duplex){
 		reliability_decay:				0;
         
         //Cargo
-        cargo_capacity:					1;
-        refittable_cargo_classes:		bitmask(CC_PASSENGERS);
-        non_refittable_cargo_classes:	bitmask();
+        cargo_capacity:					0;
+        refittable_cargo_classes:       NO_CARGO_CLASS;
+        non_refittable_cargo_classes:   NO_CARGO_CLASS;
+        cargo_allow_refit:              [PASS];
+        cargo_disallow_refit:           [];
         
         //Costs
         refit_cost:						0;
@@ -5959,27 +6045,27 @@ spriteset(set_TGV_OuigoH_purchase, "..\YSTset\Graphic\locomotive\TGV\TGV_Ouigo.p
 }
 
 spriteset(set_TGV_Ouigo_engineH, "..\YSTset\Graphic\locomotive\TGV\TGV_Ouigo.png"){
-	engine(60, 0)
+	engine(80, 0)
 }
 
 spriteset(set_TGV_Ouigo_wagon_start, "..\YSTset\Graphic\locomotive\TGV\TGV_Ouigo.png"){
-	wagon_start(60, 27)
+	wagon_start(80, 27)
 }
 
 spriteset(set_TGV_Ouigo_wagon, "..\YSTset\Graphic\locomotive\TGV\TGV_Ouigo.png") {
-    wagon_1F_F(60, 54)
+    wagon_1F_F(80, 54)
 }
 
 spriteset(set_TGV_Ouigo_wagon_bar, "..\YSTset\Graphic\locomotive\TGV\TGV_Ouigo.png") {
-    wagon_bar(60, 81)
+    wagon_bar(80, 81)
 }
 
 spriteset(set_TGV_Ouigo_wagon_end, "..\YSTset\Graphic\locomotive\TGV\TGV_Ouigo.png"){
-	wagon_start(60, 108)
+	wagon_start(80, 108)
 }
 
 spriteset(set_TGV_Ouigo_engineT, "..\YSTset\Graphic\locomotive\TGV\TGV_Ouigo.png"){
-	engine_r(60, 135)
+	engine_r(80, 135)
 }
 
 /*--------------------------------------------------------------------
@@ -6034,7 +6120,7 @@ item(FEAT_TRAINS, TGV_Ouigo){
         //spec
 		speed:							331km/h;
 		power:							10000 kW;
-		weight:							35 ton;
+		weight:							80 ton;
 		tractive_effort_coefficient:	0.3;
         air_drag_coefficient:           0.01;
         
@@ -6045,9 +6131,11 @@ item(FEAT_TRAINS, TGV_Ouigo){
 		reliability_decay:				0;
         
         //Cargo
-        cargo_capacity:					1;
-        refittable_cargo_classes:		bitmask(CC_PASSENGERS);
-        non_refittable_cargo_classes:	bitmask();
+        cargo_capacity:					0;
+        refittable_cargo_classes:       NO_CARGO_CLASS;
+        non_refittable_cargo_classes:   NO_CARGO_CLASS;
+        cargo_allow_refit:              [PASS];
+        cargo_disallow_refit:           [];
         
         //Costs
         refit_cost:						0;
@@ -6091,19 +6179,19 @@ spriteset(set_VTXH_purchase, "..\YSTset\Graphic\locomotive\VTX\VTX.png"){
 }
 
 spriteset(set_VTX_engineH, "..\YSTset\Graphic\locomotive\VTX\VTX.png"){
-	engine(60, 0)
+	engine(80, 0)
 }
 
 spriteset(set_VTX_wagon, "..\YSTset\Graphic\locomotive\VTX\VTX.png") {
-    wagon_1F(60, 27)
+    wagon_1F(80, 27)
 }
 
 spriteset(set_VTX_wagon_r, "..\YSTset\Graphic\locomotive\VTX\VTX.png") {
-    wagon_1F_r(60, 27)
+    wagon_1F_r(80, 27)
 }
 
 spriteset(set_VTX_engineT, "..\YSTset\Graphic\locomotive\VTX\VTX.png"){
-	engine_r(60, 54)
+	engine_r(80, 54)
 }
 
 /*--------------------------------------------------------------------
@@ -6140,7 +6228,7 @@ item(FEAT_TRAINS, VTX){
  		name:							string(STR_VTX_NAME);
  		climates_available:				ALL_CLIMATES;
 		introduction_date:				date(2020, 1, 1);
-        track_type:						RAIL;
+        track_type:						ELRL;
         engine_class:					ENGINE_CLASS_ELECTRIC;
 		sprite_id:						SPRITE_ID_NEW_TRAIN;
         dual_headed:                    1;        
@@ -6148,7 +6236,7 @@ item(FEAT_TRAINS, VTX){
         //spec
 		speed:							600km/h;
 		power:							10000 kW;
-		weight:							35 ton;
+		weight:							80 ton;
 		tractive_effort_coefficient:	0.3;
         air_drag_coefficient:           0.01;
         
@@ -6160,8 +6248,10 @@ item(FEAT_TRAINS, VTX){
         
         //Cargo
         cargo_capacity:					40;
-        refittable_cargo_classes:		bitmask(CC_PASSENGERS);
-        non_refittable_cargo_classes:	bitmask();
+        refittable_cargo_classes:       NO_CARGO_CLASS;
+        non_refittable_cargo_classes:   NO_CARGO_CLASS;
+        cargo_allow_refit:              [PASS];
+        cargo_disallow_refit:           [];
     
         //Costs
         refit_cost:						0;
@@ -6210,19 +6300,19 @@ spriteset(set_YFXH_purchase, "..\YSTset\Graphic\locomotive\YFX\YFX.png"){
 }
 
 spriteset(set_YFX_engineH, "..\YSTset\Graphic\locomotive\YFX\YFX.png"){
-	engine(60, 0)
+	engine(80, 0)
 }
 
 spriteset(set_YFX_wagon, "..\YSTset\Graphic\locomotive\YFX\YFX.png") {
-    wagon_1F(60, 27)
+    wagon_1F(80, 27)
 }
 
 spriteset(set_YFX_wagon_r, "..\YSTset\Graphic\locomotive\YFX\YFX.png") {
-    wagon_1F_r(60, 27)
+    wagon_1F_r(80, 27)
 }
 
 spriteset(set_YFX_engineT, "..\YSTset\Graphic\locomotive\YFX\YFX.png"){
-	engine_r(60, 54)
+	engine_r(80, 54)
 }
 
 /*--------------------------------------------------------------------
@@ -6263,7 +6353,7 @@ item(FEAT_TRAINS, YFX){
  		name:							string(STR_YFX_NAME);
  		climates_available:				ALL_CLIMATES;
 		introduction_date:				date(2020, 1, 1);
-        track_type:						RAIL;
+        track_type:						ELRL;
         engine_class:					ENGINE_CLASS_ELECTRIC;
 		sprite_id:						SPRITE_ID_NEW_TRAIN;
         dual_headed:                    1;        
@@ -6271,7 +6361,7 @@ item(FEAT_TRAINS, YFX){
         //spec
 		speed:							600km/h;
 		power:							10000 kW;
-		weight:							35 ton;
+		weight:							80 ton;
 		tractive_effort_coefficient:	0.3;
         air_drag_coefficient:           0.01;
         
@@ -6283,8 +6373,10 @@ item(FEAT_TRAINS, YFX){
         
         //Cargo
         cargo_capacity:					100;
-        refittable_cargo_classes:		bitmask(CC_MAIL, CC_EXPRESS, CC_ARMOURED, CC_BULK, CC_PIECE_GOODS, CC_LIQUID, CC_REFRIGERATED, CC_HAZARDOUS, CC_COVERED, CC_OVERSIZED, CC_POWDERIZED, CC_NON_POURABLE, CC_NEO_BULK);
-        non_refittable_cargo_classes:	bitmask(CC_PASSENGERS);
+        refittable_cargo_classes:       NO_CARGO_CLASS;
+        non_refittable_cargo_classes:   NO_CARGO_CLASS;
+        cargo_allow_refit:              [];
+        cargo_disallow_refit:           [PASS];
     
         //Costs
         refit_cost:						0;
@@ -6320,28 +6412,37 @@ item(FEAT_TRAINS, YFXF){
 	property {
  		name:							string(STR_YFXF_NAME);
  		climates_available:				ALL_CLIMATES;
-		track_type:						RAIL;
-		power:							0;
-		weight:							20 ton;
-		extra_weight_per_wagon:			20 ton;
-		tractive_effort_coefficient:	0.3;
-		cargo_capacity:					200;
-		loading_speed:					25;
-		vehicle_life:					255;
 		introduction_date:				date(2020, 1, 1);
+        track_type:						RAIL;
+		sprite_id:						SPRITE_ID_NEW_TRAIN;
+        
+        //spec
+        power:                          0 kW;
+        weight:							40 ton;
+		tractive_effort_coefficient:	0.3;
+        
+        //Cargo
+        cargo_capacity:					200;
+        refittable_cargo_classes:       NO_CARGO_CLASS;
+        non_refittable_cargo_classes:   NO_CARGO_CLASS;
+        cargo_allow_refit:              [COAL, MAIL, OIL_, LVST, GOOD, GRAI, WOOD, IORE, STEL, VALU, PAPR, WHEA, FOOD, GOLD, RUBR, FRUT, MAIZ, CORE, WATR, DIAM, SUGR, BATT, BUBL, COLA, CTCD, FZDR, PLST, SWET, TOFF, TOYS, AORE, RCYC, SGBT, FICR, MNSP, METL, ACID, BEER, STAL, ALUM, NH3_, BEAN, BDMT, CBLK, STCB, CASS, CSTI, CMNT, RFPR, CHLO, CLAY, SOAP, CTAR, JAVA, COKE, COPR, EOIL, POWR, ENSP, BOOM, FMSP, FECR, FERT, FISH, GLAS, KAOL, LIME, MNO2, MILK, NITR, NUTS, O2__, COAT, PEAT, PETR, PHOS, IRON, PIPE, PLAS, POTA, PORE, QLME, SALT, SAND, SCMT, SLAG, SASH, LYE_, STST, STSE, STSH, STWR, GRVL, SULP, WDPR, TYRE, VBOD, VENG, VPTS, VEHI, WOOL, ZINC];
+        cargo_disallow_refit:           [PASS];
+        
+        //Costs
+        refit_cost:						0;
+        
+        //Flags
+        misc_flags:						bitmask(TRAIN_FLAG_MU, TRAIN_FLAG_FLIP, TRAIN_FLAG_AUTOREFIT);
+        extra_weight_per_wagon:			20 ton;
+		
+        loading_speed:					25;
+		vehicle_life:					255;
 		model_life:						VEHICLE_NEVER_EXPIRES;
 		retire_early:					0;
 		reliability_decay:				0;
 		cost_factor:					10;
-		running_cost_base:				RUNNING_COST_ELECTRIC;
 		running_cost_factor:			50;
-		refit_cost:						0;
-		engine_class:					ENGINE_CLASS_ELECTRIC;
-		sprite_id:						SPRITE_ID_NEW_TRAIN;
-		misc_flags:						bitmask(TRAIN_FLAG_MU, TRAIN_FLAG_FLIP, TRAIN_FLAG_AUTOREFIT);
-        refittable_cargo_classes:		bitmask(CC_MAIL, CC_EXPRESS, CC_ARMOURED, CC_BULK, CC_PIECE_GOODS, CC_LIQUID, CC_REFRIGERATED, CC_HAZARDOUS, CC_COVERED, CC_OVERSIZED, CC_POWDERIZED, CC_NON_POURABLE, CC_NEO_BULK);
-        non_refittable_cargo_classes:	bitmask();}
-
+        }
 	graphics {
 		default:						sw_YFX_wagon;
 		purchase:						sw_YFXF_purchase;
@@ -6366,27 +6467,27 @@ spriteset(set_YN01_purchase, "..\YSTset\Graphic\locomotive\YN\YN.png"){
 }
 
 spriteset(set_YN01_engineH, "..\YSTset\Graphic\locomotive\YN\YN.png"){
-	engine(60, 0)
+	engine(80, 0)
 }
 
 spriteset(set_YN01_wagon_start, "..\YSTset\Graphic\locomotive\YN\YN.png"){
-	wagon_start(60, 27)
+	wagon_start(80, 27)
 }
 
 spriteset(set_YN01_wagon, "..\YSTset\Graphic\locomotive\YN\YN.png") {
-    wagon_1F(60, 54)
+    wagon_1F(80, 54)
 }
 
 spriteset(set_YN01_wagon_r, "..\YSTset\Graphic\locomotive\YN\YN.png") {
-    wagon_1F_r(60, 54)
+    wagon_1F_r(80, 54)
 }
 
 spriteset(set_YN01_wagon_end, "..\YSTset\Graphic\locomotive\YN\YN.png"){
-	wagon_start(60, 81)
+	wagon_start(80, 81)
 }
 
 spriteset(set_YN01_engineT, "..\YSTset\Graphic\locomotive\YN\YN.png"){
-	engine_r(60, 108)
+	engine_r(80, 108)
 }
 
 /*--------------------------------------------------------------------
@@ -6397,27 +6498,27 @@ spriteset(set_YN01Y_purchase, "..\YSTset\Graphic\locomotive\YN\YN.png"){
 }
 
 spriteset(set_YN01Y_engineH, "..\YSTset\Graphic\locomotive\YN\YN.png"){
-	engine(60, 135)
+	engine(80, 135)
 }
 
 spriteset(set_YN01Y_wagon_start, "..\YSTset\Graphic\locomotive\YN\YN.png"){
-	wagon_start(60, 162)
+	wagon_start(80, 162)
 }
 
 spriteset(set_YN01Y_wagon, "..\YSTset\Graphic\locomotive\YN\YN.png") {
-    wagon_1F(60, 189)
+    wagon_1F(80, 189)
 }
 
 spriteset(set_YN01Y_wagon_r, "..\YSTset\Graphic\locomotive\YN\YN.png") {
-    wagon_1F_r(60, 189)
+    wagon_1F_r(80, 189)
 }
 
 spriteset(set_YN01Y_wagon_end, "..\YSTset\Graphic\locomotive\YN\YN.png"){
-	wagon_start(60, 216)
+	wagon_start(80, 216)
 }
 
 spriteset(set_YN01Y_engineT, "..\YSTset\Graphic\locomotive\YN\YN.png"){
-	engine_r(60, 243)
+	engine_r(80, 243)
 }
 /*--------------------------------------------------------------------
 5.36.1.3. YN02
@@ -6427,27 +6528,27 @@ spriteset(set_YN02_purchase, "..\YSTset\Graphic\locomotive\YN\YN.png"){
 }
 
 spriteset(set_YN02_engineH, "..\YSTset\Graphic\locomotive\YN\YN.png"){
-	engine(60, 270)
+	engine(80, 270)
 }
 
 spriteset(set_YN02_wagon_start, "..\YSTset\Graphic\locomotive\YN\YN.png"){
-	wagon_start(60, 297)
+	wagon_start(80, 297)
 }
 
 spriteset(set_YN02_wagon, "..\YSTset\Graphic\locomotive\YN\YN.png") {
-    wagon_1F(60, 324)
+    wagon_1F(80, 324)
 }
 
 spriteset(set_YN02_wagon_r, "..\YSTset\Graphic\locomotive\YN\YN.png") {
-    wagon_1F_r(60, 324)
+    wagon_1F_r(80, 324)
 }
 
 spriteset(set_YN02_wagon_end, "..\YSTset\Graphic\locomotive\YN\YN.png"){
-	wagon_start(60, 351)
+	wagon_start(80, 351)
 }
 
 spriteset(set_YN02_engineT, "..\YSTset\Graphic\locomotive\YN\YN.png"){
-	engine_r(60, 378)
+	engine_r(80, 378)
 }
 
 /*--------------------------------------------------------------------
@@ -6542,14 +6643,14 @@ item(FEAT_TRAINS, YN){
  		name:							string(STR_YN_NAME);
  		climates_available:				ALL_CLIMATES;
 		introduction_date:				date(2020, 1, 1);
-        track_type:						RAIL;
+        track_type:						ELRL;
         engine_class:					ENGINE_CLASS_ELECTRIC;
 		sprite_id:						SPRITE_ID_NEW_TRAIN;
         dual_headed:                    1;        
         
         //spec
 		power:							10000 kW;
-		weight:							35 ton;
+		weight:							80 ton;
 		tractive_effort_coefficient:	0.3;
         air_drag_coefficient:           0.01;
         
@@ -6561,8 +6662,10 @@ item(FEAT_TRAINS, YN){
         
         //Cargo
         cargo_capacity:					58;
-        refittable_cargo_classes:		bitmask(CC_PASSENGERS);
-        non_refittable_cargo_classes:	bitmask();
+        refittable_cargo_classes:       NO_CARGO_CLASS;
+        non_refittable_cargo_classes:   NO_CARGO_CLASS;
+        cargo_allow_refit:              [PASS];
+        cargo_disallow_refit:           [];
         
         //Costs
         cost_factor:					10;
@@ -6612,27 +6715,27 @@ spriteset(set_YTRO_100AH_purchase, "..\YSTset\Graphic\locomotive\YTRO\YTRO_100.p
 }
 
 spriteset(set_YTRO_100A_engineH, "..\YSTset\Graphic\locomotive\YTRO\YTRO_100.png"){
-	engine(60, 0)
+	engine(80, 0)
 }
 
 spriteset(set_YTRO_100A_1F_wagon, "..\YSTset\Graphic\locomotive\YTRO\YTRO_100.png") {
-    wagon_1F(60, 27)
+    wagon_1F(80, 27)
 }
 
 spriteset(set_YTRO_100A_1F_wagon_r, "..\YSTset\Graphic\locomotive\YTRO\YTRO_100.png") {
-    wagon_1F_r(60, 27)
+    wagon_1F_r(80, 27)
 }
 
 spriteset(set_YTRO_100A_2F_wagon, "..\YSTset\Graphic\locomotive\YTRO\YTRO_2F.png") {
-    wagon_2F(60, 0)
+    wagon_2F(80, 0)
 }
 
 spriteset(set_YTRO_100A_2F_wagon_r, "..\YSTset\Graphic\locomotive\YTRO\YTRO_2F.png") {
-    wagon_2F_r(60, 0)
+    wagon_2F_r(80, 0)
 }
 
 spriteset(set_YTRO_100A_engineT, "..\YSTset\Graphic\locomotive\YTRO\YTRO_100.png"){
-	engine_r(60, 54)
+	engine_r(80, 54)
 }
 
 /*--------------------------------------------------------------------
@@ -6643,27 +6746,27 @@ spriteset(set_YTRO_100BH_purchase, "..\YSTset\Graphic\locomotive\YTRO\YTRO_100.p
 }
 
 spriteset(set_YTRO_100B_engineH, "..\YSTset\Graphic\locomotive\YTRO\YTRO_100.png"){
-	engine(60, 81)
+	engine(80, 81)
 }
 
 spriteset(set_YTRO_100B_1F_wagon, "..\YSTset\Graphic\locomotive\YTRO\YTRO_100.png") {
-    wagon_1F(60, 108)
+    wagon_1F(80, 108)
 }
 
 spriteset(set_YTRO_100B_1F_wagon_r, "..\YSTset\Graphic\locomotive\YTRO\YTRO_100.png") {
-    wagon_1F_r(60, 108)
+    wagon_1F_r(80, 108)
 }
 
 spriteset(set_YTRO_100B_2F_wagon, "..\YSTset\Graphic\locomotive\YTRO\YTRO_2F.png") {
-    wagon_2F(60, 27)
+    wagon_2F(80, 27)
 }
 
 spriteset(set_YTRO_100B_2F_wagon_r, "..\YSTset\Graphic\locomotive\YTRO\YTRO_2F.png") {
-    wagon_2F_r(60, 27)
+    wagon_2F_r(80, 27)
 }
 
 spriteset(set_YTRO_100B_engineT, "..\YSTset\Graphic\locomotive\YTRO\YTRO_100.png"){
-	engine_r(60, 135)
+	engine_r(80, 135)
 }
 
 /*--------------------------------------------------------------------
@@ -6674,27 +6777,27 @@ spriteset(set_YTRO_100CH_purchase, "..\YSTset\Graphic\locomotive\YTRO\YTRO_100.p
 }
 
 spriteset(set_YTRO_100C_engineH, "..\YSTset\Graphic\locomotive\YTRO\YTRO_100.png"){
-	engine(60, 162)
+	engine(80, 162)
 }
 
 spriteset(set_YTRO_100C_1F_wagon, "..\YSTset\Graphic\locomotive\YTRO\YTRO_100.png") {
-    wagon_1F(60, 189)
+    wagon_1F(80, 189)
 }
 
 spriteset(set_YTRO_100C_1F_wagon_r, "..\YSTset\Graphic\locomotive\YTRO\YTRO_100.png") {
-    wagon_1F_r(60, 189)
+    wagon_1F_r(80, 189)
 }
 
 spriteset(set_YTRO_100C_2F_wagon, "..\YSTset\Graphic\locomotive\YTRO\YTRO_2F.png") {
-    wagon_2F(60, 54)
+    wagon_2F(80, 54)
 }
 
 spriteset(set_YTRO_100C_2F_wagon_r, "..\YSTset\Graphic\locomotive\YTRO\YTRO_2F.png") {
-    wagon_2F_r(60, 54)
+    wagon_2F_r(80, 54)
 }
 
 spriteset(set_YTRO_100C_engineT, "..\YSTset\Graphic\locomotive\YTRO\YTRO_100.png"){
-	engine_r(60, 216)
+	engine_r(80, 216)
 }
 
 /*--------------------------------------------------------------------
@@ -6705,27 +6808,27 @@ spriteset(set_YTRO_100DH_purchase, "..\YSTset\Graphic\locomotive\YTRO\YTRO_100.p
 }
 
 spriteset(set_YTRO_100D_engineH, "..\YSTset\Graphic\locomotive\YTRO\YTRO_100.png"){
-	engine(60, 243)
+	engine(80, 243)
 }
 
 spriteset(set_YTRO_100D_1F_wagon, "..\YSTset\Graphic\locomotive\YTRO\YTRO_100.png") {
-    wagon_1F(60, 270)
+    wagon_1F(80, 270)
 }
 
 spriteset(set_YTRO_100D_1F_wagon_r, "..\YSTset\Graphic\locomotive\YTRO\YTRO_100.png") {
-    wagon_1F_r(60, 270)
+    wagon_1F_r(80, 270)
 }
 
 spriteset(set_YTRO_100D_2F_wagon, "..\YSTset\Graphic\locomotive\YTRO\YTRO_2F.png") {
-    wagon_2F(60, 81)
+    wagon_2F(80, 81)
 }
 
 spriteset(set_YTRO_100D_2F_wagon_r, "..\YSTset\Graphic\locomotive\YTRO\YTRO_2F.png") {
-    wagon_2F_r(60, 81)
+    wagon_2F_r(80, 81)
 }
 
 spriteset(set_YTRO_100D_engineT, "..\YSTset\Graphic\locomotive\YTRO\YTRO_100.png"){
-	engine_r(60, 297)
+	engine_r(80, 297)
 }
 
 /*--------------------------------------------------------------------
@@ -6736,27 +6839,27 @@ spriteset(set_YTRO_100EH_purchase, "..\YSTset\Graphic\locomotive\YTRO\YTRO_100.p
 }
 
 spriteset(set_YTRO_100E_engineH, "..\YSTset\Graphic\locomotive\YTRO\YTRO_100.png"){
-	engine(60, 324)
+	engine(80, 324)
 }
 
 spriteset(set_YTRO_100E_1F_wagon, "..\YSTset\Graphic\locomotive\YTRO\YTRO_100.png") {
-    wagon_1F(60, 351)
+    wagon_1F(80, 351)
 }
 
 spriteset(set_YTRO_100E_1F_wagon_r, "..\YSTset\Graphic\locomotive\YTRO\YTRO_100.png") {
-    wagon_1F_r(60, 351)
+    wagon_1F_r(80, 351)
 }
 
 spriteset(set_YTRO_100E_2F_wagon, "..\YSTset\Graphic\locomotive\YTRO\YTRO_2F.png") {
-    wagon_2F(60, 108)
+    wagon_2F(80, 108)
 }
 
 spriteset(set_YTRO_100E_2F_wagon_r, "..\YSTset\Graphic\locomotive\YTRO\YTRO_2F.png") {
-    wagon_2F_r(60, 108)
+    wagon_2F_r(80, 108)
 }
 
 spriteset(set_YTRO_100E_engineT, "..\YSTset\Graphic\locomotive\YTRO\YTRO_100.png"){
-	engine_r(60, 378)
+	engine_r(80, 378)
 }
 
 /*--------------------------------------------------------------------
@@ -6854,15 +6957,15 @@ item(FEAT_TRAINS, YTRO_100){
  		name:							string(STR_YTRO_100_NAME);
  		climates_available:				ALL_CLIMATES;
 		introduction_date:				date(2020, 1, 1);
-        track_type:						RAIL;
+        track_type:						ELRL;
         engine_class:					ENGINE_CLASS_ELECTRIC;
 		sprite_id:						SPRITE_ID_NEW_TRAIN;
         dual_headed:                    1;        
         
         //spec
-		speed:							150km/h;
+		speed:							151km/h;
 		power:							10000 kW;
-		weight:							35 ton;
+		weight:							80 ton;
 		tractive_effort_coefficient:	0.3;
         air_drag_coefficient:           0.01;
         
@@ -6874,8 +6977,10 @@ item(FEAT_TRAINS, YTRO_100){
         
         //Cargo
         cargo_capacity:					80;
-        refittable_cargo_classes:		bitmask(CC_PASSENGERS);
-        non_refittable_cargo_classes:	bitmask();
+        refittable_cargo_classes:       NO_CARGO_CLASS;
+        non_refittable_cargo_classes:   NO_CARGO_CLASS;
+        cargo_allow_refit:              [PASS];
+        cargo_disallow_refit:           [];
         
         //Costs
         refit_cost:						0;
@@ -6931,27 +7036,27 @@ spriteset(set_YTRO_200AH_purchase, "..\YSTset\Graphic\locomotive\YTRO\YTRO_200.p
 }
 
 spriteset(set_YTRO_200A_engineH, "..\YSTset\Graphic\locomotive\YTRO\YTRO_200.png"){
-	engine(60, 0)
+	engine(68, 0)
 }
 
 spriteset(set_YTRO_200A_1F_wagon, "..\YSTset\Graphic\locomotive\YTRO\YTRO_200.png") {
-    wagon_1F(60, 27)
+    wagon_1F(80, 27)
 }
 
 spriteset(set_YTRO_200A_1F_wagon_r, "..\YSTset\Graphic\locomotive\YTRO\YTRO_200.png") {
-    wagon_1F_r(60, 27)
+    wagon_1F_r(80, 27)
 }
 
 spriteset(set_YTRO_200A_2F_wagon, "..\YSTset\Graphic\locomotive\YTRO\YTRO_2F.png") {
-    wagon_2F(60, 0)
+    wagon_2F(80, 0)
 }
 
 spriteset(set_YTRO_200A_2F_wagon_r, "..\YSTset\Graphic\locomotive\YTRO\YTRO_2F.png") {
-    wagon_2F_r(60, 0)
+    wagon_2F_r(80, 0)
 }
 
 spriteset(set_YTRO_200A_engineT, "..\YSTset\Graphic\locomotive\YTRO\YTRO_200.png"){
-	engine_r(60, 54)
+	engine_r(80, 54)
 }
 
 /*--------------------------------------------------------------------
@@ -6962,27 +7067,27 @@ spriteset(set_YTRO_200BH_purchase, "..\YSTset\Graphic\locomotive\YTRO\YTRO_200.p
 }
 
 spriteset(set_YTRO_200B_engineH, "..\YSTset\Graphic\locomotive\YTRO\YTRO_200.png"){
-	engine(60, 81)
+	engine(80, 81)
 }
 
 spriteset(set_YTRO_200B_1F_wagon, "..\YSTset\Graphic\locomotive\YTRO\YTRO_200.png") {
-    wagon_1F(60, 108)
+    wagon_1F(80, 108)
 }
 
 spriteset(set_YTRO_200B_1F_wagon_r, "..\YSTset\Graphic\locomotive\YTRO\YTRO_200.png") {
-    wagon_1F_r(60, 108)
+    wagon_1F_r(80, 108)
 }
 
 spriteset(set_YTRO_200B_2F_wagon, "..\YSTset\Graphic\locomotive\YTRO\YTRO_2F.png") {
-    wagon_2F(60, 27)
+    wagon_2F(80, 27)
 }
 
 spriteset(set_YTRO_200B_2F_wagon_r, "..\YSTset\Graphic\locomotive\YTRO\YTRO_2F.png") {
-    wagon_2F_r(60, 27)
+    wagon_2F_r(80, 27)
 }
 
 spriteset(set_YTRO_200B_engineT, "..\YSTset\Graphic\locomotive\YTRO\YTRO_200.png"){
-	engine_r(60, 135)
+	engine_r(80, 135)
 }
 
 /*--------------------------------------------------------------------
@@ -6993,27 +7098,27 @@ spriteset(set_YTRO_200CH_purchase, "..\YSTset\Graphic\locomotive\YTRO\YTRO_200.p
 }
 
 spriteset(set_YTRO_200C_engineH, "..\YSTset\Graphic\locomotive\YTRO\YTRO_200.png"){
-	engine(60, 162)
+	engine(80, 162)
 }
 
 spriteset(set_YTRO_200C_1F_wagon, "..\YSTset\Graphic\locomotive\YTRO\YTRO_200.png") {
-    wagon_1F(60, 189)
+    wagon_1F(80, 189)
 }
 
 spriteset(set_YTRO_200C_1F_wagon_r, "..\YSTset\Graphic\locomotive\YTRO\YTRO_200.png") {
-    wagon_1F_r(60, 189)
+    wagon_1F_r(80, 189)
 }
 
 spriteset(set_YTRO_200C_2F_wagon, "..\YSTset\Graphic\locomotive\YTRO\YTRO_2F.png") {
-    wagon_2F(60, 54)
+    wagon_2F(80, 54)
 }
 
 spriteset(set_YTRO_200C_2F_wagon_r, "..\YSTset\Graphic\locomotive\YTRO\YTRO_2F.png") {
-    wagon_2F_r(60, 54)
+    wagon_2F_r(80, 54)
 }
 
 spriteset(set_YTRO_200C_engineT, "..\YSTset\Graphic\locomotive\YTRO\YTRO_200.png"){
-	engine_r(60, 216)
+	engine_r(80, 216)
 }
 
 /*--------------------------------------------------------------------
@@ -7024,27 +7129,27 @@ spriteset(set_YTRO_200DH_purchase, "..\YSTset\Graphic\locomotive\YTRO\YTRO_200.p
 }
 
 spriteset(set_YTRO_200D_engineH, "..\YSTset\Graphic\locomotive\YTRO\YTRO_200.png"){
-	engine(60, 243)
+	engine(80, 243)
 }
 
 spriteset(set_YTRO_200D_1F_wagon, "..\YSTset\Graphic\locomotive\YTRO\YTRO_200.png") {
-    wagon_1F(60, 270)
+    wagon_1F(80, 270)
 }
 
 spriteset(set_YTRO_200D_1F_wagon_r, "..\YSTset\Graphic\locomotive\YTRO\YTRO_200.png") {
-    wagon_1F_r(60, 270)
+    wagon_1F_r(80, 270)
 }
 
 spriteset(set_YTRO_200D_2F_wagon, "..\YSTset\Graphic\locomotive\YTRO\YTRO_2F.png") {
-    wagon_2F(60, 81)
+    wagon_2F(80, 81)
 }
 
 spriteset(set_YTRO_200D_2F_wagon_r, "..\YSTset\Graphic\locomotive\YTRO\YTRO_2F.png") {
-    wagon_2F_r(60, 81)
+    wagon_2F_r(80, 81)
 }
 
 spriteset(set_YTRO_200D_engineT, "..\YSTset\Graphic\locomotive\YTRO\YTRO_200.png"){
-	engine_r(60, 297)
+	engine_r(80, 297)
 }
 
 /*--------------------------------------------------------------------
@@ -7055,27 +7160,27 @@ spriteset(set_YTRO_200EH_purchase, "..\YSTset\Graphic\locomotive\YTRO\YTRO_200.p
 }
 
 spriteset(set_YTRO_200E_engineH, "..\YSTset\Graphic\locomotive\YTRO\YTRO_200.png"){
-	engine(60, 324)
+	engine(80, 324)
 }
 
 spriteset(set_YTRO_200E_1F_wagon, "..\YSTset\Graphic\locomotive\YTRO\YTRO_200.png") {
-    wagon_1F(60, 351)
+    wagon_1F(80, 351)
 }
 
 spriteset(set_YTRO_200E_1F_wagon_r, "..\YSTset\Graphic\locomotive\YTRO\YTRO_200.png") {
-    wagon_1F_r(60, 351)
+    wagon_1F_r(80, 351)
 }
 
 spriteset(set_YTRO_200E_2F_wagon, "..\YSTset\Graphic\locomotive\YTRO\YTRO_2F.png") {
-    wagon_2F(60, 108)
+    wagon_2F(80, 108)
 }
 
 spriteset(set_YTRO_200E_2F_wagon_r, "..\YSTset\Graphic\locomotive\YTRO\YTRO_2F.png") {
-    wagon_2F_r(60, 108)
+    wagon_2F_r(80, 108)
 }
 
 spriteset(set_YTRO_200E_engineT, "..\YSTset\Graphic\locomotive\YTRO\YTRO_200.png"){
-	engine_r(60, 378)
+	engine_r(80, 378)
 }
 
 /*--------------------------------------------------------------------
@@ -7086,27 +7191,27 @@ spriteset(set_YTRO_200FH_purchase, "..\YSTset\Graphic\locomotive\YTRO\YTRO_200.p
 }
 
 spriteset(set_YTRO_200F_engineH, "..\YSTset\Graphic\locomotive\YTRO\YTRO_200.png"){
-	engine(60, 405)
+	engine(80, 405)
 }
 
 spriteset(set_YTRO_200F_1F_wagon, "..\YSTset\Graphic\locomotive\YTRO\YTRO_200.png") {
-    wagon_1F(60, 432)
+    wagon_1F(80, 432)
 }
 
 spriteset(set_YTRO_200F_1F_wagon_r, "..\YSTset\Graphic\locomotive\YTRO\YTRO_200.png") {
-    wagon_1F_r(60, 432)
+    wagon_1F_r(80, 432)
 }
 
 spriteset(set_YTRO_200F_2F_wagon, "..\YSTset\Graphic\locomotive\YTRO\YTRO_2F.png") {
-    wagon_2F(60, 135)
+    wagon_2F(80, 135)
 }
 
 spriteset(set_YTRO_200F_2F_wagon_r, "..\YSTset\Graphic\locomotive\YTRO\YTRO_2F.png") {
-    wagon_2F_r(60, 135)
+    wagon_2F_r(80, 135)
 }
 
 spriteset(set_YTRO_200F_engineT, "..\YSTset\Graphic\locomotive\YTRO\YTRO_200.png"){
-	engine_r(60, 459)
+	engine_r(80, 459)
 }
 
 /*--------------------------------------------------------------------
@@ -7117,27 +7222,27 @@ spriteset(set_YTRO_200GH_purchase, "..\YSTset\Graphic\locomotive\YTRO\YTRO_200.p
 }
 
 spriteset(set_YTRO_200G_engineH, "..\YSTset\Graphic\locomotive\YTRO\YTRO_200.png"){
-	engine(60, 486)
+	engine(80, 486)
 }
 
 spriteset(set_YTRO_200G_1F_wagon, "..\YSTset\Graphic\locomotive\YTRO\YTRO_200.png") {
-    wagon_1F(60, 513)
+    wagon_1F(80, 513)
 }
 
 spriteset(set_YTRO_200G_1F_wagon_r, "..\YSTset\Graphic\locomotive\YTRO\YTRO_200.png") {
-    wagon_1F_r(60, 513)
+    wagon_1F_r(80, 513)
 }
 
 spriteset(set_YTRO_200G_2F_wagon, "..\YSTset\Graphic\locomotive\YTRO\YTRO_2F.png") {
-    wagon_2F(60, 162)
+    wagon_2F(80, 162)
 }
 
 spriteset(set_YTRO_200G_2F_wagon_r, "..\YSTset\Graphic\locomotive\YTRO\YTRO_2F.png") {
-    wagon_2F_r(60, 162)
+    wagon_2F_r(80, 162)
 }
 
 spriteset(set_YTRO_200G_engineT, "..\YSTset\Graphic\locomotive\YTRO\YTRO_200.png"){
-	engine_r(60, 540)
+	engine_r(80, 540)
 }
 
 /*--------------------------------------------------------------------
@@ -7148,27 +7253,27 @@ spriteset(set_YTRO_200HH_purchase, "..\YSTset\Graphic\locomotive\YTRO\YTRO_200.p
 }
 
 spriteset(set_YTRO_200H_engineH, "..\YSTset\Graphic\locomotive\YTRO\YTRO_200.png"){
-	engine(60, 567)
+	engine(80, 567)
 }
 
 spriteset(set_YTRO_200H_1F_wagon, "..\YSTset\Graphic\locomotive\YTRO\YTRO_200.png") {
-    wagon_1F(60, 594)
+    wagon_1F(80, 594)
 }
 
 spriteset(set_YTRO_200H_1F_wagon_r, "..\YSTset\Graphic\locomotive\YTRO\YTRO_200.png") {
-    wagon_1F_r(60, 594)
+    wagon_1F_r(80, 594)
 }
 
 spriteset(set_YTRO_200H_2F_wagon, "..\YSTset\Graphic\locomotive\YTRO\YTRO_2F.png") {
-    wagon_2F(60, 189)
+    wagon_2F(80, 189)
 }
 
 spriteset(set_YTRO_200H_2F_wagon_r, "..\YSTset\Graphic\locomotive\YTRO\YTRO_2F.png") {
-    wagon_2F_r(60, 189)
+    wagon_2F_r(80, 189)
 }
 
 spriteset(set_YTRO_200H_engineT, "..\YSTset\Graphic\locomotive\YTRO\YTRO_200.png"){
-	engine_r(60, 621)
+	engine_r(80, 621)
 }
 
 /*--------------------------------------------------------------------
@@ -7179,27 +7284,27 @@ spriteset(set_YTRO_200IH_purchase, "..\YSTset\Graphic\locomotive\YTRO\YTRO_200.p
 }
 
 spriteset(set_YTRO_200I_engineH, "..\YSTset\Graphic\locomotive\YTRO\YTRO_200.png"){
-	engine(60, 648)
+	engine(80, 648)
 }
 
 spriteset(set_YTRO_200I_1F_wagon, "..\YSTset\Graphic\locomotive\YTRO\YTRO_200.png") {
-    wagon_1F(60, 675)
+    wagon_1F(80, 675)
 }
 
 spriteset(set_YTRO_200I_1F_wagon_r, "..\YSTset\Graphic\locomotive\YTRO\YTRO_200.png") {
-    wagon_1F_r(60, 675)
+    wagon_1F_r(80, 675)
 }
 
 spriteset(set_YTRO_200I_2F_wagon, "..\YSTset\Graphic\locomotive\YTRO\YTRO_2F.png") {
-    wagon_2F(60, 216)
+    wagon_2F(80, 216)
 }
 
 spriteset(set_YTRO_200I_2F_wagon_r, "..\YSTset\Graphic\locomotive\YTRO\YTRO_2F.png") {
-    wagon_2F_r(60, 216)
+    wagon_2F_r(80, 216)
 }
 
 spriteset(set_YTRO_200I_engineT, "..\YSTset\Graphic\locomotive\YTRO\YTRO_200.png"){
-	engine_r(60, 702)
+	engine_r(80, 702)
 }
 
 /*--------------------------------------------------------------------
@@ -7210,27 +7315,27 @@ spriteset(set_YTRO_200JH_purchase, "..\YSTset\Graphic\locomotive\YTRO\YTRO_200.p
 }
 
 spriteset(set_YTRO_200J_engineH, "..\YSTset\Graphic\locomotive\YTRO\YTRO_200.png"){
-	engine(60, 729)
+	engine(80, 729)
 }
 
 spriteset(set_YTRO_200J_1F_wagon, "..\YSTset\Graphic\locomotive\YTRO\YTRO_200.png") {
-    wagon_1F(60, 756)
+    wagon_1F(80, 756)
 }
 
 spriteset(set_YTRO_200J_1F_wagon_r, "..\YSTset\Graphic\locomotive\YTRO\YTRO_200.png") {
-    wagon_1F_r(60, 756)
+    wagon_1F_r(80, 756)
 }
 
 spriteset(set_YTRO_200J_2F_wagon, "..\YSTset\Graphic\locomotive\YTRO\YTRO_2F.png") {
-    wagon_2F(60, 243)
+    wagon_2F(80, 243)
 }
 
 spriteset(set_YTRO_200J_2F_wagon_r, "..\YSTset\Graphic\locomotive\YTRO\YTRO_2F.png") {
-    wagon_2F_r(60, 243)
+    wagon_2F_r(80, 243)
 }
 
 spriteset(set_YTRO_200J_engineT, "..\YSTset\Graphic\locomotive\YTRO\YTRO_200.png"){
-	engine_r(60, 783)
+	engine_r(80, 783)
 }
 
 
@@ -7365,7 +7470,7 @@ item(FEAT_TRAINS, YTRO_200){
  		name:							string(STR_YTRO_200_NAME);
  		climates_available:				ALL_CLIMATES;
 		introduction_date:				date(2020, 1, 1);
-        track_type:						RAIL;
+        track_type:						ELRL;
         engine_class:					ENGINE_CLASS_ELECTRIC;
 		sprite_id:						SPRITE_ID_NEW_TRAIN;
         dual_headed:                    1;        
@@ -7373,7 +7478,7 @@ item(FEAT_TRAINS, YTRO_200){
         //spec
 		speed:							150km/h;
 		power:							10000 kW;
-		weight:							35 ton;
+		weight:							80 ton;
 		tractive_effort_coefficient:	0.3;
         air_drag_coefficient:           0.01;
         
@@ -7385,8 +7490,10 @@ item(FEAT_TRAINS, YTRO_200){
         
         //Cargo
         cargo_capacity:					80;
-        refittable_cargo_classes:		bitmask(CC_PASSENGERS);
-        non_refittable_cargo_classes:	bitmask();
+        refittable_cargo_classes:       NO_CARGO_CLASS;
+        non_refittable_cargo_classes:   NO_CARGO_CLASS;
+        cargo_allow_refit:              [PASS];
+        cargo_disallow_refit:           [];
         
         //Costs
         refit_cost:						0;
@@ -7439,27 +7546,27 @@ spriteset(set_YTXH_purchase, "..\YSTset\Graphic\locomotive\YTX\YTX.png"){
 }
 
 spriteset(set_YTX_engineH, "..\YSTset\Graphic\locomotive\YTX\YTX.png"){
-	engine(60, 0)
+	engine(80, 0)
 }
 
 spriteset(set_YTX_wagon_start, "..\YSTset\Graphic\locomotive\YTX\YTX.png"){
-	wagon_start(60, 27)
+	wagon_start(80, 27)
 }
 
 spriteset(set_YTX_wagon, "..\YSTset\Graphic\locomotive\YTX\YTX.png") {
-    wagon_1F(60, 54)
+    wagon_1F(80, 54)
 }
 
 spriteset(set_YTX_wagon_r, "..\YSTset\Graphic\locomotive\YTX\YTX.png") {
-    wagon_1F_r(60, 54)
+    wagon_1F_r(80, 54)
 }
 
 spriteset(set_YTX_wagon_end, "..\YSTset\Graphic\locomotive\YTX\YTX.png"){
-	wagon_start(60, 81)
+	wagon_start(80, 81)
 }
 
 spriteset(set_YTX_engineT, "..\YSTset\Graphic\locomotive\YTX\YTX.png"){
-	engine_r(60, 108)
+	engine_r(80, 108)
 }
 
 /*--------------------------------------------------------------------
@@ -7501,7 +7608,7 @@ item(FEAT_TRAINS, YTX){
  		name:							string(STR_YTX_NAME);
  		climates_available:				ALL_CLIMATES;
 		introduction_date:				date(2020, 1, 1);
-        track_type:						RAIL;
+        track_type:						ELRL;
         engine_class:					ENGINE_CLASS_ELECTRIC;
 		sprite_id:						SPRITE_ID_NEW_TRAIN;
         dual_headed:                    1;        
@@ -7509,7 +7616,7 @@ item(FEAT_TRAINS, YTX){
         //spec
 		speed:							331km/h;
 		power:							10000 kW;
-		weight:							35 ton;
+		weight:							80 ton;
 		tractive_effort_coefficient:	0.3;
         air_drag_coefficient:           0.01;
         
@@ -7521,8 +7628,10 @@ item(FEAT_TRAINS, YTX){
         
         //Cargo
         cargo_capacity:					30;
-        refittable_cargo_classes:		bitmask(CC_PASSENGERS);
-        non_refittable_cargo_classes:	bitmask();
+        refittable_cargo_classes:       NO_CARGO_CLASS;
+        non_refittable_cargo_classes:   NO_CARGO_CLASS;
+        cargo_allow_refit:              [PASS];
+        cargo_disallow_refit:           [];
         
         //Costs
         refit_cost:						0;
@@ -7569,27 +7678,27 @@ spriteset(set_ZEFIRO380H_purchase, "..\YSTset\Graphic\locomotive\ZEFIRO380\ZEFIR
 }
 
 spriteset(set_ZEFIRO380_engineH, "..\YSTset\Graphic\locomotive\ZEFIRO380\ZEFIRO380.png"){
-	engine(60, 0)
+	engine(80, 0)
 }
 
 spriteset(set_ZEFIRO380_wagon_start, "..\YSTset\Graphic\locomotive\ZEFIRO380\ZEFIRO380.png"){
-	wagon_start(60, 27)
+	wagon_start(80, 27)
 }
 
 spriteset(set_ZEFIRO380_wagon, "..\YSTset\Graphic\locomotive\ZEFIRO380\ZEFIRO380.png") {
-    wagon_1F(60, 54)
+    wagon_1F(80, 54)
 }
 
 spriteset(set_ZEFIRO380_wagon_r, "..\YSTset\Graphic\locomotive\ZEFIRO380\ZEFIRO380.png") {
-    wagon_1F_r(60, 54)
+    wagon_1F_r(80, 54)
 }
 
 spriteset(set_ZEFIRO380_wagon_end, "..\YSTset\Graphic\locomotive\ZEFIRO380\ZEFIRO380.png"){
-	wagon_start(60, 81)
+	wagon_start(80, 81)
 }
 
 spriteset(set_ZEFIRO380_engineT, "..\YSTset\Graphic\locomotive\ZEFIRO380\ZEFIRO380.png"){
-	engine_r(60, 108)
+	engine_r(80, 108)
 }
 
 /*--------------------------------------------------------------------
@@ -7600,27 +7709,27 @@ spriteset(set_ZEFIRO380_CoolH_purchase, "..\YSTset\Graphic\locomotive\ZEFIRO380\
 }
 
 spriteset(set_ZEFIRO380_Cool_engineH, "..\YSTset\Graphic\locomotive\ZEFIRO380\ZEFIRO380.png"){
-	engine(60, 135)
+	engine(80, 135)
 }
 
 spriteset(set_ZEFIRO380_Cool_wagon_start, "..\YSTset\Graphic\locomotive\ZEFIRO380\ZEFIRO380.png"){
-	wagon_start(60, 162)
+	wagon_start(80, 162)
 }
 
 spriteset(set_ZEFIRO380_Cool_wagon, "..\YSTset\Graphic\locomotive\ZEFIRO380\ZEFIRO380.png") {
-    wagon_1F(60, 189)
+    wagon_1F(80, 189)
 }
 
 spriteset(set_ZEFIRO380_Cool_wagon_r, "..\YSTset\Graphic\locomotive\ZEFIRO380\ZEFIRO380.png") {
-    wagon_1F_r(60, 189)
+    wagon_1F_r(80, 189)
 }
 
 spriteset(set_ZEFIRO380_Cool_wagon_end, "..\YSTset\Graphic\locomotive\ZEFIRO380\ZEFIRO380.png"){
-	wagon_start(60, 216)
+	wagon_start(80, 216)
 }
 
 spriteset(set_ZEFIRO380_Cool_engineT, "..\YSTset\Graphic\locomotive\ZEFIRO380\ZEFIRO380.png"){
-	engine_r(60, 243)
+	engine_r(80, 243)
 }
 
 /*--------------------------------------------------------------------
@@ -7631,27 +7740,27 @@ spriteset(set_ZEFIRO380_BlackH_purchase, "..\YSTset\Graphic\locomotive\ZEFIRO380
 }
 
 spriteset(set_ZEFIRO380_Black_engineH, "..\YSTset\Graphic\locomotive\ZEFIRO380\ZEFIRO380.png"){
-	engine(60, 270)
+	engine(80, 270)
 }
 
 spriteset(set_ZEFIRO380_Black_wagon_start, "..\YSTset\Graphic\locomotive\ZEFIRO380\ZEFIRO380.png"){
-	wagon_start(60, 297)
+	wagon_start(80, 297)
 }
 
 spriteset(set_ZEFIRO380_Black_wagon, "..\YSTset\Graphic\locomotive\ZEFIRO380\ZEFIRO380.png") {
-    wagon_1F(60, 324)
+    wagon_1F(80, 324)
 }
 
 spriteset(set_ZEFIRO380_Black_wagon_r, "..\YSTset\Graphic\locomotive\ZEFIRO380\ZEFIRO380.png") {
-    wagon_1F_r(60, 324)
+    wagon_1F_r(80, 324)
 }
 
 spriteset(set_ZEFIRO380_Black_wagon_end, "..\YSTset\Graphic\locomotive\ZEFIRO380\ZEFIRO380.png"){
-	wagon_start(60, 351)
+	wagon_start(80, 351)
 }
 
 spriteset(set_ZEFIRO380_Black_engineT, "..\YSTset\Graphic\locomotive\ZEFIRO380\ZEFIRO380.png"){
-	engine_r(60, 378)
+	engine_r(80, 378)
 }
 
 /*--------------------------------------------------------------------
@@ -7748,7 +7857,7 @@ item(FEAT_TRAINS, ZEFIRO380){
  		name:                            string(STR_ZEFIRO380_NAME);
  		climates_available:				ALL_CLIMATES;
 		introduction_date:				date(2014, 1, 1);
-        track_type:						RAIL;
+        track_type:						ELRL;
         engine_class:					ENGINE_CLASS_ELECTRIC;
 		sprite_id:						SPRITE_ID_NEW_TRAIN;
         dual_headed:                    1;        
@@ -7756,7 +7865,7 @@ item(FEAT_TRAINS, ZEFIRO380){
         //spec
 		speed:							380km/h;
 		power:							10000 kW;
-		weight:							35 ton;
+		weight:							80 ton;
 		tractive_effort_coefficient:	0.3;
         air_drag_coefficient:           0.01;
         
@@ -7768,8 +7877,10 @@ item(FEAT_TRAINS, ZEFIRO380){
         
         //Cargo
         cargo_capacity:					54;
-        refittable_cargo_classes:		bitmask(CC_PASSENGERS);
-        non_refittable_cargo_classes:	bitmask();
+        refittable_cargo_classes:       NO_CARGO_CLASS;
+        non_refittable_cargo_classes:   NO_CARGO_CLASS;
+        cargo_allow_refit:              [PASS];
+        cargo_disallow_refit:           [];
         
         //Costs
         refit_cost:						0;
@@ -7805,7 +7916,7 @@ item(FEAT_TRAINS, ZEFIRO380){
 5.40. 닥터엘로우
 --------------------------------------------------------------------*/
 /*--------------------------------------------------------------------
-5.25.1 Graphics
+5.40.1 Graphics
 --------------------------------------------------------------------*/
 spriteset(set_DRY700_purchase, "..\YSTset\Graphic\locomotive\N700\Dr_Yellow.png"){
 	tmpl_purchase(0, 0)
@@ -7816,38 +7927,38 @@ spriteset(set_DRY700H_purchase, "..\YSTset\Graphic\locomotive\N700\Dr_Yellow.png
 }
 
 spriteset(set_DRY700_engineH, "..\YSTset\Graphic\locomotive\N700\Dr_Yellow.png"){
-	engine(60, 0)
+	engine(80, 0)
 }
 
 spriteset(set_DRY700_wagon_start, "..\YSTset\Graphic\locomotive\N700\Dr_Yellow.png"){
-	wagon_panto(60, 27)
+	wagon_panto(80, 27)
 }
 
 spriteset(set_DRY700_wagon, "..\YSTset\Graphic\locomotive\N700\Dr_Yellow.png") {
-    wagon_1F(60, 54)
+    wagon_1F(80, 54)
 }
 
 spriteset(set_DRY700_wagon_r, "..\YSTset\Graphic\locomotive\N700\Dr_Yellow.png") {
-    wagon_1F_r(60, 54)
+    wagon_1F_r(80, 54)
 }
 
 spriteset(set_DRY700_wagon_end, "..\YSTset\Graphic\locomotive\N700\Dr_Yellow.png"){
-	wagon_panto(60, 81)
+	wagon_panto(80, 81)
 }
 
 spriteset(set_DRY700_engineT, "..\YSTset\Graphic\locomotive\N700\Dr_Yellow.png"){
-	engine_r(60, 108)
+	engine_r(80, 108)
 }
 
 /*--------------------------------------------------------------------
-5.25.2. 구매정보
+5.40.2. 구매정보
 --------------------------------------------------------------------*/
 switch(FEAT_TRAINS, SELF, sw_DRY700_purchase, cargo_subtype) {
     set_DRY700_purchase;
 }
 
 /*--------------------------------------------------------------------
-5.25.3. 스위치
+5.40.3. 스위치
 --------------------------------------------------------------------*/
 switch(FEAT_TRAINS, SELF, sw_DRY700_engine, position_in_consist_from_end == 0 && num_vehs_in_consist > 1){
 	1: set_DRY700_engineT;
@@ -7875,14 +7986,14 @@ switch(FEAT_TRAINS, SELF, sw_DRY700_wagon_attach, vehicle_type_id) {
 }
 
 /*--------------------------------------------------------------------
-5.25.4 열차정보
+5.40.4 열차정보
 --------------------------------------------------------------------*/
 item(FEAT_TRAINS, DRY700){
 	property {
  		name:							string(STR_DRY700_NAME);
  		climates_available:				ALL_CLIMATES;
 		introduction_date:				date(2007, 1, 1);
-        track_type:						RAIL;
+        track_type:						ELRL;
         engine_class:					ENGINE_CLASS_ELECTRIC;
 		sprite_id:						SPRITE_ID_NEW_TRAIN;
         dual_headed:                    1;        
@@ -7890,7 +8001,7 @@ item(FEAT_TRAINS, DRY700){
         //spec
 		speed:							600km/h;
 		power:							10000 kW;
-		weight:							35 ton;
+		weight:							80 ton;
 		tractive_effort_coefficient:	0.3;
         air_drag_coefficient:           0.01;
         
@@ -7901,9 +8012,11 @@ item(FEAT_TRAINS, DRY700){
 		reliability_decay:				0;
         
         //Cargo
-        cargo_capacity:					1;
-        refittable_cargo_classes:		bitmask(CC_PASSENGERS);
-        non_refittable_cargo_classes:	bitmask();
+        cargo_capacity:					0;
+        refittable_cargo_classes:       NO_CARGO_CLASS;
+        non_refittable_cargo_classes:   NO_CARGO_CLASS;
+        cargo_allow_refit:              [PASS];
+        cargo_disallow_refit:           [];
         
         //Costs
         refit_cost:						0;
@@ -7930,6 +8043,376 @@ item(FEAT_TRAINS, DRY700){
         cargo_capacity:                 0;
         running_cost_factor:            0;}
         }
+        
+/*--------------------------------------------------------------------
+5.41. BB15048
+--------------------------------------------------------------------*/
+/*--------------------------------------------------------------------
+5.41.1 Graphics
+--------------------------------------------------------------------*/
+spriteset(set_BB15048_purchase, "..\YSTset\Graphic\locomotive\BB15048\BB15048.png"){
+	tmpl_single_purchase(0, 0)
+}
+
+spriteset(set_BB15048_engine, "..\YSTset\Graphic\locomotive\BB15048\BB15048.png"){
+	engine(80, 0)
+}
+
+/*--------------------------------------------------------------------
+5.41.2. 구매정보
+--------------------------------------------------------------------*/
+switch(FEAT_TRAINS, SELF, sw_BB15048_purchase, cargo_subtype) {
+    set_BB15048_purchase;
+}
+
+/*--------------------------------------------------------------------
+5.41.3. 스위치
+--------------------------------------------------------------------*/
+switch(FEAT_TRAINS, SELF, sw_BB15048_wagon_attach, vehicle_type_id) {
+   BB15048:         return CB_RESULT_ATTACH_ALLOW;
+   GT26CW:         return CB_RESULT_ATTACH_ALLOW;
+   NJ2:         return CB_RESULT_ATTACH_ALLOW;
+   TANK:        return CB_RESULT_ATTACH_ALLOW;
+   return string(STR_ERROR_NO_ATTACH);
+}
+
+/*--------------------------------------------------------------------
+5.41.4 열차정보
+--------------------------------------------------------------------*/
+item(FEAT_TRAINS, BB15048){
+	property {
+ 		name:							string(STR_BB15048_NAME);
+ 		climates_available:				ALL_CLIMATES;
+		introduction_date:				date(1971, 1, 1);
+        track_type:						ELRL;
+        engine_class:					ENGINE_CLASS_ELECTRIC;
+		sprite_id:						SPRITE_ID_NEW_TRAIN;
+                
+        //spec
+		speed:							180km/h;
+		power:							10000 kW;
+		weight:							80 ton;
+		tractive_effort_coefficient:	0.3;
+        air_drag_coefficient:           0.01;
+        
+        //Model
+        model_life:						VEHICLE_NEVER_EXPIRES;
+        vehicle_life:					255;
+        retire_early:					0;
+		reliability_decay:				0;
+        
+        //Cargo
+        cargo_capacity:					0;
+        refittable_cargo_classes:       NO_CARGO_CLASS;
+        non_refittable_cargo_classes:   NO_CARGO_CLASS;
+        cargo_allow_refit:              [PASS];
+        cargo_disallow_refit:           [];
+        
+        //Costs
+        refit_cost:						0;
+        running_cost_base:				RUNNING_COST_ELECTRIC;
+        
+        
+        //Flags
+        misc_flags:						bitmask(TRAIN_FLAG_FLIP, TRAIN_FLAG_AUTOREFIT);
+        extra_weight_per_wagon:			35 ton;
+    }
+	graphics {
+		default:						set_BB15048_engine;
+		purchase:						sw_BB15048_purchase;
+        cost_factor:					10;
+		running_cost_factor:			150;
+        can_attach_wagon:               sw_BB15048_wagon_attach;
+        additional_text:                string(STR_REFIT_ADDITIONAL_ABLE_UNADDTRAIN);
+        }
+        }
+        
+/*--------------------------------------------------------------------
+5.42. GT26CW
+--------------------------------------------------------------------*/
+/*--------------------------------------------------------------------
+5.42.1 Graphics
+--------------------------------------------------------------------*/
+spriteset(set_GT26CW_purchase, "..\YSTset\Graphic\locomotive\GT26CW\GT26CW.png"){
+	tmpl_single_purchase(0, 0)
+}
+
+spriteset(set_GT26CW_engine, "..\YSTset\Graphic\locomotive\GT26CW\GT26CW.png"){
+	engine(80, 0)
+}
+
+/*--------------------------------------------------------------------
+5.42.2. 구매정보
+--------------------------------------------------------------------*/
+switch(FEAT_TRAINS, SELF, sw_GT26CW_purchase, cargo_subtype) {
+    set_GT26CW_purchase;
+}
+
+/*--------------------------------------------------------------------
+5.41.3. 스위치
+--------------------------------------------------------------------*/
+switch(FEAT_TRAINS, SELF, sw_GT26CW_wagon_attach, vehicle_type_id) {
+   BB15048:         return CB_RESULT_ATTACH_ALLOW;
+   GT26CW:         return CB_RESULT_ATTACH_ALLOW;
+   NJ2:         return CB_RESULT_ATTACH_ALLOW;
+   TANK:        return CB_RESULT_ATTACH_ALLOW;
+   return string(STR_ERROR_NO_ATTACH);
+}
+
+/*--------------------------------------------------------------------
+5.41.4 열차정보
+--------------------------------------------------------------------*/
+item(FEAT_TRAINS, GT26CW){
+	property {
+ 		name:							string(STR_GT26CW_NAME);
+ 		climates_available:				ALL_CLIMATES;
+		introduction_date:				date(1967, 1, 1);
+        track_type:						RAIL;
+        engine_class:					ENGINE_CLASS_DIESEL;
+		sprite_id:						SPRITE_ID_NEW_TRAIN;
+                
+        //spec
+		speed:							180km/h;
+		power:							10000 kW;
+		weight:							80 ton;
+		tractive_effort_coefficient:	0.3;
+        air_drag_coefficient:           0.01;
+        
+        //Model
+        model_life:						VEHICLE_NEVER_EXPIRES;
+        vehicle_life:					255;
+        retire_early:					0;
+		reliability_decay:				0;
+        
+        //Cargo
+        cargo_capacity:					0;
+        refittable_cargo_classes:       NO_CARGO_CLASS;
+        non_refittable_cargo_classes:   NO_CARGO_CLASS;
+        cargo_allow_refit:              [PASS];
+        cargo_disallow_refit:           [];
+        
+        //Costs
+        refit_cost:						0;
+        running_cost_base:				RUNNING_COST_DIESEL;
+        
+        
+        //Flags
+        misc_flags:						bitmask(TRAIN_FLAG_FLIP, TRAIN_FLAG_AUTOREFIT);
+        extra_weight_per_wagon:			35 ton;
+    }
+	graphics {
+		default:						set_GT26CW_engine;
+		purchase:						sw_GT26CW_purchase;
+        cost_factor:					10;
+		running_cost_factor:			150;
+        can_attach_wagon:               sw_GT26CW_wagon_attach;
+        additional_text:                string(STR_REFIT_ADDITIONAL_ABLE_UNADDTRAIN);
+        }
+        }
+        
+/*--------------------------------------------------------------------
+5.42. NJ2
+--------------------------------------------------------------------*/
+/*--------------------------------------------------------------------
+5.42.1 Graphics
+--------------------------------------------------------------------*/
+spriteset(set_NJ2_purchase, "..\YSTset\Graphic\locomotive\NJ2\NJ2.png"){
+	tmpl_single_purchase(0, 0)
+}
+
+spriteset(set_NJ2_engine, "..\YSTset\Graphic\locomotive\NJ2\NJ2.png"){
+	engine(80, 0)
+}
+
+/*--------------------------------------------------------------------
+5.42.2. 구매정보
+--------------------------------------------------------------------*/
+switch(FEAT_TRAINS, SELF, sw_NJ2_purchase, cargo_subtype) {
+    set_NJ2_purchase;
+}
+
+/*--------------------------------------------------------------------
+5.41.3. 스위치
+--------------------------------------------------------------------*/
+switch(FEAT_TRAINS, SELF, sw_NJ2_wagon_attach, vehicle_type_id) {
+   BB15048:         return CB_RESULT_ATTACH_ALLOW;
+   GT26CW:         return CB_RESULT_ATTACH_ALLOW;
+   NJ2:         return CB_RESULT_ATTACH_ALLOW;
+   TANK:        return CB_RESULT_ATTACH_ALLOW;
+   return string(STR_ERROR_NO_ATTACH);
+}
+
+/*--------------------------------------------------------------------
+5.42.4 열차정보
+--------------------------------------------------------------------*/
+item(FEAT_TRAINS, NJ2){
+	property {
+ 		name:							string(STR_NJ2_NAME);
+ 		climates_available:				ALL_CLIMATES;
+		introduction_date:				date(2006, 1, 1);
+        track_type:						RAIL;
+        engine_class:					ENGINE_CLASS_DIESEL;
+		sprite_id:						SPRITE_ID_NEW_TRAIN;
+                
+        //spec
+		speed:							180km/h;
+		power:							10000 kW;
+		weight:							80 ton;
+		tractive_effort_coefficient:	0.3;
+        air_drag_coefficient:           0.01;
+        
+        //Model
+        model_life:						VEHICLE_NEVER_EXPIRES;
+        vehicle_life:					255;
+        retire_early:					0;
+		reliability_decay:				0;
+        
+        //Cargo
+        cargo_capacity:					0;
+        refittable_cargo_classes:       NO_CARGO_CLASS;
+        non_refittable_cargo_classes:   NO_CARGO_CLASS;
+        cargo_allow_refit:              [PASS];
+        cargo_disallow_refit:           [];
+        
+        //Costs
+        refit_cost:						0;
+        running_cost_base:				RUNNING_COST_DIESEL;
+        
+        
+        //Flags
+        misc_flags:						bitmask(TRAIN_FLAG_FLIP, TRAIN_FLAG_AUTOREFIT);
+        extra_weight_per_wagon:			35 ton;
+    }
+	graphics {
+		default:						set_NJ2_engine;
+		purchase:						sw_NJ2_purchase;
+        cost_factor:					10;
+		running_cost_factor:			150;
+        can_attach_wagon:               sw_NJ2_wagon_attach;
+        additional_text:                string(STR_REFIT_ADDITIONAL_ABLE_UNADDTRAIN);
+        }
+        }
+
+/*--------------------------------------------------------------------
+5.43. 유조차
+--------------------------------------------------------------------*/
+/*--------------------------------------------------------------------
+5.43.1 Graphics
+--------------------------------------------------------------------*/
+spriteset(set_Tank_purchase, "..\YSTset\Graphic\wagon\tank.png"){
+	tmpl_wagon_purchase(0, 0)
+}
+
+spriteset(set_TankA_wagon, "..\YSTset\Graphic\wagon\tank.png") {
+    wagon_1F(80, 0)
+}
+
+spriteset(set_TankA_wagon_r, "..\YSTset\Graphic\wagon\tank.png") {
+    wagon_1F_r(80, 0)
+}
+
+spriteset(set_TankB_wagon, "..\YSTset\Graphic\wagon\tank.png") {
+    wagon_1F(80, 27)
+}
+
+spriteset(set_TankB_wagon_r, "..\YSTset\Graphic\wagon\tank.png") {
+    wagon_1F_r(80, 27)
+}
+
+spriteset(set_TankC_wagon, "..\YSTset\Graphic\wagon\tank.png") {
+    wagon_1F(80, 54)
+}
+
+spriteset(set_TankC_wagon_r, "..\YSTset\Graphic\wagon\tank.png") {
+    wagon_1F_r(80, 54)
+}
+
+/*--------------------------------------------------------------------
+5.35.2. 구매정보
+--------------------------------------------------------------------*/
+switch(FEAT_TRAINS, SELF, sw_Tank_purchase, cargo_subtype) {
+    set_Tank_purchase;
+}
+
+/*--------------------------------------------------------------------
+5.35.3. 스위치
+--------------------------------------------------------------------*/
+switch(FEAT_TRAINS, SELF, sw_Tank_cargo_subtype_text, cargo_subtype) {
+    1: return string(STR_REFIT_LIVERY_TANKB);           
+    2: return string(STR_REFIT_LIVERY_TANKC);           
+    return string(STR_REFIT_LIVERY_TANKA);
+}
+
+switch(FEAT_TRAINS, SELF, sw_Tank_wagon_front, cargo_subtype) {
+    1: set_TankB_wagon;
+    2: set_TankC_wagon;
+    set_TankA_wagon;
+}
+
+switch(FEAT_TRAINS, SELF, sw_Tank_wagon_tail, cargo_subtype) {
+    1: set_TankB_wagon_r;
+    2: set_TankC_wagon_r;
+    set_TankA_wagon_r;
+}
+
+switch(FEAT_TRAINS, SELF, sw_Tank_wagon, (position_in_consist)) {
+    1: sw_Tank_wagon_tail;
+    sw_Tank_wagon_front;
+}
+
+switch(FEAT_TRAINS, SELF, sw_Tank_wagon_attach, vehicle_type_id) {
+   BB15048:         return CB_RESULT_ATTACH_ALLOW;
+   GT26CW:         return CB_RESULT_ATTACH_ALLOW;
+   NJ2:         return CB_RESULT_ATTACH_ALLOW;
+   TANK:        return CB_RESULT_ATTACH_ALLOW;
+   return string(STR_ERROR_NO_ATTACH);
+}
+
+/*--------------------------------------------------------------------
+5.35.4.2. 화물차량 열차정보
+--------------------------------------------------------------------*/
+item(FEAT_TRAINS, TANK){
+	property {
+ 		name:							string(STR_Tank_NAME);
+ 		climates_available:				ALL_CLIMATES;
+		introduction_date:				date(1967, 1, 1);
+        track_type:						RAIL;
+		sprite_id:						SPRITE_ID_NEW_TRAIN;
+        
+        //spec
+        power:                          0 kW;
+        weight:							40 ton;
+		tractive_effort_coefficient:	0.3;
+        
+        //Cargo
+        cargo_capacity:					200;
+        refittable_cargo_classes:       NO_CARGO_CLASS;
+        non_refittable_cargo_classes:   NO_CARGO_CLASS;
+        cargo_allow_refit:              [OIL_, WATR, COLA, FZDR, ACID, CHLO, MILK, RUBR, PLST, BEER, EOIL, PETR, RFPR];
+        cargo_disallow_refit:           [];
+        
+        //Costs
+        refit_cost:						0;
+        
+        //Flags
+        misc_flags:						bitmask(TRAIN_FLAG_MU, TRAIN_FLAG_FLIP, TRAIN_FLAG_AUTOREFIT);
+        extra_weight_per_wagon:			20 ton;
+		
+        loading_speed:					25;
+		vehicle_life:					255;
+		model_life:						VEHICLE_NEVER_EXPIRES;
+		retire_early:					0;
+		reliability_decay:				0;
+		cost_factor:					10;
+		running_cost_factor:			50;
+        }
+	graphics {
+		default:						sw_Tank_wagon;
+		purchase:						sw_Tank_purchase;
+        can_attach_wagon:               sw_Tank_wagon_attach;
+        cargo_subtype_text:             sw_Tank_cargo_subtype_text;
+    }
+    }
                 
 /*--------------------------------------------------------------------
 6. 정렬
@@ -7940,6 +8423,7 @@ sort(FEAT_TRAINS, [
 	AGV,
 	AVE,
     AVE_Velaro,
+    BB15048,
 	CR600,
 	CRH1,
     CRH3,
@@ -7953,12 +8437,14 @@ sort(FEAT_TRAINS, [
     E320,
 	EMU,
     Glory_600,
+    GT26CW,
 	HEMU,
 	HMX,
 	ICE3,
     ICE_SP,
     KTX_N,
     N700,
+    NJ2,
     NKX,
 	TALGO,
     TGV_OLD,
@@ -7977,5 +8463,6 @@ sort(FEAT_TRAINS, [
 			
     YST_Passinger_Car,
     YST_Passinger_2F_Car,
+    TANK,
     YFXF,
 	]);
