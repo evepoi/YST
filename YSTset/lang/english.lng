@@ -6,7 +6,7 @@ STR_GRF_NAME_WITH_VER   :YST {VERSION}
 STR_GRF_DESC			:YST GRF is many high speed train set. {} (Updated: {RECENT_UPDATED}){}{}{SILVER}+ Author: : Minen {} + EMU 250, 300 : lit_**** {} + CRH380D  : kata_**** {} + HEMU-430X : Las {} + AGV-Cool, YN, YTRO 2F : Dat Tree
 
 # Vehicle's name
-STR_YST_PASSINGER_NAME 	:[YST] Passinger Car
+STR_YST_PASSINGER_NAME 	:[YST] Passenger Car
 STR_YST_PASSINGER2F_NAME  :[YST] Metro, HMX, NKX 2F Car
 STR_500_NAME 			:[YST] Shinkansen 500
 STR_800_NAME 			:[YST] Shinkansen 800
@@ -26,6 +26,9 @@ STR_E7_NAME 			:[YST] Shinkansen E7
 STR_E300_NAME 			:[YST] E300
 STR_E320_NAME 			:[YST] E320
 STR_EMU_NAME		    :[YST] EMU
+STR_FLAT_1F_NAME        :[YST] Flat Car
+STR_FLAT_2F_NAME        :[YST] Flat Car - American
+STR_FLAT_Tank_NAME      :[YST] Flat Tank Car
 STR_Glory_600_NAME		:[YST] Glory 600
 STR_GT26CW_NAME		    :[YST] GT26CW
 STR_HEMU_NAME       	:[YST] HEMU-430
@@ -65,6 +68,7 @@ STR_PARAM_AGV_SPEED_NAME    				:Speed coefficient of AGV
 STR_PARAM_AGV_SPEED_DESC    				:AGV Speed (331~600km/h)/ When set to 597, It is set to 600.
 
 # Refit (Additional text)
+STR_REFIT_ADDITIONAL                    :{BLACK}Changing model/livery: {GREEN}Available
 STR_REFIT_ADDITIONAL_ABLE_UNADDTRAIN    :{BLACK}Changing model/livery: {GREEN}Available {} {BLACK}Combined train: {RED}Unavailable
 STR_REFIT_ADDITIONAL_ABLE_AGV           :{BLACK}Changing model/livery: {GREEN}Available {} {BLACK}Combined train: {RED}Unavailable
 STR_REFIT_ADDITIONAL_ABLE_CRH380A       :{BLACK}Changing model/livery: {GREEN}Available {} {BLACK}Combined train: {GREEN}CRH380A, CRH380A Cool, CRH380A Red
@@ -144,6 +148,12 @@ STR_REFIT_LIVERY_APROSIYOB          :(Aprosiyob)
 STR_REFIT_LIVERY_TANKA              :(Tank A Color)
 STR_REFIT_LIVERY_TANKB              :(Tank B Color)
 STR_REFIT_LIVERY_TANKC              :(Tank C Color)
+STR_REFIT_LIVERY_FlatGreen          :(Flat Nomal Green Color)
+STR_REFIT_LIVERY_FlatPGreen         :(Flat trailer Green Cololr)
+STR_REFIT_LIVERY_FlatRed            :(Flat Nomal Red Color)
+STR_REFIT_LIVERY_FlatPRed           :(Flat Trailer Red Color)
+STR_REFIT_LIVERY_FlatTankGreen      :(Flat Tank Green Color)
+STR_REFIT_LIVERY_FlatTanKRed        :(Flat Tank Red Color)
 STR_REFIT_LIVERY_TGV_OLD_POS        :(TGV Old Pos)
 STR_REFIT_LIVERY_TGV_OLD_LYAIR      :(TGV Old Lyair)
 STR_REFIT_LIVERY_TGV_OLD_THALYS     :(TGV Old Thalys)

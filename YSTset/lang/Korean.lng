@@ -26,6 +26,9 @@ STR_E7_NAME 			:[YST] 신칸센 E7
 STR_E300_NAME 			:[YST] E300
 STR_E320_NAME 			:[YST] E320
 STR_EMU_NAME		    :[YST] EMU
+STR_FLAT_1F_NAME        :[YST] 평판화차
+STR_FLAT_2F_NAME        :[YST] 평판화차 - 미국형
+STR_FLAT_Tank_NAME      :[YST] 평판유조 화차
 STR_Glory_600_NAME		:[YST] Glory 600
 STR_GT26CW_NAME		    :[YST] GT26CW
 STR_HEMU_NAME       	:[YST] HEMU-430
@@ -65,6 +68,7 @@ STR_PARAM_AGV_SPEED_NAME    				:AGV 속도계수
 STR_PARAM_AGV_SPEED_DESC    				:AGV 속도 (331~600km/h)/ 597로 설정하면 600으로 세팅됩니다.
 
 # Refit (Additional text)
+STR_REFIT_ADDITIONAL                    :{BLACK}도색/모델 변경: {GREEN}가능
 STR_REFIT_ADDITIONAL_ABLE_UNADDTRAIN    :{BLACK}도색/모델 변경: {GREEN}가능 {}{BLACK}복합열차구성: {RED}불가능
 STR_REFIT_ADDITIONAL_ABLE_AGV           :{BLACK}도색/모델 변경: {GREEN}가능 {}{BLACK}복합열차구성: {RED}불가능
 STR_REFIT_ADDITIONAL_ABLE_CRH380A       :{BLACK}도색/모델 변경: {GREEN}가능 {}{BLACK}복합가능열차 : {GREEN}CRH380A, CRH380A Cool, CRH380A Red
@@ -141,9 +145,15 @@ STR_REFIT_LIVERY_NKXB               :(NKX B도색)
 STR_REFIT_LIVERY_NKXC               :(NKX C도색)
 STR_REFIT_LIVERY_ALVIA              :(Alvia)
 STR_REFIT_LIVERY_APROSIYOB          :(Aprosiyob)
-STR_REFIT_LIVERY_TANKA              :(Tank A도색)
-STR_REFIT_LIVERY_TANKB              :(Tank B도색)
-STR_REFIT_LIVERY_TANKC              :(Tank C도색)
+STR_REFIT_LIVERY_TANKA              :(유조차 A도색)
+STR_REFIT_LIVERY_TANKB              :(유조차 B도색)
+STR_REFIT_LIVERY_TANKC              :(유조차 C도색)
+STR_REFIT_LIVERY_FlatGreen          :(평판화차 녹색)
+STR_REFIT_LIVERY_FlatPGreen         :(평판화차 패기형 녹색)
+STR_REFIT_LIVERY_FlatRed            :(평판화차 빨강색)
+STR_REFIT_LIVERY_FlatPRed           :(평판화차 패기형 빨강색)
+STR_REFIT_LIVERY_FlatTankGreen      :(평판유조탱크 녹색)
+STR_REFIT_LIVERY_FlatTanKRed        :(평판유조탱크 빨강색)
 STR_REFIT_LIVERY_TGV_OLD_POS        :(TGV Old Pos)
 STR_REFIT_LIVERY_TGV_OLD_LYAIR      :(TGV Old Lyair)
 STR_REFIT_LIVERY_TGV_OLD_THALYS     :(TGV Old Thalys)
