@@ -38,6 +38,13 @@
 .nav_train > div li a {display: inline-block; transition: color 0.5s ease; font-size: 30px;}
 .nav_train > div li a:hover {color:#827717;}
 
+/* YST열차구분메뉴(지하철, 일반열차, 준고속열차, 고속열차) */
+.nav_trainSRH {overflow: hidden; padding: 20px 0;}
+.nav_trainSRH > div {text-align: center;}
+.nav_trainSRH > div li {float: left; width: 23%; margin: 1%;}
+.nav_trainSRH > div li a {display: inline-block; transition: color 0.5s ease; font-size: 30px;}
+.nav_trainSRH > div li a:hover {color:#827717;}
+
 /* 컨텐츠
 column col1 : 제목
 column col2 : 내용
