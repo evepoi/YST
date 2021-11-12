@@ -36,6 +36,7 @@ STR_HMX_NAME 			:[YST] HMX
 STR_ICE3_NAME 			:[YST] ICE3
 STR_ICE_SP_NAME         :[YST] ICE-SP
 STR_KTX_N_NAME          :[YST] KTX-N
+STR_MTR_NAME            :[YST] MTR
 STR_N700_NAME 			:[YST] Shinkansen N700
 STR_NJ2_NAME 			:[YST] NJ2
 STR_NKX_NAME 			:[YST] NKX
@@ -138,6 +139,13 @@ STR_REFIT_LIVERY_YTRO_200G          :(YTRO 200 G Color)
 STR_REFIT_LIVERY_YTRO_200H          :(YTRO 200 H Color)
 STR_REFIT_LIVERY_YTRO_200I          :(YTRO 200 I Color)
 STR_REFIT_LIVERY_YTRO_200J          :(YTRO 200 J Color)
+STR_REFIT_LIVERY_MTR                :(MTR)
+STR_REFIT_LIVERY_MTRM               :(MTR remodeling)
+STR_REFIT_LIVERY_MTRD               :(MTR Disney)
+STR_REFIT_LIVERY_MTRCNR             :(MTR CNR)
+STR_REFIT_LIVERY_MTRCNRN            :(MTR CNR N)
+STR_REFIT_LIVERY_MTRCRRC            :(MTR CRRC)
+STR_REFIT_LIVERY_MTRH               :(MTR M)
 STR_REFIT_LIVERY_N700               :(N700)
 STR_REFIT_LIVERY_N700T              :(Taiwan High Speed train)
 STR_REFIT_LIVERY_NKXA               :(NKX A Color)

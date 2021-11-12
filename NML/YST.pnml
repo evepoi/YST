@@ -6642,9 +6642,9 @@ switch(FEAT_TRAINS, SELF, sw_YN_wagon_end, cargo_subtype) {
 }
 
 switch(FEAT_TRAINS, SELF, sw_YN_speed, cargo_subtype) {
-    1: return 150;
+    1: return 180;
     2: return 250;
-    return 150;
+    return 180;
 }
 
 switch(FEAT_TRAINS, SELF, sw_YN_wagon_middle, (position_in_consist)) {
@@ -6996,7 +6996,7 @@ item(FEAT_TRAINS, YTRO_100){
         dual_headed:                    1;        
         
         //spec
-		speed:							151km/h;
+		speed:							120km/h;
 		power:							10000 kW;
 		weight:							80 ton;
 		tractive_effort_coefficient:	0.3;
@@ -7509,7 +7509,7 @@ item(FEAT_TRAINS, YTRO_200){
         dual_headed:                    1;        
         
         //spec
-		speed:							150km/h;
+		speed:							120km/h;
 		power:							10000 kW;
 		weight:							80 ton;
 		tractive_effort_coefficient:	0.3;
@@ -10802,296 +10802,184 @@ spriteset(set_MTRCNRN_engineT, "..\YSTset\Graphic\locomotive\MTR\MTR.png"){
 5.47.1.6. MTR CRRC
 --------------------------------------------------------------------*/
 spriteset(set_MTRCRRCH_purchase, "..\YSTset\Graphic\locomotive\MTR\MTR.png"){
-	tmpl_purchase_for_dualhead(0, 648)
-}
-
-spriteset(set_MTRCRRC_engineH, "..\YSTset\Graphic\locomotive\MTR\MTR.png"){
-	engine(80, 540)
-}
-
-spriteset(set_MTRCRRC_wagon_start, "..\YSTset\Graphic\locomotive\MTR\MTR.png"){
-	wagon_start(80, 567)
-}
-
-spriteset(set_MTRCRRC_wagon, "..\YSTset\Graphic\locomotive\MTR\MTR.png") {
-    wagon_1F(80, 594)
-}
-
-spriteset(set_MTRCRRC_wagon_r, "..\YSTset\Graphic\locomotive\MTR\MTR.png") {
-    wagon_1F_r(80, 594)
-}
-
-spriteset(set_MTRCRRC_wagon_end, "..\YSTset\Graphic\locomotive\MTR\MTR.png"){
-	wagon_start(80, 621)
-}
-
-spriteset(set_MTRCRRC_engineT, "..\YSTset\Graphic\locomotive\MTR\MTR.png"){
-	engine_r(80, 648)
-}
-
-/*--------------------------------------------------------------------
-5.38.1.7. YTRO_200 G
---------------------------------------------------------------------*/
-spriteset(set_YTRO_200GH_purchase, "..\YSTset\Graphic\locomotive\YTRO\YTRO_200.png"){
-	tmpl_purchase_for_dualhead(0, 540)
-}
-
-spriteset(set_YTRO_200G_engineH, "..\YSTset\Graphic\locomotive\YTRO\YTRO_200.png"){
-	engine(80, 486)
-}
-
-spriteset(set_YTRO_200G_1F_wagon, "..\YSTset\Graphic\locomotive\YTRO\YTRO_200.png") {
-    wagon_1F(80, 513)
-}
-
-spriteset(set_YTRO_200G_1F_wagon_r, "..\YSTset\Graphic\locomotive\YTRO\YTRO_200.png") {
-    wagon_1F_r(80, 513)
-}
-
-spriteset(set_YTRO_200G_2F_wagon, "..\YSTset\Graphic\locomotive\YTRO\YTRO_2F.png") {
-    wagon_2F(80, 162)
-}
-
-spriteset(set_YTRO_200G_2F_wagon_r, "..\YSTset\Graphic\locomotive\YTRO\YTRO_2F.png") {
-    wagon_2F_r(80, 162)
-}
-
-spriteset(set_YTRO_200G_engineT, "..\YSTset\Graphic\locomotive\YTRO\YTRO_200.png"){
-	engine_r(80, 540)
-}
-
-/*--------------------------------------------------------------------
-5.38.1.8. YTRO_200 H
---------------------------------------------------------------------*/
-spriteset(set_YTRO_200HH_purchase, "..\YSTset\Graphic\locomotive\YTRO\YTRO_200.png"){
-	tmpl_purchase_for_dualhead(0, 621)
-}
-
-spriteset(set_YTRO_200H_engineH, "..\YSTset\Graphic\locomotive\YTRO\YTRO_200.png"){
-	engine(80, 567)
-}
-
-spriteset(set_YTRO_200H_1F_wagon, "..\YSTset\Graphic\locomotive\YTRO\YTRO_200.png") {
-    wagon_1F(80, 594)
-}
-
-spriteset(set_YTRO_200H_1F_wagon_r, "..\YSTset\Graphic\locomotive\YTRO\YTRO_200.png") {
-    wagon_1F_r(80, 594)
-}
-
-spriteset(set_YTRO_200H_2F_wagon, "..\YSTset\Graphic\locomotive\YTRO\YTRO_2F.png") {
-    wagon_2F(80, 189)
-}
-
-spriteset(set_YTRO_200H_2F_wagon_r, "..\YSTset\Graphic\locomotive\YTRO\YTRO_2F.png") {
-    wagon_2F_r(80, 189)
-}
-
-spriteset(set_YTRO_200H_engineT, "..\YSTset\Graphic\locomotive\YTRO\YTRO_200.png"){
-	engine_r(80, 621)
-}
-
-/*--------------------------------------------------------------------
-5.38.1.9. YTRO_200 I
---------------------------------------------------------------------*/
-spriteset(set_YTRO_200IH_purchase, "..\YSTset\Graphic\locomotive\YTRO\YTRO_200.png"){
-	tmpl_purchase_for_dualhead(0, 702)
-}
-
-spriteset(set_YTRO_200I_engineH, "..\YSTset\Graphic\locomotive\YTRO\YTRO_200.png"){
-	engine(80, 648)
-}
-
-spriteset(set_YTRO_200I_1F_wagon, "..\YSTset\Graphic\locomotive\YTRO\YTRO_200.png") {
-    wagon_1F(80, 675)
-}
-
-spriteset(set_YTRO_200I_1F_wagon_r, "..\YSTset\Graphic\locomotive\YTRO\YTRO_200.png") {
-    wagon_1F_r(80, 675)
-}
-
-spriteset(set_YTRO_200I_2F_wagon, "..\YSTset\Graphic\locomotive\YTRO\YTRO_2F.png") {
-    wagon_2F(80, 216)
-}
-
-spriteset(set_YTRO_200I_2F_wagon_r, "..\YSTset\Graphic\locomotive\YTRO\YTRO_2F.png") {
-    wagon_2F_r(80, 216)
-}
-
-spriteset(set_YTRO_200I_engineT, "..\YSTset\Graphic\locomotive\YTRO\YTRO_200.png"){
-	engine_r(80, 702)
-}
-
-/*--------------------------------------------------------------------
-5.38.1.10. YTRO_200 J
---------------------------------------------------------------------*/
-spriteset(set_YTRO_200JH_purchase, "..\YSTset\Graphic\locomotive\YTRO\YTRO_200.png"){
 	tmpl_purchase_for_dualhead(0, 783)
 }
 
-spriteset(set_YTRO_200J_engineH, "..\YSTset\Graphic\locomotive\YTRO\YTRO_200.png"){
-	engine(80, 729)
+spriteset(set_MTRCRRC_engineH, "..\YSTset\Graphic\locomotive\MTR\MTR.png"){
+	engine(80, 675)
 }
 
-spriteset(set_YTRO_200J_1F_wagon, "..\YSTset\Graphic\locomotive\YTRO\YTRO_200.png") {
-    wagon_1F(80, 756)
+spriteset(set_MTRCRRC_wagon_start, "..\YSTset\Graphic\locomotive\MTR\MTR.png"){
+	wagon_start(80, 702)
 }
 
-spriteset(set_YTRO_200J_1F_wagon_r, "..\YSTset\Graphic\locomotive\YTRO\YTRO_200.png") {
-    wagon_1F_r(80, 756)
+spriteset(set_MTRCRRC_wagon, "..\YSTset\Graphic\locomotive\MTR\MTR.png") {
+    wagon_1F(80, 729)
 }
 
-spriteset(set_YTRO_200J_2F_wagon, "..\YSTset\Graphic\locomotive\YTRO\YTRO_2F.png") {
-    wagon_2F(80, 243)
+spriteset(set_MTRCRRC_wagon_r, "..\YSTset\Graphic\locomotive\MTR\MTR.png") {
+    wagon_1F_r(80, 729)
 }
 
-spriteset(set_YTRO_200J_2F_wagon_r, "..\YSTset\Graphic\locomotive\YTRO\YTRO_2F.png") {
-    wagon_2F_r(80, 243)
+spriteset(set_MTRCRRC_wagon_end, "..\YSTset\Graphic\locomotive\MTR\MTR.png"){
+	wagon_start(80, 756)
 }
 
-spriteset(set_YTRO_200J_engineT, "..\YSTset\Graphic\locomotive\YTRO\YTRO_200.png"){
+spriteset(set_MTRCRRC_engineT, "..\YSTset\Graphic\locomotive\MTR\MTR.png"){
 	engine_r(80, 783)
 }
 
-
 /*--------------------------------------------------------------------
-5.37.2. 구매정보
--------------------------------------------------------------------*/
-switch(FEAT_TRAINS, SELF, sw_YTRO_200_purchase, cargo_subtype) {
-    set_YTRO_200_purchase;
-}
-
-/*--------------------------------------------------------------------
-5.37.3. 스위치
+5.47.1.6. MTR 미쓰비씨
 --------------------------------------------------------------------*/
-switch(FEAT_TRAINS, SELF, sw_YTRO_200_cargo_subtype_text, cargo_subtype) {
-    1: return string(STR_REFIT_LIVERY_YTRO_200B);   // YTRO 200 B도색
-    2: return string(STR_REFIT_LIVERY_YTRO_200C);   // YTRO 200 C도색
-    3: return string(STR_REFIT_LIVERY_YTRO_200D);   // YTRO 200 D도색
-    4: return string(STR_REFIT_LIVERY_YTRO_200E);   // YTRO 200 E도색
-    5: return string(STR_REFIT_LIVERY_YTRO_200F);   // YTRO 200 F도색
-    6: return string(STR_REFIT_LIVERY_YTRO_200G);   // YTRO 200 G도색
-    7: return string(STR_REFIT_LIVERY_YTRO_200H);   // YTRO 200 H도색
-    8: return string(STR_REFIT_LIVERY_YTRO_200I);   // YTRO 200 I도색
-    9: return string(STR_REFIT_LIVERY_YTRO_200J);   // YTRO 200 J도색
-    return string(STR_REFIT_LIVERY_YTRO_200A);
+spriteset(set_MTRHH_purchase, "..\YSTset\Graphic\locomotive\MTR\MTR.png"){
+	tmpl_purchase_for_dualhead(0, 918)
 }
 
-switch(FEAT_TRAINS, SELF, sw_YTRO_200_engineH, cargo_subtype) {
-    1: set_YTRO_200B_engineH;    // YTRO 200 B도색
-    2: set_YTRO_200C_engineH;    // YTRO 200 C도색
-    3: set_YTRO_200D_engineH;    // YTRO 200 D도색
-    4: set_YTRO_200E_engineH;    // YTRO 200 E도색
-    5: set_YTRO_200F_engineH;    // YTRO 200 F도색
-    6: set_YTRO_200G_engineH;    // YTRO 200 G도색
-    7: set_YTRO_200H_engineH;    // YTRO 200 H도색
-    8: set_YTRO_200I_engineH;    // YTRO 200 I도색
-    9: set_YTRO_200J_engineH;    // YTRO 200 J도색
-    set_YTRO_200A_engineH;
+spriteset(set_MTRH_engineH, "..\YSTset\Graphic\locomotive\MTR\MTR.png"){
+	engine(80, 810)
 }
 
-switch(FEAT_TRAINS, SELF, sw_YTRO_200_engineT, cargo_subtype) {
-    1: set_YTRO_200B_engineT;    // YTRO 200 B도색
-    2: set_YTRO_200C_engineT;    // YTRO 200 C도색
-    3: set_YTRO_200D_engineT;    // YTRO 200 D도색
-    4: set_YTRO_200E_engineT;    // YTRO 200 E도색
-    5: set_YTRO_200F_engineT;    // YTRO 200 F도색
-    6: set_YTRO_200G_engineT;    // YTRO 200 G도색
-    7: set_YTRO_200H_engineT;    // YTRO 200 H도색
-    8: set_YTRO_200I_engineT;    // YTRO 200 I도색
-    9: set_YTRO_200J_engineT;    // YTRO 200 J도색
-    set_YTRO_200A_engineT;
+spriteset(set_MTRH_wagon_start, "..\YSTset\Graphic\locomotive\MTR\MTR.png"){
+	wagon_start(80, 837)
 }
 
-switch(FEAT_TRAINS, SELF, sw_YTRO_200_engine, position_in_consist_from_end == 0 && num_vehs_in_consist > 1){
-	1: sw_YTRO_200_engineT;
-	sw_YTRO_200_engineH;
+spriteset(set_MTRH_wagon, "..\YSTset\Graphic\locomotive\MTR\MTR.png") {
+    wagon_1F(80, 864)
 }
 
-switch(FEAT_TRAINS, SELF, sw_YTRO_200_1F_wagon_front, cargo_subtype) {
-    1: set_YTRO_200B_1F_wagon;    // YTRO 200 B도색
-    2: set_YTRO_200C_1F_wagon;    // YTRO 200 C도색
-    3: set_YTRO_200D_1F_wagon;    // YTRO 200 D도색
-    4: set_YTRO_200E_1F_wagon;    // YTRO 200 E도색
-    5: set_YTRO_200F_1F_wagon;    // YTRO 200 F도색
-    6: set_YTRO_200G_1F_wagon;    // YTRO 200 G도색
-    7: set_YTRO_200H_1F_wagon;    // YTRO 200 H도색
-    8: set_YTRO_200I_1F_wagon;    // YTRO 200 I도색
-    9: set_YTRO_200J_1F_wagon;    // YTRO 200 J도색
-    set_YTRO_200A_1F_wagon;
+spriteset(set_MTRH_wagon_r, "..\YSTset\Graphic\locomotive\MTR\MTR.png") {
+    wagon_1F_r(80, 864)
 }
 
-switch(FEAT_TRAINS, SELF, sw_YTRO_200_1F_wagon_tail, cargo_subtype) {
-    1: set_YTRO_200B_1F_wagon_r;    // YTRO 200 B도색
-    2: set_YTRO_200C_1F_wagon_r;    // YTRO 200 C도색
-    3: set_YTRO_200D_1F_wagon_r;    // YTRO 200 D도색
-    4: set_YTRO_200E_1F_wagon_r;    // YTRO 200 E도색
-    5: set_YTRO_200F_1F_wagon_r;    // YTRO 200 F도색
-    6: set_YTRO_200G_1F_wagon_r;    // YTRO 200 G도색
-    7: set_YTRO_200H_1F_wagon_r;    // YTRO 200 H도색
-    8: set_YTRO_200I_1F_wagon_r;    // YTRO 200 I도색
-    9: set_YTRO_200J_1F_wagon_r;    // YTRO 200 J도색
-    set_YTRO_200A_1F_wagon_r;
+spriteset(set_MTRH_wagon_end, "..\YSTset\Graphic\locomotive\MTR\MTR.png"){
+	wagon_start(80, 891)
 }
 
-
-switch(FEAT_TRAINS, SELF, sw_YTRO_200_1F_wagon, position_in_consist) {
-    1: sw_YTRO_200_1F_wagon_tail;
-    sw_YTRO_200_1F_wagon_front;
+spriteset(set_MTRH_engineT, "..\YSTset\Graphic\locomotive\MTR\MTR.png"){
+	engine_r(80, 918)
 }
 
-switch(FEAT_TRAINS, SELF, sw_YTRO_200_2F_wagon_front, cargo_subtype) {
-    1: set_YTRO_200B_2F_wagon;    // YTRO 200 B도색
-    2: set_YTRO_200C_2F_wagon;    // YTRO 200 C도색
-    3: set_YTRO_200D_2F_wagon;    // YTRO 200 D도색
-    4: set_YTRO_200E_2F_wagon;    // YTRO 200 E도색
-    5: set_YTRO_200F_2F_wagon;    // YTRO 200 F도색
-    6: set_YTRO_200G_2F_wagon;    // YTRO 200 G도색
-    7: set_YTRO_200H_2F_wagon;    // YTRO 200 H도색
-    8: set_YTRO_200I_2F_wagon;    // YTRO 200 I도색
-    9: set_YTRO_200J_2F_wagon;    // YTRO 200 J도색
-    set_YTRO_200A_2F_wagon;
+/*--------------------------------------------------------------------
+5.47.2. 구매정보
+-------------------------------------------------------------------*/
+switch(FEAT_TRAINS, SELF, sw_MTR_purchase, cargo_subtype) {
+    set_MTR_purchase;
 }
 
-switch(FEAT_TRAINS, SELF, sw_YTRO_200_2F_wagon_tail, cargo_subtype) {
-    1: set_YTRO_200B_2F_wagon_r;    // YTRO 200 B도색
-    2: set_YTRO_200C_2F_wagon_r;    // YTRO 200 C도색
-    3: set_YTRO_200D_2F_wagon_r;    // YTRO 200 D도색
-    4: set_YTRO_200E_2F_wagon_r;    // YTRO 200 E도색
-    5: set_YTRO_200F_2F_wagon_r;    // YTRO 200 F도색
-    6: set_YTRO_200G_2F_wagon_r;    // YTRO 200 G도색
-    7: set_YTRO_200H_2F_wagon_r;    // YTRO 200 H도색
-    8: set_YTRO_200I_2F_wagon_r;    // YTRO 200 I도색
-    9: set_YTRO_200J_2F_wagon_r;    // YTRO 200 J도색
-    set_YTRO_200A_2F_wagon_r;
+/*--------------------------------------------------------------------
+5.47.3. 스위치
+--------------------------------------------------------------------*/
+switch(FEAT_TRAINS, SELF, sw_MTR_cargo_subtype_text, cargo_subtype) {
+    1: return string(STR_REFIT_LIVERY_MTRM);   // 개조형
+    2: return string(STR_REFIT_LIVERY_MTRD);   // 디즈니
+    3: return string(STR_REFIT_LIVERY_MTRCNR);   // CNR
+    4: return string(STR_REFIT_LIVERY_MTRCNRN);   // CNR 남부섬
+    5: return string(STR_REFIT_LIVERY_MTRCRRC);   // CRRC
+    6: return string(STR_REFIT_LIVERY_MTRH);   // 미쓰비시
+    return string(STR_REFIT_LIVERY_MTR);
 }
 
-switch(FEAT_TRAINS, SELF, sw_YTRO_200_2F_wagon, position_in_consist) {
-    1: sw_YTRO_200_2F_wagon_tail;
-    sw_YTRO_200_2F_wagon_front;
+switch(FEAT_TRAINS, SELF, sw_MTR_engineH, cargo_subtype) {
+    1: set_MTRM_engineH;   // 개조형
+    2: set_MTRD_engineH;   // 디즈니
+    3: set_MTRCNR_engineH;   // CNR
+    4: set_MTRCNRN_engineH;   // CNR 남부섬
+    5: set_MTRCRRC_engineH;   // CRRC
+    6: set_MTRH_engineH;   // 미쓰비시
+    set_MTR_engineH;
 }
 
-switch(FEAT_TRAINS, SELF, sw_YTRO_200_wagon_attach, vehicle_type_id) {
-    YST_Passinger_Car:        return CB_RESULT_ATTACH_ALLOW;
-    YST_Passinger_2F_Car:        return CB_RESULT_ATTACH_ALLOW;
+switch(FEAT_TRAINS, SELF, sw_MTR_engineT, cargo_subtype) {
+    1: set_MTRM_engineT;   // 개조형
+    2: set_MTRD_engineT;   // 디즈니
+    3: set_MTRCNR_engineT;   // CNR
+    4: set_MTRCNRN_engineT;   // CNR 남부섬
+    5: set_MTRCRRC_engineT;   // CRRC
+    6: set_MTRH_engineT;   // 미쓰비시
+    set_MTR_engineT;
+}
+
+switch(FEAT_TRAINS, SELF, sw_MTR_engine, position_in_consist_from_end == 0 && num_vehs_in_consist > 1){
+	1: sw_MTR_engineT;
+	sw_MTR_engineH;
+}
+
+switch(FEAT_TRAINS, SELF, sw_MTR_wagon_start, cargo_subtype) {
+    1: set_MTRM_wagon_start;   // 개조형
+    2: set_MTRD_wagon_start;   // 디즈니
+    3: set_MTRCNR_wagon_start;   // CNR
+    4: set_MTRCNRN_wagon_start;   // CNR 남부섬
+    5: set_MTRCRRC_wagon_start;   // CRRC
+    6: set_MTRH_wagon_start;   // 미쓰비시
+    set_MTR_wagon_start;
+}
+
+switch(FEAT_TRAINS, SELF, sw_MTR_wagon_front, cargo_subtype) {
+    1: set_MTRM_wagon;   // 개조형
+    2: set_MTRD_wagon;   // 디즈니
+    3: set_MTRCNR_wagon;   // CNR
+    4: set_MTRCNRN_wagon;   // CNR 남부섬
+    5: set_MTRCRRC_wagon;   // CRRC
+    6: set_MTRH_wagon;   // 미쓰비시
+    set_MTR_wagon;
+}
+
+switch(FEAT_TRAINS, SELF, sw_MTR_wagon_tail, cargo_subtype) {
+    1: set_MTRM_wagon_r;   // 개조형
+    2: set_MTRD_wagon_r;   // 디즈니
+    3: set_MTRCNR_wagon_r;   // CNR
+    4: set_MTRCNRN_wagon_r;   // CNR 남부섬
+    5: set_MTRCRRC_wagon_r;   // CRRC
+    6: set_MTRH_wagon_r;   // 미쓰비시
+    set_MTR_wagon_r;
+}
+
+switch(FEAT_TRAINS, SELF, sw_MTR_wagon_end, cargo_subtype) {
+    1: set_MTRM_wagon_end;   // 개조형
+    2: set_MTRD_wagon_end;   // 디즈니
+    3: set_MTRCNR_wagon_end;   // CNR
+    4: set_MTRCNRN_wagon_end;   // CNR 남부섬
+    5: set_MTRCRRC_wagon_end;   // CRRC
+    6: set_MTRH_wagon_end;   // 미쓰비시
+    set_MTR_wagon_end;
+}
+
+switch(FEAT_TRAINS, SELF, sw_MTR_wagon_middle, (position_in_consist)) {
+    1: sw_MTR_wagon_tail;
+    sw_MTR_wagon_front;
+}
+
+switch(FEAT_TRAINS, SELF, sw_MTR_wagon_rear, [STORE_TEMP(1, 0x10F), var[0x61, 0, 0x0000FFFF, 0xC6]]){
+    MTR: sw_MTR_wagon_end;
+    sw_MTR_wagon_middle;
+}
+
+switch(FEAT_TRAINS, SELF, sw_MTR_wagon, [STORE_TEMP(-1, 0x10F), var[0x61, 0, 0x0000FFFF, 0xC6]]) {
+    MTR: sw_MTR_wagon_start;
+    sw_MTR_wagon_rear;
+}
+
+switch(FEAT_TRAINS, SELF, sw_MTR_wagon_attach, vehicle_type_id) {
+   YST_Passinger_Car:        return CB_RESULT_ATTACH_ALLOW;
     return string(STR_ERROR_NO_ATTACH);
 }
 
 /*--------------------------------------------------------------------
 5.37.4 열차정보
 --------------------------------------------------------------------*/
-item(FEAT_TRAINS, YTRO_200){
+item(FEAT_TRAINS, MTR){
 	property {
- 		name:							string(STR_YTRO_200_NAME);
+ 		name:							string(STR_MTR_NAME);
  		climates_available:				ALL_CLIMATES;
-		introduction_date:				date(2020, 1, 1);
+		introduction_date:				date(1979, 1, 1);
         track_type:						ELRL;
         engine_class:					ENGINE_CLASS_ELECTRIC;
 		sprite_id:						SPRITE_ID_NEW_TRAIN;
         dual_headed:                    1;        
         
         //spec
-		speed:							150km/h;
+		speed:							120km/h;
 		power:							10000 kW;
 		weight:							80 ton;
 		tractive_effort_coefficient:	0.3;
@@ -11120,33 +11008,25 @@ item(FEAT_TRAINS, YTRO_200){
         extra_weight_per_wagon:			35 ton;
     }
 	graphics {
-		default:						sw_YTRO_200_engine;
-		purchase:						sw_YTRO_200_purchase;
+		default:						sw_MTR_engine;
+		purchase:						sw_MTR_purchase;
         loading_speed:					25;
 		cost_factor:					10;
 		running_cost_factor:			150;
-        can_attach_wagon:               sw_YTRO_200_wagon_attach;
-        cargo_subtype_text:             sw_YTRO_200_cargo_subtype_text;
+        can_attach_wagon:               sw_MTR_wagon_attach;
+        cargo_subtype_text:             sw_MTR_cargo_subtype_text;
         start_stop:                     sw_YST_train_start_stop;
 		additional_text:                string(STR_REFIT_ADDITIONAL_ABLE_UNADDTRAIN);
         }
 
     livery_override(YST_Passinger_Car) {
-        default:                        sw_YTRO_200_1F_wagon;
-        cargo_subtype_text:             sw_YTRO_200_cargo_subtype_text;
+        default:                        sw_MTR_wagon;
+        cargo_subtype_text:             sw_MTR_cargo_subtype_text;
         cargo_capacity:                 80;
         loading_speed:                  25;
         running_cost_factor:            100;}
-        
-      livery_override(YST_Passinger_2F_Car) {
-        default:                        sw_YTRO_200_2F_wagon;
-        cargo_subtype_text:             sw_YTRO_200_cargo_subtype_text;
-        cargo_capacity:                 160;
-        loading_speed:                  25;
-        running_cost_factor:            100;}
         }
-        
-                
+
 /*--------------------------------------------------------------------
 6. 정렬
 --------------------------------------------------------------------*/
@@ -11176,6 +11056,7 @@ sort(FEAT_TRAINS, [
 	ICE3,
     ICE_SP,
     KTX_N,
+    MTR,
     N700,
     NJ2,
     NKX,
