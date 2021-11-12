@@ -8,8 +8,8 @@ grf {
 	grfid: "YSN2";
 	name: string(STR_GRF_NAME_WITH_VER);
 	desc: string(STR_GRF_DESC);
-	version: 13;
-	min_compatible_version: 12;
+	version: 14;
+	min_compatible_version: 13;
     
 /*--------------------------------------------------------------------
 매개변수
