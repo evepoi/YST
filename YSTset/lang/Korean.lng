@@ -36,7 +36,10 @@ STR_HMX_NAME 			:[YST] HMX
 STR_ICE3_NAME 			:[YST] ICE3
 STR_ICE_SP_NAME         :[YST] ICE-SP
 STR_KTX_N_NAME          :[YST] KTX-N
-STR_MTR_NAME            :[YST] MTR
+STR_MTR_NAME            :[YST] MTR 메트로카멜 직류형 전동차
+STR_MTR_CNR_NAME        :[YST] MTR CNR 창춘 전동차
+STR_MTR_CRRC_NAME       :[YST] MTR CRRC 쓰팡 전동차
+STR_MTR_HM_NAME         :[YST] MTR 현대로템 - 미쓰비시 전동차
 STR_N700_NAME 			:[YST] 신칸센 N700
 STR_NJ2_NAME 			:[YST] NJ2
 STR_NKX_NAME 			:[YST] NKX
@@ -139,13 +142,11 @@ STR_REFIT_LIVERY_YTRO_200G          :(YTRO 200 G 도색)
 STR_REFIT_LIVERY_YTRO_200H          :(YTRO 200 H 도색)
 STR_REFIT_LIVERY_YTRO_200I          :(YTRO 200 I 도색)
 STR_REFIT_LIVERY_YTRO_200J          :(YTRO 200 J 도색)
-STR_REFIT_LIVERY_MTR                :(MTR)
-STR_REFIT_LIVERY_MTRM               :(MTR 개조형)
-STR_REFIT_LIVERY_MTRD               :(MTR 디즈니)
-STR_REFIT_LIVERY_MTRCNR             :(MTR CNR)
-STR_REFIT_LIVERY_MTRCNRN            :(MTR CNR 남부섬)
-STR_REFIT_LIVERY_MTRCRRC            :(MTR CRRC)
-STR_REFIT_LIVERY_MTRH               :(MTR 미쓰비스)
+STR_REFIT_LIVERY_MTR                :(미개조형)
+STR_REFIT_LIVERY_MTRM               :(개조형)
+STR_REFIT_LIVERY_MTRD               :(디즈니선)
+STR_REFIT_LIVERY_MTRCNR             :(MTR CNR 창춘 전동차)
+STR_REFIT_LIVERY_MTRCNRN            :(남부섬 도색)
 STR_REFIT_LIVERY_N700               :(N700)
 STR_REFIT_LIVERY_N700T              :(타이완 고속철도)
 STR_REFIT_LIVERY_NKXA               :(NKX A도색)
@@ -182,4 +183,5 @@ STR_REFIT_LIVERY_ZEFIRO380_Black    :(ZEFIRO380 Black) 600km/h
 # Errors
 
 STR_ERROR_NO_ATTACH                 :여기에 이 차량을 붙일 수 없습니다
+STR_ERROR_NOT_ENOUGH_LENGTH3        :열차 길이가 너무 짧습니다. 최소한 3량 이상을 연결해야 합니다.
 STR_ERROR_NOT_ENOUGH_LENGTH6        :열차 길이가 너무 짧습니다. 최소한 6량 이상을 연결해야 합니다.

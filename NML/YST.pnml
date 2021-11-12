@@ -244,15 +244,23 @@ template flat_2F_4053_Car(x, y) {
 4. 공통 스위치
 --------------------------------------------------------------------*/
 /*--------------------------------------------------------------------
-4.1. 최소 6량이상 편성
+4.1. 최소 3량이상 편성
 --------------------------------------------------------------------*/
-switch(FEAT_TRAINS, SELF, sw_YST_train_start_stop, num_vehs_in_consist >= 6) {
+switch(FEAT_TRAINS, SELF, sw_YST_train_start_stop_3, num_vehs_in_consist >= 3) {
+    1: return CB_RESULT_NO_TEXT;
+    return string(STR_ERROR_NOT_ENOUGH_LENGTH3);
+}
+
+/*--------------------------------------------------------------------
+4.2. 최소 6량이상 편성
+--------------------------------------------------------------------*/
+switch(FEAT_TRAINS, SELF, sw_YST_train_start_stop_6, num_vehs_in_consist >= 6) {
     1: return CB_RESULT_NO_TEXT;
     return string(STR_ERROR_NOT_ENOUGH_LENGTH6);
 }
 
 /*--------------------------------------------------------------------
-4.2. 공통객차 텍스트
+4.3. 공통객차 텍스트
 --------------------------------------------------------------------*/
 switch(FEAT_TRAINS, SELF, sw_Passenger_wagon_cargo_subtype_text, vehicle_type_id) {
     return CB_RESULT_NO_TEXT;
@@ -686,7 +694,7 @@ item(FEAT_TRAINS, S500){
 		running_cost_factor:			150;
         can_attach_wagon:               sw_500_wagon_attach;
         cargo_subtype_text:             sw_500_cargo_subtype_text;
-        start_stop:                     sw_YST_train_start_stop;
+        start_stop:                     sw_YST_train_start_stop_6;
 		additional_text:                string(STR_REFIT_ADDITIONAL_ABLE_UNADDTRAIN);
         }
 
@@ -820,7 +828,7 @@ item(FEAT_TRAINS, S800){
 		cost_factor:					10;
 		running_cost_factor:			150;
         can_attach_wagon:               sw_800_wagon_attach;
-        start_stop:                     sw_YST_train_start_stop;
+        start_stop:                     sw_YST_train_start_stop_6;
 		additional_text:                string(STR_REFIT_ADDITIONAL_UNABLE_UNADDTRAIN);
         }
 
@@ -1034,7 +1042,7 @@ item(FEAT_TRAINS, AGV){
 		running_cost_factor:			150;
         can_attach_wagon:               sw_AGV_wagon_attach;
         cargo_subtype_text:             sw_AGV_cargo_subtype_text;
-        start_stop:                     sw_YST_train_start_stop;
+        start_stop:                     sw_YST_train_start_stop_6;
 		additional_text:                string(STR_REFIT_ADDITIONAL_ABLE_AGV);
         }
 
@@ -1179,7 +1187,7 @@ item(FEAT_TRAINS, AVE){
 		cost_factor:					10;
 		running_cost_factor:			150;
         can_attach_wagon:               sw_AVE_wagon_attach;
-        start_stop:                     sw_YST_train_start_stop;
+        start_stop:                     sw_YST_train_start_stop_6;
         additional_text:                string(STR_REFIT_ADDITIONAL_UNABLE_AVE);
 }
 
@@ -1313,7 +1321,7 @@ item(FEAT_TRAINS, AVE_Velaro){
 		cost_factor:					10;
 		running_cost_factor:			150;
         can_attach_wagon:               sw_AVE_Velaro_wagon_attach;
-        start_stop:                     sw_YST_train_start_stop;
+        start_stop:                     sw_YST_train_start_stop_6;
         additional_text:                string(STR_REFIT_ADDITIONAL_UNABLE_AVE_VElaro);
 }
 
@@ -1446,7 +1454,7 @@ item(FEAT_TRAINS, CR600){
 		cost_factor:					10;
 		running_cost_factor:			150;
         can_attach_wagon:               sw_CR600_wagon_attach;
-        start_stop:                     sw_YST_train_start_stop;
+        start_stop:                     sw_YST_train_start_stop_6;
 		additional_text:                string(STR_REFIT_ADDITIONAL_UNABLE_UNADDTRAIN);
         }
 
@@ -1580,7 +1588,7 @@ item(FEAT_TRAINS, CRH1){
 		cost_factor:					10;
 		running_cost_factor:			150;
         can_attach_wagon:               sw_CRH1_wagon_attach;
-        start_stop:                     sw_YST_train_start_stop;
+        start_stop:                     sw_YST_train_start_stop_6;
 		additional_text:                string(STR_REFIT_ADDITIONAL_UNABLE_CRH1);
         }
 
@@ -1714,7 +1722,7 @@ item(FEAT_TRAINS, CRH3){
 		cost_factor:					10;
 		running_cost_factor:			150;
         can_attach_wagon:               sw_CRH3_wagon_attach;
-        start_stop:                     sw_YST_train_start_stop;
+        start_stop:                     sw_YST_train_start_stop_6;
 		additional_text:                string(STR_REFIT_ADDITIONAL_UNABLE_CRH3);
         }
 
@@ -1964,7 +1972,7 @@ item(FEAT_TRAINS, CRH380A){
 		running_cost_factor:			150;
         can_attach_wagon:               sw_CRH380A_wagon_attach;
         cargo_subtype_text:             sw_CRH380A_cargo_subtype_text;
-        start_stop:                     sw_YST_train_start_stop;
+        start_stop:                     sw_YST_train_start_stop_6;
 		additional_text:                string(STR_REFIT_ADDITIONAL_ABLE_CRH380A);
         }
 
@@ -2097,7 +2105,7 @@ item(FEAT_TRAINS, CRH380A_Test){
         cost_factor:					10;
 		running_cost_factor:			150;
         can_attach_wagon:               sw_CRH380A_Test_wagon_attach;
-        start_stop:                     sw_YST_train_start_stop;
+        start_stop:                     sw_YST_train_start_stop_6;
 		additional_text:                string(STR_REFIT_ADDITIONAL_UNABLE_UNADDTRAIN);
         }
 
@@ -2300,7 +2308,7 @@ item(FEAT_TRAINS, E5){
 		running_cost_factor:			150;
         can_attach_wagon:               sw_E5_wagon_attach;
         cargo_subtype_text:             sw_E5_cargo_subtype_text;
-        start_stop:                     sw_YST_train_start_stop;
+        start_stop:                     sw_YST_train_start_stop_6;
 		additional_text:                string(STR_REFIT_ADDITIONAL_ABLE_E6);
         }
 
@@ -2435,7 +2443,7 @@ item(FEAT_TRAINS, E6){
 		cost_factor:					10;
 		running_cost_factor:			150;
         can_attach_wagon:               sw_E6_wagon_attach;
-        start_stop:                     sw_YST_train_start_stop;
+        start_stop:                     sw_YST_train_start_stop_6;
 		additional_text:                string(STR_REFIT_ADDITIONAL_UNABLE_E5_H5);
         }
 
@@ -2568,7 +2576,7 @@ item(FEAT_TRAINS, E7){
 		cost_factor:					10;
 		running_cost_factor:			150;
         can_attach_wagon:               sw_E7_wagon_attach;
-        start_stop:                     sw_YST_train_start_stop;
+        start_stop:                     sw_YST_train_start_stop_6;
 		additional_text:                string(STR_REFIT_ADDITIONAL_UNABLE_UNADDTRAIN);
         }
 
@@ -2799,7 +2807,7 @@ item(FEAT_TRAINS, E300){
 		running_cost_factor:			150;
         can_attach_wagon:               sw_E300_wagon_attach;
         cargo_subtype_text:             sw_E300_cargo_subtype_text;
-        start_stop:                     sw_YST_train_start_stop;
+        start_stop:                     sw_YST_train_start_stop_6;
 		additional_text:                string(STR_REFIT_ADDITIONAL_ABLE_UNADDTRAIN);
         }
 
@@ -2915,7 +2923,7 @@ item(FEAT_TRAINS, E320){
 		cost_factor:					10;
 		running_cost_factor:			150;
         can_attach_wagon:               sw_E320_wagon_attach;
-        start_stop:                     sw_YST_train_start_stop;
+        start_stop:                     sw_YST_train_start_stop_6;
 		additional_text:                string(STR_REFIT_ADDITIONAL_UNABLE_UNADDTRAIN);
         }
 
@@ -3126,7 +3134,7 @@ item(FEAT_TRAINS, EMU){
         loading_speed:					25;
 		can_attach_wagon:               sw_EMU_wagon_attach;
         cargo_subtype_text:             sw_EMU_cargo_subtype_text;
-        start_stop:                     sw_YST_train_start_stop;
+        start_stop:                     sw_YST_train_start_stop_6;
 		additional_text:                string(STR_REFIT_ADDITIONAL_ABLE_EMU);
         }
 
@@ -3445,7 +3453,7 @@ item(FEAT_TRAINS, Glory_600){
 		cost_factor:					10;
 		running_cost_factor:			150;
         can_attach_wagon:               sw_Glory_600_wagon_attach;
-        start_stop:                     sw_YST_train_start_stop;
+        start_stop:                     sw_YST_train_start_stop_6;
         cargo_subtype_text:             sw_Glory_600_cargo_subtype_text;
         additional_text:                string(STR_REFIT_ADDITIONAL_ABLE_Glory600);
         }
@@ -3572,7 +3580,7 @@ item(FEAT_TRAINS, HEMU){
 		cost_factor:					10;
 		running_cost_factor:			150;
         can_attach_wagon:               sw_HEMU_wagon_attach;
-        start_stop:                     sw_YST_train_start_stop;
+        start_stop:                     sw_YST_train_start_stop_6;
 		additional_text:                string(STR_REFIT_ADDITIONAL_UNABLE_HEMU);
         }
 
@@ -3771,7 +3779,7 @@ item(FEAT_TRAINS, HMX){
 		running_cost_factor:			150;
         can_attach_wagon:               sw_HMX_wagon_attach;
         cargo_subtype_text:             sw_HMX_cargo_subtype_text;
-        start_stop:                     sw_YST_train_start_stop;
+        start_stop:                     sw_YST_train_start_stop_6;
 		additional_text:                string(STR_REFIT_ADDITIONAL_ABLE_HMX);
         }
 
@@ -3913,7 +3921,7 @@ item(FEAT_TRAINS, ICE3){
 		cost_factor:					10;
 		running_cost_factor:			150;
         can_attach_wagon:               sw_ICE3_wagon_attach;
-        start_stop:                     sw_YST_train_start_stop;
+        start_stop:                     sw_YST_train_start_stop_6;
 		additional_text:                string(STR_REFIT_ADDITIONAL_UNABLE_ICE3);
         }
 
@@ -4117,7 +4125,7 @@ item(FEAT_TRAINS, ICE_SP){
 		running_cost_factor:			150;
         can_attach_wagon:               sw_ICE_SP_wagon_attach;
         cargo_subtype_text:             sw_ICE_SP_cargo_subtype_text;
-        start_stop:                     sw_YST_train_start_stop;
+        start_stop:                     sw_YST_train_start_stop_6;
 		additional_text:                string(STR_REFIT_ADDITIONAL_ABLE_ICESP);
         }
 
@@ -4252,7 +4260,7 @@ item(FEAT_TRAINS, KTX_N){
 		cost_factor:					10;
 		running_cost_factor:			150;
         can_attach_wagon:               sw_KTX_N_wagon_attach;
-        start_stop:                     sw_YST_train_start_stop;
+        start_stop:                     sw_YST_train_start_stop_6;
 		additional_text:                string(STR_REFIT_ADDITIONAL_UNABLE_KTXN);
         }
 
@@ -4456,7 +4464,7 @@ item(FEAT_TRAINS, N700){
 		running_cost_factor:			150;
         can_attach_wagon:               sw_N700_wagon_attach;
         cargo_subtype_text:             sw_N700_cargo_subtype_text;
-        start_stop:                     sw_YST_train_start_stop;
+        start_stop:                     sw_YST_train_start_stop_6;
 		additional_text:                string(STR_REFIT_ADDITIONAL_UNABLE_UNADDTRAIN);
         }
 
@@ -4752,7 +4760,7 @@ item(FEAT_TRAINS, NKX){
 		running_cost_factor:			150;
         can_attach_wagon:               sw_NKX_wagon_attach;
         cargo_subtype_text:             sw_NKX_cargo_subtype_text;
-        start_stop:                     sw_YST_train_start_stop;
+        start_stop:                     sw_YST_train_start_stop_6;
 		additional_text:                string(STR_REFIT_ADDITIONAL_ABLE_NKX);
         }
 
@@ -4964,7 +4972,7 @@ item(FEAT_TRAINS, TALGO){
 		running_cost_factor:			150;
         can_attach_wagon:               sw_Talgo_wagon_attach;
         cargo_subtype_text:             sw_Talgo_cargo_subtype_text;
-        start_stop:                     sw_YST_train_start_stop;
+        start_stop:                     sw_YST_train_start_stop_6;
         additional_text:                string(STR_REFIT_ADDITIONAL_ABLE_Talgo);
 }
 
@@ -5099,7 +5107,7 @@ item(FEAT_TRAINS, TGV_OLD){
 		cost_factor:					10;
 		running_cost_factor:			150;
         can_attach_wagon:               sw_TGV_Old_wagon_attach;
-        start_stop:                     sw_YST_train_start_stop;
+        start_stop:                     sw_YST_train_start_stop_6;
         additional_text:                string(STR_REFIT_ADDITIONAL_UNABLE_TGV_OLD);
 }
 
@@ -5353,7 +5361,7 @@ item(FEAT_TRAINS, TGV_OLD_Pos){
 		running_cost_factor:			150;
         can_attach_wagon:               sw_TGV_OLD_Pos_wagon_attach;
         cargo_subtype_text:             sw_TGV_OLD_Pos_cargo_subtype_text;
-        start_stop:                     sw_YST_train_start_stop;
+        start_stop:                     sw_YST_train_start_stop_6;
         additional_text:                string(STR_REFIT_ADDITIONAL_ABLE_TGV);
 }
 
@@ -5608,7 +5616,7 @@ item(FEAT_TRAINS, TGV_Pos){
 		running_cost_factor:			150;
         can_attach_wagon:               sw_TGV_Pos_wagon_attach;
         cargo_subtype_text:             sw_TGV_Pos_cargo_subtype_text;
-        start_stop:                     sw_YST_train_start_stop;
+        start_stop:                     sw_YST_train_start_stop_6;
         additional_text:                string(STR_REFIT_ADDITIONAL_ABLE_TGV);
 }
 
@@ -5834,7 +5842,7 @@ item(FEAT_TRAINS, TGV_OLD_Duplex){
 		running_cost_factor:			150;
         can_attach_wagon:               sw_TGV_OLD_Duplex_wagon_attach;
         cargo_subtype_text:             sw_TGV_OLD_Duplex_cargo_subtype_text;
-        start_stop:                     sw_YST_train_start_stop;
+        start_stop:                     sw_YST_train_start_stop_6;
         additional_text:                string(STR_REFIT_ADDITIONAL_ABLE_TGV);
 }
 
@@ -6051,7 +6059,7 @@ item(FEAT_TRAINS, TGV_Duplex){
 		running_cost_factor:			150;
         can_attach_wagon:               sw_TGV_Duplex_wagon_attach;
         cargo_subtype_text:             sw_TGV_Duplex_cargo_subtype_text;
-        start_stop:                     sw_YST_train_start_stop;
+        start_stop:                     sw_YST_train_start_stop_6;
         additional_text:                string(STR_REFIT_ADDITIONAL_ABLE_TGV);
 }
 
@@ -6186,7 +6194,7 @@ item(FEAT_TRAINS, TGV_Ouigo){
 		cost_factor:					10;
 		running_cost_factor:			150;
         can_attach_wagon:               sw_TGV_Ouigo_wagon_attach;
-        start_stop:                     sw_YST_train_start_stop;
+        start_stop:                     sw_YST_train_start_stop_6;
         additional_text:                string(STR_REFIT_ADDITIONAL_UNABLE_TGV_Ouigo);
 }
 
@@ -6303,7 +6311,7 @@ item(FEAT_TRAINS, VTX){
 		cost_factor:					10;
 		running_cost_factor:			150;
         can_attach_wagon:               sw_VTX_wagon_attach;
-        start_stop:                     sw_YST_train_start_stop;
+        start_stop:                     sw_YST_train_start_stop_6;
         additional_text:                string(STR_REFIT_ADDITIONAL_UNABLE_VTX);
 }
 
@@ -6425,7 +6433,7 @@ item(FEAT_TRAINS, YFX){
 		default:						sw_YFX_engine;
 		purchase:						sw_YFX_purchase;
         can_attach_wagon:               sw_YFX_wagon_attach;
-        start_stop:                     sw_YST_train_start_stop;
+        start_stop:                     sw_YST_train_start_stop_6;
         loading_speed:					25;
 		cost_factor:					10;
 		running_cost_factor:			150;
@@ -6718,7 +6726,7 @@ item(FEAT_TRAINS, YN){
         loading_speed:					25;
 		can_attach_wagon:               sw_YN_wagon_attach;
         cargo_subtype_text:             sw_YN_cargo_subtype_text;
-        start_stop:                     sw_YST_train_start_stop;
+        start_stop:                     sw_YST_train_start_stop_6;
 		additional_text:                string(STR_REFIT_ADDITIONAL_ABLE_YN);
         }
 
@@ -7032,7 +7040,7 @@ item(FEAT_TRAINS, YTRO_100){
 		running_cost_factor:			150;
         can_attach_wagon:               sw_YTRO_100_wagon_attach;
         cargo_subtype_text:             sw_YTRO_100_cargo_subtype_text;
-        start_stop:                     sw_YST_train_start_stop;
+        start_stop:                     sw_YST_train_start_stop_6;
 		additional_text:                string(STR_REFIT_ADDITIONAL_ABLE_UNADDTRAIN);
         }
 
@@ -7545,7 +7553,7 @@ item(FEAT_TRAINS, YTRO_200){
 		running_cost_factor:			150;
         can_attach_wagon:               sw_YTRO_200_wagon_attach;
         cargo_subtype_text:             sw_YTRO_200_cargo_subtype_text;
-        start_stop:                     sw_YST_train_start_stop;
+        start_stop:                     sw_YST_train_start_stop_6;
 		additional_text:                string(STR_REFIT_ADDITIONAL_ABLE_UNADDTRAIN);
         }
 
@@ -7682,7 +7690,7 @@ item(FEAT_TRAINS, YTX){
 		cost_factor:					10;
 		running_cost_factor:			150;
         can_attach_wagon:               sw_YTX_wagon_attach;
-        start_stop:                     sw_YST_train_start_stop;
+        start_stop:                     sw_YST_train_start_stop_6;
 		additional_text:                string(STR_REFIT_ADDITIONAL_UNABLE_YTX);
         }
 
@@ -7933,7 +7941,7 @@ item(FEAT_TRAINS, ZEFIRO380){
 		running_cost_factor:			150;
         can_attach_wagon:               sw_ZEFIRO380_wagon_attach;
         cargo_subtype_text:             sw_ZEFIRO380_cargo_subtype_text;
-        start_stop:                     sw_YST_train_start_stop;
+        start_stop:                     sw_YST_train_start_stop_6;
         additional_text:                string(STR_REFIT_ADDITIONAL_ABLE_ZEFIRO380);
 }
 
@@ -8067,7 +8075,7 @@ item(FEAT_TRAINS, DRY700){
 		cost_factor:					10;
 		running_cost_factor:			150;
         can_attach_wagon:               sw_DRY700_wagon_attach;
-        start_stop:                     sw_YST_train_start_stop;
+        start_stop:                     sw_YST_train_start_stop_6;
 		additional_text:                string(STR_REFIT_ADDITIONAL_UNABLE_UNADDTRAIN);
         }
 
@@ -10633,74 +10641,74 @@ item(FEAT_TRAINS, FLAT_2F){
     }
     
 /*--------------------------------------------------------------------
-5.47. MTR
+5.47. MTR Cammall
 --------------------------------------------------------------------*/
 /*--------------------------------------------------------------------
 5.47.1 Graphics
 --------------------------------------------------------------------*/
-spriteset(set_MTR_purchase, "..\YSTset\Graphic\locomotive\MTR\MTR.png"){
+spriteset(set_MTR_purchase, "..\YSTset\Graphic\locomotive\MTR\MTR_Cammall.png"){
 	tmpl_purchase(0, 0)
 }
 
 /*--------------------------------------------------------------------
 5.47.1.1. MTR 기본차량
 --------------------------------------------------------------------*/
-spriteset(set_MTRH_purchase, "..\YSTset\Graphic\locomotive\MTR\MTR.png"){
+spriteset(set_MTRH_purchase, "..\YSTset\Graphic\locomotive\MTR\MTR_Cammall.png"){
 	tmpl_purchase_for_dualhead(0, 108)
 }
 
-spriteset(set_MTR_engineH, "..\YSTset\Graphic\locomotive\MTR\MTR.png"){
+spriteset(set_MTR_engineH, "..\YSTset\Graphic\locomotive\MTR\MTR_Cammall.png"){
 	engine(80, 0)
 }
 
-spriteset(set_MTR_wagon_start, "..\YSTset\Graphic\locomotive\MTR\MTR.png"){
+spriteset(set_MTR_wagon_start, "..\YSTset\Graphic\locomotive\MTR\MTR_Cammall.png"){
 	wagon_start(80, 27)
 }
 
-spriteset(set_MTR_wagon, "..\YSTset\Graphic\locomotive\MTR\MTR.png") {
+spriteset(set_MTR_wagon, "..\YSTset\Graphic\locomotive\MTR\MTR_Cammall.png") {
     wagon_1F(80, 54)
 }
 
-spriteset(set_MTR_wagon_r, "..\YSTset\Graphic\locomotive\MTR\MTR.png") {
+spriteset(set_MTR_wagon_r, "..\YSTset\Graphic\locomotive\MTR\MTR_Cammall.png") {
     wagon_1F_r(80, 54)
 }
 
-spriteset(set_MTR_wagon_end, "..\YSTset\Graphic\locomotive\MTR\MTR.png"){
+spriteset(set_MTR_wagon_end, "..\YSTset\Graphic\locomotive\MTR\MTR_Cammall.png"){
 	wagon_start(80, 81)
 }
 
-spriteset(set_MTR_engineT, "..\YSTset\Graphic\locomotive\MTR\MTR.png"){
+spriteset(set_MTR_engineT, "..\YSTset\Graphic\locomotive\MTR\MTR_Cammall.png"){
 	engine_r(80, 108)
 }
 
 /*--------------------------------------------------------------------
 5.47.1.2. MTR 개조차량
 --------------------------------------------------------------------*/
-spriteset(set_MTRMH_purchase, "..\YSTset\Graphic\locomotive\MTR\MTR.png"){
+spriteset(set_MTRMH_purchase, "..\YSTset\Graphic\locomotive\MTR\MTR_Cammall.png"){
 	tmpl_purchase_for_dualhead(0, 243)
 }
 
-spriteset(set_MTRM_engineH, "..\YSTset\Graphic\locomotive\MTR\MTR.png"){
+spriteset(set_MTRM_engineH, "..\YSTset\Graphic\locomotive\MTR\MTR_Cammall.png"){
 	engine(80, 135)
 }
 
-spriteset(set_MTRM_wagon_start, "..\YSTset\Graphic\locomotive\MTR\MTR.png"){
+spriteset(set_MTRM_wagon_start, "..\YSTset\Graphic\locomotive\MTR\MTR_Cammall.png"){
 	wagon_start(80, 162)
 }
 
-spriteset(set_MTRM_wagon, "..\YSTset\Graphic\locomotive\MTR\MTR.png") {
+spriteset(set_MTRM_wagon, "..\YSTset\Graphic\locomotive\MTR\MTR_Cammall.png") {
     wagon_1F(80, 189)
 }
 
-spriteset(set_MTRM_wagon_r, "..\YSTset\Graphic\locomotive\MTR\MTR.png") {
+spriteset(set_MTRM_wagon_r, "..\YSTset\Graphic\locomotive\MTR\MTR_Cammall.png") {
     wagon_1F_r(80, 189)
 }
 
-spriteset(set_MTRM_wagon_end, "..\YSTset\Graphic\locomotive\MTR\MTR.png"){
+spriteset(set_MTRM_wagon_end, "..\YSTset\Graphic\locomotive\MTR\MTR_Cammall.png"){
 	wagon_start(80, 216)
 }
 
-spriteset(set_MTRM_engineT, "..\YSTset\Graphic\locomotive\MTR\MTR.png"){
+spriteset(set_MTRM_engineT, "..\YSTset\Graphic\locomotive\MTR\MTR_Cammall.png"){
 	engine_r(80, 243)
 }
 
@@ -10708,265 +10716,113 @@ spriteset(set_MTRM_engineT, "..\YSTset\Graphic\locomotive\MTR\MTR.png"){
 /*--------------------------------------------------------------------
 5.47.1.3. MTR 디즈니선
 --------------------------------------------------------------------*/
-spriteset(set_MTRDH_purchase, "..\YSTset\Graphic\locomotive\MTR\MTR.png"){
+spriteset(set_MTRDH_purchase, "..\YSTset\Graphic\locomotive\MTR\MTR_Cammall.png"){
 	tmpl_purchase_for_dualhead(0, 378)
 }
 
-spriteset(set_MTRD_engineH, "..\YSTset\Graphic\locomotive\MTR\MTR.png"){
+spriteset(set_MTRD_engineH, "..\YSTset\Graphic\locomotive\MTR\MTR_Cammall.png"){
 	engine(80, 270)
 }
 
-spriteset(set_MTRD_wagon_start, "..\YSTset\Graphic\locomotive\MTR\MTR.png"){
+spriteset(set_MTRD_wagon_start, "..\YSTset\Graphic\locomotive\MTR\MTR_Cammall.png"){
 	wagon_start(80, 297)
 }
 
-spriteset(set_MTRD_wagon, "..\YSTset\Graphic\locomotive\MTR\MTR.png") {
+spriteset(set_MTRD_wagon, "..\YSTset\Graphic\locomotive\MTR\MTR_Cammall.png") {
     wagon_1F(80, 324)
 }
 
-spriteset(set_MTRD_wagon_r, "..\YSTset\Graphic\locomotive\MTR\MTR.png") {
+spriteset(set_MTRD_wagon_r, "..\YSTset\Graphic\locomotive\MTR\MTR_Cammall.png") {
     wagon_1F_r(80, 324)
 }
 
-spriteset(set_MTRD_wagon_end, "..\YSTset\Graphic\locomotive\MTR\MTR.png"){
+spriteset(set_MTRD_wagon_end, "..\YSTset\Graphic\locomotive\MTR\MTR_Cammall.png"){
 	wagon_start(80, 351)
 }
 
-spriteset(set_MTRD_engineT, "..\YSTset\Graphic\locomotive\MTR\MTR.png"){
+spriteset(set_MTRD_engineT, "..\YSTset\Graphic\locomotive\MTR\MTR_Cammall.png"){
 	engine_r(80, 378)
-}
-
-/*--------------------------------------------------------------------
-5.47.1.4. MTR CNR
---------------------------------------------------------------------*/
-spriteset(set_MTRCNRH_purchase, "..\YSTset\Graphic\locomotive\MTR\MTR.png"){
-	tmpl_purchase_for_dualhead(0, 513)
-}
-
-spriteset(set_MTRCNR_engineH, "..\YSTset\Graphic\locomotive\MTR\MTR.png"){
-	engine(80, 405)
-}
-
-spriteset(set_MTRCNR_wagon_start, "..\YSTset\Graphic\locomotive\MTR\MTR.png"){
-	wagon_start(80, 432)
-}
-
-spriteset(set_MTRCNR_wagon, "..\YSTset\Graphic\locomotive\MTR\MTR.png") {
-    wagon_1F(80, 459)
-}
-
-spriteset(set_MTRCNR_wagon_r, "..\YSTset\Graphic\locomotive\MTR\MTR.png") {
-    wagon_1F_r(80, 459)
-}
-
-spriteset(set_MTRCNR_wagon_end, "..\YSTset\Graphic\locomotive\MTR\MTR.png"){
-	wagon_start(80, 486)
-}
-
-spriteset(set_MTRCNR_engineT, "..\YSTset\Graphic\locomotive\MTR\MTR.png"){
-	engine_r(80, 513)
-}
-
-/*--------------------------------------------------------------------
-5.47.1.5. MTR CNR 남부섬
---------------------------------------------------------------------*/
-spriteset(set_MTRCNRNH_purchase, "..\YSTset\Graphic\locomotive\MTR\MTR.png"){
-	tmpl_purchase_for_dualhead(0, 648)
-}
-
-spriteset(set_MTRCNRN_engineH, "..\YSTset\Graphic\locomotive\MTR\MTR.png"){
-	engine(80, 540)
-}
-
-spriteset(set_MTRCNRN_wagon_start, "..\YSTset\Graphic\locomotive\MTR\MTR.png"){
-	wagon_start(80, 567)
-}
-
-spriteset(set_MTRCNRN_wagon, "..\YSTset\Graphic\locomotive\MTR\MTR.png") {
-    wagon_1F(80, 594)
-}
-
-spriteset(set_MTRCNRN_wagon_r, "..\YSTset\Graphic\locomotive\MTR\MTR.png") {
-    wagon_1F_r(80, 594)
-}
-
-spriteset(set_MTRCNRN_wagon_end, "..\YSTset\Graphic\locomotive\MTR\MTR.png"){
-	wagon_start(80, 621)
-}
-
-spriteset(set_MTRCNRN_engineT, "..\YSTset\Graphic\locomotive\MTR\MTR.png"){
-	engine_r(80, 648)
-}
-
-/*--------------------------------------------------------------------
-5.47.1.6. MTR CRRC
---------------------------------------------------------------------*/
-spriteset(set_MTRCRRCH_purchase, "..\YSTset\Graphic\locomotive\MTR\MTR.png"){
-	tmpl_purchase_for_dualhead(0, 783)
-}
-
-spriteset(set_MTRCRRC_engineH, "..\YSTset\Graphic\locomotive\MTR\MTR.png"){
-	engine(80, 675)
-}
-
-spriteset(set_MTRCRRC_wagon_start, "..\YSTset\Graphic\locomotive\MTR\MTR.png"){
-	wagon_start(80, 702)
-}
-
-spriteset(set_MTRCRRC_wagon, "..\YSTset\Graphic\locomotive\MTR\MTR.png") {
-    wagon_1F(80, 729)
-}
-
-spriteset(set_MTRCRRC_wagon_r, "..\YSTset\Graphic\locomotive\MTR\MTR.png") {
-    wagon_1F_r(80, 729)
-}
-
-spriteset(set_MTRCRRC_wagon_end, "..\YSTset\Graphic\locomotive\MTR\MTR.png"){
-	wagon_start(80, 756)
-}
-
-spriteset(set_MTRCRRC_engineT, "..\YSTset\Graphic\locomotive\MTR\MTR.png"){
-	engine_r(80, 783)
-}
-
-/*--------------------------------------------------------------------
-5.47.1.6. MTR 미쓰비씨
---------------------------------------------------------------------*/
-spriteset(set_MTRHH_purchase, "..\YSTset\Graphic\locomotive\MTR\MTR.png"){
-	tmpl_purchase_for_dualhead(0, 918)
-}
-
-spriteset(set_MTRH_engineH, "..\YSTset\Graphic\locomotive\MTR\MTR.png"){
-	engine(80, 810)
-}
-
-spriteset(set_MTRH_wagon_start, "..\YSTset\Graphic\locomotive\MTR\MTR.png"){
-	wagon_start(80, 837)
-}
-
-spriteset(set_MTRH_wagon, "..\YSTset\Graphic\locomotive\MTR\MTR.png") {
-    wagon_1F(80, 864)
-}
-
-spriteset(set_MTRH_wagon_r, "..\YSTset\Graphic\locomotive\MTR\MTR.png") {
-    wagon_1F_r(80, 864)
-}
-
-spriteset(set_MTRH_wagon_end, "..\YSTset\Graphic\locomotive\MTR\MTR.png"){
-	wagon_start(80, 891)
-}
-
-spriteset(set_MTRH_engineT, "..\YSTset\Graphic\locomotive\MTR\MTR.png"){
-	engine_r(80, 918)
 }
 
 /*--------------------------------------------------------------------
 5.47.2. 구매정보
 -------------------------------------------------------------------*/
-switch(FEAT_TRAINS, SELF, sw_MTR_purchase, cargo_subtype) {
+switch(FEAT_TRAINS, SELF, sw_MTR_Cammall_purchase, cargo_subtype) {
     set_MTR_purchase;
 }
 
 /*--------------------------------------------------------------------
 5.47.3. 스위치
 --------------------------------------------------------------------*/
-switch(FEAT_TRAINS, SELF, sw_MTR_cargo_subtype_text, cargo_subtype) {
+switch(FEAT_TRAINS, SELF, sw_MTR_Cammall_cargo_subtype_text, cargo_subtype) {
     1: return string(STR_REFIT_LIVERY_MTRM);   // 개조형
     2: return string(STR_REFIT_LIVERY_MTRD);   // 디즈니
-    3: return string(STR_REFIT_LIVERY_MTRCNR);   // CNR
-    4: return string(STR_REFIT_LIVERY_MTRCNRN);   // CNR 남부섬
-    5: return string(STR_REFIT_LIVERY_MTRCRRC);   // CRRC
-    6: return string(STR_REFIT_LIVERY_MTRH);   // 미쓰비시
     return string(STR_REFIT_LIVERY_MTR);
 }
 
-switch(FEAT_TRAINS, SELF, sw_MTR_engineH, cargo_subtype) {
+switch(FEAT_TRAINS, SELF, sw_MTR_Cammall_engineH, cargo_subtype) {
     1: set_MTRM_engineH;   // 개조형
     2: set_MTRD_engineH;   // 디즈니
-    3: set_MTRCNR_engineH;   // CNR
-    4: set_MTRCNRN_engineH;   // CNR 남부섬
-    5: set_MTRCRRC_engineH;   // CRRC
-    6: set_MTRH_engineH;   // 미쓰비시
     set_MTR_engineH;
 }
 
-switch(FEAT_TRAINS, SELF, sw_MTR_engineT, cargo_subtype) {
+switch(FEAT_TRAINS, SELF, sw_MTR_Cammall_engineT, cargo_subtype) {
     1: set_MTRM_engineT;   // 개조형
     2: set_MTRD_engineT;   // 디즈니
-    3: set_MTRCNR_engineT;   // CNR
-    4: set_MTRCNRN_engineT;   // CNR 남부섬
-    5: set_MTRCRRC_engineT;   // CRRC
-    6: set_MTRH_engineT;   // 미쓰비시
     set_MTR_engineT;
 }
 
-switch(FEAT_TRAINS, SELF, sw_MTR_engine, position_in_consist_from_end == 0 && num_vehs_in_consist > 1){
-	1: sw_MTR_engineT;
-	sw_MTR_engineH;
+switch(FEAT_TRAINS, SELF, sw_MTR_Cammall_engine, position_in_consist_from_end == 0 && num_vehs_in_consist > 1){
+	1: sw_MTR_Cammall_engineT;
+	sw_MTR_Cammall_engineH;
 }
 
-switch(FEAT_TRAINS, SELF, sw_MTR_wagon_start, cargo_subtype) {
+switch(FEAT_TRAINS, SELF, sw_MTR_Cammall_wagon_start, cargo_subtype) {
     1: set_MTRM_wagon_start;   // 개조형
     2: set_MTRD_wagon_start;   // 디즈니
-    3: set_MTRCNR_wagon_start;   // CNR
-    4: set_MTRCNRN_wagon_start;   // CNR 남부섬
-    5: set_MTRCRRC_wagon_start;   // CRRC
-    6: set_MTRH_wagon_start;   // 미쓰비시
     set_MTR_wagon_start;
 }
 
-switch(FEAT_TRAINS, SELF, sw_MTR_wagon_front, cargo_subtype) {
+switch(FEAT_TRAINS, SELF, sw_MTR_Cammall_wagon_front, cargo_subtype) {
     1: set_MTRM_wagon;   // 개조형
     2: set_MTRD_wagon;   // 디즈니
-    3: set_MTRCNR_wagon;   // CNR
-    4: set_MTRCNRN_wagon;   // CNR 남부섬
-    5: set_MTRCRRC_wagon;   // CRRC
-    6: set_MTRH_wagon;   // 미쓰비시
     set_MTR_wagon;
 }
 
-switch(FEAT_TRAINS, SELF, sw_MTR_wagon_tail, cargo_subtype) {
+switch(FEAT_TRAINS, SELF, sw_MTR_Cammall_wagon_tail, cargo_subtype) {
     1: set_MTRM_wagon_r;   // 개조형
     2: set_MTRD_wagon_r;   // 디즈니
-    3: set_MTRCNR_wagon_r;   // CNR
-    4: set_MTRCNRN_wagon_r;   // CNR 남부섬
-    5: set_MTRCRRC_wagon_r;   // CRRC
-    6: set_MTRH_wagon_r;   // 미쓰비시
     set_MTR_wagon_r;
 }
 
-switch(FEAT_TRAINS, SELF, sw_MTR_wagon_end, cargo_subtype) {
+switch(FEAT_TRAINS, SELF, sw_MTR_Cammall_wagon_end, cargo_subtype) {
     1: set_MTRM_wagon_end;   // 개조형
     2: set_MTRD_wagon_end;   // 디즈니
-    3: set_MTRCNR_wagon_end;   // CNR
-    4: set_MTRCNRN_wagon_end;   // CNR 남부섬
-    5: set_MTRCRRC_wagon_end;   // CRRC
-    6: set_MTRH_wagon_end;   // 미쓰비시
     set_MTR_wagon_end;
 }
 
-switch(FEAT_TRAINS, SELF, sw_MTR_wagon_middle, (position_in_consist)) {
-    1: sw_MTR_wagon_tail;
-    sw_MTR_wagon_front;
+switch(FEAT_TRAINS, SELF, sw_MTR_Cammall_wagon_middle, (position_in_consist)) {
+    1: sw_MTR_Cammall_wagon_tail;
+    sw_MTR_Cammall_wagon_front;
 }
 
-switch(FEAT_TRAINS, SELF, sw_MTR_wagon_rear, [STORE_TEMP(1, 0x10F), var[0x61, 0, 0x0000FFFF, 0xC6]]){
-    MTR: sw_MTR_wagon_end;
-    sw_MTR_wagon_middle;
+switch(FEAT_TRAINS, SELF, sw_MTR_Cammall_wagon_rear, [STORE_TEMP(1, 0x10F), var[0x61, 0, 0x0000FFFF, 0xC6]]){
+    MTR: sw_MTR_Cammall_wagon_end;
+    sw_MTR_Cammall_wagon_middle;
 }
 
-switch(FEAT_TRAINS, SELF, sw_MTR_wagon, [STORE_TEMP(-1, 0x10F), var[0x61, 0, 0x0000FFFF, 0xC6]]) {
-    MTR: sw_MTR_wagon_start;
-    sw_MTR_wagon_rear;
+switch(FEAT_TRAINS, SELF, sw_MTR_Cammall_wagon, [STORE_TEMP(-1, 0x10F), var[0x61, 0, 0x0000FFFF, 0xC6]]) {
+    MTR: sw_MTR_Cammall_wagon_start;
+    sw_MTR_Cammall_wagon_rear;
 }
 
-switch(FEAT_TRAINS, SELF, sw_MTR_wagon_attach, vehicle_type_id) {
+switch(FEAT_TRAINS, SELF, sw_MTR_Cammall_wagon_attach, vehicle_type_id) {
    YST_Passinger_Car:        return CB_RESULT_ATTACH_ALLOW;
     return string(STR_ERROR_NO_ATTACH);
 }
 
 /*--------------------------------------------------------------------
-5.37.4 열차정보
+5.47.4 열차정보
 --------------------------------------------------------------------*/
 item(FEAT_TRAINS, MTR){
 	property {
@@ -11008,20 +10864,490 @@ item(FEAT_TRAINS, MTR){
         extra_weight_per_wagon:			35 ton;
     }
 	graphics {
-		default:						sw_MTR_engine;
-		purchase:						sw_MTR_purchase;
+		default:						sw_MTR_Cammall_engine;
+		purchase:						sw_MTR_Cammall_purchase;
         loading_speed:					25;
 		cost_factor:					10;
 		running_cost_factor:			150;
-        can_attach_wagon:               sw_MTR_wagon_attach;
-        cargo_subtype_text:             sw_MTR_cargo_subtype_text;
-        start_stop:                     sw_YST_train_start_stop;
+        can_attach_wagon:               sw_MTR_Cammall_wagon_attach;
+        cargo_subtype_text:             sw_MTR_Cammall_cargo_subtype_text;
+        start_stop:                     sw_YST_train_start_stop_3;
 		additional_text:                string(STR_REFIT_ADDITIONAL_ABLE_UNADDTRAIN);
         }
 
     livery_override(YST_Passinger_Car) {
-        default:                        sw_MTR_wagon;
-        cargo_subtype_text:             sw_MTR_cargo_subtype_text;
+        default:                        sw_MTR_Cammall_wagon;
+        cargo_subtype_text:             sw_MTR_Cammall_cargo_subtype_text;
+        cargo_capacity:                 80;
+        loading_speed:                  25;
+        running_cost_factor:            100;}
+        }
+
+/*--------------------------------------------------------------------
+5.48. MTR CNR Changchun
+--------------------------------------------------------------------*/
+/*--------------------------------------------------------------------
+5.48.1 Graphics
+--------------------------------------------------------------------*/
+spriteset(set_MTR_CNR_Changchun_purchase, "..\YSTset\Graphic\locomotive\MTR\MTR_CNR_Changchun.png"){
+	tmpl_purchase(0, 0)
+}
+
+/*--------------------------------------------------------------------
+5.48.1.4. MTR CNR Changchun
+--------------------------------------------------------------------*/
+spriteset(set_MTRCNRH_purchase, "..\YSTset\Graphic\locomotive\MTR\MTR_CNR_Changchun.png"){
+	tmpl_purchase_for_dualhead(0, 108)
+}
+
+spriteset(set_MTRCNR_engineH, "..\YSTset\Graphic\locomotive\MTR\MTR_CNR_Changchun.png"){
+	engine(80, 0)
+}
+
+spriteset(set_MTRCNR_wagon_start, "..\YSTset\Graphic\locomotive\MTR\MTR_CNR_Changchun.png"){
+	wagon_start(80, 27)
+}
+
+spriteset(set_MTRCNR_wagon, "..\YSTset\Graphic\locomotive\MTR\MTR_CNR_Changchun.png") {
+    wagon_1F(80, 54)
+}
+
+spriteset(set_MTRCNR_wagon_r, "..\YSTset\Graphic\locomotive\MTR\MTR_CNR_Changchun.png") {
+    wagon_1F_r(80, 54)
+}
+
+spriteset(set_MTRCNR_wagon_end, "..\YSTset\Graphic\locomotive\MTR\MTR_CNR_Changchun.png"){
+	wagon_start(80, 81)
+}
+
+spriteset(set_MTRCNR_engineT, "..\YSTset\Graphic\locomotive\MTR\MTR_CNR_Changchun.png"){
+	engine_r(80, 108)
+}
+
+/*--------------------------------------------------------------------
+5.48.1.5. MTR CNR Changchun 남부섬
+--------------------------------------------------------------------*/
+spriteset(set_MTRCNRNH_purchase, "..\YSTset\Graphic\locomotive\MTR\MTR_CNR_Changchun.png"){
+	tmpl_purchase_for_dualhead(0, 243)
+}
+
+spriteset(set_MTRCNRN_engineH, "..\YSTset\Graphic\locomotive\MTR\MTR_CNR_Changchun.png"){
+	engine(80, 135)
+}
+
+spriteset(set_MTRCNRN_wagon_start, "..\YSTset\Graphic\locomotive\MTR\MTR_CNR_Changchun.png"){
+	wagon_start(80, 162)
+}
+
+spriteset(set_MTRCNRN_wagon, "..\YSTset\Graphic\locomotive\MTR\MTR_CNR_Changchun.png") {
+    wagon_1F(80, 189)
+}
+
+spriteset(set_MTRCNRN_wagon_r, "..\YSTset\Graphic\locomotive\MTR\MTR_CNR_Changchun.png") {
+    wagon_1F_r(80, 189)
+}
+
+spriteset(set_MTRCNRN_wagon_end, "..\YSTset\Graphic\locomotive\MTR\MTR_CNR_Changchun.png"){
+	wagon_start(80, 216)
+}
+
+spriteset(set_MTRCNRN_engineT, "..\YSTset\Graphic\locomotive\MTR\MTR_CNR_Changchun.png"){
+	engine_r(80, 243)
+}
+
+/*--------------------------------------------------------------------
+5.48.2. 구매정보
+-------------------------------------------------------------------*/
+switch(FEAT_TRAINS, SELF, sw_MTR_CNR_purchase, cargo_subtype) {
+    set_MTR_CNR_Changchun_purchase;
+}
+
+/*--------------------------------------------------------------------
+5.48.3. 스위치
+--------------------------------------------------------------------*/
+switch(FEAT_TRAINS, SELF, sw_MTR_CNR_cargo_subtype_text, cargo_subtype) {
+    1: return string(STR_REFIT_LIVERY_MTRCNRN);   // CNR 남부섬
+    return string(STR_REFIT_LIVERY_MTRCNR);
+}
+
+switch(FEAT_TRAINS, SELF, sw_MTR_CNR_engineH, cargo_subtype) {
+    1: set_MTRCNRN_engineH;   // CNR 남부섬
+    set_MTRCNR_engineH;
+}
+
+switch(FEAT_TRAINS, SELF, sw_MTR_CNR_engineT, cargo_subtype) {
+    1: set_MTRCNRN_engineT;   // CNR 남부섬
+    set_MTRCNR_engineT;
+}
+
+switch(FEAT_TRAINS, SELF, sw_MTR_CNR_engine, position_in_consist_from_end == 0 && num_vehs_in_consist > 1){
+	1: sw_MTR_CNR_engineT;
+	sw_MTR_CNR_engineH;
+}
+
+switch(FEAT_TRAINS, SELF, sw_MTR_CNR_wagon_start, cargo_subtype) {
+    1: set_MTRCNRN_wagon_start;   // CNR 남부섬
+    set_MTRCNR_wagon_start;
+}
+
+switch(FEAT_TRAINS, SELF, sw_MTR_CNR_wagon_front, cargo_subtype) {
+    1: set_MTRCNRN_wagon;   // CNR 남부섬
+    set_MTRCNR_wagon;
+}
+
+switch(FEAT_TRAINS, SELF, sw_MTR_CNR_wagon_tail, cargo_subtype) {
+    1: set_MTRCNRN_wagon_r;   // CNR 남부섬
+    set_MTRCNR_wagon_r;
+}
+
+switch(FEAT_TRAINS, SELF, sw_MTR_CNR_wagon_end, cargo_subtype) {
+    1: set_MTRCNRN_wagon_end;   // CNR 남부섬
+    set_MTRCNR_wagon_end;
+}
+
+switch(FEAT_TRAINS, SELF, sw_MTR_CNR_wagon_middle, (position_in_consist)) {
+    1: sw_MTR_CNR_wagon_tail;
+    sw_MTR_CNR_wagon_front;
+}
+
+switch(FEAT_TRAINS, SELF, sw_MTR_CNR_wagon_rear, [STORE_TEMP(1, 0x10F), var[0x61, 0, 0x0000FFFF, 0xC6]]){
+    MTR_CNR: sw_MTR_CNR_wagon_end;
+    sw_MTR_CNR_wagon_middle;
+}
+
+switch(FEAT_TRAINS, SELF, sw_MTR_CNR_wagon, [STORE_TEMP(-1, 0x10F), var[0x61, 0, 0x0000FFFF, 0xC6]]) {
+    MTR_CNR: sw_MTR_CNR_wagon_start;
+    sw_MTR_CNR_wagon_rear;
+}
+
+switch(FEAT_TRAINS, SELF, sw_MTR_CNR_wagon_attach, vehicle_type_id) {
+   YST_Passinger_Car:        return CB_RESULT_ATTACH_ALLOW;
+    return string(STR_ERROR_NO_ATTACH);
+}
+
+/*--------------------------------------------------------------------
+5.48.4 열차정보
+--------------------------------------------------------------------*/
+item(FEAT_TRAINS, MTR_CNR){
+	property {
+ 		name:							string(STR_MTR_CNR_NAME);
+ 		climates_available:				ALL_CLIMATES;
+		introduction_date:				date(1979, 1, 1);
+        track_type:						ELRL;
+        engine_class:					ENGINE_CLASS_ELECTRIC;
+		sprite_id:						SPRITE_ID_NEW_TRAIN;
+        dual_headed:                    1;        
+        
+        //spec
+		speed:							120km/h;
+		power:							10000 kW;
+		weight:							80 ton;
+		tractive_effort_coefficient:	0.3;
+        air_drag_coefficient:           0.01;
+        
+        //Model
+        model_life:						VEHICLE_NEVER_EXPIRES;
+        vehicle_life:					255;
+        retire_early:					0;
+		reliability_decay:				0;
+        
+        //Cargo
+        cargo_capacity:					80;
+        refittable_cargo_classes:       NO_CARGO_CLASS;
+        non_refittable_cargo_classes:   NO_CARGO_CLASS;
+        cargo_allow_refit:              [PASS];
+        cargo_disallow_refit:           [];
+        
+        //Costs
+        refit_cost:						0;
+        running_cost_base:				RUNNING_COST_ELECTRIC;
+        
+        
+        //Flags
+        misc_flags:						bitmask(TRAIN_FLAG_FLIP, TRAIN_FLAG_AUTOREFIT);
+        extra_weight_per_wagon:			35 ton;
+    }
+	graphics {
+		default:						sw_MTR_CNR_engine;
+		purchase:						sw_MTR_CNR_purchase;
+        loading_speed:					25;
+		cost_factor:					10;
+		running_cost_factor:			150;
+        can_attach_wagon:               sw_MTR_CNR_wagon_attach;
+        cargo_subtype_text:             sw_MTR_CNR_cargo_subtype_text;
+        start_stop:                     sw_YST_train_start_stop_3;
+		additional_text:                string(STR_REFIT_ADDITIONAL_ABLE_UNADDTRAIN);
+        }
+
+    livery_override(YST_Passinger_Car) {
+        default:                        sw_MTR_CNR_wagon;
+        cargo_subtype_text:             sw_MTR_CNR_cargo_subtype_text;
+        cargo_capacity:                 80;
+        loading_speed:                  25;
+        running_cost_factor:            100;}
+        }
+
+/*--------------------------------------------------------------------
+5.49. MTR CRRC Sipang
+--------------------------------------------------------------------*/
+/*--------------------------------------------------------------------
+5.49.1 Graphics
+--------------------------------------------------------------------*/
+spriteset(set_MTR_CRRC_Changchun_purchase, "..\YSTset\Graphic\locomotive\MTR\MTR_CNR_Changchun.png"){
+	tmpl_purchase(0, 0)
+}
+
+spriteset(set_MTRCRRCH_purchase, "..\YSTset\Graphic\locomotive\MTR\MTR_CNR_Changchun.png"){
+	tmpl_purchase_for_dualhead(0, 108)
+}
+
+spriteset(set_MTRCRRC_engineH, "..\YSTset\Graphic\locomotive\MTR\MTR_CNR_Changchun.png"){
+	engine(80, 0)
+}
+
+spriteset(set_MTRCRRC_wagon_start, "..\YSTset\Graphic\locomotive\MTR\MTR_CNR_Changchun.png"){
+	wagon_start(80, 27)
+}
+
+spriteset(set_MTRCRRC_wagon, "..\YSTset\Graphic\locomotive\MTR\MTR_CNR_Changchun.png") {
+    wagon_1F(80, 54)
+}
+
+spriteset(set_MTRCRRC_wagon_r, "..\YSTset\Graphic\locomotive\MTR\MTR_CNR_Changchun.png") {
+    wagon_1F_r(80, 54)
+}
+
+spriteset(set_MTRCRRC_wagon_end, "..\YSTset\Graphic\locomotive\MTR\MTR_CNR_Changchun.png"){
+	wagon_start(80, 81)
+}
+
+spriteset(set_MTRCRRC_engineT, "..\YSTset\Graphic\locomotive\MTR\MTR_CNR_Changchun.png"){
+	engine_r(80, 108)
+}
+
+/*--------------------------------------------------------------------
+5.49.2. 구매정보
+-------------------------------------------------------------------*/
+switch(FEAT_TRAINS, SELF, sw_MTR_CRRC_purchase, cargo_subtype) {
+    set_MTR_CRRC_Changchun_purchase;
+}
+
+/*--------------------------------------------------------------------
+5.49.3. 스위치
+--------------------------------------------------------------------*/
+switch(FEAT_TRAINS, SELF, sw_MTR_CRRC_engine, position_in_consist_from_end == 0 && num_vehs_in_consist > 1){
+	1: set_MTRCRRC_engineT;
+	set_MTRCRRC_engineH;
+}
+
+switch(FEAT_TRAINS, SELF, sw_MTR_CRRC_wagon_middle, (position_in_consist)) {
+    1: set_MTRCRRC_wagon_r;
+    set_MTRCRRC_wagon;
+}
+
+switch(FEAT_TRAINS, SELF, sw_MTR_CRRC_wagon_rear, [STORE_TEMP(1, 0x10F), var[0x61, 0, 0x0000FFFF, 0xC6]]){
+    MTR_CRRC: set_MTRCRRC_wagon_end;
+    sw_MTR_CRRC_wagon_middle;
+}
+
+switch(FEAT_TRAINS, SELF, sw_MTR_CRRC_wagon, [STORE_TEMP(-1, 0x10F), var[0x61, 0, 0x0000FFFF, 0xC6]]) {
+    MTR_CRRC: set_MTRCRRC_wagon_start;
+    sw_MTR_CRRC_wagon_rear;
+}
+
+switch(FEAT_TRAINS, SELF, sw_MTR_CRRC_wagon_attach, vehicle_type_id) {
+   YST_Passinger_Car:        return CB_RESULT_ATTACH_ALLOW;
+    return string(STR_ERROR_NO_ATTACH);
+}
+
+/*--------------------------------------------------------------------
+5.49.4 열차정보
+--------------------------------------------------------------------*/
+item(FEAT_TRAINS, MTR_CRRC){
+	property {
+ 		name:							string(STR_MTR_CRRC_NAME);
+ 		climates_available:				ALL_CLIMATES;
+		introduction_date:				date(1979, 1, 1);
+        track_type:						ELRL;
+        engine_class:					ENGINE_CLASS_ELECTRIC;
+		sprite_id:						SPRITE_ID_NEW_TRAIN;
+        dual_headed:                    1;        
+        
+        //spec
+		speed:							120km/h;
+		power:							10000 kW;
+		weight:							80 ton;
+		tractive_effort_coefficient:	0.3;
+        air_drag_coefficient:           0.01;
+        
+        //Model
+        model_life:						VEHICLE_NEVER_EXPIRES;
+        vehicle_life:					255;
+        retire_early:					0;
+		reliability_decay:				0;
+        
+        //Cargo
+        cargo_capacity:					80;
+        refittable_cargo_classes:       NO_CARGO_CLASS;
+        non_refittable_cargo_classes:   NO_CARGO_CLASS;
+        cargo_allow_refit:              [PASS];
+        cargo_disallow_refit:           [];
+        
+        //Costs
+        refit_cost:						0;
+        running_cost_base:				RUNNING_COST_ELECTRIC;
+        
+        
+        //Flags
+        misc_flags:						bitmask(TRAIN_FLAG_FLIP, TRAIN_FLAG_AUTOREFIT);
+        extra_weight_per_wagon:			35 ton;
+    }
+	graphics {
+		default:						sw_MTR_CRRC_engine;
+		purchase:						sw_MTR_CRRC_purchase;
+        loading_speed:					25;
+		cost_factor:					10;
+		running_cost_factor:			150;
+        can_attach_wagon:               sw_MTR_CRRC_wagon_attach;
+        start_stop:                     sw_YST_train_start_stop_3;
+		additional_text:                string(STR_REFIT_ADDITIONAL_ABLE_UNADDTRAIN);
+        }
+
+    livery_override(YST_Passinger_Car) {
+        default:                        sw_MTR_CRRC_wagon;
+        cargo_capacity:                 80;
+        loading_speed:                  25;
+        running_cost_factor:            100;}
+        }
+    
+/*--------------------------------------------------------------------
+5.47. MTR Rotem Mitsubishi
+--------------------------------------------------------------------*/
+/*--------------------------------------------------------------------
+5.47.1.6. MTR 미쓰비씨
+--------------------------------------------------------------------*/
+spriteset(set_MTRHM_purchase, "..\YSTset\Graphic\locomotive\MTR\MTR_Rotem_Mitsubishi.png"){
+	tmpl_purchase(0, 0)
+}
+
+spriteset(set_MTRHH_purchase, "..\YSTset\Graphic\locomotive\MTR\MTR_Rotem_Mitsubishi.png"){
+	tmpl_purchase_for_dualhead(0, 108)
+}
+
+spriteset(set_MTRH_engineH, "..\YSTset\Graphic\locomotive\MTR\MTR_Rotem_Mitsubishi.png"){
+	engine(80, 0)
+}
+
+spriteset(set_MTRH_wagon_start, "..\YSTset\Graphic\locomotive\MTR\MTR_Rotem_Mitsubishi.png"){
+	wagon_start(80, 27)
+}
+
+spriteset(set_MTRH_wagon, "..\YSTset\Graphic\locomotive\MTR\MTR_Rotem_Mitsubishi.png") {
+    wagon_1F(80, 54)
+}
+
+spriteset(set_MTRH_wagon_r, "..\YSTset\Graphic\locomotive\MTR\MTR_Rotem_Mitsubishi.png") {
+    wagon_1F_r(80, 54)
+}
+
+spriteset(set_MTRH_wagon_end, "..\YSTset\Graphic\locomotive\MTR\MTR_Rotem_Mitsubishi.png"){
+	wagon_start(80, 81)
+}
+
+spriteset(set_MTRH_engineT, "..\YSTset\Graphic\locomotive\MTR\MTR_Rotem_Mitsubishi.png"){
+	engine_r(80, 108)
+}
+
+/*--------------------------------------------------------------------
+5.47.2. 구매정보
+-------------------------------------------------------------------*/
+switch(FEAT_TRAINS, SELF, sw_MTR_HM_purchase, cargo_subtype) {
+    set_MTRHM_purchase;
+}
+
+/*--------------------------------------------------------------------
+5.47.3. 스위치
+--------------------------------------------------------------------*/
+switch(FEAT_TRAINS, SELF, sw_MTR_HM_engine, position_in_consist_from_end == 0 && num_vehs_in_consist > 1){
+	1: set_MTRH_engineT;
+	set_MTRH_engineH;
+}
+
+switch(FEAT_TRAINS, SELF, sw_MTR_HM_wagon_middle, (position_in_consist)) {
+    1: set_MTRH_wagon_r;
+    set_MTRH_wagon;
+}
+
+switch(FEAT_TRAINS, SELF, sw_MTR_HM_wagon_rear, [STORE_TEMP(1, 0x10F), var[0x61, 0, 0x0000FFFF, 0xC6]]){
+    MTR_HM: set_MTRH_wagon_end;
+    sw_MTR_HM_wagon_middle;
+}
+
+switch(FEAT_TRAINS, SELF, sw_MTR_HM_wagon, [STORE_TEMP(-1, 0x10F), var[0x61, 0, 0x0000FFFF, 0xC6]]) {
+    MTR_HM: set_MTRH_wagon_start;
+    sw_MTR_HM_wagon_rear;
+}
+
+switch(FEAT_TRAINS, SELF, sw_MTR_HM_wagon_attach, vehicle_type_id) {
+   YST_Passinger_Car:        return CB_RESULT_ATTACH_ALLOW;
+    return string(STR_ERROR_NO_ATTACH);
+}
+
+/*--------------------------------------------------------------------
+5.37.4 열차정보
+--------------------------------------------------------------------*/
+item(FEAT_TRAINS, MTR_HM){
+	property {
+ 		name:							string(STR_MTR_HM_NAME);
+ 		climates_available:				ALL_CLIMATES;
+		introduction_date:				date(1979, 1, 1);
+        track_type:						ELRL;
+        engine_class:					ENGINE_CLASS_ELECTRIC;
+		sprite_id:						SPRITE_ID_NEW_TRAIN;
+        dual_headed:                    1;        
+        
+        //spec
+		speed:							120km/h;
+		power:							10000 kW;
+		weight:							80 ton;
+		tractive_effort_coefficient:	0.3;
+        air_drag_coefficient:           0.01;
+        
+        //Model
+        model_life:						VEHICLE_NEVER_EXPIRES;
+        vehicle_life:					255;
+        retire_early:					0;
+		reliability_decay:				0;
+        
+        //Cargo
+        cargo_capacity:					80;
+        refittable_cargo_classes:       NO_CARGO_CLASS;
+        non_refittable_cargo_classes:   NO_CARGO_CLASS;
+        cargo_allow_refit:              [PASS];
+        cargo_disallow_refit:           [];
+        
+        //Costs
+        refit_cost:						0;
+        running_cost_base:				RUNNING_COST_ELECTRIC;
+        
+        
+        //Flags
+        misc_flags:						bitmask(TRAIN_FLAG_FLIP, TRAIN_FLAG_AUTOREFIT);
+        extra_weight_per_wagon:			35 ton;
+    }
+	graphics {
+		default:						sw_MTR_HM_engine;
+		purchase:						sw_MTR_HM_purchase;
+        loading_speed:					25;
+		cost_factor:					10;
+		running_cost_factor:			150;
+        can_attach_wagon:               sw_MTR_HM_wagon_attach;
+        start_stop:                     sw_YST_train_start_stop_3;
+		additional_text:                string(STR_REFIT_ADDITIONAL_ABLE_UNADDTRAIN);
+        }
+
+    livery_override(YST_Passinger_Car) {
+        default:                        sw_MTR_HM_wagon;
         cargo_capacity:                 80;
         loading_speed:                  25;
         running_cost_factor:            100;}
@@ -11057,6 +11383,9 @@ sort(FEAT_TRAINS, [
     ICE_SP,
     KTX_N,
     MTR,
+    MTR_CNR,
+    MTR_CRRC,
+    MTR_HM,
     N700,
     NJ2,
     NKX,
