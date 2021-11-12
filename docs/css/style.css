@@ -34,7 +34,7 @@
 /* YST열차구분메뉴(여객열차, 기관차, 화물열차) */
 .nav_train {overflow: hidden; padding: 20px 0;}
 .nav_train > div {text-align: center;}
-.nav_train > div li {float: left; width: 31%; margin: 1%;}
+.nav_train > div li {float: left; width: 23%; margin: 1%;}
 .nav_train > div li a {display: inline-block; transition: color 0.5s ease; font-size: 30px;}
 .nav_train > div li a:hover {color:#827717;}
 
