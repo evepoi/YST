@@ -8,8 +8,8 @@ grf {
 	grfid: "YSN2";
 	name: string(STR_GRF_NAME_WITH_VER);
 	desc: string(STR_GRF_DESC);
-	version: 14;
-	min_compatible_version: 13;
+	version: 15;
+	min_compatible_version: 14;
     
 /*--------------------------------------------------------------------
 매개변수
@@ -1165,7 +1165,7 @@ item(FEAT_TRAINS, AVE){
 		reliability_decay:				0;
         
         //Cargo
-        cargo_capacity:                 0;
+        cargo_capacity:                 1;
         refittable_cargo_classes:       NO_CARGO_CLASS;
         non_refittable_cargo_classes:   NO_CARGO_CLASS;
         cargo_allow_refit:              [PASS];
@@ -1173,7 +1173,7 @@ item(FEAT_TRAINS, AVE){
         
         //Costs
         refit_cost:						0;
-        running_cost_base:				RUNNING_COST_ELECTRIC;
+        running_cost_base:				RUNNING_COST_DIESEL;
         
         
         //Flags
@@ -1186,6 +1186,8 @@ item(FEAT_TRAINS, AVE){
         loading_speed:					25;
 		cost_factor:					10;
 		running_cost_factor:			150;
+        cargo_capacity:                 0;
+        purchase_cargo_capacity:        0;
         can_attach_wagon:               sw_AVE_wagon_attach;
         start_stop:                     sw_YST_train_start_stop_6;
         additional_text:                string(STR_REFIT_ADDITIONAL_UNABLE_AVE);
@@ -2784,7 +2786,7 @@ item(FEAT_TRAINS, E300){
 		reliability_decay:				0;
         
         //Cargo
-        cargo_capacity:					0;
+        cargo_capacity:					1;
         refittable_cargo_classes:       NO_CARGO_CLASS;
         non_refittable_cargo_classes:   NO_CARGO_CLASS;
         cargo_allow_refit:              [PASS];
@@ -2792,7 +2794,7 @@ item(FEAT_TRAINS, E300){
         
         //Costs
         refit_cost:						0;
-        running_cost_base:				RUNNING_COST_ELECTRIC;
+        running_cost_base:				RUNNING_COST_DIESEL;
         
         
         //Flags
@@ -2805,6 +2807,8 @@ item(FEAT_TRAINS, E300){
         loading_speed:					25;
 		cost_factor:					10;
 		running_cost_factor:			150;
+        cargo_capacity:                 0;
+        purchase_cargo_capacity:        0;
         can_attach_wagon:               sw_E300_wagon_attach;
         cargo_subtype_text:             sw_E300_cargo_subtype_text;
         start_stop:                     sw_YST_train_start_stop_6;
@@ -3430,7 +3434,7 @@ item(FEAT_TRAINS, Glory_600){
 		reliability_decay:				0;
         
         //Cargo
-        cargo_capacity:					0;
+        cargo_capacity:					1;
         refittable_cargo_classes:       NO_CARGO_CLASS;
         non_refittable_cargo_classes:   NO_CARGO_CLASS;
         cargo_allow_refit:              [PASS];
@@ -3438,7 +3442,7 @@ item(FEAT_TRAINS, Glory_600){
         
         //Costs
         refit_cost:						0;
-        running_cost_base:				RUNNING_COST_ELECTRIC;
+        running_cost_base:				RUNNING_COST_DIESEL;
         
         
         //Flags
@@ -3452,6 +3456,8 @@ item(FEAT_TRAINS, Glory_600){
         loading_speed:					25;
 		cost_factor:					10;
 		running_cost_factor:			150;
+        cargo_capacity:                 0;
+        purchase_cargo_capacity:        0;
         can_attach_wagon:               sw_Glory_600_wagon_attach;
         start_stop:                     sw_YST_train_start_stop_6;
         cargo_subtype_text:             sw_Glory_600_cargo_subtype_text;
@@ -4238,7 +4244,7 @@ item(FEAT_TRAINS, KTX_N){
 		reliability_decay:				0;
         
         //Cargo
-        cargo_capacity:					0;
+        cargo_capacity:					1;
         refittable_cargo_classes:       NO_CARGO_CLASS;
         non_refittable_cargo_classes:   NO_CARGO_CLASS;
         cargo_allow_refit:              [PASS];
@@ -4246,7 +4252,7 @@ item(FEAT_TRAINS, KTX_N){
         
         //Costs
         refit_cost:						0;
-        running_cost_base:				RUNNING_COST_ELECTRIC;
+        running_cost_base:				RUNNING_COST_DIESEL;
         
         
         //Flags
@@ -4259,6 +4265,8 @@ item(FEAT_TRAINS, KTX_N){
         loading_speed:					25;
 		cost_factor:					10;
 		running_cost_factor:			150;
+        cargo_capacity:                 0;
+        purchase_cargo_capacity:        0;
         can_attach_wagon:               sw_KTX_N_wagon_attach;
         start_stop:                     sw_YST_train_start_stop_6;
 		additional_text:                string(STR_REFIT_ADDITIONAL_UNABLE_KTXN);
@@ -4949,7 +4957,7 @@ item(FEAT_TRAINS, TALGO){
 		reliability_decay:				0;
         
         //Cargo
-        cargo_capacity:					0;
+        cargo_capacity:					1;
         refittable_cargo_classes:       NO_CARGO_CLASS;
         non_refittable_cargo_classes:   NO_CARGO_CLASS;
         cargo_allow_refit:              [PASS];
@@ -4957,7 +4965,7 @@ item(FEAT_TRAINS, TALGO){
         
         //Costs
         refit_cost:						0;
-        running_cost_base:				RUNNING_COST_ELECTRIC;
+        running_cost_base:				RUNNING_COST_DIESEL;
         
         
         //Flags
@@ -4970,6 +4978,8 @@ item(FEAT_TRAINS, TALGO){
         loading_speed:					25;
 		cost_factor:					10;
 		running_cost_factor:			150;
+        cargo_capacity:                 0;
+        purchase_cargo_capacity:        0;
         can_attach_wagon:               sw_Talgo_wagon_attach;
         cargo_subtype_text:             sw_Talgo_cargo_subtype_text;
         start_stop:                     sw_YST_train_start_stop_6;
@@ -5085,7 +5095,7 @@ item(FEAT_TRAINS, TGV_OLD){
 		reliability_decay:				0;
         
         //Cargo
-        cargo_capacity:					0;
+        cargo_capacity:					1;
         refittable_cargo_classes:       NO_CARGO_CLASS;
         non_refittable_cargo_classes:   NO_CARGO_CLASS;
         cargo_allow_refit:              [PASS];
@@ -5093,7 +5103,7 @@ item(FEAT_TRAINS, TGV_OLD){
         
         //Costs
         refit_cost:						0;
-        running_cost_base:				RUNNING_COST_ELECTRIC;
+        running_cost_base:				RUNNING_COST_DIESEL;
         
         
         //Flags
@@ -5106,6 +5116,8 @@ item(FEAT_TRAINS, TGV_OLD){
         loading_speed:					25;
 		cost_factor:					10;
 		running_cost_factor:			150;
+        cargo_capacity:                 0;
+        purchase_cargo_capacity:        0;
         can_attach_wagon:               sw_TGV_Old_wagon_attach;
         start_stop:                     sw_YST_train_start_stop_6;
         additional_text:                string(STR_REFIT_ADDITIONAL_UNABLE_TGV_OLD);
@@ -5338,7 +5350,7 @@ item(FEAT_TRAINS, TGV_OLD_Pos){
 		reliability_decay:				0;
         
         //Cargo
-        cargo_capacity:					0;
+        cargo_capacity:					1;
         refittable_cargo_classes:       NO_CARGO_CLASS;
         non_refittable_cargo_classes:   NO_CARGO_CLASS;
         cargo_allow_refit:              [PASS];
@@ -5346,7 +5358,7 @@ item(FEAT_TRAINS, TGV_OLD_Pos){
         
         //Costs
         refit_cost:						0;
-        running_cost_base:				RUNNING_COST_ELECTRIC;
+        running_cost_base:				RUNNING_COST_DIESEL;
         
         
         //Flags
@@ -5359,6 +5371,8 @@ item(FEAT_TRAINS, TGV_OLD_Pos){
         loading_speed:					25;
 		cost_factor:					10;
 		running_cost_factor:			150;
+        cargo_capacity:                 0;
+        purchase_cargo_capacity:        0;
         can_attach_wagon:               sw_TGV_OLD_Pos_wagon_attach;
         cargo_subtype_text:             sw_TGV_OLD_Pos_cargo_subtype_text;
         start_stop:                     sw_YST_train_start_stop_6;
@@ -5593,7 +5607,7 @@ item(FEAT_TRAINS, TGV_Pos){
 		reliability_decay:				0;
         
         //Cargo
-        cargo_capacity:					0;
+        cargo_capacity:					1;
         refittable_cargo_classes:       NO_CARGO_CLASS;
         non_refittable_cargo_classes:   NO_CARGO_CLASS;
         cargo_allow_refit:              [PASS];
@@ -5601,7 +5615,7 @@ item(FEAT_TRAINS, TGV_Pos){
         
         //Costs
         refit_cost:						0;
-        running_cost_base:				RUNNING_COST_ELECTRIC;
+        running_cost_base:				RUNNING_COST_DIESEL;
         
         
         //Flags
@@ -5614,6 +5628,8 @@ item(FEAT_TRAINS, TGV_Pos){
         loading_speed:					25;
 		cost_factor:					10;
 		running_cost_factor:			150;
+        cargo_capacity:                 0;
+        purchase_cargo_capacity:        0;
         can_attach_wagon:               sw_TGV_Pos_wagon_attach;
         cargo_subtype_text:             sw_TGV_Pos_cargo_subtype_text;
         start_stop:                     sw_YST_train_start_stop_6;
@@ -5819,7 +5835,7 @@ item(FEAT_TRAINS, TGV_OLD_Duplex){
 		reliability_decay:				0;
         
         //Cargo
-        cargo_capacity:				    0;
+        cargo_capacity:				    1;
         refittable_cargo_classes:       NO_CARGO_CLASS;
         non_refittable_cargo_classes:   NO_CARGO_CLASS;
         cargo_allow_refit:              [PASS];
@@ -5827,7 +5843,7 @@ item(FEAT_TRAINS, TGV_OLD_Duplex){
         
         //Costs
         refit_cost:						0;
-        running_cost_base:				RUNNING_COST_ELECTRIC;
+        running_cost_base:				RUNNING_COST_DIESEL;
         
         
         //Flags
@@ -5840,6 +5856,8 @@ item(FEAT_TRAINS, TGV_OLD_Duplex){
         loading_speed:					25;
 		cost_factor:					10;
 		running_cost_factor:			150;
+        cargo_capacity:                 0;
+        purchase_cargo_capacity:        0;
         can_attach_wagon:               sw_TGV_OLD_Duplex_wagon_attach;
         cargo_subtype_text:             sw_TGV_OLD_Duplex_cargo_subtype_text;
         start_stop:                     sw_YST_train_start_stop_6;
@@ -6036,7 +6054,7 @@ item(FEAT_TRAINS, TGV_Duplex){
 		reliability_decay:				0;
         
         //Cargo
-        cargo_capacity:					0;
+        cargo_capacity:					1;
         refittable_cargo_classes:       NO_CARGO_CLASS;
         non_refittable_cargo_classes:   NO_CARGO_CLASS;
         cargo_allow_refit:              [PASS];
@@ -6044,7 +6062,7 @@ item(FEAT_TRAINS, TGV_Duplex){
         
         //Costs
         refit_cost:						0;
-        running_cost_base:				RUNNING_COST_ELECTRIC;
+        running_cost_base:				RUNNING_COST_DIESEL;
         
         
         //Flags
@@ -6057,6 +6075,8 @@ item(FEAT_TRAINS, TGV_Duplex){
         loading_speed:					25;
 		cost_factor:					10;
 		running_cost_factor:			150;
+        cargo_capacity:                 0;
+        purchase_cargo_capacity:        0;
         can_attach_wagon:               sw_TGV_Duplex_wagon_attach;
         cargo_subtype_text:             sw_TGV_Duplex_cargo_subtype_text;
         start_stop:                     sw_YST_train_start_stop_6;
@@ -6172,7 +6192,7 @@ item(FEAT_TRAINS, TGV_Ouigo){
 		reliability_decay:				0;
         
         //Cargo
-        cargo_capacity:					0;
+        cargo_capacity:					1;
         refittable_cargo_classes:       NO_CARGO_CLASS;
         non_refittable_cargo_classes:   NO_CARGO_CLASS;
         cargo_allow_refit:              [PASS];
@@ -6180,19 +6200,25 @@ item(FEAT_TRAINS, TGV_Ouigo){
         
         //Costs
         refit_cost:						0;
-        running_cost_base:				RUNNING_COST_ELECTRIC;
+        running_cost_base:				RUNNING_COST_DIESEL;
         
         
         //Flags
+        ai_special_flag:                AI_FLAG_PASSENGER;
         misc_flags:						bitmask(TRAIN_FLAG_MU,TRAIN_FLAG_AUTOREFIT);
+        bitmask_vehicle_info:           0;
         extra_weight_per_wagon:			35 ton;
         }
 	graphics {
 		default:						sw_TGV_Ouigo_engine;
 		purchase:						sw_TGV_Ouigo_purchase;
+        
+        cost_factor:					10;
+        running_cost_factor:			150;
+        cargo_capacity:                 0;
+        purchase_cargo_capacity:        0;
         loading_speed:					25;
-		cost_factor:					10;
-		running_cost_factor:			150;
+        	
         can_attach_wagon:               sw_TGV_Ouigo_wagon_attach;
         start_stop:                     sw_YST_train_start_stop_6;
         additional_text:                string(STR_REFIT_ADDITIONAL_UNABLE_TGV_Ouigo);
@@ -6416,8 +6442,8 @@ item(FEAT_TRAINS, YFX){
         cargo_capacity:					100;
         refittable_cargo_classes:       NO_CARGO_CLASS;
         non_refittable_cargo_classes:   NO_CARGO_CLASS;
-        cargo_allow_refit:              [];
-        cargo_disallow_refit:           [PASS];
+        cargo_allow_refit:              [COAL, MAIL, OIL_, LVST, GOOD, GRAI, WOOD, IORE, STEL, VALU, PAPR, WHEA, FOOD, GOLD, RUBR, FRUT, MAIZ, CORE, WATR, DIAM, SUGR, BATT, BUBL, COLA, CTCD, FZDR, PLST, SWET, TOFF, TOYS, AORE, RCYC, SGBT, FICR, MNSP, METL, ACID, BEER, STAL, ALUM, NH3_, BEAN, BDMT, CBLK, STCB, CASS, CSTI, CMNT, RFPR, CHLO, CLAY, SOAP, CTAR, JAVA, COKE, COPR, EOIL, POWR, ENSP, BOOM, FMSP, FECR, FERT, FISH, GLAS, KAOL, LIME, MNO2, MILK, NITR, NUTS, O2__, COAT, PEAT, PETR, PHOS, IRON, PIPE, PLAS, POTA, PORE, QLME, SALT, SAND, SCMT, SLAG, SASH, LYE_, STST, STSE, STSH, STWR, GRVL, SULP, WDPR, TYRE, VBOD, VENG, VPTS, VEHI, WOOL, ZINC];
+        cargo_disallow_refit:           [];
     
         //Costs
         refit_cost:						0;
@@ -6467,7 +6493,7 @@ item(FEAT_TRAINS, YFXF){
         refittable_cargo_classes:       NO_CARGO_CLASS;
         non_refittable_cargo_classes:   NO_CARGO_CLASS;
         cargo_allow_refit:              [COAL, MAIL, OIL_, LVST, GOOD, GRAI, WOOD, IORE, STEL, VALU, PAPR, WHEA, FOOD, GOLD, RUBR, FRUT, MAIZ, CORE, WATR, DIAM, SUGR, BATT, BUBL, COLA, CTCD, FZDR, PLST, SWET, TOFF, TOYS, AORE, RCYC, SGBT, FICR, MNSP, METL, ACID, BEER, STAL, ALUM, NH3_, BEAN, BDMT, CBLK, STCB, CASS, CSTI, CMNT, RFPR, CHLO, CLAY, SOAP, CTAR, JAVA, COKE, COPR, EOIL, POWR, ENSP, BOOM, FMSP, FECR, FERT, FISH, GLAS, KAOL, LIME, MNO2, MILK, NITR, NUTS, O2__, COAT, PEAT, PETR, PHOS, IRON, PIPE, PLAS, POTA, PORE, QLME, SALT, SAND, SCMT, SLAG, SASH, LYE_, STST, STSE, STSH, STWR, GRVL, SULP, WDPR, TYRE, VBOD, VENG, VPTS, VEHI, WOOL, ZINC];
-        cargo_disallow_refit:           [PASS];
+        cargo_disallow_refit:           [];
         
         //Costs
         refit_cost:						0;
@@ -8061,7 +8087,7 @@ item(FEAT_TRAINS, DRY700){
         
         //Costs
         refit_cost:						0;
-        running_cost_base:				RUNNING_COST_ELECTRIC;
+        running_cost_base:				RUNNING_COST_NONE;
         
         
         //Flags
@@ -8072,7 +8098,7 @@ item(FEAT_TRAINS, DRY700){
 	graphics {
 		default:						sw_DRY700_engine;
 		purchase:						sw_DRY700_purchase;
-		cost_factor:					10;
+        cost_factor:					10;
 		running_cost_factor:			150;
         can_attach_wagon:               sw_DRY700_wagon_attach;
         start_stop:                     sw_YST_train_start_stop_6;
