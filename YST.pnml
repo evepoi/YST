@@ -46,9 +46,7 @@ param 1 {
 --------------------------------------------------------------------*/
 }
 
-/*--------------------------------------------------------------------
-1. 화물테이블
---------------------------------------------------------------------*/
+// 화물테이블
 cargotable {
     // TTD
     PASS, COAL, MAIL, OIL_, LVST, GOOD, GRAI, WOOD, IORE, STEL, VALU, PAPR, WHEA, FOOD, GOLD, RUBR,
@@ -65,47 +63,12 @@ cargotable {
     WOOL, ZINC
 }
 
+// Railtypetable
 railtypetable {
     RAIL, ELRL}
 
-/*--------------------------------------------------------------------
-2. 공통 Template
---------------------------------------------------------------------*/
-// Template - Purchase image
-template tmpl_purchase_detail(x, y, w, h, offX, offY) {
-    [   0,    0,    1,    1,    0,    0]
-    [   0,    0,    1,    1,    0,    0]
-    [   0,    0,    1,    1,    0,    0]
-    [   0,    0,    1,    1,    0,    0]
-    [   0,    0,    1,    1,    0,    0]
-    [   0,    0,    1,    1,    0,    0]
-    [   x,    y,    w,    h, offX, offY]
-    [   0,    0,    1,    1,    0,    0]
-}
-
-template tmpl_purchase_for_dualhead(x, y) {
-    tmpl_purchase_detail(x, y, 70, 15, -25, -8)
-}
-
-template tmpl_purchase(x, y) {
-    tmpl_purchase_detail(x, y, 70, 15, -25, -8)
-}
-
-template tmpl_single_purchase(x, y) {
-    tmpl_purchase_detail(x, y, 70, 15, -39, -8)
-}
-
-template tmpl_wagon_purchase(x, y) {
-    tmpl_purchase_detail(x, y, 70, 15, -38, -8)
-}
-
-template tmpl_Flat_1F_purchase(x, y) {
-    tmpl_purchase_detail(x, y, 70, 15, -38, -8)
-}
-
-template tmpl_Flat_2F_purchase(x, y) {
-    tmpl_purchase_detail(x, y, 70, 15, -38, -8)
-}
+// Load templates
+#include "src/template_list.pnml"
 
 /*--------------------------------------------------------------------
 3. 공통 Template
@@ -275,18 +238,18 @@ switch(FEAT_TRAINS, SELF, sw_Passenger_wagon_cargo_subtype_text, vehicle_type_id
 /*--------------------------------------------------------------------
 5.1.1 Graphics
 --------------------------------------------------------------------*/
-spriteset(set_1F_wagon, "..\YSTset\Graphic\wagon\passenger_wagon.png") {
+spriteset(set_1F_wagon, "src\wagon\passenger_wagon.png") {
     wagon_1F(80, 0)
 }
 
-spriteset(set_1F_wagon_r, "..\YSTset\Graphic\wagon\passenger_wagon.png") {
+spriteset(set_1F_wagon_r, "src\wagon\passenger_wagon.png") {
     wagon_1F_r(80, 0)
 }
 
 /*--------------------------------------------------------------------
 5.1.2. 구매정보
 --------------------------------------------------------------------*/
-spriteset(set_1F_wagon_purchase, "..\YSTset\Graphic\wagon\passenger_wagon.png"){
+spriteset(set_1F_wagon_purchase, "src\wagon\passenger_wagon.png"){
 	tmpl_wagon_purchase(0, 0)
 }
 
@@ -348,18 +311,18 @@ item (FEAT_TRAINS, YST_Passinger_Car){
 /*--------------------------------------------------------------------
 5.2.1 Graphics
 --------------------------------------------------------------------*/
-spriteset(set_2F_wagon, "..\YSTset\Graphic\wagon\passenger_wagon.png") {
+spriteset(set_2F_wagon, "src\wagon\passenger_wagon.png") {
     wagon_1F(80, 27)
 }
 
-spriteset(set_2F_wagon_r, "..\YSTset\Graphic\wagon\passenger_wagon.png") {
+spriteset(set_2F_wagon_r, "src\wagon\passenger_wagon.png") {
     wagon_1F_r(80, 27)
 }
 
 /*--------------------------------------------------------------------
 5.2.2. 구매정보
 --------------------------------------------------------------------*/
-spriteset(set_2F_wagon_purchase, "..\YSTset\Graphic\wagon\passenger_wagon.png"){
+spriteset(set_2F_wagon_purchase, "src\wagon\passenger_wagon.png"){
 	tmpl_wagon_purchase(0, 27)
 }
 
@@ -421,131 +384,131 @@ item (FEAT_TRAINS, YST_Passinger_2F_Car){
 /*--------------------------------------------------------------------
 5.3.1 Graphics
 --------------------------------------------------------------------*/
-spriteset(set_500_purchase, "..\YSTset\Graphic\locomotive\500\500.png"){
+spriteset(set_500_purchase, "src\locomotive\500\500.png"){
 	tmpl_purchase(0, 0)
 }
 
 /*--------------------------------------------------------------------
 5.3.1.1. 신칸센 500계
 --------------------------------------------------------------------*/
-spriteset(set_500H_purchase, "..\YSTset\Graphic\locomotive\500\500.png"){
+spriteset(set_500H_purchase, "src\locomotive\500\500.png"){
 	tmpl_purchase_for_dualhead(0, 108)
 }
 
-spriteset(set_500_engineH, "..\YSTset\Graphic\locomotive\500\500.png"){
+spriteset(set_500_engineH, "src\locomotive\500\500.png"){
 	engine(80, 0)
 }
 
-spriteset(set_500_wagon_start, "..\YSTset\Graphic\locomotive\500\500.png"){
+spriteset(set_500_wagon_start, "src\locomotive\500\500.png"){
 	wagon_panto(80, 27)
 }
 
-spriteset(set_500_wagon, "..\YSTset\Graphic\locomotive\500\500.png") {
+spriteset(set_500_wagon, "src\locomotive\500\500.png") {
     wagon_1F(80, 54)
 }
 
-spriteset(set_500_wagon_r, "..\YSTset\Graphic\locomotive\500\500.png") {
+spriteset(set_500_wagon_r, "src\locomotive\500\500.png") {
     wagon_1F_r(80, 54)
 }
 
-spriteset(set_500_wagon_end, "..\YSTset\Graphic\locomotive\500\500.png"){
+spriteset(set_500_wagon_end, "src\locomotive\500\500.png"){
 	wagon_panto(80, 81)
 }
 
-spriteset(set_500_engineT, "..\YSTset\Graphic\locomotive\500\500.png"){
+spriteset(set_500_engineT, "src\locomotive\500\500.png"){
 	engine_r(80, 108)
 }
 
 /*--------------------------------------------------------------------
 5.3.1.2. 신칸센 500계 Cool
 --------------------------------------------------------------------*/
-spriteset(set_500_CoolH_purchase, "..\YSTset\Graphic\locomotive\500\500_Cool.png"){
+spriteset(set_500_CoolH_purchase, "src\locomotive\500\500_Cool.png"){
 	tmpl_purchase_for_dualhead(0, 108)
 }
 
-spriteset(set_500_Cool_engineH, "..\YSTset\Graphic\locomotive\500\500_Cool.png"){
+spriteset(set_500_Cool_engineH, "src\locomotive\500\500_Cool.png"){
 	engine(80, 0)
 }
 
-spriteset(set_500_Cool_wagon_start, "..\YSTset\Graphic\locomotive\500\500_Cool.png"){
+spriteset(set_500_Cool_wagon_start, "src\locomotive\500\500_Cool.png"){
 	wagon_panto(80, 27)
 }
 
-spriteset(set_500_Cool_wagon, "..\YSTset\Graphic\locomotive\500\500_Cool.png") {
+spriteset(set_500_Cool_wagon, "src\locomotive\500\500_Cool.png") {
     wagon_1F(80, 54)
 }
 
-spriteset(set_500_Cool_wagon_r, "..\YSTset\Graphic\locomotive\500\500_Cool.png") {
+spriteset(set_500_Cool_wagon_r, "src\locomotive\500\500_Cool.png") {
     wagon_1F_r(80, 54)
 }
 
-spriteset(set_500_Cool_wagon_end, "..\YSTset\Graphic\locomotive\500\500_Cool.png"){
+spriteset(set_500_Cool_wagon_end, "src\locomotive\500\500_Cool.png"){
 	wagon_panto(80, 81)
 }
 
-spriteset(set_500_Cool_engineT, "..\YSTset\Graphic\locomotive\500\500_Cool.png"){
+spriteset(set_500_Cool_engineT, "src\locomotive\500\500_Cool.png"){
 	engine_r(80, 108)
 }
 
 /*--------------------------------------------------------------------
 5.3.1.3. 신칸센 500계 산천
 --------------------------------------------------------------------*/
-spriteset(set_500_SancheonH_purchase, "..\YSTset\Graphic\locomotive\500\500_Sancheon.png"){
+spriteset(set_500_SancheonH_purchase, "src\locomotive\500\500_Sancheon.png"){
 	tmpl_purchase_for_dualhead(0, 108)
 }
 
-spriteset(set_500_Sancheon_engineH, "..\YSTset\Graphic\locomotive\500\500_Sancheon.png"){
+spriteset(set_500_Sancheon_engineH, "src\locomotive\500\500_Sancheon.png"){
 	engine(80, 0)
 }
 
-spriteset(set_500_Sancheon_wagon_start, "..\YSTset\Graphic\locomotive\500\500_Sancheon.png"){
+spriteset(set_500_Sancheon_wagon_start, "src\locomotive\500\500_Sancheon.png"){
 	wagon_panto(80, 27)
 }
 
-spriteset(set_500_Sancheon_wagon, "..\YSTset\Graphic\locomotive\500\500_Sancheon.png") {
+spriteset(set_500_Sancheon_wagon, "src\locomotive\500\500_Sancheon.png") {
     wagon_1F(80, 54)
 }
 
-spriteset(set_500_Sancheon_wagon_r, "..\YSTset\Graphic\locomotive\500\500_Sancheon.png") {
+spriteset(set_500_Sancheon_wagon_r, "src\locomotive\500\500_Sancheon.png") {
     wagon_1F_r(80, 54)
 }
 
-spriteset(set_500_Sancheon_wagon_end, "..\YSTset\Graphic\locomotive\500\500_Sancheon.png"){
+spriteset(set_500_Sancheon_wagon_end, "src\locomotive\500\500_Sancheon.png"){
 	wagon_panto(80, 81)
 }
 
-spriteset(set_500_Sancheon_engineT, "..\YSTset\Graphic\locomotive\500\500_Sancheon.png"){
+spriteset(set_500_Sancheon_engineT, "src\locomotive\500\500_Sancheon.png"){
 	engine_r(80, 108)
 }
 
 /*--------------------------------------------------------------------
 5.3.1.4. 신칸센 500계 팥죽
 --------------------------------------------------------------------*/
-spriteset(set_500_PatjugH_purchase, "..\YSTset\Graphic\locomotive\500\500_Patjug.png"){
+spriteset(set_500_PatjugH_purchase, "src\locomotive\500\500_Patjug.png"){
 	tmpl_purchase_for_dualhead(0, 108)
 }
 
-spriteset(set_500_Patjug_engineH, "..\YSTset\Graphic\locomotive\500\500_Patjug.png"){
+spriteset(set_500_Patjug_engineH, "src\locomotive\500\500_Patjug.png"){
 	engine(80, 0)
 }
 
-spriteset(set_500_Patjug_wagon_start, "..\YSTset\Graphic\locomotive\500\500_Patjug.png"){
+spriteset(set_500_Patjug_wagon_start, "src\locomotive\500\500_Patjug.png"){
 	wagon_panto(80, 27)
 }
 
-spriteset(set_500_Patjug_wagon, "..\YSTset\Graphic\locomotive\500\500_Patjug.png") {
+spriteset(set_500_Patjug_wagon, "src\locomotive\500\500_Patjug.png") {
     wagon_1F(80, 54)
 }
 
-spriteset(set_500_Patjug_wagon_r, "..\YSTset\Graphic\locomotive\500\500_Patjug.png") {
+spriteset(set_500_Patjug_wagon_r, "src\locomotive\500\500_Patjug.png") {
     wagon_1F_r(80, 54)
 }
 
-spriteset(set_500_Patjug_wagon_end, "..\YSTset\Graphic\locomotive\500\500_Patjug.png"){
+spriteset(set_500_Patjug_wagon_end, "src\locomotive\500\500_Patjug.png"){
 	wagon_panto(80, 81)
 }
 
-spriteset(set_500_Patjug_engineT, "..\YSTset\Graphic\locomotive\500\500_Patjug.png"){
+spriteset(set_500_Patjug_engineT, "src\locomotive\500\500_Patjug.png"){
 	engine_r(80, 108)
 }
 
@@ -712,35 +675,35 @@ item(FEAT_TRAINS, S500){
 /*--------------------------------------------------------------------
 5.4.1 Graphics
 --------------------------------------------------------------------*/
-spriteset(set_800_purchase, "..\YSTset\Graphic\locomotive\800\800.png"){
+spriteset(set_800_purchase, "src\locomotive\800\800.png"){
 	tmpl_purchase(0, 0)
 }
 
-spriteset(set_800H_purchase, "..\YSTset\Graphic\locomotive\800\800.png"){
+spriteset(set_800H_purchase, "src\locomotive\800\800.png"){
 	tmpl_purchase_for_dualhead(0, 108)
 }
 
-spriteset(set_800_engineH, "..\YSTset\Graphic\locomotive\800\800.png"){
+spriteset(set_800_engineH, "src\locomotive\800\800.png"){
 	engine(80, 0)
 }
 
-spriteset(set_800_wagon_start, "..\YSTset\Graphic\locomotive\800\800.png"){
+spriteset(set_800_wagon_start, "src\locomotive\800\800.png"){
 	wagon_panto(80, 27)
 }
 
-spriteset(set_800_wagon, "..\YSTset\Graphic\locomotive\800\800.png") {
+spriteset(set_800_wagon, "src\locomotive\800\800.png") {
     wagon_1F(80, 54)
 }
 
-spriteset(set_800_wagon_r, "..\YSTset\Graphic\locomotive\800\800.png") {
+spriteset(set_800_wagon_r, "src\locomotive\800\800.png") {
     wagon_1F_r(80, 54)
 }
 
-spriteset(set_800_wagon_end, "..\YSTset\Graphic\locomotive\800\800.png"){
+spriteset(set_800_wagon_end, "src\locomotive\800\800.png"){
 	wagon_panto(80, 81)
 }
 
-spriteset(set_800_engineT, "..\YSTset\Graphic\locomotive\800\800.png"){
+spriteset(set_800_engineT, "src\locomotive\800\800.png"){
 	engine_r(80, 108)
 }
 
@@ -845,7 +808,7 @@ item(FEAT_TRAINS, S800){
 /*--------------------------------------------------------------------
 5.5.1 Graphics
 --------------------------------------------------------------------*/
-spriteset(set_AGV_purchase, "..\YSTset\Graphic\locomotive\AGV\AGV.png"){
+spriteset(set_AGV_purchase, "src\locomotive\AGV\AGV.png"){
 	tmpl_purchase(0, 0)
 }
 
@@ -853,62 +816,62 @@ spriteset(set_AGV_purchase, "..\YSTset\Graphic\locomotive\AGV\AGV.png"){
 5.5.1.1. AGV
 --------------------------------------------------------------------*/
 
-spriteset(set_AGVH_purchase, "..\YSTset\Graphic\locomotive\AGV\AGV.png"){
+spriteset(set_AGVH_purchase, "src\locomotive\AGV\AGV.png"){
 	tmpl_purchase_for_dualhead(0, 108)
 }
 
-spriteset(set_AGV_engineH, "..\YSTset\Graphic\locomotive\AGV\AGV.png"){
+spriteset(set_AGV_engineH, "src\locomotive\AGV\AGV.png"){
 	engine(80, 0)
 }
 
-spriteset(set_AGV_wagon_start, "..\YSTset\Graphic\locomotive\AGV\AGV.png"){
+spriteset(set_AGV_wagon_start, "src\locomotive\AGV\AGV.png"){
 	wagon_panto(80, 27)
 }
 
-spriteset(set_AGV_wagon, "..\YSTset\Graphic\locomotive\AGV\AGV.png") {
+spriteset(set_AGV_wagon, "src\locomotive\AGV\AGV.png") {
     wagon_1F(80, 54)
 }
 
-spriteset(set_AGV_wagon_r, "..\YSTset\Graphic\locomotive\AGV\AGV.png") {
+spriteset(set_AGV_wagon_r, "src\locomotive\AGV\AGV.png") {
     wagon_1F_r(80, 54)
 }
 
-spriteset(set_AGV_wagon_end, "..\YSTset\Graphic\locomotive\AGV\AGV.png"){
+spriteset(set_AGV_wagon_end, "src\locomotive\AGV\AGV.png"){
 	wagon_panto(80, 81)
 }
 
-spriteset(set_AGV_engineT, "..\YSTset\Graphic\locomotive\AGV\AGV.png"){
+spriteset(set_AGV_engineT, "src\locomotive\AGV\AGV.png"){
 	engine_r(80, 108)
 }
 
 /*--------------------------------------------------------------------
 5.5.1.2. AGV_Cool
 --------------------------------------------------------------------*/
-spriteset(set_AGV_Cool_purchase, "..\YSTset\Graphic\locomotive\AGV\AGV_Cool.png"){
+spriteset(set_AGV_Cool_purchase, "src\locomotive\AGV\AGV_Cool.png"){
 	tmpl_purchase_for_dualhead(0, 108)
 }
 
-spriteset(set_AGV_Cool_engineH, "..\YSTset\Graphic\locomotive\AGV\AGV_Cool.png"){
+spriteset(set_AGV_Cool_engineH, "src\locomotive\AGV\AGV_Cool.png"){
 	engine(80, 0)
 }
 
-spriteset(set_AGV_Cool_wagon_start, "..\YSTset\Graphic\locomotive\AGV\AGV_Cool.png"){
+spriteset(set_AGV_Cool_wagon_start, "src\locomotive\AGV\AGV_Cool.png"){
 	wagon_start(80, 27)
 }
 
-spriteset(set_AGV_Cool_wagon, "..\YSTset\Graphic\locomotive\AGV\AGV_Cool.png") {
+spriteset(set_AGV_Cool_wagon, "src\locomotive\AGV\AGV_Cool.png") {
     wagon_1F(80, 54)
 }
 
-spriteset(set_AGV_Cool_wagon_r, "..\YSTset\Graphic\locomotive\AGV\AGV_Cool.png") {
+spriteset(set_AGV_Cool_wagon_r, "src\locomotive\AGV\AGV_Cool.png") {
     wagon_1F_r(80, 54)
 }
 
-spriteset(set_AGV_Cool_wagon_end, "..\YSTset\Graphic\locomotive\AGV\AGV_Cool.png"){
+spriteset(set_AGV_Cool_wagon_end, "src\locomotive\AGV\AGV_Cool.png"){
 	wagon_start(80, 81)
 }
 
-spriteset(set_AGV_Cool_engineT, "..\YSTset\Graphic\locomotive\AGV\AGV_Cool.png"){
+spriteset(set_AGV_Cool_engineT, "src\locomotive\AGV\AGV_Cool.png"){
 	engine_r(80, 108)
 }
 
@@ -1061,39 +1024,39 @@ item(FEAT_TRAINS, AGV){
 /*--------------------------------------------------------------------
 5.6.1 Graphics
 --------------------------------------------------------------------*/
-spriteset(set_AVE_purchase, "..\YSTset\Graphic\locomotive\AVE\AVE.png"){
+spriteset(set_AVE_purchase, "src\locomotive\AVE\AVE.png"){
 	tmpl_purchase(0, 0)
 }
 
-spriteset(set_AVEH_purchase, "..\YSTset\Graphic\locomotive\AVE\AVE.png"){
+spriteset(set_AVEH_purchase, "src\locomotive\AVE\AVE.png"){
 	tmpl_purchase_for_dualhead(0, 135)
 }
 
-spriteset(set_AVE_engineH, "..\YSTset\Graphic\locomotive\AVE\AVE.png"){
+spriteset(set_AVE_engineH, "src\locomotive\AVE\AVE.png"){
 	engine(80, 0)
 }
 
-spriteset(set_AVE_wagon_start, "..\YSTset\Graphic\locomotive\AVE\AVE.png"){
+spriteset(set_AVE_wagon_start, "src\locomotive\AVE\AVE.png"){
 	wagon_start(80, 27)
 }
 
-spriteset(set_AVE_wagon, "..\YSTset\Graphic\locomotive\AVE\AVE.png") {
+spriteset(set_AVE_wagon, "src\locomotive\AVE\AVE.png") {
     wagon_1F(80, 54)
 }
 
-spriteset(set_AVE_wagon_r, "..\YSTset\Graphic\locomotive\AGV\AGV.png") {
+spriteset(set_AVE_wagon_r, "src\locomotive\AGV\AGV.png") {
     wagon_1F_r(80, 54)
 }
 
-spriteset(set_AVE_wagon_bar, "..\YSTset\Graphic\locomotive\AVE\AVE.png") {
+spriteset(set_AVE_wagon_bar, "src\locomotive\AVE\AVE.png") {
     wagon_bar(80, 81)
 }
 
-spriteset(set_AVE_wagon_end, "..\YSTset\Graphic\locomotive\AVE\AVE.png"){
+spriteset(set_AVE_wagon_end, "src\locomotive\AVE\AVE.png"){
 	wagon_start(80, 108)
 }
 
-spriteset(set_AVE_engineT, "..\YSTset\Graphic\locomotive\AVE\AVE.png"){
+spriteset(set_AVE_engineT, "src\locomotive\AVE\AVE.png"){
 	engine_r(80, 135)
 }
 
@@ -1206,35 +1169,35 @@ item(FEAT_TRAINS, AVE){
 /*--------------------------------------------------------------------
 5.7.1 Graphics
 --------------------------------------------------------------------*/
-spriteset(set_AVE_Velaro_purchase, "..\YSTset\Graphic\locomotive\AVE\AVE_Velaro.png"){
+spriteset(set_AVE_Velaro_purchase, "src\locomotive\AVE\AVE_Velaro.png"){
 	tmpl_purchase(0, 0)
 }
 
-spriteset(set_AVE_VelaroH_purchase, "..\YSTset\Graphic\locomotive\AVE\AVE_Velaro.png"){
+spriteset(set_AVE_VelaroH_purchase, "src\locomotive\AVE\AVE_Velaro.png"){
 	tmpl_purchase_for_dualhead(0, 108)
 }
 
-spriteset(set_AVE_Velaro_engineH, "..\YSTset\Graphic\locomotive\AVE\AVE_Velaro.png"){
+spriteset(set_AVE_Velaro_engineH, "src\locomotive\AVE\AVE_Velaro.png"){
 	engine(80, 0)
 }
 
-spriteset(set_AVE_Velaro_wagon_start, "..\YSTset\Graphic\locomotive\AVE\AVE_Velaro.png"){
+spriteset(set_AVE_Velaro_wagon_start, "src\locomotive\AVE\AVE_Velaro.png"){
 	wagon_start(80, 27)
 }
 
-spriteset(set_AVE_Velaro_wagon, "..\YSTset\Graphic\locomotive\AVE\AVE_Velaro.png") {
+spriteset(set_AVE_Velaro_wagon, "src\locomotive\AVE\AVE_Velaro.png") {
     wagon_1F(80, 54)
 }
 
-spriteset(set_AVE_Velaro_wagon_r, "..\YSTset\Graphic\locomotive\AVE\AVE_Velaro.png") {
+spriteset(set_AVE_Velaro_wagon_r, "src\locomotive\AVE\AVE_Velaro.png") {
     wagon_1F_r(80, 54)
 }
 
-spriteset(set_AVE_Velaro_wagon_end, "..\YSTset\Graphic\locomotive\AVE\AVE_Velaro.png"){
+spriteset(set_AVE_Velaro_wagon_end, "src\locomotive\AVE\AVE_Velaro.png"){
 	wagon_start(80, 81)
 }
 
-spriteset(set_AVE_Velaro_engineT, "..\YSTset\Graphic\locomotive\AVE\AVE_Velaro.png"){
+spriteset(set_AVE_Velaro_engineT, "src\locomotive\AVE\AVE_Velaro.png"){
 	engine_r(80, 108)
 }
 
@@ -1340,35 +1303,35 @@ item(FEAT_TRAINS, AVE_Velaro){
 /*--------------------------------------------------------------------
 5.8.1 Graphics
 --------------------------------------------------------------------*/
-spriteset(set_CR600_purchase, "..\YSTset\Graphic\locomotive\CR600\CR600.png"){
+spriteset(set_CR600_purchase, "src\locomotive\CR600\CR600.png"){
 	tmpl_purchase(0, 0)
 }
 
-spriteset(set_CR600H_purchase, "..\YSTset\Graphic\locomotive\CR600\CR600.png"){
+spriteset(set_CR600H_purchase, "src\locomotive\CR600\CR600.png"){
 	tmpl_purchase_for_dualhead(0, 108)
 }
 
-spriteset(set_CR600_engineH, "..\YSTset\Graphic\locomotive\CR600\CR600.png"){
+spriteset(set_CR600_engineH, "src\locomotive\CR600\CR600.png"){
 	engine(80, 0)
 }
 
-spriteset(set_CR600_wagon_start, "..\YSTset\Graphic\locomotive\CR600\CR600.png"){
+spriteset(set_CR600_wagon_start, "src\locomotive\CR600\CR600.png"){
 	wagon_start(80, 27)
 }
 
-spriteset(set_CR600_wagon, "..\YSTset\Graphic\locomotive\CR600\CR600.png") {
+spriteset(set_CR600_wagon, "src\locomotive\CR600\CR600.png") {
     wagon_1F(80, 54)
 }
 
-spriteset(set_CR600_wagon_r, "..\YSTset\Graphic\locomotive\CR600\CR600.png") {
+spriteset(set_CR600_wagon_r, "src\locomotive\CR600\CR600.png") {
     wagon_1F_r(80, 54)
 }
 
-spriteset(set_CR600_wagon_end, "..\YSTset\Graphic\locomotive\CR600\CR600.png"){
+spriteset(set_CR600_wagon_end, "src\locomotive\CR600\CR600.png"){
 	wagon_start(80, 81)
 }
 
-spriteset(set_CR600_engineT, "..\YSTset\Graphic\locomotive\CR600\CR600.png"){
+spriteset(set_CR600_engineT, "src\locomotive\CR600\CR600.png"){
 	engine_r(80, 108)
 }
 
@@ -1473,35 +1436,35 @@ item(FEAT_TRAINS, CR600){
 /*--------------------------------------------------------------------
 5.9.1 Graphics
 --------------------------------------------------------------------*/
-spriteset(set_CRH1_purchase, "..\YSTset\Graphic\locomotive\CRH1\CRH1.png"){
+spriteset(set_CRH1_purchase, "src\locomotive\CRH1\CRH1.png"){
 	tmpl_purchase(0, 0)
 }
 
-spriteset(set_CRH1H_purchase, "..\YSTset\Graphic\locomotive\CRH1\CRH1.png"){
+spriteset(set_CRH1H_purchase, "src\locomotive\CRH1\CRH1.png"){
 	tmpl_purchase_for_dualhead(0, 108)
 }
 
-spriteset(set_CRH1_engineH, "..\YSTset\Graphic\locomotive\CRH1\CRH1.png"){
+spriteset(set_CRH1_engineH, "src\locomotive\CRH1\CRH1.png"){
 	engine(80, 0)
 }
 
-spriteset(set_CRH1_wagon_start, "..\YSTset\Graphic\locomotive\CRH1\CRH1.png"){
+spriteset(set_CRH1_wagon_start, "src\locomotive\CRH1\CRH1.png"){
 	wagon_start(80, 27)
 }
 
-spriteset(set_CRH1_wagon, "..\YSTset\Graphic\locomotive\CRH1\CRH1.png") {
+spriteset(set_CRH1_wagon, "src\locomotive\CRH1\CRH1.png") {
     wagon_1F(80, 54)
 }
 
-spriteset(set_CRH1_wagon_r, "..\YSTset\Graphic\locomotive\CRH1\CRH1.png") {
+spriteset(set_CRH1_wagon_r, "src\locomotive\CRH1\CRH1.png") {
     wagon_1F_r(80, 54)
 }
 
-spriteset(set_CRH1_wagon_end, "..\YSTset\Graphic\locomotive\CRH1\CRH1.png"){
+spriteset(set_CRH1_wagon_end, "src\locomotive\CRH1\CRH1.png"){
 	wagon_start(80, 81)
 }
 
-spriteset(set_CRH1_engineT, "..\YSTset\Graphic\locomotive\CRH1\CRH1.png"){
+spriteset(set_CRH1_engineT, "src\locomotive\CRH1\CRH1.png"){
 	engine_r(80, 108)
 }
 
@@ -1607,35 +1570,35 @@ item(FEAT_TRAINS, CRH1){
 /*--------------------------------------------------------------------
 5.10.1 Graphics
 --------------------------------------------------------------------*/
-spriteset(set_CRH3_purchase, "..\YSTset\Graphic\locomotive\CRH3\CRH3.png"){
+spriteset(set_CRH3_purchase, "src\locomotive\CRH3\CRH3.png"){
 	tmpl_purchase(0, 0)
 }
 
-spriteset(set_CRH3H_purchase, "..\YSTset\Graphic\locomotive\CRH3\CRH3.png"){
+spriteset(set_CRH3H_purchase, "src\locomotive\CRH3\CRH3.png"){
 	tmpl_purchase_for_dualhead(0, 108)
 }
 
-spriteset(set_CRH3_engineH, "..\YSTset\Graphic\locomotive\CRH3\CRH3.png"){
+spriteset(set_CRH3_engineH, "src\locomotive\CRH3\CRH3.png"){
 	engine(80, 0)
 }
 
-spriteset(set_CRH3_wagon_start, "..\YSTset\Graphic\locomotive\CRH3\CRH3.png"){
+spriteset(set_CRH3_wagon_start, "src\locomotive\CRH3\CRH3.png"){
 	wagon_start(80, 27)
 }
 
-spriteset(set_CRH3_wagon, "..\YSTset\Graphic\locomotive\CRH3\CRH3.png") {
+spriteset(set_CRH3_wagon, "src\locomotive\CRH3\CRH3.png") {
     wagon_1F(80, 54)
 }
 
-spriteset(set_CRH3_wagon_r, "..\YSTset\Graphic\locomotive\CRH3\CRH3.png") {
+spriteset(set_CRH3_wagon_r, "src\locomotive\CRH3\CRH3.png") {
     wagon_1F_r(80, 54)
 }
 
-spriteset(set_CRH3_wagon_end, "..\YSTset\Graphic\locomotive\CRH3\CRH3.png"){
+spriteset(set_CRH3_wagon_end, "src\locomotive\CRH3\CRH3.png"){
 	wagon_start(80, 81)
 }
 
-spriteset(set_CRH3_engineT, "..\YSTset\Graphic\locomotive\CRH3\CRH3.png"){
+spriteset(set_CRH3_engineT, "src\locomotive\CRH3\CRH3.png"){
 	engine_r(80, 108)
 }
 
@@ -1741,100 +1704,100 @@ item(FEAT_TRAINS, CRH3){
 /*--------------------------------------------------------------------
 5.11.1 Graphics
 --------------------------------------------------------------------*/
-spriteset(set_CRH380A_purchase, "..\YSTset\Graphic\locomotive\CRH380A\CRH380A.png"){
+spriteset(set_CRH380A_purchase, "src\locomotive\CRH380A\CRH380A.png"){
 	tmpl_purchase(0, 0)
 }
 
 /*--------------------------------------------------------------------
 5.11.1.1. CRH380A
 --------------------------------------------------------------------*/
-spriteset(set_CRH380AH_purchase, "..\YSTset\Graphic\locomotive\CRH380A\CRH380A.png"){
+spriteset(set_CRH380AH_purchase, "src\locomotive\CRH380A\CRH380A.png"){
 	tmpl_purchase_for_dualhead(0, 108)
 }
 
-spriteset(set_CRH380A_engineH, "..\YSTset\Graphic\locomotive\CRH380A\CRH380A.png"){
+spriteset(set_CRH380A_engineH, "src\locomotive\CRH380A\CRH380A.png"){
 	engine(80, 0)
 }
 
-spriteset(set_CRH380A_wagon_start, "..\YSTset\Graphic\locomotive\CRH380A\CRH380A.png"){
+spriteset(set_CRH380A_wagon_start, "src\locomotive\CRH380A\CRH380A.png"){
 	wagon_start(80, 27)
 }
 
-spriteset(set_CRH380A_wagon, "..\YSTset\Graphic\locomotive\CRH380A\CRH380A.png") {
+spriteset(set_CRH380A_wagon, "src\locomotive\CRH380A\CRH380A.png") {
     wagon_1F(80, 54)
 }
 
-spriteset(set_CRH380A_wagon_r, "..\YSTset\Graphic\locomotive\CRH380A\CRH380A.png") {
+spriteset(set_CRH380A_wagon_r, "src\locomotive\CRH380A\CRH380A.png") {
     wagon_1F_r(80, 54)
 }
 
-spriteset(set_CRH380A_wagon_end, "..\YSTset\Graphic\locomotive\CRH380A\CRH380A.png"){
+spriteset(set_CRH380A_wagon_end, "src\locomotive\CRH380A\CRH380A.png"){
 	wagon_start(80, 81)
 }
 
-spriteset(set_CRH380A_engineT, "..\YSTset\Graphic\locomotive\CRH380A\CRH380A.png"){
+spriteset(set_CRH380A_engineT, "src\locomotive\CRH380A\CRH380A.png"){
 	engine_r(80, 108)
 }
 
 /*--------------------------------------------------------------------
 5.11.1.2. CRH380A Cool
 --------------------------------------------------------------------*/
-spriteset(set_CRH380A_CoolH_purchase, "..\YSTset\Graphic\locomotive\CRH380A\CRH380A_Cool.png"){
+spriteset(set_CRH380A_CoolH_purchase, "src\locomotive\CRH380A\CRH380A_Cool.png"){
 	tmpl_purchase_for_dualhead(0, 108)
 }
 
-spriteset(set_CRH380A_Cool_engineH, "..\YSTset\Graphic\locomotive\CRH380A\CRH380A_Cool.png"){
+spriteset(set_CRH380A_Cool_engineH, "src\locomotive\CRH380A\CRH380A_Cool.png"){
 	engine(80, 0)
 }
 
-spriteset(set_CRH380A_Cool_wagon_start, "..\YSTset\Graphic\locomotive\CRH380A\CRH380A_Cool.png"){
+spriteset(set_CRH380A_Cool_wagon_start, "src\locomotive\CRH380A\CRH380A_Cool.png"){
 	wagon_start(80, 27)
 }
 
-spriteset(set_CRH380A_Cool_wagon, "..\YSTset\Graphic\locomotive\CRH380A\CRH380A_Cool.png") {
+spriteset(set_CRH380A_Cool_wagon, "src\locomotive\CRH380A\CRH380A_Cool.png") {
     wagon_1F(80, 54)
 }
 
-spriteset(set_CRH380A_Cool_wagon_r, "..\YSTset\Graphic\locomotive\CRH380A\CRH380A_Cool.png") {
+spriteset(set_CRH380A_Cool_wagon_r, "src\locomotive\CRH380A\CRH380A_Cool.png") {
     wagon_1F_r(80, 54)
 }
 
-spriteset(set_CRH380A_Cool_wagon_end, "..\YSTset\Graphic\locomotive\CRH380A\CRH380A_Cool.png"){
+spriteset(set_CRH380A_Cool_wagon_end, "src\locomotive\CRH380A\CRH380A_Cool.png"){
 	wagon_start(80, 81)
 }
 
-spriteset(set_CRH380A_Cool_engineT, "..\YSTset\Graphic\locomotive\CRH380A\CRH380A_Cool.png"){
+spriteset(set_CRH380A_Cool_engineT, "src\locomotive\CRH380A\CRH380A_Cool.png"){
 	engine_r(80, 108)
 }
 
 /*--------------------------------------------------------------------
 5.11.1.3. CRH380A Red
 --------------------------------------------------------------------*/
-spriteset(set_CRH380A_RedH_purchase, "..\YSTset\Graphic\locomotive\CRH380A\CRH380A_Red.png"){
+spriteset(set_CRH380A_RedH_purchase, "src\locomotive\CRH380A\CRH380A_Red.png"){
 	tmpl_purchase_for_dualhead(0, 108)
 }
 
-spriteset(set_CRH380A_Red_engineH, "..\YSTset\Graphic\locomotive\CRH380A\CRH380A_Red.png"){
+spriteset(set_CRH380A_Red_engineH, "src\locomotive\CRH380A\CRH380A_Red.png"){
 	engine(80, 0)
 }
 
-spriteset(set_CRH380A_Red_wagon_start, "..\YSTset\Graphic\locomotive\CRH380A\CRH380A_Red.png"){
+spriteset(set_CRH380A_Red_wagon_start, "src\locomotive\CRH380A\CRH380A_Red.png"){
 	wagon_start(80, 27)
 }
 
-spriteset(set_CRH380A_Red_wagon, "..\YSTset\Graphic\locomotive\CRH380A\CRH380A_Red.png") {
+spriteset(set_CRH380A_Red_wagon, "src\locomotive\CRH380A\CRH380A_Red.png") {
     wagon_1F(80, 54)
 }
 
-spriteset(set_CRH380A_Red_wagon_r, "..\YSTset\Graphic\locomotive\CRH380A\CRH380A_Red.png") {
+spriteset(set_CRH380A_Red_wagon_r, "src\locomotive\CRH380A\CRH380A_Red.png") {
     wagon_1F_r(80, 54)
 }
 
-spriteset(set_CRH380A_Red_wagon_end, "..\YSTset\Graphic\locomotive\CRH380A\CRH380A_Red.png"){
+spriteset(set_CRH380A_Red_wagon_end, "src\locomotive\CRH380A\CRH380A_Red.png"){
 	wagon_start(80, 81)
 }
 
-spriteset(set_CRH380A_Red_engineT, "..\YSTset\Graphic\locomotive\CRH380A\CRH380A_Red.png"){
+spriteset(set_CRH380A_Red_engineT, "src\locomotive\CRH380A\CRH380A_Red.png"){
 	engine_r(80, 108)
 }
 
@@ -1992,35 +1955,35 @@ item(FEAT_TRAINS, CRH380A){
 /*--------------------------------------------------------------------
 5.12.1 Graphics
 --------------------------------------------------------------------*/
-spriteset(set_CRH380A_Test_purchase, "..\YSTset\Graphic\locomotive\CRH380A\CRH380A_Test.png"){
+spriteset(set_CRH380A_Test_purchase, "src\locomotive\CRH380A\CRH380A_Test.png"){
 	tmpl_purchase(0, 0)
 }
 
-spriteset(set_CRH380A_TestH_purchase, "..\YSTset\Graphic\locomotive\CRH380A\CRH380A_Test.png"){
+spriteset(set_CRH380A_TestH_purchase, "src\locomotive\CRH380A\CRH380A_Test.png"){
 	tmpl_purchase_for_dualhead(0, 108)
 }
 
-spriteset(set_CRH380A_Test_engineH, "..\YSTset\Graphic\locomotive\CRH380A\CRH380A_Test.png"){
+spriteset(set_CRH380A_Test_engineH, "src\locomotive\CRH380A\CRH380A_Test.png"){
 	engine(80, 0)
 }
 
-spriteset(set_CRH380A_Test_wagon_start, "..\YSTset\Graphic\locomotive\CRH380A\CRH380A_Test.png"){
+spriteset(set_CRH380A_Test_wagon_start, "src\locomotive\CRH380A\CRH380A_Test.png"){
 	wagon_start(80, 27)
 }
 
-spriteset(set_CRH380A_Test_wagon, "..\YSTset\Graphic\locomotive\CRH380A\CRH380A_Test.png") {
+spriteset(set_CRH380A_Test_wagon, "src\locomotive\CRH380A\CRH380A_Test.png") {
     wagon_1F(80, 54)
 }
 
-spriteset(set_CRH380A_Test_wagon_r, "..\YSTset\Graphic\locomotive\CRH380A\CRH380A_Test.png") {
+spriteset(set_CRH380A_Test_wagon_r, "src\locomotive\CRH380A\CRH380A_Test.png") {
     wagon_1F_r(80, 54)
 }
 
-spriteset(set_CRH380A_Test_wagon_end, "..\YSTset\Graphic\locomotive\CRH380A\CRH380A_Test.png"){
+spriteset(set_CRH380A_Test_wagon_end, "src\locomotive\CRH380A\CRH380A_Test.png"){
 	wagon_start(80, 81)
 }
 
-spriteset(set_CRH380A_Test_engineT, "..\YSTset\Graphic\locomotive\CRH380A\CRH380A_Test.png"){
+spriteset(set_CRH380A_Test_engineT, "src\locomotive\CRH380A\CRH380A_Test.png"){
 	engine_r(80, 108)
 }
 
@@ -2123,69 +2086,69 @@ item(FEAT_TRAINS, CRH380A_Test){
 /*--------------------------------------------------------------------
 5.13.1 Graphics
 --------------------------------------------------------------------*/
-spriteset(set_E5_purchase, "..\YSTset\Graphic\locomotive\E5\E5.png"){
+spriteset(set_E5_purchase, "src\locomotive\E5\E5.png"){
 	tmpl_purchase(0, 0)
 }
 
 /*--------------------------------------------------------------------
 5.13.1.1. E5
 --------------------------------------------------------------------*/
-spriteset(set_E5H_purchase, "..\YSTset\Graphic\locomotive\E5\E5.png"){
+spriteset(set_E5H_purchase, "src\locomotive\E5\E5.png"){
 	tmpl_purchase_for_dualhead(0, 108)
 }
 
-spriteset(set_E5_engineH, "..\YSTset\Graphic\locomotive\E5\E5.png"){
+spriteset(set_E5_engineH, "src\locomotive\E5\E5.png"){
 	engine(80, 0)
 }
 
-spriteset(set_E5_wagon_start, "..\YSTset\Graphic\locomotive\E5\E5.png"){
+spriteset(set_E5_wagon_start, "src\locomotive\E5\E5.png"){
 	wagon_start(80, 27)
 }
 
-spriteset(set_E5_wagon, "..\YSTset\Graphic\locomotive\E5\E5.png") {
+spriteset(set_E5_wagon, "src\locomotive\E5\E5.png") {
     wagon_1F(80, 54)
 }
 
-spriteset(set_E5_wagon_r, "..\YSTset\Graphic\locomotive\E5\E5.png") {
+spriteset(set_E5_wagon_r, "src\locomotive\E5\E5.png") {
     wagon_1F_r(80, 54)
 }
 
-spriteset(set_E5_wagon_end, "..\YSTset\Graphic\locomotive\E5\E5.png"){
+spriteset(set_E5_wagon_end, "src\locomotive\E5\E5.png"){
 	wagon_start(80, 81)
 }
 
-spriteset(set_E5_engineT, "..\YSTset\Graphic\locomotive\E5\E5.png"){
+spriteset(set_E5_engineT, "src\locomotive\E5\E5.png"){
 	engine_r(80, 108)
 }
 
 /*--------------------------------------------------------------------
 5.13.1.2. H5
 --------------------------------------------------------------------*/
-spriteset(set_H5H_purchase, "..\YSTset\Graphic\locomotive\E5\H5.png"){
+spriteset(set_H5H_purchase, "src\locomotive\E5\H5.png"){
 	tmpl_purchase_for_dualhead(0, 108)
 }
 
-spriteset(set_H5_engineH, "..\YSTset\Graphic\locomotive\E5\H5.png"){
+spriteset(set_H5_engineH, "src\locomotive\E5\H5.png"){
 	engine(80, 0)
 }
 
-spriteset(set_H5_wagon_start, "..\YSTset\Graphic\locomotive\E5\H5.png"){
+spriteset(set_H5_wagon_start, "src\locomotive\E5\H5.png"){
 	wagon_start(80, 27)
 }
 
-spriteset(set_H5_wagon, "..\YSTset\Graphic\locomotive\E5\H5.png") {
+spriteset(set_H5_wagon, "src\locomotive\E5\H5.png") {
     wagon_1F(80, 54)
 }
 
-spriteset(set_H5_wagon_r, "..\YSTset\Graphic\locomotive\E5\H5.png") {
+spriteset(set_H5_wagon_r, "src\locomotive\E5\H5.png") {
     wagon_1F_r(80, 54)
 }
 
-spriteset(set_H5_wagon_end, "..\YSTset\Graphic\locomotive\E5\H5.png"){
+spriteset(set_H5_wagon_end, "src\locomotive\E5\H5.png"){
 	wagon_start(80, 81)
 }
 
-spriteset(set_H5_engineT, "..\YSTset\Graphic\locomotive\E5\H5.png"){
+spriteset(set_H5_engineT, "src\locomotive\E5\H5.png"){
 	engine_r(80, 108)
 }
 
@@ -2328,35 +2291,35 @@ item(FEAT_TRAINS, E5){
 /*--------------------------------------------------------------------
 5.14.1 Graphics
 --------------------------------------------------------------------*/
-spriteset(set_E6_purchase, "..\YSTset\Graphic\locomotive\E6\E6.png"){
+spriteset(set_E6_purchase, "src\locomotive\E6\E6.png"){
 	tmpl_purchase(0, 0)
 }
 
-spriteset(set_E6H_purchase, "..\YSTset\Graphic\locomotive\E6\E6.png"){
+spriteset(set_E6H_purchase, "src\locomotive\E6\E6.png"){
 	tmpl_purchase_for_dualhead(0, 108)
 }
 
-spriteset(set_E6_engineH, "..\YSTset\Graphic\locomotive\E6\E6.png"){
+spriteset(set_E6_engineH, "src\locomotive\E6\E6.png"){
 	engine(80, 0)
 }
 
-spriteset(set_E6_wagon_start, "..\YSTset\Graphic\locomotive\E6\E6.png"){
+spriteset(set_E6_wagon_start, "src\locomotive\E6\E6.png"){
 	wagon_start(80, 27)
 }
 
-spriteset(set_E6_wagon, "..\YSTset\Graphic\locomotive\E6\E6.png") {
+spriteset(set_E6_wagon, "src\locomotive\E6\E6.png") {
     wagon_1F(80, 54)
 }
 
-spriteset(set_E6_wagon_r, "..\YSTset\Graphic\locomotive\E6\E6.png") {
+spriteset(set_E6_wagon_r, "src\locomotive\E6\E6.png") {
     wagon_1F_r(80, 54)
 }
 
-spriteset(set_E6_wagon_end, "..\YSTset\Graphic\locomotive\E6\E6.png"){
+spriteset(set_E6_wagon_end, "src\locomotive\E6\E6.png"){
 	wagon_start(80, 81)
 }
 
-spriteset(set_E6_engineT, "..\YSTset\Graphic\locomotive\E6\E6.png"){
+spriteset(set_E6_engineT, "src\locomotive\E6\E6.png"){
 	engine_r(80, 108)
 }
 
@@ -2462,35 +2425,35 @@ item(FEAT_TRAINS, E6){
 /*--------------------------------------------------------------------
 5.15.1 Graphics
 --------------------------------------------------------------------*/
-spriteset(set_E7_purchase, "..\YSTset\Graphic\locomotive\E7\E7.png"){
+spriteset(set_E7_purchase, "src\locomotive\E7\E7.png"){
 	tmpl_purchase(0, 0)
 }
 
-spriteset(set_E7H_purchase, "..\YSTset\Graphic\locomotive\E7\E7.png"){
+spriteset(set_E7H_purchase, "src\locomotive\E7\E7.png"){
 	tmpl_purchase_for_dualhead(0, 108)
 }
 
-spriteset(set_E7_engineH, "..\YSTset\Graphic\locomotive\E7\E7.png"){
+spriteset(set_E7_engineH, "src\locomotive\E7\E7.png"){
 	engine(80, 0)
 }
 
-spriteset(set_E7_wagon_start, "..\YSTset\Graphic\locomotive\E7\E7.png"){
+spriteset(set_E7_wagon_start, "src\locomotive\E7\E7.png"){
 	wagon_start(80, 27)
 }
 
-spriteset(set_E7_wagon, "..\YSTset\Graphic\locomotive\E7\E7.png") {
+spriteset(set_E7_wagon, "src\locomotive\E7\E7.png") {
     wagon_1F(80, 54)
 }
 
-spriteset(set_E7_wagon_r, "..\YSTset\Graphic\locomotive\E7\E7.png") {
+spriteset(set_E7_wagon_r, "src\locomotive\E7\E7.png") {
     wagon_1F_r(80, 54)
 }
 
-spriteset(set_E7_wagon_end, "..\YSTset\Graphic\locomotive\E7\E7.png"){
+spriteset(set_E7_wagon_end, "src\locomotive\E7\E7.png"){
 	wagon_start(80, 81)
 }
 
-spriteset(set_E7_engineT, "..\YSTset\Graphic\locomotive\E7\E7.png"){
+spriteset(set_E7_engineT, "src\locomotive\E7\E7.png"){
 	engine_r(80, 108)
 }
 
@@ -2595,77 +2558,77 @@ item(FEAT_TRAINS, E7){
 /*--------------------------------------------------------------------
 5.16.1 Graphics
 --------------------------------------------------------------------*/
-spriteset(set_E300_purchase, "..\YSTset\Graphic\locomotive\E300\E300.png"){
+spriteset(set_E300_purchase, "src\locomotive\E300\E300.png"){
 	tmpl_purchase(0, 0)
 }
 
 /*--------------------------------------------------------------------
 5.16.1.1. E300 노랑
 --------------------------------------------------------------------*/
-spriteset(set_E300H_purchase, "..\YSTset\Graphic\locomotive\E300\E300.png"){
+spriteset(set_E300H_purchase, "src\locomotive\E300\E300.png"){
 	tmpl_purchase_for_dualhead(0, 135)
 }
 
-spriteset(set_E300_engineH, "..\YSTset\Graphic\locomotive\E300\E300.png"){
+spriteset(set_E300_engineH, "src\locomotive\E300\E300.png"){
 	engine(80, 0)
 }
 
-spriteset(set_E300_wagon_start, "..\YSTset\Graphic\locomotive\E300\E300.png"){
+spriteset(set_E300_wagon_start, "src\locomotive\E300\E300.png"){
 	wagon_start(80, 27)
 }
 
-spriteset(set_E300_wagon, "..\YSTset\Graphic\locomotive\E300\E300.png") {
+spriteset(set_E300_wagon, "src\locomotive\E300\E300.png") {
     wagon_1F(80, 54)
 }
 
-spriteset(set_E300_wagon_r, "..\YSTset\Graphic\locomotive\E300\E300.png") {
+spriteset(set_E300_wagon_r, "src\locomotive\E300\E300.png") {
     wagon_1F_r(80, 54)
 }
 
-spriteset(set_E300_wagon_bar, "..\YSTset\Graphic\locomotive\E300\E300.png") {
+spriteset(set_E300_wagon_bar, "src\locomotive\E300\E300.png") {
     wagon_bar(80, 81)
 }
 
-spriteset(set_E300_wagon_end, "..\YSTset\Graphic\locomotive\E300\E300.png"){
+spriteset(set_E300_wagon_end, "src\locomotive\E300\E300.png"){
 	wagon_start(80, 108)
 }
 
-spriteset(set_E300_engineT, "..\YSTset\Graphic\locomotive\E300\E300.png"){
+spriteset(set_E300_engineT, "src\locomotive\E300\E300.png"){
 	engine_r(80, 135)
 }
 
 /*--------------------------------------------------------------------
 5.16.1.2. E300 파랑
 --------------------------------------------------------------------*/
-spriteset(set_E300BH_purchase, "..\YSTset\Graphic\locomotive\E300\E300.png"){
+spriteset(set_E300BH_purchase, "src\locomotive\E300\E300.png"){
 	tmpl_purchase_for_dualhead(0, 297)
 }
 
-spriteset(set_E300B_engineH, "..\YSTset\Graphic\locomotive\E300\E300.png"){
+spriteset(set_E300B_engineH, "src\locomotive\E300\E300.png"){
 	engine(80, 162)
 }
 
-spriteset(set_E300B_wagon_start, "..\YSTset\Graphic\locomotive\E300\E300.png"){
+spriteset(set_E300B_wagon_start, "src\locomotive\E300\E300.png"){
 	wagon_start(80, 189)
 }
 
-spriteset(set_E300B_wagon, "..\YSTset\Graphic\locomotive\E300\E300.png") {
+spriteset(set_E300B_wagon, "src\locomotive\E300\E300.png") {
     wagon_1F(80, 216)
 }
 
-spriteset(set_E300B_wagon_r, "..\YSTset\Graphic\locomotive\E300\E300.png") {
+spriteset(set_E300B_wagon_r, "src\locomotive\E300\E300.png") {
     wagon_1F_r(80, 216)
 }
 
-spriteset(set_E300B_wagon_bar, "..\YSTset\Graphic\locomotive\E300\E300.png") {
+spriteset(set_E300B_wagon_bar, "src\locomotive\E300\E300.png") {
     wagon_bar(80, 243)
 }
 
-spriteset(set_E300B_wagon_end, "..\YSTset\Graphic\locomotive\E300\E300.png"){
+spriteset(set_E300B_wagon_end, "src\locomotive\E300\E300.png"){
 	wagon_start(80, 270)
 }
 
-spriteset(set_E300B_engineT, "..\YSTset\Graphic\locomotive\E300\E300.png"){
+spriteset(set_E300B_engineT, "src\locomotive\E300\E300.png"){
 	engine_r(80, 297)
 }
 
@@ -2829,27 +2792,27 @@ item(FEAT_TRAINS, E300){
 /*--------------------------------------------------------------------
 5.17.1 Graphics
 --------------------------------------------------------------------*/
-spriteset(set_E320_purchase, "..\YSTset\Graphic\locomotive\E320\E320.png"){
+spriteset(set_E320_purchase, "src\locomotive\E320\E320.png"){
 	tmpl_purchase(0, 0)
 }
 
-spriteset(set_E320H_purchase, "..\YSTset\Graphic\locomotive\E320\E320.png"){
+spriteset(set_E320H_purchase, "src\locomotive\E320\E320.png"){
 	tmpl_purchase_for_dualhead(0, 54)
 }
 
-spriteset(set_E320_engineH, "..\YSTset\Graphic\locomotive\E320\E320.png"){
+spriteset(set_E320_engineH, "src\locomotive\E320\E320.png"){
 	engine(80, 0)
 }
 
-spriteset(set_E320_wagon, "..\YSTset\Graphic\locomotive\E320\E320.png") {
+spriteset(set_E320_wagon, "src\locomotive\E320\E320.png") {
     wagon_1F(80, 27)
 }
 
-spriteset(set_E320_wagon_r, "..\YSTset\Graphic\locomotive\E320\E320.png") {
+spriteset(set_E320_wagon_r, "src\locomotive\E320\E320.png") {
     wagon_1F_r(80, 27)
 }
 
-spriteset(set_E320_engineT, "..\YSTset\Graphic\locomotive\E320\E320.png"){
+spriteset(set_E320_engineT, "src\locomotive\E320\E320.png"){
 	engine_r(80, 54)
 }
 
@@ -2944,69 +2907,69 @@ item(FEAT_TRAINS, E320){
 /*--------------------------------------------------------------------
 5.18.1 Graphics
 --------------------------------------------------------------------*/
-spriteset(set_EMU_purchase, "..\YSTset\Graphic\locomotive\EMU\EMU_250.png"){
+spriteset(set_EMU_purchase, "src\locomotive\EMU\EMU_250.png"){
 	tmpl_purchase(0, 0)
 }
 
 /*--------------------------------------------------------------------
 5.18.1.1. EMU-250
 --------------------------------------------------------------------*/
-spriteset(set_EMU_250H_purchase, "..\YSTset\Graphic\locomotive\EMU\EMU_250.png"){
+spriteset(set_EMU_250H_purchase, "src\locomotive\EMU\EMU_250.png"){
 	tmpl_purchase_for_dualhead(0, 108)
 }
 
-spriteset(set_EMU_250_engineH, "..\YSTset\Graphic\locomotive\EMU\EMU_250.png"){
+spriteset(set_EMU_250_engineH, "src\locomotive\EMU\EMU_250.png"){
 	engine(80, 0)
 }
 
-spriteset(set_EMU_250_wagon_start, "..\YSTset\Graphic\locomotive\EMU\EMU_250.png"){
+spriteset(set_EMU_250_wagon_start, "src\locomotive\EMU\EMU_250.png"){
 	wagon_start(80, 27)
 }
 
-spriteset(set_EMU_250_wagon, "..\YSTset\Graphic\locomotive\EMU\EMU_250.png") {
+spriteset(set_EMU_250_wagon, "src\locomotive\EMU\EMU_250.png") {
     wagon_1F(80, 54)
 }
 
-spriteset(set_EMU_250_wagon_r, "..\YSTset\Graphic\locomotive\EMU\EMU_250.png") {
+spriteset(set_EMU_250_wagon_r, "src\locomotive\EMU\EMU_250.png") {
     wagon_1F_r(80, 54)
 }
 
-spriteset(set_EMU_250_wagon_end, "..\YSTset\Graphic\locomotive\EMU\EMU_250.png"){
+spriteset(set_EMU_250_wagon_end, "src\locomotive\EMU\EMU_250.png"){
 	wagon_start(80, 81)
 }
 
-spriteset(set_EMU_250_engineT, "..\YSTset\Graphic\locomotive\EMU\EMU_250.png"){
+spriteset(set_EMU_250_engineT, "src\locomotive\EMU\EMU_250.png"){
 	engine_r(80, 108)
 }
 
 /*--------------------------------------------------------------------
 5.18.1.2. EMU-300
 --------------------------------------------------------------------*/
-spriteset(set_EMU_300H_purchase, "..\YSTset\Graphic\locomotive\EMU\EMU_300.png"){
+spriteset(set_EMU_300H_purchase, "src\locomotive\EMU\EMU_300.png"){
 	tmpl_purchase_for_dualhead(0, 108)
 }
 
-spriteset(set_EMU_300_engineH, "..\YSTset\Graphic\locomotive\EMU\EMU_300.png"){
+spriteset(set_EMU_300_engineH, "src\locomotive\EMU\EMU_300.png"){
 	engine(80, 0)
 }
 
-spriteset(set_EMU_300_wagon_start, "..\YSTset\Graphic\locomotive\EMU\EMU_300.png"){
+spriteset(set_EMU_300_wagon_start, "src\locomotive\EMU\EMU_300.png"){
 	wagon_start(80, 27)
 }
 
-spriteset(set_EMU_300_wagon, "..\YSTset\Graphic\locomotive\EMU\EMU_300.png") {
+spriteset(set_EMU_300_wagon, "src\locomotive\EMU\EMU_300.png") {
     wagon_1F(80, 54)
 }
 
-spriteset(set_EMU_300_wagon_r, "..\YSTset\Graphic\locomotive\EMU\EMU_300.png") {
+spriteset(set_EMU_300_wagon_r, "src\locomotive\EMU\EMU_300.png") {
     wagon_1F_r(80, 54)
 }
 
-spriteset(set_EMU_300_wagon_end, "..\YSTset\Graphic\locomotive\EMU\EMU_300.png"){
+spriteset(set_EMU_300_wagon_end, "src\locomotive\EMU\EMU_300.png"){
 	wagon_start(80, 81)
 }
 
-spriteset(set_EMU_300_engineT, "..\YSTset\Graphic\locomotive\EMU\EMU_300.png"){
+spriteset(set_EMU_300_engineT, "src\locomotive\EMU\EMU_300.png"){
 	engine_r(80, 108)
 }
 
@@ -3156,162 +3119,162 @@ item(FEAT_TRAINS, EMU){
 /*--------------------------------------------------------------------
 5.19.1 Graphics
 --------------------------------------------------------------------*/
-spriteset(set_Glory_600_purchase, "..\YSTset\Graphic\locomotive\Glory_600\Glory_600.png"){
+spriteset(set_Glory_600_purchase, "src\locomotive\Glory_600\Glory_600.png"){
 	tmpl_purchase(0, 0)
 }
 
 /*--------------------------------------------------------------------
 5.19.1.1. Glory 600 A
 --------------------------------------------------------------------*/
-spriteset(set_Glory_600AH_purchase, "..\YSTset\Graphic\locomotive\Glory_600\Glory_600.png"){
+spriteset(set_Glory_600AH_purchase, "src\locomotive\Glory_600\Glory_600.png"){
 	tmpl_purchase_for_dualhead(0, 108)
 }
 
-spriteset(set_Glory_600A_engineH, "..\YSTset\Graphic\locomotive\Glory_600\Glory_600.png"){
+spriteset(set_Glory_600A_engineH, "src\locomotive\Glory_600\Glory_600.png"){
 	engine(80, 0)
 }
 
-spriteset(set_Glory_600A_wagon_start, "..\YSTset\Graphic\locomotive\Glory_600\Glory_600.png"){
+spriteset(set_Glory_600A_wagon_start, "src\locomotive\Glory_600\Glory_600.png"){
 	wagon_start(80, 27)
 }
 
-spriteset(set_Glory_600A_wagon, "..\YSTset\Graphic\locomotive\Glory_600\Glory_600.png") {
+spriteset(set_Glory_600A_wagon, "src\locomotive\Glory_600\Glory_600.png") {
     wagon_1F(80, 54)
 }
 
-spriteset(set_Glory_600A_wagon_r, "..\YSTset\Graphic\locomotive\Glory_600\Glory_600.png") {
+spriteset(set_Glory_600A_wagon_r, "src\locomotive\Glory_600\Glory_600.png") {
     wagon_1F_r(80, 54)
 }
 
-spriteset(set_Glory_600A_wagon_end, "..\YSTset\Graphic\locomotive\Glory_600\Glory_600.png"){
+spriteset(set_Glory_600A_wagon_end, "src\locomotive\Glory_600\Glory_600.png"){
 	wagon_start(80, 81)
 }
 
-spriteset(set_Glory_600A_engineT, "..\YSTset\Graphic\locomotive\Glory_600\Glory_600.png"){
+spriteset(set_Glory_600A_engineT, "src\locomotive\Glory_600\Glory_600.png"){
 	engine_r(80, 108)
 }
 
 /*--------------------------------------------------------------------
 5.19.1.2. Glory 600 B
 --------------------------------------------------------------------*/
-spriteset(set_Glory_600BH_purchase, "..\YSTset\Graphic\locomotive\Glory_600\Glory_600.png"){
+spriteset(set_Glory_600BH_purchase, "src\locomotive\Glory_600\Glory_600.png"){
 	tmpl_purchase_for_dualhead(0, 243)
 }
 
-spriteset(set_Glory_600B_engineH, "..\YSTset\Graphic\locomotive\Glory_600\Glory_600.png"){
+spriteset(set_Glory_600B_engineH, "src\locomotive\Glory_600\Glory_600.png"){
 	engine(80, 135)
 }
 
-spriteset(set_Glory_600B_wagon_start, "..\YSTset\Graphic\locomotive\Glory_600\Glory_600.png"){
+spriteset(set_Glory_600B_wagon_start, "src\locomotive\Glory_600\Glory_600.png"){
 	wagon_start(80, 162)
 }
 
-spriteset(set_Glory_600B_wagon, "..\YSTset\Graphic\locomotive\Glory_600\Glory_600.png") {
+spriteset(set_Glory_600B_wagon, "src\locomotive\Glory_600\Glory_600.png") {
     wagon_1F(80, 189)
 }
 
-spriteset(set_Glory_600B_wagon_r, "..\YSTset\Graphic\locomotive\Glory_600\Glory_600.png") {
+spriteset(set_Glory_600B_wagon_r, "src\locomotive\Glory_600\Glory_600.png") {
     wagon_1F_r(80, 189)
 }
 
-spriteset(set_Glory_600B_wagon_end, "..\YSTset\Graphic\locomotive\Glory_600\Glory_600.png"){
+spriteset(set_Glory_600B_wagon_end, "src\locomotive\Glory_600\Glory_600.png"){
 	wagon_start(80, 216)
 }
 
-spriteset(set_Glory_600B_engineT, "..\YSTset\Graphic\locomotive\Glory_600\Glory_600.png"){
+spriteset(set_Glory_600B_engineT, "src\locomotive\Glory_600\Glory_600.png"){
 	engine_r(80, 243)
 }
 
 /*--------------------------------------------------------------------
 5.19.1.3. Glory 600 C
 --------------------------------------------------------------------*/
-spriteset(set_Glory_600CH_purchase, "..\YSTset\Graphic\locomotive\Glory_600\Glory_600.png"){
+spriteset(set_Glory_600CH_purchase, "src\locomotive\Glory_600\Glory_600.png"){
 	tmpl_purchase_for_dualhead(0, 378)
 }
 
-spriteset(set_Glory_600C_engineH, "..\YSTset\Graphic\locomotive\Glory_600\Glory_600.png"){
+spriteset(set_Glory_600C_engineH, "src\locomotive\Glory_600\Glory_600.png"){
 	engine(80, 270)
 }
 
-spriteset(set_Glory_600C_wagon_start, "..\YSTset\Graphic\locomotive\Glory_600\Glory_600.png"){
+spriteset(set_Glory_600C_wagon_start, "src\locomotive\Glory_600\Glory_600.png"){
 	wagon_start(80, 297)
 }
 
-spriteset(set_Glory_600C_wagon, "..\YSTset\Graphic\locomotive\Glory_600\Glory_600.png") {
+spriteset(set_Glory_600C_wagon, "src\locomotive\Glory_600\Glory_600.png") {
     wagon_1F(80, 324)
 }
 
-spriteset(set_Glory_600C_wagon_r, "..\YSTset\Graphic\locomotive\Glory_600\Glory_600.png") {
+spriteset(set_Glory_600C_wagon_r, "src\locomotive\Glory_600\Glory_600.png") {
     wagon_1F_r(80, 324)
 }
 
-spriteset(set_Glory_600C_wagon_end, "..\YSTset\Graphic\locomotive\Glory_600\Glory_600.png"){
+spriteset(set_Glory_600C_wagon_end, "src\locomotive\Glory_600\Glory_600.png"){
 	wagon_start(80, 351)
 }
 
-spriteset(set_Glory_600C_engineT, "..\YSTset\Graphic\locomotive\Glory_600\Glory_600.png"){
+spriteset(set_Glory_600C_engineT, "src\locomotive\Glory_600\Glory_600.png"){
 	engine_r(80, 378)
 }
 
 /*--------------------------------------------------------------------
 5.19.1.4. Glory 600 D
 --------------------------------------------------------------------*/
-spriteset(set_Glory_600DH_purchase, "..\YSTset\Graphic\locomotive\Glory_600\Glory_600.png"){
+spriteset(set_Glory_600DH_purchase, "src\locomotive\Glory_600\Glory_600.png"){
 	tmpl_purchase_for_dualhead(0, 513)
 }
 
-spriteset(set_Glory_600D_engineH, "..\YSTset\Graphic\locomotive\Glory_600\Glory_600.png"){
+spriteset(set_Glory_600D_engineH, "src\locomotive\Glory_600\Glory_600.png"){
 	engine(80, 405)
 }
 
-spriteset(set_Glory_600D_wagon_start, "..\YSTset\Graphic\locomotive\Glory_600\Glory_600.png"){
+spriteset(set_Glory_600D_wagon_start, "src\locomotive\Glory_600\Glory_600.png"){
 	wagon_start(80, 432)
 }
 
-spriteset(set_Glory_600D_wagon, "..\YSTset\Graphic\locomotive\Glory_600\Glory_600.png") {
+spriteset(set_Glory_600D_wagon, "src\locomotive\Glory_600\Glory_600.png") {
     wagon_1F(80, 459)
 }
 
-spriteset(set_Glory_600D_wagon_r, "..\YSTset\Graphic\locomotive\Glory_600\Glory_600.png") {
+spriteset(set_Glory_600D_wagon_r, "src\locomotive\Glory_600\Glory_600.png") {
     wagon_1F_r(80, 459)
 }
 
-spriteset(set_Glory_600D_wagon_end, "..\YSTset\Graphic\locomotive\Glory_600\Glory_600.png"){
+spriteset(set_Glory_600D_wagon_end, "src\locomotive\Glory_600\Glory_600.png"){
 	wagon_start(80, 486)
 }
 
-spriteset(set_Glory_600D_engineT, "..\YSTset\Graphic\locomotive\Glory_600\Glory_600.png"){
+spriteset(set_Glory_600D_engineT, "src\locomotive\Glory_600\Glory_600.png"){
 	engine_r(80, 513)
 }
 
 /*--------------------------------------------------------------------
 5.19.1.5. Glory 600 E
 --------------------------------------------------------------------*/
-spriteset(set_Glory_600EH_purchase, "..\YSTset\Graphic\locomotive\Glory_600\Glory_600.png"){
+spriteset(set_Glory_600EH_purchase, "src\locomotive\Glory_600\Glory_600.png"){
 	tmpl_purchase_for_dualhead(0, 648)
 }
 
-spriteset(set_Glory_600E_engineH, "..\YSTset\Graphic\locomotive\Glory_600\Glory_600.png"){
+spriteset(set_Glory_600E_engineH, "src\locomotive\Glory_600\Glory_600.png"){
 	engine(80, 540)
 }
 
-spriteset(set_Glory_600E_wagon_start, "..\YSTset\Graphic\locomotive\Glory_600\Glory_600.png"){
+spriteset(set_Glory_600E_wagon_start, "src\locomotive\Glory_600\Glory_600.png"){
 	wagon_start(80, 567)
 }
 
-spriteset(set_Glory_600E_wagon, "..\YSTset\Graphic\locomotive\Glory_600\Glory_600.png") {
+spriteset(set_Glory_600E_wagon, "src\locomotive\Glory_600\Glory_600.png") {
     wagon_1F(80, 594)
 }
 
-spriteset(set_Glory_600E_wagon_r, "..\YSTset\Graphic\locomotive\Glory_600\Glory_600.png") {
+spriteset(set_Glory_600E_wagon_r, "src\locomotive\Glory_600\Glory_600.png") {
     wagon_1F_r(80, 594)
 }
 
-spriteset(set_Glory_600E_wagon_end, "..\YSTset\Graphic\locomotive\Glory_600\Glory_600.png"){
+spriteset(set_Glory_600E_wagon_end, "src\locomotive\Glory_600\Glory_600.png"){
 	wagon_start(80, 621)
 }
 
-spriteset(set_Glory_600E_engineT, "..\YSTset\Graphic\locomotive\Glory_600\Glory_600.png"){
+spriteset(set_Glory_600E_engineT, "src\locomotive\Glory_600\Glory_600.png"){
 	engine_r(80, 648)
 }
 
@@ -3478,31 +3441,31 @@ item(FEAT_TRAINS, Glory_600){
 /*--------------------------------------------------------------------
 5.20.1 Graphics
 --------------------------------------------------------------------*/
-spriteset(set_HEMU_purchase, "..\YSTset\Graphic\locomotive\HEMU\HEMU.png"){
+spriteset(set_HEMU_purchase, "src\locomotive\HEMU\HEMU.png"){
 	tmpl_purchase(0, 0)
 }
 
-spriteset(set_HEMUH_purchase, "..\YSTset\Graphic\locomotive\HEMU\HEMU.png"){
+spriteset(set_HEMUH_purchase, "src\locomotive\HEMU\HEMU.png"){
 	tmpl_purchase_for_dualhead(0, 81)
 }
 
-spriteset(set_HEMU_engineH, "..\YSTset\Graphic\locomotive\HEMU\HEMU.png"){
+spriteset(set_HEMU_engineH, "src\locomotive\HEMU\HEMU.png"){
 	engine(80, 0)
 }
 
-spriteset(set_HEMU_wagon, "..\YSTset\Graphic\locomotive\HEMU\HEMU.png") {
+spriteset(set_HEMU_wagon, "src\locomotive\HEMU\HEMU.png") {
     wagon_1F(80, 27)
 }
 
-spriteset(set_HEMU_wagon_r, "..\YSTset\Graphic\locomotive\HEMU\HEMU.png") {
+spriteset(set_HEMU_wagon_r, "src\locomotive\HEMU\HEMU.png") {
     wagon_1F_r(80, 27)
 }
 
-spriteset(set_HEMU_wagon_bar, "..\YSTset\Graphic\locomotive\HEMU\HEMU.png") {
+spriteset(set_HEMU_wagon_bar, "src\locomotive\HEMU\HEMU.png") {
     wagon_bar(80, 54)
 }
 
-spriteset(set_HEMU_engineT, "..\YSTset\Graphic\locomotive\HEMU\HEMU.png"){
+spriteset(set_HEMU_engineT, "src\locomotive\HEMU\HEMU.png"){
 	engine_r(80, 81)
 }
 
@@ -3603,69 +3566,69 @@ item(FEAT_TRAINS, HEMU){
 /*--------------------------------------------------------------------
 5.21.1 Graphics
 --------------------------------------------------------------------*/
-spriteset(set_HMX_purchase, "..\YSTset\Graphic\locomotive\HMX\HMX.png"){
+spriteset(set_HMX_purchase, "src\locomotive\HMX\HMX.png"){
 	tmpl_purchase(0, 0)
 }
 
 /*--------------------------------------------------------------------
 5.21.1.1. HMX 녹색도색
 --------------------------------------------------------------------*/
-spriteset(set_HMXGH_purchase, "..\YSTset\Graphic\locomotive\HMX\HMX.png"){
+spriteset(set_HMXGH_purchase, "src\locomotive\HMX\HMX.png"){
 	tmpl_purchase_for_dualhead(0, 81)
 }
 
-spriteset(set_HMXG_engineH, "..\YSTset\Graphic\locomotive\HMX\HMX.png"){
+spriteset(set_HMXG_engineH, "src\locomotive\HMX\HMX.png"){
 	engine(80, 0)
 }
 
-spriteset(set_HMXG_1F_wagon, "..\YSTset\Graphic\locomotive\HMX\HMX.png") {
+spriteset(set_HMXG_1F_wagon, "src\locomotive\HMX\HMX.png") {
     wagon_1F(80, 27)
 }
 
-spriteset(set_HMXG_1F_wagon_r, "..\YSTset\Graphic\locomotive\HMX\HMX.png") {
+spriteset(set_HMXG_1F_wagon_r, "src\locomotive\HMX\HMX.png") {
     wagon_1F_r(80, 27)
 }
 
-spriteset(set_HMXG_2F_wagon, "..\YSTset\Graphic\locomotive\HMX\HMX.png") {
+spriteset(set_HMXG_2F_wagon, "src\locomotive\HMX\HMX.png") {
     wagon_2F(80, 54)
 }
 
-spriteset(set_HMXG_2F_wagon_r, "..\YSTset\Graphic\locomotive\HMX\HMX.png") {
+spriteset(set_HMXG_2F_wagon_r, "src\locomotive\HMX\HMX.png") {
     wagon_2F_r(80, 54)
 }
 
-spriteset(set_HMXG_engineT, "..\YSTset\Graphic\locomotive\HMX\HMX.png"){
+spriteset(set_HMXG_engineT, "src\locomotive\HMX\HMX.png"){
 	engine_r(80, 81)
 }
 
 /*--------------------------------------------------------------------
 5.21.1.2. HMX 빨강도색
 --------------------------------------------------------------------*/
-spriteset(set_HMXRH_purchase, "..\YSTset\Graphic\locomotive\HMX\HMX.png"){
+spriteset(set_HMXRH_purchase, "src\locomotive\HMX\HMX.png"){
 	tmpl_purchase_for_dualhead(0, 189)
 }
 
-spriteset(set_HMXR_engineH, "..\YSTset\Graphic\locomotive\HMX\HMX.png"){
+spriteset(set_HMXR_engineH, "src\locomotive\HMX\HMX.png"){
 	engine(80, 108)
 }
 
-spriteset(set_HMXR_1F_wagon, "..\YSTset\Graphic\locomotive\HMX\HMX.png") {
+spriteset(set_HMXR_1F_wagon, "src\locomotive\HMX\HMX.png") {
     wagon_1F(80, 135)
 }
 
-spriteset(set_HMXR_1F_wagon_r, "..\YSTset\Graphic\locomotive\HMX\HMX.png") {
+spriteset(set_HMXR_1F_wagon_r, "src\locomotive\HMX\HMX.png") {
     wagon_1F_r(80, 135)
 }
 
-spriteset(set_HMXR_2F_wagon, "..\YSTset\Graphic\locomotive\HMX\HMX.png") {
+spriteset(set_HMXR_2F_wagon, "src\locomotive\HMX\HMX.png") {
     wagon_2F(80, 162)
 }
 
-spriteset(set_HMXR_2F_wagon_r, "..\YSTset\Graphic\locomotive\HMX\HMX.png") {
+spriteset(set_HMXR_2F_wagon_r, "src\locomotive\HMX\HMX.png") {
     wagon_2F_r(80, 162)
 }
 
-spriteset(set_HMXR_engineT, "..\YSTset\Graphic\locomotive\HMX\HMX.png"){
+spriteset(set_HMXR_engineT, "src\locomotive\HMX\HMX.png"){
 	engine_r(80, 189)
 }
 
@@ -3810,35 +3773,35 @@ item(FEAT_TRAINS, HMX){
 /*--------------------------------------------------------------------
 5.22.1 Graphics
 --------------------------------------------------------------------*/
-spriteset(set_ICE3_purchase, "..\YSTset\Graphic\locomotive\ICE3\ICE3.png"){
+spriteset(set_ICE3_purchase, "src\locomotive\ICE3\ICE3.png"){
 	tmpl_purchase(0, 0)
 }
 
-spriteset(set_ICE3H_purchase, "..\YSTset\Graphic\locomotive\ICE3\ICE3.png"){
+spriteset(set_ICE3H_purchase, "src\locomotive\ICE3\ICE3.png"){
 	tmpl_purchase_for_dualhead(0, 108)
 }
 
-spriteset(set_ICE3_engineH, "..\YSTset\Graphic\locomotive\ICE3\ICE3.png"){
+spriteset(set_ICE3_engineH, "src\locomotive\ICE3\ICE3.png"){
 	engine(80, 0)
 }
 
-spriteset(set_ICE3_wagon_start, "..\YSTset\Graphic\locomotive\ICE3\ICE3.png"){
+spriteset(set_ICE3_wagon_start, "src\locomotive\ICE3\ICE3.png"){
 	wagon_start(80, 27)
 }
 
-spriteset(set_ICE3_wagon, "..\YSTset\Graphic\locomotive\ICE3\ICE3.png") {
+spriteset(set_ICE3_wagon, "src\locomotive\ICE3\ICE3.png") {
     wagon_1F(80, 54)
 }
 
-spriteset(set_ICE3_wagon_r, "..\YSTset\Graphic\locomotive\ICE3\ICE3.png") {
+spriteset(set_ICE3_wagon_r, "src\locomotive\ICE3\ICE3.png") {
     wagon_1F_r(80, 54)
 }
 
-spriteset(set_ICE3_wagon_end, "..\YSTset\Graphic\locomotive\ICE3\ICE3.png"){
+spriteset(set_ICE3_wagon_end, "src\locomotive\ICE3\ICE3.png"){
 	wagon_start(80, 81)
 }
 
-spriteset(set_ICE3_engineT, "..\YSTset\Graphic\locomotive\ICE3\ICE3.png"){
+spriteset(set_ICE3_engineT, "src\locomotive\ICE3\ICE3.png"){
 	engine_r(80, 108)
 }
 
@@ -3944,69 +3907,69 @@ item(FEAT_TRAINS, ICE3){
 /*--------------------------------------------------------------------
 5.23.1 Graphics
 --------------------------------------------------------------------*/
-spriteset(set_ICE_SP_purchase, "..\YSTset\Graphic\locomotive\ICE3\ICE_Sancheon.png"){
+spriteset(set_ICE_SP_purchase, "src\locomotive\ICE3\ICE_Sancheon.png"){
 	tmpl_purchase(0, 0)
 }
 
 /*--------------------------------------------------------------------
 5.23.1.1 ICE-산천
 --------------------------------------------------------------------*/
-spriteset(set_ICE_SancheonH_purchase, "..\YSTset\Graphic\locomotive\ICE3\ICE_Sancheon.png"){
+spriteset(set_ICE_SancheonH_purchase, "src\locomotive\ICE3\ICE_Sancheon.png"){
 	tmpl_purchase_for_dualhead(0, 108)
 }
 
-spriteset(set_ICE_Sancheon_engineH, "..\YSTset\Graphic\locomotive\ICE3\ICE_Sancheon.png"){
+spriteset(set_ICE_Sancheon_engineH, "src\locomotive\ICE3\ICE_Sancheon.png"){
 	engine(80, 0)
 }
 
-spriteset(set_ICE_Sancheon_wagon_start, "..\YSTset\Graphic\locomotive\ICE3\ICE_Sancheon.png"){
+spriteset(set_ICE_Sancheon_wagon_start, "src\locomotive\ICE3\ICE_Sancheon.png"){
 	wagon_start(80, 27)
 }
 
-spriteset(set_ICE_Sancheon_wagon, "..\YSTset\Graphic\locomotive\ICE3\ICE_Sancheon.png") {
+spriteset(set_ICE_Sancheon_wagon, "src\locomotive\ICE3\ICE_Sancheon.png") {
     wagon_1F(80, 54)
 }
 
-spriteset(set_ICE_Sancheon_wagon_r, "..\YSTset\Graphic\locomotive\ICE3\ICE_Sancheon.png") {
+spriteset(set_ICE_Sancheon_wagon_r, "src\locomotive\ICE3\ICE_Sancheon.png") {
     wagon_1F_r(80, 54)
 }
 
-spriteset(set_ICE_Sancheon_wagon_end, "..\YSTset\Graphic\locomotive\ICE3\ICE_Sancheon.png"){
+spriteset(set_ICE_Sancheon_wagon_end, "src\locomotive\ICE3\ICE_Sancheon.png"){
 	wagon_start(80, 81)
 }
 
-spriteset(set_ICE_Sancheon_engineT, "..\YSTset\Graphic\locomotive\ICE3\ICE_Sancheon.png"){
+spriteset(set_ICE_Sancheon_engineT, "src\locomotive\ICE3\ICE_Sancheon.png"){
 	engine_r(80, 108)
 }
 
 /*--------------------------------------------------------------------
 5.23.1.2 ICE-팥죽
 --------------------------------------------------------------------*/
-spriteset(set_ICE_PatjugH_purchase, "..\YSTset\Graphic\locomotive\ICE3\ICE_Patjug.png"){
+spriteset(set_ICE_PatjugH_purchase, "src\locomotive\ICE3\ICE_Patjug.png"){
 	tmpl_purchase_for_dualhead(0, 108)
 }
 
-spriteset(set_ICE_Patjug_engineH, "..\YSTset\Graphic\locomotive\ICE3\ICE_Patjug.png"){
+spriteset(set_ICE_Patjug_engineH, "src\locomotive\ICE3\ICE_Patjug.png"){
 	engine(80, 0)
 }
 
-spriteset(set_ICE_Patjug_wagon_start, "..\YSTset\Graphic\locomotive\ICE3\ICE_Patjug.png"){
+spriteset(set_ICE_Patjug_wagon_start, "src\locomotive\ICE3\ICE_Patjug.png"){
 	wagon_start(80, 27)
 }
 
-spriteset(set_ICE_Patjug_wagon, "..\YSTset\Graphic\locomotive\ICE3\ICE_Patjug.png") {
+spriteset(set_ICE_Patjug_wagon, "src\locomotive\ICE3\ICE_Patjug.png") {
     wagon_1F(80, 54)
 }
 
-spriteset(set_ICE_Patjug_wagon_r, "..\YSTset\Graphic\locomotive\ICE3\ICE_Patjug.png") {
+spriteset(set_ICE_Patjug_wagon_r, "src\locomotive\ICE3\ICE_Patjug.png") {
     wagon_1F_r(80, 54)
 }
 
-spriteset(set_ICE_Patjug_wagon_end, "..\YSTset\Graphic\locomotive\ICE3\ICE_Patjug.png"){
+spriteset(set_ICE_Patjug_wagon_end, "src\locomotive\ICE3\ICE_Patjug.png"){
 	wagon_start(80, 81)
 }
 
-spriteset(set_ICE_Patjug_engineT, "..\YSTset\Graphic\locomotive\ICE3\ICE_Patjug.png"){
+spriteset(set_ICE_Patjug_engineT, "src\locomotive\ICE3\ICE_Patjug.png"){
 	engine_r(80, 108)
 }
 
@@ -4149,35 +4112,35 @@ item(FEAT_TRAINS, ICE_SP){
 /*--------------------------------------------------------------------
 5.24.1 Graphics
 --------------------------------------------------------------------*/
-spriteset(set_KTX_N_purchase, "..\YSTset\Graphic\locomotive\KTX_N\KTX_N.png"){
+spriteset(set_KTX_N_purchase, "src\locomotive\KTX_N\KTX_N.png"){
 	tmpl_purchase(0, 0)
 }
 
-spriteset(set_KTX_NH_purchase, "..\YSTset\Graphic\locomotive\KTX_N\KTX_N.png"){
+spriteset(set_KTX_NH_purchase, "src\locomotive\KTX_N\KTX_N.png"){
 	tmpl_purchase_for_dualhead(0, 108)
 }
 
-spriteset(set_KTX_N_engineH, "..\YSTset\Graphic\locomotive\KTX_N\KTX_N.png"){
+spriteset(set_KTX_N_engineH, "src\locomotive\KTX_N\KTX_N.png"){
 	engine(80, 0)
 }
 
-spriteset(set_KTX_N_wagon_start, "..\YSTset\Graphic\locomotive\KTX_N\KTX_N.png"){
+spriteset(set_KTX_N_wagon_start, "src\locomotive\KTX_N\KTX_N.png"){
 	wagon_start(80, 27)
 }
 
-spriteset(set_KTX_N_wagon, "..\YSTset\Graphic\locomotive\KTX_N\KTX_N.png") {
+spriteset(set_KTX_N_wagon, "src\locomotive\KTX_N\KTX_N.png") {
     wagon_1F(80, 54)
 }
 
-spriteset(set_KTX_N_wagon_r, "..\YSTset\Graphic\locomotive\KTX_N\KTX_N.png") {
+spriteset(set_KTX_N_wagon_r, "src\locomotive\KTX_N\KTX_N.png") {
     wagon_1F_r(80, 54)
 }
 
-spriteset(set_KTX_N_wagon_end, "..\YSTset\Graphic\locomotive\KTX_N\KTX_N.png"){
+spriteset(set_KTX_N_wagon_end, "src\locomotive\KTX_N\KTX_N.png"){
 	wagon_start(80, 81)
 }
 
-spriteset(set_KTX_N_engineT, "..\YSTset\Graphic\locomotive\KTX_N\KTX_N.png"){
+spriteset(set_KTX_N_engineT, "src\locomotive\KTX_N\KTX_N.png"){
 	engine_r(80, 108)
 }
 
@@ -4285,69 +4248,69 @@ item(FEAT_TRAINS, KTX_N){
 /*--------------------------------------------------------------------
 5.25.1 Graphics
 --------------------------------------------------------------------*/
-spriteset(set_N700_purchase, "..\YSTset\Graphic\locomotive\N700\N700.png"){
+spriteset(set_N700_purchase, "src\locomotive\N700\N700.png"){
 	tmpl_purchase(0, 0)
 }
 
 /*--------------------------------------------------------------------
 5.25.1.1 N700계
 --------------------------------------------------------------------*/
-spriteset(set_N700H_purchase, "..\YSTset\Graphic\locomotive\N700\N700.png"){
+spriteset(set_N700H_purchase, "src\locomotive\N700\N700.png"){
 	tmpl_purchase_for_dualhead(0, 108)
 }
 
-spriteset(set_N700_engineH, "..\YSTset\Graphic\locomotive\N700\N700.png"){
+spriteset(set_N700_engineH, "src\locomotive\N700\N700.png"){
 	engine(80, 0)
 }
 
-spriteset(set_N700_wagon_start, "..\YSTset\Graphic\locomotive\N700\N700.png"){
+spriteset(set_N700_wagon_start, "src\locomotive\N700\N700.png"){
 	wagon_panto(80, 27)
 }
 
-spriteset(set_N700_wagon, "..\YSTset\Graphic\locomotive\N700\N700.png") {
+spriteset(set_N700_wagon, "src\locomotive\N700\N700.png") {
     wagon_1F(80, 54)
 }
 
-spriteset(set_N700_wagon_r, "..\YSTset\Graphic\locomotive\N700\N700.png") {
+spriteset(set_N700_wagon_r, "src\locomotive\N700\N700.png") {
     wagon_1F_r(80, 54)
 }
 
-spriteset(set_N700_wagon_end, "..\YSTset\Graphic\locomotive\N700\N700.png"){
+spriteset(set_N700_wagon_end, "src\locomotive\N700\N700.png"){
 	wagon_panto(80, 81)
 }
 
-spriteset(set_N700_engineT, "..\YSTset\Graphic\locomotive\N700\N700.png"){
+spriteset(set_N700_engineT, "src\locomotive\N700\N700.png"){
 	engine_r(80, 108)
 }
 
 /*--------------------------------------------------------------------
 5.25.1.1 N700 타이완 고속철도
 --------------------------------------------------------------------*/
-spriteset(set_N700TH_purchase, "..\YSTset\Graphic\locomotive\N700\N700.png"){
+spriteset(set_N700TH_purchase, "src\locomotive\N700\N700.png"){
 	tmpl_purchase_for_dualhead(0, 243)
 }
 
-spriteset(set_N700T_engineH, "..\YSTset\Graphic\locomotive\N700\N700.png"){
+spriteset(set_N700T_engineH, "src\locomotive\N700\N700.png"){
 	engine(80, 135)
 }
 
-spriteset(set_N700T_wagon_start, "..\YSTset\Graphic\locomotive\N700\N700.png"){
+spriteset(set_N700T_wagon_start, "src\locomotive\N700\N700.png"){
 	wagon_panto(80, 162)
 }
 
-spriteset(set_N700T_wagon, "..\YSTset\Graphic\locomotive\N700\N700.png") {
+spriteset(set_N700T_wagon, "src\locomotive\N700\N700.png") {
     wagon_1F(80, 189)
 }
 
-spriteset(set_N700T_wagon_r, "..\YSTset\Graphic\locomotive\N700\N700.png") {
+spriteset(set_N700T_wagon_r, "src\locomotive\N700\N700.png") {
     wagon_1F_r(80, 189)
 }
 
-spriteset(set_N700T_wagon_end, "..\YSTset\Graphic\locomotive\N700\N700.png"){
+spriteset(set_N700T_wagon_end, "src\locomotive\N700\N700.png"){
 	wagon_panto(80, 216)
 }
 
-spriteset(set_N700T_engineT, "..\YSTset\Graphic\locomotive\N700\N700.png"){
+spriteset(set_N700T_engineT, "src\locomotive\N700\N700.png"){
 	engine_r(80, 243)
 }
 
@@ -4490,124 +4453,124 @@ item(FEAT_TRAINS, N700){
 /*--------------------------------------------------------------------
 5.26.1 Graphics
 --------------------------------------------------------------------*/
-spriteset(set_NKX_purchase, "..\YSTset\Graphic\locomotive\NKX\NKX.png"){
+spriteset(set_NKX_purchase, "src\locomotive\NKX\NKX.png"){
 	tmpl_purchase(0, 0)
 }
 
 /*--------------------------------------------------------------------
 5.26.1.1. NKX A도색
 --------------------------------------------------------------------*/
-spriteset(set_NKXAH_purchase, "..\YSTset\Graphic\locomotive\NKX\NKX.png"){
+spriteset(set_NKXAH_purchase, "src\locomotive\NKX\NKX.png"){
 	tmpl_purchase_for_dualhead(0, 135)
 }
 
-spriteset(set_NKXA_engineH, "..\YSTset\Graphic\locomotive\NKX\NKX.png"){
+spriteset(set_NKXA_engineH, "src\locomotive\NKX\NKX.png"){
 	engine(80, 0)
 }
 
-spriteset(set_NKXA_wagon_start, "..\YSTset\Graphic\locomotive\NKX\NKX.png"){
+spriteset(set_NKXA_wagon_start, "src\locomotive\NKX\NKX.png"){
 	wagon_panto(80, 27)
 }
 
-spriteset(set_NKXA_1F_wagon, "..\YSTset\Graphic\locomotive\NKX\NKX.png") {
+spriteset(set_NKXA_1F_wagon, "src\locomotive\NKX\NKX.png") {
     wagon_1F(80, 54)
 }
 
-spriteset(set_NKXA_1F_wagon_r, "..\YSTset\Graphic\locomotive\NKX\NKX.png") {
+spriteset(set_NKXA_1F_wagon_r, "src\locomotive\NKX\NKX.png") {
     wagon_1F_r(80, 54)
 }
 
-spriteset(set_NKXA_2F_wagon, "..\YSTset\Graphic\locomotive\NKX\NKX.png") {
+spriteset(set_NKXA_2F_wagon, "src\locomotive\NKX\NKX.png") {
     wagon_2F(80, 81)
 }
 
-spriteset(set_NKXA_2F_wagon_r, "..\YSTset\Graphic\locomotive\NKX\NKX.png") {
+spriteset(set_NKXA_2F_wagon_r, "src\locomotive\NKX\NKX.png") {
     wagon_2F_r(80, 81)
 }
 
-spriteset(set_NKXA_wagon_end, "..\YSTset\Graphic\locomotive\NKX\NKX.png"){
+spriteset(set_NKXA_wagon_end, "src\locomotive\NKX\NKX.png"){
 	wagon_panto(80, 108)
 }
 
-spriteset(set_NKXA_engineT, "..\YSTset\Graphic\locomotive\NKX\NKX.png"){
+spriteset(set_NKXA_engineT, "src\locomotive\NKX\NKX.png"){
 	engine_r(80, 135)
 }
 
 /*--------------------------------------------------------------------
 5.26.1.2. NKX B도색
 --------------------------------------------------------------------*/
-spriteset(set_NKXBH_purchase, "..\YSTset\Graphic\locomotive\NKX\NKX.png"){
+spriteset(set_NKXBH_purchase, "src\locomotive\NKX\NKX.png"){
 	tmpl_purchase_for_dualhead(0, 297)
 }
 
-spriteset(set_NKXB_engineH, "..\YSTset\Graphic\locomotive\NKX\NKX.png"){
+spriteset(set_NKXB_engineH, "src\locomotive\NKX\NKX.png"){
 	engine(80, 162)
 }
 
-spriteset(set_NKXB_wagon_start, "..\YSTset\Graphic\locomotive\NKX\NKX.png"){
+spriteset(set_NKXB_wagon_start, "src\locomotive\NKX\NKX.png"){
 	wagon_panto(80, 189)
 }
 
-spriteset(set_NKXB_1F_wagon, "..\YSTset\Graphic\locomotive\NKX\NKX.png") {
+spriteset(set_NKXB_1F_wagon, "src\locomotive\NKX\NKX.png") {
     wagon_1F(80, 216)
 }
 
-spriteset(set_NKXB_1F_wagon_r, "..\YSTset\Graphic\locomotive\NKX\NKX.png") {
+spriteset(set_NKXB_1F_wagon_r, "src\locomotive\NKX\NKX.png") {
     wagon_1F_r(80, 216)
 }
 
-spriteset(set_NKXB_2F_wagon, "..\YSTset\Graphic\locomotive\NKX\NKX.png") {
+spriteset(set_NKXB_2F_wagon, "src\locomotive\NKX\NKX.png") {
     wagon_2F(80, 243)
 }
 
-spriteset(set_NKXB_2F_wagon_r, "..\YSTset\Graphic\locomotive\NKX\NKX.png") {
+spriteset(set_NKXB_2F_wagon_r, "src\locomotive\NKX\NKX.png") {
     wagon_2F_r(80, 243)
 }
 
-spriteset(set_NKXB_wagon_end, "..\YSTset\Graphic\locomotive\NKX\NKX.png"){
+spriteset(set_NKXB_wagon_end, "src\locomotive\NKX\NKX.png"){
 	wagon_panto(80, 270)
 }
 
-spriteset(set_NKXB_engineT, "..\YSTset\Graphic\locomotive\NKX\NKX.png"){
+spriteset(set_NKXB_engineT, "src\locomotive\NKX\NKX.png"){
 	engine_r(80, 297)
 }
 
 /*--------------------------------------------------------------------
 5.26.1.3. NKX C도색
 --------------------------------------------------------------------*/
-spriteset(set_NKXCH_purchase, "..\YSTset\Graphic\locomotive\NKX\NKX.png"){
+spriteset(set_NKXCH_purchase, "src\locomotive\NKX\NKX.png"){
 	tmpl_purchase_for_dualhead(0, 459)
 }
 
-spriteset(set_NKXC_engineH, "..\YSTset\Graphic\locomotive\NKX\NKX.png"){
+spriteset(set_NKXC_engineH, "src\locomotive\NKX\NKX.png"){
 	engine(80, 324)
 }
 
-spriteset(set_NKXC_wagon_start, "..\YSTset\Graphic\locomotive\NKX\NKX.png"){
+spriteset(set_NKXC_wagon_start, "src\locomotive\NKX\NKX.png"){
 	wagon_panto(80, 351)
 }
 
-spriteset(set_NKXC_1F_wagon, "..\YSTset\Graphic\locomotive\NKX\NKX.png") {
+spriteset(set_NKXC_1F_wagon, "src\locomotive\NKX\NKX.png") {
     wagon_1F(80, 378)
 }
 
-spriteset(set_NKXC_1F_wagon_r, "..\YSTset\Graphic\locomotive\NKX\NKX.png") {
+spriteset(set_NKXC_1F_wagon_r, "src\locomotive\NKX\NKX.png") {
     wagon_1F_r(80, 378)
 }
 
-spriteset(set_NKXC_2F_wagon, "..\YSTset\Graphic\locomotive\NKX\NKX.png") {
+spriteset(set_NKXC_2F_wagon, "src\locomotive\NKX\NKX.png") {
     wagon_2F(80, 405)
 }
 
-spriteset(set_NKXC_2F_wagon_r, "..\YSTset\Graphic\locomotive\NKX\NKX.png") {
+spriteset(set_NKXC_2F_wagon_r, "src\locomotive\NKX\NKX.png") {
     wagon_2F_r(80, 405)
 }
 
-spriteset(set_NKXC_wagon_end, "..\YSTset\Graphic\locomotive\NKX\NKX.png"){
+spriteset(set_NKXC_wagon_end, "src\locomotive\NKX\NKX.png"){
 	wagon_panto(80, 432)
 }
 
-spriteset(set_NKXC_engineT, "..\YSTset\Graphic\locomotive\NKX\NKX.png"){
+spriteset(set_NKXC_engineT, "src\locomotive\NKX\NKX.png"){
 	engine_r(80, 459)
 }
 
@@ -4793,69 +4756,69 @@ item(FEAT_TRAINS, NKX){
 /*--------------------------------------------------------------------
 5.27.1 Graphics
 --------------------------------------------------------------------*/
-spriteset(set_TALGO_purchase, "..\YSTset\Graphic\locomotive\Talgo_250\Talgo_250.png"){
+spriteset(set_TALGO_purchase, "src\locomotive\Talgo_250\Talgo_250.png"){
 	tmpl_purchase(0, 0)
 }
 
 /*--------------------------------------------------------------------
 5.27.1.1. Alvia
 --------------------------------------------------------------------*/
-spriteset(set_ALVIAH_purchase, "..\YSTset\Graphic\locomotive\Talgo_250\Talgo_250.png"){
+spriteset(set_ALVIAH_purchase, "src\locomotive\Talgo_250\Talgo_250.png"){
 	tmpl_purchase_for_dualhead(0, 135)
 }
 
-spriteset(set_ALVIA_engineH, "..\YSTset\Graphic\locomotive\Talgo_250\Talgo_250.png"){
+spriteset(set_ALVIA_engineH, "src\locomotive\Talgo_250\Talgo_250.png"){
 	engine(80, 0)
 }
 
-spriteset(set_ALVIA_wagon_start, "..\YSTset\Graphic\locomotive\Talgo_250\Talgo_250.png"){
+spriteset(set_ALVIA_wagon_start, "src\locomotive\Talgo_250\Talgo_250.png"){
 	wagon_start(80, 27)
 }
 
-spriteset(set_ALVIA_wagon, "..\YSTset\Graphic\locomotive\Talgo_250\Talgo_250.png") {
+spriteset(set_ALVIA_wagon, "src\locomotive\Talgo_250\Talgo_250.png") {
     wagon_1F_F(80, 54)
 }
 
-spriteset(set_ALVIA_wagon_bar, "..\YSTset\Graphic\locomotive\Talgo_250\Talgo_250.png") {
+spriteset(set_ALVIA_wagon_bar, "src\locomotive\Talgo_250\Talgo_250.png") {
     wagon_bar(80, 81)
 }
 
-spriteset(set_ALVIA_wagon_end, "..\YSTset\Graphic\locomotive\Talgo_250\Talgo_250.png"){
+spriteset(set_ALVIA_wagon_end, "src\locomotive\Talgo_250\Talgo_250.png"){
 	wagon_start(80, 108)
 }
 
-spriteset(set_ALVIA_engineT, "..\YSTset\Graphic\locomotive\Talgo_250\Talgo_250.png"){
+spriteset(set_ALVIA_engineT, "src\locomotive\Talgo_250\Talgo_250.png"){
 	engine_r(80, 135)
 }
 
 /*--------------------------------------------------------------------
 5.27.1.2. Aprosiyob
 --------------------------------------------------------------------*/
-spriteset(set_APROSIYOBH_purchase, "..\YSTset\Graphic\locomotive\Talgo_250\Talgo_250.png"){
+spriteset(set_APROSIYOBH_purchase, "src\locomotive\Talgo_250\Talgo_250.png"){
 	tmpl_purchase_for_dualhead(0, 297)
 }
 
-spriteset(set_APROSIYOB_engineH, "..\YSTset\Graphic\locomotive\Talgo_250\Talgo_250.png"){
+spriteset(set_APROSIYOB_engineH, "src\locomotive\Talgo_250\Talgo_250.png"){
 	engine(80, 162)
 }
 
-spriteset(set_APROSIYOB_wagon_start, "..\YSTset\Graphic\locomotive\Talgo_250\Talgo_250.png"){
+spriteset(set_APROSIYOB_wagon_start, "src\locomotive\Talgo_250\Talgo_250.png"){
 	wagon_start(80, 189)
 }
 
-spriteset(set_APROSIYOB_wagon, "..\YSTset\Graphic\locomotive\Talgo_250\Talgo_250.png") {
+spriteset(set_APROSIYOB_wagon, "src\locomotive\Talgo_250\Talgo_250.png") {
     wagon_1F_F(80, 216)
 }
 
-spriteset(set_APROSIYOB_wagon_bar, "..\YSTset\Graphic\locomotive\Talgo_250\Talgo_250.png") {
+spriteset(set_APROSIYOB_wagon_bar, "src\locomotive\Talgo_250\Talgo_250.png") {
     wagon_bar(80, 243)
 }
 
-spriteset(set_APROSIYOB_wagon_end, "..\YSTset\Graphic\locomotive\Talgo_250\Talgo_250.png"){
+spriteset(set_APROSIYOB_wagon_end, "src\locomotive\Talgo_250\Talgo_250.png"){
 	wagon_start(80, 270)
 }
 
-spriteset(set_APROSIYOB_engineT, "..\YSTset\Graphic\locomotive\Talgo_250\Talgo_250.png"){
+spriteset(set_APROSIYOB_engineT, "src\locomotive\Talgo_250\Talgo_250.png"){
 	engine_r(80, 297)
 }
 
@@ -5000,35 +4963,35 @@ item(FEAT_TRAINS, TALGO){
 /*--------------------------------------------------------------------
 5.28.1 Graphics
 --------------------------------------------------------------------*/
-spriteset(set_Tgv_Old_purchase, "..\YSTset\Graphic\locomotive\TGV\TGV_Old.png"){
+spriteset(set_Tgv_Old_purchase, "src\locomotive\TGV\TGV_Old.png"){
 	tmpl_purchase(0, 0)
 }
 
-spriteset(set_Tgv_OldH_purchase, "..\YSTset\Graphic\locomotive\TGV\TGV_Old.png"){
+spriteset(set_Tgv_OldH_purchase, "src\locomotive\TGV\TGV_Old.png"){
 	tmpl_purchase_for_dualhead(0, 108)
 }
 
-spriteset(set_Tgv_Old_engineH, "..\YSTset\Graphic\locomotive\TGV\TGV_Old.png"){
+spriteset(set_Tgv_Old_engineH, "src\locomotive\TGV\TGV_Old.png"){
 	engine(80, 0)
 }
 
-spriteset(set_Tgv_Old_wagon_start, "..\YSTset\Graphic\locomotive\TGV\TGV_Old.png"){
+spriteset(set_Tgv_Old_wagon_start, "src\locomotive\TGV\TGV_Old.png"){
 	wagon_start(80, 27)
 }
 
-spriteset(set_Tgv_Old_wagon, "..\YSTset\Graphic\locomotive\TGV\TGV_Old.png") {
+spriteset(set_Tgv_Old_wagon, "src\locomotive\TGV\TGV_Old.png") {
     wagon_1F(80, 54)
 }
 
-spriteset(set_Tgv_Old_wagon_r, "..\YSTset\Graphic\locomotive\TGV\TGV_Old.png") {
+spriteset(set_Tgv_Old_wagon_r, "src\locomotive\TGV\TGV_Old.png") {
     wagon_1F_r(80, 54)
 }
 
-spriteset(set_Tgv_Old_wagon_end, "..\YSTset\Graphic\locomotive\TGV\TGV_Old.png"){
+spriteset(set_Tgv_Old_wagon_end, "src\locomotive\TGV\TGV_Old.png"){
 	wagon_start(80, 81)
 }
 
-spriteset(set_Tgv_Old_engineT, "..\YSTset\Graphic\locomotive\TGV\TGV_Old.png"){
+spriteset(set_Tgv_Old_engineT, "src\locomotive\TGV\TGV_Old.png"){
 	engine_r(80, 108)
 }
 
@@ -5136,104 +5099,104 @@ item(FEAT_TRAINS, TGV_OLD){
 /*--------------------------------------------------------------------
 5.29.1 Graphics
 --------------------------------------------------------------------*/
-spriteset(set_TGV_OLD_Pos_purchase, "..\YSTset\Graphic\locomotive\TGV\TGV_OLD_POS.png"){
+spriteset(set_TGV_OLD_Pos_purchase, "src\locomotive\TGV\TGV_OLD_POS.png"){
 	tmpl_purchase(0, 0)
 }
 
 /*--------------------------------------------------------------------
 5.29.1.1. TGV Old Pos
 --------------------------------------------------------------------*/
-spriteset(set_TGV_OLD_PosH_purchase, "..\YSTset\Graphic\locomotive\TGV\TGV_OLD_POS.png"){
+spriteset(set_TGV_OLD_PosH_purchase, "src\locomotive\TGV\TGV_OLD_POS.png"){
 	tmpl_purchase_for_dualhead(0, 162)
 }
 
-spriteset(set_TGV_OLD_Pos_engineH, "..\YSTset\Graphic\locomotive\TGV\TGV_OLD_POS.png"){
+spriteset(set_TGV_OLD_Pos_engineH, "src\locomotive\TGV\TGV_OLD_POS.png"){
 	engine(80, 0)
 }
 
-spriteset(set_TGV_OLD_Pos_wagon_start, "..\YSTset\Graphic\locomotive\TGV\TGV_OLD_POS.png"){
+spriteset(set_TGV_OLD_Pos_wagon_start, "src\locomotive\TGV\TGV_OLD_POS.png"){
 	wagon_start(80, 27)
 }
 
-spriteset(set_TGV_OLD_Pos_wagon_nomal, "..\YSTset\Graphic\locomotive\TGV\TGV_OLD_POS.png") {
+spriteset(set_TGV_OLD_Pos_wagon_nomal, "src\locomotive\TGV\TGV_OLD_POS.png") {
     wagon_1F_F(80, 54)
 }
 
-spriteset(set_TGV_OLD_Pos_wagon_bar, "..\YSTset\Graphic\locomotive\TGV\TGV_OLD_POS.png") {
+spriteset(set_TGV_OLD_Pos_wagon_bar, "src\locomotive\TGV\TGV_OLD_POS.png") {
     wagon_bar(80, 81)
 }
 
-spriteset(set_TGV_OLD_Pos_wagon_special, "..\YSTset\Graphic\locomotive\TGV\TGV_OLD_POS.png") {
+spriteset(set_TGV_OLD_Pos_wagon_special, "src\locomotive\TGV\TGV_OLD_POS.png") {
     wagon_1F_F(80, 108)
 }
 
-spriteset(set_TGV_OLD_Pos_wagon_end, "..\YSTset\Graphic\locomotive\TGV\TGV_OLD_POS.png"){
+spriteset(set_TGV_OLD_Pos_wagon_end, "src\locomotive\TGV\TGV_OLD_POS.png"){
 	wagon_start(80, 135)
 }
 
-spriteset(set_TGV_OLD_Pos_engineT, "..\YSTset\Graphic\locomotive\TGV\TGV_OLD_POS.png"){
+spriteset(set_TGV_OLD_Pos_engineT, "src\locomotive\TGV\TGV_OLD_POS.png"){
 	engine_r(80, 162)
 }
 
 /*--------------------------------------------------------------------
 5.29.1.2. TGV Old Lyair
 --------------------------------------------------------------------*/
-spriteset(set_TGV_OLD_LyairH_purchase, "..\YSTset\Graphic\locomotive\TGV\TGV_OLD_POS.png"){
+spriteset(set_TGV_OLD_LyairH_purchase, "src\locomotive\TGV\TGV_OLD_POS.png"){
 	tmpl_purchase_for_dualhead(0, 324)
 }
 
-spriteset(set_TGV_OLD_Lyair_engineH, "..\YSTset\Graphic\locomotive\TGV\TGV_OLD_POS.png"){
+spriteset(set_TGV_OLD_Lyair_engineH, "src\locomotive\TGV\TGV_OLD_POS.png"){
 	engine(80, 189)
 }
 
-spriteset(set_TGV_OLD_Lyair_wagon_start, "..\YSTset\Graphic\locomotive\TGV\TGV_OLD_POS.png"){
+spriteset(set_TGV_OLD_Lyair_wagon_start, "src\locomotive\TGV\TGV_OLD_POS.png"){
 	wagon_start(80, 216)
 }
 
-spriteset(set_TGV_OLD_Lyair_wagon_nomal, "..\YSTset\Graphic\locomotive\TGV\TGV_OLD_POS.png") {
+spriteset(set_TGV_OLD_Lyair_wagon_nomal, "src\locomotive\TGV\TGV_OLD_POS.png") {
     wagon_1F_F(80, 243)
 }
 
-spriteset(set_TGV_OLD_Lyair_wagon_bar, "..\YSTset\Graphic\locomotive\TGV\TGV_OLD_POS.png") {
+spriteset(set_TGV_OLD_Lyair_wagon_bar, "src\locomotive\TGV\TGV_OLD_POS.png") {
     wagon_bar(80, 270)
 }
 
-spriteset(set_TGV_OLD_Lyair_wagon_end, "..\YSTset\Graphic\locomotive\TGV\TGV_OLD_POS.png"){
+spriteset(set_TGV_OLD_Lyair_wagon_end, "src\locomotive\TGV\TGV_OLD_POS.png"){
 	wagon_start(80, 297)
 }
 
-spriteset(set_TGV_OLD_Lyair_engineT, "..\YSTset\Graphic\locomotive\TGV\TGV_OLD_POS.png"){
+spriteset(set_TGV_OLD_Lyair_engineT, "src\locomotive\TGV\TGV_OLD_POS.png"){
 	engine_r(80, 324)
 }
 
 /*--------------------------------------------------------------------
 5.29.1.3. TGV Old Thalys
 --------------------------------------------------------------------*/
-spriteset(set_TGV_OLD_ThalysH_purchase, "..\YSTset\Graphic\locomotive\TGV\TGV_OLD_POS.png"){
+spriteset(set_TGV_OLD_ThalysH_purchase, "src\locomotive\TGV\TGV_OLD_POS.png"){
 	tmpl_purchase_for_dualhead(0, 486)
 }
 
-spriteset(set_TGV_OLD_Thalys_engineH, "..\YSTset\Graphic\locomotive\TGV\TGV_OLD_POS.png"){
+spriteset(set_TGV_OLD_Thalys_engineH, "src\locomotive\TGV\TGV_OLD_POS.png"){
 	engine(80, 351)
 }
 
-spriteset(set_TGV_OLD_Thalys_wagon_start, "..\YSTset\Graphic\locomotive\TGV\TGV_OLD_POS.png"){
+spriteset(set_TGV_OLD_Thalys_wagon_start, "src\locomotive\TGV\TGV_OLD_POS.png"){
 	wagon_start(80, 378)
 }
 
-spriteset(set_TGV_OLD_Thalys_wagon, "..\YSTset\Graphic\locomotive\TGV\TGV_OLD_POS.png") {
+spriteset(set_TGV_OLD_Thalys_wagon, "src\locomotive\TGV\TGV_OLD_POS.png") {
     wagon_1F_F(80, 405)
 }
 
-spriteset(set_TGV_OLD_Thalys_wagon_bar, "..\YSTset\Graphic\locomotive\TGV\TGV_OLD_POS.png") {
+spriteset(set_TGV_OLD_Thalys_wagon_bar, "src\locomotive\TGV\TGV_OLD_POS.png") {
     wagon_bar(80, 432)
 }
 
-spriteset(set_TGV_OLD_Thalys_wagon_end, "..\YSTset\Graphic\locomotive\TGV\TGV_OLD_POS.png"){
+spriteset(set_TGV_OLD_Thalys_wagon_end, "src\locomotive\TGV\TGV_OLD_POS.png"){
 	wagon_start(80, 459)
 }
 
-spriteset(set_TGV_OLD_Thalys_engineT, "..\YSTset\Graphic\locomotive\TGV\TGV_OLD_POS.png"){
+spriteset(set_TGV_OLD_Thalys_engineT, "src\locomotive\TGV\TGV_OLD_POS.png"){
 	engine_r(80, 486)
 }
 
@@ -5393,104 +5356,104 @@ item(FEAT_TRAINS, TGV_OLD_Pos){
 /*--------------------------------------------------------------------
 5.30.1 Graphics
 --------------------------------------------------------------------*/
-spriteset(set_TGV_Pos_purchase, "..\YSTset\Graphic\locomotive\TGV\TGV_POS.png"){
+spriteset(set_TGV_Pos_purchase, "src\locomotive\TGV\TGV_POS.png"){
 	tmpl_purchase(0, 0)
 }
 
 /*--------------------------------------------------------------------
 5.30.1.1. TGV Pos
 --------------------------------------------------------------------*/
-spriteset(set_TGV_PosH_purchase, "..\YSTset\Graphic\locomotive\TGV\TGV_POS.png"){
+spriteset(set_TGV_PosH_purchase, "src\locomotive\TGV\TGV_POS.png"){
 	tmpl_purchase_for_dualhead(0, 162)
 }
 
-spriteset(set_TGV_Pos_engineH, "..\YSTset\Graphic\locomotive\TGV\TGV_POS.png"){
+spriteset(set_TGV_Pos_engineH, "src\locomotive\TGV\TGV_POS.png"){
 	engine(80, 0)
 }
 
-spriteset(set_TGV_Pos_wagon_start, "..\YSTset\Graphic\locomotive\TGV\TGV_POS.png"){
+spriteset(set_TGV_Pos_wagon_start, "src\locomotive\TGV\TGV_POS.png"){
 	wagon_start(80, 27)
 }
 
-spriteset(set_TGV_Pos_wagon_nomal, "..\YSTset\Graphic\locomotive\TGV\TGV_POS.png") {
+spriteset(set_TGV_Pos_wagon_nomal, "src\locomotive\TGV\TGV_POS.png") {
     wagon_1F_F(80, 54)
 }
 
-spriteset(set_TGV_Pos_wagon_bar, "..\YSTset\Graphic\locomotive\TGV\TGV_POS.png") {
+spriteset(set_TGV_Pos_wagon_bar, "src\locomotive\TGV\TGV_POS.png") {
     wagon_bar(80, 81)
 }
 
-spriteset(set_TGV_Pos_wagon_special, "..\YSTset\Graphic\locomotive\TGV\TGV_POS.png") {
+spriteset(set_TGV_Pos_wagon_special, "src\locomotive\TGV\TGV_POS.png") {
     wagon_1F_F(80, 108)
 }
 
-spriteset(set_TGV_Pos_wagon_end, "..\YSTset\Graphic\locomotive\TGV\TGV_POS.png"){
+spriteset(set_TGV_Pos_wagon_end, "src\locomotive\TGV\TGV_POS.png"){
 	wagon_start(80, 135)
 }
 
-spriteset(set_TGV_Pos_engineT, "..\YSTset\Graphic\locomotive\TGV\TGV_POS.png"){
+spriteset(set_TGV_Pos_engineT, "src\locomotive\TGV\TGV_POS.png"){
 	engine_r(80, 162)
 }
 
 /*--------------------------------------------------------------------
 5.30.1.2. TGV Lyair
 --------------------------------------------------------------------*/
-spriteset(set_TGV_LyairH_purchase, "..\YSTset\Graphic\locomotive\TGV\TGV_POS.png"){
+spriteset(set_TGV_LyairH_purchase, "src\locomotive\TGV\TGV_POS.png"){
 	tmpl_purchase_for_dualhead(0, 324)
 }
 
-spriteset(set_TGV_Lyair_engineH, "..\YSTset\Graphic\locomotive\TGV\TGV_POS.png"){
+spriteset(set_TGV_Lyair_engineH, "src\locomotive\TGV\TGV_POS.png"){
 	engine(80, 189)
 }
 
-spriteset(set_TGV_Lyair_wagon_start, "..\YSTset\Graphic\locomotive\TGV\TGV_POS.png"){
+spriteset(set_TGV_Lyair_wagon_start, "src\locomotive\TGV\TGV_POS.png"){
 	wagon_start(80, 216)
 }
 
-spriteset(set_TGV_Lyair_wagon_nomal, "..\YSTset\Graphic\locomotive\TGV\TGV_POS.png") {
+spriteset(set_TGV_Lyair_wagon_nomal, "src\locomotive\TGV\TGV_POS.png") {
     wagon_1F_F(80, 243)
 }
 
-spriteset(set_TGV_Lyair_wagon_bar, "..\YSTset\Graphic\locomotive\TGV\TGV_POS.png") {
+spriteset(set_TGV_Lyair_wagon_bar, "src\locomotive\TGV\TGV_POS.png") {
     wagon_bar(80, 270)
 }
 
-spriteset(set_TGV_Lyair_wagon_end, "..\YSTset\Graphic\locomotive\TGV\TGV_POS.png"){
+spriteset(set_TGV_Lyair_wagon_end, "src\locomotive\TGV\TGV_POS.png"){
 	wagon_start(80, 297)
 }
 
-spriteset(set_TGV_Lyair_engineT, "..\YSTset\Graphic\locomotive\TGV\TGV_POS.png"){
+spriteset(set_TGV_Lyair_engineT, "src\locomotive\TGV\TGV_POS.png"){
 	engine_r(80, 324)
 }
 
 /*--------------------------------------------------------------------
 5.30.1.3. TGV Thalys
 --------------------------------------------------------------------*/
-spriteset(set_TGV__ThalysH_purchase, "..\YSTset\Graphic\locomotive\TGV\TGV_POS.png"){
+spriteset(set_TGV__ThalysH_purchase, "src\locomotive\TGV\TGV_POS.png"){
 	tmpl_purchase_for_dualhead(0, 486)
 }
 
-spriteset(set_TGV_Thalys_engineH, "..\YSTset\Graphic\locomotive\TGV\TGV_POS.png"){
+spriteset(set_TGV_Thalys_engineH, "src\locomotive\TGV\TGV_POS.png"){
 	engine(80, 351)
 }
 
-spriteset(set_TGV_halys_wagon_start, "..\YSTset\Graphic\locomotive\TGV\TGV_POS.png"){
+spriteset(set_TGV_halys_wagon_start, "src\locomotive\TGV\TGV_POS.png"){
 	wagon_start(80, 378)
 }
 
-spriteset(set_TGV_Thalys_wagon, "..\YSTset\Graphic\locomotive\TGV\TGV_POS.png") {
+spriteset(set_TGV_Thalys_wagon, "src\locomotive\TGV\TGV_POS.png") {
     wagon_1F_F(80, 405)
 }
 
-spriteset(set_TGV_Thalys_wagon_bar, "..\YSTset\Graphic\locomotive\TGV\TGV_POS.png") {
+spriteset(set_TGV_Thalys_wagon_bar, "src\locomotive\TGV\TGV_POS.png") {
     wagon_bar(80, 432)
 }
 
-spriteset(set_TGV_Thalys_wagon_end, "..\YSTset\Graphic\locomotive\TGV\TGV_POS.png"){
+spriteset(set_TGV_Thalys_wagon_end, "src\locomotive\TGV\TGV_POS.png"){
 	wagon_start(80, 459)
 }
 
-spriteset(set_TGV_Thalys_engineT, "..\YSTset\Graphic\locomotive\TGV\TGV_POS.png"){
+spriteset(set_TGV_Thalys_engineT, "src\locomotive\TGV\TGV_POS.png"){
 	engine_r(80, 486)
 }
 
@@ -5650,77 +5613,77 @@ item(FEAT_TRAINS, TGV_Pos){
 /*--------------------------------------------------------------------
 5.31.1 Graphics
 --------------------------------------------------------------------*/
-spriteset(set_TGV_OLD_Duplex_purchase, "..\YSTset\Graphic\locomotive\TGV\TGV_OLD_Duplex.png"){
+spriteset(set_TGV_OLD_Duplex_purchase, "src\locomotive\TGV\TGV_OLD_Duplex.png"){
 	tmpl_purchase(0, 0)
 }
 
 /*--------------------------------------------------------------------
 5.31.1.1. TGV OLD Duplex
 --------------------------------------------------------------------*/
-spriteset(set_TGV_OLD_DuplexH_purchase, "..\YSTset\Graphic\locomotive\TGV\TGV_OLD_Duplex.png"){
+spriteset(set_TGV_OLD_DuplexH_purchase, "src\locomotive\TGV\TGV_OLD_Duplex.png"){
 	tmpl_purchase_for_dualhead(0, 162)
 }
 
-spriteset(set_TGV_OLD_Duplex_engineH, "..\YSTset\Graphic\locomotive\TGV\TGV_OLD_Duplex.png"){
+spriteset(set_TGV_OLD_Duplex_engineH, "src\locomotive\TGV\TGV_OLD_Duplex.png"){
 	engine(80, 0)
 }
 
-spriteset(set_TGV_OLD_Duplex_wagon_start, "..\YSTset\Graphic\locomotive\TGV\TGV_OLD_Duplex.png"){
+spriteset(set_TGV_OLD_Duplex_wagon_start, "src\locomotive\TGV\TGV_OLD_Duplex.png"){
 	wagon_start(80, 27)
 }
 
-spriteset(set_TGV_OLD_Duplex_wagon_nomal, "..\YSTset\Graphic\locomotive\TGV\TGV_OLD_Duplex.png") {
+spriteset(set_TGV_OLD_Duplex_wagon_nomal, "src\locomotive\TGV\TGV_OLD_Duplex.png") {
     wagon_1F_F(80, 54)
 }
 
-spriteset(set_TGV_OLD_Duplex_wagon_bar, "..\YSTset\Graphic\locomotive\TGV\TGV_OLD_Duplex.png") {
+spriteset(set_TGV_OLD_Duplex_wagon_bar, "src\locomotive\TGV\TGV_OLD_Duplex.png") {
     wagon_bar(80, 81)
 }
 
-spriteset(set_TGV_OLD_Duplex_wagon_special, "..\YSTset\Graphic\locomotive\TGV\TGV_OLD_Duplex.png") {
+spriteset(set_TGV_OLD_Duplex_wagon_special, "src\locomotive\TGV\TGV_OLD_Duplex.png") {
     wagon_1F_F(80, 108)
 }
 
-spriteset(set_TGV_OLD_Duplex_wagon_end, "..\YSTset\Graphic\locomotive\TGV\TGV_OLD_Duplex.png"){
+spriteset(set_TGV_OLD_Duplex_wagon_end, "src\locomotive\TGV\TGV_OLD_Duplex.png"){
 	wagon_start(80, 135)
 }
 
-spriteset(set_TGV_OLD_Duplex_engineT, "..\YSTset\Graphic\locomotive\TGV\TGV_OLD_Duplex.png"){
+spriteset(set_TGV_OLD_Duplex_engineT, "src\locomotive\TGV\TGV_OLD_Duplex.png"){
 	engine_r(80, 162)
 }
 
 /*--------------------------------------------------------------------
 5.31.1.2. TGV Lyair
 --------------------------------------------------------------------*/
-spriteset(set_TGV_OLD_Duplex_LyairH_purchase, "..\YSTset\Graphic\locomotive\TGV\TGV_OLD_Duplex.png"){
+spriteset(set_TGV_OLD_Duplex_LyairH_purchase, "src\locomotive\TGV\TGV_OLD_Duplex.png"){
 	tmpl_purchase_for_dualhead(0, 351)
 }
 
-spriteset(set_TGV_OLD_Duplex_Lyair_engineH, "..\YSTset\Graphic\locomotive\TGV\TGV_OLD_Duplex.png"){
+spriteset(set_TGV_OLD_Duplex_Lyair_engineH, "src\locomotive\TGV\TGV_OLD_Duplex.png"){
 	engine(80, 189)
 }
 
-spriteset(set_TGV_OLD_Duplex_Lyair_wagon_start, "..\YSTset\Graphic\locomotive\TGV\TGV_OLD_Duplex.png"){
+spriteset(set_TGV_OLD_Duplex_Lyair_wagon_start, "src\locomotive\TGV\TGV_OLD_Duplex.png"){
 	wagon_start(80, 216)
 }
 
-spriteset(set_TGV_OLD_Duplex_Lyair_wagon_nomal, "..\YSTset\Graphic\locomotive\TGV\TGV_OLD_Duplex.png") {
+spriteset(set_TGV_OLD_Duplex_Lyair_wagon_nomal, "src\locomotive\TGV\TGV_OLD_Duplex.png") {
     wagon_1F_F(80, 243)
 }
 
-spriteset(set_TGV_OLD_Duplex_Lyair_wagon_bar, "..\YSTset\Graphic\locomotive\TGV\TGV_OLD_Duplex.png") {
+spriteset(set_TGV_OLD_Duplex_Lyair_wagon_bar, "src\locomotive\TGV\TGV_OLD_Duplex.png") {
     wagon_bar(80, 270)
 }
 
-spriteset(set_TGV_OLD_Duplex_Lyair_wagon_special, "..\YSTset\Graphic\locomotive\TGV\TGV_OLD_Duplex.png") {
+spriteset(set_TGV_OLD_Duplex_Lyair_wagon_special, "src\locomotive\TGV\TGV_OLD_Duplex.png") {
     wagon_1F_F(80, 297)
 }
 
-spriteset(set_TGV_OLD_Duplex_Lyair_wagon_end, "..\YSTset\Graphic\locomotive\TGV\TGV_OLD_Duplex.png"){
+spriteset(set_TGV_OLD_Duplex_Lyair_wagon_end, "src\locomotive\TGV\TGV_OLD_Duplex.png"){
 	wagon_start(80, 324)
 }
 
-spriteset(set_TGV_OLD_Duplex_Lyair_engineT, "..\YSTset\Graphic\locomotive\TGV\TGV_OLD_Duplex.png"){
+spriteset(set_TGV_OLD_Duplex_Lyair_engineT, "src\locomotive\TGV\TGV_OLD_Duplex.png"){
 	engine_r(80, 351)
 }
 
@@ -5878,73 +5841,73 @@ item(FEAT_TRAINS, TGV_OLD_Duplex){
 /*--------------------------------------------------------------------
 5.32.1 Graphics
 --------------------------------------------------------------------*/
-spriteset(set_TGV_Duplex_purchase, "..\YSTset\Graphic\locomotive\TGV\TGV_Duplex.png"){
+spriteset(set_TGV_Duplex_purchase, "src\locomotive\TGV\TGV_Duplex.png"){
 	tmpl_purchase(0, 0)
 }
 
 /*--------------------------------------------------------------------
 5.32.1.1. TGV Duplex
 --------------------------------------------------------------------*/
-spriteset(set_TGV_DuplexH_purchase, "..\YSTset\Graphic\locomotive\TGV\TGV_Duplex.png"){
+spriteset(set_TGV_DuplexH_purchase, "src\locomotive\TGV\TGV_Duplex.png"){
 	tmpl_purchase_for_dualhead(0, 162)
 }
 
-spriteset(set_TGV_Duplex_engineH, "..\YSTset\Graphic\locomotive\TGV\TGV_Duplex.png"){
+spriteset(set_TGV_Duplex_engineH, "src\locomotive\TGV\TGV_Duplex.png"){
 	engine(80, 0)
 }
 
-spriteset(set_TGV_Duplex_wagon_start, "..\YSTset\Graphic\locomotive\TGV\TGV_Duplex.png"){
+spriteset(set_TGV_Duplex_wagon_start, "src\locomotive\TGV\TGV_Duplex.png"){
 	wagon_start(80, 27)
 }
 
-spriteset(set_TGV_Duplex_wagon_nomal, "..\YSTset\Graphic\locomotive\TGV\TGV_Duplex.png") {
+spriteset(set_TGV_Duplex_wagon_nomal, "src\locomotive\TGV\TGV_Duplex.png") {
     wagon_1F_F(80, 54)
 }
 
-spriteset(set_TGV_Duplex_wagon_bar, "..\YSTset\Graphic\locomotive\TGV\TGV_Duplex.png") {
+spriteset(set_TGV_Duplex_wagon_bar, "src\locomotive\TGV\TGV_Duplex.png") {
     wagon_bar(80, 81)
 }
 
-spriteset(set_TGV_Duplex_wagon_special, "..\YSTset\Graphic\locomotive\TGV\TGV_Duplex.png") {
+spriteset(set_TGV_Duplex_wagon_special, "src\locomotive\TGV\TGV_Duplex.png") {
     wagon_1F_F(80, 108)
 }
 
-spriteset(set_TGV_Duplex_wagon_end, "..\YSTset\Graphic\locomotive\TGV\TGV_Duplex.png"){
+spriteset(set_TGV_Duplex_wagon_end, "src\locomotive\TGV\TGV_Duplex.png"){
 	wagon_start(80, 135)
 }
 
-spriteset(set_TGV_Duplex_engineT, "..\YSTset\Graphic\locomotive\TGV\TGV_Duplex.png"){
+spriteset(set_TGV_Duplex_engineT, "src\locomotive\TGV\TGV_Duplex.png"){
 	engine_r(80, 162)
 }
 
 /*--------------------------------------------------------------------
 5.32.1.2. TGV Lyair
 --------------------------------------------------------------------*/
-spriteset(set_TGV_Duplex_LyairH_purchase, "..\YSTset\Graphic\locomotive\TGV\TGV_Duplex.png"){
+spriteset(set_TGV_Duplex_LyairH_purchase, "src\locomotive\TGV\TGV_Duplex.png"){
 	tmpl_purchase_for_dualhead(0, 324)
 }
 
-spriteset(set_TGV_Duplex_Lyair_engineH, "..\YSTset\Graphic\locomotive\TGV\TGV_Duplex.png"){
+spriteset(set_TGV_Duplex_Lyair_engineH, "src\locomotive\TGV\TGV_Duplex.png"){
 	engine(80, 189)
 }
 
-spriteset(set_TGV_Duplex_Lyair_wagon_start, "..\YSTset\Graphic\locomotive\TGV\TGV_Duplex.png"){
+spriteset(set_TGV_Duplex_Lyair_wagon_start, "src\locomotive\TGV\TGV_Duplex.png"){
 	wagon_start(80, 216)
 }
 
-spriteset(set_TGV_Duplex_Lyair_wagon_nomal, "..\YSTset\Graphic\locomotive\TGV\TGV_Duplex.png") {
+spriteset(set_TGV_Duplex_Lyair_wagon_nomal, "src\locomotive\TGV\TGV_Duplex.png") {
     wagon_1F_F(80, 243)
 }
 
-spriteset(set_TGV_Duplex_Lyair_wagon_bar, "..\YSTset\Graphic\locomotive\TGV\TGV_Duplex.png") {
+spriteset(set_TGV_Duplex_Lyair_wagon_bar, "src\locomotive\TGV\TGV_Duplex.png") {
     wagon_bar(80, 270)
 }
 
-spriteset(set_TGV_Duplex_Lyair_wagon_end, "..\YSTset\Graphic\locomotive\TGV\TGV_Duplex.png"){
+spriteset(set_TGV_Duplex_Lyair_wagon_end, "src\locomotive\TGV\TGV_Duplex.png"){
 	wagon_start(80, 297)
 }
 
-spriteset(set_TGV_Duplex_Lyair_engineT, "..\YSTset\Graphic\locomotive\TGV\TGV_Duplex.png"){
+spriteset(set_TGV_Duplex_Lyair_engineT, "src\locomotive\TGV\TGV_Duplex.png"){
 	engine_r(80, 324)
 }
 
@@ -6097,35 +6060,35 @@ item(FEAT_TRAINS, TGV_Duplex){
 /*--------------------------------------------------------------------
 5.33.1 Graphics
 --------------------------------------------------------------------*/
-spriteset(set_TGV_Ouigo_purchase, "..\YSTset\Graphic\locomotive\TGV\TGV_Ouigo.png"){
+spriteset(set_TGV_Ouigo_purchase, "src\locomotive\TGV\TGV_Ouigo.png"){
 	tmpl_purchase(0, 0)
 }
 
-spriteset(set_TGV_OuigoH_purchase, "..\YSTset\Graphic\locomotive\TGV\TGV_Ouigo.png"){
+spriteset(set_TGV_OuigoH_purchase, "src\locomotive\TGV\TGV_Ouigo.png"){
 	tmpl_purchase_for_dualhead(0, 135)
 }
 
-spriteset(set_TGV_Ouigo_engineH, "..\YSTset\Graphic\locomotive\TGV\TGV_Ouigo.png"){
+spriteset(set_TGV_Ouigo_engineH, "src\locomotive\TGV\TGV_Ouigo.png"){
 	engine(80, 0)
 }
 
-spriteset(set_TGV_Ouigo_wagon_start, "..\YSTset\Graphic\locomotive\TGV\TGV_Ouigo.png"){
+spriteset(set_TGV_Ouigo_wagon_start, "src\locomotive\TGV\TGV_Ouigo.png"){
 	wagon_start(80, 27)
 }
 
-spriteset(set_TGV_Ouigo_wagon, "..\YSTset\Graphic\locomotive\TGV\TGV_Ouigo.png") {
+spriteset(set_TGV_Ouigo_wagon, "src\locomotive\TGV\TGV_Ouigo.png") {
     wagon_1F_F(80, 54)
 }
 
-spriteset(set_TGV_Ouigo_wagon_bar, "..\YSTset\Graphic\locomotive\TGV\TGV_Ouigo.png") {
+spriteset(set_TGV_Ouigo_wagon_bar, "src\locomotive\TGV\TGV_Ouigo.png") {
     wagon_bar(80, 81)
 }
 
-spriteset(set_TGV_Ouigo_wagon_end, "..\YSTset\Graphic\locomotive\TGV\TGV_Ouigo.png"){
+spriteset(set_TGV_Ouigo_wagon_end, "src\locomotive\TGV\TGV_Ouigo.png"){
 	wagon_start(80, 108)
 }
 
-spriteset(set_TGV_Ouigo_engineT, "..\YSTset\Graphic\locomotive\TGV\TGV_Ouigo.png"){
+spriteset(set_TGV_Ouigo_engineT, "src\locomotive\TGV\TGV_Ouigo.png"){
 	engine_r(80, 135)
 }
 
@@ -6237,27 +6200,27 @@ item(FEAT_TRAINS, TGV_Ouigo){
 /*--------------------------------------------------------------------
 5.34.1 Graphics
 --------------------------------------------------------------------*/
-spriteset(set_VTX_purchase, "..\YSTset\Graphic\locomotive\VTX\VTX.png"){
+spriteset(set_VTX_purchase, "src\locomotive\VTX\VTX.png"){
 	tmpl_purchase(0, 0)
 }
 
-spriteset(set_VTXH_purchase, "..\YSTset\Graphic\locomotive\VTX\VTX.png"){
+spriteset(set_VTXH_purchase, "src\locomotive\VTX\VTX.png"){
 	tmpl_purchase_for_dualhead(0, 54)
 }
 
-spriteset(set_VTX_engineH, "..\YSTset\Graphic\locomotive\VTX\VTX.png"){
+spriteset(set_VTX_engineH, "src\locomotive\VTX\VTX.png"){
 	engine(80, 0)
 }
 
-spriteset(set_VTX_wagon, "..\YSTset\Graphic\locomotive\VTX\VTX.png") {
+spriteset(set_VTX_wagon, "src\locomotive\VTX\VTX.png") {
     wagon_1F(80, 27)
 }
 
-spriteset(set_VTX_wagon_r, "..\YSTset\Graphic\locomotive\VTX\VTX.png") {
+spriteset(set_VTX_wagon_r, "src\locomotive\VTX\VTX.png") {
     wagon_1F_r(80, 27)
 }
 
-spriteset(set_VTX_engineT, "..\YSTset\Graphic\locomotive\VTX\VTX.png"){
+spriteset(set_VTX_engineT, "src\locomotive\VTX\VTX.png"){
 	engine_r(80, 54)
 }
 
@@ -6354,31 +6317,31 @@ item(FEAT_TRAINS, VTX){
 /*--------------------------------------------------------------------
 5.35.1 Graphics
 --------------------------------------------------------------------*/
-spriteset(set_YFX_purchase, "..\YSTset\Graphic\locomotive\YFX\YFX.png"){
+spriteset(set_YFX_purchase, "src\locomotive\YFX\YFX.png"){
 	tmpl_purchase(0, 0)
 }
 
-spriteset(set_YFXF_purchase, "..\YSTset\Graphic\locomotive\YFX\YFX.png"){
+spriteset(set_YFXF_purchase, "src\locomotive\YFX\YFX.png"){
 	tmpl_wagon_purchase(0, 27)
 }
 
-spriteset(set_YFXH_purchase, "..\YSTset\Graphic\locomotive\YFX\YFX.png"){
+spriteset(set_YFXH_purchase, "src\locomotive\YFX\YFX.png"){
 	tmpl_purchase_for_dualhead(0, 54)
 }
 
-spriteset(set_YFX_engineH, "..\YSTset\Graphic\locomotive\YFX\YFX.png"){
+spriteset(set_YFX_engineH, "src\locomotive\YFX\YFX.png"){
 	engine(80, 0)
 }
 
-spriteset(set_YFX_wagon, "..\YSTset\Graphic\locomotive\YFX\YFX.png") {
+spriteset(set_YFX_wagon, "src\locomotive\YFX\YFX.png") {
     wagon_1F(80, 27)
 }
 
-spriteset(set_YFX_wagon_r, "..\YSTset\Graphic\locomotive\YFX\YFX.png") {
+spriteset(set_YFX_wagon_r, "src\locomotive\YFX\YFX.png") {
     wagon_1F_r(80, 27)
 }
 
-spriteset(set_YFX_engineT, "..\YSTset\Graphic\locomotive\YFX\YFX.png"){
+spriteset(set_YFX_engineT, "src\locomotive\YFX\YFX.png"){
 	engine_r(80, 54)
 }
 
@@ -6522,99 +6485,99 @@ item(FEAT_TRAINS, YFXF){
 /*--------------------------------------------------------------------
 5.36.1 Graphics
 --------------------------------------------------------------------*/
-spriteset(set_YN_purchase, "..\YSTset\Graphic\locomotive\YN\YN.png"){
+spriteset(set_YN_purchase, "src\locomotive\YN\YN.png"){
 	tmpl_purchase(0, 0)
 }
 
 /*--------------------------------------------------------------------
 5.36.1.1. YN01
 --------------------------------------------------------------------*/
-spriteset(set_YN01_purchase, "..\YSTset\Graphic\locomotive\YN\YN.png"){
+spriteset(set_YN01_purchase, "src\locomotive\YN\YN.png"){
 	tmpl_purchase_for_dualhead(0, 108)
 }
 
-spriteset(set_YN01_engineH, "..\YSTset\Graphic\locomotive\YN\YN.png"){
+spriteset(set_YN01_engineH, "src\locomotive\YN\YN.png"){
 	engine(80, 0)
 }
 
-spriteset(set_YN01_wagon_start, "..\YSTset\Graphic\locomotive\YN\YN.png"){
+spriteset(set_YN01_wagon_start, "src\locomotive\YN\YN.png"){
 	wagon_start(80, 27)
 }
 
-spriteset(set_YN01_wagon, "..\YSTset\Graphic\locomotive\YN\YN.png") {
+spriteset(set_YN01_wagon, "src\locomotive\YN\YN.png") {
     wagon_1F(80, 54)
 }
 
-spriteset(set_YN01_wagon_r, "..\YSTset\Graphic\locomotive\YN\YN.png") {
+spriteset(set_YN01_wagon_r, "src\locomotive\YN\YN.png") {
     wagon_1F_r(80, 54)
 }
 
-spriteset(set_YN01_wagon_end, "..\YSTset\Graphic\locomotive\YN\YN.png"){
+spriteset(set_YN01_wagon_end, "src\locomotive\YN\YN.png"){
 	wagon_start(80, 81)
 }
 
-spriteset(set_YN01_engineT, "..\YSTset\Graphic\locomotive\YN\YN.png"){
+spriteset(set_YN01_engineT, "src\locomotive\YN\YN.png"){
 	engine_r(80, 108)
 }
 
 /*--------------------------------------------------------------------
 5.36.1.2. YN01-Yellow
 --------------------------------------------------------------------*/
-spriteset(set_YN01Y_purchase, "..\YSTset\Graphic\locomotive\YN\YN.png"){
+spriteset(set_YN01Y_purchase, "src\locomotive\YN\YN.png"){
 	tmpl_purchase_for_dualhead(0, 243)
 }
 
-spriteset(set_YN01Y_engineH, "..\YSTset\Graphic\locomotive\YN\YN.png"){
+spriteset(set_YN01Y_engineH, "src\locomotive\YN\YN.png"){
 	engine(80, 135)
 }
 
-spriteset(set_YN01Y_wagon_start, "..\YSTset\Graphic\locomotive\YN\YN.png"){
+spriteset(set_YN01Y_wagon_start, "src\locomotive\YN\YN.png"){
 	wagon_start(80, 162)
 }
 
-spriteset(set_YN01Y_wagon, "..\YSTset\Graphic\locomotive\YN\YN.png") {
+spriteset(set_YN01Y_wagon, "src\locomotive\YN\YN.png") {
     wagon_1F(80, 189)
 }
 
-spriteset(set_YN01Y_wagon_r, "..\YSTset\Graphic\locomotive\YN\YN.png") {
+spriteset(set_YN01Y_wagon_r, "src\locomotive\YN\YN.png") {
     wagon_1F_r(80, 189)
 }
 
-spriteset(set_YN01Y_wagon_end, "..\YSTset\Graphic\locomotive\YN\YN.png"){
+spriteset(set_YN01Y_wagon_end, "src\locomotive\YN\YN.png"){
 	wagon_start(80, 216)
 }
 
-spriteset(set_YN01Y_engineT, "..\YSTset\Graphic\locomotive\YN\YN.png"){
+spriteset(set_YN01Y_engineT, "src\locomotive\YN\YN.png"){
 	engine_r(80, 243)
 }
 /*--------------------------------------------------------------------
 5.36.1.3. YN02
 --------------------------------------------------------------------*/
-spriteset(set_YN02_purchase, "..\YSTset\Graphic\locomotive\YN\YN.png"){
+spriteset(set_YN02_purchase, "src\locomotive\YN\YN.png"){
 	tmpl_purchase_for_dualhead(0, 378)
 }
 
-spriteset(set_YN02_engineH, "..\YSTset\Graphic\locomotive\YN\YN.png"){
+spriteset(set_YN02_engineH, "src\locomotive\YN\YN.png"){
 	engine(80, 270)
 }
 
-spriteset(set_YN02_wagon_start, "..\YSTset\Graphic\locomotive\YN\YN.png"){
+spriteset(set_YN02_wagon_start, "src\locomotive\YN\YN.png"){
 	wagon_start(80, 297)
 }
 
-spriteset(set_YN02_wagon, "..\YSTset\Graphic\locomotive\YN\YN.png") {
+spriteset(set_YN02_wagon, "src\locomotive\YN\YN.png") {
     wagon_1F(80, 324)
 }
 
-spriteset(set_YN02_wagon_r, "..\YSTset\Graphic\locomotive\YN\YN.png") {
+spriteset(set_YN02_wagon_r, "src\locomotive\YN\YN.png") {
     wagon_1F_r(80, 324)
 }
 
-spriteset(set_YN02_wagon_end, "..\YSTset\Graphic\locomotive\YN\YN.png"){
+spriteset(set_YN02_wagon_end, "src\locomotive\YN\YN.png"){
 	wagon_start(80, 351)
 }
 
-spriteset(set_YN02_engineT, "..\YSTset\Graphic\locomotive\YN\YN.png"){
+spriteset(set_YN02_engineT, "src\locomotive\YN\YN.png"){
 	engine_r(80, 378)
 }
 
@@ -6770,162 +6733,162 @@ item(FEAT_TRAINS, YN){
 /*--------------------------------------------------------------------
 5.37.1 Graphics
 --------------------------------------------------------------------*/
-spriteset(set_YTRO_100_purchase, "..\YSTset\Graphic\locomotive\YTRO\YTRO_100.png"){
+spriteset(set_YTRO_100_purchase, "src\locomotive\YTRO\YTRO_100.png"){
 	tmpl_purchase(0, 0)
 }
 
 /*--------------------------------------------------------------------
 5.37.1.1. YTRO 100 A
 --------------------------------------------------------------------*/
-spriteset(set_YTRO_100AH_purchase, "..\YSTset\Graphic\locomotive\YTRO\YTRO_100.png"){
+spriteset(set_YTRO_100AH_purchase, "src\locomotive\YTRO\YTRO_100.png"){
 	tmpl_purchase_for_dualhead(0, 54)
 }
 
-spriteset(set_YTRO_100A_engineH, "..\YSTset\Graphic\locomotive\YTRO\YTRO_100.png"){
+spriteset(set_YTRO_100A_engineH, "src\locomotive\YTRO\YTRO_100.png"){
 	engine(80, 0)
 }
 
-spriteset(set_YTRO_100A_1F_wagon, "..\YSTset\Graphic\locomotive\YTRO\YTRO_100.png") {
+spriteset(set_YTRO_100A_1F_wagon, "src\locomotive\YTRO\YTRO_100.png") {
     wagon_1F(80, 27)
 }
 
-spriteset(set_YTRO_100A_1F_wagon_r, "..\YSTset\Graphic\locomotive\YTRO\YTRO_100.png") {
+spriteset(set_YTRO_100A_1F_wagon_r, "src\locomotive\YTRO\YTRO_100.png") {
     wagon_1F_r(80, 27)
 }
 
-spriteset(set_YTRO_100A_2F_wagon, "..\YSTset\Graphic\locomotive\YTRO\YTRO_2F.png") {
+spriteset(set_YTRO_100A_2F_wagon, "src\locomotive\YTRO\YTRO_2F.png") {
     wagon_2F(80, 0)
 }
 
-spriteset(set_YTRO_100A_2F_wagon_r, "..\YSTset\Graphic\locomotive\YTRO\YTRO_2F.png") {
+spriteset(set_YTRO_100A_2F_wagon_r, "src\locomotive\YTRO\YTRO_2F.png") {
     wagon_2F_r(80, 0)
 }
 
-spriteset(set_YTRO_100A_engineT, "..\YSTset\Graphic\locomotive\YTRO\YTRO_100.png"){
+spriteset(set_YTRO_100A_engineT, "src\locomotive\YTRO\YTRO_100.png"){
 	engine_r(80, 54)
 }
 
 /*--------------------------------------------------------------------
 5.37.1.2. YTRO 100 B
 --------------------------------------------------------------------*/
-spriteset(set_YTRO_100BH_purchase, "..\YSTset\Graphic\locomotive\YTRO\YTRO_100.png"){
+spriteset(set_YTRO_100BH_purchase, "src\locomotive\YTRO\YTRO_100.png"){
 	tmpl_purchase_for_dualhead(0, 135)
 }
 
-spriteset(set_YTRO_100B_engineH, "..\YSTset\Graphic\locomotive\YTRO\YTRO_100.png"){
+spriteset(set_YTRO_100B_engineH, "src\locomotive\YTRO\YTRO_100.png"){
 	engine(80, 81)
 }
 
-spriteset(set_YTRO_100B_1F_wagon, "..\YSTset\Graphic\locomotive\YTRO\YTRO_100.png") {
+spriteset(set_YTRO_100B_1F_wagon, "src\locomotive\YTRO\YTRO_100.png") {
     wagon_1F(80, 108)
 }
 
-spriteset(set_YTRO_100B_1F_wagon_r, "..\YSTset\Graphic\locomotive\YTRO\YTRO_100.png") {
+spriteset(set_YTRO_100B_1F_wagon_r, "src\locomotive\YTRO\YTRO_100.png") {
     wagon_1F_r(80, 108)
 }
 
-spriteset(set_YTRO_100B_2F_wagon, "..\YSTset\Graphic\locomotive\YTRO\YTRO_2F.png") {
+spriteset(set_YTRO_100B_2F_wagon, "src\locomotive\YTRO\YTRO_2F.png") {
     wagon_2F(80, 27)
 }
 
-spriteset(set_YTRO_100B_2F_wagon_r, "..\YSTset\Graphic\locomotive\YTRO\YTRO_2F.png") {
+spriteset(set_YTRO_100B_2F_wagon_r, "src\locomotive\YTRO\YTRO_2F.png") {
     wagon_2F_r(80, 27)
 }
 
-spriteset(set_YTRO_100B_engineT, "..\YSTset\Graphic\locomotive\YTRO\YTRO_100.png"){
+spriteset(set_YTRO_100B_engineT, "src\locomotive\YTRO\YTRO_100.png"){
 	engine_r(80, 135)
 }
 
 /*--------------------------------------------------------------------
 5.37.1.3. YTRO 100 C
 --------------------------------------------------------------------*/
-spriteset(set_YTRO_100CH_purchase, "..\YSTset\Graphic\locomotive\YTRO\YTRO_100.png"){
+spriteset(set_YTRO_100CH_purchase, "src\locomotive\YTRO\YTRO_100.png"){
 	tmpl_purchase_for_dualhead(0, 216)
 }
 
-spriteset(set_YTRO_100C_engineH, "..\YSTset\Graphic\locomotive\YTRO\YTRO_100.png"){
+spriteset(set_YTRO_100C_engineH, "src\locomotive\YTRO\YTRO_100.png"){
 	engine(80, 162)
 }
 
-spriteset(set_YTRO_100C_1F_wagon, "..\YSTset\Graphic\locomotive\YTRO\YTRO_100.png") {
+spriteset(set_YTRO_100C_1F_wagon, "src\locomotive\YTRO\YTRO_100.png") {
     wagon_1F(80, 189)
 }
 
-spriteset(set_YTRO_100C_1F_wagon_r, "..\YSTset\Graphic\locomotive\YTRO\YTRO_100.png") {
+spriteset(set_YTRO_100C_1F_wagon_r, "src\locomotive\YTRO\YTRO_100.png") {
     wagon_1F_r(80, 189)
 }
 
-spriteset(set_YTRO_100C_2F_wagon, "..\YSTset\Graphic\locomotive\YTRO\YTRO_2F.png") {
+spriteset(set_YTRO_100C_2F_wagon, "src\locomotive\YTRO\YTRO_2F.png") {
     wagon_2F(80, 54)
 }
 
-spriteset(set_YTRO_100C_2F_wagon_r, "..\YSTset\Graphic\locomotive\YTRO\YTRO_2F.png") {
+spriteset(set_YTRO_100C_2F_wagon_r, "src\locomotive\YTRO\YTRO_2F.png") {
     wagon_2F_r(80, 54)
 }
 
-spriteset(set_YTRO_100C_engineT, "..\YSTset\Graphic\locomotive\YTRO\YTRO_100.png"){
+spriteset(set_YTRO_100C_engineT, "src\locomotive\YTRO\YTRO_100.png"){
 	engine_r(80, 216)
 }
 
 /*--------------------------------------------------------------------
 5.37.1.4. YTRO 100 D
 --------------------------------------------------------------------*/
-spriteset(set_YTRO_100DH_purchase, "..\YSTset\Graphic\locomotive\YTRO\YTRO_100.png"){
+spriteset(set_YTRO_100DH_purchase, "src\locomotive\YTRO\YTRO_100.png"){
 	tmpl_purchase_for_dualhead(0, 297)
 }
 
-spriteset(set_YTRO_100D_engineH, "..\YSTset\Graphic\locomotive\YTRO\YTRO_100.png"){
+spriteset(set_YTRO_100D_engineH, "src\locomotive\YTRO\YTRO_100.png"){
 	engine(80, 243)
 }
 
-spriteset(set_YTRO_100D_1F_wagon, "..\YSTset\Graphic\locomotive\YTRO\YTRO_100.png") {
+spriteset(set_YTRO_100D_1F_wagon, "src\locomotive\YTRO\YTRO_100.png") {
     wagon_1F(80, 270)
 }
 
-spriteset(set_YTRO_100D_1F_wagon_r, "..\YSTset\Graphic\locomotive\YTRO\YTRO_100.png") {
+spriteset(set_YTRO_100D_1F_wagon_r, "src\locomotive\YTRO\YTRO_100.png") {
     wagon_1F_r(80, 270)
 }
 
-spriteset(set_YTRO_100D_2F_wagon, "..\YSTset\Graphic\locomotive\YTRO\YTRO_2F.png") {
+spriteset(set_YTRO_100D_2F_wagon, "src\locomotive\YTRO\YTRO_2F.png") {
     wagon_2F(80, 81)
 }
 
-spriteset(set_YTRO_100D_2F_wagon_r, "..\YSTset\Graphic\locomotive\YTRO\YTRO_2F.png") {
+spriteset(set_YTRO_100D_2F_wagon_r, "src\locomotive\YTRO\YTRO_2F.png") {
     wagon_2F_r(80, 81)
 }
 
-spriteset(set_YTRO_100D_engineT, "..\YSTset\Graphic\locomotive\YTRO\YTRO_100.png"){
+spriteset(set_YTRO_100D_engineT, "src\locomotive\YTRO\YTRO_100.png"){
 	engine_r(80, 297)
 }
 
 /*--------------------------------------------------------------------
 5.37.1.5. YTRO 100 E
 --------------------------------------------------------------------*/
-spriteset(set_YTRO_100EH_purchase, "..\YSTset\Graphic\locomotive\YTRO\YTRO_100.png"){
+spriteset(set_YTRO_100EH_purchase, "src\locomotive\YTRO\YTRO_100.png"){
 	tmpl_purchase_for_dualhead(0, 378)
 }
 
-spriteset(set_YTRO_100E_engineH, "..\YSTset\Graphic\locomotive\YTRO\YTRO_100.png"){
+spriteset(set_YTRO_100E_engineH, "src\locomotive\YTRO\YTRO_100.png"){
 	engine(80, 324)
 }
 
-spriteset(set_YTRO_100E_1F_wagon, "..\YSTset\Graphic\locomotive\YTRO\YTRO_100.png") {
+spriteset(set_YTRO_100E_1F_wagon, "src\locomotive\YTRO\YTRO_100.png") {
     wagon_1F(80, 351)
 }
 
-spriteset(set_YTRO_100E_1F_wagon_r, "..\YSTset\Graphic\locomotive\YTRO\YTRO_100.png") {
+spriteset(set_YTRO_100E_1F_wagon_r, "src\locomotive\YTRO\YTRO_100.png") {
     wagon_1F_r(80, 351)
 }
 
-spriteset(set_YTRO_100E_2F_wagon, "..\YSTset\Graphic\locomotive\YTRO\YTRO_2F.png") {
+spriteset(set_YTRO_100E_2F_wagon, "src\locomotive\YTRO\YTRO_2F.png") {
     wagon_2F(80, 108)
 }
 
-spriteset(set_YTRO_100E_2F_wagon_r, "..\YSTset\Graphic\locomotive\YTRO\YTRO_2F.png") {
+spriteset(set_YTRO_100E_2F_wagon_r, "src\locomotive\YTRO\YTRO_2F.png") {
     wagon_2F_r(80, 108)
 }
 
-spriteset(set_YTRO_100E_engineT, "..\YSTset\Graphic\locomotive\YTRO\YTRO_100.png"){
+spriteset(set_YTRO_100E_engineT, "src\locomotive\YTRO\YTRO_100.png"){
 	engine_r(80, 378)
 }
 
@@ -7091,317 +7054,317 @@ item(FEAT_TRAINS, YTRO_100){
 /*--------------------------------------------------------------------
 5.38.1 Graphics
 --------------------------------------------------------------------*/
-spriteset(set_YTRO_200_purchase, "..\YSTset\Graphic\locomotive\YTRO\YTRO_200.png"){
+spriteset(set_YTRO_200_purchase, "src\locomotive\YTRO\YTRO_200.png"){
 	tmpl_purchase(0, 0)
 }
 
 /*--------------------------------------------------------------------
 5.38.1.1. YTRO 200 A
 --------------------------------------------------------------------*/
-spriteset(set_YTRO_200AH_purchase, "..\YSTset\Graphic\locomotive\YTRO\YTRO_200.png"){
+spriteset(set_YTRO_200AH_purchase, "src\locomotive\YTRO\YTRO_200.png"){
 	tmpl_purchase_for_dualhead(0, 54)
 }
 
-spriteset(set_YTRO_200A_engineH, "..\YSTset\Graphic\locomotive\YTRO\YTRO_200.png"){
+spriteset(set_YTRO_200A_engineH, "src\locomotive\YTRO\YTRO_200.png"){
 	engine(80, 0)
 }
 
-spriteset(set_YTRO_200A_1F_wagon, "..\YSTset\Graphic\locomotive\YTRO\YTRO_200.png") {
+spriteset(set_YTRO_200A_1F_wagon, "src\locomotive\YTRO\YTRO_200.png") {
     wagon_1F(80, 27)
 }
 
-spriteset(set_YTRO_200A_1F_wagon_r, "..\YSTset\Graphic\locomotive\YTRO\YTRO_200.png") {
+spriteset(set_YTRO_200A_1F_wagon_r, "src\locomotive\YTRO\YTRO_200.png") {
     wagon_1F_r(80, 27)
 }
 
-spriteset(set_YTRO_200A_2F_wagon, "..\YSTset\Graphic\locomotive\YTRO\YTRO_2F.png") {
+spriteset(set_YTRO_200A_2F_wagon, "src\locomotive\YTRO\YTRO_2F.png") {
     wagon_2F(80, 0)
 }
 
-spriteset(set_YTRO_200A_2F_wagon_r, "..\YSTset\Graphic\locomotive\YTRO\YTRO_2F.png") {
+spriteset(set_YTRO_200A_2F_wagon_r, "src\locomotive\YTRO\YTRO_2F.png") {
     wagon_2F_r(80, 0)
 }
 
-spriteset(set_YTRO_200A_engineT, "..\YSTset\Graphic\locomotive\YTRO\YTRO_200.png"){
+spriteset(set_YTRO_200A_engineT, "src\locomotive\YTRO\YTRO_200.png"){
 	engine_r(80, 54)
 }
 
 /*--------------------------------------------------------------------
 5.38.1.2. YTRO 200 B
 --------------------------------------------------------------------*/
-spriteset(set_YTRO_200BH_purchase, "..\YSTset\Graphic\locomotive\YTRO\YTRO_200.png"){
+spriteset(set_YTRO_200BH_purchase, "src\locomotive\YTRO\YTRO_200.png"){
 	tmpl_purchase_for_dualhead(0, 135)
 }
 
-spriteset(set_YTRO_200B_engineH, "..\YSTset\Graphic\locomotive\YTRO\YTRO_200.png"){
+spriteset(set_YTRO_200B_engineH, "src\locomotive\YTRO\YTRO_200.png"){
 	engine(80, 81)
 }
 
-spriteset(set_YTRO_200B_1F_wagon, "..\YSTset\Graphic\locomotive\YTRO\YTRO_200.png") {
+spriteset(set_YTRO_200B_1F_wagon, "src\locomotive\YTRO\YTRO_200.png") {
     wagon_1F(80, 108)
 }
 
-spriteset(set_YTRO_200B_1F_wagon_r, "..\YSTset\Graphic\locomotive\YTRO\YTRO_200.png") {
+spriteset(set_YTRO_200B_1F_wagon_r, "src\locomotive\YTRO\YTRO_200.png") {
     wagon_1F_r(80, 108)
 }
 
-spriteset(set_YTRO_200B_2F_wagon, "..\YSTset\Graphic\locomotive\YTRO\YTRO_2F.png") {
+spriteset(set_YTRO_200B_2F_wagon, "src\locomotive\YTRO\YTRO_2F.png") {
     wagon_2F(80, 27)
 }
 
-spriteset(set_YTRO_200B_2F_wagon_r, "..\YSTset\Graphic\locomotive\YTRO\YTRO_2F.png") {
+spriteset(set_YTRO_200B_2F_wagon_r, "src\locomotive\YTRO\YTRO_2F.png") {
     wagon_2F_r(80, 27)
 }
 
-spriteset(set_YTRO_200B_engineT, "..\YSTset\Graphic\locomotive\YTRO\YTRO_200.png"){
+spriteset(set_YTRO_200B_engineT, "src\locomotive\YTRO\YTRO_200.png"){
 	engine_r(80, 135)
 }
 
 /*--------------------------------------------------------------------
 5.38.1.3. YTRO 200 C
 --------------------------------------------------------------------*/
-spriteset(set_YTRO_200CH_purchase, "..\YSTset\Graphic\locomotive\YTRO\YTRO_200.png"){
+spriteset(set_YTRO_200CH_purchase, "src\locomotive\YTRO\YTRO_200.png"){
 	tmpl_purchase_for_dualhead(0, 216)
 }
 
-spriteset(set_YTRO_200C_engineH, "..\YSTset\Graphic\locomotive\YTRO\YTRO_200.png"){
+spriteset(set_YTRO_200C_engineH, "src\locomotive\YTRO\YTRO_200.png"){
 	engine(80, 162)
 }
 
-spriteset(set_YTRO_200C_1F_wagon, "..\YSTset\Graphic\locomotive\YTRO\YTRO_200.png") {
+spriteset(set_YTRO_200C_1F_wagon, "src\locomotive\YTRO\YTRO_200.png") {
     wagon_1F(80, 189)
 }
 
-spriteset(set_YTRO_200C_1F_wagon_r, "..\YSTset\Graphic\locomotive\YTRO\YTRO_200.png") {
+spriteset(set_YTRO_200C_1F_wagon_r, "src\locomotive\YTRO\YTRO_200.png") {
     wagon_1F_r(80, 189)
 }
 
-spriteset(set_YTRO_200C_2F_wagon, "..\YSTset\Graphic\locomotive\YTRO\YTRO_2F.png") {
+spriteset(set_YTRO_200C_2F_wagon, "src\locomotive\YTRO\YTRO_2F.png") {
     wagon_2F(80, 54)
 }
 
-spriteset(set_YTRO_200C_2F_wagon_r, "..\YSTset\Graphic\locomotive\YTRO\YTRO_2F.png") {
+spriteset(set_YTRO_200C_2F_wagon_r, "src\locomotive\YTRO\YTRO_2F.png") {
     wagon_2F_r(80, 54)
 }
 
-spriteset(set_YTRO_200C_engineT, "..\YSTset\Graphic\locomotive\YTRO\YTRO_200.png"){
+spriteset(set_YTRO_200C_engineT, "src\locomotive\YTRO\YTRO_200.png"){
 	engine_r(80, 216)
 }
 
 /*--------------------------------------------------------------------
 5.38.1.4. YTRO 200 D
 --------------------------------------------------------------------*/
-spriteset(set_YTRO_200DH_purchase, "..\YSTset\Graphic\locomotive\YTRO\YTRO_200.png"){
+spriteset(set_YTRO_200DH_purchase, "src\locomotive\YTRO\YTRO_200.png"){
 	tmpl_purchase_for_dualhead(0, 297)
 }
 
-spriteset(set_YTRO_200D_engineH, "..\YSTset\Graphic\locomotive\YTRO\YTRO_200.png"){
+spriteset(set_YTRO_200D_engineH, "src\locomotive\YTRO\YTRO_200.png"){
 	engine(80, 243)
 }
 
-spriteset(set_YTRO_200D_1F_wagon, "..\YSTset\Graphic\locomotive\YTRO\YTRO_200.png") {
+spriteset(set_YTRO_200D_1F_wagon, "src\locomotive\YTRO\YTRO_200.png") {
     wagon_1F(80, 270)
 }
 
-spriteset(set_YTRO_200D_1F_wagon_r, "..\YSTset\Graphic\locomotive\YTRO\YTRO_200.png") {
+spriteset(set_YTRO_200D_1F_wagon_r, "src\locomotive\YTRO\YTRO_200.png") {
     wagon_1F_r(80, 270)
 }
 
-spriteset(set_YTRO_200D_2F_wagon, "..\YSTset\Graphic\locomotive\YTRO\YTRO_2F.png") {
+spriteset(set_YTRO_200D_2F_wagon, "src\locomotive\YTRO\YTRO_2F.png") {
     wagon_2F(80, 81)
 }
 
-spriteset(set_YTRO_200D_2F_wagon_r, "..\YSTset\Graphic\locomotive\YTRO\YTRO_2F.png") {
+spriteset(set_YTRO_200D_2F_wagon_r, "src\locomotive\YTRO\YTRO_2F.png") {
     wagon_2F_r(80, 81)
 }
 
-spriteset(set_YTRO_200D_engineT, "..\YSTset\Graphic\locomotive\YTRO\YTRO_200.png"){
+spriteset(set_YTRO_200D_engineT, "src\locomotive\YTRO\YTRO_200.png"){
 	engine_r(80, 297)
 }
 
 /*--------------------------------------------------------------------
 5.38.1.5. YTRO_200 E
 --------------------------------------------------------------------*/
-spriteset(set_YTRO_200EH_purchase, "..\YSTset\Graphic\locomotive\YTRO\YTRO_200.png"){
+spriteset(set_YTRO_200EH_purchase, "src\locomotive\YTRO\YTRO_200.png"){
 	tmpl_purchase_for_dualhead(0, 378)
 }
 
-spriteset(set_YTRO_200E_engineH, "..\YSTset\Graphic\locomotive\YTRO\YTRO_200.png"){
+spriteset(set_YTRO_200E_engineH, "src\locomotive\YTRO\YTRO_200.png"){
 	engine(80, 324)
 }
 
-spriteset(set_YTRO_200E_1F_wagon, "..\YSTset\Graphic\locomotive\YTRO\YTRO_200.png") {
+spriteset(set_YTRO_200E_1F_wagon, "src\locomotive\YTRO\YTRO_200.png") {
     wagon_1F(80, 351)
 }
 
-spriteset(set_YTRO_200E_1F_wagon_r, "..\YSTset\Graphic\locomotive\YTRO\YTRO_200.png") {
+spriteset(set_YTRO_200E_1F_wagon_r, "src\locomotive\YTRO\YTRO_200.png") {
     wagon_1F_r(80, 351)
 }
 
-spriteset(set_YTRO_200E_2F_wagon, "..\YSTset\Graphic\locomotive\YTRO\YTRO_2F.png") {
+spriteset(set_YTRO_200E_2F_wagon, "src\locomotive\YTRO\YTRO_2F.png") {
     wagon_2F(80, 108)
 }
 
-spriteset(set_YTRO_200E_2F_wagon_r, "..\YSTset\Graphic\locomotive\YTRO\YTRO_2F.png") {
+spriteset(set_YTRO_200E_2F_wagon_r, "src\locomotive\YTRO\YTRO_2F.png") {
     wagon_2F_r(80, 108)
 }
 
-spriteset(set_YTRO_200E_engineT, "..\YSTset\Graphic\locomotive\YTRO\YTRO_200.png"){
+spriteset(set_YTRO_200E_engineT, "src\locomotive\YTRO\YTRO_200.png"){
 	engine_r(80, 378)
 }
 
 /*--------------------------------------------------------------------
 5.38.1.6. YTRO_200 F
 --------------------------------------------------------------------*/
-spriteset(set_YTRO_200FH_purchase, "..\YSTset\Graphic\locomotive\YTRO\YTRO_200.png"){
+spriteset(set_YTRO_200FH_purchase, "src\locomotive\YTRO\YTRO_200.png"){
 	tmpl_purchase_for_dualhead(0, 459)
 }
 
-spriteset(set_YTRO_200F_engineH, "..\YSTset\Graphic\locomotive\YTRO\YTRO_200.png"){
+spriteset(set_YTRO_200F_engineH, "src\locomotive\YTRO\YTRO_200.png"){
 	engine(80, 405)
 }
 
-spriteset(set_YTRO_200F_1F_wagon, "..\YSTset\Graphic\locomotive\YTRO\YTRO_200.png") {
+spriteset(set_YTRO_200F_1F_wagon, "src\locomotive\YTRO\YTRO_200.png") {
     wagon_1F(80, 432)
 }
 
-spriteset(set_YTRO_200F_1F_wagon_r, "..\YSTset\Graphic\locomotive\YTRO\YTRO_200.png") {
+spriteset(set_YTRO_200F_1F_wagon_r, "src\locomotive\YTRO\YTRO_200.png") {
     wagon_1F_r(80, 432)
 }
 
-spriteset(set_YTRO_200F_2F_wagon, "..\YSTset\Graphic\locomotive\YTRO\YTRO_2F.png") {
+spriteset(set_YTRO_200F_2F_wagon, "src\locomotive\YTRO\YTRO_2F.png") {
     wagon_2F(80, 135)
 }
 
-spriteset(set_YTRO_200F_2F_wagon_r, "..\YSTset\Graphic\locomotive\YTRO\YTRO_2F.png") {
+spriteset(set_YTRO_200F_2F_wagon_r, "src\locomotive\YTRO\YTRO_2F.png") {
     wagon_2F_r(80, 135)
 }
 
-spriteset(set_YTRO_200F_engineT, "..\YSTset\Graphic\locomotive\YTRO\YTRO_200.png"){
+spriteset(set_YTRO_200F_engineT, "src\locomotive\YTRO\YTRO_200.png"){
 	engine_r(80, 459)
 }
 
 /*--------------------------------------------------------------------
 5.38.1.7. YTRO_200 G
 --------------------------------------------------------------------*/
-spriteset(set_YTRO_200GH_purchase, "..\YSTset\Graphic\locomotive\YTRO\YTRO_200.png"){
+spriteset(set_YTRO_200GH_purchase, "src\locomotive\YTRO\YTRO_200.png"){
 	tmpl_purchase_for_dualhead(0, 540)
 }
 
-spriteset(set_YTRO_200G_engineH, "..\YSTset\Graphic\locomotive\YTRO\YTRO_200.png"){
+spriteset(set_YTRO_200G_engineH, "src\locomotive\YTRO\YTRO_200.png"){
 	engine(80, 486)
 }
 
-spriteset(set_YTRO_200G_1F_wagon, "..\YSTset\Graphic\locomotive\YTRO\YTRO_200.png") {
+spriteset(set_YTRO_200G_1F_wagon, "src\locomotive\YTRO\YTRO_200.png") {
     wagon_1F(80, 513)
 }
 
-spriteset(set_YTRO_200G_1F_wagon_r, "..\YSTset\Graphic\locomotive\YTRO\YTRO_200.png") {
+spriteset(set_YTRO_200G_1F_wagon_r, "src\locomotive\YTRO\YTRO_200.png") {
     wagon_1F_r(80, 513)
 }
 
-spriteset(set_YTRO_200G_2F_wagon, "..\YSTset\Graphic\locomotive\YTRO\YTRO_2F.png") {
+spriteset(set_YTRO_200G_2F_wagon, "src\locomotive\YTRO\YTRO_2F.png") {
     wagon_2F(80, 162)
 }
 
-spriteset(set_YTRO_200G_2F_wagon_r, "..\YSTset\Graphic\locomotive\YTRO\YTRO_2F.png") {
+spriteset(set_YTRO_200G_2F_wagon_r, "src\locomotive\YTRO\YTRO_2F.png") {
     wagon_2F_r(80, 162)
 }
 
-spriteset(set_YTRO_200G_engineT, "..\YSTset\Graphic\locomotive\YTRO\YTRO_200.png"){
+spriteset(set_YTRO_200G_engineT, "src\locomotive\YTRO\YTRO_200.png"){
 	engine_r(80, 540)
 }
 
 /*--------------------------------------------------------------------
 5.38.1.8. YTRO_200 H
 --------------------------------------------------------------------*/
-spriteset(set_YTRO_200HH_purchase, "..\YSTset\Graphic\locomotive\YTRO\YTRO_200.png"){
+spriteset(set_YTRO_200HH_purchase, "src\locomotive\YTRO\YTRO_200.png"){
 	tmpl_purchase_for_dualhead(0, 621)
 }
 
-spriteset(set_YTRO_200H_engineH, "..\YSTset\Graphic\locomotive\YTRO\YTRO_200.png"){
+spriteset(set_YTRO_200H_engineH, "src\locomotive\YTRO\YTRO_200.png"){
 	engine(80, 567)
 }
 
-spriteset(set_YTRO_200H_1F_wagon, "..\YSTset\Graphic\locomotive\YTRO\YTRO_200.png") {
+spriteset(set_YTRO_200H_1F_wagon, "src\locomotive\YTRO\YTRO_200.png") {
     wagon_1F(80, 594)
 }
 
-spriteset(set_YTRO_200H_1F_wagon_r, "..\YSTset\Graphic\locomotive\YTRO\YTRO_200.png") {
+spriteset(set_YTRO_200H_1F_wagon_r, "src\locomotive\YTRO\YTRO_200.png") {
     wagon_1F_r(80, 594)
 }
 
-spriteset(set_YTRO_200H_2F_wagon, "..\YSTset\Graphic\locomotive\YTRO\YTRO_2F.png") {
+spriteset(set_YTRO_200H_2F_wagon, "src\locomotive\YTRO\YTRO_2F.png") {
     wagon_2F(80, 189)
 }
 
-spriteset(set_YTRO_200H_2F_wagon_r, "..\YSTset\Graphic\locomotive\YTRO\YTRO_2F.png") {
+spriteset(set_YTRO_200H_2F_wagon_r, "src\locomotive\YTRO\YTRO_2F.png") {
     wagon_2F_r(80, 189)
 }
 
-spriteset(set_YTRO_200H_engineT, "..\YSTset\Graphic\locomotive\YTRO\YTRO_200.png"){
+spriteset(set_YTRO_200H_engineT, "src\locomotive\YTRO\YTRO_200.png"){
 	engine_r(80, 621)
 }
 
 /*--------------------------------------------------------------------
 5.38.1.9. YTRO_200 I
 --------------------------------------------------------------------*/
-spriteset(set_YTRO_200IH_purchase, "..\YSTset\Graphic\locomotive\YTRO\YTRO_200.png"){
+spriteset(set_YTRO_200IH_purchase, "src\locomotive\YTRO\YTRO_200.png"){
 	tmpl_purchase_for_dualhead(0, 702)
 }
 
-spriteset(set_YTRO_200I_engineH, "..\YSTset\Graphic\locomotive\YTRO\YTRO_200.png"){
+spriteset(set_YTRO_200I_engineH, "src\locomotive\YTRO\YTRO_200.png"){
 	engine(80, 648)
 }
 
-spriteset(set_YTRO_200I_1F_wagon, "..\YSTset\Graphic\locomotive\YTRO\YTRO_200.png") {
+spriteset(set_YTRO_200I_1F_wagon, "src\locomotive\YTRO\YTRO_200.png") {
     wagon_1F(80, 675)
 }
 
-spriteset(set_YTRO_200I_1F_wagon_r, "..\YSTset\Graphic\locomotive\YTRO\YTRO_200.png") {
+spriteset(set_YTRO_200I_1F_wagon_r, "src\locomotive\YTRO\YTRO_200.png") {
     wagon_1F_r(80, 675)
 }
 
-spriteset(set_YTRO_200I_2F_wagon, "..\YSTset\Graphic\locomotive\YTRO\YTRO_2F.png") {
+spriteset(set_YTRO_200I_2F_wagon, "src\locomotive\YTRO\YTRO_2F.png") {
     wagon_2F(80, 216)
 }
 
-spriteset(set_YTRO_200I_2F_wagon_r, "..\YSTset\Graphic\locomotive\YTRO\YTRO_2F.png") {
+spriteset(set_YTRO_200I_2F_wagon_r, "src\locomotive\YTRO\YTRO_2F.png") {
     wagon_2F_r(80, 216)
 }
 
-spriteset(set_YTRO_200I_engineT, "..\YSTset\Graphic\locomotive\YTRO\YTRO_200.png"){
+spriteset(set_YTRO_200I_engineT, "src\locomotive\YTRO\YTRO_200.png"){
 	engine_r(80, 702)
 }
 
 /*--------------------------------------------------------------------
 5.38.1.10. YTRO_200 J
 --------------------------------------------------------------------*/
-spriteset(set_YTRO_200JH_purchase, "..\YSTset\Graphic\locomotive\YTRO\YTRO_200.png"){
+spriteset(set_YTRO_200JH_purchase, "src\locomotive\YTRO\YTRO_200.png"){
 	tmpl_purchase_for_dualhead(0, 783)
 }
 
-spriteset(set_YTRO_200J_engineH, "..\YSTset\Graphic\locomotive\YTRO\YTRO_200.png"){
+spriteset(set_YTRO_200J_engineH, "src\locomotive\YTRO\YTRO_200.png"){
 	engine(80, 729)
 }
 
-spriteset(set_YTRO_200J_1F_wagon, "..\YSTset\Graphic\locomotive\YTRO\YTRO_200.png") {
+spriteset(set_YTRO_200J_1F_wagon, "src\locomotive\YTRO\YTRO_200.png") {
     wagon_1F(80, 756)
 }
 
-spriteset(set_YTRO_200J_1F_wagon_r, "..\YSTset\Graphic\locomotive\YTRO\YTRO_200.png") {
+spriteset(set_YTRO_200J_1F_wagon_r, "src\locomotive\YTRO\YTRO_200.png") {
     wagon_1F_r(80, 756)
 }
 
-spriteset(set_YTRO_200J_2F_wagon, "..\YSTset\Graphic\locomotive\YTRO\YTRO_2F.png") {
+spriteset(set_YTRO_200J_2F_wagon, "src\locomotive\YTRO\YTRO_2F.png") {
     wagon_2F(80, 243)
 }
 
-spriteset(set_YTRO_200J_2F_wagon_r, "..\YSTset\Graphic\locomotive\YTRO\YTRO_2F.png") {
+spriteset(set_YTRO_200J_2F_wagon_r, "src\locomotive\YTRO\YTRO_2F.png") {
     wagon_2F_r(80, 243)
 }
 
-spriteset(set_YTRO_200J_engineT, "..\YSTset\Graphic\locomotive\YTRO\YTRO_200.png"){
+spriteset(set_YTRO_200J_engineT, "src\locomotive\YTRO\YTRO_200.png"){
 	engine_r(80, 783)
 }
 
@@ -7604,35 +7567,35 @@ item(FEAT_TRAINS, YTRO_200){
 /*--------------------------------------------------------------------
 5.38.1 Graphics
 --------------------------------------------------------------------*/
-spriteset(set_YTX_purchase, "..\YSTset\Graphic\locomotive\YTX\YTX.png"){
+spriteset(set_YTX_purchase, "src\locomotive\YTX\YTX.png"){
 	tmpl_purchase(0, 0)
 }
 
-spriteset(set_YTXH_purchase, "..\YSTset\Graphic\locomotive\YTX\YTX.png"){
+spriteset(set_YTXH_purchase, "src\locomotive\YTX\YTX.png"){
 	tmpl_purchase_for_dualhead(0, 108)
 }
 
-spriteset(set_YTX_engineH, "..\YSTset\Graphic\locomotive\YTX\YTX.png"){
+spriteset(set_YTX_engineH, "src\locomotive\YTX\YTX.png"){
 	engine(80, 0)
 }
 
-spriteset(set_YTX_wagon_start, "..\YSTset\Graphic\locomotive\YTX\YTX.png"){
+spriteset(set_YTX_wagon_start, "src\locomotive\YTX\YTX.png"){
 	wagon_start(80, 27)
 }
 
-spriteset(set_YTX_wagon, "..\YSTset\Graphic\locomotive\YTX\YTX.png") {
+spriteset(set_YTX_wagon, "src\locomotive\YTX\YTX.png") {
     wagon_1F(80, 54)
 }
 
-spriteset(set_YTX_wagon_r, "..\YSTset\Graphic\locomotive\YTX\YTX.png") {
+spriteset(set_YTX_wagon_r, "src\locomotive\YTX\YTX.png") {
     wagon_1F_r(80, 54)
 }
 
-spriteset(set_YTX_wagon_end, "..\YSTset\Graphic\locomotive\YTX\YTX.png"){
+spriteset(set_YTX_wagon_end, "src\locomotive\YTX\YTX.png"){
 	wagon_start(80, 81)
 }
 
-spriteset(set_YTX_engineT, "..\YSTset\Graphic\locomotive\YTX\YTX.png"){
+spriteset(set_YTX_engineT, "src\locomotive\YTX\YTX.png"){
 	engine_r(80, 108)
 }
 
@@ -7733,100 +7696,100 @@ item(FEAT_TRAINS, YTX){
 /*--------------------------------------------------------------------
 5.39.1 Graphics
 --------------------------------------------------------------------*/
-spriteset(set_ZEFIRO380_purchase, "..\YSTset\Graphic\locomotive\ZEFIRO380\ZEFIRO380.png"){
+spriteset(set_ZEFIRO380_purchase, "src\locomotive\ZEFIRO380\ZEFIRO380.png"){
 	tmpl_purchase(0, 0)
 }
 
 /*--------------------------------------------------------------------
 5.39.1.1. ZEFIRO380
 --------------------------------------------------------------------*/
-spriteset(set_ZEFIRO380H_purchase, "..\YSTset\Graphic\locomotive\ZEFIRO380\ZEFIRO380.png"){
+spriteset(set_ZEFIRO380H_purchase, "src\locomotive\ZEFIRO380\ZEFIRO380.png"){
 	tmpl_purchase_for_dualhead(0, 108)
 }
 
-spriteset(set_ZEFIRO380_engineH, "..\YSTset\Graphic\locomotive\ZEFIRO380\ZEFIRO380.png"){
+spriteset(set_ZEFIRO380_engineH, "src\locomotive\ZEFIRO380\ZEFIRO380.png"){
 	engine(80, 0)
 }
 
-spriteset(set_ZEFIRO380_wagon_start, "..\YSTset\Graphic\locomotive\ZEFIRO380\ZEFIRO380.png"){
+spriteset(set_ZEFIRO380_wagon_start, "src\locomotive\ZEFIRO380\ZEFIRO380.png"){
 	wagon_start(80, 27)
 }
 
-spriteset(set_ZEFIRO380_wagon, "..\YSTset\Graphic\locomotive\ZEFIRO380\ZEFIRO380.png") {
+spriteset(set_ZEFIRO380_wagon, "src\locomotive\ZEFIRO380\ZEFIRO380.png") {
     wagon_1F(80, 54)
 }
 
-spriteset(set_ZEFIRO380_wagon_r, "..\YSTset\Graphic\locomotive\ZEFIRO380\ZEFIRO380.png") {
+spriteset(set_ZEFIRO380_wagon_r, "src\locomotive\ZEFIRO380\ZEFIRO380.png") {
     wagon_1F_r(80, 54)
 }
 
-spriteset(set_ZEFIRO380_wagon_end, "..\YSTset\Graphic\locomotive\ZEFIRO380\ZEFIRO380.png"){
+spriteset(set_ZEFIRO380_wagon_end, "src\locomotive\ZEFIRO380\ZEFIRO380.png"){
 	wagon_start(80, 81)
 }
 
-spriteset(set_ZEFIRO380_engineT, "..\YSTset\Graphic\locomotive\ZEFIRO380\ZEFIRO380.png"){
+spriteset(set_ZEFIRO380_engineT, "src\locomotive\ZEFIRO380\ZEFIRO380.png"){
 	engine_r(80, 108)
 }
 
 /*--------------------------------------------------------------------
 5.39.1.2. ZEFIRO380 Cool
 --------------------------------------------------------------------*/
-spriteset(set_ZEFIRO380_CoolH_purchase, "..\YSTset\Graphic\locomotive\ZEFIRO380\ZEFIRO380.png"){
+spriteset(set_ZEFIRO380_CoolH_purchase, "src\locomotive\ZEFIRO380\ZEFIRO380.png"){
 	tmpl_purchase_for_dualhead(0, 243)
 }
 
-spriteset(set_ZEFIRO380_Cool_engineH, "..\YSTset\Graphic\locomotive\ZEFIRO380\ZEFIRO380.png"){
+spriteset(set_ZEFIRO380_Cool_engineH, "src\locomotive\ZEFIRO380\ZEFIRO380.png"){
 	engine(80, 135)
 }
 
-spriteset(set_ZEFIRO380_Cool_wagon_start, "..\YSTset\Graphic\locomotive\ZEFIRO380\ZEFIRO380.png"){
+spriteset(set_ZEFIRO380_Cool_wagon_start, "src\locomotive\ZEFIRO380\ZEFIRO380.png"){
 	wagon_start(80, 162)
 }
 
-spriteset(set_ZEFIRO380_Cool_wagon, "..\YSTset\Graphic\locomotive\ZEFIRO380\ZEFIRO380.png") {
+spriteset(set_ZEFIRO380_Cool_wagon, "src\locomotive\ZEFIRO380\ZEFIRO380.png") {
     wagon_1F(80, 189)
 }
 
-spriteset(set_ZEFIRO380_Cool_wagon_r, "..\YSTset\Graphic\locomotive\ZEFIRO380\ZEFIRO380.png") {
+spriteset(set_ZEFIRO380_Cool_wagon_r, "src\locomotive\ZEFIRO380\ZEFIRO380.png") {
     wagon_1F_r(80, 189)
 }
 
-spriteset(set_ZEFIRO380_Cool_wagon_end, "..\YSTset\Graphic\locomotive\ZEFIRO380\ZEFIRO380.png"){
+spriteset(set_ZEFIRO380_Cool_wagon_end, "src\locomotive\ZEFIRO380\ZEFIRO380.png"){
 	wagon_start(80, 216)
 }
 
-spriteset(set_ZEFIRO380_Cool_engineT, "..\YSTset\Graphic\locomotive\ZEFIRO380\ZEFIRO380.png"){
+spriteset(set_ZEFIRO380_Cool_engineT, "src\locomotive\ZEFIRO380\ZEFIRO380.png"){
 	engine_r(80, 243)
 }
 
 /*--------------------------------------------------------------------
 5.39.1.3. ZEFIRO380 Black
 --------------------------------------------------------------------*/
-spriteset(set_ZEFIRO380_BlackH_purchase, "..\YSTset\Graphic\locomotive\ZEFIRO380\ZEFIRO380.png"){
+spriteset(set_ZEFIRO380_BlackH_purchase, "src\locomotive\ZEFIRO380\ZEFIRO380.png"){
 	tmpl_purchase_for_dualhead(0, 108)
 }
 
-spriteset(set_ZEFIRO380_Black_engineH, "..\YSTset\Graphic\locomotive\ZEFIRO380\ZEFIRO380.png"){
+spriteset(set_ZEFIRO380_Black_engineH, "src\locomotive\ZEFIRO380\ZEFIRO380.png"){
 	engine(80, 270)
 }
 
-spriteset(set_ZEFIRO380_Black_wagon_start, "..\YSTset\Graphic\locomotive\ZEFIRO380\ZEFIRO380.png"){
+spriteset(set_ZEFIRO380_Black_wagon_start, "src\locomotive\ZEFIRO380\ZEFIRO380.png"){
 	wagon_start(80, 297)
 }
 
-spriteset(set_ZEFIRO380_Black_wagon, "..\YSTset\Graphic\locomotive\ZEFIRO380\ZEFIRO380.png") {
+spriteset(set_ZEFIRO380_Black_wagon, "src\locomotive\ZEFIRO380\ZEFIRO380.png") {
     wagon_1F(80, 324)
 }
 
-spriteset(set_ZEFIRO380_Black_wagon_r, "..\YSTset\Graphic\locomotive\ZEFIRO380\ZEFIRO380.png") {
+spriteset(set_ZEFIRO380_Black_wagon_r, "src\locomotive\ZEFIRO380\ZEFIRO380.png") {
     wagon_1F_r(80, 324)
 }
 
-spriteset(set_ZEFIRO380_Black_wagon_end, "..\YSTset\Graphic\locomotive\ZEFIRO380\ZEFIRO380.png"){
+spriteset(set_ZEFIRO380_Black_wagon_end, "src\locomotive\ZEFIRO380\ZEFIRO380.png"){
 	wagon_start(80, 351)
 }
 
-spriteset(set_ZEFIRO380_Black_engineT, "..\YSTset\Graphic\locomotive\ZEFIRO380\ZEFIRO380.png"){
+spriteset(set_ZEFIRO380_Black_engineT, "src\locomotive\ZEFIRO380\ZEFIRO380.png"){
 	engine_r(80, 378)
 }
 
@@ -7985,35 +7948,35 @@ item(FEAT_TRAINS, ZEFIRO380){
 /*--------------------------------------------------------------------
 5.40.1 Graphics
 --------------------------------------------------------------------*/
-spriteset(set_DRY700_purchase, "..\YSTset\Graphic\locomotive\N700\Dr_Yellow.png"){
+spriteset(set_DRY700_purchase, "src\locomotive\N700\Dr_Yellow.png"){
 	tmpl_purchase(0, 0)
 }
 
-spriteset(set_DRY700H_purchase, "..\YSTset\Graphic\locomotive\N700\Dr_Yellow.png"){
+spriteset(set_DRY700H_purchase, "src\locomotive\N700\Dr_Yellow.png"){
 	tmpl_purchase_for_dualhead(0, 108)
 }
 
-spriteset(set_DRY700_engineH, "..\YSTset\Graphic\locomotive\N700\Dr_Yellow.png"){
+spriteset(set_DRY700_engineH, "src\locomotive\N700\Dr_Yellow.png"){
 	engine(80, 0)
 }
 
-spriteset(set_DRY700_wagon_start, "..\YSTset\Graphic\locomotive\N700\Dr_Yellow.png"){
+spriteset(set_DRY700_wagon_start, "src\locomotive\N700\Dr_Yellow.png"){
 	wagon_panto(80, 27)
 }
 
-spriteset(set_DRY700_wagon, "..\YSTset\Graphic\locomotive\N700\Dr_Yellow.png") {
+spriteset(set_DRY700_wagon, "src\locomotive\N700\Dr_Yellow.png") {
     wagon_1F(80, 54)
 }
 
-spriteset(set_DRY700_wagon_r, "..\YSTset\Graphic\locomotive\N700\Dr_Yellow.png") {
+spriteset(set_DRY700_wagon_r, "src\locomotive\N700\Dr_Yellow.png") {
     wagon_1F_r(80, 54)
 }
 
-spriteset(set_DRY700_wagon_end, "..\YSTset\Graphic\locomotive\N700\Dr_Yellow.png"){
+spriteset(set_DRY700_wagon_end, "src\locomotive\N700\Dr_Yellow.png"){
 	wagon_panto(80, 81)
 }
 
-spriteset(set_DRY700_engineT, "..\YSTset\Graphic\locomotive\N700\Dr_Yellow.png"){
+spriteset(set_DRY700_engineT, "src\locomotive\N700\Dr_Yellow.png"){
 	engine_r(80, 108)
 }
 
@@ -8117,11 +8080,11 @@ item(FEAT_TRAINS, DRY700){
 /*--------------------------------------------------------------------
 5.41.1 Graphics
 --------------------------------------------------------------------*/
-spriteset(set_BB15048_purchase, "..\YSTset\Graphic\locomotive\BB15048\BB15048.png"){
+spriteset(set_BB15048_purchase, "src\locomotive\BB15048\BB15048.png"){
 	tmpl_single_purchase(0, 0)
 }
 
-spriteset(set_BB15048_engine, "..\YSTset\Graphic\locomotive\BB15048\BB15048.png"){
+spriteset(set_BB15048_engine, "src\locomotive\BB15048\BB15048.png"){
 	engine(80, 0)
 }
 
@@ -8203,11 +8166,11 @@ item(FEAT_TRAINS, BB15048){
 /*--------------------------------------------------------------------
 5.42.1 Graphics
 --------------------------------------------------------------------*/
-spriteset(set_GT26CW_purchase, "..\YSTset\Graphic\locomotive\GT26CW\GT26CW.png"){
+spriteset(set_GT26CW_purchase, "src\locomotive\GT26CW\GT26CW.png"){
 	tmpl_single_purchase(0, 0)
 }
 
-spriteset(set_GT26CW_engine, "..\YSTset\Graphic\locomotive\GT26CW\GT26CW.png"){
+spriteset(set_GT26CW_engine, "src\locomotive\GT26CW\GT26CW.png"){
 	engine(80, 0)
 }
 
@@ -8289,11 +8252,11 @@ item(FEAT_TRAINS, GT26CW){
 /*--------------------------------------------------------------------
 5.42.1 Graphics
 --------------------------------------------------------------------*/
-spriteset(set_NJ2_purchase, "..\YSTset\Graphic\locomotive\NJ2\NJ2.png"){
+spriteset(set_NJ2_purchase, "src\locomotive\NJ2\NJ2.png"){
 	tmpl_single_purchase(0, 0)
 }
 
-spriteset(set_NJ2_engine, "..\YSTset\Graphic\locomotive\NJ2\NJ2.png"){
+spriteset(set_NJ2_engine, "src\locomotive\NJ2\NJ2.png"){
 	engine(80, 0)
 }
 
@@ -8375,31 +8338,31 @@ item(FEAT_TRAINS, NJ2){
 /*--------------------------------------------------------------------
 5.43.1 Graphics
 --------------------------------------------------------------------*/
-spriteset(set_Tank_purchase, "..\YSTset\Graphic\wagon\tank.png"){
+spriteset(set_Tank_purchase, "src\wagon\tank.png"){
 	tmpl_wagon_purchase(0, 0)
 }
 
-spriteset(set_TankA_wagon, "..\YSTset\Graphic\wagon\tank.png") {
+spriteset(set_TankA_wagon, "src\wagon\tank.png") {
     wagon_1F(80, 0)
 }
 
-spriteset(set_TankA_wagon_r, "..\YSTset\Graphic\wagon\tank.png") {
+spriteset(set_TankA_wagon_r, "src\wagon\tank.png") {
     wagon_1F_r(80, 0)
 }
 
-spriteset(set_TankB_wagon, "..\YSTset\Graphic\wagon\tank.png") {
+spriteset(set_TankB_wagon, "src\wagon\tank.png") {
     wagon_1F(80, 27)
 }
 
-spriteset(set_TankB_wagon_r, "..\YSTset\Graphic\wagon\tank.png") {
+spriteset(set_TankB_wagon_r, "src\wagon\tank.png") {
     wagon_1F_r(80, 27)
 }
 
-spriteset(set_TankC_wagon, "..\YSTset\Graphic\wagon\tank.png") {
+spriteset(set_TankC_wagon, "src\wagon\tank.png") {
     wagon_1F(80, 54)
 }
 
-spriteset(set_TankC_wagon_r, "..\YSTset\Graphic\wagon\tank.png") {
+spriteset(set_TankC_wagon_r, "src\wagon\tank.png") {
     wagon_1F_r(80, 54)
 }
 
@@ -8500,468 +8463,468 @@ item(FEAT_TRAINS, TANK){
 /*--------------------------------------------------------------------
 5.44.1.1.1 Graphics - 40ft Green
 --------------------------------------------------------------------*/
-spriteset(set_FLAT_CAR_purchase, "..\YSTset\Graphic\wagon\Flat_1F_Car_Green.png") {
+spriteset(set_FLAT_CAR_purchase, "src\wagon\Flat_1F_Car_Green.png") {
     tmpl_wagon_purchase(0, 0)
 }
 
-spriteset(set_FLAT_CAR_Green_empty_wagon, "..\YSTset\Graphic\wagon\Flat_1F_Car_Green.png") {
+spriteset(set_FLAT_CAR_Green_empty_wagon, "src\wagon\Flat_1F_Car_Green.png") {
     flat_car_1f_container(80, 0)
 }
 
-spriteset(set_FLAT_CAR_Green_40ft_loaded_01_wagon, "..\YSTset\Graphic\wagon\Flat_1F_Car_Green.png") {
+spriteset(set_FLAT_CAR_Green_40ft_loaded_01_wagon, "src\wagon\Flat_1F_Car_Green.png") {
     flat_car_1f_container(80, 27)
 }
 
-spriteset(set_FLAT_CAR_Green_40ft_loaded_02_wagon, "..\YSTset\Graphic\wagon\Flat_1F_Car_Green.png") {
+spriteset(set_FLAT_CAR_Green_40ft_loaded_02_wagon, "src\wagon\Flat_1F_Car_Green.png") {
     flat_car_1f_container(80, 54)
 }
 
-spriteset(set_FLAT_CAR_Green_40ft_loaded_03_wagon, "..\YSTset\Graphic\wagon\Flat_1F_Car_Green.png") {
+spriteset(set_FLAT_CAR_Green_40ft_loaded_03_wagon, "src\wagon\Flat_1F_Car_Green.png") {
     flat_car_1f_container(80, 81)
 }
 
-spriteset(set_FLAT_CAR_Green_40ft_loaded_04_wagon, "..\YSTset\Graphic\wagon\Flat_1F_Car_Green.png") {
+spriteset(set_FLAT_CAR_Green_40ft_loaded_04_wagon, "src\wagon\Flat_1F_Car_Green.png") {
     flat_car_1f_container(80, 108)
 }
 
-spriteset(set_FLAT_CAR_Green_40ft_loaded_05_wagon, "..\YSTset\Graphic\wagon\Flat_1F_Car_Green.png") {
+spriteset(set_FLAT_CAR_Green_40ft_loaded_05_wagon, "src\wagon\Flat_1F_Car_Green.png") {
     flat_car_1f_container(80, 135)
 }
 
-spriteset(set_FLAT_CAR_Green_40ft_loaded_06_wagon, "..\YSTset\Graphic\wagon\Flat_1F_Car_Green.png") {
+spriteset(set_FLAT_CAR_Green_40ft_loaded_06_wagon, "src\wagon\Flat_1F_Car_Green.png") {
     flat_car_1f_container(80, 162)
 }
 
-spriteset(set_FLAT_CAR_Green_40ft_loaded_07_wagon, "..\YSTset\Graphic\wagon\Flat_1F_Car_Green.png") {
+spriteset(set_FLAT_CAR_Green_40ft_loaded_07_wagon, "src\wagon\Flat_1F_Car_Green.png") {
     flat_car_1f_container(80, 189)
 }
 
-spriteset(set_FLAT_CAR_Green_40ft_loaded_08_wagon, "..\YSTset\Graphic\wagon\Flat_1F_Car_Green.png") {
+spriteset(set_FLAT_CAR_Green_40ft_loaded_08_wagon, "src\wagon\Flat_1F_Car_Green.png") {
     flat_car_1f_container(80, 216)
 }
 
-spriteset(set_FLAT_CAR_Green_40ft_loaded_09_wagon, "..\YSTset\Graphic\wagon\Flat_1F_Car_Green.png") {
+spriteset(set_FLAT_CAR_Green_40ft_loaded_09_wagon, "src\wagon\Flat_1F_Car_Green.png") {
     flat_car_1f_container(80, 243)
 }
 
 /*--------------------------------------------------------------------
 5.44.1.1.2 Graphics - 40ft Red
 --------------------------------------------------------------------*/
-spriteset(set_FLAT_CAR_Red_empty_wagon, "..\YSTset\Graphic\wagon\Flat_1F_Car_Red.png") {
+spriteset(set_FLAT_CAR_Red_empty_wagon, "src\wagon\Flat_1F_Car_Red.png") {
     flat_car_1f_container(80, 0)
 }
 
-spriteset(set_FLAT_CAR_Red_40ft_loaded_01_wagon, "..\YSTset\Graphic\wagon\Flat_1F_Car_Red.png") {
+spriteset(set_FLAT_CAR_Red_40ft_loaded_01_wagon, "src\wagon\Flat_1F_Car_Red.png") {
     flat_car_1f_container(80, 27)
 }
 
-spriteset(set_FLAT_CAR_Red_40ft_loaded_02_wagon, "..\YSTset\Graphic\wagon\Flat_1F_Car_Red.png") {
+spriteset(set_FLAT_CAR_Red_40ft_loaded_02_wagon, "src\wagon\Flat_1F_Car_Red.png") {
     flat_car_1f_container(80, 54)
 }
 
-spriteset(set_FLAT_CAR_Red_40ft_loaded_03_wagon, "..\YSTset\Graphic\wagon\Flat_1F_Car_Red.png") {
+spriteset(set_FLAT_CAR_Red_40ft_loaded_03_wagon, "src\wagon\Flat_1F_Car_Red.png") {
     flat_car_1f_container(80, 81)
 }
 
-spriteset(set_FLAT_CAR_Red_40ft_loaded_04_wagon, "..\YSTset\Graphic\wagon\Flat_1F_Car_Red.png") {
+spriteset(set_FLAT_CAR_Red_40ft_loaded_04_wagon, "src\wagon\Flat_1F_Car_Red.png") {
     flat_car_1f_container(80, 108)
 }
 
-spriteset(set_FLAT_CAR_Red_40ft_loaded_05_wagon, "..\YSTset\Graphic\wagon\Flat_1F_Car_Red.png") {
+spriteset(set_FLAT_CAR_Red_40ft_loaded_05_wagon, "src\wagon\Flat_1F_Car_Red.png") {
     flat_car_1f_container(80, 135)
 }
 
-spriteset(set_FLAT_CAR_Red_40ft_loaded_06_wagon, "..\YSTset\Graphic\wagon\Flat_1F_Car_Red.png") {
+spriteset(set_FLAT_CAR_Red_40ft_loaded_06_wagon, "src\wagon\Flat_1F_Car_Red.png") {
     flat_car_1f_container(80, 162)
 }
 
-spriteset(set_FLAT_CAR_Red_40ft_loaded_07_wagon, "..\YSTset\Graphic\wagon\Flat_1F_Car_Red.png") {
+spriteset(set_FLAT_CAR_Red_40ft_loaded_07_wagon, "src\wagon\Flat_1F_Car_Red.png") {
     flat_car_1f_container(80, 189)
 }
 
-spriteset(set_FLAT_CAR_Red_40ft_loaded_08_wagon, "..\YSTset\Graphic\wagon\Flat_1F_Car_Red.png") {
+spriteset(set_FLAT_CAR_Red_40ft_loaded_08_wagon, "src\wagon\Flat_1F_Car_Red.png") {
     flat_car_1f_container(80, 216)
 }
 
-spriteset(set_FLAT_CAR_Red_40ft_loaded_09_wagon, "..\YSTset\Graphic\wagon\Flat_1F_Car_Red.png") {
+spriteset(set_FLAT_CAR_Red_40ft_loaded_09_wagon, "src\wagon\Flat_1F_Car_Red.png") {
     flat_car_1f_container(80, 243)
 }
 
 /*--------------------------------------------------------------------
 5.44.1.2.1.1 Graphics - 20ft Green loading
 --------------------------------------------------------------------*/
-spriteset(set_FLAT_CAR_Green_20ft_loading_01_wagon, "..\YSTset\Graphic\wagon\Flat_1F_Car_Green.png") {
+spriteset(set_FLAT_CAR_Green_20ft_loading_01_wagon, "src\wagon\Flat_1F_Car_Green.png") {
     flat_car_1f_container(80, 270)
 }
 
-spriteset(set_FLAT_CAR_Green_20ft_loading_02_wagon, "..\YSTset\Graphic\wagon\Flat_1F_Car_Green.png") {
+spriteset(set_FLAT_CAR_Green_20ft_loading_02_wagon, "src\wagon\Flat_1F_Car_Green.png") {
     flat_car_1f_container(80, 297)
 }
 
-spriteset(set_FLAT_CAR_Green_20ft_loading_03_wagon, "..\YSTset\Graphic\wagon\Flat_1F_Car_Green.png") {
+spriteset(set_FLAT_CAR_Green_20ft_loading_03_wagon, "src\wagon\Flat_1F_Car_Green.png") {
     flat_car_1f_container(80, 324)
 }
 
-spriteset(set_FLAT_CAR_Green_20ft_loading_04_wagon, "..\YSTset\Graphic\wagon\Flat_1F_Car_Green.png") {
+spriteset(set_FLAT_CAR_Green_20ft_loading_04_wagon, "src\wagon\Flat_1F_Car_Green.png") {
     flat_car_1f_container(80, 351)
 }
 
-spriteset(set_FLAT_CAR_Green_20ft_loading_05_wagon, "..\YSTset\Graphic\wagon\Flat_1F_Car_Green.png") {
+spriteset(set_FLAT_CAR_Green_20ft_loading_05_wagon, "src\wagon\Flat_1F_Car_Green.png") {
     flat_car_1f_container(80, 378)
 }
 
-spriteset(set_FLAT_CAR_Green_20ft_loading_06_wagon, "..\YSTset\Graphic\wagon\Flat_1F_Car_Green.png") {
+spriteset(set_FLAT_CAR_Green_20ft_loading_06_wagon, "src\wagon\Flat_1F_Car_Green.png") {
     flat_car_1f_container(80, 405)
 }
 
-spriteset(set_FLAT_CAR_Green_20ft_loading_07_wagon, "..\YSTset\Graphic\wagon\Flat_1F_Car_Green.png") {
+spriteset(set_FLAT_CAR_Green_20ft_loading_07_wagon, "src\wagon\Flat_1F_Car_Green.png") {
     flat_car_1f_container(80, 432)
 }
 
-spriteset(set_FLAT_CAR_Green_20ft_loading_08_wagon, "..\YSTset\Graphic\wagon\Flat_1F_Car_Green.png") {
+spriteset(set_FLAT_CAR_Green_20ft_loading_08_wagon, "src\wagon\Flat_1F_Car_Green.png") {
     flat_car_1f_container(80, 459)
 }
 
-spriteset(set_FLAT_CAR_Green_20ft_loading_09_wagon, "..\YSTset\Graphic\wagon\Flat_1F_Car_Green.png") {
+spriteset(set_FLAT_CAR_Green_20ft_loading_09_wagon, "src\wagon\Flat_1F_Car_Green.png") {
     flat_car_1f_container(80, 486)
 }
 
-spriteset(set_FLAT_CAR_Green_20ft_loading_10_wagon, "..\YSTset\Graphic\wagon\Flat_1F_Car_Green.png") {
+spriteset(set_FLAT_CAR_Green_20ft_loading_10_wagon, "src\wagon\Flat_1F_Car_Green.png") {
     flat_car_1f_container(80, 513)
 }
 
-spriteset(set_FLAT_CAR_Green_20ft_loading_11_wagon, "..\YSTset\Graphic\wagon\Flat_1F_Car_Green.png") {
+spriteset(set_FLAT_CAR_Green_20ft_loading_11_wagon, "src\wagon\Flat_1F_Car_Green.png") {
     flat_car_1f_container(80, 540)
 }
 
-spriteset(set_FLAT_CAR_Green_20ft_loading_12_wagon, "..\YSTset\Graphic\wagon\Flat_1F_Car_Green.png") {
+spriteset(set_FLAT_CAR_Green_20ft_loading_12_wagon, "src\wagon\Flat_1F_Car_Green.png") {
     flat_car_1f_container(80, 567)
 }
 
-spriteset(set_FLAT_CAR_Green_20ft_loading_13_wagon, "..\YSTset\Graphic\wagon\Flat_1F_Car_Green.png") {
+spriteset(set_FLAT_CAR_Green_20ft_loading_13_wagon, "src\wagon\Flat_1F_Car_Green.png") {
     flat_car_1f_container(80, 594)
 }
 
-spriteset(set_FLAT_CAR_Green_20ft_loading_14_wagon, "..\YSTset\Graphic\wagon\Flat_1F_Car_Green.png") {
+spriteset(set_FLAT_CAR_Green_20ft_loading_14_wagon, "src\wagon\Flat_1F_Car_Green.png") {
     flat_car_1f_container(80, 621)
 }
 
-spriteset(set_FLAT_CAR_Green_20ft_loading_15_wagon, "..\YSTset\Graphic\wagon\Flat_1F_Car_Green.png") {
+spriteset(set_FLAT_CAR_Green_20ft_loading_15_wagon, "src\wagon\Flat_1F_Car_Green.png") {
     flat_car_1f_container(80, 648)
 }
 
-spriteset(set_FLAT_CAR_Green_20ft_loading_16_wagon, "..\YSTset\Graphic\wagon\Flat_1F_Car_Green.png") {
+spriteset(set_FLAT_CAR_Green_20ft_loading_16_wagon, "src\wagon\Flat_1F_Car_Green.png") {
     flat_car_1f_container(80, 675)
 }
 
-spriteset(set_FLAT_CAR_Green_20ft_loading_17_wagon, "..\YSTset\Graphic\wagon\Flat_1F_Car_Green.png") {
+spriteset(set_FLAT_CAR_Green_20ft_loading_17_wagon, "src\wagon\Flat_1F_Car_Green.png") {
     flat_car_1f_container(80, 702)
 }
 
-spriteset(set_FLAT_CAR_Green_20ft_loading_18_wagon, "..\YSTset\Graphic\wagon\Flat_1F_Car_Green.png") {
+spriteset(set_FLAT_CAR_Green_20ft_loading_18_wagon, "src\wagon\Flat_1F_Car_Green.png") {
     flat_car_1f_container(80, 729)
 }
 
 /*--------------------------------------------------------------------
 5.44.1.2.1.2 Graphics - 20ft Green loaded
 --------------------------------------------------------------------*/
-spriteset(set_FLAT_CAR_Green_20ft_loaded_01_wagon, "..\YSTset\Graphic\wagon\Flat_1F_Car_Green.png") {
+spriteset(set_FLAT_CAR_Green_20ft_loaded_01_wagon, "src\wagon\Flat_1F_Car_Green.png") {
     flat_car_1f_container(299, 270)
 }
 
-spriteset(set_FLAT_CAR_Green_20ft_loaded_02_wagon, "..\YSTset\Graphic\wagon\Flat_1F_Car_Green.png") {
+spriteset(set_FLAT_CAR_Green_20ft_loaded_02_wagon, "src\wagon\Flat_1F_Car_Green.png") {
     flat_car_1f_container(299, 297)
 }
 
-spriteset(set_FLAT_CAR_Green_20ft_loaded_03_wagon, "..\YSTset\Graphic\wagon\Flat_1F_Car_Green.png") {
+spriteset(set_FLAT_CAR_Green_20ft_loaded_03_wagon, "src\wagon\Flat_1F_Car_Green.png") {
     flat_car_1f_container(299, 324)
 }
 
-spriteset(set_FLAT_CAR_Green_20ft_loaded_04_wagon, "..\YSTset\Graphic\wagon\Flat_1F_Car_Green.png") {
+spriteset(set_FLAT_CAR_Green_20ft_loaded_04_wagon, "src\wagon\Flat_1F_Car_Green.png") {
     flat_car_1f_container(299, 351)
 }
 
-spriteset(set_FLAT_CAR_Green_20ft_loaded_05_wagon, "..\YSTset\Graphic\wagon\Flat_1F_Car_Green.png") {
+spriteset(set_FLAT_CAR_Green_20ft_loaded_05_wagon, "src\wagon\Flat_1F_Car_Green.png") {
     flat_car_1f_container(299, 378)
 }
 
-spriteset(set_FLAT_CAR_Green_20ft_loaded_06_wagon, "..\YSTset\Graphic\wagon\Flat_1F_Car_Green.png") {
+spriteset(set_FLAT_CAR_Green_20ft_loaded_06_wagon, "src\wagon\Flat_1F_Car_Green.png") {
     flat_car_1f_container(299, 405)
 }
 
-spriteset(set_FLAT_CAR_Green_20ft_loaded_07_wagon, "..\YSTset\Graphic\wagon\Flat_1F_Car_Green.png") {
+spriteset(set_FLAT_CAR_Green_20ft_loaded_07_wagon, "src\wagon\Flat_1F_Car_Green.png") {
     flat_car_1f_container(299, 432)
 }
 
-spriteset(set_FLAT_CAR_Green_20ft_loaded_08_wagon, "..\YSTset\Graphic\wagon\Flat_1F_Car_Green.png") {
+spriteset(set_FLAT_CAR_Green_20ft_loaded_08_wagon, "src\wagon\Flat_1F_Car_Green.png") {
     flat_car_1f_container(299, 459)
 }
 
-spriteset(set_FLAT_CAR_Green_20ft_loaded_09_wagon, "..\YSTset\Graphic\wagon\Flat_1F_Car_Green.png") {
+spriteset(set_FLAT_CAR_Green_20ft_loaded_09_wagon, "src\wagon\Flat_1F_Car_Green.png") {
     flat_car_1f_container(299, 486)
 }
 
-spriteset(set_FLAT_CAR_Green_20ft_loaded_10_wagon, "..\YSTset\Graphic\wagon\Flat_1F_Car_Green.png") {
+spriteset(set_FLAT_CAR_Green_20ft_loaded_10_wagon, "src\wagon\Flat_1F_Car_Green.png") {
     flat_car_1f_container(299, 513)
 }
 
-spriteset(set_FLAT_CAR_Green_20ft_loaded_11_wagon, "..\YSTset\Graphic\wagon\Flat_1F_Car_Green.png") {
+spriteset(set_FLAT_CAR_Green_20ft_loaded_11_wagon, "src\wagon\Flat_1F_Car_Green.png") {
     flat_car_1f_container(299, 540)
 }
 
-spriteset(set_FLAT_CAR_Green_20ft_loaded_12_wagon, "..\YSTset\Graphic\wagon\Flat_1F_Car_Green.png") {
+spriteset(set_FLAT_CAR_Green_20ft_loaded_12_wagon, "src\wagon\Flat_1F_Car_Green.png") {
     flat_car_1f_container(299, 567)
 }
 
-spriteset(set_FLAT_CAR_Green_20ft_loaded_13_wagon, "..\YSTset\Graphic\wagon\Flat_1F_Car_Green.png") {
+spriteset(set_FLAT_CAR_Green_20ft_loaded_13_wagon, "src\wagon\Flat_1F_Car_Green.png") {
     flat_car_1f_container(299, 594)
 }
 
-spriteset(set_FLAT_CAR_Green_20ft_loaded_14_wagon, "..\YSTset\Graphic\wagon\Flat_1F_Car_Green.png") {
+spriteset(set_FLAT_CAR_Green_20ft_loaded_14_wagon, "src\wagon\Flat_1F_Car_Green.png") {
     flat_car_1f_container(299, 621)
 }
 
-spriteset(set_FLAT_CAR_Green_20ft_loaded_15_wagon, "..\YSTset\Graphic\wagon\Flat_1F_Car_Green.png") {
+spriteset(set_FLAT_CAR_Green_20ft_loaded_15_wagon, "src\wagon\Flat_1F_Car_Green.png") {
     flat_car_1f_container(299, 648)
 }
 
-spriteset(set_FLAT_CAR_Green_20ft_loaded_16_wagon, "..\YSTset\Graphic\wagon\Flat_1F_Car_Green.png") {
+spriteset(set_FLAT_CAR_Green_20ft_loaded_16_wagon, "src\wagon\Flat_1F_Car_Green.png") {
     flat_car_1f_container(299, 675)
 }
 
-spriteset(set_FLAT_CAR_Green_20ft_loaded_17_wagon, "..\YSTset\Graphic\wagon\Flat_1F_Car_Green.png") {
+spriteset(set_FLAT_CAR_Green_20ft_loaded_17_wagon, "src\wagon\Flat_1F_Car_Green.png") {
     flat_car_1f_container(299, 702)
 }
 
-spriteset(set_FLAT_CAR_Green_20ft_loaded_18_wagon, "..\YSTset\Graphic\wagon\Flat_1F_Car_Green.png") {
+spriteset(set_FLAT_CAR_Green_20ft_loaded_18_wagon, "src\wagon\Flat_1F_Car_Green.png") {
     flat_car_1f_container(299, 729)
 }
 
 /*--------------------------------------------------------------------
 5.44.1.2.2.1 Graphics - 20ft Red loading
 --------------------------------------------------------------------*/
-spriteset(set_FLAT_CAR_Red_20ft_loading_01_wagon, "..\YSTset\Graphic\wagon\Flat_1F_Car_Red.png") {
+spriteset(set_FLAT_CAR_Red_20ft_loading_01_wagon, "src\wagon\Flat_1F_Car_Red.png") {
     flat_car_1f_container(80, 270)
 }
 
-spriteset(set_FLAT_CAR_Red_20ft_loading_02_wagon, "..\YSTset\Graphic\wagon\Flat_1F_Car_Red.png") {
+spriteset(set_FLAT_CAR_Red_20ft_loading_02_wagon, "src\wagon\Flat_1F_Car_Red.png") {
     flat_car_1f_container(80, 297)
 }
 
-spriteset(set_FLAT_CAR_Red_20ft_loading_03_wagon, "..\YSTset\Graphic\wagon\Flat_1F_Car_Red.png") {
+spriteset(set_FLAT_CAR_Red_20ft_loading_03_wagon, "src\wagon\Flat_1F_Car_Red.png") {
     flat_car_1f_container(80, 324)
 }
 
-spriteset(set_FLAT_CAR_Red_20ft_loading_04_wagon, "..\YSTset\Graphic\wagon\Flat_1F_Car_Red.png") {
+spriteset(set_FLAT_CAR_Red_20ft_loading_04_wagon, "src\wagon\Flat_1F_Car_Red.png") {
     flat_car_1f_container(80, 351)
 }
 
-spriteset(set_FLAT_CAR_Red_20ft_loading_05_wagon, "..\YSTset\Graphic\wagon\Flat_1F_Car_Red.png") {
+spriteset(set_FLAT_CAR_Red_20ft_loading_05_wagon, "src\wagon\Flat_1F_Car_Red.png") {
     flat_car_1f_container(80, 378)
 }
 
-spriteset(set_FLAT_CAR_Red_20ft_loading_06_wagon, "..\YSTset\Graphic\wagon\Flat_1F_Car_Red.png") {
+spriteset(set_FLAT_CAR_Red_20ft_loading_06_wagon, "src\wagon\Flat_1F_Car_Red.png") {
     flat_car_1f_container(80, 405)
 }
 
-spriteset(set_FLAT_CAR_Red_20ft_loading_07_wagon, "..\YSTset\Graphic\wagon\Flat_1F_Car_Red.png") {
+spriteset(set_FLAT_CAR_Red_20ft_loading_07_wagon, "src\wagon\Flat_1F_Car_Red.png") {
     flat_car_1f_container(80, 432)
 }
 
-spriteset(set_FLAT_CAR_Red_20ft_loading_08_wagon, "..\YSTset\Graphic\wagon\Flat_1F_Car_Red.png") {
+spriteset(set_FLAT_CAR_Red_20ft_loading_08_wagon, "src\wagon\Flat_1F_Car_Red.png") {
     flat_car_1f_container(80, 459)
 }
 
-spriteset(set_FLAT_CAR_Red_20ft_loading_09_wagon, "..\YSTset\Graphic\wagon\Flat_1F_Car_Red.png") {
+spriteset(set_FLAT_CAR_Red_20ft_loading_09_wagon, "src\wagon\Flat_1F_Car_Red.png") {
     flat_car_1f_container(80, 486)
 }
 
-spriteset(set_FLAT_CAR_Red_20ft_loading_10_wagon, "..\YSTset\Graphic\wagon\Flat_1F_Car_Red.png") {
+spriteset(set_FLAT_CAR_Red_20ft_loading_10_wagon, "src\wagon\Flat_1F_Car_Red.png") {
     flat_car_1f_container(80, 513)
 }
 
-spriteset(set_FLAT_CAR_Red_20ft_loading_11_wagon, "..\YSTset\Graphic\wagon\Flat_1F_Car_Red.png") {
+spriteset(set_FLAT_CAR_Red_20ft_loading_11_wagon, "src\wagon\Flat_1F_Car_Red.png") {
     flat_car_1f_container(80, 540)
 }
 
-spriteset(set_FLAT_CAR_Red_20ft_loading_12_wagon, "..\YSTset\Graphic\wagon\Flat_1F_Car_Red.png") {
+spriteset(set_FLAT_CAR_Red_20ft_loading_12_wagon, "src\wagon\Flat_1F_Car_Red.png") {
     flat_car_1f_container(80, 567)
 }
 
-spriteset(set_FLAT_CAR_Red_20ft_loading_13_wagon, "..\YSTset\Graphic\wagon\Flat_1F_Car_Red.png") {
+spriteset(set_FLAT_CAR_Red_20ft_loading_13_wagon, "src\wagon\Flat_1F_Car_Red.png") {
     flat_car_1f_container(80, 594)
 }
 
-spriteset(set_FLAT_CAR_Red_20ft_loading_14_wagon, "..\YSTset\Graphic\wagon\Flat_1F_Car_Red.png") {
+spriteset(set_FLAT_CAR_Red_20ft_loading_14_wagon, "src\wagon\Flat_1F_Car_Red.png") {
     flat_car_1f_container(80, 621)
 }
 
-spriteset(set_FLAT_CAR_Red_20ft_loading_15_wagon, "..\YSTset\Graphic\wagon\Flat_1F_Car_Red.png") {
+spriteset(set_FLAT_CAR_Red_20ft_loading_15_wagon, "src\wagon\Flat_1F_Car_Red.png") {
     flat_car_1f_container(80, 648)
 }
 
-spriteset(set_FLAT_CAR_Red_20ft_loading_16_wagon, "..\YSTset\Graphic\wagon\Flat_1F_Car_Red.png") {
+spriteset(set_FLAT_CAR_Red_20ft_loading_16_wagon, "src\wagon\Flat_1F_Car_Red.png") {
     flat_car_1f_container(80, 675)
 }
 
-spriteset(set_FLAT_CAR_Red_20ft_loading_17_wagon, "..\YSTset\Graphic\wagon\Flat_1F_Car_Red.png") {
+spriteset(set_FLAT_CAR_Red_20ft_loading_17_wagon, "src\wagon\Flat_1F_Car_Red.png") {
     flat_car_1f_container(80, 702)
 }
 
-spriteset(set_FLAT_CAR_Red_20ft_loading_18_wagon, "..\YSTset\Graphic\wagon\Flat_1F_Car_Red.png") {
+spriteset(set_FLAT_CAR_Red_20ft_loading_18_wagon, "src\wagon\Flat_1F_Car_Red.png") {
     flat_car_1f_container(80, 729)
 }
 
 /*--------------------------------------------------------------------
 5.44.1.2.2.2 Graphics - 20ft Red loaded
 --------------------------------------------------------------------*/
-spriteset(set_FLAT_CAR_Red_20ft_loaded_01_wagon, "..\YSTset\Graphic\wagon\Flat_1F_Car_Red.png") {
+spriteset(set_FLAT_CAR_Red_20ft_loaded_01_wagon, "src\wagon\Flat_1F_Car_Red.png") {
     flat_car_1f_container(299, 270)
 }
 
-spriteset(set_FLAT_CAR_Red_20ft_loaded_02_wagon, "..\YSTset\Graphic\wagon\Flat_1F_Car_Red.png") {
+spriteset(set_FLAT_CAR_Red_20ft_loaded_02_wagon, "src\wagon\Flat_1F_Car_Red.png") {
     flat_car_1f_container(299, 297)
 }
 
-spriteset(set_FLAT_CAR_Red_20ft_loaded_03_wagon, "..\YSTset\Graphic\wagon\Flat_1F_Car_Red.png") {
+spriteset(set_FLAT_CAR_Red_20ft_loaded_03_wagon, "src\wagon\Flat_1F_Car_Red.png") {
     flat_car_1f_container(299, 324)
 }
 
-spriteset(set_FLAT_CAR_Red_20ft_loaded_04_wagon, "..\YSTset\Graphic\wagon\Flat_1F_Car_Red.png") {
+spriteset(set_FLAT_CAR_Red_20ft_loaded_04_wagon, "src\wagon\Flat_1F_Car_Red.png") {
     flat_car_1f_container(299, 351)
 }
 
-spriteset(set_FLAT_CAR_Red_20ft_loaded_05_wagon, "..\YSTset\Graphic\wagon\Flat_1F_Car_Red.png") {
+spriteset(set_FLAT_CAR_Red_20ft_loaded_05_wagon, "src\wagon\Flat_1F_Car_Red.png") {
     flat_car_1f_container(299, 378)
 }
 
-spriteset(set_FLAT_CAR_Red_20ft_loaded_06_wagon, "..\YSTset\Graphic\wagon\Flat_1F_Car_Red.png") {
+spriteset(set_FLAT_CAR_Red_20ft_loaded_06_wagon, "src\wagon\Flat_1F_Car_Red.png") {
     flat_car_1f_container(299, 405)
 }
 
-spriteset(set_FLAT_CAR_Red_20ft_loaded_07_wagon, "..\YSTset\Graphic\wagon\Flat_1F_Car_Red.png") {
+spriteset(set_FLAT_CAR_Red_20ft_loaded_07_wagon, "src\wagon\Flat_1F_Car_Red.png") {
     flat_car_1f_container(299, 432)
 }
 
-spriteset(set_FLAT_CAR_Red_20ft_loaded_08_wagon, "..\YSTset\Graphic\wagon\Flat_1F_Car_Red.png") {
+spriteset(set_FLAT_CAR_Red_20ft_loaded_08_wagon, "src\wagon\Flat_1F_Car_Red.png") {
     flat_car_1f_container(299, 459)
 }
 
-spriteset(set_FLAT_CAR_Red_20ft_loaded_09_wagon, "..\YSTset\Graphic\wagon\Flat_1F_Car_Red.png") {
+spriteset(set_FLAT_CAR_Red_20ft_loaded_09_wagon, "src\wagon\Flat_1F_Car_Red.png") {
     flat_car_1f_container(299, 486)
 }
 
-spriteset(set_FLAT_CAR_Red_20ft_loaded_10_wagon, "..\YSTset\Graphic\wagon\Flat_1F_Car_Red.png") {
+spriteset(set_FLAT_CAR_Red_20ft_loaded_10_wagon, "src\wagon\Flat_1F_Car_Red.png") {
     flat_car_1f_container(299, 513)
 }
 
-spriteset(set_FLAT_CAR_Red_20ft_loaded_11_wagon, "..\YSTset\Graphic\wagon\Flat_1F_Car_Red.png") {
+spriteset(set_FLAT_CAR_Red_20ft_loaded_11_wagon, "src\wagon\Flat_1F_Car_Red.png") {
     flat_car_1f_container(299, 540)
 }
 
-spriteset(set_FLAT_CAR_Red_20ft_loaded_12_wagon, "..\YSTset\Graphic\wagon\Flat_1F_Car_Red.png") {
+spriteset(set_FLAT_CAR_Red_20ft_loaded_12_wagon, "src\wagon\Flat_1F_Car_Red.png") {
     flat_car_1f_container(299, 567)
 }
 
-spriteset(set_FLAT_CAR_Red_20ft_loaded_13_wagon, "..\YSTset\Graphic\wagon\Flat_1F_Car_Red.png") {
+spriteset(set_FLAT_CAR_Red_20ft_loaded_13_wagon, "src\wagon\Flat_1F_Car_Red.png") {
     flat_car_1f_container(299, 594)
 }
 
-spriteset(set_FLAT_CAR_Red_20ft_loaded_14_wagon, "..\YSTset\Graphic\wagon\Flat_1F_Car_Red.png") {
+spriteset(set_FLAT_CAR_Red_20ft_loaded_14_wagon, "src\wagon\Flat_1F_Car_Red.png") {
     flat_car_1f_container(299, 621)
 }
 
-spriteset(set_FLAT_CAR_Red_20ft_loaded_15_wagon, "..\YSTset\Graphic\wagon\Flat_1F_Car_Red.png") {
+spriteset(set_FLAT_CAR_Red_20ft_loaded_15_wagon, "src\wagon\Flat_1F_Car_Red.png") {
     flat_car_1f_container(299, 648)
 }
 
-spriteset(set_FLAT_CAR_Red_20ft_loaded_16_wagon, "..\YSTset\Graphic\wagon\Flat_1F_Car_Red.png") {
+spriteset(set_FLAT_CAR_Red_20ft_loaded_16_wagon, "src\wagon\Flat_1F_Car_Red.png") {
     flat_car_1f_container(299, 675)
 }
 
-spriteset(set_FLAT_CAR_Red_20ft_loaded_17_wagon, "..\YSTset\Graphic\wagon\Flat_1F_Car_Red.png") {
+spriteset(set_FLAT_CAR_Red_20ft_loaded_17_wagon, "src\wagon\Flat_1F_Car_Red.png") {
     flat_car_1f_container(299, 702)
 }
 
-spriteset(set_FLAT_CAR_Red_20ft_loaded_18_wagon, "..\YSTset\Graphic\wagon\Flat_1F_Car_Red.png") {
+spriteset(set_FLAT_CAR_Red_20ft_loaded_18_wagon, "src\wagon\Flat_1F_Car_Red.png") {
     flat_car_1f_container(299, 729)
 }
 
 /*--------------------------------------------------------------------
 5.44.1.1.1 Graphics - 40ft Green 패기형
 --------------------------------------------------------------------*/
-spriteset(set_FLAT_CAR_Green_40ftP_loaded_01_wagon, "..\YSTset\Graphic\wagon\Flat_1F_Car_Green.png") {
+spriteset(set_FLAT_CAR_Green_40ftP_loaded_01_wagon, "src\wagon\Flat_1F_Car_Green.png") {
     flat_car_1f_container(299, 27)
 }
 
-spriteset(set_FLAT_CAR_Green_40ftP_loaded_02_wagon, "..\YSTset\Graphic\wagon\Flat_1F_Car_Green.png") {
+spriteset(set_FLAT_CAR_Green_40ftP_loaded_02_wagon, "src\wagon\Flat_1F_Car_Green.png") {
     flat_car_1f_container(299, 54)
 }
 
-spriteset(set_FLAT_CAR_Green_40ftP_loaded_03_wagon, "..\YSTset\Graphic\wagon\Flat_1F_Car_Green.png") {
+spriteset(set_FLAT_CAR_Green_40ftP_loaded_03_wagon, "src\wagon\Flat_1F_Car_Green.png") {
     flat_car_1f_container(299, 81)
 }
 
-spriteset(set_FLAT_CAR_Green_40ftP_loaded_04_wagon, "..\YSTset\Graphic\wagon\Flat_1F_Car_Green.png") {
+spriteset(set_FLAT_CAR_Green_40ftP_loaded_04_wagon, "src\wagon\Flat_1F_Car_Green.png") {
     flat_car_1f_container(299, 108)
 }
 
-spriteset(set_FLAT_CAR_Green_40ftP_loaded_05_wagon, "..\YSTset\Graphic\wagon\Flat_1F_Car_Green.png") {
+spriteset(set_FLAT_CAR_Green_40ftP_loaded_05_wagon, "src\wagon\Flat_1F_Car_Green.png") {
     flat_car_1f_container(299, 135)
 }
 
-spriteset(set_FLAT_CAR_Green_40ftP_loaded_06_wagon, "..\YSTset\Graphic\wagon\Flat_1F_Car_Green.png") {
+spriteset(set_FLAT_CAR_Green_40ftP_loaded_06_wagon, "src\wagon\Flat_1F_Car_Green.png") {
     flat_car_1f_container(299, 162)
 }
 
-spriteset(set_FLAT_CAR_Green_40ftP_loaded_07_wagon, "..\YSTset\Graphic\wagon\Flat_1F_Car_Green.png") {
+spriteset(set_FLAT_CAR_Green_40ftP_loaded_07_wagon, "src\wagon\Flat_1F_Car_Green.png") {
     flat_car_1f_container(299, 189)
 }
 
-spriteset(set_FLAT_CAR_Green_40ftP_loaded_08_wagon, "..\YSTset\Graphic\wagon\Flat_1F_Car_Green.png") {
+spriteset(set_FLAT_CAR_Green_40ftP_loaded_08_wagon, "src\wagon\Flat_1F_Car_Green.png") {
     flat_car_1f_container(299, 216)
 }
 
-spriteset(set_FLAT_CAR_Green_40ftP_loaded_09_wagon, "..\YSTset\Graphic\wagon\Flat_1F_Car_Green.png") {
+spriteset(set_FLAT_CAR_Green_40ftP_loaded_09_wagon, "src\wagon\Flat_1F_Car_Green.png") {
     flat_car_1f_container(299, 243)
 }
 
 /*--------------------------------------------------------------------
 5.44.1.1.2 Graphics - 40ft Red 패기형
 --------------------------------------------------------------------*/
-spriteset(set_FLAT_CAR_Red_40ftP_loaded_01_wagon, "..\YSTset\Graphic\wagon\Flat_1F_Car_Red.png") {
+spriteset(set_FLAT_CAR_Red_40ftP_loaded_01_wagon, "src\wagon\Flat_1F_Car_Red.png") {
     flat_car_1f_container(299, 27)
 }
 
-spriteset(set_FLAT_CAR_Red_40ftP_loaded_02_wagon, "..\YSTset\Graphic\wagon\Flat_1F_Car_Red.png") {
+spriteset(set_FLAT_CAR_Red_40ftP_loaded_02_wagon, "src\wagon\Flat_1F_Car_Red.png") {
     flat_car_1f_container(299, 54)
 }
 
-spriteset(set_FLAT_CAR_Red_40ftP_loaded_03_wagon, "..\YSTset\Graphic\wagon\Flat_1F_Car_Red.png") {
+spriteset(set_FLAT_CAR_Red_40ftP_loaded_03_wagon, "src\wagon\Flat_1F_Car_Red.png") {
     flat_car_1f_container(299, 81)
 }
 
-spriteset(set_FLAT_CAR_Red_40ftP_loaded_04_wagon, "..\YSTset\Graphic\wagon\Flat_1F_Car_Red.png") {
+spriteset(set_FLAT_CAR_Red_40ftP_loaded_04_wagon, "src\wagon\Flat_1F_Car_Red.png") {
     flat_car_1f_container(299, 108)
 }
 
-spriteset(set_FLAT_CAR_Red_40ftP_loaded_05_wagon, "..\YSTset\Graphic\wagon\Flat_1F_Car_Red.png") {
+spriteset(set_FLAT_CAR_Red_40ftP_loaded_05_wagon, "src\wagon\Flat_1F_Car_Red.png") {
     flat_car_1f_container(299, 135)
 }
 
-spriteset(set_FLAT_CAR_Red_40ftP_loaded_06_wagon, "..\YSTset\Graphic\wagon\Flat_1F_Car_Red.png") {
+spriteset(set_FLAT_CAR_Red_40ftP_loaded_06_wagon, "src\wagon\Flat_1F_Car_Red.png") {
     flat_car_1f_container(299, 162)
 }
 
-spriteset(set_FLAT_CAR_Red_40ftP_loaded_07_wagon, "..\YSTset\Graphic\wagon\Flat_1F_Car_Red.png") {
+spriteset(set_FLAT_CAR_Red_40ftP_loaded_07_wagon, "src\wagon\Flat_1F_Car_Red.png") {
     flat_car_1f_container(299, 189)
 }
 
-spriteset(set_FLAT_CAR_Red_40ftP_loaded_08_wagon, "..\YSTset\Graphic\wagon\Flat_1F_Car_Red.png") {
+spriteset(set_FLAT_CAR_Red_40ftP_loaded_08_wagon, "src\wagon\Flat_1F_Car_Red.png") {
     flat_car_1f_container(299, 216)
 }
 
-spriteset(set_FLAT_CAR_Red_40ftP_loaded_09_wagon, "..\YSTset\Graphic\wagon\Flat_1F_Car_Red.png") {
+spriteset(set_FLAT_CAR_Red_40ftP_loaded_09_wagon, "src\wagon\Flat_1F_Car_Red.png") {
     flat_car_1f_container(299, 243)
 }
 
@@ -10026,42 +9989,42 @@ item(FEAT_TRAINS, FLAT_1F){
 /*--------------------------------------------------------------------
 5.45.1.1. Graphics - Tank Green
 --------------------------------------------------------------------*/
-spriteset(set_FLAT_TANK_CAR_purchase, "..\YSTset\Graphic\wagon\Flat_Tank_Car_Green.png") {
+spriteset(set_FLAT_TANK_CAR_purchase, "src\wagon\Flat_Tank_Car_Green.png") {
     tmpl_wagon_purchase(0, 0)
 }
 
-spriteset(set_FLAT_TANK_CAR_Green_empty_wagon, "..\YSTset\Graphic\wagon\Flat_Tank_Car_Green.png") {
+spriteset(set_FLAT_TANK_CAR_Green_empty_wagon, "src\wagon\Flat_Tank_Car_Green.png") {
     flat_car_1f_container(80, 0)
 }
 
-spriteset(set_FLAT_TANK_CAR_Green_loaded_wagon, "..\YSTset\Graphic\wagon\Flat_Tank_Car_Green.png") {
+spriteset(set_FLAT_TANK_CAR_Green_loaded_wagon, "src\wagon\Flat_Tank_Car_Green.png") {
     flat_car_1f_container(80, 27)
 }
 
-spriteset(set_FLAT_TANK_CAR_Green_loading_01_wagon, "..\YSTset\Graphic\wagon\Flat_Tank_Car_Green.png") {
+spriteset(set_FLAT_TANK_CAR_Green_loading_01_wagon, "src\wagon\Flat_Tank_Car_Green.png") {
     flat_car_1f_container(80, 54)
 }
 
-spriteset(set_FLAT_TANK_CAR_Green_loading_02_wagon, "..\YSTset\Graphic\wagon\Flat_Tank_Car_Green.png") {
+spriteset(set_FLAT_TANK_CAR_Green_loading_02_wagon, "src\wagon\Flat_Tank_Car_Green.png") {
     flat_car_1f_container(80, 81)
 }
 
 /*--------------------------------------------------------------------
 5.45.1.2. Graphics - Tank Red
 --------------------------------------------------------------------*/
-spriteset(set_FLAT_TANK_CAR_Red_empty_wagon, "..\YSTset\Graphic\wagon\Flat_Tank_Car_Red.png") {
+spriteset(set_FLAT_TANK_CAR_Red_empty_wagon, "src\wagon\Flat_Tank_Car_Red.png") {
     flat_car_1f_container(80, 0)
 }
 
-spriteset(set_FLAT_TANK_CAR_Red_loaded_wagon, "..\YSTset\Graphic\wagon\Flat_Tank_Car_Red.png") {
+spriteset(set_FLAT_TANK_CAR_Red_loaded_wagon, "src\wagon\Flat_Tank_Car_Red.png") {
     flat_car_1f_container(80, 27)
 }
 
-spriteset(set_FLAT_TANK_CAR_Red_loading_01_wagon, "..\YSTset\Graphic\wagon\Flat_Tank_Car_Red.png") {
+spriteset(set_FLAT_TANK_CAR_Red_loading_01_wagon, "src\wagon\Flat_Tank_Car_Red.png") {
     flat_car_1f_container(80, 54)
 }
 
-spriteset(set_FLAT_TANK_CAR_Red_loading_02_wagon, "..\YSTset\Graphic\wagon\Flat_Tank_Car_Red.png") {
+spriteset(set_FLAT_TANK_CAR_Red_loading_02_wagon, "src\wagon\Flat_Tank_Car_Red.png") {
     flat_car_1f_container(80, 81)
 }
 
@@ -10213,125 +10176,125 @@ item(FEAT_TRAINS, FLAT_TANK){
 /*--------------------------------------------------------------------
 5.46.1.1 Graphics - 40ft
 --------------------------------------------------------------------*/
-spriteset(set_FLAT_2F_CAR_purchase, "..\YSTset\Graphic\wagon\Flat_2F_Car.png") {
+spriteset(set_FLAT_2F_CAR_purchase, "src\wagon\Flat_2F_Car.png") {
     tmpl_Flat_2F_purchase(0, 0)
 }
 
-spriteset(set_FLAT_2F_CAR_empty_wagon, "..\YSTset\Graphic\wagon\Flat_2F_Car.png") {
+spriteset(set_FLAT_2F_CAR_empty_wagon, "src\wagon\Flat_2F_Car.png") {
     flat_2F_4040_Car(80, 0)
 }
 
-spriteset(set_FLAT_2F_CAR_40ft_loading_01_wagon, "..\YSTset\Graphic\wagon\Flat_2F_Car.png") {
+spriteset(set_FLAT_2F_CAR_40ft_loading_01_wagon, "src\wagon\Flat_2F_Car.png") {
     flat_2F_4040_Car(80, 27)
 }
 
-spriteset(set_FLAT_2F_CAR_40ft_loading_02_wagon, "..\YSTset\Graphic\wagon\Flat_2F_Car.png") {
+spriteset(set_FLAT_2F_CAR_40ft_loading_02_wagon, "src\wagon\Flat_2F_Car.png") {
     flat_2F_4040_Car(80, 54)
 }
 
-spriteset(set_FLAT_2F_CAR_40ft_loading_03_wagon, "..\YSTset\Graphic\wagon\Flat_2F_Car.png") {
+spriteset(set_FLAT_2F_CAR_40ft_loading_03_wagon, "src\wagon\Flat_2F_Car.png") {
     flat_2F_4040_Car(80, 81)
 }
 
-spriteset(set_FLAT_2F_CAR_40ft_loading_04_wagon, "..\YSTset\Graphic\wagon\Flat_2F_Car.png") {
+spriteset(set_FLAT_2F_CAR_40ft_loading_04_wagon, "src\wagon\Flat_2F_Car.png") {
     flat_2F_4040_Car(80, 108)
 }
 
-spriteset(set_FLAT_2F_CAR_40ft_loading_05_wagon, "..\YSTset\Graphic\wagon\Flat_2F_Car.png") {
+spriteset(set_FLAT_2F_CAR_40ft_loading_05_wagon, "src\wagon\Flat_2F_Car.png") {
     flat_2F_4040_Car(80, 135)
 }
 
-spriteset(set_FLAT_2F_CAR_40ft_loading_06_wagon, "..\YSTset\Graphic\wagon\Flat_2F_Car.png") {
+spriteset(set_FLAT_2F_CAR_40ft_loading_06_wagon, "src\wagon\Flat_2F_Car.png") {
     flat_2F_4040_Car(80, 162)
 }
 
-spriteset(set_FLAT_2F_CAR_40ft_loading_07_wagon, "..\YSTset\Graphic\wagon\Flat_2F_Car.png") {
+spriteset(set_FLAT_2F_CAR_40ft_loading_07_wagon, "src\wagon\Flat_2F_Car.png") {
     flat_2F_4040_Car(80, 189)
 }
 
-spriteset(set_FLAT_2F_CAR_40ft_loading_08_wagon, "..\YSTset\Graphic\wagon\Flat_2F_Car.png") {
+spriteset(set_FLAT_2F_CAR_40ft_loading_08_wagon, "src\wagon\Flat_2F_Car.png") {
     flat_2F_4040_Car(80, 216)
 }
 
-spriteset(set_FLAT_2F_CAR_40ft_loading_09_wagon, "..\YSTset\Graphic\wagon\Flat_2F_Car.png") {
+spriteset(set_FLAT_2F_CAR_40ft_loading_09_wagon, "src\wagon\Flat_2F_Car.png") {
     flat_2F_4040_Car(80, 243)
 }
 
 /*--------------------------------------------------------------------
 5.46.1.2 Graphics - 40+40ft
 --------------------------------------------------------------------*/
-spriteset(set_FLAT_2F_CAR_4040ft_loaded_01_wagon, "..\YSTset\Graphic\wagon\Flat_2F_Car.png") {
+spriteset(set_FLAT_2F_CAR_4040ft_loaded_01_wagon, "src\wagon\Flat_2F_Car.png") {
     flat_2F_4040_Car(197, 27)
 }
 
-spriteset(set_FLAT_2F_CAR_4040ft_loaded_02_wagon, "..\YSTset\Graphic\wagon\Flat_2F_Car.png") {
+spriteset(set_FLAT_2F_CAR_4040ft_loaded_02_wagon, "src\wagon\Flat_2F_Car.png") {
     flat_2F_4040_Car(197, 54)
 }
 
-spriteset(set_FLAT_2F_CAR_4040ft_loaded_03_wagon, "..\YSTset\Graphic\wagon\Flat_2F_Car.png") {
+spriteset(set_FLAT_2F_CAR_4040ft_loaded_03_wagon, "src\wagon\Flat_2F_Car.png") {
     flat_2F_4040_Car(197, 81)
 }
 
-spriteset(set_FLAT_2F_CAR_4040ft_loaded_04_wagon, "..\YSTset\Graphic\wagon\Flat_2F_Car.png") {
+spriteset(set_FLAT_2F_CAR_4040ft_loaded_04_wagon, "src\wagon\Flat_2F_Car.png") {
     flat_2F_4040_Car(197, 108)
 }
 
-spriteset(set_FLAT_2F_CAR_4040ft_loaded_05_wagon, "..\YSTset\Graphic\wagon\Flat_2F_Car.png") {
+spriteset(set_FLAT_2F_CAR_4040ft_loaded_05_wagon, "src\wagon\Flat_2F_Car.png") {
     flat_2F_4040_Car(197, 135)
 }
 
-spriteset(set_FLAT_2F_CAR_4040ft_loaded_06_wagon, "..\YSTset\Graphic\wagon\Flat_2F_Car.png") {
+spriteset(set_FLAT_2F_CAR_4040ft_loaded_06_wagon, "src\wagon\Flat_2F_Car.png") {
     flat_2F_4040_Car(197, 162)
 }
 
-spriteset(set_FLAT_2F_CAR_4040ft_loaded_07_wagon, "..\YSTset\Graphic\wagon\Flat_2F_Car.png") {
+spriteset(set_FLAT_2F_CAR_4040ft_loaded_07_wagon, "src\wagon\Flat_2F_Car.png") {
     flat_2F_4040_Car(197, 189)
 }
 
-spriteset(set_FLAT_2F_CAR_4040ft_loaded_08_wagon, "..\YSTset\Graphic\wagon\Flat_2F_Car.png") {
+spriteset(set_FLAT_2F_CAR_4040ft_loaded_08_wagon, "src\wagon\Flat_2F_Car.png") {
     flat_2F_4040_Car(197, 216)
 }
 
-spriteset(set_FLAT_2F_CAR_4040ft_loaded_09_wagon, "..\YSTset\Graphic\wagon\Flat_2F_Car.png") {
+spriteset(set_FLAT_2F_CAR_4040ft_loaded_09_wagon, "src\wagon\Flat_2F_Car.png") {
     flat_2F_4040_Car(197, 243)
 }
 
 /*--------------------------------------------------------------------
 5.46.1.3 Graphics - 40+53ft
 --------------------------------------------------------------------*/
-spriteset(set_FLAT_2F_CAR_4053ft_loaded_01_wagon, "..\YSTset\Graphic\wagon\Flat_2F_Car.png") {
+spriteset(set_FLAT_2F_CAR_4053ft_loaded_01_wagon, "src\wagon\Flat_2F_Car.png") {
     flat_2F_4053_Car(314, 27)
 }
 
-spriteset(set_FLAT_2F_CAR_4053ft_loaded_02_wagon, "..\YSTset\Graphic\wagon\Flat_2F_Car.png") {
+spriteset(set_FLAT_2F_CAR_4053ft_loaded_02_wagon, "src\wagon\Flat_2F_Car.png") {
     flat_2F_4053_Car(314, 54)
 }
 
-spriteset(set_FLAT_2F_CAR_4053ft_loaded_03_wagon, "..\YSTset\Graphic\wagon\Flat_2F_Car.png") {
+spriteset(set_FLAT_2F_CAR_4053ft_loaded_03_wagon, "src\wagon\Flat_2F_Car.png") {
     flat_2F_4053_Car(314, 81)
 }
 
-spriteset(set_FLAT_2F_CAR_4053ft_loaded_04_wagon, "..\YSTset\Graphic\wagon\Flat_2F_Car.png") {
+spriteset(set_FLAT_2F_CAR_4053ft_loaded_04_wagon, "src\wagon\Flat_2F_Car.png") {
     flat_2F_4053_Car(314, 108)
 }
 
-spriteset(set_FLAT_2F_CAR_4053ft_loaded_05_wagon, "..\YSTset\Graphic\wagon\Flat_2F_Car.png") {
+spriteset(set_FLAT_2F_CAR_4053ft_loaded_05_wagon, "src\wagon\Flat_2F_Car.png") {
     flat_2F_4053_Car(314, 135)
 }
 
-spriteset(set_FLAT_2F_CAR_4053ft_loaded_06_wagon, "..\YSTset\Graphic\wagon\Flat_2F_Car.png") {
+spriteset(set_FLAT_2F_CAR_4053ft_loaded_06_wagon, "src\wagon\Flat_2F_Car.png") {
     flat_2F_4053_Car(314, 162)
 }
 
-spriteset(set_FLAT_2F_CAR_4053ft_loaded_07_wagon, "..\YSTset\Graphic\wagon\Flat_2F_Car.png") {
+spriteset(set_FLAT_2F_CAR_4053ft_loaded_07_wagon, "src\wagon\Flat_2F_Car.png") {
     flat_2F_4053_Car(314, 189)
 }
 
-spriteset(set_FLAT_2F_CAR_4053ft_loaded_08_wagon, "..\YSTset\Graphic\wagon\Flat_2F_Car.png") {
+spriteset(set_FLAT_2F_CAR_4053ft_loaded_08_wagon, "src\wagon\Flat_2F_Car.png") {
     flat_2F_4053_Car(314, 216)
 }
 
-spriteset(set_FLAT_2F_CAR_4053ft_loaded_09_wagon, "..\YSTset\Graphic\wagon\Flat_2F_Car.png") {
+spriteset(set_FLAT_2F_CAR_4053ft_loaded_09_wagon, "src\wagon\Flat_2F_Car.png") {
     flat_2F_4053_Car(314, 243)
 }
 
@@ -10672,69 +10635,69 @@ item(FEAT_TRAINS, FLAT_2F){
 /*--------------------------------------------------------------------
 5.47.1 Graphics
 --------------------------------------------------------------------*/
-spriteset(set_MTR_purchase, "..\YSTset\Graphic\locomotive\MTR\MTR_Cammall.png"){
+spriteset(set_MTR_purchase, "src\locomotive\MTR\MTR_Cammall.png"){
 	tmpl_purchase(0, 0)
 }
 
 /*--------------------------------------------------------------------
 5.47.1.1. MTR 기본차량
 --------------------------------------------------------------------*/
-spriteset(set_MTRH_purchase, "..\YSTset\Graphic\locomotive\MTR\MTR_Cammall.png"){
+spriteset(set_MTRH_purchase, "src\locomotive\MTR\MTR_Cammall.png"){
 	tmpl_purchase_for_dualhead(0, 108)
 }
 
-spriteset(set_MTR_engineH, "..\YSTset\Graphic\locomotive\MTR\MTR_Cammall.png"){
+spriteset(set_MTR_engineH, "src\locomotive\MTR\MTR_Cammall.png"){
 	engine(80, 0)
 }
 
-spriteset(set_MTR_wagon_start, "..\YSTset\Graphic\locomotive\MTR\MTR_Cammall.png"){
+spriteset(set_MTR_wagon_start, "src\locomotive\MTR\MTR_Cammall.png"){
 	wagon_start(80, 27)
 }
 
-spriteset(set_MTR_wagon, "..\YSTset\Graphic\locomotive\MTR\MTR_Cammall.png") {
+spriteset(set_MTR_wagon, "src\locomotive\MTR\MTR_Cammall.png") {
     wagon_1F(80, 54)
 }
 
-spriteset(set_MTR_wagon_r, "..\YSTset\Graphic\locomotive\MTR\MTR_Cammall.png") {
+spriteset(set_MTR_wagon_r, "src\locomotive\MTR\MTR_Cammall.png") {
     wagon_1F_r(80, 54)
 }
 
-spriteset(set_MTR_wagon_end, "..\YSTset\Graphic\locomotive\MTR\MTR_Cammall.png"){
+spriteset(set_MTR_wagon_end, "src\locomotive\MTR\MTR_Cammall.png"){
 	wagon_start(80, 81)
 }
 
-spriteset(set_MTR_engineT, "..\YSTset\Graphic\locomotive\MTR\MTR_Cammall.png"){
+spriteset(set_MTR_engineT, "src\locomotive\MTR\MTR_Cammall.png"){
 	engine_r(80, 108)
 }
 
 /*--------------------------------------------------------------------
 5.47.1.2. MTR 개조차량
 --------------------------------------------------------------------*/
-spriteset(set_MTRMH_purchase, "..\YSTset\Graphic\locomotive\MTR\MTR_Cammall.png"){
+spriteset(set_MTRMH_purchase, "src\locomotive\MTR\MTR_Cammall.png"){
 	tmpl_purchase_for_dualhead(0, 243)
 }
 
-spriteset(set_MTRM_engineH, "..\YSTset\Graphic\locomotive\MTR\MTR_Cammall.png"){
+spriteset(set_MTRM_engineH, "src\locomotive\MTR\MTR_Cammall.png"){
 	engine(80, 135)
 }
 
-spriteset(set_MTRM_wagon_start, "..\YSTset\Graphic\locomotive\MTR\MTR_Cammall.png"){
+spriteset(set_MTRM_wagon_start, "src\locomotive\MTR\MTR_Cammall.png"){
 	wagon_start(80, 162)
 }
 
-spriteset(set_MTRM_wagon, "..\YSTset\Graphic\locomotive\MTR\MTR_Cammall.png") {
+spriteset(set_MTRM_wagon, "src\locomotive\MTR\MTR_Cammall.png") {
     wagon_1F(80, 189)
 }
 
-spriteset(set_MTRM_wagon_r, "..\YSTset\Graphic\locomotive\MTR\MTR_Cammall.png") {
+spriteset(set_MTRM_wagon_r, "src\locomotive\MTR\MTR_Cammall.png") {
     wagon_1F_r(80, 189)
 }
 
-spriteset(set_MTRM_wagon_end, "..\YSTset\Graphic\locomotive\MTR\MTR_Cammall.png"){
+spriteset(set_MTRM_wagon_end, "src\locomotive\MTR\MTR_Cammall.png"){
 	wagon_start(80, 216)
 }
 
-spriteset(set_MTRM_engineT, "..\YSTset\Graphic\locomotive\MTR\MTR_Cammall.png"){
+spriteset(set_MTRM_engineT, "src\locomotive\MTR\MTR_Cammall.png"){
 	engine_r(80, 243)
 }
 
@@ -10742,31 +10705,31 @@ spriteset(set_MTRM_engineT, "..\YSTset\Graphic\locomotive\MTR\MTR_Cammall.png"){
 /*--------------------------------------------------------------------
 5.47.1.3. MTR 디즈니선
 --------------------------------------------------------------------*/
-spriteset(set_MTRDH_purchase, "..\YSTset\Graphic\locomotive\MTR\MTR_Cammall.png"){
+spriteset(set_MTRDH_purchase, "src\locomotive\MTR\MTR_Cammall.png"){
 	tmpl_purchase_for_dualhead(0, 378)
 }
 
-spriteset(set_MTRD_engineH, "..\YSTset\Graphic\locomotive\MTR\MTR_Cammall.png"){
+spriteset(set_MTRD_engineH, "src\locomotive\MTR\MTR_Cammall.png"){
 	engine(80, 270)
 }
 
-spriteset(set_MTRD_wagon_start, "..\YSTset\Graphic\locomotive\MTR\MTR_Cammall.png"){
+spriteset(set_MTRD_wagon_start, "src\locomotive\MTR\MTR_Cammall.png"){
 	wagon_start(80, 297)
 }
 
-spriteset(set_MTRD_wagon, "..\YSTset\Graphic\locomotive\MTR\MTR_Cammall.png") {
+spriteset(set_MTRD_wagon, "src\locomotive\MTR\MTR_Cammall.png") {
     wagon_1F(80, 324)
 }
 
-spriteset(set_MTRD_wagon_r, "..\YSTset\Graphic\locomotive\MTR\MTR_Cammall.png") {
+spriteset(set_MTRD_wagon_r, "src\locomotive\MTR\MTR_Cammall.png") {
     wagon_1F_r(80, 324)
 }
 
-spriteset(set_MTRD_wagon_end, "..\YSTset\Graphic\locomotive\MTR\MTR_Cammall.png"){
+spriteset(set_MTRD_wagon_end, "src\locomotive\MTR\MTR_Cammall.png"){
 	wagon_start(80, 351)
 }
 
-spriteset(set_MTRD_engineT, "..\YSTset\Graphic\locomotive\MTR\MTR_Cammall.png"){
+spriteset(set_MTRD_engineT, "src\locomotive\MTR\MTR_Cammall.png"){
 	engine_r(80, 378)
 }
 
@@ -10915,69 +10878,69 @@ item(FEAT_TRAINS, MTR){
 /*--------------------------------------------------------------------
 5.48.1 Graphics
 --------------------------------------------------------------------*/
-spriteset(set_MTR_CNR_Changchun_purchase, "..\YSTset\Graphic\locomotive\MTR\MTR_CNR_Changchun.png"){
+spriteset(set_MTR_CNR_Changchun_purchase, "src\locomotive\MTR\MTR_CNR_Changchun.png"){
 	tmpl_purchase(0, 0)
 }
 
 /*--------------------------------------------------------------------
 5.48.1.4. MTR CNR Changchun
 --------------------------------------------------------------------*/
-spriteset(set_MTRCNRH_purchase, "..\YSTset\Graphic\locomotive\MTR\MTR_CNR_Changchun.png"){
+spriteset(set_MTRCNRH_purchase, "src\locomotive\MTR\MTR_CNR_Changchun.png"){
 	tmpl_purchase_for_dualhead(0, 108)
 }
 
-spriteset(set_MTRCNR_engineH, "..\YSTset\Graphic\locomotive\MTR\MTR_CNR_Changchun.png"){
+spriteset(set_MTRCNR_engineH, "src\locomotive\MTR\MTR_CNR_Changchun.png"){
 	engine(80, 0)
 }
 
-spriteset(set_MTRCNR_wagon_start, "..\YSTset\Graphic\locomotive\MTR\MTR_CNR_Changchun.png"){
+spriteset(set_MTRCNR_wagon_start, "src\locomotive\MTR\MTR_CNR_Changchun.png"){
 	wagon_start(80, 27)
 }
 
-spriteset(set_MTRCNR_wagon, "..\YSTset\Graphic\locomotive\MTR\MTR_CNR_Changchun.png") {
+spriteset(set_MTRCNR_wagon, "src\locomotive\MTR\MTR_CNR_Changchun.png") {
     wagon_1F(80, 54)
 }
 
-spriteset(set_MTRCNR_wagon_r, "..\YSTset\Graphic\locomotive\MTR\MTR_CNR_Changchun.png") {
+spriteset(set_MTRCNR_wagon_r, "src\locomotive\MTR\MTR_CNR_Changchun.png") {
     wagon_1F_r(80, 54)
 }
 
-spriteset(set_MTRCNR_wagon_end, "..\YSTset\Graphic\locomotive\MTR\MTR_CNR_Changchun.png"){
+spriteset(set_MTRCNR_wagon_end, "src\locomotive\MTR\MTR_CNR_Changchun.png"){
 	wagon_start(80, 81)
 }
 
-spriteset(set_MTRCNR_engineT, "..\YSTset\Graphic\locomotive\MTR\MTR_CNR_Changchun.png"){
+spriteset(set_MTRCNR_engineT, "src\locomotive\MTR\MTR_CNR_Changchun.png"){
 	engine_r(80, 108)
 }
 
 /*--------------------------------------------------------------------
 5.48.1.5. MTR CNR Changchun 남부섬
 --------------------------------------------------------------------*/
-spriteset(set_MTRCNRNH_purchase, "..\YSTset\Graphic\locomotive\MTR\MTR_CNR_Changchun.png"){
+spriteset(set_MTRCNRNH_purchase, "src\locomotive\MTR\MTR_CNR_Changchun.png"){
 	tmpl_purchase_for_dualhead(0, 243)
 }
 
-spriteset(set_MTRCNRN_engineH, "..\YSTset\Graphic\locomotive\MTR\MTR_CNR_Changchun.png"){
+spriteset(set_MTRCNRN_engineH, "src\locomotive\MTR\MTR_CNR_Changchun.png"){
 	engine(80, 135)
 }
 
-spriteset(set_MTRCNRN_wagon_start, "..\YSTset\Graphic\locomotive\MTR\MTR_CNR_Changchun.png"){
+spriteset(set_MTRCNRN_wagon_start, "src\locomotive\MTR\MTR_CNR_Changchun.png"){
 	wagon_start(80, 162)
 }
 
-spriteset(set_MTRCNRN_wagon, "..\YSTset\Graphic\locomotive\MTR\MTR_CNR_Changchun.png") {
+spriteset(set_MTRCNRN_wagon, "src\locomotive\MTR\MTR_CNR_Changchun.png") {
     wagon_1F(80, 189)
 }
 
-spriteset(set_MTRCNRN_wagon_r, "..\YSTset\Graphic\locomotive\MTR\MTR_CNR_Changchun.png") {
+spriteset(set_MTRCNRN_wagon_r, "src\locomotive\MTR\MTR_CNR_Changchun.png") {
     wagon_1F_r(80, 189)
 }
 
-spriteset(set_MTRCNRN_wagon_end, "..\YSTset\Graphic\locomotive\MTR\MTR_CNR_Changchun.png"){
+spriteset(set_MTRCNRN_wagon_end, "src\locomotive\MTR\MTR_CNR_Changchun.png"){
 	wagon_start(80, 216)
 }
 
-spriteset(set_MTRCNRN_engineT, "..\YSTset\Graphic\locomotive\MTR\MTR_CNR_Changchun.png"){
+spriteset(set_MTRCNRN_engineT, "src\locomotive\MTR\MTR_CNR_Changchun.png"){
 	engine_r(80, 243)
 }
 
@@ -11119,35 +11082,35 @@ item(FEAT_TRAINS, MTR_CNR){
 /*--------------------------------------------------------------------
 5.49.1 Graphics
 --------------------------------------------------------------------*/
-spriteset(set_MTR_CRRC_Changchun_purchase, "..\YSTset\Graphic\locomotive\MTR\MTR_CNR_Changchun.png"){
+spriteset(set_MTR_CRRC_Changchun_purchase, "src\locomotive\MTR\MTR_CNR_Changchun.png"){
 	tmpl_purchase(0, 0)
 }
 
-spriteset(set_MTRCRRCH_purchase, "..\YSTset\Graphic\locomotive\MTR\MTR_CNR_Changchun.png"){
+spriteset(set_MTRCRRCH_purchase, "src\locomotive\MTR\MTR_CNR_Changchun.png"){
 	tmpl_purchase_for_dualhead(0, 108)
 }
 
-spriteset(set_MTRCRRC_engineH, "..\YSTset\Graphic\locomotive\MTR\MTR_CNR_Changchun.png"){
+spriteset(set_MTRCRRC_engineH, "src\locomotive\MTR\MTR_CNR_Changchun.png"){
 	engine(80, 0)
 }
 
-spriteset(set_MTRCRRC_wagon_start, "..\YSTset\Graphic\locomotive\MTR\MTR_CNR_Changchun.png"){
+spriteset(set_MTRCRRC_wagon_start, "src\locomotive\MTR\MTR_CNR_Changchun.png"){
 	wagon_start(80, 27)
 }
 
-spriteset(set_MTRCRRC_wagon, "..\YSTset\Graphic\locomotive\MTR\MTR_CNR_Changchun.png") {
+spriteset(set_MTRCRRC_wagon, "src\locomotive\MTR\MTR_CNR_Changchun.png") {
     wagon_1F(80, 54)
 }
 
-spriteset(set_MTRCRRC_wagon_r, "..\YSTset\Graphic\locomotive\MTR\MTR_CNR_Changchun.png") {
+spriteset(set_MTRCRRC_wagon_r, "src\locomotive\MTR\MTR_CNR_Changchun.png") {
     wagon_1F_r(80, 54)
 }
 
-spriteset(set_MTRCRRC_wagon_end, "..\YSTset\Graphic\locomotive\MTR\MTR_CNR_Changchun.png"){
+spriteset(set_MTRCRRC_wagon_end, "src\locomotive\MTR\MTR_CNR_Changchun.png"){
 	wagon_start(80, 81)
 }
 
-spriteset(set_MTRCRRC_engineT, "..\YSTset\Graphic\locomotive\MTR\MTR_CNR_Changchun.png"){
+spriteset(set_MTRCRRC_engineT, "src\locomotive\MTR\MTR_CNR_Changchun.png"){
 	engine_r(80, 108)
 }
 
@@ -11252,35 +11215,35 @@ item(FEAT_TRAINS, MTR_CRRC){
 /*--------------------------------------------------------------------
 5.47.1.6. MTR 미쓰비씨
 --------------------------------------------------------------------*/
-spriteset(set_MTRHM_purchase, "..\YSTset\Graphic\locomotive\MTR\MTR_Rotem_Mitsubishi.png"){
+spriteset(set_MTRHM_purchase, "src\locomotive\MTR\MTR_Rotem_Mitsubishi.png"){
 	tmpl_purchase(0, 0)
 }
 
-spriteset(set_MTRHH_purchase, "..\YSTset\Graphic\locomotive\MTR\MTR_Rotem_Mitsubishi.png"){
+spriteset(set_MTRHH_purchase, "src\locomotive\MTR\MTR_Rotem_Mitsubishi.png"){
 	tmpl_purchase_for_dualhead(0, 108)
 }
 
-spriteset(set_MTRH_engineH, "..\YSTset\Graphic\locomotive\MTR\MTR_Rotem_Mitsubishi.png"){
+spriteset(set_MTRH_engineH, "src\locomotive\MTR\MTR_Rotem_Mitsubishi.png"){
 	engine(80, 0)
 }
 
-spriteset(set_MTRH_wagon_start, "..\YSTset\Graphic\locomotive\MTR\MTR_Rotem_Mitsubishi.png"){
+spriteset(set_MTRH_wagon_start, "src\locomotive\MTR\MTR_Rotem_Mitsubishi.png"){
 	wagon_start(80, 27)
 }
 
-spriteset(set_MTRH_wagon, "..\YSTset\Graphic\locomotive\MTR\MTR_Rotem_Mitsubishi.png") {
+spriteset(set_MTRH_wagon, "src\locomotive\MTR\MTR_Rotem_Mitsubishi.png") {
     wagon_1F(80, 54)
 }
 
-spriteset(set_MTRH_wagon_r, "..\YSTset\Graphic\locomotive\MTR\MTR_Rotem_Mitsubishi.png") {
+spriteset(set_MTRH_wagon_r, "src\locomotive\MTR\MTR_Rotem_Mitsubishi.png") {
     wagon_1F_r(80, 54)
 }
 
-spriteset(set_MTRH_wagon_end, "..\YSTset\Graphic\locomotive\MTR\MTR_Rotem_Mitsubishi.png"){
+spriteset(set_MTRH_wagon_end, "src\locomotive\MTR\MTR_Rotem_Mitsubishi.png"){
 	wagon_start(80, 81)
 }
 
-spriteset(set_MTRH_engineT, "..\YSTset\Graphic\locomotive\MTR\MTR_Rotem_Mitsubishi.png"){
+spriteset(set_MTRH_engineT, "src\locomotive\MTR\MTR_Rotem_Mitsubishi.png"){
 	engine_r(80, 108)
 }
 
