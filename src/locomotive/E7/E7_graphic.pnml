@@ -18,11 +18,11 @@ spriteset(set_E7_wagon_start, "src\locomotive\E7\E7.png"){
 }
 
 spriteset(set_E7_wagon, "src\locomotive\E7\E7.png") {
-    wagon_1F(80, 54)
+	wagon_1F(80, 54)
 }
 
 spriteset(set_E7_wagon_r, "src\locomotive\E7\E7.png") {
-    wagon_1F_r(80, 54)
+	wagon_1F_r(80, 54)
 }
 
 spriteset(set_E7_wagon_end, "src\locomotive\E7\E7.png"){
@@ -37,5 +37,5 @@ spriteset(set_E7_engineT, "src\locomotive\E7\E7.png"){
 구매정보
 --------------------------------------------------------------------*/
 switch(FEAT_TRAINS, SELF, sw_E7_purchase, cargo_subtype) {
-    set_E7_purchase;
+	set_E7_purchase;
 }
