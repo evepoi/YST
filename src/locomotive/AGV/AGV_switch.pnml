@@ -17,8 +17,8 @@ switch(FEAT_TRAINS, SELF, sw_AGV_engineT, cargo_subtype) {
 }
 
 switch(FEAT_TRAINS, SELF, sw_AGV_engine, position_in_consist_from_end == 0 && num_vehs_in_consist > 1){
-	1: sw_AGV_engineT;
-	sw_AGV_engineH;
+    1: sw_AGV_engineT;
+    sw_AGV_engineH;
 }
 
 switch(FEAT_TRAINS, SELF, sw_AGV_wagon_start, cargo_subtype) {

@@ -2,23 +2,22 @@
 Graphics
 --------------------------------------------------------------------*/
 spriteset(set_AGV_purchase, "src\locomotive\AGV\AGV.png"){
-	tmpl_purchase(0, 0)
+    tmpl_purchase(0, 0)
 }
 
 /*--------------------------------------------------------------------
 1. AGV
 --------------------------------------------------------------------*/
-
 spriteset(set_AGVH_purchase, "src\locomotive\AGV\AGV.png"){
-	tmpl_purchase_for_dualhead(0, 108)
+    tmpl_purchase_for_dualhead(0, 108)
 }
 
 spriteset(set_AGV_engineH, "src\locomotive\AGV\AGV.png"){
-	engine(80, 0)
+    engine(80, 0)
 }
 
 spriteset(set_AGV_wagon_start, "src\locomotive\AGV\AGV.png"){
-	wagon_panto(80, 27)
+    wagon_panto(80, 27)
 }
 
 spriteset(set_AGV_wagon, "src\locomotive\AGV\AGV.png") {
@@ -30,26 +29,26 @@ spriteset(set_AGV_wagon_r, "src\locomotive\AGV\AGV.png") {
 }
 
 spriteset(set_AGV_wagon_end, "src\locomotive\AGV\AGV.png"){
-	wagon_panto(80, 81)
+    wagon_panto(80, 81)
 }
 
 spriteset(set_AGV_engineT, "src\locomotive\AGV\AGV.png"){
-	engine_r(80, 108)
+    engine_r(80, 108)
 }
 
 /*--------------------------------------------------------------------
 2. AGV_Cool
 --------------------------------------------------------------------*/
 spriteset(set_AGV_Cool_purchase, "src\locomotive\AGV\AGV_Cool.png"){
-	tmpl_purchase_for_dualhead(0, 108)
+    tmpl_purchase_for_dualhead(0, 108)
 }
 
 spriteset(set_AGV_Cool_engineH, "src\locomotive\AGV\AGV_Cool.png"){
-	engine(80, 0)
+    engine(80, 0)
 }
 
 spriteset(set_AGV_Cool_wagon_start, "src\locomotive\AGV\AGV_Cool.png"){
-	wagon_start(80, 27)
+    wagon_start(80, 27)
 }
 
 spriteset(set_AGV_Cool_wagon, "src\locomotive\AGV\AGV_Cool.png") {
@@ -61,16 +60,15 @@ spriteset(set_AGV_Cool_wagon_r, "src\locomotive\AGV\AGV_Cool.png") {
 }
 
 spriteset(set_AGV_Cool_wagon_end, "src\locomotive\AGV\AGV_Cool.png"){
-	wagon_start(80, 81)
+    wagon_start(80, 81)
 }
 
 spriteset(set_AGV_Cool_engineT, "src\locomotive\AGV\AGV_Cool.png"){
-	engine_r(80, 108)
+    engine_r(80, 108)
 }
 
-
 /*--------------------------------------------------------------------
-3. 구매정보
+구매정보
 --------------------------------------------------------------------*/
 switch(FEAT_TRAINS, SELF, sw_AGV_purchase, cargo_subtype) {
     set_AGV_purchase;
