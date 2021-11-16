@@ -1,0 +1,41 @@
+/*--------------------------------------------------------------------
+Graphics
+--------------------------------------------------------------------*/
+spriteset(set_CR600_purchase, "src\locomotive\CR600\CR600.png"){
+	tmpl_purchase(0, 0)
+}
+
+spriteset(set_CR600H_purchase, "src\locomotive\CR600\CR600.png"){
+	tmpl_purchase_for_dualhead(0, 108)
+}
+
+spriteset(set_CR600_engineH, "src\locomotive\CR600\CR600.png"){
+	engine(80, 0)
+}
+
+spriteset(set_CR600_wagon_start, "src\locomotive\CR600\CR600.png"){
+	wagon_start(80, 27)
+}
+
+spriteset(set_CR600_wagon, "src\locomotive\CR600\CR600.png") {
+    wagon_1F(80, 54)
+}
+
+spriteset(set_CR600_wagon_r, "src\locomotive\CR600\CR600.png") {
+    wagon_1F_r(80, 54)
+}
+
+spriteset(set_CR600_wagon_end, "src\locomotive\CR600\CR600.png"){
+	wagon_start(80, 81)
+}
+
+spriteset(set_CR600_engineT, "src\locomotive\CR600\CR600.png"){
+	engine_r(80, 108)
+}
+
+/*--------------------------------------------------------------------
+구매정보
+--------------------------------------------------------------------*/
+switch(FEAT_TRAINS, SELF, sw_CR600_purchase, cargo_subtype) {
+    set_CR600_purchase;
+}

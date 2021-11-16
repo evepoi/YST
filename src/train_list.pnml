@@ -8,6 +8,7 @@
 #include "locomotive/AVE/AVE.pnml"
 #include "locomotive/AVE_Velaro/AVE_Velaro.pnml"
 #include "locomotive/BB15048/BB15048.pnml"
+#include "locomotive/CR600/CR600.pnml"
 
 // Sorting
 #include "sort.pnml"
