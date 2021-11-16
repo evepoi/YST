@@ -70,4 +70,3 @@ item(FEAT_TRAINS, S500){
         running_cost_factor:            100;
         }
         }
-        }
