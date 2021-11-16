@@ -69,4 +69,4 @@ item(FEAT_TRAINS, S500){
         loading_speed:                  25;
         running_cost_factor:            100;
         }
-        }
+        }1
