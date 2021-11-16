@@ -14,6 +14,7 @@
 #include "locomotive/CRH380A/CRH380A.pnml"
 #include "locomotive/CRH380A_Test/CRH380A_Test.pnml"
 #include "locomotive/E5/E5.pnml"
+#include "locomotive/E6/E6.pnml"
 
 // Sorting
 #include "sort.pnml"
