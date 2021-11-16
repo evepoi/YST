@@ -5,7 +5,7 @@ GT26CW
 #include "GT26CW_graphic.pnml"
 
 // Switch
-#include "GT26CW_swich.pnml"
+#include "GT26CW_switch.pnml"
 
 /*--------------------------------------------------------------------
 열차정보

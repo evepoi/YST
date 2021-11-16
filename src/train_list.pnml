@@ -21,6 +21,7 @@
 #include "locomotive/EMU/EMU.pnml"
 #include "locomotive/Glory_600/Glory_600.pnml"
 #include "locomotive/GT26CW/GT26CW.pnml"
+#include "locomotive/GT26CW/GT26CW.pnml"
 
 // Sorting
 #include "sort.pnml"
