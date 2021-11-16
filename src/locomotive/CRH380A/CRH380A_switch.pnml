@@ -20,8 +20,8 @@ switch(FEAT_TRAINS, SELF, sw_CRH380A_engineT, cargo_subtype) {
 }
 
 switch(FEAT_TRAINS, SELF, sw_CRH380A_engine, position_in_consist_from_end == 0 && num_vehs_in_consist > 1){
-	1: sw_CRH380A_engineT;
-	sw_CRH380A_engineH;
+    1: sw_CRH380A_engineT;
+    sw_CRH380A_engineH;
 }
 
 switch(FEAT_TRAINS, SELF, sw_CRH380A_wagon_start, cargo_subtype) {
@@ -71,7 +71,7 @@ switch(FEAT_TRAINS, SELF, sw_CRH380A_wagon, [STORE_TEMP(-1, 0x10F), var[0x61, 0,
 }
 
 switch(FEAT_TRAINS, SELF, sw_CRH380A_wagon_attach, vehicle_type_id) {
-    CRH380A:          return CB_RESULT_ATTACH_ALLOW;
-    YST_Passinger_Car:        return CB_RESULT_ATTACH_ALLOW;
+    CRH380A:            return CB_RESULT_ATTACH_ALLOW;
+    YST_Passinger_Car:  return CB_RESULT_ATTACH_ALLOW;
     return string(STR_ERROR_NO_ATTACH);
 }
