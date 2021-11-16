@@ -1,0 +1,59 @@
+/*--------------------------------------------------------------------
+스위치
+--------------------------------------------------------------------*/
+switch(FEAT_TRAINS, SELF, sw_HMX_cargo_subtype_text, cargo_subtype) {
+    1: return string(STR_REFIT_LIVERY_HMXG);   // 녹색
+    return string(STR_REFIT_LIVERY_HMXR);
+}
+
+switch(FEAT_TRAINS, SELF, sw_HMX_engineH, cargo_subtype) {
+    1: set_HMXG_engineH;    // 녹색
+    set_HMXR_engineH;
+}
+
+switch(FEAT_TRAINS, SELF, sw_HMX_engineT, cargo_subtype) {
+    1: set_HMXG_engineT;    // 녹색
+    set_HMXR_engineT;
+}
+
+switch(FEAT_TRAINS, SELF, sw_HMX_engine, position_in_consist_from_end == 0 && num_vehs_in_consist > 1){
+	1: sw_HMX_engineT;
+	sw_HMX_engineH;
+}
+
+switch(FEAT_TRAINS, SELF, sw_HMX_1F_wagon_front, cargo_subtype) {
+    1: set_HMXG_1F_wagon;    // 녹색
+    set_HMXR_1F_wagon;
+}
+
+switch(FEAT_TRAINS, SELF, sw_HMX_1F_wagon_tail, cargo_subtype) {
+    1: set_HMXG_1F_wagon_r;    // 녹색
+    set_HMXR_1F_wagon_r;
+}
+
+switch(FEAT_TRAINS, SELF, sw_HMX_1F_wagon, position_in_consist) {
+    1: sw_HMX_1F_wagon_tail;
+    sw_HMX_1F_wagon_front;
+}
+
+switch(FEAT_TRAINS, SELF, sw_HMX_2F_wagon_front, cargo_subtype) {
+    1: set_HMXG_2F_wagon;    // 녹색
+    set_HMXR_2F_wagon;
+}
+
+switch(FEAT_TRAINS, SELF, sw_HMX_2F_wagon_tail, cargo_subtype) {
+    1: set_HMXG_2F_wagon_r;    // 녹색
+    set_HMXR_2F_wagon_r;
+}
+
+switch(FEAT_TRAINS, SELF, sw_HMX_2F_wagon, position_in_consist) {
+    1: sw_HMX_2F_wagon_tail;
+    sw_HMX_2F_wagon_front;
+}
+
+switch(FEAT_TRAINS, SELF, sw_HMX_wagon_attach, vehicle_type_id) {
+    HMX:        return CB_RESULT_ATTACH_ALLOW;
+    YST_Passinger_Car:        return CB_RESULT_ATTACH_ALLOW;
+    YST_Passinger_2F_Car:        return CB_RESULT_ATTACH_ALLOW;
+    return string(STR_ERROR_NO_ATTACH);
+}
