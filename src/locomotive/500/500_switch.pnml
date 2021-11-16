@@ -23,8 +23,8 @@ switch(FEAT_TRAINS, SELF, sw_500_engineT, cargo_subtype) {
 }
 
 switch(FEAT_TRAINS, SELF, sw_500_engine, position_in_consist_from_end == 0 && num_vehs_in_consist > 1){
-	1: sw_500_engineT;
-	sw_500_engineH;
+    1: sw_500_engineT;
+    sw_500_engineH;
 }
 
 switch(FEAT_TRAINS, SELF, sw_500_wagon_start, cargo_subtype) {

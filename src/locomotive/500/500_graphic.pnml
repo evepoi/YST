@@ -2,22 +2,22 @@
 Graphics
 --------------------------------------------------------------------*/
 spriteset(set_500_purchase, "src\locomotive\500\500.png"){
-	tmpl_purchase(0, 0)
+    tmpl_purchase(0, 0)
 }
 
 /*--------------------------------------------------------------------
 1. 신칸센 500계
 --------------------------------------------------------------------*/
 spriteset(set_500H_purchase, "src\locomotive\500\500.png"){
-	tmpl_purchase_for_dualhead(0, 108)
+    tmpl_purchase_for_dualhead(0, 108)
 }
 
 spriteset(set_500_engineH, "src\locomotive\500\500.png"){
-	engine(80, 0)
+    engine(80, 0)
 }
 
 spriteset(set_500_wagon_start, "src\locomotive\500\500.png"){
-	wagon_panto(80, 27)
+    wagon_panto(80, 27)
 }
 
 spriteset(set_500_wagon, "src\locomotive\500\500.png") {
@@ -29,26 +29,26 @@ spriteset(set_500_wagon_r, "src\locomotive\500\500.png") {
 }
 
 spriteset(set_500_wagon_end, "src\locomotive\500\500.png"){
-	wagon_panto(80, 81)
+    wagon_panto(80, 81)
 }
 
 spriteset(set_500_engineT, "src\locomotive\500\500.png"){
-	engine_r(80, 108)
+    engine_r(80, 108)
 }
 
 /*--------------------------------------------------------------------
 2. 신칸센 500계 Cool
 --------------------------------------------------------------------*/
 spriteset(set_500_CoolH_purchase, "src\locomotive\500\500_Cool.png"){
-	tmpl_purchase_for_dualhead(0, 108)
+    tmpl_purchase_for_dualhead(0, 108)
 }
 
 spriteset(set_500_Cool_engineH, "src\locomotive\500\500_Cool.png"){
-	engine(80, 0)
+    engine(80, 0)
 }
 
 spriteset(set_500_Cool_wagon_start, "src\locomotive\500\500_Cool.png"){
-	wagon_panto(80, 27)
+    wagon_panto(80, 27)
 }
 
 spriteset(set_500_Cool_wagon, "src\locomotive\500\500_Cool.png") {
@@ -60,26 +60,26 @@ spriteset(set_500_Cool_wagon_r, "src\locomotive\500\500_Cool.png") {
 }
 
 spriteset(set_500_Cool_wagon_end, "src\locomotive\500\500_Cool.png"){
-	wagon_panto(80, 81)
+    wagon_panto(80, 81)
 }
 
 spriteset(set_500_Cool_engineT, "src\locomotive\500\500_Cool.png"){
-	engine_r(80, 108)
+    engine_r(80, 108)
 }
 
 /*--------------------------------------------------------------------
 3. 신칸센 500계 산천
 --------------------------------------------------------------------*/
 spriteset(set_500_SancheonH_purchase, "src\locomotive\500\500_Sancheon.png"){
-	tmpl_purchase_for_dualhead(0, 108)
+    tmpl_purchase_for_dualhead(0, 108)
 }
 
 spriteset(set_500_Sancheon_engineH, "src\locomotive\500\500_Sancheon.png"){
-	engine(80, 0)
+    engine(80, 0)
 }
 
 spriteset(set_500_Sancheon_wagon_start, "src\locomotive\500\500_Sancheon.png"){
-	wagon_panto(80, 27)
+    wagon_panto(80, 27)
 }
 
 spriteset(set_500_Sancheon_wagon, "src\locomotive\500\500_Sancheon.png") {
@@ -91,26 +91,26 @@ spriteset(set_500_Sancheon_wagon_r, "src\locomotive\500\500_Sancheon.png") {
 }
 
 spriteset(set_500_Sancheon_wagon_end, "src\locomotive\500\500_Sancheon.png"){
-	wagon_panto(80, 81)
+    wagon_panto(80, 81)
 }
 
 spriteset(set_500_Sancheon_engineT, "src\locomotive\500\500_Sancheon.png"){
-	engine_r(80, 108)
+    engine_r(80, 108)
 }
 
 /*--------------------------------------------------------------------
 4. 신칸센 500계 팥죽
 --------------------------------------------------------------------*/
 spriteset(set_500_PatjugH_purchase, "src\locomotive\500\500_Patjug.png"){
-	tmpl_purchase_for_dualhead(0, 108)
+    tmpl_purchase_for_dualhead(0, 108)
 }
 
 spriteset(set_500_Patjug_engineH, "src\locomotive\500\500_Patjug.png"){
-	engine(80, 0)
+    engine(80, 0)
 }
 
 spriteset(set_500_Patjug_wagon_start, "src\locomotive\500\500_Patjug.png"){
-	wagon_panto(80, 27)
+    wagon_panto(80, 27)
 }
 
 spriteset(set_500_Patjug_wagon, "src\locomotive\500\500_Patjug.png") {
@@ -122,16 +122,15 @@ spriteset(set_500_Patjug_wagon_r, "src\locomotive\500\500_Patjug.png") {
 }
 
 spriteset(set_500_Patjug_wagon_end, "src\locomotive\500\500_Patjug.png"){
-	wagon_panto(80, 81)
+    wagon_panto(80, 81)
 }
 
 spriteset(set_500_Patjug_engineT, "src\locomotive\500\500_Patjug.png"){
-	engine_r(80, 108)
+    engine_r(80, 108)
 }
 
-
 /*--------------------------------------------------------------------
-5. 구매정보
+구매정보
 --------------------------------------------------------------------*/
 switch(FEAT_TRAINS, SELF, sw_500_purchase, cargo_subtype) {
     set_500_purchase;
