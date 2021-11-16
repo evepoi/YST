@@ -23,6 +23,7 @@
 #include "locomotive/GT26CW/GT26CW.pnml"
 #include "locomotive/HEMU/HEMU.pnml"
 #include "locomotive/HMX/HMX.pnml"
+#include "locomotive/ICE3/ICE3.pnml"
 
 // Sorting
 #include "sort.pnml"
