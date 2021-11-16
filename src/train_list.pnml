@@ -19,6 +19,7 @@
 #include "locomotive/E300/E300.pnml"
 #include "locomotive/E320/E320.pnml"
 #include "locomotive/EMU/EMU.pnml"
+#include "locomotive/Glory_600/Glory_600.pnml"
 
 // Sorting
 #include "sort.pnml"
