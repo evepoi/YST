@@ -5,7 +5,7 @@ Glory 600
 #include "Glory_600_graphic.pnml"
 
 // Switch
-#include "Glory_600_swich.pnml"
+#include "Glory_600_switch.pnml"
 
 /*--------------------------------------------------------------------
 열차정보
