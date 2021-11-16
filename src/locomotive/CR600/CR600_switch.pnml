@@ -2,8 +2,8 @@
 스위치
 --------------------------------------------------------------------*/
 switch(FEAT_TRAINS, SELF, sw_CR600_engine, position_in_consist_from_end == 0 && num_vehs_in_consist > 1){
-	1: set_CR600_engineT;
-	set_CR600_engineH;
+    1: set_CR600_engineT;
+    set_CR600_engineH;
 }
 
 switch(FEAT_TRAINS, SELF, sw_CR600_wagon_middle, (position_in_consist)) {
@@ -22,6 +22,6 @@ switch(FEAT_TRAINS, SELF, sw_CR600_wagon, [STORE_TEMP(-2, 0x10F), var[0x61, 0, 0
 }
 
 switch(FEAT_TRAINS, SELF, sw_CR600_wagon_attach, vehicle_type_id) {
-    YST_Passinger_Car:        return CB_RESULT_ATTACH_ALLOW;
+    YST_Passinger_Car:  return CB_RESULT_ATTACH_ALLOW;
     return string(STR_ERROR_NO_ATTACH);
 }
