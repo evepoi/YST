@@ -2,19 +2,19 @@
 Graphics
 --------------------------------------------------------------------*/
 spriteset(set_CRH3_purchase, "src\locomotive\CRH3\CRH3.png"){
-	tmpl_purchase(0, 0)
+    tmpl_purchase(0, 0)
 }
 
 spriteset(set_CRH3H_purchase, "src\locomotive\CRH3\CRH3.png"){
-	tmpl_purchase_for_dualhead(0, 108)
+    tmpl_purchase_for_dualhead(0, 108)
 }
 
 spriteset(set_CRH3_engineH, "src\locomotive\CRH3\CRH3.png"){
-	engine(80, 0)
+    engine(80, 0)
 }
 
 spriteset(set_CRH3_wagon_start, "src\locomotive\CRH3\CRH3.png"){
-	wagon_start(80, 27)
+    wagon_start(80, 27)
 }
 
 spriteset(set_CRH3_wagon, "src\locomotive\CRH3\CRH3.png") {
@@ -26,11 +26,11 @@ spriteset(set_CRH3_wagon_r, "src\locomotive\CRH3\CRH3.png") {
 }
 
 spriteset(set_CRH3_wagon_end, "src\locomotive\CRH3\CRH3.png"){
-	wagon_start(80, 81)
+    wagon_start(80, 81)
 }
 
 spriteset(set_CRH3_engineT, "src\locomotive\CRH3\CRH3.png"){
-	engine_r(80, 108)
+    engine_r(80, 108)
 }
 
 /*--------------------------------------------------------------------
