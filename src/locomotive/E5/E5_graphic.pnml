@@ -2,22 +2,22 @@
 Graphics
 --------------------------------------------------------------------*/
 spriteset(set_E5_purchase, "src\locomotive\E5\E5.png"){
-	tmpl_purchase(0, 0)
+    tmpl_purchase(0, 0)
 }
 
 /*--------------------------------------------------------------------
 1. E5
 --------------------------------------------------------------------*/
 spriteset(set_E5H_purchase, "src\locomotive\E5\E5.png"){
-	tmpl_purchase_for_dualhead(0, 108)
+    tmpl_purchase_for_dualhead(0, 108)
 }
 
 spriteset(set_E5_engineH, "src\locomotive\E5\E5.png"){
-	engine(80, 0)
+    engine(80, 0)
 }
 
 spriteset(set_E5_wagon_start, "src\locomotive\E5\E5.png"){
-	wagon_start(80, 27)
+    wagon_start(80, 27)
 }
 
 spriteset(set_E5_wagon, "src\locomotive\E5\E5.png") {
@@ -29,26 +29,26 @@ spriteset(set_E5_wagon_r, "src\locomotive\E5\E5.png") {
 }
 
 spriteset(set_E5_wagon_end, "src\locomotive\E5\E5.png"){
-	wagon_start(80, 81)
+    wagon_start(80, 81)
 }
 
 spriteset(set_E5_engineT, "src\locomotive\E5\E5.png"){
-	engine_r(80, 108)
+    engine_r(80, 108)
 }
 
 /*--------------------------------------------------------------------
 2. H5
 --------------------------------------------------------------------*/
 spriteset(set_H5H_purchase, "src\locomotive\E5\H5.png"){
-	tmpl_purchase_for_dualhead(0, 108)
+    tmpl_purchase_for_dualhead(0, 108)
 }
 
 spriteset(set_H5_engineH, "src\locomotive\E5\H5.png"){
-	engine(80, 0)
+    engine(80, 0)
 }
 
 spriteset(set_H5_wagon_start, "src\locomotive\E5\H5.png"){
-	wagon_start(80, 27)
+    wagon_start(80, 27)
 }
 
 spriteset(set_H5_wagon, "src\locomotive\E5\H5.png") {
@@ -60,15 +60,15 @@ spriteset(set_H5_wagon_r, "src\locomotive\E5\H5.png") {
 }
 
 spriteset(set_H5_wagon_end, "src\locomotive\E5\H5.png"){
-	wagon_start(80, 81)
+    wagon_start(80, 81)
 }
 
 spriteset(set_H5_engineT, "src\locomotive\E5\H5.png"){
-	engine_r(80, 108)
+    engine_r(80, 108)
 }
 
 /*--------------------------------------------------------------------
-3. 구매정보
+구매정보
 --------------------------------------------------------------------*/
 switch(FEAT_TRAINS, SELF, sw_E5_purchase, cargo_subtype) {
     set_E5_purchase;
