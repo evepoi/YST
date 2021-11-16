@@ -2,19 +2,19 @@
 Graphics
 --------------------------------------------------------------------*/
 spriteset(set_AVE_purchase, "src\locomotive\AVE\AVE.png"){
-	tmpl_purchase(0, 0)
+    tmpl_purchase(0, 0)
 }
 
 spriteset(set_AVEH_purchase, "src\locomotive\AVE\AVE.png"){
-	tmpl_purchase_for_dualhead(0, 135)
+    tmpl_purchase_for_dualhead(0, 135)
 }
 
 spriteset(set_AVE_engineH, "src\locomotive\AVE\AVE.png"){
-	engine(80, 0)
+    engine(80, 0)
 }
 
 spriteset(set_AVE_wagon_start, "src\locomotive\AVE\AVE.png"){
-	wagon_start(80, 27)
+    wagon_start(80, 27)
 }
 
 spriteset(set_AVE_wagon, "src\locomotive\AVE\AVE.png") {
@@ -30,11 +30,11 @@ spriteset(set_AVE_wagon_bar, "src\locomotive\AVE\AVE.png") {
 }
 
 spriteset(set_AVE_wagon_end, "src\locomotive\AVE\AVE.png"){
-	wagon_start(80, 108)
+    wagon_start(80, 108)
 }
 
 spriteset(set_AVE_engineT, "src\locomotive\AVE\AVE.png"){
-	engine_r(80, 135)
+    engine_r(80, 135)
 }
 
 /*--------------------------------------------------------------------
