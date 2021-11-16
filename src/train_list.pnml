@@ -3,3 +3,8 @@
 
 //locomotive
 #include "locomotive/500/500.pnml"
+#include "locomotive/800/800.pnml"
+#include "locomotive/AGV/AGV.pnml"
+
+// Sorting
+#include "sort.pnml"
