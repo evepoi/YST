@@ -2,11 +2,11 @@
 Graphics
 --------------------------------------------------------------------*/
 spriteset(set_BB15048_purchase, "src\locomotive\BB15048\BB15048.png"){
-	tmpl_single_purchase(0, 0)
+    tmpl_single_purchase(0, 0)
 }
 
 spriteset(set_BB15048_engine, "src\locomotive\BB15048\BB15048.png"){
-	engine(80, 0)
+    engine(80, 0)
 }
 
 /*--------------------------------------------------------------------
