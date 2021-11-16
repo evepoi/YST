@@ -16,6 +16,7 @@
 #include "locomotive/E5/E5.pnml"
 #include "locomotive/E6/E6.pnml"
 #include "locomotive/E7/E7.pnml"
+#include "locomotive/E300/E300.pnml"
 
 // Sorting
 #include "sort.pnml"
