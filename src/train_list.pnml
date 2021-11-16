@@ -12,6 +12,7 @@
 #include "locomotive/CRH1/CRH1.pnml"
 #include "locomotive/CRH3/CRH3.pnml"
 #include "locomotive/CRH380A/CRH380A.pnml"
+#include "locomotive/CRH380A_Test/CRH380A_Test.pnml"
 
 // Sorting
 #include "sort.pnml"
