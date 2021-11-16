@@ -10,6 +10,7 @@
 #include "locomotive/BB15048/BB15048.pnml"
 #include "locomotive/CR600/CR600.pnml"
 #include "locomotive/CRH1/CRH1.pnml"
+#include "locomotive/CRH3/CRH3.pnml"
 
 // Sorting
 #include "sort.pnml"
