@@ -2,19 +2,19 @@
 Graphics
 --------------------------------------------------------------------*/
 spriteset(set_E6_purchase, "src\locomotive\E6\E6.png"){
-	tmpl_purchase(0, 0)
+    tmpl_purchase(0, 0)
 }
 
 spriteset(set_E6H_purchase, "src\locomotive\E6\E6.png"){
-	tmpl_purchase_for_dualhead(0, 108)
+    tmpl_purchase_for_dualhead(0, 108)
 }
 
 spriteset(set_E6_engineH, "src\locomotive\E6\E6.png"){
-	engine(80, 0)
+    engine(80, 0)
 }
 
 spriteset(set_E6_wagon_start, "src\locomotive\E6\E6.png"){
-	wagon_start(80, 27)
+    wagon_start(80, 27)
 }
 
 spriteset(set_E6_wagon, "src\locomotive\E6\E6.png") {
@@ -26,11 +26,11 @@ spriteset(set_E6_wagon_r, "src\locomotive\E6\E6.png") {
 }
 
 spriteset(set_E6_wagon_end, "src\locomotive\E6\E6.png"){
-	wagon_start(80, 81)
+    wagon_start(80, 81)
 }
 
 spriteset(set_E6_engineT, "src\locomotive\E6\E6.png"){
-	engine_r(80, 108)
+    engine_r(80, 108)
 }
 
 /*--------------------------------------------------------------------
