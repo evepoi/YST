@@ -21,15 +21,15 @@ spriteset(set_E300_wagon_start, "src\locomotive\E300\E300.png"){
 }
 
 spriteset(set_E300_wagon, "src\locomotive\E300\E300.png") {
-    wagon_1F(80, 54)
+	wagon_1F(80, 54)
 }
 
 spriteset(set_E300_wagon_r, "src\locomotive\E300\E300.png") {
-    wagon_1F_r(80, 54)
+	wagon_1F_r(80, 54)
 }
 
 spriteset(set_E300_wagon_bar, "src\locomotive\E300\E300.png") {
-    wagon_bar(80, 81)
+	wagon_bar(80, 81)
 }
 
 spriteset(set_E300_wagon_end, "src\locomotive\E300\E300.png"){
@@ -56,15 +56,15 @@ spriteset(set_E300B_wagon_start, "src\locomotive\E300\E300.png"){
 }
 
 spriteset(set_E300B_wagon, "src\locomotive\E300\E300.png") {
-    wagon_1F(80, 216)
+	wagon_1F(80, 216)
 }
 
 spriteset(set_E300B_wagon_r, "src\locomotive\E300\E300.png") {
-    wagon_1F_r(80, 216)
+	wagon_1F_r(80, 216)
 }
 
 spriteset(set_E300B_wagon_bar, "src\locomotive\E300\E300.png") {
-    wagon_bar(80, 243)
+	wagon_bar(80, 243)
 }
 
 spriteset(set_E300B_wagon_end, "src\locomotive\E300\E300.png"){
@@ -76,8 +76,8 @@ spriteset(set_E300B_engineT, "src\locomotive\E300\E300.png"){
 }
 
 /*--------------------------------------------------------------------
-3. 구매정보
+구매정보
 --------------------------------------------------------------------*/
 switch(FEAT_TRAINS, SELF, sw_E300_purchase, cargo_subtype) {
-    set_E300_purchase;
+	set_E300_purchase;
 }

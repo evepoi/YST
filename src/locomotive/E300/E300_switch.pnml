@@ -12,13 +12,13 @@ switch(FEAT_TRAINS, SELF, sw_E300_engineH, cargo_subtype) {
 }
 
 switch(FEAT_TRAINS, SELF, sw_E300_engineT, cargo_subtype) {
-    1: set_E300B_engineT;   // H5
+    1: set_E300B_engineT;   // 파랑
     set_E300_engineT;
 }
 
 switch(FEAT_TRAINS, SELF, sw_E300_engine, position_in_consist_from_end == 0 && num_vehs_in_consist > 1){
-	1: sw_E300_engineT;
-	sw_E300_engineH;
+    1: sw_E300_engineT;
+    sw_E300_engineH;
 }
 
 switch(FEAT_TRAINS, SELF, sw_E300_wagon_start, cargo_subtype) {
@@ -47,7 +47,7 @@ switch(FEAT_TRAINS, SELF, sw_E300_wagon_tail_bar, cargo_subtype) {
 }
 
 switch(FEAT_TRAINS, SELF, sw_E300_wagon_end, cargo_subtype) {
-    1: set_E300B_wagon_end;   // H5
+    1: set_E300B_wagon_end;   // 파랑
     set_E300_wagon_end;
 }
 
@@ -77,6 +77,6 @@ switch(FEAT_TRAINS, SELF, sw_E300_wagon, [STORE_TEMP(-1, 0x10F), var[0x61, 0, 0x
 }
 
 switch(FEAT_TRAINS, SELF, sw_E300_wagon_attach, vehicle_type_id) {
-    YST_Passinger_Car:        return CB_RESULT_ATTACH_ALLOW;
+    YST_Passinger_Car:  return CB_RESULT_ATTACH_ALLOW;
     return string(STR_ERROR_NO_ATTACH);
 }
