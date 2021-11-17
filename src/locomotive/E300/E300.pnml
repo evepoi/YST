@@ -41,7 +41,7 @@ item(FEAT_TRAINS, E300){
         cargo_disallow_refit:           [];
         
         //Costs
-        refit_cost                      0;
+        refit_cost:                     0;
         running_cost_base:              RUNNING_COST_DIESEL;
         
         //Flags
