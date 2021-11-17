@@ -2,7 +2,7 @@
 Talgo 250
 --------------------------------------------------------------------*/
 // Graphics
-#include "Talgo_250_grahic.pnml"
+#include "Talgo_250_graphic.pnml"
 
 // Switch
 #include "Talgo_250_swich.pnml"
