@@ -2,7 +2,7 @@
 NKX
 --------------------------------------------------------------------*/
 // Graphics
-#include "NKX_grahic.pnml"
+#include "NKX_graphic.pnml"
 
 // Switch
 #include "NKX_switch.pnml"
