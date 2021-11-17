@@ -11,7 +11,7 @@ switch(FEAT_TRAINS, SELF, sw_HMX_engineH, cargo_subtype) {
     set_HMXR_engineH;
 }
 
-switch(FEAT_TRAINS, SELF, sw_HMX_engineT, cargo_subtype) {
+switch(FEAT_TRAINS, SELF, sw_HMX_engineT, cargo_subtype) {1
     1: set_HMXG_engineT;    // 녹색
     set_HMXR_engineT;
 }
