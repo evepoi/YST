@@ -61,7 +61,7 @@ item(FEAT_TRAINS, ICE_SP){
 		additional_text:                string(STR_REFIT_ADDITIONAL_ABLE_ICESP);
         }
 
-    livery_override(YST_Passinger_Car) {
+    livery_override(YST_Passenger_Car) {
         default:                        sw_ICE_SP_wagon;
         cargo_subtype_text:             sw_ICE_SP_cargo_subtype_text;
         cargo_capacity:                 50;
