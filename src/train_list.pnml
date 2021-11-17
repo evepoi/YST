@@ -2,6 +2,9 @@
 #include "wagon/passenger_wagon/passenger_wagon.pnml"
 #include "wagon/YFX_wagon/YFX_wagon.pnml"
 #include "wagon/tank_car/tank.pnml"
+#include "wagon/flat_car/Flat_1F_Car/Flat_1F_Car.pnml"
+#include "wagon/flat_car/Flat_Tank_Car/Flat_Tank_Car.pnml"
+#include "wagon/flat_car/Flat_2F_Car/Flat_2F_Car.pnml"
 
 //locomotive
 #include "locomotive/500/500.pnml"
