@@ -60,7 +60,7 @@ item(FEAT_TRAINS, ICE3){
 		additional_text:                string(STR_REFIT_ADDITIONAL_UNABLE_ICE3);
         }
 
-    livery_override(YST_Passinger_Car) {
+    livery_override(YST_Passenger_Car) {
         default:                        sw_ICE3_wagon;
         cargo_capacity:                 50;
         loading_speed:                  25;
