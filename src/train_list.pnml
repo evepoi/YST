@@ -27,6 +27,7 @@
 #include "locomotive/ICE_SP/ICE_SP.pnml"
 #include "locomotive/KTX_N/KTX_N.pnml"
 #include "locomotive/N700/N700.pnml"
+#include "locomotive/NJ2/NJ2.pnml"
 
 // Sorting
 #include "sort.pnml"
