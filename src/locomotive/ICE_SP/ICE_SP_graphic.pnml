@@ -21,11 +21,11 @@ spriteset(set_ICE_Sancheon_wagon_start, "src\locomotive\ICE_SP\ICE_Sancheon.png"
 }
 
 spriteset(set_ICE_Sancheon_wagon, "src\locomotive\ICE_SP\ICE_Sancheon.png") {
-    wagon_1F(80, 54)
+	wagon_1F(80, 54)
 }
 
 spriteset(set_ICE_Sancheon_wagon_r, "src\locomotive\ICE_SP\ICE_Sancheon.png") {
-    wagon_1F_r(80, 54)
+	wagon_1F_r(80, 54)
 }
 
 spriteset(set_ICE_Sancheon_wagon_end, "src\locomotive\ICE_SP\ICE_Sancheon.png"){
@@ -52,11 +52,11 @@ spriteset(set_ICE_Patjug_wagon_start, "src\locomotive\ICE_SP\ICE_Patjug.png"){
 }
 
 spriteset(set_ICE_Patjug_wagon, "src\locomotive\ICE_SP\ICE_Patjug.png") {
-    wagon_1F(80, 54)
+	wagon_1F(80, 54)
 }
 
 spriteset(set_ICE_Patjug_wagon_r, "src\locomotive\ICE_SP\ICE_Patjug.png") {
-    wagon_1F_r(80, 54)
+	wagon_1F_r(80, 54)
 }
 
 spriteset(set_ICE_Patjug_wagon_end, "src\locomotive\ICE_SP\ICE_Patjug.png"){
@@ -71,5 +71,5 @@ spriteset(set_ICE_Patjug_engineT, "src\locomotive\ICE_SP\ICE_Patjug.png"){
 구매정보
 --------------------------------------------------------------------*/
 switch(FEAT_TRAINS, SELF, sw_ICE_SP_purchase, cargo_subtype) {
-    set_ICE_SP_purchase;
+	set_ICE_SP_purchase;
 }
