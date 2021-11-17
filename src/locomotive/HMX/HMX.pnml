@@ -61,14 +61,14 @@ item(FEAT_TRAINS, HMX){
 		additional_text:                string(STR_REFIT_ADDITIONAL_ABLE_HMX);
         }
 
-    livery_override(YST_Passinger_Car) {
+    livery_override(YST_Passenger_Car) {
         default:                        sw_HMX_1F_wagon;
         cargo_subtype_text:             sw_HMX_cargo_subtype_text;
         cargo_capacity:                 80;
         loading_speed:                  25;
         running_cost_factor:            100;}
         
-    livery_override(YST_Passinger_2F_Car) {
+    livery_override(YST_Passenger_2F_Car) {
         default:                        sw_HMX_2F_wagon;
         cargo_subtype_text:             sw_HMX_cargo_subtype_text;
         cargo_capacity:                 160;
