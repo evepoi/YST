@@ -68,7 +68,7 @@ switch(FEAT_TRAINS, SELF, sw_Passenge_2F_wagon, (position_in_vehid_chain + 1) <=
 }
 
 //열차정보
-item (FEAT_TRAINS, YST_Passinger_Car){
+item (FEAT_TRAINS, YST_Passenger_Car){
 	property {
  		name:							string(STR_YST_PASSINGER_NAME);
  		climates_available:				ALL_CLIMATES;
@@ -101,7 +101,7 @@ item (FEAT_TRAINS, YST_Passinger_Car){
         }
     }
 
-item (FEAT_TRAINS, YST_Passinger_2F_Car){
+item (FEAT_TRAINS, YST_Passenger_2F_Car){
 	property {
  		name:							string(STR_YST_PASSINGER2F_NAME);
  		climates_available:				ALL_CLIMATES;
