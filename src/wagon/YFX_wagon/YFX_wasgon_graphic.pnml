@@ -1,0 +1,21 @@
+/*--------------------------------------------------------------------
+Graphics
+--------------------------------------------------------------------*/
+spriteset(set_YFXF_purchase, "src\wagon\YFX_wagon\YFX_wagon.png"){
+    tmpl_wagon_purchase(0, 0)
+}
+
+spriteset(set_YFX_wagon, "src\wagon\YFX_wagon\YFX_wagon.png") {
+    wagon_1F(80, 0)
+}
+
+spriteset(set_YFX_wagon_r, "src\wagon\YFX_wagon\YFX_wagon.png") {
+    wagon_1F_r(80, 0)
+}
+
+/*--------------------------------------------------------------------
+구매정보
+--------------------------------------------------------------------*/
+switch(FEAT_TRAINS, SELF, sw_YFXF_purchase, cargo_subtype) {
+    set_YFXF_purchase;
+}
