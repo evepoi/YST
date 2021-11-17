@@ -21,11 +21,11 @@ spriteset(set_EMU_250_wagon_start, "src\locomotive\EMU\EMU_250.png"){
 }
 
 spriteset(set_EMU_250_wagon, "src\locomotive\EMU\EMU_250.png") {
-    wagon_1F(80, 54)
+	wagon_1F(80, 54)
 }
 
 spriteset(set_EMU_250_wagon_r, "src\locomotive\EMU\EMU_250.png") {
-    wagon_1F_r(80, 54)
+	wagon_1F_r(80, 54)
 }
 
 spriteset(set_EMU_250_wagon_end, "src\locomotive\EMU\EMU_250.png"){
@@ -52,11 +52,11 @@ spriteset(set_EMU_300_wagon_start, "src\locomotive\EMU\EMU_300.png"){
 }
 
 spriteset(set_EMU_300_wagon, "src\locomotive\EMU\EMU_300.png") {
-    wagon_1F(80, 54)
+	wagon_1F(80, 54)
 }
 
 spriteset(set_EMU_300_wagon_r, "src\locomotive\EMU\EMU_300.png") {
-    wagon_1F_r(80, 54)
+	wagon_1F_r(80, 54)
 }
 
 spriteset(set_EMU_300_wagon_end, "src\locomotive\EMU\EMU_300.png"){
@@ -67,10 +67,9 @@ spriteset(set_EMU_300_engineT, "src\locomotive\EMU\EMU_300.png"){
 	engine_r(80, 108)
 }
 
-
 /*--------------------------------------------------------------------
-3. 구매정보
+구매정보
 --------------------------------------------------------------------*/
 switch(FEAT_TRAINS, SELF, sw_EMU_purchase, cargo_subtype) {
-    set_EMU_purchase;
+	set_EMU_purchase;
 }
