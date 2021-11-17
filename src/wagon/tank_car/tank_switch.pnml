@@ -1,0 +1,36 @@
+/*--------------------------------------------------------------------
+스위치
+--------------------------------------------------------------------*/
+switch(FEAT_TRAINS, SELF, sw_Tank_cargo_subtype_text, cargo_subtype) {
+    1: return string(STR_REFIT_LIVERY_TANKB);           
+    2: return string(STR_REFIT_LIVERY_TANKC);           
+    return string(STR_REFIT_LIVERY_TANKA);
+}
+
+switch(FEAT_TRAINS, SELF, sw_Tank_wagon_front, cargo_subtype) {
+    1: set_TankB_wagon;
+    2: set_TankC_wagon;
+    set_TankA_wagon;
+}
+
+switch(FEAT_TRAINS, SELF, sw_Tank_wagon_tail, cargo_subtype) {
+    1: set_TankB_wagon_r;
+    2: set_TankC_wagon_r;
+    set_TankA_wagon_r;
+}
+
+switch(FEAT_TRAINS, SELF, sw_Tank_wagon, (position_in_consist)) {
+    1: sw_Tank_wagon_tail;
+    sw_Tank_wagon_front;
+}
+
+switch(FEAT_TRAINS, SELF, sw_Tank_wagon_attach, vehicle_type_id) {
+    BB15048:    return CB_RESULT_ATTACH_ALLOW;
+    GT26CW:     return CB_RESULT_ATTACH_ALLOW;
+    NJ2:        return CB_RESULT_ATTACH_ALLOW;
+    TANK:       return CB_RESULT_ATTACH_ALLOW;
+    FLAT_1F:    return CB_RESULT_ATTACH_ALLOW;
+    FLAT_2F:    return CB_RESULT_ATTACH_ALLOW;
+    FLAT_TANK:  return CB_RESULT_ATTACH_ALLOW;
+   return string(STR_ERROR_NO_ATTACH);
+}

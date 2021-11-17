@@ -1,0 +1,37 @@
+/*--------------------------------------------------------------------
+Graphics
+--------------------------------------------------------------------*/
+spriteset(set_Tank_purchase, "src\wagon\tank_car\tank.png"){
+    tmpl_wagon_purchase(0, 0)
+}
+
+spriteset(set_TankA_wagon, "src\wagon\tank_car\tank.png") {
+    wagon_1F(80, 0)
+}
+
+spriteset(set_TankA_wagon_r, "src\wagon\tank_car\tank.png") {
+    wagon_1F_r(80, 0)
+}
+
+spriteset(set_TankB_wagon, "src\wagon\tank_car\tank.png") {
+    wagon_1F(80, 27)
+}
+
+spriteset(set_TankB_wagon_r, "src\wagon\tank_car\tank.png") {
+    wagon_1F_r(80, 27)
+}
+
+spriteset(set_TankC_wagon, "src\wagon\tank_car\tank.png") {
+    wagon_1F(80, 54)
+}
+
+spriteset(set_TankC_wagon_r, "src\wagon\tank_car\tank.png") {
+    wagon_1F_r(80, 54)
+}
+
+/*--------------------------------------------------------------------
+구매정보
+--------------------------------------------------------------------*/
+switch(FEAT_TRAINS, SELF, sw_Tank_purchase, cargo_subtype) {
+    set_Tank_purchase;
+}
