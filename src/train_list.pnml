@@ -40,6 +40,7 @@
 #include "locomotive/VTX/VTX.pnml"
 #include "locomotive/YFX/YFX.pnml"
 #include "locomotive/YN/YN.pnml"
+#include "locomotive/YTX/YTX.pnml"
 
 //Metro
 #include "metro/YTRO/YTRO_100.pnml"
