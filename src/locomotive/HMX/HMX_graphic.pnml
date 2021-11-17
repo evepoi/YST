@@ -2,18 +2,18 @@
 Graphics
 --------------------------------------------------------------------*/
 spriteset(set_HMX_purchase, "src\locomotive\HMX\HMX.png"){
-	tmpl_purchase(0, 0)
+    tmpl_purchase(0, 0)
 }
 
 /*--------------------------------------------------------------------
 1. HMX 녹색도색
 --------------------------------------------------------------------*/
 spriteset(set_HMXGH_purchase, "src\locomotive\HMX\HMX.png"){
-	tmpl_purchase_for_dualhead(0, 81)
+    tmpl_purchase_for_dualhead(0, 81)
 }
 
 spriteset(set_HMXG_engineH, "src\locomotive\HMX\HMX.png"){
-	engine(80, 0)
+    engine(80, 0)
 }
 
 spriteset(set_HMXG_1F_wagon, "src\locomotive\HMX\HMX.png") {
@@ -33,18 +33,18 @@ spriteset(set_HMXG_2F_wagon_r, "src\locomotive\HMX\HMX.png") {
 }
 
 spriteset(set_HMXG_engineT, "src\locomotive\HMX\HMX.png"){
-	engine_r(80, 81)
+    engine_r(80, 81)
 }
 
 /*--------------------------------------------------------------------
 2. HMX 빨강도색
 --------------------------------------------------------------------*/
 spriteset(set_HMXRH_purchase, "src\locomotive\HMX\HMX.png"){
-	tmpl_purchase_for_dualhead(0, 189)
+    tmpl_purchase_for_dualhead(0, 189)
 }
 
 spriteset(set_HMXR_engineH, "src\locomotive\HMX\HMX.png"){
-	engine(80, 108)
+    engine(80, 108)
 }
 
 spriteset(set_HMXR_1F_wagon, "src\locomotive\HMX\HMX.png") {
@@ -64,7 +64,7 @@ spriteset(set_HMXR_2F_wagon_r, "src\locomotive\HMX\HMX.png") {
 }
 
 spriteset(set_HMXR_engineT, "src\locomotive\HMX\HMX.png"){
-	engine_r(80, 189)
+    engine_r(80, 189)
 }
 
 /*--------------------------------------------------------------------
