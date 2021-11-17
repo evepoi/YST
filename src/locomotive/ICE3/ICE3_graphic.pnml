@@ -18,11 +18,11 @@ spriteset(set_ICE3_wagon_start, "src\locomotive\ICE3\ICE3.png"){
 }
 
 spriteset(set_ICE3_wagon, "src\locomotive\ICE3\ICE3.png") {
-    wagon_1F(80, 54)
+	wagon_1F(80, 54)
 }
 
 spriteset(set_ICE3_wagon_r, "src\locomotive\ICE3\ICE3.png") {
-    wagon_1F_r(80, 54)
+	wagon_1F_r(80, 54)
 }
 
 spriteset(set_ICE3_wagon_end, "src\locomotive\ICE3\ICE3.png"){
@@ -37,5 +37,5 @@ spriteset(set_ICE3_engineT, "src\locomotive\ICE3\ICE3.png"){
 구매정보
 --------------------------------------------------------------------*/
 switch(FEAT_TRAINS, SELF, sw_ICE3_purchase, cargo_subtype) {
-    set_ICE3_purchase;
+	set_ICE3_purchase;
 }
