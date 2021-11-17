@@ -14,7 +14,7 @@ spriteset(set_TGV_Ouigo_engineH, "src\locomotive\TGV_Ouigo\TGV_Ouigo.png"){
 }
 
 spriteset(set_TGV_Ouigo_wagon_start, "src\locomotive\TGV_Ouigo\TGV_Ouigo.png"){
-	wagon_start(80, 27)
+    wagon_start(80, 27)
 }
 
 spriteset(set_TGV_Ouigo_wagon, "src\locomotive\TGV_Ouigo\TGV_Ouigo.png") {
