@@ -75,6 +75,7 @@ STR_PARAM_AGV_SPEED_DESC    				:AGV Speed (331~600km/h)/ When set to 597, It is
 STR_REFIT_ADDITIONAL                    :{BLACK}Changing model/livery: {GREEN}Available
 STR_REFIT_ADDITIONAL_ABLE_UNADDTRAIN    :{BLACK}Changing model/livery: {GREEN}Available {} {BLACK}Combined train: {RED}Unavailable
 STR_REFIT_ADDITIONAL_ABLE_AGV           :{BLACK}Changing model/livery: {GREEN}Available {} {BLACK}Combined train: {RED}Unavailable
+STR_REFIT_ADDITIONAL_ABLE_CR600         :{BLACK}Changing model/livery: {GREEN}Available {}{BLACK}Combined train : {GREEN}CR600
 STR_REFIT_ADDITIONAL_ABLE_CRH380A       :{BLACK}Changing model/livery: {GREEN}Available {} {BLACK}Combined train: {GREEN}CRH380A, CRH380A Cool, CRH380A Red
 STR_REFIT_ADDITIONAL_ABLE_E6            :{BLACK}Changing model/livery: {GREEN}Available {} {BLACK}Combined train: {GREEN}E6
 STR_REFIT_ADDITIONAL_ABLE_EMU           :{BLACK}Changing model/livery: {GREEN}Available {} {BLACK}Combined train: {GREEN}EMU-250, EUM-300
@@ -108,6 +109,8 @@ STR_REFIT_LIVERY_500S               :(Shinkansen 500-Sancheon)
 STR_REFIT_LIVERY_500P               :(Shinkansen 500-Patjug)
 STR_REFIT_LIVERY_AGV                :(AGV)
 STR_REFIT_LIVERY_AGV_Cool           :(AGV-Cool) 430km/h
+STR_REFIT_LIVERY_CR600R             :(Red Color)
+STR_REFIT_LIVERY_CR600G             :(Gold Color)
 STR_REFIT_LIVERY_CRH380A            :(CRH380A)
 STR_REFIT_LIVERY_CRH380AC           :(CRH380A-Cool) 430km/h
 STR_REFIT_LIVERY_CRH380AR           :(CRH380A-Red)

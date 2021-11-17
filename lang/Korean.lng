@@ -75,6 +75,7 @@ STR_PARAM_AGV_SPEED_DESC    				:AGV 속도 (331~600km/h)/ 597로 설정하면 6
 STR_REFIT_ADDITIONAL                    :{BLACK}도색/모델 변경: {GREEN}가능
 STR_REFIT_ADDITIONAL_ABLE_UNADDTRAIN    :{BLACK}도색/모델 변경: {GREEN}가능 {}{BLACK}복합열차구성: {RED}불가능
 STR_REFIT_ADDITIONAL_ABLE_AGV           :{BLACK}도색/모델 변경: {GREEN}가능 {}{BLACK}복합열차구성: {RED}불가능
+STR_REFIT_ADDITIONAL_ABLE_CR600         :{BLACK}도색/모델 변경: {GREEN}가능 {}{BLACK}복합가능열차 : {GREEN}CR600
 STR_REFIT_ADDITIONAL_ABLE_CRH380A       :{BLACK}도색/모델 변경: {GREEN}가능 {}{BLACK}복합가능열차 : {GREEN}CRH380A, CRH380A Cool, CRH380A Red
 STR_REFIT_ADDITIONAL_ABLE_E6            :{BLACK}도색/모델 변경: {GREEN}가능 {}{BLACK}복합가능열차 : {GREEN}E6
 STR_REFIT_ADDITIONAL_ABLE_EMU           :{BLACK}도색/모델 변경: {GREEN}가능 {}{BLACK}복합가능열차 : {GREEN}EMU-250, EUM-300
@@ -108,6 +109,8 @@ STR_REFIT_LIVERY_500S               :(신칸센 500-산천)
 STR_REFIT_LIVERY_500P               :(신칸센 500-팥죽)
 STR_REFIT_LIVERY_AGV                :(AGV)
 STR_REFIT_LIVERY_AGV_Cool           :(AGV-Cool) 430km/h
+STR_REFIT_LIVERY_CR600R             :(빨강 도색)
+STR_REFIT_LIVERY_CR600G             :(금색 도색)
 STR_REFIT_LIVERY_CRH380A            :(CRH380A)
 STR_REFIT_LIVERY_CRH380AC           :(CRH380A-Cool) 430km/h
 STR_REFIT_LIVERY_CRH380AR           :(CRH380A-빨강)
