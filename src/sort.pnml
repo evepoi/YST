@@ -49,8 +49,8 @@ sort(FEAT_TRAINS, [
     YTX,
 	ZEFIRO380,
 			
-    YST_Passinger_Car,
-    YST_Passinger_2F_Car,
+    YST_Passenger_Car,
+    YST_Passenger_2F_Car,
     FLAT_1F,
     FLAT_2F,
     FLAT_TANK,
