@@ -1,0 +1,77 @@
+/*--------------------------------------------------------------------
+스위치
+--------------------------------------------------------------------*/
+switch(FEAT_TRAINS, SELF, sw_ZEFIRO380_cargo_subtype_text, cargo_subtype) {
+    1: return string(STR_REFIT_LIVERY_ZEFIRO380_Cool);           
+    2: return string(STR_REFIT_LIVERY_ZEFIRO380_Black);           
+    return string(STR_REFIT_LIVERY_ZEFIRO380);
+}
+
+switch(FEAT_TRAINS, SELF, sw_ZEFIRO380_engineH, cargo_subtype) {
+    1: set_ZEFIRO380_Cool_engineH;
+    2: set_ZEFIRO380_Black_engineH;
+    set_ZEFIRO380_engineH;
+}
+
+switch(FEAT_TRAINS, SELF, sw_ZEFIRO380_engineT, cargo_subtype) {
+    1: set_ZEFIRO380_Cool_engineT;
+    2: set_ZEFIRO380_Black_engineT;
+    set_ZEFIRO380_engineT;
+}
+
+switch(FEAT_TRAINS, SELF, sw_ZEFIRO380_engine, position_in_consist_from_end == 0 && num_vehs_in_consist > 1){
+    1: sw_ZEFIRO380_engineT;
+    sw_ZEFIRO380_engineH;
+}
+
+switch(FEAT_TRAINS, SELF, sw_ZEFIRO380_wagon_start, cargo_subtype) {
+    1: set_ZEFIRO380_Cool_wagon_start;
+    2: set_ZEFIRO380_Black_wagon_start;
+    set_ZEFIRO380_wagon_start;
+}
+
+switch(FEAT_TRAINS, SELF, sw_ZEFIRO380_wagon_front, cargo_subtype) {
+    1: set_ZEFIRO380_Cool_wagon;
+    2: set_ZEFIRO380_Black_wagon;
+    set_ZEFIRO380_wagon;
+}
+
+switch(FEAT_TRAINS, SELF, sw_ZEFIRO380_wagon_tail, cargo_subtype) {
+    1: set_ZEFIRO380_Cool_wagon_r;
+    2: set_ZEFIRO380_Black_wagon_r;
+    set_ZEFIRO380_wagon_r;
+}
+
+switch(FEAT_TRAINS, SELF, sw_ZEFIRO380_wagon_end, cargo_subtype) {
+    1: set_ZEFIRO380_Cool_wagon_end;
+    2: set_ZEFIRO380_Black_wagon_end;
+    set_ZEFIRO380_wagon_end;
+}
+
+switch(FEAT_TRAINS, SELF, sw_ZEFIRO380_speed, cargo_subtype) {
+    0: return 380;
+    1: return 428;
+    2: return 597;
+    return 380;
+}
+
+switch(FEAT_TRAINS, SELF, sw_ZEFIRO380_wagon_middle, (position_in_consist)) {
+    1: sw_ZEFIRO380_wagon_tail;
+    sw_ZEFIRO380_wagon_front;
+}
+
+switch(FEAT_TRAINS, SELF, sw_ZEFIRO380_wagon_rear, [STORE_TEMP(1, 0x10F), var[0x61, 0, 0x0000FFFF, 0xC6]]){
+    ZEFIRO380: sw_ZEFIRO380_wagon_end;
+    sw_ZEFIRO380_wagon_middle;
+}
+
+switch(FEAT_TRAINS, SELF, sw_ZEFIRO380_wagon, [STORE_TEMP(-1, 0x10F), var[0x61, 0, 0x0000FFFF, 0xC6]]) {
+    ZEFIRO380: sw_ZEFIRO380_wagon_start;
+    sw_ZEFIRO380_wagon_rear;
+}
+
+switch(FEAT_TRAINS, SELF, sw_ZEFIRO380_wagon_attach, vehicle_type_id) {
+    ZEFIRO380:          return CB_RESULT_ATTACH_ALLOW;
+    YST_Passenger_Car:  return CB_RESULT_ATTACH_ALLOW;
+    return string(STR_ERROR_NO_ATTACH);
+}
