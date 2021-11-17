@@ -18,11 +18,11 @@ spriteset(set_KTX_N_wagon_start, "src\locomotive\KTX_N\KTX_N.png"){
 }
 
 spriteset(set_KTX_N_wagon, "src\locomotive\KTX_N\KTX_N.png") {
-    wagon_1F(80, 54)
+	wagon_1F(80, 54)
 }
 
 spriteset(set_KTX_N_wagon_r, "src\locomotive\KTX_N\KTX_N.png") {
-    wagon_1F_r(80, 54)
+	wagon_1F_r(80, 54)
 }
 
 spriteset(set_KTX_N_wagon_end, "src\locomotive\KTX_N\KTX_N.png"){
@@ -37,5 +37,5 @@ spriteset(set_KTX_N_engineT, "src\locomotive\KTX_N\KTX_N.png"){
 구매정보
 --------------------------------------------------------------------*/
 switch(FEAT_TRAINS, SELF, sw_KTX_N_purchase, cargo_subtype) {
-    set_KTX_N_purchase;
+	set_KTX_N_purchase;
 }
