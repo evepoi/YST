@@ -1,0 +1,323 @@
+/*--------------------------------------------------------------------
+Graphics
+--------------------------------------------------------------------*/
+spriteset(set_YTRO_200_purchase, "src\metro\YTRO\YTRO_200.png"){
+    tmpl_purchase(0, 0)
+}
+
+/*--------------------------------------------------------------------
+1. YTRO 200 A
+--------------------------------------------------------------------*/
+spriteset(set_YTRO_200AH_purchase, "src\metro\YTRO\YTRO_200.png"){
+    tmpl_purchase_for_dualhead(0, 54)
+}
+
+spriteset(set_YTRO_200A_engineH, "src\metro\YTRO\YTRO_200.png"){
+    engine(80, 0)
+}
+
+spriteset(set_YTRO_200A_1F_wagon, "src\metro\YTRO\YTRO_200.png") {
+    wagon_1F(80, 27)
+}
+
+spriteset(set_YTRO_200A_1F_wagon_r, "src\metro\YTRO\YTRO_200.png") {
+    wagon_1F_r(80, 27)
+}
+
+spriteset(set_YTRO_200A_2F_wagon, "src\metro\YTRO\YTRO_2F.png") {
+    wagon_2F(80, 0)
+}
+
+spriteset(set_YTRO_200A_2F_wagon_r, "src\metro\YTRO\YTRO_2F.png") {
+    wagon_2F_r(80, 0)
+}
+
+spriteset(set_YTRO_200A_engineT, "src\metro\YTRO\YTRO_200.png"){
+    engine_r(80, 54)
+}
+
+/*--------------------------------------------------------------------
+2. YTRO 200 B
+--------------------------------------------------------------------*/
+spriteset(set_YTRO_200BH_purchase, "src\metro\YTRO\YTRO_200.png"){
+    tmpl_purchase_for_dualhead(0, 135)
+}
+
+spriteset(set_YTRO_200B_engineH, "src\metro\YTRO\YTRO_200.png"){
+    engine(80, 81)
+}
+
+spriteset(set_YTRO_200B_1F_wagon, "src\metro\YTRO\YTRO_200.png") {
+    wagon_1F(80, 108)
+}
+
+spriteset(set_YTRO_200B_1F_wagon_r, "src\metro\YTRO\YTRO_200.png") {
+    wagon_1F_r(80, 108)
+}
+
+spriteset(set_YTRO_200B_2F_wagon, "src\metro\YTRO\YTRO_2F.png") {
+    wagon_2F(80, 27)
+}
+
+spriteset(set_YTRO_200B_2F_wagon_r, "src\metro\YTRO\YTRO_2F.png") {
+    wagon_2F_r(80, 27)
+}
+
+spriteset(set_YTRO_200B_engineT, "src\metro\YTRO\YTRO_200.png"){
+    engine_r(80, 135)
+}
+
+/*--------------------------------------------------------------------
+3. YTRO 200 C
+--------------------------------------------------------------------*/
+spriteset(set_YTRO_200CH_purchase, "src\metro\YTRO\YTRO_200.png"){
+    tmpl_purchase_for_dualhead(0, 216)
+}
+
+spriteset(set_YTRO_200C_engineH, "src\metro\YTRO\YTRO_200.png"){
+    engine(80, 162)
+}
+
+spriteset(set_YTRO_200C_1F_wagon, "src\metro\YTRO\YTRO_200.png") {
+    wagon_1F(80, 189)
+}
+
+spriteset(set_YTRO_200C_1F_wagon_r, "src\metro\YTRO\YTRO_200.png") {
+    wagon_1F_r(80, 189)
+}
+
+spriteset(set_YTRO_200C_2F_wagon, "src\metro\YTRO\YTRO_2F.png") {
+    wagon_2F(80, 54)
+}
+
+spriteset(set_YTRO_200C_2F_wagon_r, "src\metro\YTRO\YTRO_2F.png") {
+    wagon_2F_r(80, 54)
+}
+
+spriteset(set_YTRO_200C_engineT, "src\metro\YTRO\YTRO_200.png"){
+    engine_r(80, 216)
+}
+
+/*--------------------------------------------------------------------
+4. YTRO 200 D
+--------------------------------------------------------------------*/
+spriteset(set_YTRO_200DH_purchase, "src\metro\YTRO\YTRO_200.png"){
+    tmpl_purchase_for_dualhead(0, 297)
+}
+
+spriteset(set_YTRO_200D_engineH, "src\metro\YTRO\YTRO_200.png"){
+    engine(80, 243)
+}
+
+spriteset(set_YTRO_200D_1F_wagon, "src\metro\YTRO\YTRO_200.png") {
+    wagon_1F(80, 270)
+}
+
+spriteset(set_YTRO_200D_1F_wagon_r, "src\metro\YTRO\YTRO_200.png") {
+    wagon_1F_r(80, 270)
+}
+
+spriteset(set_YTRO_200D_2F_wagon, "src\metro\YTRO\YTRO_2F.png") {
+    wagon_2F(80, 81)
+}
+
+spriteset(set_YTRO_200D_2F_wagon_r, "src\metro\YTRO\YTRO_2F.png") {
+    wagon_2F_r(80, 81)
+}
+
+spriteset(set_YTRO_200D_engineT, "src\metro\YTRO\YTRO_200.png"){
+    engine_r(80, 297)
+}
+
+/*--------------------------------------------------------------------
+5. YTRO_200 E
+--------------------------------------------------------------------*/
+spriteset(set_YTRO_200EH_purchase, "src\metro\YTRO\YTRO_200.png"){
+    tmpl_purchase_for_dualhead(0, 378)
+}
+
+spriteset(set_YTRO_200E_engineH, "src\metro\YTRO\YTRO_200.png"){
+    engine(80, 324)
+}
+
+spriteset(set_YTRO_200E_1F_wagon, "src\metro\YTRO\YTRO_200.png") {
+    wagon_1F(80, 351)
+}
+
+spriteset(set_YTRO_200E_1F_wagon_r, "src\metro\YTRO\YTRO_200.png") {
+    wagon_1F_r(80, 351)
+}
+
+spriteset(set_YTRO_200E_2F_wagon, "src\metro\YTRO\YTRO_2F.png") {
+    wagon_2F(80, 108)
+}
+
+spriteset(set_YTRO_200E_2F_wagon_r, "src\metro\YTRO\YTRO_2F.png") {
+    wagon_2F_r(80, 108)
+}
+
+spriteset(set_YTRO_200E_engineT, "src\metro\YTRO\YTRO_200.png"){
+    engine_r(80, 378)
+}
+
+/*--------------------------------------------------------------------
+6. YTRO_200 F
+--------------------------------------------------------------------*/
+spriteset(set_YTRO_200FH_purchase, "src\metro\YTRO\YTRO_200.png"){
+    tmpl_purchase_for_dualhead(0, 459)
+}
+
+spriteset(set_YTRO_200F_engineH, "src\metro\YTRO\YTRO_200.png"){
+    engine(80, 405)
+}
+
+spriteset(set_YTRO_200F_1F_wagon, "src\metro\YTRO\YTRO_200.png") {
+    wagon_1F(80, 432)
+}
+
+spriteset(set_YTRO_200F_1F_wagon_r, "src\metro\YTRO\YTRO_200.png") {
+    wagon_1F_r(80, 432)
+}
+
+spriteset(set_YTRO_200F_2F_wagon, "src\metro\YTRO\YTRO_2F.png") {
+    wagon_2F(80, 135)
+}
+
+spriteset(set_YTRO_200F_2F_wagon_r, "src\metro\YTRO\YTRO_2F.png") {
+    wagon_2F_r(80, 135)
+}
+
+spriteset(set_YTRO_200F_engineT, "src\metro\YTRO\YTRO_200.png"){
+    engine_r(80, 459)
+}
+
+/*--------------------------------------------------------------------
+7. YTRO_200 G
+--------------------------------------------------------------------*/
+spriteset(set_YTRO_200GH_purchase, "src\metro\YTRO\YTRO_200.png"){
+    tmpl_purchase_for_dualhead(0, 540)
+}
+
+spriteset(set_YTRO_200G_engineH, "src\metro\YTRO\YTRO_200.png"){
+    engine(80, 486)
+}
+
+spriteset(set_YTRO_200G_1F_wagon, "src\metro\YTRO\YTRO_200.png") {
+    wagon_1F(80, 513)
+}
+
+spriteset(set_YTRO_200G_1F_wagon_r, "src\metro\YTRO\YTRO_200.png") {
+    wagon_1F_r(80, 513)
+}
+
+spriteset(set_YTRO_200G_2F_wagon, "src\metro\YTRO\YTRO_2F.png") {
+    wagon_2F(80, 162)
+}
+
+spriteset(set_YTRO_200G_2F_wagon_r, "src\metro\YTRO\YTRO_2F.png") {
+    wagon_2F_r(80, 162)
+}
+
+spriteset(set_YTRO_200G_engineT, "src\metro\YTRO\YTRO_200.png"){
+    engine_r(80, 540)
+}
+
+/*--------------------------------------------------------------------
+8. YTRO_200 H
+--------------------------------------------------------------------*/
+spriteset(set_YTRO_200HH_purchase, "src\metro\YTRO\YTRO_200.png"){
+    tmpl_purchase_for_dualhead(0, 621)
+}
+
+spriteset(set_YTRO_200H_engineH, "src\metro\YTRO\YTRO_200.png"){
+    engine(80, 567)
+}
+
+spriteset(set_YTRO_200H_1F_wagon, "src\metro\YTRO\YTRO_200.png") {
+    wagon_1F(80, 594)
+}
+
+spriteset(set_YTRO_200H_1F_wagon_r, "src\metro\YTRO\YTRO_200.png") {
+    wagon_1F_r(80, 594)
+}
+
+spriteset(set_YTRO_200H_2F_wagon, "src\metro\YTRO\YTRO_2F.png") {
+    wagon_2F(80, 189)
+}
+
+spriteset(set_YTRO_200H_2F_wagon_r, "src\metro\YTRO\YTRO_2F.png") {
+    wagon_2F_r(80, 189)
+}
+
+spriteset(set_YTRO_200H_engineT, "src\metro\YTRO\YTRO_200.png"){
+    engine_r(80, 621)
+}
+
+/*--------------------------------------------------------------------
+9. YTRO_200 I
+--------------------------------------------------------------------*/
+spriteset(set_YTRO_200IH_purchase, "src\metro\YTRO\YTRO_200.png"){
+    tmpl_purchase_for_dualhead(0, 702)
+}
+
+spriteset(set_YTRO_200I_engineH, "src\metro\YTRO\YTRO_200.png"){
+    engine(80, 648)
+}
+
+spriteset(set_YTRO_200I_1F_wagon, "src\metro\YTRO\YTRO_200.png") {
+    wagon_1F(80, 675)
+}
+
+spriteset(set_YTRO_200I_1F_wagon_r, "src\metro\YTRO\YTRO_200.png") {
+    wagon_1F_r(80, 675)
+}
+
+spriteset(set_YTRO_200I_2F_wagon, "src\metro\YTRO\YTRO_2F.png") {
+    wagon_2F(80, 216)
+}
+
+spriteset(set_YTRO_200I_2F_wagon_r, "src\metro\YTRO\YTRO_2F.png") {
+    wagon_2F_r(80, 216)
+}
+
+spriteset(set_YTRO_200I_engineT, "src\metro\YTRO\YTRO_200.png"){
+    engine_r(80, 702)
+}
+
+/*--------------------------------------------------------------------
+10. YTRO_200 J
+--------------------------------------------------------------------*/
+spriteset(set_YTRO_200JH_purchase, "src\metro\YTRO\YTRO_200.png"){
+    tmpl_purchase_for_dualhead(0, 783)
+}
+
+spriteset(set_YTRO_200J_engineH, "src\metro\YTRO\YTRO_200.png"){
+    engine(80, 729)
+}
+
+spriteset(set_YTRO_200J_1F_wagon, "src\metro\YTRO\YTRO_200.png") {
+    wagon_1F(80, 756)
+}
+
+spriteset(set_YTRO_200J_1F_wagon_r, "src\metro\YTRO\YTRO_200.png") {
+    wagon_1F_r(80, 756)
+}
+
+spriteset(set_YTRO_200J_2F_wagon, "src\metro\YTRO\YTRO_2F.png") {
+    wagon_2F(80, 243)
+}
+
+spriteset(set_YTRO_200J_2F_wagon_r, "src\metro\YTRO\YTRO_2F.png") {
+    wagon_2F_r(80, 243)
+}
+
+spriteset(set_YTRO_200J_engineT, "src\metro\YTRO\YTRO_200.png"){
+    engine_r(80, 783)
+}
+
+/*--------------------------------------------------------------------
+구매정보
+-------------------------------------------------------------------*/
+switch(FEAT_TRAINS, SELF, sw_YTRO_200_purchase, cargo_subtype) {
+    set_YTRO_200_purchase;
+}
