@@ -60,7 +60,7 @@ item(FEAT_TRAINS, CRH1){
         additional_text:                string(STR_REFIT_ADDITIONAL_UNABLE_CRH1);
         }
         
-    livery_override(YST_Passinger_Car) {
+    livery_override(YST_Passenger_Car) {
         default:                        sw_CRH1_wagon;
         cargo_capacity:                 101;
         loading_speed:                  25;
