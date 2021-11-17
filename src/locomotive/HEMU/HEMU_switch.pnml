@@ -2,8 +2,8 @@
 스위치
 --------------------------------------------------------------------*/
 switch(FEAT_TRAINS, SELF, sw_HEMU_engine, position_in_consist_from_end == 0 && num_vehs_in_consist > 1){
-	1: set_HEMU_engineT;
-	set_HEMU_engineH;
+    1: set_HEMU_engineT;
+    set_HEMU_engineH;
 }
 
 switch(FEAT_TRAINS, SELF, sw_HEMU_wagon_middle, (position_in_consist)) {
@@ -17,7 +17,7 @@ switch(FEAT_TRAINS, SELF, sw_HEMU_wagon, (position_in_consist %4) + 1) {
 }
 
 switch(FEAT_TRAINS, SELF, sw_HEMU_wagon_attach, vehicle_type_id) {
-    HEMU:        return CB_RESULT_ATTACH_ALLOW;
-    YST_Passenger_Car:        return CB_RESULT_ATTACH_ALLOW;
+    HEMU:               return CB_RESULT_ATTACH_ALLOW;
+    YST_Passenger_Car:  return CB_RESULT_ATTACH_ALLOW;
     return string(STR_ERROR_NO_ATTACH);
 }

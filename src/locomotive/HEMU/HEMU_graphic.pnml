@@ -2,15 +2,15 @@
 Graphics
 --------------------------------------------------------------------*/
 spriteset(set_HEMU_purchase, "src\locomotive\HEMU\HEMU.png"){
-	tmpl_purchase(0, 0)
+    tmpl_purchase(0, 0)
 }
 
 spriteset(set_HEMUH_purchase, "src\locomotive\HEMU\HEMU.png"){
-	tmpl_purchase_for_dualhead(0, 81)
+    tmpl_purchase_for_dualhead(0, 81)
 }
 
 spriteset(set_HEMU_engineH, "src\locomotive\HEMU\HEMU.png"){
-	engine(80, 0)
+    engine(80, 0)
 }
 
 spriteset(set_HEMU_wagon, "src\locomotive\HEMU\HEMU.png") {
@@ -26,7 +26,7 @@ spriteset(set_HEMU_wagon_bar, "src\locomotive\HEMU\HEMU.png") {
 }
 
 spriteset(set_HEMU_engineT, "src\locomotive\HEMU\HEMU.png"){
-	engine_r(80, 81)
+    engine_r(80, 81)
 }
 
 /*--------------------------------------------------------------------
