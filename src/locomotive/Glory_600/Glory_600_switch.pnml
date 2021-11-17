@@ -26,8 +26,8 @@ switch(FEAT_TRAINS, SELF, sw_Glory_600_engineT, cargo_subtype) {
 }
 
 switch(FEAT_TRAINS, SELF, sw_Glory_600_engine, position_in_consist_from_end == 0 && num_vehs_in_consist > 1){
-	1: sw_Glory_600_engineT;
-	sw_Glory_600_engineH;
+    1: sw_Glory_600_engineT;
+    sw_Glory_600_engineH;
 }
 
 switch(FEAT_TRAINS, SELF, sw_Glory_600_wagon_start, cargo_subtype) {
@@ -78,7 +78,7 @@ switch(FEAT_TRAINS, SELF, sw_Glory_600_wagon, [STORE_TEMP(-1, 0x10F), var[0x61, 
 }
 
 switch(FEAT_TRAINS, SELF, sw_Glory_600_wagon_attach, vehicle_type_id) {
-    Glory_600:     return CB_RESULT_ATTACH_ALLOW;
-    YST_Passenger_Car:        return CB_RESULT_ATTACH_ALLOW;
+    Glory_600:          return CB_RESULT_ATTACH_ALLOW;
+    YST_Passenger_Car:  return CB_RESULT_ATTACH_ALLOW;
     return string(STR_ERROR_NO_ATTACH);
 }

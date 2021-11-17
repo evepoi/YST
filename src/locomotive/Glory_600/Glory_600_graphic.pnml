@@ -21,11 +21,11 @@ spriteset(set_Glory_600A_wagon_start, "src\locomotive\Glory_600\Glory_600.png"){
 }
 
 spriteset(set_Glory_600A_wagon, "src\locomotive\Glory_600\Glory_600.png") {
-    wagon_1F(80, 54)
+	wagon_1F(80, 54)
 }
 
 spriteset(set_Glory_600A_wagon_r, "src\locomotive\Glory_600\Glory_600.png") {
-    wagon_1F_r(80, 54)
+	wagon_1F_r(80, 54)
 }
 
 spriteset(set_Glory_600A_wagon_end, "src\locomotive\Glory_600\Glory_600.png"){
@@ -52,11 +52,11 @@ spriteset(set_Glory_600B_wagon_start, "src\locomotive\Glory_600\Glory_600.png"){
 }
 
 spriteset(set_Glory_600B_wagon, "src\locomotive\Glory_600\Glory_600.png") {
-    wagon_1F(80, 189)
+	wagon_1F(80, 189)
 }
 
 spriteset(set_Glory_600B_wagon_r, "src\locomotive\Glory_600\Glory_600.png") {
-    wagon_1F_r(80, 189)
+	wagon_1F_r(80, 189)
 }
 
 spriteset(set_Glory_600B_wagon_end, "src\locomotive\Glory_600\Glory_600.png"){
@@ -83,11 +83,11 @@ spriteset(set_Glory_600C_wagon_start, "src\locomotive\Glory_600\Glory_600.png"){
 }
 
 spriteset(set_Glory_600C_wagon, "src\locomotive\Glory_600\Glory_600.png") {
-    wagon_1F(80, 324)
+	wagon_1F(80, 324)
 }
 
 spriteset(set_Glory_600C_wagon_r, "src\locomotive\Glory_600\Glory_600.png") {
-    wagon_1F_r(80, 324)
+	wagon_1F_r(80, 324)
 }
 
 spriteset(set_Glory_600C_wagon_end, "src\locomotive\Glory_600\Glory_600.png"){
@@ -114,11 +114,11 @@ spriteset(set_Glory_600D_wagon_start, "src\locomotive\Glory_600\Glory_600.png"){
 }
 
 spriteset(set_Glory_600D_wagon, "src\locomotive\Glory_600\Glory_600.png") {
-    wagon_1F(80, 459)
+	wagon_1F(80, 459)
 }
 
 spriteset(set_Glory_600D_wagon_r, "src\locomotive\Glory_600\Glory_600.png") {
-    wagon_1F_r(80, 459)
+	wagon_1F_r(80, 459)
 }
 
 spriteset(set_Glory_600D_wagon_end, "src\locomotive\Glory_600\Glory_600.png"){
@@ -145,11 +145,11 @@ spriteset(set_Glory_600E_wagon_start, "src\locomotive\Glory_600\Glory_600.png"){
 }
 
 spriteset(set_Glory_600E_wagon, "src\locomotive\Glory_600\Glory_600.png") {
-    wagon_1F(80, 594)
+	wagon_1F(80, 594)
 }
 
 spriteset(set_Glory_600E_wagon_r, "src\locomotive\Glory_600\Glory_600.png") {
-    wagon_1F_r(80, 594)
+	wagon_1F_r(80, 594)
 }
 
 spriteset(set_Glory_600E_wagon_end, "src\locomotive\Glory_600\Glory_600.png"){
@@ -164,5 +164,5 @@ spriteset(set_Glory_600E_engineT, "src\locomotive\Glory_600\Glory_600.png"){
 구매정보
 --------------------------------------------------------------------*/
 switch(FEAT_TRAINS, SELF, sw_Glory_600_purchase, cargo_subtype) {
-    set_Glory_600_purchase;
+	set_Glory_600_purchase;
 }
