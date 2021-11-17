@@ -34,6 +34,7 @@
 #include "locomotive/TGV_Old_Pos/TGV_Old_Pos.pnml"
 #include "locomotive/TGV_Pos/TGV_Pos.pnml"
 #include "locomotive/TGV_Old_Dulpex/TGV_Old_Duplex.pnml"
+#include "locomotive/TGV_Dulpex/TGV_Duplex.pnml"
 
 // Sorting
 #include "sort.pnml"
