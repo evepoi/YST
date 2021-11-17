@@ -1,0 +1,62 @@
+/*--------------------------------------------------------------------
+스위치
+--------------------------------------------------------------------*/
+switch(FEAT_TRAINS, SELF, sw_MTR_CNR_cargo_subtype_text, cargo_subtype) {
+    1: return string(STR_REFIT_LIVERY_MTRCNRN);   // CNR 남부섬
+    return string(STR_REFIT_LIVERY_MTRCNR);
+}
+
+switch(FEAT_TRAINS, SELF, sw_MTR_CNR_engineH, cargo_subtype) {
+    1: set_MTRCNRN_engineH;   // CNR 남부섬
+    set_MTRCNR_engineH;
+}
+
+switch(FEAT_TRAINS, SELF, sw_MTR_CNR_engineT, cargo_subtype) {
+    1: set_MTRCNRN_engineT;   // CNR 남부섬
+    set_MTRCNR_engineT;
+}
+
+switch(FEAT_TRAINS, SELF, sw_MTR_CNR_engine, position_in_consist_from_end == 0 && num_vehs_in_consist > 1){
+    1: sw_MTR_CNR_engineT;
+    sw_MTR_CNR_engineH;
+}
+
+switch(FEAT_TRAINS, SELF, sw_MTR_CNR_wagon_start, cargo_subtype) {
+    1: set_MTRCNRN_wagon_start;   // CNR 남부섬
+    set_MTRCNR_wagon_start;
+}
+
+switch(FEAT_TRAINS, SELF, sw_MTR_CNR_wagon_front, cargo_subtype) {
+    1: set_MTRCNRN_wagon;   // CNR 남부섬
+    set_MTRCNR_wagon;
+}
+
+switch(FEAT_TRAINS, SELF, sw_MTR_CNR_wagon_tail, cargo_subtype) {
+    1: set_MTRCNRN_wagon_r;   // CNR 남부섬
+    set_MTRCNR_wagon_r;
+}
+
+switch(FEAT_TRAINS, SELF, sw_MTR_CNR_wagon_end, cargo_subtype) {
+    1: set_MTRCNRN_wagon_end;   // CNR 남부섬
+    set_MTRCNR_wagon_end;
+}
+
+switch(FEAT_TRAINS, SELF, sw_MTR_CNR_wagon_middle, (position_in_consist)) {
+    1: sw_MTR_CNR_wagon_tail;
+    sw_MTR_CNR_wagon_front;
+}
+
+switch(FEAT_TRAINS, SELF, sw_MTR_CNR_wagon_rear, [STORE_TEMP(1, 0x10F), var[0x61, 0, 0x0000FFFF, 0xC6]]){
+    MTR_CNR: sw_MTR_CNR_wagon_end;
+    sw_MTR_CNR_wagon_middle;
+}
+
+switch(FEAT_TRAINS, SELF, sw_MTR_CNR_wagon, [STORE_TEMP(-1, 0x10F), var[0x61, 0, 0x0000FFFF, 0xC6]]) {
+    MTR_CNR: sw_MTR_CNR_wagon_start;
+    sw_MTR_CNR_wagon_rear;
+}
+
+switch(FEAT_TRAINS, SELF, sw_MTR_CNR_wagon_attach, vehicle_type_id) {
+    YST_Passenger_Car:  return CB_RESULT_ATTACH_ALLOW;
+    return string(STR_ERROR_NO_ATTACH);
+}
