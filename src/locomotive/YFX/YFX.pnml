@@ -58,11 +58,4 @@ item(FEAT_TRAINS, YFX){
         cost_factor:                    10;
         running_cost_factor:            150;
         }
-
-    livery_override(YFXF) {
-        default:                        sw_YFX_wagon;
-        cargo_capacity:                 200;
-        loading_speed:                  25;
-        running_cost_factor:            150;
-        }
         }
