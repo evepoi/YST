@@ -14,11 +14,11 @@ spriteset(set_E320_engineH, "src\locomotive\E320\E320.png"){
 }
 
 spriteset(set_E320_wagon, "src\locomotive\E320\E320.png") {
-    wagon_1F(80, 27)
+	wagon_1F(80, 27)
 }
 
 spriteset(set_E320_wagon_r, "src\locomotive\E320\E320.png") {
-    wagon_1F_r(80, 27)
+	wagon_1F_r(80, 27)
 }
 
 spriteset(set_E320_engineT, "src\locomotive\E320\E320.png"){
@@ -29,5 +29,5 @@ spriteset(set_E320_engineT, "src\locomotive\E320\E320.png"){
 구매정보
 --------------------------------------------------------------------*/
 switch(FEAT_TRAINS, SELF, sw_E320_purchase, cargo_subtype) {
-    set_E320_purchase;
+	set_E320_purchase;
 }
