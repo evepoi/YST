@@ -30,6 +30,7 @@
 #include "locomotive/NJ2/NJ2.pnml"
 #include "locomotive/NKX/NKX.pnml"
 #include "locomotive/Talgo_250/Talgo_250.pnml"
+#include "locomotive/TGV_Old/TGV_Old.pnml"
 
 // Sorting
 #include "sort.pnml"
