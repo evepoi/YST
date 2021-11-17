@@ -5,7 +5,7 @@ Talgo 250
 #include "Talgo_250_graphic.pnml"
 
 // Switch
-#include "Talgo_250_swich.pnml"
+#include "Talgo_250_switch.pnml"
 
 /*--------------------------------------------------------------------
 열차정보
