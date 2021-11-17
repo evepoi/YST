@@ -1,0 +1,107 @@
+/*--------------------------------------------------------------------
+Graphics
+--------------------------------------------------------------------*/
+spriteset(set_MTR_purchase, "src\metro\MTR\Cammall\MTR_Cammall.png"){
+    tmpl_purchase(0, 0)
+}
+
+/*--------------------------------------------------------------------
+1. MTR 기본차량
+--------------------------------------------------------------------*/
+spriteset(set_MTRH_purchase, "src\metro\MTR\Cammall\MTR_Cammall.png"){
+    tmpl_purchase_for_dualhead(0, 108)
+}
+
+spriteset(set_MTR_engineH, "src\metro\MTR\Cammall\MTR_Cammall.png"){
+    engine(80, 0)
+}
+
+spriteset(set_MTR_wagon_start, "src\lmetro\MTR\Cammall\MTR_Cammall.png"){
+    wagon_start(80, 27)
+}
+
+spriteset(set_MTR_wagon, "src\metro\MTR\Cammall\MTR_Cammall.png") {
+    wagon_1F(80, 54)
+}
+
+spriteset(set_MTR_wagon_r, "src\metro\MTR\Cammall\MTR_Cammall.png") {
+    wagon_1F_r(80, 54)
+}
+
+spriteset(set_MTR_wagon_end, "src\metro\MTR\Cammall\MTR_Cammall.png"){
+    wagon_start(80, 81)
+}
+
+spriteset(set_MTR_engineT, "src\metro\MTR\Cammall\MTR_Cammall.png"){
+    engine_r(80, 108)
+}
+
+/*--------------------------------------------------------------------
+2. MTR 개조차량
+--------------------------------------------------------------------*/
+spriteset(set_MTRMH_purchase, "src\metro\MTR\Cammall\MTR_Cammall.png"){
+    tmpl_purchase_for_dualhead(0, 243)
+}
+
+spriteset(set_MTRM_engineH, "src\metro\MTR\Cammall\MTR_Cammall.png"){
+    engine(80, 135)
+}
+
+spriteset(set_MTRM_wagon_start, "src\metro\MTR\Cammall\MTR_Cammall.png"){
+    wagon_start(80, 162)
+}
+
+spriteset(set_MTRM_wagon, "src\metro\MTR\Cammall\MTR_Cammall.png") {
+    wagon_1F(80, 189)
+}
+
+spriteset(set_MTRM_wagon_r, "src\metro\MTR\Cammall\MTR_Cammall.png") {
+    wagon_1F_r(80, 189)
+}
+
+spriteset(set_MTRM_wagon_end, "src\metro\MTR\Cammall\MTR_Cammall.png"){
+    wagon_start(80, 216)
+}
+
+spriteset(set_MTRM_engineT, "src\metro\MTR\Cammall\MTR_Cammall.png"){
+    engine_r(80, 243)
+}
+
+
+/*--------------------------------------------------------------------
+3. MTR 디즈니선
+--------------------------------------------------------------------*/
+spriteset(set_MTRDH_purchase, "src\metro\MTR\Cammall\MTR_Cammall.png"){
+    tmpl_purchase_for_dualhead(0, 378)
+}
+
+spriteset(set_MTRD_engineH, "src\metro\MTR\Cammall\MTR_Cammall.png"){
+    engine(80, 270)
+}
+
+spriteset(set_MTRD_wagon_start, "src\metro\MTR\Cammall\MTR_Cammall.png"){
+    wagon_start(80, 297)
+}
+
+spriteset(set_MTRD_wagon, "src\metro\MTR\Cammall\MTR_Cammall.png") {
+    wagon_1F(80, 324)
+}
+
+spriteset(set_MTRD_wagon_r, "src\metro\MTR\Cammall\MTR_Cammall.png") {
+    wagon_1F_r(80, 324)
+}
+
+spriteset(set_MTRD_wagon_end, "src\metro\MTR\Cammall\MTR_Cammall.png"){
+    wagon_start(80, 351)
+}
+
+spriteset(set_MTRD_engineT, "src\metro\MTR\Cammall\MTR_Cammall.png"){
+    engine_r(80, 378)
+}
+
+/*--------------------------------------------------------------------
+구매정보
+-------------------------------------------------------------------*/
+switch(FEAT_TRAINS, SELF, sw_MTR_Cammall_purchase, cargo_subtype) {
+    set_MTR_purchase;
+}
