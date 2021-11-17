@@ -1,0 +1,75 @@
+/*--------------------------------------------------------------------
+Graphics
+--------------------------------------------------------------------*/
+spriteset(set_N700_purchase, "src\locomotive\N700\N700.png"){
+    tmpl_purchase(0, 0)
+}
+
+/*--------------------------------------------------------------------
+1 N700계
+--------------------------------------------------------------------*/
+spriteset(set_N700H_purchase, "src\locomotive\N700\N700.png"){
+    tmpl_purchase_for_dualhead(0, 108)
+}
+
+spriteset(set_N700_engineH, "src\locomotive\N700\N700.png"){
+    engine(80, 0)
+}
+
+spriteset(set_N700_wagon_start, "src\locomotive\N700\N700.png"){
+    wagon_panto(80, 27)
+}
+
+spriteset(set_N700_wagon, "src\locomotive\N700\N700.png") {
+    wagon_1F(80, 54)
+}
+
+spriteset(set_N700_wagon_r, "src\locomotive\N700\N700.png") {
+    wagon_1F_r(80, 54)
+}
+
+spriteset(set_N700_wagon_end, "src\locomotive\N700\N700.png"){
+    wagon_panto(80, 81)
+}
+
+spriteset(set_N700_engineT, "src\locomotive\N700\N700.png"){
+    engine_r(80, 108)
+}
+
+/*--------------------------------------------------------------------
+2. N700 타이완 고속철도
+--------------------------------------------------------------------*/
+spriteset(set_N700TH_purchase, "src\locomotive\N700\N700.png"){
+    tmpl_purchase_for_dualhead(0, 243)
+}
+
+spriteset(set_N700T_engineH, "src\locomotive\N700\N700.png"){
+    engine(80, 135)
+}
+
+spriteset(set_N700T_wagon_start, "src\locomotive\N700\N700.png"){
+    wagon_panto(80, 162)
+}
+
+spriteset(set_N700T_wagon, "src\locomotive\N700\N700.png") {
+    wagon_1F(80, 189)
+}
+
+spriteset(set_N700T_wagon_r, "src\locomotive\N700\N700.png") {
+    wagon_1F_r(80, 189)
+}
+
+spriteset(set_N700T_wagon_end, "src\locomotive\N700\N700.png"){
+    wagon_panto(80, 216)
+}
+
+spriteset(set_N700T_engineT, "src\locomotive\N700\N700.png"){
+    engine_r(80, 243)
+}
+
+/*--------------------------------------------------------------------
+구매정보
+--------------------------------------------------------------------*/
+switch(FEAT_TRAINS, SELF, sw_N700_purchase, cargo_subtype) {
+    set_N700_purchase;
+}

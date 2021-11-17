@@ -74,211 +74,6 @@ railtypetable {
 #include "src/train_list.pnml"
 
 /*--------------------------------------------------------------------
-5.25. 신칸센 N700계
---------------------------------------------------------------------*/
-/*--------------------------------------------------------------------
-5.25.1 Graphics
---------------------------------------------------------------------*/
-spriteset(set_N700_purchase, "src\locomotive\N700\N700.png"){
-	tmpl_purchase(0, 0)
-}
-
-/*--------------------------------------------------------------------
-5.25.1.1 N700계
---------------------------------------------------------------------*/
-spriteset(set_N700H_purchase, "src\locomotive\N700\N700.png"){
-	tmpl_purchase_for_dualhead(0, 108)
-}
-
-spriteset(set_N700_engineH, "src\locomotive\N700\N700.png"){
-	engine(80, 0)
-}
-
-spriteset(set_N700_wagon_start, "src\locomotive\N700\N700.png"){
-	wagon_panto(80, 27)
-}
-
-spriteset(set_N700_wagon, "src\locomotive\N700\N700.png") {
-    wagon_1F(80, 54)
-}
-
-spriteset(set_N700_wagon_r, "src\locomotive\N700\N700.png") {
-    wagon_1F_r(80, 54)
-}
-
-spriteset(set_N700_wagon_end, "src\locomotive\N700\N700.png"){
-	wagon_panto(80, 81)
-}
-
-spriteset(set_N700_engineT, "src\locomotive\N700\N700.png"){
-	engine_r(80, 108)
-}
-
-/*--------------------------------------------------------------------
-5.25.1.1 N700 타이완 고속철도
---------------------------------------------------------------------*/
-spriteset(set_N700TH_purchase, "src\locomotive\N700\N700.png"){
-	tmpl_purchase_for_dualhead(0, 243)
-}
-
-spriteset(set_N700T_engineH, "src\locomotive\N700\N700.png"){
-	engine(80, 135)
-}
-
-spriteset(set_N700T_wagon_start, "src\locomotive\N700\N700.png"){
-	wagon_panto(80, 162)
-}
-
-spriteset(set_N700T_wagon, "src\locomotive\N700\N700.png") {
-    wagon_1F(80, 189)
-}
-
-spriteset(set_N700T_wagon_r, "src\locomotive\N700\N700.png") {
-    wagon_1F_r(80, 189)
-}
-
-spriteset(set_N700T_wagon_end, "src\locomotive\N700\N700.png"){
-	wagon_panto(80, 216)
-}
-
-spriteset(set_N700T_engineT, "src\locomotive\N700\N700.png"){
-	engine_r(80, 243)
-}
-
-/*--------------------------------------------------------------------
-5.25.2. 구매정보
---------------------------------------------------------------------*/
-switch(FEAT_TRAINS, SELF, sw_N700_purchase, cargo_subtype) {
-    set_N700_purchase;
-}
-
-/*--------------------------------------------------------------------
-5.25.3. 스위치
---------------------------------------------------------------------*/
-switch(FEAT_TRAINS, SELF, sw_N700_cargo_subtype_text, cargo_subtype) {
-    1: return string(STR_REFIT_LIVERY_N700T);   // 타이완고속철도
-    return string(STR_REFIT_LIVERY_N700);
-}
-
-switch(FEAT_TRAINS, SELF, sw_N700_engineH, cargo_subtype) {
-    1: set_N700T_engineH;    // 타이완고속철도
-    set_N700_engineH;
-}
-
-switch(FEAT_TRAINS, SELF, sw_N700_engineT, cargo_subtype) {
-    1: set_N700T_engineT;    // 타이완고속철도
-    set_N700_engineT;
-}
-
-switch(FEAT_TRAINS, SELF, sw_N700_engine, position_in_consist_from_end == 0 && num_vehs_in_consist > 1){
-	1: sw_N700_engineT;
-	sw_N700_engineH;
-}
-
-switch(FEAT_TRAINS, SELF, sw_N700_wagon_start, cargo_subtype) {
-    1: set_N700T_wagon_start;    // 타이완고속철도
-    set_N700_wagon_start;
-}
-
-switch(FEAT_TRAINS, SELF, sw_N700_wagon_front, cargo_subtype) {
-    1: set_N700T_wagon;    // 타이완고속철도
-    set_N700_wagon;
-}
-
-switch(FEAT_TRAINS, SELF, sw_N700_wagon_tail, cargo_subtype) {
-    1: set_N700T_wagon_r;    // 타이완고속철도
-    set_N700_wagon_r;
-}
-
-switch(FEAT_TRAINS, SELF, sw_N700_wagon_end, cargo_subtype) {
-    1: set_N700T_wagon_end;    // 타이완고속철도
-    set_N700_wagon_end;
-}
-
-switch(FEAT_TRAINS, SELF, sw_N700_wagon_middle, (position_in_consist)) {
-    1: sw_N700_wagon_tail;
-    sw_N700_wagon_front;
-}
-
-switch(FEAT_TRAINS, SELF, sw_N700_wagon_rear, [STORE_TEMP(4, 0x10F), var[0x61, 0, 0x0000FFFF, 0xC6]]){
-    N700: sw_N700_wagon_end;
-    sw_N700_wagon_middle;
-}
-
-switch(FEAT_TRAINS, SELF, sw_N700_wagon, [STORE_TEMP(-4, 0x10F), var[0x61, 0, 0x0000FFFF, 0xC6]]) {
-    N700: sw_N700_wagon_start;
-    sw_N700_wagon_rear;
-}
-
-switch(FEAT_TRAINS, SELF, sw_N700_wagon_attach, vehicle_type_id) {
-    YST_Passinger_Car:        return CB_RESULT_ATTACH_ALLOW;
-    return string(STR_ERROR_NO_ATTACH);
-}
-
-/*--------------------------------------------------------------------
-5.25.4 열차정보
---------------------------------------------------------------------*/
-item(FEAT_TRAINS, N700){
-	property {
- 		name:							string(STR_N700_NAME);
- 		climates_available:				ALL_CLIMATES;
-		introduction_date:				date(2007, 1, 1);
-        track_type:						ELRL;
-        engine_class:					ENGINE_CLASS_ELECTRIC;
-		sprite_id:						SPRITE_ID_NEW_TRAIN;
-        dual_headed:                    1;        
-        
-        //spec
-		speed:							331km/h;
-		power:							10000 kW;
-		weight:							80 ton;
-		tractive_effort_coefficient:	0.3;
-        air_drag_coefficient:           0.01;
-        
-        //Model
-        model_life:						VEHICLE_NEVER_EXPIRES;
-        vehicle_life:					255;
-        retire_early:					0;
-		reliability_decay:				0;
-        
-        //Cargo
-        cargo_capacity:					75;
-        refittable_cargo_classes:       NO_CARGO_CLASS;
-        non_refittable_cargo_classes:   NO_CARGO_CLASS;
-        cargo_allow_refit:              [PASS];
-        cargo_disallow_refit:           [];
-        
-        //Costs
-        refit_cost:						0;
-        running_cost_base:				RUNNING_COST_ELECTRIC;
-        
-        
-        //Flags
-        misc_flags:						bitmask(TRAIN_FLAG_MU, TRAIN_FLAG_AUTOREFIT);
-        extra_weight_per_wagon:			35 ton;
-    }
-    
-	graphics {
-		default:						sw_N700_engine;
-		purchase:						sw_N700_purchase;
-        loading_speed:					25;
-		cost_factor:					10;
-		running_cost_factor:			150;
-        can_attach_wagon:               sw_N700_wagon_attach;
-        cargo_subtype_text:             sw_N700_cargo_subtype_text;
-        start_stop:                     sw_YST_train_start_stop_6;
-		additional_text:                string(STR_REFIT_ADDITIONAL_UNABLE_UNADDTRAIN);
-        }
-
-    livery_override(YST_Passinger_Car) {
-        default:                        sw_N700_wagon;
-        cargo_subtype_text:             sw_N700_cargo_subtype_text;
-        cargo_capacity:                 100;
-        loading_speed:                  25;
-        running_cost_factor:            100;}
-        }
-        
-/*--------------------------------------------------------------------
 5.26. NKX
 --------------------------------------------------------------------*/
 /*--------------------------------------------------------------------
@@ -506,8 +301,8 @@ switch(FEAT_TRAINS, SELF, sw_NKX_2F_wagon, [STORE_TEMP(-1, 0x10F), var[0x61, 0, 
 
 switch(FEAT_TRAINS, SELF, sw_NKX_wagon_attach, vehicle_type_id) {
     NKX:            return CB_RESULT_ATTACH_ALLOW;
-    YST_Passinger_Car:        return CB_RESULT_ATTACH_ALLOW;
-    YST_Passinger_2F_Car:        return CB_RESULT_ATTACH_ALLOW;
+    YST_Passenger_Car:        return CB_RESULT_ATTACH_ALLOW;
+    YST_Passenger_2F_Car:        return CB_RESULT_ATTACH_ALLOW;
     return string(STR_ERROR_NO_ATTACH);
 }
 
@@ -566,14 +361,14 @@ item(FEAT_TRAINS, NKX){
 		additional_text:                string(STR_REFIT_ADDITIONAL_ABLE_NKX);
         }
 
-    livery_override(YST_Passinger_Car) {
+    livery_override(YST_Passenger_Car) {
         default:                        sw_NKX_1F_wagon;
         cargo_subtype_text:             sw_NKX_cargo_subtype_text;
         cargo_capacity:                 101;
         loading_speed:                  25;
         running_cost_factor:            100;}
         
-    livery_override(YST_Passinger_2F_Car) {
+    livery_override(YST_Passenger_2F_Car) {
         default:                        sw_NKX_2F_wagon;
         cargo_subtype_text:             sw_NKX_cargo_subtype_text;
         cargo_capacity:                 202;
@@ -720,7 +515,7 @@ switch(FEAT_TRAINS, SELF, sw_Talgo_wagon, [STORE_TEMP(-1, 0x10F), var[0x61, 0, 0
 
 switch(FEAT_TRAINS, SELF, sw_Talgo_wagon_attach, vehicle_type_id) {
     TALGO:              return CB_RESULT_ATTACH_ALLOW;
-    YST_Passinger_Car:        return CB_RESULT_ATTACH_ALLOW;
+    YST_Passenger_Car:        return CB_RESULT_ATTACH_ALLOW;
     return string(STR_ERROR_NO_ATTACH);
 }
 
@@ -780,7 +575,7 @@ item(FEAT_TRAINS, TALGO){
         additional_text:                string(STR_REFIT_ADDITIONAL_ABLE_Talgo);
 }
 
-    livery_override(YST_Passinger_Car) {
+    livery_override(YST_Passenger_Car) {
         default:                        sw_Talgo_wagon;
         cargo_subtype_text:             sw_Talgo_cargo_subtype_text;
         cargo_capacity:                 85;
@@ -858,7 +653,7 @@ switch(FEAT_TRAINS, SELF, sw_TGV_Old_wagon, [STORE_TEMP(-1, 0x10F), var[0x61, 0,
 
 switch(FEAT_TRAINS, SELF, sw_TGV_Old_wagon_attach, vehicle_type_id) {
     TGV_OLD:              return CB_RESULT_ATTACH_ALLOW;
-    YST_Passinger_Car:        return CB_RESULT_ATTACH_ALLOW;
+    YST_Passenger_Car:        return CB_RESULT_ATTACH_ALLOW;
     return string(STR_ERROR_NO_ATTACH);
 }
 
@@ -917,7 +712,7 @@ item(FEAT_TRAINS, TGV_OLD){
         additional_text:                string(STR_REFIT_ADDITIONAL_UNABLE_TGV_OLD);
 }
 
-    livery_override(YST_Passinger_Car) {
+    livery_override(YST_Passenger_Car) {
         default:                        sw_TGV_Old_wagon;
         cargo_capacity:                 85;
         loading_speed:                  25;
@@ -1113,7 +908,7 @@ switch(FEAT_TRAINS, SELF, sw_TGV_OLD_Pos_wagon_attach, vehicle_type_id) {
    TGV_OLD_Pos:              return CB_RESULT_ATTACH_ALLOW;
    TGV_OLD_Duplex:              return CB_RESULT_ATTACH_ALLOW;
    TGV_Duplex:              return CB_RESULT_ATTACH_ALLOW;
-    YST_Passinger_Car:        return CB_RESULT_ATTACH_ALLOW;
+    YST_Passenger_Car:        return CB_RESULT_ATTACH_ALLOW;
     return string(STR_ERROR_NO_ATTACH);
 }
 
@@ -1173,7 +968,7 @@ item(FEAT_TRAINS, TGV_OLD_Pos){
         additional_text:                string(STR_REFIT_ADDITIONAL_ABLE_TGV);
 }
 
-    livery_override(YST_Passinger_Car) {
+    livery_override(YST_Passenger_Car) {
         default:                        sw_TGV_OLD_Pos_wagon;
         cargo_subtype_text:             sw_TGV_OLD_Pos_cargo_subtype_text;
         cargo_capacity:                 85;
@@ -1370,7 +1165,7 @@ switch(FEAT_TRAINS, SELF, sw_TGV_Pos_wagon_attach, vehicle_type_id) {
    TGV_OLD_Pos:              return CB_RESULT_ATTACH_ALLOW;
    TGV_OLD_Duplex:              return CB_RESULT_ATTACH_ALLOW;
    TGV_Duplex:              return CB_RESULT_ATTACH_ALLOW;
-    YST_Passinger_Car:        return CB_RESULT_ATTACH_ALLOW;
+    YST_Passenger_Car:        return CB_RESULT_ATTACH_ALLOW;
     return string(STR_ERROR_NO_ATTACH);
 }
 
@@ -1430,7 +1225,7 @@ item(FEAT_TRAINS, TGV_Pos){
         additional_text:                string(STR_REFIT_ADDITIONAL_ABLE_TGV);
 }
 
-    livery_override(YST_Passinger_Car) {
+    livery_override(YST_Passenger_Car) {
         default:                        sw_TGV_Pos_wagon;
         cargo_subtype_text:             sw_TGV_Pos_cargo_subtype_text;
         cargo_capacity:                 85;
@@ -1598,7 +1393,7 @@ switch(FEAT_TRAINS, SELF, sw_TGV_OLD_Duplex_wagon_attach, vehicle_type_id) {
    TGV_OLD_Pos:              return CB_RESULT_ATTACH_ALLOW;
    TGV_OLD_Duplex:              return CB_RESULT_ATTACH_ALLOW;
    TGV_Duplex:              return CB_RESULT_ATTACH_ALLOW;
-    YST_Passinger_Car:        return CB_RESULT_ATTACH_ALLOW;
+    YST_Passenger_Car:        return CB_RESULT_ATTACH_ALLOW;
     return string(STR_ERROR_NO_ATTACH);
 }
 
@@ -1658,7 +1453,7 @@ item(FEAT_TRAINS, TGV_OLD_Duplex){
         additional_text:                string(STR_REFIT_ADDITIONAL_ABLE_TGV);
 }
 
-    livery_override(YST_Passinger_Car) {
+    livery_override(YST_Passenger_Car) {
         default:                        sw_TGV_OLD_Duplex_wagon;
         cargo_subtype_text:             sw_TGV_OLD_Duplex_cargo_subtype_text;
         cargo_capacity:                 170;
@@ -1817,7 +1612,7 @@ switch(FEAT_TRAINS, SELF, sw_TGV_Duplex_wagon_attach, vehicle_type_id) {
    TGV_OLD_Pos:              return CB_RESULT_ATTACH_ALLOW;
    TGV_OLD_Duplex:              return CB_RESULT_ATTACH_ALLOW;
    TGV_Duplex:              return CB_RESULT_ATTACH_ALLOW;
-    YST_Passinger_Car:        return CB_RESULT_ATTACH_ALLOW;
+    YST_Passenger_Car:        return CB_RESULT_ATTACH_ALLOW;
     return string(STR_ERROR_NO_ATTACH);
 }
 
@@ -1877,7 +1672,7 @@ item(FEAT_TRAINS, TGV_Duplex){
         additional_text:                string(STR_REFIT_ADDITIONAL_ABLE_TGV);
 }
 
-    livery_override(YST_Passinger_Car) {
+    livery_override(YST_Passenger_Car) {
         default:                        sw_TGV_Duplex_wagon;
         cargo_subtype_text:             sw_TGV_Duplex_cargo_subtype_text;
         cargo_capacity:                 170;
@@ -1955,7 +1750,7 @@ switch(FEAT_TRAINS, SELF, sw_TGV_Ouigo_wagon, [STORE_TEMP(-1, 0x10F), var[0x61, 
 
 switch(FEAT_TRAINS, SELF, sw_TGV_Ouigo_wagon_attach, vehicle_type_id) {
    TGV_Ouigo:              return CB_RESULT_ATTACH_ALLOW;
-    YST_Passinger_Car:        return CB_RESULT_ATTACH_ALLOW;
+    YST_Passenger_Car:        return CB_RESULT_ATTACH_ALLOW;
     return string(STR_ERROR_NO_ATTACH);
 }
 
@@ -2018,7 +1813,7 @@ item(FEAT_TRAINS, TGV_Ouigo){
         additional_text:                string(STR_REFIT_ADDITIONAL_UNABLE_TGV_Ouigo);
 }
 
-    livery_override(YST_Passinger_Car) {
+    livery_override(YST_Passenger_Car) {
         default:                        sw_TGV_Ouigo_wagon;
         cargo_capacity:                 170;
         loading_speed:                  25;
@@ -2077,7 +1872,7 @@ switch(FEAT_TRAINS, SELF, sw_VTX_wagon, (position_in_consist)) {
 
 switch(FEAT_TRAINS, SELF, sw_VTX_wagon_attach, vehicle_type_id) {
    VTX:              return CB_RESULT_ATTACH_ALLOW;
-   YST_Passinger_Car:        return CB_RESULT_ATTACH_ALLOW;
+   YST_Passenger_Car:        return CB_RESULT_ATTACH_ALLOW;
    return string(STR_ERROR_NO_ATTACH);
 }
 
@@ -2135,7 +1930,7 @@ item(FEAT_TRAINS, VTX){
         additional_text:                string(STR_REFIT_ADDITIONAL_UNABLE_VTX);
 }
 
-    livery_override(YST_Passinger_Car) {
+    livery_override(YST_Passenger_Car) {
         default:                        sw_VTX_wagon;
         cargo_capacity:                 80;
         loading_speed:                  25;
@@ -2492,7 +2287,7 @@ switch(FEAT_TRAINS, SELF, sw_YN_wagon, [STORE_TEMP(-1, 0x10F), var[0x61, 0, 0x00
 
 switch(FEAT_TRAINS, SELF, sw_YN_wagon_attach, vehicle_type_id) {
     YN:             return CB_RESULT_ATTACH_ALLOW;
-    YST_Passinger_Car:        return CB_RESULT_ATTACH_ALLOW;
+    YST_Passenger_Car:        return CB_RESULT_ATTACH_ALLOW;
     return string(STR_ERROR_NO_ATTACH);
 }
 
@@ -2550,7 +2345,7 @@ item(FEAT_TRAINS, YN){
 		additional_text:                string(STR_REFIT_ADDITIONAL_ABLE_YN);
         }
 
-    livery_override(YST_Passinger_Car) {
+    livery_override(YST_Passenger_Car) {
         default:                        sw_YN_wagon;
         cargo_subtype_text:             sw_YN_cargo_subtype_text;
         cargo_capacity:                 70;
@@ -2806,8 +2601,8 @@ switch(FEAT_TRAINS, SELF, sw_YTRO_100_2F_wagon, position_in_consist) {
 }
 
 switch(FEAT_TRAINS, SELF, sw_YTRO_100_wagon_attach, vehicle_type_id) {
-    YST_Passinger_Car:        return CB_RESULT_ATTACH_ALLOW;
-    YST_Passinger_2F_Car:        return CB_RESULT_ATTACH_ALLOW;
+    YST_Passenger_Car:        return CB_RESULT_ATTACH_ALLOW;
+    YST_Passenger_2F_Car:        return CB_RESULT_ATTACH_ALLOW;
     return string(STR_ERROR_NO_ATTACH);
 }
 /*--------------------------------------------------------------------
@@ -2864,14 +2659,14 @@ item(FEAT_TRAINS, YTRO_100){
 		additional_text:                string(STR_REFIT_ADDITIONAL_ABLE_UNADDTRAIN);
         }
 
-    livery_override(YST_Passinger_Car) {
+    livery_override(YST_Passenger_Car) {
         default:                        sw_YTRO_100_1F_wagon;
         cargo_subtype_text:             sw_YTRO_100_cargo_subtype_text;
         cargo_capacity:                 80;
         loading_speed:                  25;
         running_cost_factor:            100;}
         
-      livery_override(YST_Passinger_2F_Car) {
+      livery_override(YST_Passenger_2F_Car) {
         default:                        sw_YTRO_100_2F_wagon;
         cargo_subtype_text:             sw_YTRO_100_cargo_subtype_text;
         cargo_capacity:                 160;
@@ -3318,8 +3113,8 @@ switch(FEAT_TRAINS, SELF, sw_YTRO_200_2F_wagon, position_in_consist) {
 }
 
 switch(FEAT_TRAINS, SELF, sw_YTRO_200_wagon_attach, vehicle_type_id) {
-    YST_Passinger_Car:        return CB_RESULT_ATTACH_ALLOW;
-    YST_Passinger_2F_Car:        return CB_RESULT_ATTACH_ALLOW;
+    YST_Passenger_Car:        return CB_RESULT_ATTACH_ALLOW;
+    YST_Passenger_2F_Car:        return CB_RESULT_ATTACH_ALLOW;
     return string(STR_ERROR_NO_ATTACH);
 }
 
@@ -3377,14 +3172,14 @@ item(FEAT_TRAINS, YTRO_200){
 		additional_text:                string(STR_REFIT_ADDITIONAL_ABLE_UNADDTRAIN);
         }
 
-    livery_override(YST_Passinger_Car) {
+    livery_override(YST_Passenger_Car) {
         default:                        sw_YTRO_200_1F_wagon;
         cargo_subtype_text:             sw_YTRO_200_cargo_subtype_text;
         cargo_capacity:                 80;
         loading_speed:                  25;
         running_cost_factor:            100;}
         
-      livery_override(YST_Passinger_2F_Car) {
+      livery_override(YST_Passenger_2F_Car) {
         default:                        sw_YTRO_200_2F_wagon;
         cargo_subtype_text:             sw_YTRO_200_cargo_subtype_text;
         cargo_capacity:                 160;
@@ -3457,7 +3252,7 @@ switch(FEAT_TRAINS, SELF, sw_YTX_wagon, [STORE_TEMP(-1, 0x10F), var[0x61, 0, 0x0
 
 switch(FEAT_TRAINS, SELF, sw_YTX_wagon_attach, vehicle_type_id) {
     YTX:        return CB_RESULT_ATTACH_ALLOW;
-    YST_Passinger_Car:        return CB_RESULT_ATTACH_ALLOW;
+    YST_Passenger_Car:        return CB_RESULT_ATTACH_ALLOW;
     return string(STR_ERROR_NO_ATTACH);
 }
 
@@ -3514,7 +3309,7 @@ item(FEAT_TRAINS, YTX){
 		additional_text:                string(STR_REFIT_ADDITIONAL_UNABLE_YTX);
         }
 
-    livery_override(YST_Passinger_Car) {
+    livery_override(YST_Passenger_Car) {
         default:                        sw_YTX_wagon;
         cargo_capacity:                 50;
         loading_speed:                  25;
@@ -3706,7 +3501,7 @@ switch(FEAT_TRAINS, SELF, sw_ZEFIRO380_wagon, [STORE_TEMP(-1, 0x10F), var[0x61, 
 
 switch(FEAT_TRAINS, SELF, sw_ZEFIRO380_wagon_attach, vehicle_type_id) {
    ZEFIRO380:              return CB_RESULT_ATTACH_ALLOW;
-   YST_Passinger_Car:        return CB_RESULT_ATTACH_ALLOW;
+   YST_Passenger_Car:        return CB_RESULT_ATTACH_ALLOW;
     return string(STR_ERROR_NO_ATTACH);
 }
 
@@ -3765,7 +3560,7 @@ item(FEAT_TRAINS, ZEFIRO380){
         additional_text:                string(STR_REFIT_ADDITIONAL_ABLE_ZEFIRO380);
 }
 
-    livery_override(YST_Passinger_Car) {
+    livery_override(YST_Passenger_Car) {
         default:                        sw_ZEFIRO380_wagon;
         cargo_subtype_text:             sw_ZEFIRO380_cargo_subtype_text;
         cargo_capacity:                 90;
@@ -3842,7 +3637,7 @@ switch(FEAT_TRAINS, SELF, sw_DRY700_wagon, [STORE_TEMP(-4, 0x10F), var[0x61, 0, 
 }
 
 switch(FEAT_TRAINS, SELF, sw_DRY700_wagon_attach, vehicle_type_id) {
-    YST_Passinger_Car:        return CB_RESULT_ATTACH_ALLOW;
+    YST_Passenger_Car:        return CB_RESULT_ATTACH_ALLOW;
     return string(STR_ERROR_NO_ATTACH);
 }
 
@@ -3899,7 +3694,7 @@ item(FEAT_TRAINS, DRY700){
 		additional_text:                string(STR_REFIT_ADDITIONAL_UNABLE_UNADDTRAIN);
         }
 
-    livery_override(YST_Passinger_Car) {
+    livery_override(YST_Passenger_Car) {
         default:                        sw_DRY700_wagon;
         cargo_capacity:                 0;
         running_cost_factor:            0;}
@@ -6465,7 +6260,7 @@ switch(FEAT_TRAINS, SELF, sw_MTR_Cammall_wagon, [STORE_TEMP(-1, 0x10F), var[0x61
 }
 
 switch(FEAT_TRAINS, SELF, sw_MTR_Cammall_wagon_attach, vehicle_type_id) {
-   YST_Passinger_Car:        return CB_RESULT_ATTACH_ALLOW;
+   YST_Passenger_Car:        return CB_RESULT_ATTACH_ALLOW;
     return string(STR_ERROR_NO_ATTACH);
 }
 
@@ -6523,7 +6318,7 @@ item(FEAT_TRAINS, MTR){
 		additional_text:                string(STR_REFIT_ADDITIONAL_ABLE_UNADDTRAIN);
         }
 
-    livery_override(YST_Passinger_Car) {
+    livery_override(YST_Passenger_Car) {
         default:                        sw_MTR_Cammall_wagon;
         cargo_subtype_text:             sw_MTR_Cammall_cargo_subtype_text;
         cargo_capacity:                 80;
@@ -6669,7 +6464,7 @@ switch(FEAT_TRAINS, SELF, sw_MTR_CNR_wagon, [STORE_TEMP(-1, 0x10F), var[0x61, 0,
 }
 
 switch(FEAT_TRAINS, SELF, sw_MTR_CNR_wagon_attach, vehicle_type_id) {
-   YST_Passinger_Car:        return CB_RESULT_ATTACH_ALLOW;
+   YST_Passenger_Car:        return CB_RESULT_ATTACH_ALLOW;
     return string(STR_ERROR_NO_ATTACH);
 }
 
@@ -6727,7 +6522,7 @@ item(FEAT_TRAINS, MTR_CNR){
 		additional_text:                string(STR_REFIT_ADDITIONAL_ABLE_UNADDTRAIN);
         }
 
-    livery_override(YST_Passinger_Car) {
+    livery_override(YST_Passenger_Car) {
         default:                        sw_MTR_CNR_wagon;
         cargo_subtype_text:             sw_MTR_CNR_cargo_subtype_text;
         cargo_capacity:                 80;
@@ -6804,7 +6599,7 @@ switch(FEAT_TRAINS, SELF, sw_MTR_CRRC_wagon, [STORE_TEMP(-1, 0x10F), var[0x61, 0
 }
 
 switch(FEAT_TRAINS, SELF, sw_MTR_CRRC_wagon_attach, vehicle_type_id) {
-   YST_Passinger_Car:        return CB_RESULT_ATTACH_ALLOW;
+   YST_Passenger_Car:        return CB_RESULT_ATTACH_ALLOW;
     return string(STR_ERROR_NO_ATTACH);
 }
 
@@ -6861,7 +6656,7 @@ item(FEAT_TRAINS, MTR_CRRC){
 		additional_text:                string(STR_REFIT_ADDITIONAL_ABLE_UNADDTRAIN);
         }
 
-    livery_override(YST_Passinger_Car) {
+    livery_override(YST_Passenger_Car) {
         default:                        sw_MTR_CRRC_wagon;
         cargo_capacity:                 80;
         loading_speed:                  25;
@@ -6937,7 +6732,7 @@ switch(FEAT_TRAINS, SELF, sw_MTR_HM_wagon, [STORE_TEMP(-1, 0x10F), var[0x61, 0, 
 }
 
 switch(FEAT_TRAINS, SELF, sw_MTR_HM_wagon_attach, vehicle_type_id) {
-   YST_Passinger_Car:        return CB_RESULT_ATTACH_ALLOW;
+   YST_Passenger_Car:        return CB_RESULT_ATTACH_ALLOW;
     return string(STR_ERROR_NO_ATTACH);
 }
 
@@ -6994,7 +6789,7 @@ item(FEAT_TRAINS, MTR_HM){
 		additional_text:                string(STR_REFIT_ADDITIONAL_ABLE_UNADDTRAIN);
         }
 
-    livery_override(YST_Passinger_Car) {
+    livery_override(YST_Passenger_Car) {
         default:                        sw_MTR_HM_wagon;
         cargo_capacity:                 80;
         loading_speed:                  25;
