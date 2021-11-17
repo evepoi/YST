@@ -74,366 +74,109 @@ railtypetable {
 #include "src/train_list.pnml"
 
 /*--------------------------------------------------------------------
-5.29. TGV OLD Pos
---------------------------------------------------------------------*/
-/*--------------------------------------------------------------------
-5.29.1 Graphics
---------------------------------------------------------------------*/
-spriteset(set_TGV_OLD_Pos_purchase, "src\locomotive\TGV\TGV_OLD_POS.png"){
-	tmpl_purchase(0, 0)
-}
-
-/*--------------------------------------------------------------------
-5.29.1.1. TGV Old Pos
---------------------------------------------------------------------*/
-spriteset(set_TGV_OLD_PosH_purchase, "src\locomotive\TGV\TGV_OLD_POS.png"){
-	tmpl_purchase_for_dualhead(0, 162)
-}
-
-spriteset(set_TGV_OLD_Pos_engineH, "src\locomotive\TGV\TGV_OLD_POS.png"){
-	engine(80, 0)
-}
-
-spriteset(set_TGV_OLD_Pos_wagon_start, "src\locomotive\TGV\TGV_OLD_POS.png"){
-	wagon_start(80, 27)
-}
-
-spriteset(set_TGV_OLD_Pos_wagon_nomal, "src\locomotive\TGV\TGV_OLD_POS.png") {
-    wagon_1F_F(80, 54)
-}
-
-spriteset(set_TGV_OLD_Pos_wagon_bar, "src\locomotive\TGV\TGV_OLD_POS.png") {
-    wagon_bar(80, 81)
-}
-
-spriteset(set_TGV_OLD_Pos_wagon_special, "src\locomotive\TGV\TGV_OLD_POS.png") {
-    wagon_1F_F(80, 108)
-}
-
-spriteset(set_TGV_OLD_Pos_wagon_end, "src\locomotive\TGV\TGV_OLD_POS.png"){
-	wagon_start(80, 135)
-}
-
-spriteset(set_TGV_OLD_Pos_engineT, "src\locomotive\TGV\TGV_OLD_POS.png"){
-	engine_r(80, 162)
-}
-
-/*--------------------------------------------------------------------
-5.29.1.2. TGV Old Lyair
---------------------------------------------------------------------*/
-spriteset(set_TGV_OLD_LyairH_purchase, "src\locomotive\TGV\TGV_OLD_POS.png"){
-	tmpl_purchase_for_dualhead(0, 324)
-}
-
-spriteset(set_TGV_OLD_Lyair_engineH, "src\locomotive\TGV\TGV_OLD_POS.png"){
-	engine(80, 189)
-}
-
-spriteset(set_TGV_OLD_Lyair_wagon_start, "src\locomotive\TGV\TGV_OLD_POS.png"){
-	wagon_start(80, 216)
-}
-
-spriteset(set_TGV_OLD_Lyair_wagon_nomal, "src\locomotive\TGV\TGV_OLD_POS.png") {
-    wagon_1F_F(80, 243)
-}
-
-spriteset(set_TGV_OLD_Lyair_wagon_bar, "src\locomotive\TGV\TGV_OLD_POS.png") {
-    wagon_bar(80, 270)
-}
-
-spriteset(set_TGV_OLD_Lyair_wagon_end, "src\locomotive\TGV\TGV_OLD_POS.png"){
-	wagon_start(80, 297)
-}
-
-spriteset(set_TGV_OLD_Lyair_engineT, "src\locomotive\TGV\TGV_OLD_POS.png"){
-	engine_r(80, 324)
-}
-
-/*--------------------------------------------------------------------
-5.29.1.3. TGV Old Thalys
---------------------------------------------------------------------*/
-spriteset(set_TGV_OLD_ThalysH_purchase, "src\locomotive\TGV\TGV_OLD_POS.png"){
-	tmpl_purchase_for_dualhead(0, 486)
-}
-
-spriteset(set_TGV_OLD_Thalys_engineH, "src\locomotive\TGV\TGV_OLD_POS.png"){
-	engine(80, 351)
-}
-
-spriteset(set_TGV_OLD_Thalys_wagon_start, "src\locomotive\TGV\TGV_OLD_POS.png"){
-	wagon_start(80, 378)
-}
-
-spriteset(set_TGV_OLD_Thalys_wagon, "src\locomotive\TGV\TGV_OLD_POS.png") {
-    wagon_1F_F(80, 405)
-}
-
-spriteset(set_TGV_OLD_Thalys_wagon_bar, "src\locomotive\TGV\TGV_OLD_POS.png") {
-    wagon_bar(80, 432)
-}
-
-spriteset(set_TGV_OLD_Thalys_wagon_end, "src\locomotive\TGV\TGV_OLD_POS.png"){
-	wagon_start(80, 459)
-}
-
-spriteset(set_TGV_OLD_Thalys_engineT, "src\locomotive\TGV\TGV_OLD_POS.png"){
-	engine_r(80, 486)
-}
-
-/*--------------------------------------------------------------------
-5.29.2. 구매정보
---------------------------------------------------------------------*/
-switch(FEAT_TRAINS, SELF, sw_TGV_OLD_POS_purchase, cargo_subtype) {
-    set_TGV_OLD_Pos_purchase;
-}
-
-/*--------------------------------------------------------------------
-5.29.3. 스위치
---------------------------------------------------------------------*/
-switch(FEAT_TRAINS, SELF, sw_TGV_OLD_Pos_cargo_subtype_text, cargo_subtype) {
-    1: return string(STR_REFIT_LIVERY_TGV_OLD_LYAIR);           
-    2: return string(STR_REFIT_LIVERY_TGV_OLD_THALYS);           
-    return string(STR_REFIT_LIVERY_TGV_OLD_POS);
-}
-
-switch(FEAT_TRAINS, SELF, sw_TGV_OLD_Pos_engineH, cargo_subtype) {
-    1: set_TGV_OLD_Lyair_engineH;
-    2: set_TGV_OLD_Thalys_engineH;
-    set_TGV_OLD_Pos_engineH;
-}
-
-switch(FEAT_TRAINS, SELF, sw_TGV_OLD_Pos_engineT, cargo_subtype) {
-    1: set_TGV_OLD_Lyair_engineT;
-    2: set_TGV_OLD_Thalys_engineT;
-    set_TGV_OLD_Pos_engineT;
-}
-
-switch(FEAT_TRAINS, SELF, sw_TGV_OLD_Pos_engine, position_in_consist_from_end == 0 && num_vehs_in_consist > 1){
-	1: sw_TGV_OLD_Pos_engineT;
-	sw_TGV_OLD_Pos_engineH;
-}
-
-switch(FEAT_TRAINS, SELF, sw_TGV_OLD_Pos_wagon_start, cargo_subtype) {
-    1: set_TGV_OLD_Lyair_wagon_start;
-    2: set_TGV_OLD_Thalys_wagon_start;
-    set_TGV_OLD_Pos_wagon_start;
-}
-
-switch(FEAT_TRAINS, SELF, sw_TGV_OLD_Pos_wagon_special_middle, (position_in_vehid_chain + 1) <= (num_vehs_in_vehid_chain / 2)) {
-    1: set_TGV_OLD_Pos_wagon_nomal;
-    set_TGV_OLD_Pos_wagon_special;
-}
-
-switch(FEAT_TRAINS, SELF, sw_TGV_OLD_Pos_wagon_middle, cargo_subtype) {
-    1: set_TGV_OLD_Lyair_wagon_nomal;
-    2: set_TGV_OLD_Thalys_wagon;
-    sw_TGV_OLD_Pos_wagon_special_middle;
-}
-
-switch(FEAT_TRAINS, SELF, sw_TGV_OLD_Pos_wagon_bar_middle, cargo_subtype) {
-    1: set_TGV_OLD_Lyair_wagon_bar;
-    2: set_TGV_OLD_Thalys_wagon_bar;
-    set_TGV_OLD_Pos_wagon_bar;
-}
-
-switch(FEAT_TRAINS, SELF, sw_TGV_OLD_Pos_wagon_end, cargo_subtype) {
-    1: set_TGV_OLD_Lyair_wagon_end;
-    2: set_TGV_OLD_Thalys_wagon_end;
-    set_TGV_OLD_Pos_wagon_end;
-}
-
-switch(FEAT_TRAINS, SELF, sw_TGV_OLD_Pos_wagon_bar, (position_in_consist %5) + 1) {
-    1: sw_TGV_OLD_Pos_wagon_bar_middle;
-    sw_TGV_OLD_Pos_wagon_middle;
-}
-
-switch(FEAT_TRAINS, SELF, sw_TGV_OLD_Pos_wagon_rear, [STORE_TEMP(1, 0x10F), var[0x61, 0, 0x0000FFFF, 0xC6]]){
-    TGV_OLD_Pos: sw_TGV_OLD_Pos_wagon_end;
-    sw_TGV_OLD_Pos_wagon_bar;
-}
-
-switch(FEAT_TRAINS, SELF, sw_TGV_OLD_Pos_wagon, [STORE_TEMP(-1, 0x10F), var[0x61, 0, 0x0000FFFF, 0xC6]]) {
-    TGV_OLD_Pos: sw_TGV_OLD_Pos_wagon_start;
-    sw_TGV_OLD_Pos_wagon_rear;
-}
-
-switch(FEAT_TRAINS, SELF, sw_TGV_OLD_Pos_wagon_attach, vehicle_type_id) {
-   TGV_Pos:              return CB_RESULT_ATTACH_ALLOW;
-   TGV_OLD_Pos:              return CB_RESULT_ATTACH_ALLOW;
-   TGV_OLD_Duplex:              return CB_RESULT_ATTACH_ALLOW;
-   TGV_Duplex:              return CB_RESULT_ATTACH_ALLOW;
-    YST_Passenger_Car:        return CB_RESULT_ATTACH_ALLOW;
-    return string(STR_ERROR_NO_ATTACH);
-}
-
-/*--------------------------------------------------------------------
-5.29.4 열차정보
---------------------------------------------------------------------*/
-item(FEAT_TRAINS, TGV_OLD_Pos){
-	property {
- 		name:							string(STR_TGV_OLD_Pos_NAME);
- 		climates_available:				ALL_CLIMATES;
-		introduction_date:				date(1978, 1, 1);
-        track_type:						ELRL;
-        engine_class:					ENGINE_CLASS_ELECTRIC;
-		sprite_id:						SPRITE_ID_NEW_TRAIN;
-        dual_headed:                    1;        
-        
-        //spec
-		speed:							331km/h;
-		power:							10000 kW;
-		weight:							80 ton;
-		tractive_effort_coefficient:	0.3;
-        air_drag_coefficient:           0.01;
-        
-        //Model
-        model_life:						VEHICLE_NEVER_EXPIRES;
-        vehicle_life:					255;
-        retire_early:					0;
-		reliability_decay:				0;
-        
-        //Cargo
-        cargo_capacity:					1;
-        refittable_cargo_classes:       NO_CARGO_CLASS;
-        non_refittable_cargo_classes:   NO_CARGO_CLASS;
-        cargo_allow_refit:              [PASS];
-        cargo_disallow_refit:           [];
-        
-        //Costs
-        refit_cost:						0;
-        running_cost_base:				RUNNING_COST_DIESEL;
-        
-        
-        //Flags
-        misc_flags:						bitmask(TRAIN_FLAG_FLIP, TRAIN_FLAG_MU,TRAIN_FLAG_AUTOREFIT);
-        extra_weight_per_wagon:			35 ton;
-        }
-	graphics {
-		default:						sw_TGV_OLD_Pos_engine;
-		purchase:						sw_TGV_OLD_POS_purchase;
-        loading_speed:					25;
-		cost_factor:					10;
-		running_cost_factor:			150;
-        cargo_capacity:                 0;
-        purchase_cargo_capacity:        0;
-        can_attach_wagon:               sw_TGV_OLD_Pos_wagon_attach;
-        cargo_subtype_text:             sw_TGV_OLD_Pos_cargo_subtype_text;
-        start_stop:                     sw_YST_train_start_stop_6;
-        additional_text:                string(STR_REFIT_ADDITIONAL_ABLE_TGV);
-}
-
-    livery_override(YST_Passenger_Car) {
-        default:                        sw_TGV_OLD_Pos_wagon;
-        cargo_subtype_text:             sw_TGV_OLD_Pos_cargo_subtype_text;
-        cargo_capacity:                 85;
-        loading_speed:                  25;
-        running_cost_factor:            150;}
-        }
-        
-/*--------------------------------------------------------------------
 5.30. TGV Pos
 --------------------------------------------------------------------*/
 /*--------------------------------------------------------------------
 5.30.1 Graphics
 --------------------------------------------------------------------*/
-spriteset(set_TGV_Pos_purchase, "src\locomotive\TGV\TGV_POS.png"){
+spriteset(set_TGV_Pos_purchase, "src\locomotive\TGV_Old\TGV_POS.png"){
 	tmpl_purchase(0, 0)
 }
 
 /*--------------------------------------------------------------------
 5.30.1.1. TGV Pos
 --------------------------------------------------------------------*/
-spriteset(set_TGV_PosH_purchase, "src\locomotive\TGV\TGV_POS.png"){
+spriteset(set_TGV_PosH_purchase, "src\locomotive\TGV_Old\TGV_POS.png"){
 	tmpl_purchase_for_dualhead(0, 162)
 }
 
-spriteset(set_TGV_Pos_engineH, "src\locomotive\TGV\TGV_POS.png"){
+spriteset(set_TGV_Pos_engineH, "src\locomotive\TGV_Old\TGV_POS.png"){
 	engine(80, 0)
 }
 
-spriteset(set_TGV_Pos_wagon_start, "src\locomotive\TGV\TGV_POS.png"){
+spriteset(set_TGV_Pos_wagon_start, "src\locomotive\TGV_Old\TGV_POS.png"){
 	wagon_start(80, 27)
 }
 
-spriteset(set_TGV_Pos_wagon_nomal, "src\locomotive\TGV\TGV_POS.png") {
+spriteset(set_TGV_Pos_wagon_nomal, "src\locomotive\TGV_Old\TGV_POS.png") {
     wagon_1F_F(80, 54)
 }
 
-spriteset(set_TGV_Pos_wagon_bar, "src\locomotive\TGV\TGV_POS.png") {
+spriteset(set_TGV_Pos_wagon_bar, "src\locomotive\TGV_Old\TGV_POS.png") {
     wagon_bar(80, 81)
 }
 
-spriteset(set_TGV_Pos_wagon_special, "src\locomotive\TGV\TGV_POS.png") {
+spriteset(set_TGV_Pos_wagon_special, "src\locomotive\TGV_Old\TGV_POS.png") {
     wagon_1F_F(80, 108)
 }
 
-spriteset(set_TGV_Pos_wagon_end, "src\locomotive\TGV\TGV_POS.png"){
+spriteset(set_TGV_Pos_wagon_end, "src\locomotive\TGV_Old\TGV_POS.png"){
 	wagon_start(80, 135)
 }
 
-spriteset(set_TGV_Pos_engineT, "src\locomotive\TGV\TGV_POS.png"){
+spriteset(set_TGV_Pos_engineT, "src\locomotive\TGV_Old\TGV_POS.png"){
 	engine_r(80, 162)
 }
 
 /*--------------------------------------------------------------------
 5.30.1.2. TGV Lyair
 --------------------------------------------------------------------*/
-spriteset(set_TGV_LyairH_purchase, "src\locomotive\TGV\TGV_POS.png"){
+spriteset(set_TGV_LyairH_purchase, "src\locomotive\TGV_Old\TGV_POS.png"){
 	tmpl_purchase_for_dualhead(0, 324)
 }
 
-spriteset(set_TGV_Lyair_engineH, "src\locomotive\TGV\TGV_POS.png"){
+spriteset(set_TGV_Lyair_engineH, "src\locomotive\TGV_Old\TGV_POS.png"){
 	engine(80, 189)
 }
 
-spriteset(set_TGV_Lyair_wagon_start, "src\locomotive\TGV\TGV_POS.png"){
+spriteset(set_TGV_Lyair_wagon_start, "src\locomotive\TGV_Old\TGV_POS.png"){
 	wagon_start(80, 216)
 }
 
-spriteset(set_TGV_Lyair_wagon_nomal, "src\locomotive\TGV\TGV_POS.png") {
+spriteset(set_TGV_Lyair_wagon_nomal, "src\locomotive\TGV_Old\TGV_POS.png") {
     wagon_1F_F(80, 243)
 }
 
-spriteset(set_TGV_Lyair_wagon_bar, "src\locomotive\TGV\TGV_POS.png") {
+spriteset(set_TGV_Lyair_wagon_bar, "src\locomotive\TGV_Old\TGV_POS.png") {
     wagon_bar(80, 270)
 }
 
-spriteset(set_TGV_Lyair_wagon_end, "src\locomotive\TGV\TGV_POS.png"){
+spriteset(set_TGV_Lyair_wagon_end, "src\locomotive\TGV_Old\TGV_POS.png"){
 	wagon_start(80, 297)
 }
 
-spriteset(set_TGV_Lyair_engineT, "src\locomotive\TGV\TGV_POS.png"){
+spriteset(set_TGV_Lyair_engineT, "src\locomotive\TGV_Old\TGV_POS.png"){
 	engine_r(80, 324)
 }
 
 /*--------------------------------------------------------------------
 5.30.1.3. TGV Thalys
 --------------------------------------------------------------------*/
-spriteset(set_TGV__ThalysH_purchase, "src\locomotive\TGV\TGV_POS.png"){
+spriteset(set_TGV__ThalysH_purchase, "src\locomotive\TGV_Old\TGV_POS.png"){
 	tmpl_purchase_for_dualhead(0, 486)
 }
 
-spriteset(set_TGV_Thalys_engineH, "src\locomotive\TGV\TGV_POS.png"){
+spriteset(set_TGV_Thalys_engineH, "src\locomotive\TGV_Old\TGV_POS.png"){
 	engine(80, 351)
 }
 
-spriteset(set_TGV_halys_wagon_start, "src\locomotive\TGV\TGV_POS.png"){
+spriteset(set_TGV_halys_wagon_start, "src\locomotive\TGV_Old\TGV_POS.png"){
 	wagon_start(80, 378)
 }
 
-spriteset(set_TGV_Thalys_wagon, "src\locomotive\TGV\TGV_POS.png") {
+spriteset(set_TGV_Thalys_wagon, "src\locomotive\TGV_Old\TGV_POS.png") {
     wagon_1F_F(80, 405)
 }
 
-spriteset(set_TGV_Thalys_wagon_bar, "src\locomotive\TGV\TGV_POS.png") {
+spriteset(set_TGV_Thalys_wagon_bar, "src\locomotive\TGV_Old\TGV_POS.png") {
     wagon_bar(80, 432)
 }
 
-spriteset(set_TGV_Thalys_wagon_end, "src\locomotive\TGV\TGV_POS.png"){
+spriteset(set_TGV_Thalys_wagon_end, "src\locomotive\TGV_Old\TGV_POS.png"){
 	wagon_start(80, 459)
 }
 
-spriteset(set_TGV_Thalys_engineT, "src\locomotive\TGV\TGV_POS.png"){
+spriteset(set_TGV_Thalys_engineT, "src\locomotive\TGV_Old\TGV_POS.png"){
 	engine_r(80, 486)
 }
 
@@ -593,77 +336,77 @@ item(FEAT_TRAINS, TGV_Pos){
 /*--------------------------------------------------------------------
 5.31.1 Graphics
 --------------------------------------------------------------------*/
-spriteset(set_TGV_OLD_Duplex_purchase, "src\locomotive\TGV\TGV_OLD_Duplex.png"){
+spriteset(set_TGV_OLD_Duplex_purchase, "src\locomotive\TGV_Old\TGV_OLD_Duplex.png"){
 	tmpl_purchase(0, 0)
 }
 
 /*--------------------------------------------------------------------
 5.31.1.1. TGV OLD Duplex
 --------------------------------------------------------------------*/
-spriteset(set_TGV_OLD_DuplexH_purchase, "src\locomotive\TGV\TGV_OLD_Duplex.png"){
+spriteset(set_TGV_OLD_DuplexH_purchase, "src\locomotive\TGV_Old\TGV_OLD_Duplex.png"){
 	tmpl_purchase_for_dualhead(0, 162)
 }
 
-spriteset(set_TGV_OLD_Duplex_engineH, "src\locomotive\TGV\TGV_OLD_Duplex.png"){
+spriteset(set_TGV_OLD_Duplex_engineH, "src\locomotive\TGV_Old\TGV_OLD_Duplex.png"){
 	engine(80, 0)
 }
 
-spriteset(set_TGV_OLD_Duplex_wagon_start, "src\locomotive\TGV\TGV_OLD_Duplex.png"){
+spriteset(set_TGV_OLD_Duplex_wagon_start, "src\locomotive\TGV_Old\TGV_OLD_Duplex.png"){
 	wagon_start(80, 27)
 }
 
-spriteset(set_TGV_OLD_Duplex_wagon_nomal, "src\locomotive\TGV\TGV_OLD_Duplex.png") {
+spriteset(set_TGV_OLD_Duplex_wagon_nomal, "src\locomotive\TGV_Old\TGV_OLD_Duplex.png") {
     wagon_1F_F(80, 54)
 }
 
-spriteset(set_TGV_OLD_Duplex_wagon_bar, "src\locomotive\TGV\TGV_OLD_Duplex.png") {
+spriteset(set_TGV_OLD_Duplex_wagon_bar, "src\locomotive\TGV_Old\TGV_OLD_Duplex.png") {
     wagon_bar(80, 81)
 }
 
-spriteset(set_TGV_OLD_Duplex_wagon_special, "src\locomotive\TGV\TGV_OLD_Duplex.png") {
+spriteset(set_TGV_OLD_Duplex_wagon_special, "src\locomotive\TGV_Old\TGV_OLD_Duplex.png") {
     wagon_1F_F(80, 108)
 }
 
-spriteset(set_TGV_OLD_Duplex_wagon_end, "src\locomotive\TGV\TGV_OLD_Duplex.png"){
+spriteset(set_TGV_OLD_Duplex_wagon_end, "src\locomotive\TGV_Old\TGV_OLD_Duplex.png"){
 	wagon_start(80, 135)
 }
 
-spriteset(set_TGV_OLD_Duplex_engineT, "src\locomotive\TGV\TGV_OLD_Duplex.png"){
+spriteset(set_TGV_OLD_Duplex_engineT, "src\locomotive\TGV_Old\TGV_OLD_Duplex.png"){
 	engine_r(80, 162)
 }
 
 /*--------------------------------------------------------------------
 5.31.1.2. TGV Lyair
 --------------------------------------------------------------------*/
-spriteset(set_TGV_OLD_Duplex_LyairH_purchase, "src\locomotive\TGV\TGV_OLD_Duplex.png"){
+spriteset(set_TGV_OLD_Duplex_LyairH_purchase, "src\locomotive\TGV_Old\TGV_OLD_Duplex.png"){
 	tmpl_purchase_for_dualhead(0, 351)
 }
 
-spriteset(set_TGV_OLD_Duplex_Lyair_engineH, "src\locomotive\TGV\TGV_OLD_Duplex.png"){
+spriteset(set_TGV_OLD_Duplex_Lyair_engineH, "src\locomotive\TGV_Old\TGV_OLD_Duplex.png"){
 	engine(80, 189)
 }
 
-spriteset(set_TGV_OLD_Duplex_Lyair_wagon_start, "src\locomotive\TGV\TGV_OLD_Duplex.png"){
+spriteset(set_TGV_OLD_Duplex_Lyair_wagon_start, "src\locomotive\TGV_Old\TGV_OLD_Duplex.png"){
 	wagon_start(80, 216)
 }
 
-spriteset(set_TGV_OLD_Duplex_Lyair_wagon_nomal, "src\locomotive\TGV\TGV_OLD_Duplex.png") {
+spriteset(set_TGV_OLD_Duplex_Lyair_wagon_nomal, "src\locomotive\TGV_Old\TGV_OLD_Duplex.png") {
     wagon_1F_F(80, 243)
 }
 
-spriteset(set_TGV_OLD_Duplex_Lyair_wagon_bar, "src\locomotive\TGV\TGV_OLD_Duplex.png") {
+spriteset(set_TGV_OLD_Duplex_Lyair_wagon_bar, "src\locomotive\TGV_Old\TGV_OLD_Duplex.png") {
     wagon_bar(80, 270)
 }
 
-spriteset(set_TGV_OLD_Duplex_Lyair_wagon_special, "src\locomotive\TGV\TGV_OLD_Duplex.png") {
+spriteset(set_TGV_OLD_Duplex_Lyair_wagon_special, "src\locomotive\TGV_Old\TGV_OLD_Duplex.png") {
     wagon_1F_F(80, 297)
 }
 
-spriteset(set_TGV_OLD_Duplex_Lyair_wagon_end, "src\locomotive\TGV\TGV_OLD_Duplex.png"){
+spriteset(set_TGV_OLD_Duplex_Lyair_wagon_end, "src\locomotive\TGV_Old\TGV_OLD_Duplex.png"){
 	wagon_start(80, 324)
 }
 
-spriteset(set_TGV_OLD_Duplex_Lyair_engineT, "src\locomotive\TGV\TGV_OLD_Duplex.png"){
+spriteset(set_TGV_OLD_Duplex_Lyair_engineT, "src\locomotive\TGV_Old\TGV_OLD_Duplex.png"){
 	engine_r(80, 351)
 }
 
@@ -821,73 +564,73 @@ item(FEAT_TRAINS, TGV_OLD_Duplex){
 /*--------------------------------------------------------------------
 5.32.1 Graphics
 --------------------------------------------------------------------*/
-spriteset(set_TGV_Duplex_purchase, "src\locomotive\TGV\TGV_Duplex.png"){
+spriteset(set_TGV_Duplex_purchase, "src\locomotive\TGV_Old\TGV_Duplex.png"){
 	tmpl_purchase(0, 0)
 }
 
 /*--------------------------------------------------------------------
 5.32.1.1. TGV Duplex
 --------------------------------------------------------------------*/
-spriteset(set_TGV_DuplexH_purchase, "src\locomotive\TGV\TGV_Duplex.png"){
+spriteset(set_TGV_DuplexH_purchase, "src\locomotive\TGV_Old\TGV_Duplex.png"){
 	tmpl_purchase_for_dualhead(0, 162)
 }
 
-spriteset(set_TGV_Duplex_engineH, "src\locomotive\TGV\TGV_Duplex.png"){
+spriteset(set_TGV_Duplex_engineH, "src\locomotive\TGV_Old\TGV_Duplex.png"){
 	engine(80, 0)
 }
 
-spriteset(set_TGV_Duplex_wagon_start, "src\locomotive\TGV\TGV_Duplex.png"){
+spriteset(set_TGV_Duplex_wagon_start, "src\locomotive\TGV_Old\TGV_Duplex.png"){
 	wagon_start(80, 27)
 }
 
-spriteset(set_TGV_Duplex_wagon_nomal, "src\locomotive\TGV\TGV_Duplex.png") {
+spriteset(set_TGV_Duplex_wagon_nomal, "src\locomotive\TGV_Old\TGV_Duplex.png") {
     wagon_1F_F(80, 54)
 }
 
-spriteset(set_TGV_Duplex_wagon_bar, "src\locomotive\TGV\TGV_Duplex.png") {
+spriteset(set_TGV_Duplex_wagon_bar, "src\locomotive\TGV_Old\TGV_Duplex.png") {
     wagon_bar(80, 81)
 }
 
-spriteset(set_TGV_Duplex_wagon_special, "src\locomotive\TGV\TGV_Duplex.png") {
+spriteset(set_TGV_Duplex_wagon_special, "src\locomotive\TGV_Old\TGV_Duplex.png") {
     wagon_1F_F(80, 108)
 }
 
-spriteset(set_TGV_Duplex_wagon_end, "src\locomotive\TGV\TGV_Duplex.png"){
+spriteset(set_TGV_Duplex_wagon_end, "src\locomotive\TGV_Old\TGV_Duplex.png"){
 	wagon_start(80, 135)
 }
 
-spriteset(set_TGV_Duplex_engineT, "src\locomotive\TGV\TGV_Duplex.png"){
+spriteset(set_TGV_Duplex_engineT, "src\locomotive\TGV_Old\TGV_Duplex.png"){
 	engine_r(80, 162)
 }
 
 /*--------------------------------------------------------------------
 5.32.1.2. TGV Lyair
 --------------------------------------------------------------------*/
-spriteset(set_TGV_Duplex_LyairH_purchase, "src\locomotive\TGV\TGV_Duplex.png"){
+spriteset(set_TGV_Duplex_LyairH_purchase, "src\locomotive\TGV_Old\TGV_Duplex.png"){
 	tmpl_purchase_for_dualhead(0, 324)
 }
 
-spriteset(set_TGV_Duplex_Lyair_engineH, "src\locomotive\TGV\TGV_Duplex.png"){
+spriteset(set_TGV_Duplex_Lyair_engineH, "src\locomotive\TGV_Old\TGV_Duplex.png"){
 	engine(80, 189)
 }
 
-spriteset(set_TGV_Duplex_Lyair_wagon_start, "src\locomotive\TGV\TGV_Duplex.png"){
+spriteset(set_TGV_Duplex_Lyair_wagon_start, "src\locomotive\TGV_Old\TGV_Duplex.png"){
 	wagon_start(80, 216)
 }
 
-spriteset(set_TGV_Duplex_Lyair_wagon_nomal, "src\locomotive\TGV\TGV_Duplex.png") {
+spriteset(set_TGV_Duplex_Lyair_wagon_nomal, "src\locomotive\TGV_Old\TGV_Duplex.png") {
     wagon_1F_F(80, 243)
 }
 
-spriteset(set_TGV_Duplex_Lyair_wagon_bar, "src\locomotive\TGV\TGV_Duplex.png") {
+spriteset(set_TGV_Duplex_Lyair_wagon_bar, "src\locomotive\TGV_Old\TGV_Duplex.png") {
     wagon_bar(80, 270)
 }
 
-spriteset(set_TGV_Duplex_Lyair_wagon_end, "src\locomotive\TGV\TGV_Duplex.png"){
+spriteset(set_TGV_Duplex_Lyair_wagon_end, "src\locomotive\TGV_Old\TGV_Duplex.png"){
 	wagon_start(80, 297)
 }
 
-spriteset(set_TGV_Duplex_Lyair_engineT, "src\locomotive\TGV\TGV_Duplex.png"){
+spriteset(set_TGV_Duplex_Lyair_engineT, "src\locomotive\TGV_Old\TGV_Duplex.png"){
 	engine_r(80, 324)
 }
 
@@ -1040,35 +783,35 @@ item(FEAT_TRAINS, TGV_Duplex){
 /*--------------------------------------------------------------------
 5.33.1 Graphics
 --------------------------------------------------------------------*/
-spriteset(set_TGV_Ouigo_purchase, "src\locomotive\TGV\TGV_Ouigo.png"){
+spriteset(set_TGV_Ouigo_purchase, "src\locomotive\TGV_Old\TGV_Ouigo.png"){
 	tmpl_purchase(0, 0)
 }
 
-spriteset(set_TGV_OuigoH_purchase, "src\locomotive\TGV\TGV_Ouigo.png"){
+spriteset(set_TGV_OuigoH_purchase, "src\locomotive\TGV_Old\TGV_Ouigo.png"){
 	tmpl_purchase_for_dualhead(0, 135)
 }
 
-spriteset(set_TGV_Ouigo_engineH, "src\locomotive\TGV\TGV_Ouigo.png"){
+spriteset(set_TGV_Ouigo_engineH, "src\locomotive\TGV_Old\TGV_Ouigo.png"){
 	engine(80, 0)
 }
 
-spriteset(set_TGV_Ouigo_wagon_start, "src\locomotive\TGV\TGV_Ouigo.png"){
+spriteset(set_TGV_Ouigo_wagon_start, "src\locomotive\TGV_Old\TGV_Ouigo.png"){
 	wagon_start(80, 27)
 }
 
-spriteset(set_TGV_Ouigo_wagon, "src\locomotive\TGV\TGV_Ouigo.png") {
+spriteset(set_TGV_Ouigo_wagon, "src\locomotive\TGV_Old\TGV_Ouigo.png") {
     wagon_1F_F(80, 54)
 }
 
-spriteset(set_TGV_Ouigo_wagon_bar, "src\locomotive\TGV\TGV_Ouigo.png") {
+spriteset(set_TGV_Ouigo_wagon_bar, "src\locomotive\TGV_Old\TGV_Ouigo.png") {
     wagon_bar(80, 81)
 }
 
-spriteset(set_TGV_Ouigo_wagon_end, "src\locomotive\TGV\TGV_Ouigo.png"){
+spriteset(set_TGV_Ouigo_wagon_end, "src\locomotive\TGV_Old\TGV_Ouigo.png"){
 	wagon_start(80, 108)
 }
 
-spriteset(set_TGV_Ouigo_engineT, "src\locomotive\TGV\TGV_Ouigo.png"){
+spriteset(set_TGV_Ouigo_engineT, "src\locomotive\TGV_Old\TGV_Ouigo.png"){
 	engine_r(80, 135)
 }
 
