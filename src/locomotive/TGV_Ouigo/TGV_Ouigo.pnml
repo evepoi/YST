@@ -64,8 +64,9 @@ item(FEAT_TRAINS, TGV_Ouigo){
         additional_text:                string(STR_REFIT_ADDITIONAL_UNABLE_TGV_Ouigo);
         }
 
-    livery_override(YST_Passenger_Car) {
+    livery_override(YST_Passenger_2F_Car) {
         default:                        sw_TGV_Ouigo_wagon;
+        can_attach_wagon:               sw_TGV_Ouigo_wagon_attach;
         cargo_capacity:                 170;
         loading_speed:                  25;
         running_cost_factor:            150;

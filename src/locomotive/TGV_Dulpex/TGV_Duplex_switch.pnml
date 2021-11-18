@@ -62,10 +62,8 @@ switch(FEAT_TRAINS, SELF, sw_TGV_Duplex_wagon, [STORE_TEMP(-1, 0x10F), var[0x61,
 }
 
 switch(FEAT_TRAINS, SELF, sw_TGV_Duplex_wagon_attach, vehicle_type_id) {
-    TGV_Pos:            return CB_RESULT_ATTACH_ALLOW;
-    TGV_OLD_Pos:        return CB_RESULT_ATTACH_ALLOW;
-    TGV_OLD_Duplex:     return CB_RESULT_ATTACH_ALLOW;
-    TGV_Duplex:         return CB_RESULT_ATTACH_ALLOW;
-    YST_Passenger_Car:  return CB_RESULT_ATTACH_ALLOW;
+    TGV_OLD_Duplex:        return CB_RESULT_ATTACH_ALLOW;
+    TGV_Duplex:            return CB_RESULT_ATTACH_ALLOW;
+    YST_Passenger_2F_Car:  return CB_RESULT_ATTACH_ALLOW;
     return string(STR_ERROR_NO_ATTACH);
 }
