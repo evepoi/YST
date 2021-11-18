@@ -1,35 +1,35 @@
 /*--------------------------------------------------------------------
 Graphics
 --------------------------------------------------------------------*/
-spriteset(set_MTR_CRRC_Changchun_purchase, "src\metro\MTR\CRRC_Sipang\MTR_CNR_Changchun.png"){
+spriteset(set_MTR_CRRC_Changchun_purchase, "src\metro\MTR\CRRC_Sipang\MTR_CRRC_Sipang.png"){
     tmpl_purchase(0, 0)
 }
 
-spriteset(set_MTRCRRCH_purchase, "src\metro\MTR\CRRC_Sipang\MTR_CNR_Changchun.png"){
+spriteset(set_MTRCRRCH_purchase, "src\metro\MTR\CRRC_Sipang\MTR_CRRC_Sipang.png"){
     tmpl_purchase_for_dualhead(0, 108)
 }
 
-spriteset(set_MTRCRRC_engineH, "src\locomometrotive\MTR\CRRC_Sipang\MTR_CNR_Changchun.png"){
+spriteset(set_MTRCRRC_engineH, "src\metro\MTR\CRRC_Sipang\MTR_CRRC_Sipang.png"){
     engine(80, 0)
 }
 
-spriteset(set_MTRCRRC_wagon_start, "src\metro\MTR\CRRC_Sipang\MTR_CNR_Changchun.png"){
+spriteset(set_MTRCRRC_wagon_start, "src\metro\MTR\CRRC_Sipang\MTR_CRRC_Sipang.png"){
     wagon_start(80, 27)
 }
 
-spriteset(set_MTRCRRC_wagon, "src\metro\MTR\CRRC_Sipang\MTR_CNR_Changchun.png") {
+spriteset(set_MTRCRRC_wagon, "src\metro\MTR\CRRC_Sipang\MTR_CRRC_Sipang.png") {
     wagon_1F(80, 54)
 }
 
-spriteset(set_MTRCRRC_wagon_r, "src\metro\MTR\CRRC_Sipang\MTR_CNR_Changchun.png") {
+spriteset(set_MTRCRRC_wagon_r, "src\metro\MTR\CRRC_Sipang\MTR_CRRC_Sipang.png") {
     wagon_1F_r(80, 54)
 }
 
-spriteset(set_MTRCRRC_wagon_end, "src\metro\MTR\CRRC_Sipang\MTR_CNR_Changchun.png"){
+spriteset(set_MTRCRRC_wagon_end, "src\metro\MTR\CRRC_Sipang\MTR_CRRC_Sipang.png"){
     wagon_start(80, 81)
 }
 
-spriteset(set_MTRCRRC_engineT, "src\metro\MTR\CRRC_Sipang\MTR_CNR_Changchun.png"){
+spriteset(set_MTRCRRC_engineT, "src\metro\MTR\CRRC_Sipang\MTR_CRRC_Sipang.png"){
     engine_r(80, 108)
 }
 
