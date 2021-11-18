@@ -6,8 +6,8 @@ STR_GRF_NAME_WITH_VER   :YST {VERSION}
 STR_GRF_DESC			:YST의 자체차량 NKX, YTX, VTX, HMX가 있습니다. {} (최근 업데이트: {RECENT_UPDATED}){}{}{SILVER} + 제작 : 민은 {} + EMU 250, EMU300 : 킹거 {} + CRH380D : 그날트리 {} + 해무-430 : 라스 {} + AGV-Cool, YN, YTRO 2F : Dat Tree
 
 # Vehicle's name
-STR_YST_PASSINGER_NAME  :[YST] 공통객차
-STR_YST_PASSINGER2F_NAME:[YST] Metro, HMX, NKX 2층
+STR_YST_PASSINGER_NAME  :[YST] 1층 공통객차
+STR_YST_PASSINGER2F_NAME:[YST] 2층 공통객차
 STR_500_NAME 			:[YST] 신칸센 500계
 STR_800_NAME 			:[YST] 신칸센 800계
 STR_AGV_NAME			:[YST] AGV
@@ -66,6 +66,8 @@ STR_PARAM_OPT_FACTOR_BY_2	:x 2
 STR_PARAM_OPT_FACTOR_BY_3	:x 3
 
 # Parameters
+STR_PARAM_Vehicle_is_Available_NAME         :열차 사용여부
+STR_PARAM_Vehicle_is_Available_DESC         :열차를 구매목록에서 제외합니다.
 STR_PARAM_CARGO_CAPACITY_NAME				:화물수송량
 STR_PARAM_CARGO_CAPACITY_DESC				:열차 화물 수송량 변경 가능
 STR_PARAM_AGV_SPEED_NAME    				:AGV 속도계수
@@ -84,7 +86,8 @@ STR_REFIT_ADDITIONAL_ABLE_HMX           :{BLACK}도색/모델 변경: {GREEN}가
 STR_REFIT_ADDITIONAL_ABLE_ICESP         :{BLACK}도색/모델 변경: {GREEN}가능 {}{BLACK}복합가능열차 : {GREEN}ICE-산천, ICE-팥죽
 STR_REFIT_ADDITIONAL_ABLE_NKX           :{BLACK}도색/모델 변경: {GREEN}가능 {}{BLACK}복합가능열차 : {GREEN}NKX
 STR_REFIT_ADDITIONAL_ABLE_Talgo         :{BLACK}도색/모델 변경: {GREEN}가능 {}{BLACK}복합가능열차 : {GREEN}Talgo
-STR_REFIT_ADDITIONAL_ABLE_TGV           :{BLACK}도색/모델 변경: {GREEN}가능 {}{BLACK}복합가능열차 : {GREEN}TGV-Old Pos, TGV-Pos, TGV-Old Duplex, TGV-Duplex
+STR_REFIT_ADDITIONAL_ABLE_TGV           :{BLACK}도색/모델 변경: {GREEN}가능 {}{BLACK}복합가능열차 : {GREEN}TGV-Old Pos, TGV-Pos
+STR_REFIT_ADDITIONAL_ABLE_TGV_Duplex    :{BLACK}도색/모델 변경: {GREEN}가능 {}{BLACK}복합가능열차 : {GREEN}TGV-Old Duplex, TGV-Duplex
 STR_REFIT_ADDITIONAL_ABLE_YN            :{BLACK}도색/모델 변경: {GREEN}가능 {}{BLACK}복합가능열차 : {GREEN}YN01, YN02
 STR_REFIT_ADDITIONAL_ABLE_ZEFIRO380     :{BLACK}도색/모델 변경: {GREEN}가능 {}{BLACK}복합가능열차 : {GREEN}ZEFIRO380
 STR_REFIT_ADDITIONAL_UNABLE_UNADDTRAIN  :{BLACK}도색/모델 변경: {RED}불가능 {}{BLACK}복합열차구성: {RED}불가능

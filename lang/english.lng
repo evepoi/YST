@@ -6,8 +6,8 @@ STR_GRF_NAME_WITH_VER   :YST {VERSION}
 STR_GRF_DESC			:YST GRF is many high speed train set. {} (Updated: {RECENT_UPDATED}){}{}{SILVER}+ Author: : Minen {} + EMU 250, 300 : lit_**** {} + CRH380D  : kata_**** {} + HEMU-430X : Las {} + AGV-Cool, YN, YTRO 2F : Dat Tree
 
 # Vehicle's name
-STR_YST_PASSINGER_NAME 	:[YST] Passenger Car
-STR_YST_PASSINGER2F_NAME  :[YST] Metro, HMX, NKX 2F Car
+STR_YST_PASSINGER_NAME 	:[YST] 1F Passenger Car
+STR_YST_PASSINGER2F_NAME  :[YST] 2F Passenger Car
 STR_500_NAME 			:[YST] Shinkansen 500
 STR_800_NAME 			:[YST] Shinkansen 800
 STR_AGV_NAME			:[YST] AGV
@@ -66,6 +66,8 @@ STR_PARAM_OPT_FACTOR_BY_2	:x 2
 STR_PARAM_OPT_FACTOR_BY_3	:x 3
 
 # Parameters
+STR_PARAM_Vehicle_is_Available_NAME         :Vehicle on/off
+STR_PARAM_Vehicle_is_Available_DESC         :vehicle using on / off
 STR_PARAM_CARGO_CAPACITY_NAME				:Cargo capacity
 STR_PARAM_CARGO_CAPACITY_DESC				:Cargo capacity of trains
 STR_PARAM_AGV_SPEED_NAME    				:Speed coefficient of AGV
@@ -84,7 +86,8 @@ STR_REFIT_ADDITIONAL_ABLE_HMX           :{BLACK}Changing model/livery: {GREEN}Av
 STR_REFIT_ADDITIONAL_ABLE_ICESP         :{BLACK}Changing model/livery: {GREEN}available {} {BLACK}Combined train: {GREEN}ICE-Sancheon, ICE-Patjug
 STR_REFIT_ADDITIONAL_ABLE_NKX           :{BLACK}Changing model/livery: {GREEN}available {} {BLACK}Combined train: {GREEN}NKX
 STR_REFIT_ADDITIONAL_ABLE_Talgo         :{BLACK}Changing model/livery: {GREEN}available {} {BLACK}Combined train: {GREEN}Talgo
-STR_REFIT_ADDITIONAL_ABLE_TGV           :{BLACK}Changing model/livery: {GREEN}available {} {BLACK}Combined train: {GREEN}TGV-Old Pos, TGV-Pos, TGV-Old Duplex, TGV-Duplex
+STR_REFIT_ADDITIONAL_ABLE_TGV           :{BLACK}Changing model/livery: {GREEN}available {} {BLACK}Combined train: {GREEN}TGV-Old Pos, TGV-Pos
+STR_REFIT_ADDITIONAL_ABLE_TGV_Duplex    :{BLACK}Changing model/livery: {GREEN}available {} {BLACK}Combined train: {GREEN}TGV-Old Duplex, TGV-Duplex
 STR_REFIT_ADDITIONAL_ABLE_YN            :{BLACK}Changing model/livery: {GREEN}available {} {BLACK}Combined train: {GREEN}YN01, YN02
 STR_REFIT_ADDITIONAL_ABLE_ZEFIRO380     :{BLACK}Changing model/livery: {GREEN}available {} {BLACK}Combined train: {GREEN}ZEFIRO380
 STR_REFIT_ADDITIONAL_UNABLE_UNADDTRAIN  :{BLACK}Changing model/livery: {RED}Unavailable {} {BLACK}Combined train: {RED}Unavailable
