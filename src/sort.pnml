@@ -21,8 +21,8 @@ sort(FEAT_TRAINS, [
     GT26CW,               //3017
     HEMU_430,             //3018
     HMX,                  //3019
-    ICE3,                 //3020
-    ICE_SP,               //3021
+    ICE_SP,               //3020
+    ICE3,                 //3021
     KTX_N,                //3022
     NJ2,                  //3023
     NKX,                  //3024
@@ -36,7 +36,7 @@ sort(FEAT_TRAINS, [
     Shinkansen_N700,      //3032
     TAE,                  //3033
     Talgo_250,            //3034
-
+    TGV_Duplex,           //3035
 
     MTR,                  //3026
     MTR_CNR,              //3027
@@ -46,7 +46,6 @@ sort(FEAT_TRAINS, [
     TGV_OLD_Pos,          //3035
     TGV_Pos,              //3036
     TGV_OLD_Duplex,       //3037
-    TGV_Duplex,           //3038
     TGV_Ouigo,            //3039
     VTX,                  //3040
     YFX,                  //3041

@@ -44,30 +44,31 @@ railtypetable {
 
 //disabe_train
 if (European) {
-    disable_item(FEAT_TRAINS, 3001);
-    disable_item(FEAT_TRAINS, 3003);
-    disable_item(FEAT_TRAINS, 3004);
-    disable_item(FEAT_TRAINS, 3005);
-    disable_item(FEAT_TRAINS, 3013);
-    disable_item(FEAT_TRAINS, 3014);
-    disable_item(FEAT_TRAINS, 3020);
-    disable_item(FEAT_TRAINS, 3034);
+    disable_item(FEAT_TRAINS, 3001); //AGV
+    disable_item(FEAT_TRAINS, 3003); //AVE
+    disable_item(FEAT_TRAINS, 3004); //AVE_Velaro
+    disable_item(FEAT_TRAINS, 3005); //BB15048
+    disable_item(FEAT_TRAINS, 3013); //E300
+    disable_item(FEAT_TRAINS, 3014); //E320
+    disable_item(FEAT_TRAINS, 3021); //ICE3
+    disable_item(FEAT_TRAINS, 3034); //Talgo_250
+    disable_item(FEAT_TRAINS, 3035); //TGV_Duplex
     }
 
 if (Chinese) {
-    disable_item(FEAT_TRAINS, 3006);
-    disable_item(FEAT_TRAINS, 3007);
-    disable_item(FEAT_TRAINS, 3008);
-    disable_item(FEAT_TRAINS, 3010);
-    disable_item(FEAT_TRAINS, 3023);
+    disable_item(FEAT_TRAINS, 3006); //CRH1
+    disable_item(FEAT_TRAINS, 3007); //CRH3
+    disable_item(FEAT_TRAINS, 3008); //CRH380A
+    disable_item(FEAT_TRAINS, 3010); //CRH380A_Test
+    disable_item(FEAT_TRAINS, 3023); //NJ2
     }
 
 if (Japanese) {
-    disable_item(FEAT_TRAINS, 3012);
-    disable_item(FEAT_TRAINS, 3025);
-    disable_item(FEAT_TRAINS, 3028);
-    disable_item(FEAT_TRAINS, 3029);
-    disable_item(FEAT_TRAINS, 3030);
-    disable_item(FEAT_TRAINS, 3031);
-    disable_item(FEAT_TRAINS, 3032);
+    disable_item(FEAT_TRAINS, 3012); //Dr_Yellow
+    disable_item(FEAT_TRAINS, 3025); //Shinkansen_500
+    disable_item(FEAT_TRAINS, 3028); //Shinkansen_800
+    disable_item(FEAT_TRAINS, 3029); //Shinkansen_E5
+    disable_item(FEAT_TRAINS, 3030); //Shinkansen_E6
+    disable_item(FEAT_TRAINS, 3031); //Shinkansen_E7
+    disable_item(FEAT_TRAINS, 3032); //Shinkansen_N700
     }

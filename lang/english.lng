@@ -40,6 +40,7 @@ STR_Shinkansen_E7_NAME                  :[YST] Shinkansen E7
 STR_Shinkansen_N700_NAME                :[YST] Shinkansen N700
 STR_TAE_NAME                            :[YST] TAE
 STR_Talgo_250_NAME                      :[YST] Talgo250
+STR_TGV_Duplex_NAME                     :[YST] TGV Duplex
 
 # wagon's name
 STR_YST_1F_PASS_NAME                    :[YST] 1F Passenger Car
@@ -57,7 +58,6 @@ STR_TGV_OLD_NAME		                :[YST] TGV Old
 STR_TGV_OLD_Pos_NAME                    :[YST] TGV Old Pos
 STR_TGV_Pos_NAME                        :[YST] TGV Pos
 STR_TGV_OLD_Duplex_NAME                 :[YST] TGV Old Duplex
-STR_TGV_Duplex_NAME                     :[YST] TGV Duplex
 STR_TGV_Ouigo_NAME                      :[YST] TGV Ouigo
 STR_VTX_NAME                            :[YST] VTX
 STR_YFX_NAME                            :[YST] YFX
@@ -94,8 +94,8 @@ STR_REFIT_ADDITIONAL_ABLE_E6            :{BLACK}Changing model/livery: {GREEN}Av
 STR_REFIT_ADDITIONAL_ABLE_ICESP         :{BLACK}Changing model/livery: {GREEN}available {} {BLACK}Combined train: {GREEN}ICE-Sancheon, ICE-Patjug
 STR_REFIT_ADDITIONAL_ABLE_NKX           :{BLACK}Changing model/livery: {GREEN}available {} {BLACK}Combined train: {GREEN}NKX
 STR_REFIT_ADDITIONAL_ABLE_Talgo_250     :{BLACK}Changing model/livery: {GREEN}available {} {BLACK}Combined train: {GREEN}Talgo 250
-STR_REFIT_ADDITIONAL_ABLE_TGV           :{BLACK}Changing model/livery: {GREEN}available {} {BLACK}Combined train: {GREEN}TGV-Old Pos, TGV-Pos
 STR_REFIT_ADDITIONAL_ABLE_TGV_Duplex    :{BLACK}Changing model/livery: {GREEN}available {} {BLACK}Combined train: {GREEN}TGV-Old Duplex, TGV-Duplex
+STR_REFIT_ADDITIONAL_ABLE_TGV           :{BLACK}Changing model/livery: {GREEN}available {} {BLACK}Combined train: {GREEN}TGV-Old Pos, TGV-Pos
 STR_REFIT_ADDITIONAL_ABLE_TAE           :{BLACK}Changing model/livery: {GREEN}available {} {BLACK}Combined train: {GREEN}TAE 100, TAE 200
 STR_REFIT_ADDITIONAL_ABLE_ZEFIRO380     :{BLACK}Changing model/livery: {GREEN}available {} {BLACK}Combined train: {GREEN}ZEFIRO380
 STR_REFIT_ADDITIONAL_UNABLE_UNADDTRAIN  :{BLACK}Changing model/livery: {RED}Unavailable {} {BLACK}Combined train: {RED}Unavailable
@@ -143,6 +143,8 @@ STR_REFIT_LIVERY_TAE_100_Yellow         :(TAE 100 Yellow)
 STR_REFIT_LIVERY_TAE_200                :(TAE 200) 260km/h
 STR_REFIT_LIVERY_Talgo_250_Alvia        :(Talgo 250 Alvia)
 STR_REFIT_LIVERY_Talgo_250_Aprosiyob    :(Talgo 250 Aprosiyob)
+STR_REFIT_LIVERY_TGV_Duplex             :(TGV Duplex)
+STR_REFIT_LIVERY_TGV_LYAIR_Duplex       :(TGV Lyair Duplex)
 STR_REFIT_LIVERY_YTRO_100A              :(YTRO 100 A Color)
 STR_REFIT_LIVERY_YTRO_100B              :(YTRO 100 B Color)
 STR_REFIT_LIVERY_YTRO_100C              :(YTRO 100 C Color)
@@ -178,9 +180,7 @@ STR_REFIT_LIVERY_TGV_OLD_THALYS         :(TGV Old Thalys)
 STR_REFIT_LIVERY_TGV_POS                :(TGV Pos)
 STR_REFIT_LIVERY_TGV_LYAIR              :(TGV Lyair)
 STR_REFIT_LIVERY_TGV_THALYS             :(TGV Thalys)
-STR_REFIT_LIVERY_TGV_Duplex             :(TGV Duplex)
 STR_REFIT_LIVERY_TGV_OLD_Duplex         :(TGV Old Duplex)
-STR_REFIT_LIVERY_TGV_LYAIR_Duplex       :(TGV Lyair Duplex)
 STR_REFIT_LIVERY_TGV_OLD_LYAIR_Duplex   :(TGV Old Lyair Duplex)
 STR_REFIT_LIVERY_ZEFIRO380              :(ZEFIRO380)
 STR_REFIT_LIVERY_ZEFIRO380_Cool         :(ZEFIRO380 Cool) 430km/h
