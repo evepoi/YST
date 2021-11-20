@@ -10,7 +10,7 @@ BB15048
 /*--------------------------------------------------------------------
 열차정보
 --------------------------------------------------------------------*/
-item(FEAT_TRAINS, BB15048){
+item(FEAT_TRAINS, BB15048, 3005){
     property {
         name:                           string(STR_BB15048_NAME);
         climates_available:             ALL_CLIMATES;
