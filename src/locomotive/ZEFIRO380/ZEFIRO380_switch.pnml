@@ -71,7 +71,7 @@ switch(FEAT_TRAINS, SELF, sw_ZEFIRO380_wagon, [STORE_TEMP(-1, 0x10F), var[0x61, 
 }
 
 switch(FEAT_TRAINS, SELF, sw_ZEFIRO380_wagon_attach, vehicle_type_id) {
-    ZEFIRO380:          return CB_RESULT_ATTACH_ALLOW;
-    YST_Passenger_Car:  return CB_RESULT_ATTACH_ALLOW;
+    ZEFIRO380:              return CB_RESULT_ATTACH_ALLOW;
+    YST_1F_Passenger_Car:   return CB_RESULT_ATTACH_ALLOW;
     return string(STR_ERROR_NO_ATTACH);
 }

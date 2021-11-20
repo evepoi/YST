@@ -63,7 +63,7 @@ item(FEAT_TRAINS, Glory_600){
         additional_text:                string(STR_REFIT_ADDITIONAL_ABLE_Glory600);
         }
 
-    livery_override(YST_Passenger_Car) {
+    livery_override(YST_1F_Passenger_Car) {
         default:                        sw_Glory_600_wagon;
         cargo_subtype_text:             sw_Glory_600_cargo_subtype_text;
         cargo_capacity:                 100;

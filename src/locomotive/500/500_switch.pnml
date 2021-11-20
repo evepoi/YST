@@ -79,6 +79,6 @@ switch(FEAT_TRAINS, SELF, sw_500_speed, cargo_subtype) {
 }
 
 switch(FEAT_TRAINS, SELF, sw_500_wagon_attach, vehicle_type_id) {
-    YST_Passenger_Car:  return CB_RESULT_ATTACH_ALLOW;
+    YST_1F_Passenger_Car:   return CB_RESULT_ATTACH_ALLOW;
     return string(STR_ERROR_NO_ATTACH);
 }

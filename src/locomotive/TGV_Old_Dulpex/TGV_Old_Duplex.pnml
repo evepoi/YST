@@ -63,7 +63,7 @@ item(FEAT_TRAINS, TGV_OLD_Duplex){
         additional_text:                string(STR_REFIT_ADDITIONAL_ABLE_TGV_Duplex);
         }
 
-    livery_override(YST_Passenger_2F_Car) {
+    livery_override(YST_2F_Passenger_Car) {
         default:                        sw_TGV_OLD_Duplex_wagon;
         cargo_subtype_text:             sw_TGV_OLD_Duplex_cargo_subtype_text;
         cargo_capacity:                 170;

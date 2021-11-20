@@ -12,7 +12,7 @@ switch(FEAT_TRAINS, SELF, sw_VTX_wagon, (position_in_consist)) {
 }
 
 switch(FEAT_TRAINS, SELF, sw_VTX_wagon_attach, vehicle_type_id) {
-    VTX:                return CB_RESULT_ATTACH_ALLOW;
-    YST_Passenger_Car:  return CB_RESULT_ATTACH_ALLOW;
+    VTX:                    return CB_RESULT_ATTACH_ALLOW;
+    YST_1F_Passenger_Car:   return CB_RESULT_ATTACH_ALLOW;
     return string(STR_ERROR_NO_ATTACH);
 }

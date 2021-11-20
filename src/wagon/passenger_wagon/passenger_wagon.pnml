@@ -68,9 +68,9 @@ switch(FEAT_TRAINS, SELF, sw_Passenge_2F_wagon, (position_in_vehid_chain + 1) <=
 }
 
 //열차정보
-item (FEAT_TRAINS, YST_Passenger_Car){
+item (FEAT_TRAINS, YST_1F_Passenger_Car, 2001){
 	property {
- 		name:							string(STR_YST_PASSINGER_NAME);
+ 		name:							string(STR_YST_1F_PASS_NAME);
  		climates_available:				ALL_CLIMATES;
 		track_type:						RAIL;
 		power:							0;
@@ -101,9 +101,9 @@ item (FEAT_TRAINS, YST_Passenger_Car){
         }
     }
 
-item (FEAT_TRAINS, YST_Passenger_2F_Car){
+item (FEAT_TRAINS, YST_2F_Passenger_Car, 2002){
 	property {
- 		name:							string(STR_YST_PASSINGER2F_NAME);
+ 		name:							string(STR_YST_2F_PASS_NAME);
  		climates_available:				ALL_CLIMATES;
 		track_type:						RAIL;
 		power:							0;

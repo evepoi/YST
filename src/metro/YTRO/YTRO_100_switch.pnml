@@ -73,7 +73,7 @@ switch(FEAT_TRAINS, SELF, sw_YTRO_100_2F_wagon, position_in_consist) {
 }
 
 switch(FEAT_TRAINS, SELF, sw_YTRO_100_wagon_attach, vehicle_type_id) {
-    YST_Passenger_Car:      return CB_RESULT_ATTACH_ALLOW;
-    YST_Passenger_2F_Car:   return CB_RESULT_ATTACH_ALLOW;
+    YST_1F_Passenger_Car:   return CB_RESULT_ATTACH_ALLOW;
+    YST_2F_Passenger_Car:   return CB_RESULT_ATTACH_ALLOW;
     return string(STR_ERROR_NO_ATTACH);
 }

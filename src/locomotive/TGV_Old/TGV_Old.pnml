@@ -62,7 +62,7 @@ item(FEAT_TRAINS, TGV_OLD){
         additional_text:                string(STR_REFIT_ADDITIONAL_UNABLE_TGV_OLD);
         }
 
-    livery_override(YST_Passenger_Car) {
+    livery_override(YST_1F_Passenger_Car) {
         default:                        sw_TGV_Old_wagon;
         cargo_capacity:                 85;
         loading_speed:                  25;
