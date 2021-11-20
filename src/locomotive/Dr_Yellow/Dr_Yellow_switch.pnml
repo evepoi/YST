@@ -12,12 +12,12 @@ switch(FEAT_TRAINS, SELF, sw_Dr_Yellow_wagon_middle, (position_in_consist)) {
 }
 
 switch(FEAT_TRAINS, SELF, sw_Dr_Yellow_wagon_rear, [STORE_TEMP(4, 0x10F), var[0x61, 0, 0x0000FFFF, 0xC6]]){
-    DRY700: set_Dr_Yellow_wagon_end;
+    Dr_Yellow: set_Dr_Yellow_wagon_end;
     sw_Dr_Yellow_wagon_middle;
 }
 
 switch(FEAT_TRAINS, SELF, sw_Dr_Yellow_wagon, [STORE_TEMP(-4, 0x10F), var[0x61, 0, 0x0000FFFF, 0xC6]]) {
-    DRY700: set_Dr_Yellow_wagon_start;
+    Dr_Yellow: set_Dr_Yellow_wagon_start;
     sw_Dr_Yellow_wagon_rear;
 }
 
