@@ -16,6 +16,7 @@ STR_CRH3_NAME           :[YST] CRH3
 STR_CRH380A_NAME        :[YST] CRH380A
 STR_CRH380A_Cool_NAME   :[YST] CRH380A Cool
 STR_CRH380A_Test_NAME   :[YST] CRH380A-Test
+STR_CRV600_NAME         :[YST] CRV600
 
 # wagon's name
 STR_YST_1F_PASS_NAME    :[YST] 1층 공통객차
@@ -23,7 +24,6 @@ STR_YST_2F_PASS_NAME    :[YST] 2층 공통객차
 
 STR_500_NAME 			:[YST] 신칸센 500계
 STR_800_NAME 			:[YST] 신칸센 800계
-STR_CR600_NAME			:[YST] CR600
 STR_DRY700_NAME		    :[YST] Dr. Yellow
 STR_E5_NAME 			:[YST] 신칸센 E5
 STR_E6_NAME 			:[YST] 신칸센 E6

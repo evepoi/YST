@@ -10,9 +10,9 @@ CR600
 /*--------------------------------------------------------------------
 열차정보
 --------------------------------------------------------------------*/
-item(FEAT_TRAINS, CR600){
+item(FEAT_TRAINS, CRV600, 3011){
     property {
-        name:                           string(STR_CR600_NAME);
+        name:                           string(STR_CRV600_NAME);
         climates_available:             ALL_CLIMATES;
         introduction_date:              date(2012, 1, 1);
         track_type:                     ELRL;
