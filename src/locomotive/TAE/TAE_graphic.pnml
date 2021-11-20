@@ -1,0 +1,105 @@
+/*--------------------------------------------------------------------
+Graphics
+--------------------------------------------------------------------*/
+spriteset(set_TAE_purchase, "src\locomotive\TAE\TAE.png"){
+    tmpl_purchase(0, 0)
+}
+
+/*--------------------------------------------------------------------
+TAE 100
+--------------------------------------------------------------------*/
+spriteset(set_TAE_100_purchase, "src\locomotive\TAE\TAE.png"){
+    tmpl_purchase_for_dualhead(0, 108)
+}
+
+spriteset(set_TAE_100_engineH, "src\locomotive\TAE\TAE.png"){
+    engine(80, 0)
+}
+
+spriteset(set_TAE_100_wagon_start, "src\locomotive\TAE\TAE.png"){
+    wagon_start(80, 27)
+}
+
+spriteset(set_TAE_100_wagon, "src\locomotive\TAE\TAE.png") {
+    wagon_1F(80, 54)
+}
+
+spriteset(set_TAE_100_wagon_r, "src\locomotive\TAE\TAE.png") {
+    wagon_1F_r(80, 54)
+}
+
+spriteset(set_TAE_100_wagon_end, "src\locomotive\TAE\TAE.png"){
+    wagon_start(80, 81)
+}
+
+spriteset(set_TAE_100_engineT, "src\locomotive\TAE\TAE.png"){
+    engine_r(80, 108)
+}
+
+/*--------------------------------------------------------------------
+2. TAE 100 Yellow
+--------------------------------------------------------------------*/
+spriteset(set_TAE_100_Yellow_purchase, "src\locomotive\TAE\TAE.png"){
+    tmpl_purchase_for_dualhead(0, 243)
+}
+
+spriteset(set_TAE_100_Yellow_engineH, "src\locomotive\TAE\TAE.png"){
+    engine(80, 135)
+}
+
+spriteset(set_TAE_100_Yellow_wagon_start, "src\locomotive\TAE\TAE.png"){
+    wagon_start(80, 162)
+}
+
+spriteset(set_TAE_100_Yellow_wagon, "src\locomotive\TAE\TAE.png") {
+    wagon_1F(80, 189)
+}
+
+spriteset(set_TAE_100_Yellow_wagon_r, "src\locomotive\TAE\TAE.png") {
+    wagon_1F_r(80, 189)
+}
+
+spriteset(set_TAE_100_Yellow_wagon_end, "src\locomotive\TAE\TAE.png"){
+    wagon_start(80, 216)
+}
+
+spriteset(set_TAE_100_Yellow_engineT, "src\locomotive\TAE\TAE.png"){
+    engine_r(80, 243)
+}
+/*--------------------------------------------------------------------
+3. TAE 200
+--------------------------------------------------------------------*/
+spriteset(set_TAE_200_purchase, "src\locomotive\TAE\TAE.png"){
+    tmpl_purchase_for_dualhead(0, 378)
+}
+
+spriteset(set_TAE_200_engineH, "src\locomotive\TAE\TAE.png"){
+    engine(80, 270)
+}
+
+spriteset(set_TAE_200_wagon_start, "src\locomotive\TAE\TAE.png"){
+    wagon_start(80, 297)
+}
+
+spriteset(set_TAE_200_wagon, "src\locomotive\TAE\TAE.png") {
+    wagon_1F(80, 324)
+}
+
+spriteset(set_TAE_200_wagon_r, "src\locomotive\TAE\TAE.png") {
+    wagon_1F_r(80, 324)
+}
+
+spriteset(set_TAE_200_wagon_end, "src\locomotive\TAE\TAE.png"){
+    wagon_start(80, 351)
+}
+
+spriteset(set_TAE_200_engineT, "src\locomotive\TAE\TAE.png"){
+    engine_r(80, 378)
+}
+
+/*--------------------------------------------------------------------
+구매정보
+--------------------------------------------------------------------*/
+switch(FEAT_TRAINS, SELF, sw_TAE_purchase, cargo_subtype) {
+    set_TAE_purchase;
+}

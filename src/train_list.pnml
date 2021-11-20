@@ -39,6 +39,7 @@
 #include "locomotive/Shinkansen_E6/Shinkansen_E6.pnml"
 #include "locomotive/Shinkansen_E7/Shinkansen_E7.pnml"
 #include "locomotive/Shinkansen_N700/Shinkansen_N700.pnml"
+#include "locomotive/TAE/TAE.pnml"
 #include "locomotive/Talgo_250/Talgo_250.pnml"
 #include "locomotive/TGV_Old/TGV_Old.pnml"
 #include "locomotive/TGV_Old_Pos/TGV_Old_Pos.pnml"
@@ -48,7 +49,6 @@
 #include "locomotive/TGV_Ouigo/TGV_Ouigo.pnml"
 #include "locomotive/VTX/VTX.pnml"
 #include "locomotive/YFX/YFX.pnml"
-#include "locomotive/YN/YN.pnml"
 #include "locomotive/YTX/YTX.pnml"
 #include "locomotive/ZEFIRO380/ZEFIRO380.pnml"
 

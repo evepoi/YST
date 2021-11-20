@@ -38,6 +38,7 @@ STR_Shinkansen_E5_NAME                  :[YST] Shinkansen E5
 STR_Shinkansen_E6_NAME                  :[YST] Shinkansen E6
 STR_Shinkansen_E7_NAME                  :[YST] Shinkansen E7
 STR_Shinkansen_N700_NAME                :[YST] Shinkansen N700
+STR_TAE_NAME                            :[YST] TAE
 
 # wagon's name
 STR_YST_1F_PASS_NAME                    :[YST] 1F Passenger Car
@@ -61,7 +62,6 @@ STR_TGV_Ouigo_NAME                      :[YST] TGV Ouigo
 STR_VTX_NAME                            :[YST] VTX
 STR_YFX_NAME                            :[YST] YFX
 STR_YFXF_NAME                           :[YST] Freight car
-STR_YN_NAME                             :[YST] YN
 STR_YTRO_100_NAME  	                    :[YST] YTRO 100
 STR_YTRO_200_NAME  	                    :[YST] YTRO 200
 STR_YTX_NAME                            :[YST] YTX
@@ -96,7 +96,7 @@ STR_REFIT_ADDITIONAL_ABLE_NKX           :{BLACK}Changing model/livery: {GREEN}av
 STR_REFIT_ADDITIONAL_ABLE_Talgo         :{BLACK}Changing model/livery: {GREEN}available {} {BLACK}Combined train: {GREEN}Talgo
 STR_REFIT_ADDITIONAL_ABLE_TGV           :{BLACK}Changing model/livery: {GREEN}available {} {BLACK}Combined train: {GREEN}TGV-Old Pos, TGV-Pos
 STR_REFIT_ADDITIONAL_ABLE_TGV_Duplex    :{BLACK}Changing model/livery: {GREEN}available {} {BLACK}Combined train: {GREEN}TGV-Old Duplex, TGV-Duplex
-STR_REFIT_ADDITIONAL_ABLE_YN            :{BLACK}Changing model/livery: {GREEN}available {} {BLACK}Combined train: {GREEN}YN01, YN02
+STR_REFIT_ADDITIONAL_ABLE_TAE           :{BLACK}Changing model/livery: {GREEN}available {} {BLACK}Combined train: {GREEN}TAE 100, TAE 200
 STR_REFIT_ADDITIONAL_ABLE_ZEFIRO380     :{BLACK}Changing model/livery: {GREEN}available {} {BLACK}Combined train: {GREEN}ZEFIRO380
 STR_REFIT_ADDITIONAL_UNABLE_UNADDTRAIN  :{BLACK}Changing model/livery: {RED}Unavailable {} {BLACK}Combined train: {RED}Unavailable
 STR_REFIT_ADDITIONAL_UNABLE_AVE         :{BLACK}Changing model/livery: {RED}Unavailable {} {BLACK}Combined train: {GREEN}AVE
@@ -135,6 +135,9 @@ STR_REFIT_LIVERY_Shinkansen_500_Sancheon:(Shinkansen 500-Sancheon)
 STR_REFIT_LIVERY_Shinkansen_500_Patjug  :(Shinkansen 500-Patjug)
 STR_REFIT_LIVERY_Shinkansen_E5          :(Shinkansen E5)
 STR_REFIT_LIVERY_Shinkansen_H5          :(Shinkansen H5)
+STR_REFIT_LIVERY_TAE_100                :(TAE 100)
+STR_REFIT_LIVERY_TAE_100_Yellow         :(TAE 100 Yellow)
+STR_REFIT_LIVERY_TAE_200                :(TAE 200) 260km/h
 STR_REFIT_LIVERY_YTRO_100A              :(YTRO 100 A Color)
 STR_REFIT_LIVERY_YTRO_100B              :(YTRO 100 B Color)
 STR_REFIT_LIVERY_YTRO_100C              :(YTRO 100 C Color)
@@ -179,9 +182,6 @@ STR_REFIT_LIVERY_TGV_Duplex             :(TGV Duplex)
 STR_REFIT_LIVERY_TGV_OLD_Duplex         :(TGV Old Duplex)
 STR_REFIT_LIVERY_TGV_LYAIR_Duplex       :(TGV Lyair Duplex)
 STR_REFIT_LIVERY_TGV_OLD_LYAIR_Duplex   :(TGV Old Lyair Duplex)
-STR_REFIT_LIVERY_YN01                   :(YN01)
-STR_REFIT_LIVERY_YN01Y                  :(YN01-Yellow)
-STR_REFIT_LIVERY_YN02                   :(YN02) 251km/h
 STR_REFIT_LIVERY_ZEFIRO380              :(ZEFIRO380)
 STR_REFIT_LIVERY_ZEFIRO380_Cool         :(ZEFIRO380 Cool) 430km/h
 STR_REFIT_LIVERY_ZEFIRO380_Black        :(ZEFIRO380 Black) 600km/h

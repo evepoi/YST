@@ -34,6 +34,7 @@ sort(FEAT_TRAINS, [
     Shinkansen_E6,        //3030
     Shinkansen_E7,        //3031
     Shinkansen_N700,      //3032
+    TAE,                  //3033
 
 
     MTR,                  //3026
@@ -49,7 +50,6 @@ sort(FEAT_TRAINS, [
     TGV_Ouigo,            //3039
     VTX,                  //3040
     YFX,                  //3041
-    YN,                   //3042
     YTRO_100,             //3043
     YTRO_200,             //3044
     YTX,                  //3045

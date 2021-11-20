@@ -38,6 +38,7 @@ STR_Shinkansen_E5_NAME                  :[YST] 신칸센 E5
 STR_Shinkansen_E6_NAME                  :[YST] 신칸센 E6
 STR_Shinkansen_E7_NAME                  :[YST] 신칸센 E7
 STR_Shinkansen_N700_NAME                :[YST] 신칸센 N700
+STR_TAE_NAME                            :[YST] TAE
 
 # wagon's name
 STR_YST_1F_PASS_NAME                    :[YST] 1층 공통객차
@@ -61,7 +62,6 @@ STR_TGV_Ouigo_NAME                      :[YST] TGV Ouigo
 STR_VTX_NAME                            :[YST] VTX
 STR_YFX_NAME                            :[YST] YFX
 STR_YFXF_NAME                           :[YST] 화물객차
-STR_YN_NAME                             :[YST] YN
 STR_YTRO_100_NAME                       :[YST] YTRO 100
 STR_YTRO_200_NAME                       :[YST] YTRO 200
 STR_YTX_NAME                            :[YST] YTX
@@ -91,7 +91,7 @@ STR_REFIT_ADDITIONAL_ABLE_NKX           :{BLACK}도색/모델 변경: {GREEN}가
 STR_REFIT_ADDITIONAL_ABLE_Talgo         :{BLACK}도색/모델 변경: {GREEN}가능 {}{BLACK}복합가능열차 : {GREEN}Talgo
 STR_REFIT_ADDITIONAL_ABLE_TGV           :{BLACK}도색/모델 변경: {GREEN}가능 {}{BLACK}복합가능열차 : {GREEN}TGV-Old Pos, TGV-Pos
 STR_REFIT_ADDITIONAL_ABLE_TGV_Duplex    :{BLACK}도색/모델 변경: {GREEN}가능 {}{BLACK}복합가능열차 : {GREEN}TGV-Old Duplex, TGV-Duplex
-STR_REFIT_ADDITIONAL_ABLE_YN            :{BLACK}도색/모델 변경: {GREEN}가능 {}{BLACK}복합가능열차 : {GREEN}YN01, YN02
+STR_REFIT_ADDITIONAL_ABLE_TAE           :{BLACK}도색/모델 변경: {GREEN}가능 {}{BLACK}복합가능열차 : {GREEN}TAE 100, TAE 200
 STR_REFIT_ADDITIONAL_ABLE_ZEFIRO380     :{BLACK}도색/모델 변경: {GREEN}가능 {}{BLACK}복합가능열차 : {GREEN}ZEFIRO380
 STR_REFIT_ADDITIONAL_UNABLE_UNADDTRAIN  :{BLACK}도색/모델 변경: {RED}불가능 {}{BLACK}복합열차구성: {RED}불가능
 STR_REFIT_ADDITIONAL_UNABLE_AVE         :{BLACK}도색/모델 변경: {RED}불가능 {}{BLACK}복합가능열차 : {GREEN}AVE
@@ -130,6 +130,9 @@ STR_REFIT_LIVERY_Shinkansen_500_Sancheon:(신칸센 500-산천)
 STR_REFIT_LIVERY_Shinkansen_500_Patjug  :(신칸센 500-팥죽)
 STR_REFIT_LIVERY_Shinkansen_E5          :(신칸센 E5)
 STR_REFIT_LIVERY_Shinkansen_H5          :(신칸센 H5)
+STR_REFIT_LIVERY_TAE_100                :(TAE 100)
+STR_REFIT_LIVERY_TAE_100_Yellow         :(TAE 100 Yellow)
+STR_REFIT_LIVERY_TAE_200                :(TAE 200) 260km/h
 STR_REFIT_LIVERY_YTRO_100A              :(YTRO 100 A 도색)
 STR_REFIT_LIVERY_YTRO_100B              :(YTRO 100 B 도색)
 STR_REFIT_LIVERY_YTRO_100C              :(YTRO 100 C 도색)
@@ -174,9 +177,6 @@ STR_REFIT_LIVERY_TGV_Duplex             :(TGV Duplex)
 STR_REFIT_LIVERY_TGV_OLD_Duplex         :(TGV Old Duplex)
 STR_REFIT_LIVERY_TGV_LYAIR_Duplex       :(TGV Lyair Duplex)
 STR_REFIT_LIVERY_TGV_OLD_LYAIR_Duplex   :(TGV Old Lyair Duplex)
-STR_REFIT_LIVERY_YN01                   :(YN01)
-STR_REFIT_LIVERY_YN01Y                  :(YN01-Yellow)
-STR_REFIT_LIVERY_YN02                   :(YN02) 251km/h
 STR_REFIT_LIVERY_ZEFIRO380              :(ZEFIRO380)
 STR_REFIT_LIVERY_ZEFIRO380_Cool         :(ZEFIRO380 Cool) 430km/h
 STR_REFIT_LIVERY_ZEFIRO380_Black        :(ZEFIRO380 Black) 600km/h

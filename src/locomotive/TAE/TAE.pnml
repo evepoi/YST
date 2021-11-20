@@ -2,17 +2,17 @@
 YN
 --------------------------------------------------------------------*/
 // Graphics
-#include "YN_graphic.pnml"
+#include "TAE_graphic.pnml"
 
 // Switch
-#include "YN_switch.pnml"
+#include "TAE_switch.pnml"
 
 /*--------------------------------------------------------------------
 열차정보
 --------------------------------------------------------------------*/
-item(FEAT_TRAINS, YN){
+item(FEAT_TRAINS, TAE, 3033){
     property {
-        name:                           string(STR_YN_NAME);
+        name:                           string(STR_TAE_NAME);
         climates_available:             ALL_CLIMATES;
         introduction_date:              date(2020, 1, 1);
         track_type:                     ELRL;
@@ -51,19 +51,19 @@ item(FEAT_TRAINS, YN){
         }
 
 	graphics {
-        default:                        sw_YN_engine;
-        purchase:                       sw_YN_purchase;
-        speed:                          sw_YN_speed;
+        default:                        sw_TAE_engine;
+        purchase:                       sw_TAE_purchase;
+        speed:                          sw_TAE_speed;
         loading_speed:                  25;
-        can_attach_wagon:               sw_YN_wagon_attach;
-        cargo_subtype_text:             sw_YN_cargo_subtype_text;
+        can_attach_wagon:               sw_TAE_wagon_attach;
+        cargo_subtype_text:             sw_TAE_cargo_subtype_text;
         start_stop:                     sw_YST_train_start_stop_6;
-        additional_text:                string(STR_REFIT_ADDITIONAL_ABLE_YN);
+        additional_text:                string(STR_REFIT_ADDITIONAL_ABLE_TAE);
         }
 
     livery_override(YST_1F_Passenger_Car) {
-        default:                        sw_YN_wagon;
-        cargo_subtype_text:             sw_YN_cargo_subtype_text;
+        default:                        sw_TAE_wagon;
+        cargo_subtype_text:             sw_TAE_cargo_subtype_text;
         cargo_capacity:                 70;
         loading_speed:                  25;
         running_cost_factor:            100;
