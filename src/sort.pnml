@@ -5,9 +5,9 @@ sort(FEAT_TRAINS, [
     AGV,                  //3001
     AGV_Cool,             //3002
     AVE,                  //3003
+    AVE_Velaro,           //3004
     S500,                 //3002
     S800,                 //3003
-    AVE_Velaro,           //3005
     BB15048,              //3006
     CR600,                //3007
     CRH1,                 //3008

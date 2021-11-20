@@ -46,4 +46,5 @@ railtypetable {
 if (European) {
     disable_item(FEAT_TRAINS, 3001);
     disable_item(FEAT_TRAINS, 3003);
+    disable_item(FEAT_TRAINS, 3004);
     }
