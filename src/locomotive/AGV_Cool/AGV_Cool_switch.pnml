@@ -12,17 +12,17 @@ switch(FEAT_TRAINS, SELF, sw_AGV_Cool_wagon_middle, (position_in_consist)) {
 }
 
 switch(FEAT_TRAINS, SELF, sw_AGV_Cool_wagon_rear, [STORE_TEMP(1, 0x10F), var[0x61, 0, 0x0000FFFF, 0xC6]]){
-    AGV:    set_AGV_Cool_wagon_end;
+    AGV_Cool:    set_AGV_Cool_wagon_end;
     sw_AGV_Cool_wagon_middle;
 }
 
 switch(FEAT_TRAINS, SELF, sw_AGV_Cool_wagon, [STORE_TEMP(-1, 0x10F), var[0x61, 0, 0x0000FFFF, 0xC6]]) {
-    AGV:    set_AGV_Cool_wagon_start;
+    AGV_Cool:    set_AGV_Cool_wagon_start;
     sw_AGV_Cool_wagon_rear;
 }
 
 switch(FEAT_TRAINS, SELF, sw_AGV_Cool_wagon_attach, vehicle_type_id) {
-    AGV:                    return CB_RESULT_ATTACH_ALLOW;
+    AGV_Cool:               return CB_RESULT_ATTACH_ALLOW;
     YST_1F_Passenger_Car:   return CB_RESULT_ATTACH_ALLOW;
     return string(STR_ERROR_NO_ATTACH);
 }
