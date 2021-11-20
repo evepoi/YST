@@ -20,6 +20,7 @@ STR_CRV600_NAME         :[YST] CRV600
 STR_Dr_Yellow_NAME      :[YST] Dr. Yellow
 STR_E300_NAME           :[YST] E300
 STR_E320_NAME           :[YST] E320
+STR_EMU_NAME            :[YST] EMU
 
 # wagon's name
 STR_YST_1F_PASS_NAME 	:[YST] 1F Passenger Car
@@ -30,7 +31,6 @@ STR_800_NAME 			:[YST] Shinkansen 800
 STR_E5_NAME 			:[YST] Shinkansen E5
 STR_E6_NAME 			:[YST] Shinkansen E6
 STR_E7_NAME 			:[YST] Shinkansen E7
-STR_EMU_NAME		    :[YST] EMU
 STR_FLAT_1F_NAME        :[YST] Flat Car
 STR_FLAT_2F_NAME        :[YST] Flat Car - American
 STR_FLAT_Tank_NAME      :[YST] Flat Tank Car
@@ -85,8 +85,8 @@ STR_REFIT_ADDITIONAL                    :{BLACK}Changing model/livery: {GREEN}Av
 STR_REFIT_ADDITIONAL_ABLE_UNADDTRAIN    :{BLACK}Changing model/livery: {GREEN}Available {} {BLACK}Combined train: {RED}UnavailableSTR_REFIT_ADDITIONAL_ABLE_AGV           :{BLACK}Changing model/livery: {GREEN}Available {} {BLACK}Combined train: {RED}Unavailable
 STR_REFIT_ADDITIONAL_ABLE_CRH380A       :{BLACK}Changing model/livery: {GREEN}Available {} {BLACK}Combined train: {GREEN}CRH380A, CRH380A Cool, CRH380A Red
 STR_REFIT_ADDITIONAL_ABLE_CR600         :{BLACK}Changing model/livery: {GREEN}Available {}{BLACK}Combined train : {GREEN}CR600
-STR_REFIT_ADDITIONAL_ABLE_E6            :{BLACK}Changing model/livery: {GREEN}Available {} {BLACK}Combined train: {GREEN}E6
 STR_REFIT_ADDITIONAL_ABLE_EMU           :{BLACK}Changing model/livery: {GREEN}Available {} {BLACK}Combined train: {GREEN}EMU-250, EUM-300
+STR_REFIT_ADDITIONAL_ABLE_E6            :{BLACK}Changing model/livery: {GREEN}Available {} {BLACK}Combined train: {GREEN}E6
 STR_REFIT_ADDITIONAL_ABLE_Glory600      :{BLACK}Changing model/livery: {GREEN}Available {} {BLACK}Combined train: {GREEN}Glory600
 STR_REFIT_ADDITIONAL_ABLE_HMX           :{BLACK}Changing model/livery: {GREEN}Available {} {BLACK}Combined train: {GREEN}HMX
 STR_REFIT_ADDITIONAL_ABLE_ICESP         :{BLACK}Changing model/livery: {GREEN}available {} {BLACK}Combined train: {GREEN}ICE-Sancheon, ICE-Patjug

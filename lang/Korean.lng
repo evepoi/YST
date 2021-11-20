@@ -20,6 +20,7 @@ STR_CRV600_NAME         :[YST] CRV600
 STR_Dr_Yellow_NAME      :[YST] Dr. Yellow
 STR_E300_NAME           :[YST] E300
 STR_E320_NAME           :[YST] E320
+STR_EMU_NAME            :[YST] EMU
 
 # wagon's name
 STR_YST_1F_PASS_NAME    :[YST] 1층 공통객차
@@ -30,7 +31,6 @@ STR_800_NAME 			:[YST] 신칸센 800계
 STR_E5_NAME 			:[YST] 신칸센 E5
 STR_E6_NAME 			:[YST] 신칸센 E6
 STR_E7_NAME 			:[YST] 신칸센 E7
-STR_EMU_NAME		    :[YST] EMU
 STR_FLAT_1F_NAME        :[YST] 평판화차
 STR_FLAT_2F_NAME        :[YST] 평판화차 - 미국형
 STR_FLAT_Tank_NAME      :[YST] 평판유조 화차
@@ -80,8 +80,8 @@ STR_REFIT_ADDITIONAL                    :{BLACK}도색/모델 변경: {GREEN}가
 STR_REFIT_ADDITIONAL_ABLE_UNADDTRAIN    :{BLACK}도색/모델 변경: {GREEN}가능 {}{BLACK}복합열차구성: {RED}불가능
 STR_REFIT_ADDITIONAL_ABLE_CRH380A       :{BLACK}도색/모델 변경: {GREEN}가능 {}{BLACK}복합가능열차 : {GREEN}CRH380A, CRH380A Cool, CRH380A Red
 STR_REFIT_ADDITIONAL_ABLE_CR600         :{BLACK}도색/모델 변경: {GREEN}가능 {}{BLACK}복합가능열차 : {GREEN}CR600
-STR_REFIT_ADDITIONAL_ABLE_E6            :{BLACK}도색/모델 변경: {GREEN}가능 {}{BLACK}복합가능열차 : {GREEN}E6
 STR_REFIT_ADDITIONAL_ABLE_EMU           :{BLACK}도색/모델 변경: {GREEN}가능 {}{BLACK}복합가능열차 : {GREEN}EMU-250, EUM-300
+STR_REFIT_ADDITIONAL_ABLE_E6            :{BLACK}도색/모델 변경: {GREEN}가능 {}{BLACK}복합가능열차 : {GREEN}E6
 STR_REFIT_ADDITIONAL_ABLE_Glory600      :{BLACK}도색/모델 변경: {GREEN}가능 {}{BLACK}복합가능열차 : {GREEN}Glory 600
 STR_REFIT_ADDITIONAL_ABLE_HMX           :{BLACK}도색/모델 변경: {GREEN}가능 {}{BLACK}복합가능열차 : {GREEN}HMX
 STR_REFIT_ADDITIONAL_ABLE_ICESP         :{BLACK}도색/모델 변경: {GREEN}가능 {}{BLACK}복합가능열차 : {GREEN}ICE-산천, ICE-팥죽

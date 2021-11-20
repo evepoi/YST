@@ -10,7 +10,7 @@ EMU
 /*--------------------------------------------------------------------
 열차정보
 --------------------------------------------------------------------*/
-item(FEAT_TRAINS, EMU){
+item(FEAT_TRAINS, EMU, 3015){
     property {
         name:                           string(STR_EMU_NAME);
         climates_available:             ALL_CLIMATES;
