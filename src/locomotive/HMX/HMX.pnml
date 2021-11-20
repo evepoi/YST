@@ -21,7 +21,7 @@ item(FEAT_TRAINS, HMX, 3019){
         dual_headed:                    1;
         
         //spec
-        speed:                          260km/h;
+        speed:                          259km/h;
         power:                          10000 kW;
         weight:                         80 ton;
         tractive_effort_coefficient:    0.3;
