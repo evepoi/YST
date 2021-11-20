@@ -26,6 +26,7 @@ STR_GT26CW_NAME         :[YST] GT26CW
 STR_HEMU_430_NAME       :[YST] HEMU-430
 STR_HMX_NAME            :[YST] HMX
 STR_ICE3_NAME           :[YST] ICE3
+STR_ICE_SP_NAME         :[YST] ICE-SP
 
 # wagon's name
 STR_YST_1F_PASS_NAME    :[YST] 1층 공통객차
@@ -39,7 +40,6 @@ STR_E7_NAME 			:[YST] 신칸센 E7
 STR_FLAT_1F_NAME        :[YST] 평판화차
 STR_FLAT_2F_NAME        :[YST] 평판화차 - 미국형
 STR_FLAT_Tank_NAME      :[YST] 평판유조 화차
-STR_ICE_SP_NAME         :[YST] ICE-SP
 STR_KTX_N_NAME          :[YST] KTX-N
 STR_MTR_NAME            :[YST] MTR 메트로카멜 직류형 전동차
 STR_MTR_CNR_NAME        :[YST] MTR CNR 창춘 전동차
