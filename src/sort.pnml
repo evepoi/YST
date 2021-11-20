@@ -7,10 +7,10 @@ sort(FEAT_TRAINS, [
     AVE,                  //3003
     AVE_Velaro,           //3004
     BB15048,              //3005
+    CRH1,                 //3006
     S500,                 //3002
     S800,                 //3003
     CR600,                //3007
-    CRH1,                 //3008
     CRH3,                 //3009
     CRH380A,              //3010
     CRH380A_Test,         //3011

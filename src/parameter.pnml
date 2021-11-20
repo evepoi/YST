@@ -32,10 +32,19 @@ param 1 {
 		}
 --------------------------------------------------------------------*/
 param {
-	European {
-		type: bool;
-		name: string(STR_PARAM_European_NAME);
-		desc: string(STR_PARAM_European_DESC);
-		def_value: 1;
-		}
-	}
+    European {
+        type: bool;
+        name: string(STR_PARAM_European_NAME);
+        desc: string(STR_PARAM_European_DESC);
+        def_value: 1;
+        }
+    }
+
+param {
+    Chinese {
+        type: bool;
+        name: string(STR_PARAM_Chinese_NAME);
+        desc: string(STR_PARAM_Chinese_DESC);
+        def_value: 1;
+        }
+    }

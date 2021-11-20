@@ -11,6 +11,7 @@ STR_AGV_Cool_NAME       :[YST] AGV Cool
 STR_AVE_NAME            :[YST] AVE
 STR_AVE_Velaro_NAME     :[YST] AVE Velaro
 STR_BB15048_NAME        :[YST] BB15048
+STR_CRH1_NAME           :[YST] CRH1
 
 # wagon's name
 STR_YST_1F_PASS_NAME 	:[YST] 1F Passenger Car
@@ -19,7 +20,6 @@ STR_YST_2F_PASS_NAME    :[YST] 2F Passenger Car
 STR_500_NAME 			:[YST] Shinkansen 500
 STR_800_NAME 			:[YST] Shinkansen 800
 STR_CR600_NAME			:[YST] CR600
-STR_CRH1_NAME	 		:[YST] CRH1
 STR_CRH3_NAME	 		:[YST] CRH3
 STR_CRH380A_NAME		:[YST] CRH380A
 STR_CRH380T_NAME		:[YST] CRH380A-Test
@@ -72,6 +72,8 @@ STR_PARAM_OPT_FACTOR_BY_3	:x 3
 # Parameters
 STR_PARAM_European_NAME         :European trains not used
 STR_PARAM_European_DESC         :We do not use European-style trains. (Default: Use) Train: AGV, AVE, AVE Velaro, BB15048
+STR_PARAM_Chinese_NAME          :Chinese trains not used
+STR_PARAM_Chinese_DESC          :We do not use Chinese-style trains. (Default: Use) Train: CRH1
 STR_PARAM_CARGO_CAPACITY_NAME   :Cargo capacity
 STR_PARAM_CARGO_CAPACITY_DESC   :Cargo capacity of trains
 

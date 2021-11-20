@@ -11,6 +11,7 @@ STR_AGV_Cool_NAME       :[YST] AGV Cool
 STR_AVE_NAME            :[YST] AVE
 STR_AVE_Velaro_NAME     :[YST] AVE Velaro
 STR_BB15048_NAME        :[YST] BB15048
+STR_CRH1_NAME           :[YST] CRH1
 
 # wagon's name
 STR_YST_1F_PASS_NAME    :[YST] 1층 공통객차
@@ -19,7 +20,6 @@ STR_YST_2F_PASS_NAME    :[YST] 2층 공통객차
 STR_500_NAME 			:[YST] 신칸센 500계
 STR_800_NAME 			:[YST] 신칸센 800계
 STR_CR600_NAME			:[YST] CR600
-STR_CRH1_NAME	 		:[YST] CRH1
 STR_CRH3_NAME	 		:[YST] CRH3
 STR_CRH380A_NAME		:[YST] CRH380A
 STR_CRH380T_NAME		:[YST] CRH380A-Test
@@ -67,6 +67,8 @@ STR_ZEFIRO380_NAME      :[YST] ZEFIRO380
 # Parameters
 STR_PARAM_European_NAME         :유럽형 열차 미사용
 STR_PARAM_European_DESC         :유럽형 열차를 사용하지 않습니다. (기본:사용) 열차 : AGV, AVE, AVE Velaro, BB15048
+STR_PARAM_Chinese_NAME          :중국형 열차 미사용
+STR_PARAM_Chinese_DESC          :중국형 열차를 사용하지 않습니다. (기본:사용) 열차 : CRH1
 STR_PARAM_CARGO_CAPACITY_NAME   :화물수송량
 STR_PARAM_CARGO_CAPACITY_DESC   :열차 화물 수송량 변경 가능
 
