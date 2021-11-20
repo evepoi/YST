@@ -17,6 +17,7 @@ STR_CRH380A_NAME        :[YST] CRH380A
 STR_CRH380A_Cool_NAME   :[YST] CRH380A Cool
 STR_CRH380A_Test_NAME   :[YST] CRH380A-Test
 STR_CRV600_NAME         :[YST] CRV600
+STR_Dr_Yellow_NAME      :[YST] Dr. Yellow
 
 # wagon's name
 STR_YST_1F_PASS_NAME 	:[YST] 1F Passenger Car
@@ -24,7 +25,6 @@ STR_YST_2F_PASS_NAME    :[YST] 2F Passenger Car
 
 STR_500_NAME 			:[YST] Shinkansen 500
 STR_800_NAME 			:[YST] Shinkansen 800
-STR_DRY700_NAME		    :[YST] Dr. Yellow
 STR_E5_NAME 			:[YST] Shinkansen E5
 STR_E6_NAME 			:[YST] Shinkansen E6
 STR_E7_NAME 			:[YST] Shinkansen E7
@@ -75,6 +75,8 @@ STR_PARAM_European_NAME         :European trains not used
 STR_PARAM_European_DESC         :We do not use European-style trains. (Default: Use) Train: AGV, AVE, AVE Velaro, BB15048
 STR_PARAM_Chinese_NAME          :Chinese trains not used
 STR_PARAM_Chinese_DESC          :We do not use Chinese-style trains. (Default: Use) Train: CRH1, CRH3, CRH380A, CRH380A Test
+STR_PARAM_Japanese_NAME         :Japanese trains not used
+STR_PARAM_Japanese_DESC         :We do not use Japanese-style trains. (Default: Use) Train: Dr. Yellow
 STR_PARAM_CARGO_CAPACITY_NAME   :Cargo capacity
 STR_PARAM_CARGO_CAPACITY_DESC   :Cargo capacity of trains
 
