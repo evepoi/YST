@@ -10,7 +10,7 @@ TGV OLD_Duplex
 /*--------------------------------------------------------------------
 열차정보
 --------------------------------------------------------------------*/
-item(FEAT_TRAINS, TGV_OLD_Duplex){
+item(FEAT_TRAINS, TGV_OLD_Duplex, 3037){
     property {
         name:                           string(STR_TGV_OLD_Duplex_NAME);
         climates_available:             ALL_CLIMATES;
@@ -21,7 +21,7 @@ item(FEAT_TRAINS, TGV_OLD_Duplex){
         dual_headed:                    1;
         
         //spec
-        speed:                          331km/h;
+        speed:                          330km/h;
         power:                          10000 kW;
         weight:                         80 ton;
         tractive_effort_coefficient:    0.3;
