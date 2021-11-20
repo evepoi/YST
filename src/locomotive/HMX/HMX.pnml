@@ -10,7 +10,7 @@ HMX
 /*--------------------------------------------------------------------
 열차정보
 --------------------------------------------------------------------*/
-item(FEAT_TRAINS, HMX){
+item(FEAT_TRAINS, HMX, 3019){
     property {
         name:                           string(STR_HMX_NAME);
         climates_available:             ALL_CLIMATES;
@@ -21,7 +21,7 @@ item(FEAT_TRAINS, HMX){
         dual_headed:                    1;
         
         //spec
-        speed:                          251km/h;
+        speed:                          260km/h;
         power:                          10000 kW;
         weight:                         80 ton;
         tractive_effort_coefficient:    0.3;
