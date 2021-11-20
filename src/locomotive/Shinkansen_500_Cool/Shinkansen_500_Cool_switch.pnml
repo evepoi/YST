@@ -12,12 +12,12 @@ switch(FEAT_TRAINS, SELF, sw_Shinkansen_500_Cool_wagon_middle, (position_in_cons
 }
 
 switch(FEAT_TRAINS, SELF, sw_Shinkansen_500_Cool_wagon_rear, [STORE_TEMP(4, 0x10F), var[0x61, 0, 0x0000FFFF, 0xC6]]){
-    S500: set_Shinkansen_500_Cool_wagon_end;
+    Shinkansen_500_Cool: set_Shinkansen_500_Cool_wagon_end;
     sw_Shinkansen_500_Cool_wagon_middle;
 }
 
 switch(FEAT_TRAINS, SELF, sw_Shinkansen_500_Cool_wagon, [STORE_TEMP(-4, 0x10F), var[0x61, 0, 0x0000FFFF, 0xC6]]) {
-    S500: set_Shinkansen_500_Cool_wagon_start;
+    Shinkansen_500_Cool: set_Shinkansen_500_Cool_wagon_start;
     sw_Shinkansen_500_Cool_wagon_rear;
 }
 
