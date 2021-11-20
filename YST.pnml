@@ -41,3 +41,8 @@ railtypetable {
 
 // Load trains
 #include "src/train_list.pnml"
+
+//disabe_train
+if (disable_train) {
+    disable_item(FEAT_TRAINS, 1111);
+    }
