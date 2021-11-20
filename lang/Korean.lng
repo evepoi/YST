@@ -14,6 +14,7 @@ STR_BB15048_NAME        :[YST] BB15048
 STR_CRH1_NAME           :[YST] CRH1
 STR_CRH3_NAME           :[YST] CRH3
 STR_CRH380A_NAME        :[YST] CRH380A
+STR_CRH380A_Cool_NAME   :[YST] CRH380A Cool
 
 # wagon's name
 STR_YST_1F_PASS_NAME    :[YST] 1층 공통객차
