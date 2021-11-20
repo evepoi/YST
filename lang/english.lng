@@ -39,6 +39,7 @@ STR_Shinkansen_E6_NAME                  :[YST] Shinkansen E6
 STR_Shinkansen_E7_NAME                  :[YST] Shinkansen E7
 STR_Shinkansen_N700_NAME                :[YST] Shinkansen N700
 STR_TAE_NAME                            :[YST] TAE
+STR_Talgo_250_NAME                      :[YST] Talgo250
 
 # wagon's name
 STR_YST_1F_PASS_NAME                    :[YST] 1F Passenger Car
@@ -51,7 +52,6 @@ STR_MTR_NAME                            :[YST] MTR Cammall DC Train
 STR_MTR_CNR_NAME                        :[YST] MTR CNR Changchun Trian
 STR_MTR_CRRC_NAME                       :[YST] MTR CRRC Sipang Trian
 STR_MTR_HM_NAME                         :[YST] MTR Rotem Mitsubishi Trian
-STR_TALGO250_NAME		                :[YST] Talgo250
 STR_Tank_NAME		                    :[YST] Tank
 STR_TGV_OLD_NAME		                :[YST] TGV Old
 STR_TGV_OLD_Pos_NAME                    :[YST] TGV Old Pos
@@ -93,7 +93,7 @@ STR_REFIT_ADDITIONAL_ABLE_HMX           :{BLACK}Changing model/livery: {GREEN}Av
 STR_REFIT_ADDITIONAL_ABLE_E6            :{BLACK}Changing model/livery: {GREEN}Available {} {BLACK}Combined train: {GREEN}E6
 STR_REFIT_ADDITIONAL_ABLE_ICESP         :{BLACK}Changing model/livery: {GREEN}available {} {BLACK}Combined train: {GREEN}ICE-Sancheon, ICE-Patjug
 STR_REFIT_ADDITIONAL_ABLE_NKX           :{BLACK}Changing model/livery: {GREEN}available {} {BLACK}Combined train: {GREEN}NKX
-STR_REFIT_ADDITIONAL_ABLE_Talgo         :{BLACK}Changing model/livery: {GREEN}available {} {BLACK}Combined train: {GREEN}Talgo
+STR_REFIT_ADDITIONAL_ABLE_Talgo_250     :{BLACK}Changing model/livery: {GREEN}available {} {BLACK}Combined train: {GREEN}Talgo 250
 STR_REFIT_ADDITIONAL_ABLE_TGV           :{BLACK}Changing model/livery: {GREEN}available {} {BLACK}Combined train: {GREEN}TGV-Old Pos, TGV-Pos
 STR_REFIT_ADDITIONAL_ABLE_TGV_Duplex    :{BLACK}Changing model/livery: {GREEN}available {} {BLACK}Combined train: {GREEN}TGV-Old Duplex, TGV-Duplex
 STR_REFIT_ADDITIONAL_ABLE_TAE           :{BLACK}Changing model/livery: {GREEN}available {} {BLACK}Combined train: {GREEN}TAE 100, TAE 200
@@ -131,6 +131,9 @@ STR_REFIT_LIVERY_HMXG                   :(HMX Green Color)
 STR_REFIT_LIVERY_HMXR                   :(HMX Red Color)
 STR_REFIT_LIVERY_ICE_Sancheon           :(ICE-Sancheon)
 STR_REFIT_LIVERY_ICE_Patjug             :(ICE-Patjug)
+STR_REFIT_LIVERY_NKXA                   :(NKX A Color)
+STR_REFIT_LIVERY_NKXB                   :(NKX B Color)
+STR_REFIT_LIVERY_NKXC                   :(NKX C Color)
 STR_REFIT_LIVERY_Shinkansen_500_Sancheon:(Shinkansen 500-Sancheon)
 STR_REFIT_LIVERY_Shinkansen_500_Patjug  :(Shinkansen 500-Patjug)
 STR_REFIT_LIVERY_Shinkansen_E5          :(Shinkansen E5)
@@ -138,6 +141,8 @@ STR_REFIT_LIVERY_Shinkansen_H5          :(Shinkansen H5)
 STR_REFIT_LIVERY_TAE_100                :(TAE 100)
 STR_REFIT_LIVERY_TAE_100_Yellow         :(TAE 100 Yellow)
 STR_REFIT_LIVERY_TAE_200                :(TAE 200) 260km/h
+STR_REFIT_LIVERY_Talgo_250_Alvia        :(Talgo 250 Alvia)
+STR_REFIT_LIVERY_Talgo_250_Aprosiyob    :(Talgo 250 Aprosiyob)
 STR_REFIT_LIVERY_YTRO_100A              :(YTRO 100 A Color)
 STR_REFIT_LIVERY_YTRO_100B              :(YTRO 100 B Color)
 STR_REFIT_LIVERY_YTRO_100C              :(YTRO 100 C Color)
@@ -158,11 +163,6 @@ STR_REFIT_LIVERY_MTRM                   :(remoding Car)
 STR_REFIT_LIVERY_MTRD                   :(Disney Car)
 STR_REFIT_LIVERY_MTRCNR                 :(MTR CNR Changchun)
 STR_REFIT_LIVERY_MTRCNRN                :(nambuseom line Car)
-STR_REFIT_LIVERY_NKXA                   :(NKX A Color)
-STR_REFIT_LIVERY_NKXB                   :(NKX B Color)
-STR_REFIT_LIVERY_NKXC                   :(NKX C Color)
-STR_REFIT_LIVERY_ALVIA                  :(Alvia)
-STR_REFIT_LIVERY_APROSIYOB              :(Aprosiyob)
 STR_REFIT_LIVERY_TANKA                  :(Tank A Color)
 STR_REFIT_LIVERY_TANKB                  :(Tank B Color)
 STR_REFIT_LIVERY_TANKC                  :(Tank C Color)

@@ -1,75 +1,75 @@
 /*--------------------------------------------------------------------
 Graphics
 --------------------------------------------------------------------*/
-spriteset(set_TALGO_purchase, "src\locomotive\Talgo_250\Talgo_250.png"){
+spriteset(set_Talgo_250_purchase, "src\locomotive\Talgo_250\Talgo_250.png"){
     tmpl_purchase(0, 0)
 }
 
 /*--------------------------------------------------------------------
 1. Alvia
 --------------------------------------------------------------------*/
-spriteset(set_ALVIAH_purchase, "src\locomotive\Talgo_250\Talgo_250.png"){
+spriteset(set_Talgo_250_AlviaH_purchase, "src\locomotive\Talgo_250\Talgo_250.png"){
     tmpl_purchase_for_dualhead(0, 135)
 }
 
-spriteset(set_ALVIA_engineH, "src\locomotive\Talgo_250\Talgo_250.png"){
+spriteset(set_Talgo_250_Alvia_engineH, "src\locomotive\Talgo_250\Talgo_250.png"){
     engine(80, 0)
 }
 
-spriteset(set_ALVIA_wagon_start, "src\locomotive\Talgo_250\Talgo_250.png"){
+spriteset(set_Talgo_250_Alvia_wagon_start, "src\locomotive\Talgo_250\Talgo_250.png"){
     wagon_start(80, 27)
 }
 
-spriteset(set_ALVIA_wagon, "src\locomotive\Talgo_250\Talgo_250.png") {
+spriteset(set_Talgo_250_Alvia_wagon, "src\locomotive\Talgo_250\Talgo_250.png") {
     wagon_1F_F(80, 54)
 }
 
-spriteset(set_ALVIA_wagon_bar, "src\locomotive\Talgo_250\Talgo_250.png") {
+spriteset(set_Talgo_250_Alvia_wagon_bar, "src\locomotive\Talgo_250\Talgo_250.png") {
     wagon_bar(80, 81)
 }
 
-spriteset(set_ALVIA_wagon_end, "src\locomotive\Talgo_250\Talgo_250.png"){
+spriteset(set_Talgo_250_Alvia_wagon_end, "src\locomotive\Talgo_250\Talgo_250.png"){
     wagon_start(80, 108)
 }
 
-spriteset(set_ALVIA_engineT, "src\locomotive\Talgo_250\Talgo_250.png"){
+spriteset(set_Talgo_250_Alvia_engineT, "src\locomotive\Talgo_250\Talgo_250.png"){
     engine_r(80, 135)
 }
 
 /*--------------------------------------------------------------------
 2. Aprosiyob
 --------------------------------------------------------------------*/
-spriteset(set_APROSIYOBH_purchase, "src\locomotive\Talgo_250\Talgo_250.png"){
+spriteset(set_Talgo_250_AprosiyobH_purchase, "src\locomotive\Talgo_250\Talgo_250.png"){
     tmpl_purchase_for_dualhead(0, 297)
 }
 
-spriteset(set_APROSIYOB_engineH, "src\locomotive\Talgo_250\Talgo_250.png"){
+spriteset(set_Talgo_250_Aprosiyob_engineH, "src\locomotive\Talgo_250\Talgo_250.png"){
     engine(80, 162)
 }
 
-spriteset(set_APROSIYOB_wagon_start, "src\locomotive\Talgo_250\Talgo_250.png"){
+spriteset(set_Talgo_250_Aprosiyob_wagon_start, "src\locomotive\Talgo_250\Talgo_250.png"){
     wagon_start(80, 189)
 }
 
-spriteset(set_APROSIYOB_wagon, "src\locomotive\Talgo_250\Talgo_250.png") {
+spriteset(set_Talgo_250_Aprosiyob_wagon, "src\locomotive\Talgo_250\Talgo_250.png") {
     wagon_1F_F(80, 216)
 }
 
-spriteset(set_APROSIYOB_wagon_bar, "src\locomotive\Talgo_250\Talgo_250.png") {
+spriteset(set_Talgo_250_Aprosiyob_wagon_bar, "src\locomotive\Talgo_250\Talgo_250.png") {
     wagon_bar(80, 243)
 }
 
-spriteset(set_APROSIYOB_wagon_end, "src\locomotive\Talgo_250\Talgo_250.png"){
+spriteset(set_Talgo_250_Aprosiyob_wagon_end, "src\locomotive\Talgo_250\Talgo_250.png"){
     wagon_start(80, 270)
 }
 
-spriteset(set_APROSIYOB_engineT, "src\locomotive\Talgo_250\Talgo_250.png"){
+spriteset(set_Talgo_250_Aprosiyob_engineT, "src\locomotive\Talgo_250\Talgo_250.png"){
     engine_r(80, 297)
 }
 
 /*--------------------------------------------------------------------
 구매정보
 --------------------------------------------------------------------*/
-switch(FEAT_TRAINS, SELF, sw_Talgo_purchase, cargo_subtype) {
-    set_TALGO_purchase;
+switch(FEAT_TRAINS, SELF, sw_Talgo_250_purchase, cargo_subtype) {
+    set_Talgo_250_purchase;
 }

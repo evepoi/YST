@@ -39,6 +39,7 @@ STR_Shinkansen_E6_NAME                  :[YST] 신칸센 E6
 STR_Shinkansen_E7_NAME                  :[YST] 신칸센 E7
 STR_Shinkansen_N700_NAME                :[YST] 신칸센 N700
 STR_TAE_NAME                            :[YST] TAE
+STR_Talgo_250_NAME                      :[YST] Talgo250
 
 # wagon's name
 STR_YST_1F_PASS_NAME                    :[YST] 1층 공통객차
@@ -51,7 +52,6 @@ STR_MTR_NAME                            :[YST] MTR 메트로카멜 직류형 전
 STR_MTR_CNR_NAME                        :[YST] MTR CNR 창춘 전동차
 STR_MTR_CRRC_NAME                       :[YST] MTR CRRC 쓰팡 전동차
 STR_MTR_HM_NAME                         :[YST] MTR 현대로템 - 미쓰비시 전동차
-STR_TALGO250_NAME                       :[YST] Talgo250
 STR_Tank_NAME                           :[YST] 유조차
 STR_TGV_OLD_NAME                        :[YST] TGV Old
 STR_TGV_OLD_Pos_NAME                    :[YST] TGV Old Pos
@@ -88,7 +88,7 @@ STR_REFIT_ADDITIONAL_ABLE_HMX           :{BLACK}도색/모델 변경: {GREEN}가
 STR_REFIT_ADDITIONAL_ABLE_E6            :{BLACK}도색/모델 변경: {GREEN}가능 {}{BLACK}복합가능열차 : {GREEN}E6
 STR_REFIT_ADDITIONAL_ABLE_ICESP         :{BLACK}도색/모델 변경: {GREEN}가능 {}{BLACK}복합가능열차 : {GREEN}ICE-산천, ICE-팥죽
 STR_REFIT_ADDITIONAL_ABLE_NKX           :{BLACK}도색/모델 변경: {GREEN}가능 {}{BLACK}복합가능열차 : {GREEN}NKX
-STR_REFIT_ADDITIONAL_ABLE_Talgo         :{BLACK}도색/모델 변경: {GREEN}가능 {}{BLACK}복합가능열차 : {GREEN}Talgo
+STR_REFIT_ADDITIONAL_ABLE_Talgo_250     :{BLACK}도색/모델 변경: {GREEN}가능 {}{BLACK}복합가능열차 : {GREEN}Talgo 250
 STR_REFIT_ADDITIONAL_ABLE_TGV           :{BLACK}도색/모델 변경: {GREEN}가능 {}{BLACK}복합가능열차 : {GREEN}TGV-Old Pos, TGV-Pos
 STR_REFIT_ADDITIONAL_ABLE_TGV_Duplex    :{BLACK}도색/모델 변경: {GREEN}가능 {}{BLACK}복합가능열차 : {GREEN}TGV-Old Duplex, TGV-Duplex
 STR_REFIT_ADDITIONAL_ABLE_TAE           :{BLACK}도색/모델 변경: {GREEN}가능 {}{BLACK}복합가능열차 : {GREEN}TAE 100, TAE 200
@@ -126,6 +126,9 @@ STR_REFIT_LIVERY_HMXG                   :(HMX 녹색도색)
 STR_REFIT_LIVERY_HMXR                   :(HMX 빨강도색)
 STR_REFIT_LIVERY_ICE_Sancheon           :(ICE-산천)
 STR_REFIT_LIVERY_ICE_Patjug             :(ICE-팥죽)
+STR_REFIT_LIVERY_NKXA                   :(NKX A도색)
+STR_REFIT_LIVERY_NKXB                   :(NKX B도색)
+STR_REFIT_LIVERY_NKXC                   :(NKX C도색)
 STR_REFIT_LIVERY_Shinkansen_500_Sancheon:(신칸센 500-산천)
 STR_REFIT_LIVERY_Shinkansen_500_Patjug  :(신칸센 500-팥죽)
 STR_REFIT_LIVERY_Shinkansen_E5          :(신칸센 E5)
@@ -133,6 +136,8 @@ STR_REFIT_LIVERY_Shinkansen_H5          :(신칸센 H5)
 STR_REFIT_LIVERY_TAE_100                :(TAE 100)
 STR_REFIT_LIVERY_TAE_100_Yellow         :(TAE 100 Yellow)
 STR_REFIT_LIVERY_TAE_200                :(TAE 200) 260km/h
+STR_REFIT_LIVERY_Talgo_250_Alvia        :(Talgo 250 Alvia)
+STR_REFIT_LIVERY_Talgo_250_Aprosiyob    :(Talgo 250 Aprosiyob)
 STR_REFIT_LIVERY_YTRO_100A              :(YTRO 100 A 도색)
 STR_REFIT_LIVERY_YTRO_100B              :(YTRO 100 B 도색)
 STR_REFIT_LIVERY_YTRO_100C              :(YTRO 100 C 도색)
@@ -153,11 +158,6 @@ STR_REFIT_LIVERY_MTRM                   :(개조형)
 STR_REFIT_LIVERY_MTRD                   :(디즈니선)
 STR_REFIT_LIVERY_MTRCNR                 :(MTR CNR 창춘 전동차)
 STR_REFIT_LIVERY_MTRCNRN                :(남부섬 도색)
-STR_REFIT_LIVERY_NKXA                   :(NKX A도색)
-STR_REFIT_LIVERY_NKXB                   :(NKX B도색)
-STR_REFIT_LIVERY_NKXC                   :(NKX C도색)
-STR_REFIT_LIVERY_ALVIA                  :(Alvia)
-STR_REFIT_LIVERY_APROSIYOB              :(Aprosiyob)
 STR_REFIT_LIVERY_TANKA                  :(유조차 A도색)
 STR_REFIT_LIVERY_TANKB                  :(유조차 B도색)
 STR_REFIT_LIVERY_TANKC                  :(유조차 C도색)
