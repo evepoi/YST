@@ -7,6 +7,7 @@ STR_GRF_DESC            :YST의 자체차량 NKX, YTX, VTX, HMX가 있습니다.
 
 # locomotive's name
 STR_AGV_NAME            :[YST] AGV
+STR_AGV_Cool_NAME       :[YST] AGV Cool
 
 # wagon's name
 STR_YST_1F_PASS_NAME    :[YST] 1층 공통객차
@@ -64,17 +65,14 @@ STR_YTX_NAME            :[YST] YTX
 STR_ZEFIRO380_NAME      :[YST] ZEFIRO380
 
 # Parameters
-STR_PARAM_Vehicle_is_Available_NAME         :열차 사용여부
-STR_PARAM_Vehicle_is_Available_DESC         :열차를 구매목록에서 제외합니다.
-STR_PARAM_CARGO_CAPACITY_NAME				:화물수송량
-STR_PARAM_CARGO_CAPACITY_DESC				:열차 화물 수송량 변경 가능
-STR_PARAM_AGV_SPEED_NAME    				:AGV 속도계수
-STR_PARAM_AGV_SPEED_DESC    				:AGV 속도 (331~600km/h)/ 597로 설정하면 600으로 세팅됩니다.
+STR_PARAM_European_NAME         :유럽형 열차 미사용
+STR_PARAM_European_DESC         :유럽형 열차를 사용하지 않습니다. (기본:사용) 열차 : AGV
+STR_PARAM_CARGO_CAPACITY_NAME   :화물수송량
+STR_PARAM_CARGO_CAPACITY_DESC   :열차 화물 수송량 변경 가능
 
 # Refit (Additional text)
 STR_REFIT_ADDITIONAL                    :{BLACK}도색/모델 변경: {GREEN}가능
 STR_REFIT_ADDITIONAL_ABLE_UNADDTRAIN    :{BLACK}도색/모델 변경: {GREEN}가능 {}{BLACK}복합열차구성: {RED}불가능
-STR_REFIT_ADDITIONAL_ABLE_AGV           :{BLACK}도색/모델 변경: {GREEN}가능 {}{BLACK}복합열차구성: {RED}불가능
 STR_REFIT_ADDITIONAL_ABLE_CR600         :{BLACK}도색/모델 변경: {GREEN}가능 {}{BLACK}복합가능열차 : {GREEN}CR600
 STR_REFIT_ADDITIONAL_ABLE_CRH380A       :{BLACK}도색/모델 변경: {GREEN}가능 {}{BLACK}복합가능열차 : {GREEN}CRH380A, CRH380A Cool, CRH380A Red
 STR_REFIT_ADDITIONAL_ABLE_E6            :{BLACK}도색/모델 변경: {GREEN}가능 {}{BLACK}복합가능열차 : {GREEN}E6
@@ -108,8 +106,6 @@ STR_REFIT_LIVERY_500                :(신칸센 500계)
 STR_REFIT_LIVERY_500C               :(신칸센 500-Cool) 430km/h
 STR_REFIT_LIVERY_500S               :(신칸센 500-산천)
 STR_REFIT_LIVERY_500P               :(신칸센 500-팥죽)
-STR_REFIT_LIVERY_AGV                :(AGV)
-STR_REFIT_LIVERY_AGV_Cool           :(AGV-Cool) 430km/h
 STR_REFIT_LIVERY_CR600R             :(빨강 도색)
 STR_REFIT_LIVERY_CR600G             :(금색 도색)
 STR_REFIT_LIVERY_CRH380A            :(CRH380A)

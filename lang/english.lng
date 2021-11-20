@@ -7,6 +7,7 @@ STR_GRF_DESC            :YST GRF is many high speed train set. {} (Updated: {REC
 
 # locomotive's name
 STR_AGV_NAME            :[YST] AGV
+STR_AGV_Cool_NAME       :[YST] AGV Cool
 
 # wagon's name
 STR_YST_1F_PASS_NAME 	:[YST] 1F Passenger Car
@@ -69,17 +70,14 @@ STR_PARAM_OPT_FACTOR_BY_2	:x 2
 STR_PARAM_OPT_FACTOR_BY_3	:x 3
 
 # Parameters
-STR_PARAM_Vehicle_is_Available_NAME         :Vehicle on/off
-STR_PARAM_Vehicle_is_Available_DESC         :vehicle using on / off
-STR_PARAM_CARGO_CAPACITY_NAME				:Cargo capacity
-STR_PARAM_CARGO_CAPACITY_DESC				:Cargo capacity of trains
-STR_PARAM_AGV_SPEED_NAME    				:Speed coefficient of AGV
-STR_PARAM_AGV_SPEED_DESC    				:AGV Speed (331~600km/h)/ When set to 597, It is set to 600.
+STR_PARAM_European_NAME         :European trains not used
+STR_PARAM_European_DESC         :We do not use European-style trains. (Default: Use) Train: AGV
+STR_PARAM_CARGO_CAPACITY_NAME   :Cargo capacity
+STR_PARAM_CARGO_CAPACITY_DESC   :Cargo capacity of trains
 
 # Refit (Additional text)
 STR_REFIT_ADDITIONAL                    :{BLACK}Changing model/livery: {GREEN}Available
-STR_REFIT_ADDITIONAL_ABLE_UNADDTRAIN    :{BLACK}Changing model/livery: {GREEN}Available {} {BLACK}Combined train: {RED}Unavailable
-STR_REFIT_ADDITIONAL_ABLE_AGV           :{BLACK}Changing model/livery: {GREEN}Available {} {BLACK}Combined train: {RED}Unavailable
+STR_REFIT_ADDITIONAL_ABLE_UNADDTRAIN    :{BLACK}Changing model/livery: {GREEN}Available {} {BLACK}Combined train: {RED}UnavailableSTR_REFIT_ADDITIONAL_ABLE_AGV           :{BLACK}Changing model/livery: {GREEN}Available {} {BLACK}Combined train: {RED}Unavailable
 STR_REFIT_ADDITIONAL_ABLE_CR600         :{BLACK}Changing model/livery: {GREEN}Available {}{BLACK}Combined train : {GREEN}CR600
 STR_REFIT_ADDITIONAL_ABLE_CRH380A       :{BLACK}Changing model/livery: {GREEN}Available {} {BLACK}Combined train: {GREEN}CRH380A, CRH380A Cool, CRH380A Red
 STR_REFIT_ADDITIONAL_ABLE_E6            :{BLACK}Changing model/livery: {GREEN}Available {} {BLACK}Combined train: {GREEN}E6
@@ -113,8 +111,6 @@ STR_REFIT_LIVERY_500                :(Shinkansen 500)
 STR_REFIT_LIVERY_500C               :(Shinkansen 500-Cool) 430km/h
 STR_REFIT_LIVERY_500S               :(Shinkansen 500-Sancheon)
 STR_REFIT_LIVERY_500P               :(Shinkansen 500-Patjug)
-STR_REFIT_LIVERY_AGV                :(AGV)
-STR_REFIT_LIVERY_AGV_Cool           :(AGV-Cool) 430km/h
 STR_REFIT_LIVERY_CR600R             :(Red Color)
 STR_REFIT_LIVERY_CR600G             :(Gold Color)
 STR_REFIT_LIVERY_CRH380A            :(CRH380A)
