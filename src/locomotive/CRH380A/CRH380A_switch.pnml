@@ -2,20 +2,17 @@
 스위치
 --------------------------------------------------------------------*/
 switch(FEAT_TRAINS, SELF, sw_CRH380A_cargo_subtype_text, cargo_subtype) {
-    1: return string(STR_REFIT_LIVERY_CRH380AC);   // Cool
-    2: return string(STR_REFIT_LIVERY_CRH380AR);   // Red
+    1: return string(STR_REFIT_LIVERY_CRH380AR);   // Red
     return string(STR_REFIT_LIVERY_CRH380A);
 }
 
 switch(FEAT_TRAINS, SELF, sw_CRH380A_engineH, cargo_subtype) {
-    1: set_CRH380A_Cool_engineH;   // Cool
-    2: set_CRH380A_Red_engineH;   // Red
+    1: set_CRH380A_Red_engineH;   // Red
     set_CRH380A_engineH;
 }
 
 switch(FEAT_TRAINS, SELF, sw_CRH380A_engineT, cargo_subtype) {
-    1: set_CRH380A_Cool_engineT;   // Cool
-    2: set_CRH380A_Red_engineT;   // Red
+    1: set_CRH380A_Red_engineT;   // Red
     set_CRH380A_engineT;
 }
 
@@ -25,34 +22,23 @@ switch(FEAT_TRAINS, SELF, sw_CRH380A_engine, position_in_consist_from_end == 0 &
 }
 
 switch(FEAT_TRAINS, SELF, sw_CRH380A_wagon_start, cargo_subtype) {
-    1: set_CRH380A_Cool_wagon_start;   // Cool
-    2: set_CRH380A_Red_wagon_start;   // Red
+    1: set_CRH380A_Red_wagon_start;   // Red
     set_CRH380A_wagon_start;
 }
 
 switch(FEAT_TRAINS, SELF, sw_CRH380A_wagon_front, cargo_subtype) {
-    1: set_CRH380A_Cool_wagon;   // Cool
-    2: set_CRH380A_Red_wagon;   // Red
+    1: set_CRH380A_Red_wagon;   // Red
     set_CRH380A_wagon;
 }
 
 switch(FEAT_TRAINS, SELF, sw_CRH380A_wagon_tail, cargo_subtype) {
-    1: set_CRH380A_Cool_wagon_r;   // Cool
-    2: set_CRH380A_Red_wagon_r;   // Red
+    1: set_CRH380A_Red_wagon_r;   // Red
     set_CRH380A_wagon_r;
 }
 
 switch(FEAT_TRAINS, SELF, sw_CRH380A_wagon_end, cargo_subtype) {
-    1: set_CRH380A_Cool_wagon_end;   // Cool
-    2: set_CRH380A_Red_wagon_end;   // Red
+    1: set_CRH380A_Red_wagon_end;   // Red
     set_CRH380A_wagon_end;
-}
-
-switch(FEAT_TRAINS, SELF, sw_CRH380A_speed, cargo_subtype) {
-    0: return 380;
-    1: return 428;
-    2: return 380;
-    return 380;
 }
 
 switch(FEAT_TRAINS, SELF, sw_CRH380A_wagon_middle, (position_in_consist)) {

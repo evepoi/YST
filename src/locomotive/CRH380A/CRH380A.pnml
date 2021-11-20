@@ -10,7 +10,7 @@ CRH380A
 /*--------------------------------------------------------------------
 열차정보
 --------------------------------------------------------------------*/
-item(FEAT_TRAINS, CRH380A){
+item(FEAT_TRAINS, CRH380A, 3008){
     property {
         name:                           string(STR_CRH380A_NAME);
         climates_available:             ALL_CLIMATES;
@@ -52,7 +52,6 @@ item(FEAT_TRAINS, CRH380A){
     graphics {
         default:                        sw_CRH380A_engine;
         purchase:                       sw_CRH380A_purchase;
-        speed:                          sw_CRH380A_speed;
         loading_speed:                  25;
         cost_factor:                    10;
         running_cost_factor:            150;

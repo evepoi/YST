@@ -13,6 +13,7 @@ STR_AVE_Velaro_NAME     :[YST] AVE Velaro
 STR_BB15048_NAME        :[YST] BB15048
 STR_CRH1_NAME           :[YST] CRH1
 STR_CRH3_NAME           :[YST] CRH3
+STR_CRH380A_NAME        :[YST] CRH380A
 
 # wagon's name
 STR_YST_1F_PASS_NAME    :[YST] 1층 공통객차
@@ -21,7 +22,6 @@ STR_YST_2F_PASS_NAME    :[YST] 2층 공통객차
 STR_500_NAME 			:[YST] 신칸센 500계
 STR_800_NAME 			:[YST] 신칸센 800계
 STR_CR600_NAME			:[YST] CR600
-STR_CRH380A_NAME		:[YST] CRH380A
 STR_CRH380T_NAME		:[YST] CRH380A-Test
 STR_DRY700_NAME		    :[YST] Dr. Yellow
 STR_E5_NAME 			:[YST] 신칸센 E5
@@ -68,15 +68,15 @@ STR_ZEFIRO380_NAME      :[YST] ZEFIRO380
 STR_PARAM_European_NAME         :유럽형 열차 미사용
 STR_PARAM_European_DESC         :유럽형 열차를 사용하지 않습니다. (기본:사용) 열차 : AGV, AVE, AVE Velaro, BB15048
 STR_PARAM_Chinese_NAME          :중국형 열차 미사용
-STR_PARAM_Chinese_DESC          :중국형 열차를 사용하지 않습니다. (기본:사용) 열차 : CRH1, CRH3
+STR_PARAM_Chinese_DESC          :중국형 열차를 사용하지 않습니다. (기본:사용) 열차 : CRH1, CRH3, CRH380A
 STR_PARAM_CARGO_CAPACITY_NAME   :화물수송량
 STR_PARAM_CARGO_CAPACITY_DESC   :열차 화물 수송량 변경 가능
 
 # Refit (Additional text)
 STR_REFIT_ADDITIONAL                    :{BLACK}도색/모델 변경: {GREEN}가능
 STR_REFIT_ADDITIONAL_ABLE_UNADDTRAIN    :{BLACK}도색/모델 변경: {GREEN}가능 {}{BLACK}복합열차구성: {RED}불가능
-STR_REFIT_ADDITIONAL_ABLE_CR600         :{BLACK}도색/모델 변경: {GREEN}가능 {}{BLACK}복합가능열차 : {GREEN}CR600
 STR_REFIT_ADDITIONAL_ABLE_CRH380A       :{BLACK}도색/모델 변경: {GREEN}가능 {}{BLACK}복합가능열차 : {GREEN}CRH380A, CRH380A Cool, CRH380A Red
+STR_REFIT_ADDITIONAL_ABLE_CR600         :{BLACK}도색/모델 변경: {GREEN}가능 {}{BLACK}복합가능열차 : {GREEN}CR600
 STR_REFIT_ADDITIONAL_ABLE_E6            :{BLACK}도색/모델 변경: {GREEN}가능 {}{BLACK}복합가능열차 : {GREEN}E6
 STR_REFIT_ADDITIONAL_ABLE_EMU           :{BLACK}도색/모델 변경: {GREEN}가능 {}{BLACK}복합가능열차 : {GREEN}EMU-250, EUM-300
 STR_REFIT_ADDITIONAL_ABLE_Glory600      :{BLACK}도색/모델 변경: {GREEN}가능 {}{BLACK}복합가능열차 : {GREEN}Glory 600
@@ -104,15 +104,14 @@ STR_REFIT_ADDITIONAL_UNABLE_YFX         :{BLACK}도색/모델 변경: {RED}불�
 STR_REFIT_ADDITIONAL_UNABLE_YTX         :{BLACK}도색/모델 변경: {RED}불가능 {}{BLACK}복합가능열차 : {GREEN}YTX
 
 # Liveries
+STR_REFIT_LIVERY_CRH380A            :(CRH380A)
+STR_REFIT_LIVERY_CRH380AR           :(CRH380A-빨강)
 STR_REFIT_LIVERY_500                :(신칸센 500계)
 STR_REFIT_LIVERY_500C               :(신칸센 500-Cool) 430km/h
 STR_REFIT_LIVERY_500S               :(신칸센 500-산천)
 STR_REFIT_LIVERY_500P               :(신칸센 500-팥죽)
 STR_REFIT_LIVERY_CR600R             :(빨강 도색)
 STR_REFIT_LIVERY_CR600G             :(금색 도색)
-STR_REFIT_LIVERY_CRH380A            :(CRH380A)
-STR_REFIT_LIVERY_CRH380AC           :(CRH380A-Cool) 430km/h
-STR_REFIT_LIVERY_CRH380AR           :(CRH380A-빨강)
 STR_REFIT_LIVERY_CRH380AY           :(CRH380A-노랑)
 STR_REFIT_LIVERY_E5                 :(신칸센 E5)
 STR_REFIT_LIVERY_H5                 :(신칸센 H5)

@@ -13,6 +13,7 @@ STR_AVE_Velaro_NAME     :[YST] AVE Velaro
 STR_BB15048_NAME        :[YST] BB15048
 STR_CRH1_NAME           :[YST] CRH1
 STR_CRH3_NAME           :[YST] CRH3
+STR_CRH380A_NAME        :[YST] CRH380A
 
 # wagon's name
 STR_YST_1F_PASS_NAME 	:[YST] 1F Passenger Car
@@ -21,7 +22,6 @@ STR_YST_2F_PASS_NAME    :[YST] 2F Passenger Car
 STR_500_NAME 			:[YST] Shinkansen 500
 STR_800_NAME 			:[YST] Shinkansen 800
 STR_CR600_NAME			:[YST] CR600
-STR_CRH380A_NAME		:[YST] CRH380A
 STR_CRH380T_NAME		:[YST] CRH380A-Test
 STR_DRY700_NAME		    :[YST] Dr. Yellow
 STR_E5_NAME 			:[YST] Shinkansen E5
@@ -73,15 +73,15 @@ STR_PARAM_OPT_FACTOR_BY_3	:x 3
 STR_PARAM_European_NAME         :European trains not used
 STR_PARAM_European_DESC         :We do not use European-style trains. (Default: Use) Train: AGV, AVE, AVE Velaro, BB15048
 STR_PARAM_Chinese_NAME          :Chinese trains not used
-STR_PARAM_Chinese_DESC          :We do not use Chinese-style trains. (Default: Use) Train: CRH1, CRH3
+STR_PARAM_Chinese_DESC          :We do not use Chinese-style trains. (Default: Use) Train: CRH1, CRH3, CRH380A
 STR_PARAM_CARGO_CAPACITY_NAME   :Cargo capacity
 STR_PARAM_CARGO_CAPACITY_DESC   :Cargo capacity of trains
 
 # Refit (Additional text)
 STR_REFIT_ADDITIONAL                    :{BLACK}Changing model/livery: {GREEN}Available
 STR_REFIT_ADDITIONAL_ABLE_UNADDTRAIN    :{BLACK}Changing model/livery: {GREEN}Available {} {BLACK}Combined train: {RED}UnavailableSTR_REFIT_ADDITIONAL_ABLE_AGV           :{BLACK}Changing model/livery: {GREEN}Available {} {BLACK}Combined train: {RED}Unavailable
-STR_REFIT_ADDITIONAL_ABLE_CR600         :{BLACK}Changing model/livery: {GREEN}Available {}{BLACK}Combined train : {GREEN}CR600
 STR_REFIT_ADDITIONAL_ABLE_CRH380A       :{BLACK}Changing model/livery: {GREEN}Available {} {BLACK}Combined train: {GREEN}CRH380A, CRH380A Cool, CRH380A Red
+STR_REFIT_ADDITIONAL_ABLE_CR600         :{BLACK}Changing model/livery: {GREEN}Available {}{BLACK}Combined train : {GREEN}CR600
 STR_REFIT_ADDITIONAL_ABLE_E6            :{BLACK}Changing model/livery: {GREEN}Available {} {BLACK}Combined train: {GREEN}E6
 STR_REFIT_ADDITIONAL_ABLE_EMU           :{BLACK}Changing model/livery: {GREEN}Available {} {BLACK}Combined train: {GREEN}EMU-250, EUM-300
 STR_REFIT_ADDITIONAL_ABLE_Glory600      :{BLACK}Changing model/livery: {GREEN}Available {} {BLACK}Combined train: {GREEN}Glory600
@@ -109,15 +109,14 @@ STR_REFIT_ADDITIONAL_UNABLE_YFX         :{BLACK}Changing model/livery: {RED}Unav
 STR_REFIT_ADDITIONAL_UNABLE_YTX         :{BLACK}Changing model/livery: {RED}Unavailable {} {BLACK}Combined train: {GREEN}YTX
 
 # Liveries
+STR_REFIT_LIVERY_CRH380A            :(CRH380A)
+STR_REFIT_LIVERY_CRH380AR           :(CRH380A-Red)
 STR_REFIT_LIVERY_500                :(Shinkansen 500)
 STR_REFIT_LIVERY_500C               :(Shinkansen 500-Cool) 430km/h
 STR_REFIT_LIVERY_500S               :(Shinkansen 500-Sancheon)
 STR_REFIT_LIVERY_500P               :(Shinkansen 500-Patjug)
 STR_REFIT_LIVERY_CR600R             :(Red Color)
 STR_REFIT_LIVERY_CR600G             :(Gold Color)
-STR_REFIT_LIVERY_CRH380A            :(CRH380A)
-STR_REFIT_LIVERY_CRH380AC           :(CRH380A-Cool) 430km/h
-STR_REFIT_LIVERY_CRH380AR           :(CRH380A-Red)
 STR_REFIT_LIVERY_CRH380AY           :(CRH380A-Yellow)
 STR_REFIT_LIVERY_E5                 :(Shinkansen E5)
 STR_REFIT_LIVERY_H5                 :(Shinkansen H5)
