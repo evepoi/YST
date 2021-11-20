@@ -52,8 +52,8 @@ param {
 param {
     Japanese {
         type: bool;
-        name: string(STR_PARAM_Chinese_NAME);
-        desc: string(STR_PARAM_Chinese_DESC);
+        name: string(STR_PARAM_Japanese_NAME);
+        desc: string(STR_PARAM_Japanese_DESC);
         def_value: 1;
         }
     }
