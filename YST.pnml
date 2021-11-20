@@ -57,6 +57,7 @@ if (European) {
     disable_item(FEAT_TRAINS, 3037); //TGV_OLD_Duplex
     disable_item(FEAT_TRAINS, 3038); //TGV_OLD_Pos
     disable_item(FEAT_TRAINS, 3039); //TGV_Ouigo
+    disable_item(FEAT_TRAINS, 3040); //TGV_Pos
     }
 
 if (Chinese) {

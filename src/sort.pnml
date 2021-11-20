@@ -41,12 +41,12 @@ sort(FEAT_TRAINS, [
     TGV_OLD_Duplex,       //3037
     TGV_OLD_Pos,          //3038
     TGV_Ouigo,            //3039
+    TGV_Pos,              //3040
 
     MTR,                  //3026
     MTR_CNR,              //3027
     MTR_CRRC,             //3028
     MTR_HM,               //3029
-    TGV_Pos,              //3036
     VTX,                  //3040
     YFX,                  //3041
     YTRO_100,             //3043
