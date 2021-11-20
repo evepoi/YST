@@ -42,9 +42,9 @@ switch(FEAT_TRAINS, SELF, sw_EMU_wagon_end, cargo_subtype) {
 }
 
 switch(FEAT_TRAINS, SELF, sw_EMU_speed, cargo_subtype) {
-    0: return 250;
+    0: return 260;
     1: return 330;
-    return 250;
+    return 260;
 }
 
 switch(FEAT_TRAINS, SELF, sw_EMU_wagon_middle, (position_in_consist)) {
