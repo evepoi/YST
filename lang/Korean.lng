@@ -27,6 +27,7 @@ STR_HEMU_430_NAME       :[YST] HEMU-430
 STR_HMX_NAME            :[YST] HMX
 STR_ICE3_NAME           :[YST] ICE3
 STR_ICE_SP_NAME         :[YST] ICE-SP
+STR_KTX_N_NAME          :[YST] KTX-N
 
 # wagon's name
 STR_YST_1F_PASS_NAME    :[YST] 1층 공통객차
@@ -40,7 +41,6 @@ STR_E7_NAME 			:[YST] 신칸센 E7
 STR_FLAT_1F_NAME        :[YST] 평판화차
 STR_FLAT_2F_NAME        :[YST] 평판화차 - 미국형
 STR_FLAT_Tank_NAME      :[YST] 평판유조 화차
-STR_KTX_N_NAME          :[YST] KTX-N
 STR_MTR_NAME            :[YST] MTR 메트로카멜 직류형 전동차
 STR_MTR_CNR_NAME        :[YST] MTR CNR 창춘 전동차
 STR_MTR_CRRC_NAME       :[YST] MTR CRRC 쓰팡 전동차
@@ -97,9 +97,9 @@ STR_REFIT_ADDITIONAL_UNABLE_AVE_VElaro  :{BLACK}도색/모델 변경: {RED}불�
 STR_REFIT_ADDITIONAL_UNABLE_CRH1        :{BLACK}도색/모델 변경: {RED}불가능 {}{BLACK}복합가능열차 : {GREEN}CRH1
 STR_REFIT_ADDITIONAL_UNABLE_CRH3        :{BLACK}도색/모델 변경: {RED}불가능 {}{BLACK}복합가능열차 : {GREEN}CRH3
 STR_REFIT_ADDITIONAL_UNABLE_HEMU        :{BLACK}도색/모델 변경: {RED}불가능 {}{BLACK}복합가능열차 : {GREEN}HEMU-430
-STR_REFIT_ADDITIONAL_UNABLE_E5_H5         :{BLACK}도색/모델 변경: {RED}불가능 {}{BLACK}복합가능열차 : {GREEN}E5, H5
 STR_REFIT_ADDITIONAL_UNABLE_ICE3        :{BLACK}도색/모델 변경: {RED}불가능 {}{BLACK}복합가능열차 : {GREEN}ICE3
-STR_REFIT_ADDITIONAL_UNABLE_KTXN        :{BLACK}도색/모델 변경: {RED}불가능 {}{BLACK}복합가능열차 : {GREEN}KTX-N
+STR_REFIT_ADDITIONAL_UNABLE_KTX_N       :{BLACK}도색/모델 변경: {RED}불가능 {}{BLACK}복합가능열차 : {GREEN}KTX-N
+STR_REFIT_ADDITIONAL_UNABLE_E5_H5         :{BLACK}도색/모델 변경: {RED}불가능 {}{BLACK}복합가능열차 : {GREEN}E5, H5
 STR_REFIT_ADDITIONAL_UNABLE_TGV_OLD     :{BLACK}도색/모델 변경: {RED}불가능 {}{BLACK}복합가능열차 : {GREEN}TGV-Old
 STR_REFIT_ADDITIONAL_UNABLE_TGV_Ouigo   :{BLACK}도색/모델 변경: {RED}불가능 {}{BLACK}복합가능열차 : {GREEN}TGV-Ouigo
 STR_REFIT_ADDITIONAL_UNABLE_VTX         :{BLACK}도색/모델 변경: {RED}불가능 {}{BLACK}복합가능열차 : {GREEN}VTX
@@ -122,14 +122,14 @@ STR_REFIT_LIVERY_Glory600D          :(Glory 600 D도색)
 STR_REFIT_LIVERY_Glory600E          :(Glory 600 E도색)
 STR_REFIT_LIVERY_HMXG               :(HMX 녹색도색)
 STR_REFIT_LIVERY_HMXR               :(HMX 빨강도색)
+STR_REFIT_LIVERY_ICE_Sancheon       :(ICE-산천)
+STR_REFIT_LIVERY_ICE_Patjug         :(ICE-팥죽)
 STR_REFIT_LIVERY_500                :(신칸센 500계)
 STR_REFIT_LIVERY_500C               :(신칸센 500-Cool) 430km/h
 STR_REFIT_LIVERY_500S               :(신칸센 500-산천)
 STR_REFIT_LIVERY_500P               :(신칸센 500-팥죽)
 STR_REFIT_LIVERY_E5                 :(신칸센 E5)
 STR_REFIT_LIVERY_H5                 :(신칸센 H5)
-STR_REFIT_LIVERY_ICE_Sancheon       :(ICE-산천)
-STR_REFIT_LIVERY_ICE_Patjug         :(ICE-팥죽)
 STR_REFIT_LIVERY_YTRO_100A          :(YTRO 100 A 도색)
 STR_REFIT_LIVERY_YTRO_100B          :(YTRO 100 B 도색)
 STR_REFIT_LIVERY_YTRO_100C          :(YTRO 100 C 도색)

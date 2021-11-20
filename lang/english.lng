@@ -27,6 +27,7 @@ STR_HEMU_430_NAME       :[YST] HEMU-430
 STR_HMX_NAME            :[YST] HMX
 STR_ICE3_NAME           :[YST] ICE3
 STR_ICE_SP_NAME         :[YST] ICE-SP
+STR_KTX_N_NAME          :[YST] KTX-N
 
 # wagon's name
 STR_YST_1F_PASS_NAME 	:[YST] 1F Passenger Car
@@ -40,7 +41,6 @@ STR_E7_NAME 			:[YST] Shinkansen E7
 STR_FLAT_1F_NAME        :[YST] Flat Car
 STR_FLAT_2F_NAME        :[YST] Flat Car - American
 STR_FLAT_Tank_NAME      :[YST] Flat Tank Car
-STR_KTX_N_NAME          :[YST] KTX-N
 STR_MTR_NAME            :[YST] MTR Cammall DC Train
 STR_MTR_CNR_NAME        :[YST] MTR CNR Changchun Trian
 STR_MTR_CRRC_NAME       :[YST] MTR CRRC Sipang Trian
@@ -102,9 +102,9 @@ STR_REFIT_ADDITIONAL_UNABLE_AVE_VElaro  :{BLACK}Changing model/livery: {RED}Unav
 STR_REFIT_ADDITIONAL_UNABLE_CRH1        :{BLACK}Changing model/livery: {RED}Unavailable {} {BLACK}Combined train: {GREEN}CRH1
 STR_REFIT_ADDITIONAL_UNABLE_CRH3        :{BLACK}Changing model/livery: {RED}Unavailable {} {BLACK}Combined train: {GREEN}CRH3
 STR_REFIT_ADDITIONAL_UNABLE_HEMU        :{BLACK}Changing model/livery: {RED}Unavailable {} {BLACK}Combined train: {GREEN}HEMU-430
-STR_REFIT_ADDITIONAL_UNABLE_E5_H5         :{BLACK}Changing model/livery: {RED}Unavailable  {} {BLACK}Combined train: {GREEN}E5, H5
 STR_REFIT_ADDITIONAL_UNABLE_ICE3        :{BLACK}Changing model/livery: {RED}Unavailable {} {BLACK}Combined train: {GREEN}ICE3
-STR_REFIT_ADDITIONAL_UNABLE_KTXN        :{BLACK}Changing model/livery: {RED}Unavailable {} {BLACK}Combined train: {GREEN}KTX-N
+STR_REFIT_ADDITIONAL_UNABLE_KTX_N       :{BLACK}Changing model/livery: {RED}Unavailable {} {BLACK}Combined train: {GREEN}KTX-N
+STR_REFIT_ADDITIONAL_UNABLE_E5_H5         :{BLACK}Changing model/livery: {RED}Unavailable  {} {BLACK}Combined train: {GREEN}E5, H5
 STR_REFIT_ADDITIONAL_UNABLE_TGV_OLD     :{BLACK}Changing model/livery: {RED}Unavailable {} {BLACK}Combined train: {GREEN}TGV-Old
 STR_REFIT_ADDITIONAL_UNABLE_TGV_Ouigo   :{BLACK}Changing model/livery: {RED}Unavailable {} {BLACK}Combined train: {GREEN}TGV-Ouigo
 STR_REFIT_ADDITIONAL_UNABLE_VTX         :{BLACK}Changing model/livery: {RED}Unavailable {} {BLACK}Combined train: {GREEN}VTX
@@ -125,16 +125,16 @@ STR_REFIT_LIVERY_Glory600B          :(Glory 600 B Color)
 STR_REFIT_LIVERY_Glory600C          :(Glory 600 C Color)
 STR_REFIT_LIVERY_Glory600D          :(Glory 600 D Color)
 STR_REFIT_LIVERY_Glory600E          :(Glory 600 E Color)
+STR_REFIT_LIVERY_HMXG               :(HMX Green Color)
+STR_REFIT_LIVERY_HMXR               :(HMX Red Color)
+STR_REFIT_LIVERY_ICE_Sancheon       :(ICE-Sancheon)
+STR_REFIT_LIVERY_ICE_Patjug         :(ICE-Patjug)
 STR_REFIT_LIVERY_500                :(Shinkansen 500)
 STR_REFIT_LIVERY_500C               :(Shinkansen 500-Cool) 430km/h
 STR_REFIT_LIVERY_500S               :(Shinkansen 500-Sancheon)
 STR_REFIT_LIVERY_500P               :(Shinkansen 500-Patjug)
 STR_REFIT_LIVERY_E5                 :(Shinkansen E5)
 STR_REFIT_LIVERY_H5                 :(Shinkansen H5)
-STR_REFIT_LIVERY_HMXG               :(HMX Green Color)
-STR_REFIT_LIVERY_HMXR               :(HMX Red Color)
-STR_REFIT_LIVERY_ICE_Sancheon       :(ICE-Sancheon)
-STR_REFIT_LIVERY_ICE_Patjug         :(ICE-Patjug)
 STR_REFIT_LIVERY_YTRO_100A          :(YTRO 100 A Color)
 STR_REFIT_LIVERY_YTRO_100B          :(YTRO 100 B Color)
 STR_REFIT_LIVERY_YTRO_100C          :(YTRO 100 C Color)
