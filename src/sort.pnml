@@ -28,7 +28,7 @@ sort(FEAT_TRAINS, [
     NKX,                  //3024
     Shinkansen_500,       //3025
     Shinkansen_500_Cool,  //3026
-
+    Shinkansen_500_SP,    //3027
     
     S800,                 //3003
     E5,                   //3013

@@ -32,6 +32,7 @@ STR_NJ2_NAME                            :[YST] NJ2
 STR_NKX_NAME                            :[YST] NKX
 STR_Shinkansen_500_NAME                 :[YST] 신칸센 500계
 STR_Shinkansen_500_Cool_NAME            :[YST] 신칸센 500계 Cool
+STR_Shinkansen_500_SP_NAME              :[YST] 신칸센 500계 SP
 
 # wagon's name
 STR_YST_1F_PASS_NAME                    :[YST] 1층 공통객차
@@ -125,8 +126,8 @@ STR_REFIT_LIVERY_HMXG                   :(HMX 녹색도색)
 STR_REFIT_LIVERY_HMXR                   :(HMX 빨강도색)
 STR_REFIT_LIVERY_ICE_Sancheon           :(ICE-산천)
 STR_REFIT_LIVERY_ICE_Patjug             :(ICE-팥죽)
-STR_REFIT_LIVERY_500S                   :(신칸센 500-산천)
-STR_REFIT_LIVERY_500P                   :(신칸센 500-팥죽)
+STR_REFIT_LIVERY_Shinkansen_500_Sancheon:(신칸센 500-산천)
+STR_REFIT_LIVERY_Shinkansen_500_Patjug  :(신칸센 500-팥죽)
 STR_REFIT_LIVERY_E5                     :(신칸센 E5)
 STR_REFIT_LIVERY_H5                     :(신칸센 H5)
 STR_REFIT_LIVERY_YTRO_100A              :(YTRO 100 A 도색)

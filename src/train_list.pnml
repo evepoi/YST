@@ -33,6 +33,7 @@
 #include "locomotive/NKX/NKX.pnml"
 #include "locomotive/Shinkansen_500/Shinkansen_500.pnml"
 #include "locomotive/Shinkansen_500_Cool/Shinkansen_500_Cool.pnml"
+#include "locomotive/Shinkansen_500_SP/Shinkansen_500_SP.pnml"
 #include "locomotive/800/800.pnml"
 #include "locomotive/E5/E5.pnml"
 #include "locomotive/E6/E6.pnml"

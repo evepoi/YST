@@ -32,6 +32,7 @@ STR_NJ2_NAME                            :[YST] NJ2
 STR_NKX_NAME                            :[YST] NKX
 STR_Shinkansen_500_NAME                 :[YST] Shinkansen 500
 STR_Shinkansen_500_Cool_NAME            :[YST] Shinkansen 500 Cool
+STR_Shinkansen_500_SP_NAME              :[YST] Shinkansen 500 SP
 
 # wagon's name
 STR_YST_1F_PASS_NAME                    :[YST] 1F Passenger Car
@@ -130,8 +131,8 @@ STR_REFIT_LIVERY_HMXG                   :(HMX Green Color)
 STR_REFIT_LIVERY_HMXR                   :(HMX Red Color)
 STR_REFIT_LIVERY_ICE_Sancheon           :(ICE-Sancheon)
 STR_REFIT_LIVERY_ICE_Patjug             :(ICE-Patjug)
-STR_REFIT_LIVERY_500S                   :(Shinkansen 500-Sancheon)
-STR_REFIT_LIVERY_500P                   :(Shinkansen 500-Patjug)
+STR_REFIT_LIVERY_Shinkansen_500_Sancheon:(Shinkansen 500-Sancheon)
+STR_REFIT_LIVERY_Shinkansen_500_Patjug  :(Shinkansen 500-Patjug)
 STR_REFIT_LIVERY_E5                     :(Shinkansen E5)
 STR_REFIT_LIVERY_H5                     :(Shinkansen H5)
 STR_REFIT_LIVERY_YTRO_100A              :(YTRO 100 A Color)
