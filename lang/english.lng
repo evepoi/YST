@@ -33,12 +33,12 @@ STR_NKX_NAME                            :[YST] NKX
 STR_Shinkansen_500_NAME                 :[YST] Shinkansen 500
 STR_Shinkansen_500_Cool_NAME            :[YST] Shinkansen 500 Cool
 STR_Shinkansen_500_SP_NAME              :[YST] Shinkansen 500 SP
+STR_Shinkansen_800_NAME                 :[YST] Shinkansen 800
 
 # wagon's name
 STR_YST_1F_PASS_NAME                    :[YST] 1F Passenger Car
 STR_YST_2F_PASS_NAME                    :[YST] 2F Passenger Car
 
-STR_800_NAME 		                	:[YST] Shinkansen 800
 STR_E5_NAME 		                	:[YST] Shinkansen E5
 STR_E6_NAME 		                	:[YST] Shinkansen E6
 STR_E7_NAME 			                :[YST] Shinkansen E7

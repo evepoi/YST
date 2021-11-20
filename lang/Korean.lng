@@ -33,12 +33,12 @@ STR_NKX_NAME                            :[YST] NKX
 STR_Shinkansen_500_NAME                 :[YST] 신칸센 500계
 STR_Shinkansen_500_Cool_NAME            :[YST] 신칸센 500계 Cool
 STR_Shinkansen_500_SP_NAME              :[YST] 신칸센 500계 SP
+STR_Shinkansen_800_NAME                 :[YST] 신칸센 800계
 
 # wagon's name
 STR_YST_1F_PASS_NAME                    :[YST] 1층 공통객차
 STR_YST_2F_PASS_NAME                    :[YST] 2층 공통객차
 
-STR_800_NAME 		                	:[YST] 신칸센 800계
 STR_E5_NAME 			                :[YST] 신칸센 E5
 STR_E6_NAME 			                :[YST] 신칸센 E6
 STR_E7_NAME 			                :[YST] 신칸센 E7
