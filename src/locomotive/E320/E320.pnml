@@ -21,7 +21,7 @@ item(FEAT_TRAINS, E320, 3014){
         dual_headed:                    1;
         
         //spec
-        speed:                          331km/h;
+        speed:                          330km/h;
         power:                          10000 kW;
         weight:                         80 ton;
         tractive_effort_coefficient:    0.3;
