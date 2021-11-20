@@ -6,30 +6,6 @@ switch(FEAT_TRAINS, SELF, sw_CRH380A_Cool_engine, position_in_consist_from_end =
     set_CRH380A_Cool_engineH;
 }
 
-switch(FEAT_TRAINS, SELF, sw_CRH380A_wagon_start, cargo_subtype) {
-    1: set_CRH380A_Cool_wagon_start;   // Cool
-    2: set_CRH380A_Red_wagon_start;   // Red
-    set_CRH380A_wagon_start;
-}
-
-switch(FEAT_TRAINS, SELF, sw_CRH380A_wagon_front, cargo_subtype) {
-    1: set_CRH380A_Cool_wagon;   // Cool
-    2: set_CRH380A_Red_wagon;   // Red
-    set_CRH380A_wagon;
-}
-
-switch(FEAT_TRAINS, SELF, sw_CRH380A_wagon_tail, cargo_subtype) {
-    1: set_CRH380A_Cool_wagon_r;   // Cool
-    2: set_CRH380A_Red_wagon_r;   // Red
-    set_CRH380A_wagon_r;
-}
-
-switch(FEAT_TRAINS, SELF, sw_CRH380A_wagon_end, cargo_subtype) {
-    1: set_CRH380A_Cool_wagon_end;   // Cool
-    2: set_CRH380A_Red_wagon_end;   // Red
-    set_CRH380A_wagon_end;
-}
-
 switch(FEAT_TRAINS, SELF, sw_CRH380A_Cool_wagon_middle, (position_in_consist)) {
     1: set_CRH380A_Cool_wagon_r;
     set_CRH380A_Cool_wagon;

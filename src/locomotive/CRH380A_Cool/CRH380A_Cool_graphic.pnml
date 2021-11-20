@@ -1,7 +1,7 @@
 /*--------------------------------------------------------------------
 Graphics
 --------------------------------------------------------------------*/
-spriteset(set_CRH380A_Cool_purchase, "src\locomotive\CRH380A_Cool\CRH380A.png"){
+spriteset(set_CRH380A_Cool_purchase, "src\locomotive\CRH380A_Cool\CRH380A_Cool.png"){
     tmpl_purchase(0, 0)
 }
 
