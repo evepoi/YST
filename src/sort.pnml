@@ -2,57 +2,57 @@
 정렬
 --------------------------------------------------------------------*/
 sort(FEAT_TRAINS, [
-    S500,
-    S800,
-    AGV,
-    AVE,
-    AVE_Velaro,
-    BB15048,
-    CR600,
-    CRH1,
-    CRH3,
-    CRH380A,
-    CRH380A_Test,
-    DRY700,
-    E5,
-    E6,
-    E7,
-    E300,
-    E320,
-    EMU,
-    Glory_600,
-    GT26CW,
-    HEMU,
-    HMX,
-    ICE3,
-    ICE_SP,
-    KTX_N,
-    MTR,
-    MTR_CNR,
-    MTR_CRRC,
-    MTR_HM,
-    N700,
-    NJ2,
-    NKX,
-    TALGO,
-    TGV_OLD,
-    TGV_OLD_Pos,
-    TGV_Pos,
-    TGV_OLD_Duplex,
-    TGV_Duplex,
-    TGV_Ouigo,
-    VTX,
-    YFX,
-    YN,
-    YTRO_100,
-    YTRO_200,
-    YTX,
-    ZEFIRO380,
-    YST_Passenger_Car,
-    YST_Passenger_2F_Car,
-    FLAT_1F,
-    FLAT_2F,
-    FLAT_TANK,
-    TANK,
-    YFXF,
+    S500,                 //3000
+    S800,                 //3001
+    AGV,                  //3002
+    AVE,                  //3003
+    AVE_Velaro,           //3004
+    BB15048,              //3005
+    CR600,                //3006
+    CRH1,                 //3007
+    CRH3,                 //3008
+    CRH380A,              //3009
+    CRH380A_Test,         //3010
+    DRY700,               //3011
+    E5,                   //3012
+    E6,                   //3013
+    E7,                   //3014
+    E300,                 //3015
+    E320,                 //3016
+    EMU,                  //3017
+    Glory_600,            //3018
+    GT26CW,               //3019
+    HEMU,                 //3020
+    HMX,                  //3021
+    ICE3,                 //3022
+    ICE_SP,               //3023
+    KTX_N,                //3024
+    MTR,                  //3025
+    MTR_CNR,              //3026
+    MTR_CRRC,             //3027
+    MTR_HM,               //3028
+    N700,                 //3029
+    NJ2,                  //3030
+    NKX,                  //3031
+    TALGO,                //3032
+    TGV_OLD,              //3033
+    TGV_OLD_Pos,          //3034
+    TGV_Pos,              //3035
+    TGV_OLD_Duplex,       //3036
+    TGV_Duplex,           //3037
+    TGV_Ouigo,            //3038
+    VTX,                  //3039
+    YFX,                  //3040
+    YN,                   //3041
+    YTRO_100,             //3042
+    YTRO_200,             //3043
+    YTX,                  //3044
+    ZEFIRO380,            //3045
+    YST_Passenger_Car,    //2000
+    YST_Passenger_2F_Car, //2001
+    FLAT_1F,              //2002
+    FLAT_2F,              //2003
+    FLAT_TANK,            //2004
+    TANK,                 //2005
+    YFXF,                 //2006
     ]);
