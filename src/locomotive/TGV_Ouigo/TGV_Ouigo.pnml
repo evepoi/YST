@@ -10,7 +10,7 @@ TGV Ouigo
 /*--------------------------------------------------------------------
 열차정보
 --------------------------------------------------------------------*/
-item(FEAT_TRAINS, TGV_Ouigo){
+item(FEAT_TRAINS, TGV_Ouigo, 3039){
     property {
         name:                           string(STR_TGV_Ouigo_NAME);
         climates_available:             ALL_CLIMATES;

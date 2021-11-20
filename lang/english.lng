@@ -44,6 +44,7 @@ STR_TGV_Duplex_NAME                     :[YST] TGV Duplex
 STR_TGV_OLD_NAME                        :[YST] TGV Old
 STR_TGV_OLD_Duplex_NAME                 :[YST] TGV Old Duplex
 STR_TGV_OLD_Pos_NAME                    :[YST] TGV Old Pos
+STR_TGV_Ouigo_NAME                      :[YST] TGV Ouigo
 
 # wagon's name
 STR_YST_1F_PASS_NAME                    :[YST] 1F Passenger Car
@@ -58,7 +59,6 @@ STR_MTR_CRRC_NAME                       :[YST] MTR CRRC Sipang Trian
 STR_MTR_HM_NAME                         :[YST] MTR Rotem Mitsubishi Trian
 STR_Tank_NAME		                    :[YST] Tank
 STR_TGV_Pos_NAME                        :[YST] TGV Pos
-STR_TGV_Ouigo_NAME                      :[YST] TGV Ouigo
 STR_VTX_NAME                            :[YST] VTX
 STR_YFX_NAME                            :[YST] YFX
 STR_YFXF_NAME                           :[YST] Freight car
@@ -147,6 +147,9 @@ STR_REFIT_LIVERY_TGV_Duplex             :(TGV Duplex)
 STR_REFIT_LIVERY_TGV_LYAIR_Duplex       :(TGV Lyair Duplex)
 STR_REFIT_LIVERY_TGV_OLD_Duplex         :(TGV Old Duplex)
 STR_REFIT_LIVERY_TGV_OLD_LYAIR_Duplex   :(TGV Old Lyair Duplex)
+STR_REFIT_LIVERY_TGV_OLD_POS            :(TGV Old Pos)
+STR_REFIT_LIVERY_TGV_OLD_LYAIR          :(TGV Old Lyair)
+STR_REFIT_LIVERY_TGV_OLD_THALYS         :(TGV Old Thalys)
 STR_REFIT_LIVERY_YTRO_100A              :(YTRO 100 A Color)
 STR_REFIT_LIVERY_YTRO_100B              :(YTRO 100 B Color)
 STR_REFIT_LIVERY_YTRO_100C              :(YTRO 100 C Color)
@@ -176,9 +179,6 @@ STR_REFIT_LIVERY_FlatRed                :(Flat Nomal Red Color)
 STR_REFIT_LIVERY_FlatPRed               :(Flat Trailer Red Color)
 STR_REFIT_LIVERY_FlatTankGreen          :(Flat Tank Green Color)
 STR_REFIT_LIVERY_FlatTanKRed            :(Flat Tank Red Color)
-STR_REFIT_LIVERY_TGV_OLD_POS            :(TGV Old Pos)
-STR_REFIT_LIVERY_TGV_OLD_LYAIR          :(TGV Old Lyair)
-STR_REFIT_LIVERY_TGV_OLD_THALYS         :(TGV Old Thalys)
 STR_REFIT_LIVERY_TGV_POS                :(TGV Pos)
 STR_REFIT_LIVERY_TGV_LYAIR              :(TGV Lyair)
 STR_REFIT_LIVERY_TGV_THALYS             :(TGV Thalys)
