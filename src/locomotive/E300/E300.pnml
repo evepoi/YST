@@ -10,7 +10,7 @@ E300 유로스타
 /*--------------------------------------------------------------------
 열차정보
 --------------------------------------------------------------------*/
-item(FEAT_TRAINS, E300){
+item(FEAT_TRAINS, E300, 3013){
     property {
         name:                           string(STR_E300_NAME);
         climates_available:             ALL_CLIMATES;
@@ -21,7 +21,7 @@ item(FEAT_TRAINS, E300){
         dual_headed:                    1;
         
         //spec
-        speed:                          331km/h;
+        speed:                          330km/h;
         power:                          10000 kW;
         weight:                         80 ton;
         tractive_effort_coefficient:    0.3;

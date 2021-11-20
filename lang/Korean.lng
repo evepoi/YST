@@ -67,7 +67,7 @@ STR_ZEFIRO380_NAME      :[YST] ZEFIRO380
 
 # Parameters
 STR_PARAM_European_NAME         :유럽형 열차 미사용
-STR_PARAM_European_DESC         :유럽형 열차를 사용하지 않습니다. (기본:사용) {}열차 : AGV, AVE, AVE Velaro, BB15048
+STR_PARAM_European_DESC         :유럽형 열차를 사용하지 않습니다. (기본:사용) {}열차 : AGV, AVE, AVE Velaro, BB15048, E300
 STR_PARAM_Chinese_NAME          :중국형 열차 미사용
 STR_PARAM_Chinese_DESC          :중국형 열차를 사용하지 않습니다. (기본:사용) {}열차 : CRH1, CRH3, CRH380A, CRH380A Test
 STR_PARAM_Japanese_NAME         :일본형 열차 미사용
