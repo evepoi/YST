@@ -43,6 +43,7 @@ STR_Talgo_250_NAME                      :[YST] Talgo250
 STR_TGV_Duplex_NAME                     :[YST] TGV Duplex
 STR_TGV_OLD_NAME                        :[YST] TGV Old
 STR_TGV_OLD_Duplex_NAME                 :[YST] TGV Old Duplex
+STR_TGV_OLD_Pos_NAME                    :[YST] TGV Old Pos
 
 # wagon's name
 STR_YST_1F_PASS_NAME                    :[YST] 1층 공통객차
@@ -56,7 +57,6 @@ STR_MTR_CNR_NAME                        :[YST] MTR CNR 창춘 전동차
 STR_MTR_CRRC_NAME                       :[YST] MTR CRRC 쓰팡 전동차
 STR_MTR_HM_NAME                         :[YST] MTR 현대로템 - 미쓰비시 전동차
 STR_Tank_NAME                           :[YST] 유조차
-STR_TGV_OLD_Pos_NAME                    :[YST] TGV Old Pos
 STR_TGV_Pos_NAME                        :[YST] TGV Pos
 STR_TGV_Ouigo_NAME                      :[YST] TGV Ouigo
 STR_VTX_NAME                            :[YST] VTX
