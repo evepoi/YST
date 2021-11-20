@@ -43,6 +43,6 @@ railtypetable {
 #include "src/train_list.pnml"
 
 //disabe_train
-if (disable_train) {
-    disable_item(FEAT_TRAINS, 1111);
+if (European) {
+    disable_item(FEAT_TRAINS, 3001);
     }
