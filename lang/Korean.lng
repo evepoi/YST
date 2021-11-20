@@ -66,7 +66,7 @@ STR_ZEFIRO380_NAME      :[YST] ZEFIRO380
 
 # Parameters
 STR_PARAM_European_NAME         :유럽형 열차 미사용
-STR_PARAM_European_DESC         :유럽형 열차를 사용하지 않습니다. (기본:사용) 열차 : AGV
+STR_PARAM_European_DESC         :유럽형 열차를 사용하지 않습니다. (기본:사용) 열차 : AGV, AVE
 STR_PARAM_CARGO_CAPACITY_NAME   :화물수송량
 STR_PARAM_CARGO_CAPACITY_DESC   :열차 화물 수송량 변경 가능
 
