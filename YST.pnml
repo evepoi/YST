@@ -58,6 +58,7 @@ if (Chinese) {
     disable_item(FEAT_TRAINS, 3007);
     disable_item(FEAT_TRAINS, 3008);
     disable_item(FEAT_TRAINS, 3010);
+    disable_item(FEAT_TRAINS, 3023);
     }
 
 if (Japanese) {

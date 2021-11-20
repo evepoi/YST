@@ -28,6 +28,7 @@ STR_HMX_NAME            :[YST] HMX
 STR_ICE3_NAME           :[YST] ICE3
 STR_ICE_SP_NAME         :[YST] ICE-SP
 STR_KTX_N_NAME          :[YST] KTX-N
+STR_NJ2_NAME            :[YST] NJ2
 
 # wagon's name
 STR_YST_1F_PASS_NAME 	:[YST] 1F Passenger Car
@@ -46,7 +47,6 @@ STR_MTR_CNR_NAME        :[YST] MTR CNR Changchun Trian
 STR_MTR_CRRC_NAME       :[YST] MTR CRRC Sipang Trian
 STR_MTR_HM_NAME         :[YST] MTR Rotem Mitsubishi Trian
 STR_N700_NAME 			:[YST] Shinkansen N700
-STR_NJ2_NAME 			:[YST] NJ2
 STR_NKX_NAME 			:[YST] NKX
 STR_TALGO250_NAME		:[YST] Talgo250
 STR_Tank_NAME		    :[YST] Tank
