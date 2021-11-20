@@ -30,12 +30,13 @@ STR_ICE_SP_NAME         :[YST] ICE-SP
 STR_KTX_N_NAME          :[YST] KTX-N
 STR_NJ2_NAME            :[YST] NJ2
 STR_NKX_NAME            :[YST] NKX
+STR_Shinkansen_500_NAME :[YST] Shinkansen 500
+
 
 # wagon's name
 STR_YST_1F_PASS_NAME 	:[YST] 1F Passenger Car
 STR_YST_2F_PASS_NAME    :[YST] 2F Passenger Car
 
-STR_500_NAME 			:[YST] Shinkansen 500
 STR_800_NAME 			:[YST] Shinkansen 800
 STR_E5_NAME 			:[YST] Shinkansen E5
 STR_E6_NAME 			:[YST] Shinkansen E6
@@ -129,7 +130,6 @@ STR_REFIT_LIVERY_HMXG               :(HMX Green Color)
 STR_REFIT_LIVERY_HMXR               :(HMX Red Color)
 STR_REFIT_LIVERY_ICE_Sancheon       :(ICE-Sancheon)
 STR_REFIT_LIVERY_ICE_Patjug         :(ICE-Patjug)
-STR_REFIT_LIVERY_500                :(Shinkansen 500)
 STR_REFIT_LIVERY_500C               :(Shinkansen 500-Cool) 430km/h
 STR_REFIT_LIVERY_500S               :(Shinkansen 500-Sancheon)
 STR_REFIT_LIVERY_500P               :(Shinkansen 500-Patjug)
