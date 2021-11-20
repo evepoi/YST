@@ -37,6 +37,7 @@ STR_Shinkansen_800_NAME                 :[YST] 신칸센 800계
 STR_Shinkansen_E5_NAME                  :[YST] 신칸센 E5
 STR_Shinkansen_E6_NAME                  :[YST] 신칸센 E6
 STR_Shinkansen_E7_NAME                  :[YST] 신칸센 E7
+STR_Shinkansen_N700_NAME                :[YST] 신칸센 N700
 
 # wagon's name
 STR_YST_1F_PASS_NAME                    :[YST] 1층 공통객차
@@ -49,7 +50,6 @@ STR_MTR_NAME                            :[YST] MTR 메트로카멜 직류형 전
 STR_MTR_CNR_NAME                        :[YST] MTR CNR 창춘 전동차
 STR_MTR_CRRC_NAME                       :[YST] MTR CRRC 쓰팡 전동차
 STR_MTR_HM_NAME                         :[YST] MTR 현대로템 - 미쓰비시 전동차
-STR_N700_NAME                           :[YST] 신칸센 N700
 STR_TALGO250_NAME                       :[YST] Talgo250
 STR_Tank_NAME                           :[YST] 유조차
 STR_TGV_OLD_NAME                        :[YST] TGV Old
@@ -150,8 +150,6 @@ STR_REFIT_LIVERY_MTRM                   :(개조형)
 STR_REFIT_LIVERY_MTRD                   :(디즈니선)
 STR_REFIT_LIVERY_MTRCNR                 :(MTR CNR 창춘 전동차)
 STR_REFIT_LIVERY_MTRCNRN                :(남부섬 도색)
-STR_REFIT_LIVERY_N700                   :(N700)
-STR_REFIT_LIVERY_N700T                  :(타이완 고속철도)
 STR_REFIT_LIVERY_NKXA                   :(NKX A도색)
 STR_REFIT_LIVERY_NKXB                   :(NKX B도색)
 STR_REFIT_LIVERY_NKXC                   :(NKX C도색)

@@ -37,6 +37,7 @@ STR_Shinkansen_800_NAME                 :[YST] Shinkansen 800
 STR_Shinkansen_E5_NAME                  :[YST] Shinkansen E5
 STR_Shinkansen_E6_NAME                  :[YST] Shinkansen E6
 STR_Shinkansen_E7_NAME                  :[YST] Shinkansen E7
+STR_Shinkansen_N700_NAME                :[YST] Shinkansen N700
 
 # wagon's name
 STR_YST_1F_PASS_NAME                    :[YST] 1F Passenger Car
@@ -49,7 +50,6 @@ STR_MTR_NAME                            :[YST] MTR Cammall DC Train
 STR_MTR_CNR_NAME                        :[YST] MTR CNR Changchun Trian
 STR_MTR_CRRC_NAME                       :[YST] MTR CRRC Sipang Trian
 STR_MTR_HM_NAME                         :[YST] MTR Rotem Mitsubishi Trian
-STR_N700_NAME 			                :[YST] Shinkansen N700
 STR_TALGO250_NAME		                :[YST] Talgo250
 STR_Tank_NAME		                    :[YST] Tank
 STR_TGV_OLD_NAME		                :[YST] TGV Old
@@ -155,8 +155,6 @@ STR_REFIT_LIVERY_MTRM                   :(remoding Car)
 STR_REFIT_LIVERY_MTRD                   :(Disney Car)
 STR_REFIT_LIVERY_MTRCNR                 :(MTR CNR Changchun)
 STR_REFIT_LIVERY_MTRCNRN                :(nambuseom line Car)
-STR_REFIT_LIVERY_N700                   :(N700)
-STR_REFIT_LIVERY_N700T                  :(Taiwan High Speed train)
 STR_REFIT_LIVERY_NKXA                   :(NKX A Color)
 STR_REFIT_LIVERY_NKXB                   :(NKX B Color)
 STR_REFIT_LIVERY_NKXC                   :(NKX C Color)

@@ -33,13 +33,13 @@ sort(FEAT_TRAINS, [
     Shinkansen_E5,        //3029
     Shinkansen_E6,        //3030
     Shinkansen_E7,        //3031
+    Shinkansen_N700,      //3032
 
 
     MTR,                  //3026
     MTR_CNR,              //3027
     MTR_CRRC,             //3028
     MTR_HM,               //3029
-    N700,                 //3023
     TALGO,                //3033
     TGV_OLD,              //3034
     TGV_OLD_Pos,          //3035
