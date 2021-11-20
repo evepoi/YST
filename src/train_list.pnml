@@ -7,9 +7,10 @@
 #include "wagon/flat_car/Flat_2F_Car/Flat_2F_Car.pnml"
 
 //locomotive
+#include "locomotive/AGV/AGV.pnml"
+#include "locomotive/AGV_Cool/AGV_Cool.pnml"
 #include "locomotive/500/500.pnml"
 #include "locomotive/800/800.pnml"
-#include "locomotive/AGV/AGV.pnml"
 #include "locomotive/AVE/AVE.pnml"
 #include "locomotive/AVE_Velaro/AVE_Velaro.pnml"
 #include "locomotive/BB15048/BB15048.pnml"

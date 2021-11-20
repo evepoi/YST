@@ -2,10 +2,10 @@
 AGV
 --------------------------------------------------------------------*/
 // Graphics
-#include "AGV_graphic.pnml"
+#include "AGV_Cool_graphic.pnml"
 
 // Switch
-#include "AGV_switch.pnml"
+#include "AGV_Cool_switch.pnml"
 
 /*--------------------------------------------------------------------
 열차정보
