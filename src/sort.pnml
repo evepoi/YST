@@ -20,14 +20,14 @@ sort(FEAT_TRAINS, [
     Glory_600,            //3016
     GT26CW,               //3017
     HEMU_430,             //3018
+    HMX,                  //3019
+    ICE3,                 //3020
 
     S500,                 //3002
     S800,                 //3003
     E5,                   //3013
     E6,                   //3014
     E7,                   //3015
-    HMX,                  //3022
-    ICE3,                 //3023
     ICE_SP,               //3024
     KTX_N,                //3025
     MTR,                  //3026
@@ -51,7 +51,7 @@ sort(FEAT_TRAINS, [
     YTRO_200,             //3044
     YTX,                  //3045
     ZEFIRO380,            //3046
-    
+
     YST_1F_Passenger_Car, //2001
     YST_2F_Passenger_Car, //2002
     FLAT_1F,              //2003

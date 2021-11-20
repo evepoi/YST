@@ -10,7 +10,7 @@ ICE3
 /*--------------------------------------------------------------------
 열차정보
 --------------------------------------------------------------------*/
-item(FEAT_TRAINS, ICE3){
+item(FEAT_TRAINS, ICE3, 3020){
     property {
         name:                           string(STR_ICE3_NAME);
         climates_available:             ALL_CLIMATES;
@@ -21,7 +21,7 @@ item(FEAT_TRAINS, ICE3){
         dual_headed:                    1;
         
         //spec
-        speed:                          331km/h;
+        speed:                          330km/h;
         power:                          10000 kW;
         weight:                         80 ton;
         tractive_effort_coefficient:    0.3;

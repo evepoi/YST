@@ -50,6 +50,7 @@ if (European) {
     disable_item(FEAT_TRAINS, 3005);
     disable_item(FEAT_TRAINS, 3013);
     disable_item(FEAT_TRAINS, 3014);
+    disable_item(FEAT_TRAINS, 3020);
     }
 
 if (Chinese) {

@@ -24,6 +24,8 @@ STR_EMU_NAME            :[YST] EMU
 STR_Glory_600_NAME      :[YST] Glory 600
 STR_GT26CW_NAME         :[YST] GT26CW
 STR_HEMU_430_NAME       :[YST] HEMU-430
+STR_HMX_NAME            :[YST] HMX
+STR_ICE3_NAME           :[YST] ICE3
 
 # wagon's name
 STR_YST_1F_PASS_NAME    :[YST] 1층 공통객차
@@ -37,8 +39,6 @@ STR_E7_NAME 			:[YST] 신칸센 E7
 STR_FLAT_1F_NAME        :[YST] 평판화차
 STR_FLAT_2F_NAME        :[YST] 평판화차 - 미국형
 STR_FLAT_Tank_NAME      :[YST] 평판유조 화차
-STR_HMX_NAME 			:[YST] HMX
-STR_ICE3_NAME 			:[YST] ICE3
 STR_ICE_SP_NAME         :[YST] ICE-SP
 STR_KTX_N_NAME          :[YST] KTX-N
 STR_MTR_NAME            :[YST] MTR 메트로카멜 직류형 전동차
@@ -67,11 +67,11 @@ STR_ZEFIRO380_NAME      :[YST] ZEFIRO380
 
 # Parameters
 STR_PARAM_European_NAME         :유럽형 열차 미사용
-STR_PARAM_European_DESC         :유럽형 열차를 사용하지 않습니다. (기본:사용) {}열차 : AGV, AVE, AVE Velaro, BB15048, E300, E320
+STR_PARAM_European_DESC         :유럽형 열차를 사용하지 않습니다. (기본:사용)
 STR_PARAM_Chinese_NAME          :중국형 열차 미사용
-STR_PARAM_Chinese_DESC          :중국형 열차를 사용하지 않습니다. (기본:사용) {}열차 : CRH1, CRH3, CRH380A, CRH380A Test
+STR_PARAM_Chinese_DESC          :중국형 열차를 사용하지 않습니다. (기본:사용)
 STR_PARAM_Japanese_NAME         :일본형 열차 미사용
-STR_PARAM_Japanese_DESC         :일본형 열차를 사용하지 않습니다. (기본:사용) {}열차 : Dr. Yellow
+STR_PARAM_Japanese_DESC         :일본형 열차를 사용하지 않습니다. (기본:사용)
 STR_PARAM_CARGO_CAPACITY_NAME   :화물수송량
 STR_PARAM_CARGO_CAPACITY_DESC   :열차 화물 수송량 변경 가능
 
@@ -81,9 +81,9 @@ STR_REFIT_ADDITIONAL_ABLE_UNADDTRAIN    :{BLACK}도색/모델 변경: {GREEN}가
 STR_REFIT_ADDITIONAL_ABLE_CRH380A       :{BLACK}도색/모델 변경: {GREEN}가능 {}{BLACK}복합가능열차 : {GREEN}CRH380A, CRH380A Cool, CRH380A Red
 STR_REFIT_ADDITIONAL_ABLE_CR600         :{BLACK}도색/모델 변경: {GREEN}가능 {}{BLACK}복합가능열차 : {GREEN}CR600
 STR_REFIT_ADDITIONAL_ABLE_EMU           :{BLACK}도색/모델 변경: {GREEN}가능 {}{BLACK}복합가능열차 : {GREEN}EMU-250, EUM-300
-STR_REFIT_ADDITIONAL_ABLE_E6            :{BLACK}도색/모델 변경: {GREEN}가능 {}{BLACK}복합가능열차 : {GREEN}E6
 STR_REFIT_ADDITIONAL_ABLE_Glory600      :{BLACK}도색/모델 변경: {GREEN}가능 {}{BLACK}복합가능열차 : {GREEN}Glory 600
 STR_REFIT_ADDITIONAL_ABLE_HMX           :{BLACK}도색/모델 변경: {GREEN}가능 {}{BLACK}복합가능열차 : {GREEN}HMX
+STR_REFIT_ADDITIONAL_ABLE_E6            :{BLACK}도색/모델 변경: {GREEN}가능 {}{BLACK}복합가능열차 : {GREEN}E6
 STR_REFIT_ADDITIONAL_ABLE_ICESP         :{BLACK}도색/모델 변경: {GREEN}가능 {}{BLACK}복합가능열차 : {GREEN}ICE-산천, ICE-팥죽
 STR_REFIT_ADDITIONAL_ABLE_NKX           :{BLACK}도색/모델 변경: {GREEN}가능 {}{BLACK}복합가능열차 : {GREEN}NKX
 STR_REFIT_ADDITIONAL_ABLE_Talgo         :{BLACK}도색/모델 변경: {GREEN}가능 {}{BLACK}복합가능열차 : {GREEN}Talgo
@@ -96,8 +96,8 @@ STR_REFIT_ADDITIONAL_UNABLE_AVE         :{BLACK}도색/모델 변경: {RED}불�
 STR_REFIT_ADDITIONAL_UNABLE_AVE_VElaro  :{BLACK}도색/모델 변경: {RED}불가능 {}{BLACK}복합가능열차 : {GREEN}AVE Velaro
 STR_REFIT_ADDITIONAL_UNABLE_CRH1        :{BLACK}도색/모델 변경: {RED}불가능 {}{BLACK}복합가능열차 : {GREEN}CRH1
 STR_REFIT_ADDITIONAL_UNABLE_CRH3        :{BLACK}도색/모델 변경: {RED}불가능 {}{BLACK}복합가능열차 : {GREEN}CRH3
-STR_REFIT_ADDITIONAL_UNABLE_E5_H5         :{BLACK}도색/모델 변경: {RED}불가능 {}{BLACK}복합가능열차 : {GREEN}E5, H5
 STR_REFIT_ADDITIONAL_UNABLE_HEMU        :{BLACK}도색/모델 변경: {RED}불가능 {}{BLACK}복합가능열차 : {GREEN}HEMU-430
+STR_REFIT_ADDITIONAL_UNABLE_E5_H5         :{BLACK}도색/모델 변경: {RED}불가능 {}{BLACK}복합가능열차 : {GREEN}E5, H5
 STR_REFIT_ADDITIONAL_UNABLE_ICE3        :{BLACK}도색/모델 변경: {RED}불가능 {}{BLACK}복합가능열차 : {GREEN}ICE3
 STR_REFIT_ADDITIONAL_UNABLE_KTXN        :{BLACK}도색/모델 변경: {RED}불가능 {}{BLACK}복합가능열차 : {GREEN}KTX-N
 STR_REFIT_ADDITIONAL_UNABLE_TGV_OLD     :{BLACK}도색/모델 변경: {RED}불가능 {}{BLACK}복합가능열차 : {GREEN}TGV-Old
@@ -109,15 +109,8 @@ STR_REFIT_ADDITIONAL_UNABLE_YTX         :{BLACK}도색/모델 변경: {RED}불�
 # Liveries
 STR_REFIT_LIVERY_CRH380A            :(CRH380A)
 STR_REFIT_LIVERY_CRH380AR           :(CRH380A-빨강)
-STR_REFIT_LIVERY_500                :(신칸센 500계)
-STR_REFIT_LIVERY_500C               :(신칸센 500-Cool) 430km/h
-STR_REFIT_LIVERY_500S               :(신칸센 500-산천)
-STR_REFIT_LIVERY_500P               :(신칸센 500-팥죽)
 STR_REFIT_LIVERY_CR600R             :(빨강 도색)
 STR_REFIT_LIVERY_CR600G             :(금색 도색)
-STR_REFIT_LIVERY_CRH380AY           :(CRH380A-노랑)
-STR_REFIT_LIVERY_E5                 :(신칸센 E5)
-STR_REFIT_LIVERY_H5                 :(신칸센 H5)
 STR_REFIT_LIVERY_E300               :(유로스타 노랑도색)
 STR_REFIT_LIVERY_E300B              :(유로스타 파랑도색)
 STR_REFIT_LIVERY_EMU250             :(EMU-250)
@@ -129,6 +122,12 @@ STR_REFIT_LIVERY_Glory600D          :(Glory 600 D도색)
 STR_REFIT_LIVERY_Glory600E          :(Glory 600 E도색)
 STR_REFIT_LIVERY_HMXG               :(HMX 녹색도색)
 STR_REFIT_LIVERY_HMXR               :(HMX 빨강도색)
+STR_REFIT_LIVERY_500                :(신칸센 500계)
+STR_REFIT_LIVERY_500C               :(신칸센 500-Cool) 430km/h
+STR_REFIT_LIVERY_500S               :(신칸센 500-산천)
+STR_REFIT_LIVERY_500P               :(신칸센 500-팥죽)
+STR_REFIT_LIVERY_E5                 :(신칸센 E5)
+STR_REFIT_LIVERY_H5                 :(신칸센 H5)
 STR_REFIT_LIVERY_ICE_Sancheon       :(ICE-산천)
 STR_REFIT_LIVERY_ICE_Patjug         :(ICE-팥죽)
 STR_REFIT_LIVERY_YTRO_100A          :(YTRO 100 A 도색)
