@@ -34,8 +34,8 @@ param 1 {
 param {
 	European {
 		type: bool;
-		name: string(STR_PARAM_Vehicle_is_Available_NAME);
-		desc: string(STR_PARAM_Vehicle_is_Available_DESC);
+		name: string(STR_PARAM_European_NAME);
+		desc: string(STR_PARAM_European_DESC);
 		def_value: 1;
 		}
 	}
