@@ -1,16 +1,19 @@
 ﻿##grflangid 0x00
 
 # GRF name and description
-STR_GRF_NAME			:YST 
+STR_GRF_NAME            :YST 
 STR_GRF_NAME_WITH_VER   :YST {VERSION}
-STR_GRF_DESC			:YST GRF is many high speed train set. {} (Updated: {RECENT_UPDATED}){}{}{SILVER}+ Author: : Minen {} + EMU 250, 300 : lit_**** {} + CRH380D  : kata_**** {} + HEMU-430X : Las {} + AGV-Cool, YN, YTRO 2F : Dat Tree
+STR_GRF_DESC            :YST GRF is many high speed train set. {} (Updated: {RECENT_UPDATED}){}{}{SILVER}+ Author: : Minen {}
 
-# Vehicle's name
-STR_YST_PASSINGER_NAME 	:[YST] 1F Passenger Car
-STR_YST_PASSINGER2F_NAME  :[YST] 2F Passenger Car
+# locomotive's name
+STR_AGV_NAME            :[YST] AGV
+
+# wagon's name
+STR_YST_1F_PASS_NAME 	:[YST] 1F Passenger Car
+STR_YST_2F_PASS_NAME    :[YST] 2F Passenger Car
+
 STR_500_NAME 			:[YST] Shinkansen 500
 STR_800_NAME 			:[YST] Shinkansen 800
-STR_AGV_NAME			:[YST] AGV
 STR_AVE_NAME			:[YST] AVE
 STR_AVE_Velaro_NAME	    :[YST] AVE Velaro
 STR_BB15048_NAME	    :[YST] BB15048

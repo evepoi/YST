@@ -1,16 +1,19 @@
 ﻿##grflangid 0x3A
 
 # GRF name and description
-STR_GRF_NAME			:YST
+STR_GRF_NAME            :YST
 STR_GRF_NAME_WITH_VER   :YST {VERSION}
-STR_GRF_DESC			:YST의 자체차량 NKX, YTX, VTX, HMX가 있습니다. {} (최근 업데이트: {RECENT_UPDATED}){}{}{SILVER} + 제작 : 민은 {} + EMU 250, EMU300 : 킹거 {} + CRH380D : 그날트리 {} + 해무-430 : 라스 {} + AGV-Cool, YN, YTRO 2F : Dat Tree
+STR_GRF_DESC            :YST의 자체차량 NKX, YTX, VTX, HMX가 있습니다. {} (최근 업데이트: {RECENT_UPDATED}){}{}{SILVER} + 제작 : 민은 {}
 
-# Vehicle's name
-STR_YST_PASSINGER_NAME  :[YST] 1층 공통객차
-STR_YST_PASSINGER2F_NAME:[YST] 2층 공통객차
+# locomotive's name
+STR_AGV_NAME            :[YST] AGV
+
+# wagon's name
+STR_YST_1F_PASS_NAME    :[YST] 1층 공통객차
+STR_YST_2F_PASS_NAME    :[YST] 2층 공통객차
+
 STR_500_NAME 			:[YST] 신칸센 500계
 STR_800_NAME 			:[YST] 신칸센 800계
-STR_AGV_NAME			:[YST] AGV
 STR_AVE_NAME			:[YST] AVE
 STR_AVE_Velaro_NAME	    :[YST] AVE Velaro
 STR_BB15048_NAME	    :[YST] BB15048
@@ -40,12 +43,12 @@ STR_MTR_NAME            :[YST] MTR 메트로카멜 직류형 전동차
 STR_MTR_CNR_NAME        :[YST] MTR CNR 창춘 전동차
 STR_MTR_CRRC_NAME       :[YST] MTR CRRC 쓰팡 전동차
 STR_MTR_HM_NAME         :[YST] MTR 현대로템 - 미쓰비시 전동차
-STR_N700_NAME 			:[YST] 신칸센 N700
-STR_NJ2_NAME 			:[YST] NJ2
-STR_NKX_NAME 			:[YST] NKX
-STR_TALGO250_NAME		:[YST] Talgo250
-STR_Tank_NAME		    :[YST] 유조차
-STR_TGV_OLD_NAME		:[YST] TGV Old
+STR_N700_NAME           :[YST] 신칸센 N700
+STR_NJ2_NAME            :[YST] NJ2
+STR_NKX_NAME            :[YST] NKX
+STR_TALGO250_NAME       :[YST] Talgo250
+STR_Tank_NAME           :[YST] 유조차
+STR_TGV_OLD_NAME        :[YST] TGV Old
 STR_TGV_OLD_Pos_NAME    :[YST] TGV Old Pos
 STR_TGV_Pos_NAME        :[YST] TGV Pos
 STR_TGV_OLD_Duplex_NAME :[YST] TGV Old Duplex
@@ -55,15 +58,10 @@ STR_VTX_NAME            :[YST] VTX
 STR_YFX_NAME            :[YST] YFX
 STR_YFXF_NAME           :[YST] 화물객차
 STR_YN_NAME             :[YST] YN
-STR_YTRO_100_NAME  	    :[YST] YTRO 100
-STR_YTRO_200_NAME  	    :[YST] YTRO 200
+STR_YTRO_100_NAME       :[YST] YTRO 100
+STR_YTRO_200_NAME       :[YST] YTRO 200
 STR_YTX_NAME            :[YST] YTX
 STR_ZEFIRO380_NAME      :[YST] ZEFIRO380
-
-# Parameters' value
-STR_PARAM_OPT_FACTOR_BY_1	:x 1 (기본값)
-STR_PARAM_OPT_FACTOR_BY_2	:x 2
-STR_PARAM_OPT_FACTOR_BY_3	:x 3
 
 # Parameters
 STR_PARAM_Vehicle_is_Available_NAME         :열차 사용여부
