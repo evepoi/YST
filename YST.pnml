@@ -65,4 +65,5 @@ if (Japanese) {
     disable_item(FEAT_TRAINS, 3012);
     disable_item(FEAT_TRAINS, 3025);
     disable_item(FEAT_TRAINS, 3028);
+    disable_item(FEAT_TRAINS, 3029);
     }

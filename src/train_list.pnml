@@ -35,7 +35,7 @@
 #include "locomotive/Shinkansen_500_Cool/Shinkansen_500_Cool.pnml"
 #include "locomotive/Shinkansen_500_SP/Shinkansen_500_SP.pnml"
 #include "locomotive/Shinkansen_800/Shinkansen_800.pnml"
-#include "locomotive/E5/E5.pnml"
+#include "locomotive/Shinkansen_E5/Shinkansen_E5.pnml"
 #include "locomotive/E6/E6.pnml"
 #include "locomotive/E7/E7.pnml"
 #include "locomotive/N700/N700.pnml"

@@ -34,12 +34,12 @@ STR_Shinkansen_500_NAME                 :[YST] 신칸센 500계
 STR_Shinkansen_500_Cool_NAME            :[YST] 신칸센 500계 Cool
 STR_Shinkansen_500_SP_NAME              :[YST] 신칸센 500계 SP
 STR_Shinkansen_800_NAME                 :[YST] 신칸센 800계
+STR_Shinkansen_E5_NAME                  :[YST] 신칸센 E5
 
 # wagon's name
 STR_YST_1F_PASS_NAME                    :[YST] 1층 공통객차
 STR_YST_2F_PASS_NAME                    :[YST] 2층 공통객차
 
-STR_E5_NAME 			                :[YST] 신칸센 E5
 STR_E6_NAME 			                :[YST] 신칸센 E6
 STR_E7_NAME 			                :[YST] 신칸센 E7
 STR_FLAT_1F_NAME                        :[YST] 평판화차
@@ -128,8 +128,8 @@ STR_REFIT_LIVERY_ICE_Sancheon           :(ICE-산천)
 STR_REFIT_LIVERY_ICE_Patjug             :(ICE-팥죽)
 STR_REFIT_LIVERY_Shinkansen_500_Sancheon:(신칸센 500-산천)
 STR_REFIT_LIVERY_Shinkansen_500_Patjug  :(신칸센 500-팥죽)
-STR_REFIT_LIVERY_E5                     :(신칸센 E5)
-STR_REFIT_LIVERY_H5                     :(신칸센 H5)
+STR_REFIT_LIVERY_Shinkansen_E5          :(신칸센 E5)
+STR_REFIT_LIVERY_Shinkansen_H5          :(신칸센 H5)
 STR_REFIT_LIVERY_YTRO_100A              :(YTRO 100 A 도색)
 STR_REFIT_LIVERY_YTRO_100B              :(YTRO 100 B 도색)
 STR_REFIT_LIVERY_YTRO_100C              :(YTRO 100 C 도색)

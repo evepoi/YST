@@ -30,9 +30,8 @@ sort(FEAT_TRAINS, [
     Shinkansen_500_Cool,  //3026
     Shinkansen_500_SP,    //3027
     Shinkansen_800,       //3028
-    
-    
-    E5,                   //3013
+    Shinkansen_E5,        //3029
+       
     E6,                   //3014
     E7,                   //3015
     MTR,                  //3026
