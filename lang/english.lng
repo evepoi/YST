@@ -41,6 +41,7 @@ STR_Shinkansen_N700_NAME                :[YST] Shinkansen N700
 STR_TAE_NAME                            :[YST] TAE
 STR_Talgo_250_NAME                      :[YST] Talgo250
 STR_TGV_Duplex_NAME                     :[YST] TGV Duplex
+STR_TGV_OLD_NAME                        :[YST] TGV Old
 
 # wagon's name
 STR_YST_1F_PASS_NAME                    :[YST] 1F Passenger Car
@@ -54,7 +55,6 @@ STR_MTR_CNR_NAME                        :[YST] MTR CNR Changchun Trian
 STR_MTR_CRRC_NAME                       :[YST] MTR CRRC Sipang Trian
 STR_MTR_HM_NAME                         :[YST] MTR Rotem Mitsubishi Trian
 STR_Tank_NAME		                    :[YST] Tank
-STR_TGV_OLD_NAME		                :[YST] TGV Old
 STR_TGV_OLD_Pos_NAME                    :[YST] TGV Old Pos
 STR_TGV_Pos_NAME                        :[YST] TGV Pos
 STR_TGV_OLD_Duplex_NAME                 :[YST] TGV Old Duplex
