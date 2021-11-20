@@ -18,6 +18,8 @@ STR_CRH380A_Cool_NAME   :[YST] CRH380A Cool
 STR_CRH380A_Test_NAME   :[YST] CRH380A-Test
 STR_CRV600_NAME         :[YST] CRV600
 STR_Dr_Yellow_NAME      :[YST] Dr. Yellow
+STR_E300_NAME           :[YST] E300
+STR_E320_NAME           :[YST] E320
 
 # wagon's name
 STR_YST_1F_PASS_NAME    :[YST] 1층 공통객차
@@ -28,8 +30,6 @@ STR_800_NAME 			:[YST] 신칸센 800계
 STR_E5_NAME 			:[YST] 신칸센 E5
 STR_E6_NAME 			:[YST] 신칸센 E6
 STR_E7_NAME 			:[YST] 신칸센 E7
-STR_E300_NAME 			:[YST] E300
-STR_E320_NAME 			:[YST] E320
 STR_EMU_NAME		    :[YST] EMU
 STR_FLAT_1F_NAME        :[YST] 평판화차
 STR_FLAT_2F_NAME        :[YST] 평판화차 - 미국형
@@ -67,7 +67,7 @@ STR_ZEFIRO380_NAME      :[YST] ZEFIRO380
 
 # Parameters
 STR_PARAM_European_NAME         :유럽형 열차 미사용
-STR_PARAM_European_DESC         :유럽형 열차를 사용하지 않습니다. (기본:사용) {}열차 : AGV, AVE, AVE Velaro, BB15048, E300
+STR_PARAM_European_DESC         :유럽형 열차를 사용하지 않습니다. (기본:사용) {}열차 : AGV, AVE, AVE Velaro, BB15048, E300, E320
 STR_PARAM_Chinese_NAME          :중국형 열차 미사용
 STR_PARAM_Chinese_DESC          :중국형 열차를 사용하지 않습니다. (기본:사용) {}열차 : CRH1, CRH3, CRH380A, CRH380A Test
 STR_PARAM_Japanese_NAME         :일본형 열차 미사용

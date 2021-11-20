@@ -18,6 +18,8 @@ STR_CRH380A_Cool_NAME   :[YST] CRH380A Cool
 STR_CRH380A_Test_NAME   :[YST] CRH380A-Test
 STR_CRV600_NAME         :[YST] CRV600
 STR_Dr_Yellow_NAME      :[YST] Dr. Yellow
+STR_E300_NAME           :[YST] E300
+STR_E320_NAME           :[YST] E320
 
 # wagon's name
 STR_YST_1F_PASS_NAME 	:[YST] 1F Passenger Car
@@ -28,8 +30,6 @@ STR_800_NAME 			:[YST] Shinkansen 800
 STR_E5_NAME 			:[YST] Shinkansen E5
 STR_E6_NAME 			:[YST] Shinkansen E6
 STR_E7_NAME 			:[YST] Shinkansen E7
-STR_E300_NAME 			:[YST] E300
-STR_E320_NAME 			:[YST] E320
 STR_EMU_NAME		    :[YST] EMU
 STR_FLAT_1F_NAME        :[YST] Flat Car
 STR_FLAT_2F_NAME        :[YST] Flat Car - American
@@ -72,7 +72,7 @@ STR_PARAM_OPT_FACTOR_BY_3	:x 3
 
 # Parameters
 STR_PARAM_European_NAME         :European trains not used
-STR_PARAM_European_DESC         :We do not use European-style trains. (Default: Use) {}Train: AGV, AVE, AVE Velaro, BB15048, E300
+STR_PARAM_European_DESC         :We do not use European-style trains. (Default: Use) {}Train: AGV, AVE, AVE Velaro, BB15048, E300, E320
 STR_PARAM_Chinese_NAME          :Chinese trains not used
 STR_PARAM_Chinese_DESC          :We do not use Chinese-style trains. (Default: Use) {}Train: CRH1, CRH3, CRH380A, CRH380A Test
 STR_PARAM_Japanese_NAME         :Japanese trains not used
