@@ -10,7 +10,7 @@ Glory 600
 /*--------------------------------------------------------------------
 열차정보
 --------------------------------------------------------------------*/
-item(FEAT_TRAINS, Glory_600){
+item(FEAT_TRAINS, Glory_600, 3016){
     property {
         name:                           string(STR_Glory_600_NAME);
         climates_available:             ALL_CLIMATES;
