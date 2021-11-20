@@ -1,11 +1,11 @@
 2021.11.20 (코딩중)
 [추가]
-- 매개변수 : 중국형 열차 사용여부 (열차 : CHR1, CRH3)
+- 매개변수 : 중국형 열차 사용여부 (열차 : CHR1, CRH3, CRH380A)
 - 매개변수 : 유럽형 열차 사용여부 (열차 : AGV, AVE, AVE Velaro, BB15048)
 - 열차 : AGV-Cool (3002)
 
 [변경]
-- AGV(3001), AVE(3003), AVE Velaro(3004), BB15048(3005), CRH1(3006), CRH3(3007)
+- https://github.com/evepoi/YST.grf/blob/minengallery/src/sort.pnml
 - 1층공통객차 (2001), 2층 공통객차 (2002) 숫자별 ID 적용.
 
 [제거]
