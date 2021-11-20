@@ -54,4 +54,5 @@ if (Chinese) {
     disable_item(FEAT_TRAINS, 3006);
     disable_item(FEAT_TRAINS, 3007);
     disable_item(FEAT_TRAINS, 3008);
+    disable_item(FEAT_TRAINS, 3010);
     }
