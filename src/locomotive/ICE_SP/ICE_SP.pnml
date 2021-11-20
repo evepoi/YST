@@ -10,7 +10,7 @@ ICE-SP
 /*--------------------------------------------------------------------
 열차정보
 --------------------------------------------------------------------*/
-item(FEAT_TRAINS, ICE_SP, 3021){
+item(FEAT_TRAINS, ICE_SP, 3020){
     property {
         name:                           string(STR_ICE_SP_NAME);
         climates_available:             ALL_CLIMATES;
