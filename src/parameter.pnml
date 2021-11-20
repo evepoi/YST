@@ -31,3 +31,11 @@ param 1 {
 			}
 		}
 --------------------------------------------------------------------*/
+param {
+	disable_train {
+		type: bool;
+		name: string(STR_PARAM_Vehicle_is_Available_NAME);
+		desc: string(STR_PARAM_Vehicle_is_Available_DESC);
+		def_value: 1;
+		}
+	}
