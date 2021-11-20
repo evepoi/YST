@@ -29,6 +29,7 @@ STR_ICE3_NAME           :[YST] ICE3
 STR_ICE_SP_NAME         :[YST] ICE-SP
 STR_KTX_N_NAME          :[YST] KTX-N
 STR_NJ2_NAME            :[YST] NJ2
+STR_NKX_NAME            :[YST] NKX
 
 # wagon's name
 STR_YST_1F_PASS_NAME    :[YST] 1층 공통객차
@@ -47,7 +48,6 @@ STR_MTR_CNR_NAME        :[YST] MTR CNR 창춘 전동차
 STR_MTR_CRRC_NAME       :[YST] MTR CRRC 쓰팡 전동차
 STR_MTR_HM_NAME         :[YST] MTR 현대로템 - 미쓰비시 전동차
 STR_N700_NAME           :[YST] 신칸센 N700
-STR_NKX_NAME            :[YST] NKX
 STR_TALGO250_NAME       :[YST] Talgo250
 STR_Tank_NAME           :[YST] 유조차
 STR_TGV_OLD_NAME        :[YST] TGV Old

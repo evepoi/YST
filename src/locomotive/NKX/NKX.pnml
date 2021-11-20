@@ -10,7 +10,7 @@ NKX
 /*--------------------------------------------------------------------
 열차정보
 --------------------------------------------------------------------*/
-item(FEAT_TRAINS, NKX){
+item(FEAT_TRAINS, NKX, 3024){
     property {
         name:                           string(STR_NKX_NAME);
         climates_available:             ALL_CLIMATES;

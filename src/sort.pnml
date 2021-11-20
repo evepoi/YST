@@ -25,6 +25,7 @@ sort(FEAT_TRAINS, [
     ICE_SP,               //3021
     KTX_N,                //3022
     NJ2,                  //3023
+    NKX,                  //3024
 
     S500,                 //3002
     S800,                 //3003
@@ -36,7 +37,6 @@ sort(FEAT_TRAINS, [
     MTR_CRRC,             //3028
     MTR_HM,               //3029
     N700,                 //3023
-    NKX,                  //3032
     TALGO,                //3033
     TGV_OLD,              //3034
     TGV_OLD_Pos,          //3035
