@@ -2,17 +2,17 @@
 E7
 --------------------------------------------------------------------*/
 // Graphics
-#include "E7_graphic.pnml"
+#include "Shinkansen_E7_graphic.pnml"
 
 // Switch
-#include "E7_switch.pnml"
+#include "Shinkansen_E7_switch.pnml"
 
 /*--------------------------------------------------------------------
 열차정보
 --------------------------------------------------------------------*/
-item(FEAT_TRAINS, E7){
+item(FEAT_TRAINS, Shinkansen_E7, 3031){
     property {
-        name:                           string(STR_E7_NAME);
+        name:                           string(STR_Shinkansen_E7_NAME);
         climates_available:             ALL_CLIMATES;
         introduction_date:              date(2014, 1, 1);
         track_type:                     ELRL;
@@ -21,7 +21,7 @@ item(FEAT_TRAINS, E7){
         dual_headed:                    1;
         
         //spec
-        speed:                          331km/h;
+        speed:                          330km/h;
         power:                          10000 kW;
         weight:                         80 ton;
         tractive_effort_coefficient:    0.3;
@@ -50,18 +50,18 @@ item(FEAT_TRAINS, E7){
         }
     
     graphics {
-        default:                        sw_E7_engine;
-        purchase:                       sw_E7_purchase;
+        default:                        sw_Shinkansen_E7_engine;
+        purchase:                       sw_Shinkansen_E7_purchase;
         loading_speed:                  25;
         cost_factor:                    10;
         running_cost_factor:            150;
-        can_attach_wagon:               sw_E7_wagon_attach;
+        can_attach_wagon:               sw_Shinkansen_E7_wagon_attach;
         start_stop:                     sw_YST_train_start_stop_6;
         additional_text:                string(STR_REFIT_ADDITIONAL_UNABLE_UNADDTRAIN);
         }
         
     livery_override(YST_1F_Passenger_Car) {
-        default:                        sw_E7_wagon;
+        default:                        sw_Shinkansen_E7_wagon;
         cargo_capacity:                 98;
         loading_speed:                  25;
         running_cost_factor:            150;

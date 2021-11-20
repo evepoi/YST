@@ -36,12 +36,12 @@ STR_Shinkansen_500_SP_NAME              :[YST] Shinkansen 500 SP
 STR_Shinkansen_800_NAME                 :[YST] Shinkansen 800
 STR_Shinkansen_E5_NAME                  :[YST] Shinkansen E5
 STR_Shinkansen_E6_NAME                  :[YST] Shinkansen E6
+STR_Shinkansen_E7_NAME                  :[YST] Shinkansen E7
 
 # wagon's name
 STR_YST_1F_PASS_NAME                    :[YST] 1F Passenger Car
 STR_YST_2F_PASS_NAME                    :[YST] 2F Passenger Car
 
-STR_E7_NAME 			                :[YST] Shinkansen E7
 STR_FLAT_1F_NAME                        :[YST] Flat Car
 STR_FLAT_2F_NAME                        :[YST] Flat Car - American
 STR_FLAT_Tank_NAME                      :[YST] Flat Tank Car
