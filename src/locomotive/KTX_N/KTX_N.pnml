@@ -34,7 +34,7 @@ item(FEAT_TRAINS, KTX_N, 3022){
         reliability_decay:              0;
         
         //Cargo
-        cargo_capacity:                 1;
+        cargo_capacity:                 0;
         refittable_cargo_classes:       NO_CARGO_CLASS;
         non_refittable_cargo_classes:   NO_CARGO_CLASS;
         cargo_allow_refit:              [PASS];
