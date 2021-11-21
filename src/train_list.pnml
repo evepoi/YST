@@ -8,6 +8,7 @@
 #include "wagon/tank_car/tank.pnml"
 #include "wagon/YPW/1F_Car/YPW_1F_Car.pnml"
 #include "wagon/YPW/2F_Car/YPW_2F_Car.pnml"
+#include "wagon/YPW/Bed_Car/YPW_Bed_Car.pnml"
 
 //locomotive
 #include "locomotive/AGV/AGV.pnml"
