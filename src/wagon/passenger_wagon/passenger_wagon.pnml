@@ -102,8 +102,9 @@ item (FEAT_TRAINS, YST_1F_Passenger_Car, 2001){
         //Flags
         misc_flags:                     bitmask(TRAIN_FLAG_MU, TRAIN_FLAG_FLIP, TRAIN_FLAG_AUTOREFIT);
         extra_weight_per_wagon:         20 ton;
+	}
 
-	graphics {
+    graphics {
 		default:						sw_Passenge_1F_wagon;
 		purchase:						set_1F_wagon_purchase;
         loading_speed:                  25;
@@ -112,7 +113,7 @@ item (FEAT_TRAINS, YST_1F_Passenger_Car, 2001){
         cargo_subtype_text:             sw_Passenger_wagon_cargo_subtype_text;
 		additional_text:                string(STR_REFIT_train_configuration_1F);
         }
-    }
+	}
 
 item (FEAT_TRAINS, YST_2F_Passenger_Car, 2002){
     property {
@@ -148,6 +149,7 @@ item (FEAT_TRAINS, YST_2F_Passenger_Car, 2002){
         //Flags
         misc_flags:                     bitmask(TRAIN_FLAG_MU, TRAIN_FLAG_FLIP, TRAIN_FLAG_AUTOREFIT);
         extra_weight_per_wagon:         20 ton;
+	}
 		 
     graphics {
         default:                        sw_Passenge_2F_wagon;

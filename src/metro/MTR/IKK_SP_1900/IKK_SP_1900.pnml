@@ -49,7 +49,7 @@ item(FEAT_TRAINS, IKK_SP_1900, 4008){
         extra_weight_per_wagon:         35 ton;
         }
 
-	graphics {
+    graphics {
         default:                        sw_MTR_IKK_SP_1900_engine;
         purchase:                       sw_MTR_IKK_SP_1900_purchase;
         loading_speed:                  25;

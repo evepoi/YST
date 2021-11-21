@@ -71,6 +71,7 @@ STR_YMT_200_NAME                                    :[YST] YMT 200
 # wagon's name
 STR_YST_1F_PASS_NAME                                :[YST] 1F Passenger Car
 STR_YST_2F_PASS_NAME                                :[YST] 2F Passenger Car
+STR_YPW_1F_NAME                                     :[YST] YPW 1F Passenger Car
 STR_TGV_Poste_wagon_NAME                            :[YST] TGV Poste Freight Car
 STR_YFXF_NAME                                       :[YST] YFX Freight Car
 STR_FLAT_1F_NAME                                    :[YST] Flat Car
@@ -131,6 +132,7 @@ STR_REFIT_ADDITIONAL_UNABLE_VTX                     :{BLACK}Changing model/liver
 STR_REFIT_ADDITIONAL_UNABLE_YFX                     :{BLACK}Changing model/livery: {RED}Unavailable {} {BLACK}Combined train: {GREEN}YFX
 STR_REFIT_ADDITIONAL_UNABLE_YTX                     :{BLACK}Changing model/livery: {RED}Unavailable {} {BLACK}Combined train: {GREEN}YTX
 STR_REFIT_train_configuration_1F                    :{BLACK}train configuration: {GREEN}1F passenger vehicles
+STR_REFIT_train_configuration_YPW_1F                :{BLACK}train configuration: {GREEN}YPW 1F passenger vehicles
 STR_REFIT_train_configuration_2F                    :{BLACK}train configuration: {GREEN}2F passenger vehicles
 STR_REFIT_train_configuration_TGV_Poste             :{BLACK}train configuration: {GREEN}TGV Old Poste, TGV Pos Poste
 STR_REFIT_train_configuration_YFX_Freight           :{BLACK}train configuration: {GREEN}YFX Freight Car
@@ -205,6 +207,9 @@ STR_REFIT_LIVERY_YMT_200I                           :(YMT 200 I Color)
 STR_REFIT_LIVERY_YMT_200J                           :(YMT 200 J Color)
 
 # Liveries wagon
+STR_REFIT_LIVERY_YPW_1F_Red                         :(Red Color Car)
+STR_REFIT_LIVERY_YPW_1F_Green                       :(Green Color Car)
+STR_REFIT_LIVERY_YPW_1F_White                       :(White Color Car)
 STR_REFIT_LIVERY_FlatGreen                          :(Flat Nomal Green Color)
 STR_REFIT_LIVERY_FlatPGreen                         :(Flat trailer Green Cololr)
 STR_REFIT_LIVERY_FlatRed                            :(Flat Nomal Red Color)

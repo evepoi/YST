@@ -1,0 +1,37 @@
+/*--------------------------------------------------------------------
+Graphics
+--------------------------------------------------------------------*/
+spriteset(set_YPW_purchase, "src\wagon\YPW\YPW_1F_Car.png"){
+    tmpl_wagon_purchase(0, 0)
+}
+
+spriteset(set_YPW_Red_wagon, "src\wagon\YPW\YPW_1F_Car.png") {
+    wagon_1F(80, 0)
+}
+
+spriteset(set_YPW_Red_wagon_r, "src\wagon\YPW\YPW_1F_Car.png") {
+    wagon_1F_r(80, 0)
+}
+
+spriteset(set_YPW_Green_wagon, "src\wagon\YPW\YPW_1F_Car.png") {
+    wagon_1F(80, 0)
+}
+
+spriteset(set_YPW_Green_wagon_r, "src\wagon\YPW\YPW_1F_Car.png") {
+    wagon_1F_r(80, 0)
+}
+
+spriteset(set_YPW_White_wagon, "src\wagon\YPW\YPW_1F_Car.png") {
+    wagon_1F(80, 0)
+}
+
+spriteset(set_YPW_White_wagon_r, "src\wagon\YPW\YPW_1F_Car.png") {
+    wagon_1F_r(80, 0)
+}
+
+/*--------------------------------------------------------------------
+구매정보
+--------------------------------------------------------------------*/
+switch(FEAT_TRAINS, SELF, sw_YPW_purchase, cargo_subtype) {
+    set_YPW_purchase;
+}
