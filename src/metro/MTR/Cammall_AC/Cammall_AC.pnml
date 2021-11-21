@@ -10,7 +10,7 @@ MTR Cammall
 /*--------------------------------------------------------------------
 열차정보
 --------------------------------------------------------------------*/
-item(FEAT_TRAINS, MTR_AC_Cammall, 4001){
+item(FEAT_TRAINS, MTR_AC_Cammall, 4002){
     property {
         name:                           string(STR_MTR_AC_Cammall_NAME);
         climates_available:             ALL_CLIMATES;
