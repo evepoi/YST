@@ -56,8 +56,11 @@ if (European) {
     disable_item(FEAT_TRAINS, 3036); //TGV_OLD
     disable_item(FEAT_TRAINS, 3037); //TGV_OLD_Duplex
     disable_item(FEAT_TRAINS, 3038); //TGV_OLD_Pos
-    disable_item(FEAT_TRAINS, 3039); //TGV_Ouigo
-    disable_item(FEAT_TRAINS, 3040); //TGV_Pos
+    disable_item(FEAT_TRAINS, 3039); //TGV_Old_Poste
+    disable_item(FEAT_TRAINS, 2003); //TGV_Poste_wagon
+    disable_item(FEAT_TRAINS, 3040); //TGV_Ouigo
+    disable_item(FEAT_TRAINS, 3041); //TGV_Pos
+    disable_item(FEAT_TRAINS, 3042); //TGV_Old_Poste
     }
 
 if (Chinese) {

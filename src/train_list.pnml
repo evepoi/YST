@@ -1,5 +1,6 @@
 //wagon
 #include "wagon/passenger_wagon/passenger_wagon.pnml"
+#include "wagon/TGV_Poste_wagon/TGV_Poste_wagon.pnml"
 #include "wagon/YFX_wagon/YFX_wagon.pnml"
 #include "wagon/tank_car/tank.pnml"
 #include "wagon/flat_car/Flat_1F_Car/Flat_1F_Car.pnml"
@@ -45,8 +46,10 @@
 #include "locomotive/TGV_Old/TGV_Old.pnml"
 #include "locomotive/TGV_Old_Dulpex/TGV_Old_Duplex.pnml"
 #include "locomotive/TGV_Old_Pos/TGV_Old_Pos.pnml"
+#include "locomotive/TGV_Old_Poste/TGV_Old_Poste.pnml"
 #include "locomotive/TGV_Ouigo/TGV_Ouigo.pnml"
 #include "locomotive/TGV_Pos/TGV_Pos.pnml"
+#include "locomotive/TGV_Pos_Poste/TGV_Pos_Poste.pnml"
 #include "locomotive/VTX/VTX.pnml"
 #include "locomotive/YFX/YFX.pnml"
 #include "locomotive/YTX/YTX.pnml"

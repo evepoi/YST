@@ -40,8 +40,10 @@ sort(FEAT_TRAINS, [
     TGV_OLD,              //3036
     TGV_OLD_Duplex,       //3037
     TGV_OLD_Pos,          //3038
-    TGV_Ouigo,            //3039
-    TGV_Pos,              //3040
+    TGV_Old_Poste,        //3039
+    TGV_Ouigo,            //3040
+    TGV_Pos,              //3041
+    TGV_Pos_Poste,        //3042
 
     MTR,                  //3026
     MTR_CNR,              //3027
@@ -56,6 +58,7 @@ sort(FEAT_TRAINS, [
 
     YST_1F_Passenger_Car, //2001
     YST_2F_Passenger_Car, //2002
+    TGV_Poste_wagon,      //2003
     FLAT_1F,              //2003
     FLAT_2F,              //2004
     FLAT_TANK,            //2005
