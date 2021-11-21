@@ -10,7 +10,7 @@ YTX
 /*--------------------------------------------------------------------
 열차정보
 --------------------------------------------------------------------*/
-item(FEAT_TRAINS, YTX){
+item(FEAT_TRAINS, YTX, 3046){
     property {
         name:                           string(STR_YTX_NAME);
         climates_available:             ALL_CLIMATES;
