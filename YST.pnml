@@ -85,3 +85,7 @@ if (Japanese) {
 if (Taiwanese) {
     disable_item(FEAT_TRAINS, 3043); //THRS
     }
+
+if (Hong_Kong) {
+    disable_item(FEAT_TRAINS, 4002); //MTR_DC_Cammall
+    }

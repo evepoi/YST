@@ -56,6 +56,9 @@ STR_ZEFIRO380_NAME                        :[YST] ZEFIRO380
 STR_ZEFIRO380_Black_NAME                  :[YST] ZEFIRO380 Black
 STR_ZEFIRO380_Cool_NAME                   :[YST] ZEFIRO380 Cool
 
+# Metro's name
+STR_MTR_DC_Cammall_NAME                   :[YST] MTR 메트로카멜 직류형 전동차
+
 # wagon's name
 STR_YST_1F_PASS_NAME                      :[YST] 1층 공통객차
 STR_YST_2F_PASS_NAME                      :[YST] 2층 공통객차
@@ -65,7 +68,6 @@ STR_YFXF_NAME                             :[YST] YFX용 화차
 STR_FLAT_1F_NAME                          :[YST] 평판화차
 STR_FLAT_2F_NAME                          :[YST] 평판화차 - 미국형
 STR_FLAT_Tank_NAME                        :[YST] 평판유조 화차
-STR_MTR_NAME                              :[YST] MTR 메트로카멜 직류형 전동차
 STR_MTR_CNR_NAME                          :[YST] MTR CNR 창춘 전동차
 STR_MTR_CRRC_NAME                         :[YST] MTR CRRC 쓰팡 전동차
 STR_MTR_HM_NAME                           :[YST] MTR 현대로템 - 미쓰비시 전동차
@@ -82,6 +84,8 @@ STR_PARAM_Japanese_NAME                   :일본형 열차 미사용
 STR_PARAM_Japanese_DESC                   :일본형 열차를 사용하지 않습니다. (기본:사용)
 STR_PARAM_Taiwanese_NAME                  :대만형 열차 미사용
 STR_PARAM_Taiwanese_DESC                  :대만형 열차를 사용하지 않습니다. (기본:사용)
+STR_PARAM_Hong_Kong_NAME                  :홍콩형 열차 미사용
+STR_PARAM_Hong_Kong_DESC                  :홍콩형 열차를 사용하지 않습니다. (기본:사용)
 STR_PARAM_CARGO_CAPACITY_NAME             :화물수송량
 STR_PARAM_CARGO_CAPACITY_DESC             :열차 화물 수송량 변경 가능
 
@@ -123,7 +127,7 @@ STR_REFIT_train_configuration_2F          :{BLACK}열차구성: {GREEN}2층 승�
 STR_REFIT_train_configuration_TGV_Poste   :{BLACK}열차구성: {GREEN}TGV Old Poste, TGV Pos Poste
 STR_REFIT_train_configuration_YFX_Freight :{BLACK}열차구성: {GREEN}YFX용 화차
 
-# Liveries
+# Liveries locomotive
 STR_REFIT_LIVERY_CRH380A                  :(CRH380A)
 STR_REFIT_LIVERY_CRH380AR                 :(CRH380A-빨강)
 STR_REFIT_LIVERY_CR600R                   :(빨강 도색)
@@ -163,6 +167,11 @@ STR_REFIT_LIVERY_TGV_OLD_THALYS           :(TGV Old Thalys)
 STR_REFIT_LIVERY_TGV_POS                  :(TGV Pos)
 STR_REFIT_LIVERY_TGV_LYAIR                :(TGV Lyair)
 STR_REFIT_LIVERY_TGV_THALYS               :(TGV Thalys)
+
+# Liveries metro
+STR_REFIT_LIVERY_MTR_DC_Cammall           :(미개조형)
+STR_REFIT_LIVERY_MTR_DC_Cammall_Remoding  :(개조형)
+STR_REFIT_LIVERY_MTR_DC_Cammall_Disney    :(디즈니선)
 STR_REFIT_LIVERY_YTRO_100A                :(YTRO 100 A 도색)
 STR_REFIT_LIVERY_YTRO_100B                :(YTRO 100 B 도색)
 STR_REFIT_LIVERY_YTRO_100C                :(YTRO 100 C 도색)
@@ -178,9 +187,7 @@ STR_REFIT_LIVERY_YTRO_200G                :(YTRO 200 G 도색)
 STR_REFIT_LIVERY_YTRO_200H                :(YTRO 200 H 도색)
 STR_REFIT_LIVERY_YTRO_200I                :(YTRO 200 I 도색)
 STR_REFIT_LIVERY_YTRO_200J                :(YTRO 200 J 도색)
-STR_REFIT_LIVERY_MTR                      :(미개조형)
-STR_REFIT_LIVERY_MTRM                     :(개조형)
-STR_REFIT_LIVERY_MTRD                     :(디즈니선)
+
 STR_REFIT_LIVERY_MTRCNR                   :(MTR CNR 창춘 전동차)
 STR_REFIT_LIVERY_MTRCNRN                  :(남부섬 도색)
 STR_REFIT_LIVERY_TANKA                    :(유조차 A도색)
@@ -192,12 +199,8 @@ STR_REFIT_LIVERY_FlatRed                  :(평판화차 빨강색)
 STR_REFIT_LIVERY_FlatPRed                 :(평판화차 패기형 빨강색)
 STR_REFIT_LIVERY_FlatTankGreen            :(평판유조탱크 녹색)
 STR_REFIT_LIVERY_FlatTanKRed              :(평판유조탱크 빨강색)
-STR_REFIT_LIVERY_ZEFIRO380                :(ZEFIRO380)
-STR_REFIT_LIVERY_ZEFIRO380_Cool           :(ZEFIRO380 Cool) 430km/h
-STR_REFIT_LIVERY_ZEFIRO380_Black          :(ZEFIRO380 Black) 600km/h
 
 # Errors
-
 STR_ERROR_NO_ATTACH                       :여기에 이 차량을 붙일 수 없습니다
 STR_ERROR_NOT_ENOUGH_LENGTH3              :열차 길이가 너무 짧습니다. 최소한 3량 이상을 연결해야 합니다.
 STR_ERROR_NOT_ENOUGH_LENGTH6              :열차 길이가 너무 짧습니다. 최소한 6량 이상을 연결해야 합니다.

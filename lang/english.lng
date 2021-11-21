@@ -56,6 +56,9 @@ STR_ZEFIRO380_NAME                        :[YST] ZEFIRO380
 STR_ZEFIRO380_Black_NAME                  :[YST] ZEFIRO380 Black
 STR_ZEFIRO380_Cool_NAME                   :[YST] ZEFIRO380 Cool
 
+# Metro's name
+STR_MTR_DC_Cammall_NAME                   :[YST] MTR Cammall DC Train
+
 # wagon's name
 STR_YST_1F_PASS_NAME                      :[YST] 1F Passenger Car
 STR_YST_2F_PASS_NAME                      :[YST] 2F Passenger Car
@@ -87,6 +90,8 @@ STR_PARAM_Japanese_NAME                   :Japanese trains not used
 STR_PARAM_Japanese_DESC                   :We do not use Japanese-style trains. (Default: Use)
 STR_PARAM_Taiwanese_NAME                  :Taiwanese trains not used
 STR_PARAM_Taiwanese_DESC                  :We do not use Taiwanese-style trains. (Default: Use)
+STR_PARAM_Hong_Kong_NAME                  :Hong_Kong trains not used
+STR_PARAM_Hong_Kong_DESC                  :We do not use Hong_Kong-style trains. (Default: Use)
 STR_PARAM_CARGO_CAPACITY_NAME             :Cargo capacity
 STR_PARAM_CARGO_CAPACITY_DESC             :Cargo capacity of trains
 
@@ -168,6 +173,11 @@ STR_REFIT_LIVERY_TGV_OLD_THALYS           :(TGV Old Thalys)
 STR_REFIT_LIVERY_TGV_POS                  :(TGV Pos)
 STR_REFIT_LIVERY_TGV_LYAIR                :(TGV Lyair)
 STR_REFIT_LIVERY_TGV_THALYS               :(TGV Thalys)
+
+# Liveries metro
+STR_REFIT_LIVERY_MTR_DC_Cammall           :(no remoding Car)
+STR_REFIT_LIVERY_MTR_DC_Cammall_Remoding  :(remoding Car)
+STR_REFIT_LIVERY_MTR_DC_Cammall_Disney    :(Disney Car)
 STR_REFIT_LIVERY_YTRO_100A                :(YTRO 100 A Color)
 STR_REFIT_LIVERY_YTRO_100B                :(YTRO 100 B Color)
 STR_REFIT_LIVERY_YTRO_100C                :(YTRO 100 C Color)
@@ -183,9 +193,6 @@ STR_REFIT_LIVERY_YTRO_200G                :(YTRO 200 G Color)
 STR_REFIT_LIVERY_YTRO_200H                :(YTRO 200 H Color)
 STR_REFIT_LIVERY_YTRO_200I                :(YTRO 200 I Color)
 STR_REFIT_LIVERY_YTRO_200J                :(YTRO 200 J Color)
-STR_REFIT_LIVERY_MTR                      :(no remoding Car)
-STR_REFIT_LIVERY_MTRM                     :(remoding Car)
-STR_REFIT_LIVERY_MTRD                     :(Disney Car)
 STR_REFIT_LIVERY_MTRCNR                   :(MTR CNR Changchun)
 STR_REFIT_LIVERY_MTRCNRN                  :(nambuseom line Car)
 STR_REFIT_LIVERY_TANKA                    :(Tank A Color)
@@ -197,12 +204,8 @@ STR_REFIT_LIVERY_FlatRed                  :(Flat Nomal Red Color)
 STR_REFIT_LIVERY_FlatPRed                 :(Flat Trailer Red Color)
 STR_REFIT_LIVERY_FlatTankGreen            :(Flat Tank Green Color)
 STR_REFIT_LIVERY_FlatTanKRed              :(Flat Tank Red Color)
-STR_REFIT_LIVERY_ZEFIRO380                :(ZEFIRO380)
-STR_REFIT_LIVERY_ZEFIRO380_Cool           :(ZEFIRO380 Cool) 430km/h
-STR_REFIT_LIVERY_ZEFIRO380_Black          :(ZEFIRO380 Black) 600km/h
 
 # Errors
-
 STR_ERROR_NO_ATTACH                       :You can't attach this car here
 STR_ERROR_NOT_ENOUGH_LENGTH3              :It's too short. It should be equal or more than 3 cars at least.
 STR_ERROR_NOT_ENOUGH_LENGTH6              :It's too short. It should be equal or more than 6 cars at least.
