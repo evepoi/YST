@@ -10,7 +10,7 @@ YFX
 /*--------------------------------------------------------------------
 열차정보
 --------------------------------------------------------------------*/
-item(FEAT_TRAINS, YPW_Luggage_Car, 2012){
+item(FEAT_TRAINS, YPW_Luggage_Car, 2013){
     property {
         name:                           string(STR_YPW_Luggage_Car_NAME);
         climates_available:             ALL_CLIMATES;
