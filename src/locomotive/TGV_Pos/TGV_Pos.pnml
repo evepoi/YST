@@ -10,7 +10,7 @@ TGV Pos
 /*--------------------------------------------------------------------
 열차정보
 --------------------------------------------------------------------*/
-item(FEAT_TRAINS, TGV_Pos, 3040){
+item(FEAT_TRAINS, TGV_Pos, 3041){
     property {
         name:                           string(STR_TGV_Pos_NAME);
         climates_available:             ALL_CLIMATES;
@@ -34,7 +34,7 @@ item(FEAT_TRAINS, TGV_Pos, 3040){
         reliability_decay:              0;
         
         //Cargo
-        cargo_capacity:                 1;
+        cargo_capacity:                 0;
         refittable_cargo_classes:       NO_CARGO_CLASS;
         non_refittable_cargo_classes:   NO_CARGO_CLASS;
         cargo_allow_refit:              [PASS];
