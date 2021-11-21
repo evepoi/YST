@@ -10,7 +10,7 @@ MTR CRRC Sipang
 /*--------------------------------------------------------------------
 열차정보
 --------------------------------------------------------------------*/
-item(FEAT_TRAINS, MTR_CRRC, 4004){
+item(FEAT_TRAINS, MTR_CRRC, 4005){
     property {
         name:                           string(STR_MTR_CRRC_NAME);
         climates_available:             ALL_CLIMATES;
