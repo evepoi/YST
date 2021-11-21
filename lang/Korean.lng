@@ -114,9 +114,9 @@ STR_REFIT_ADDITIONAL_UNABLE_TGV_Ouigo     :{BLACK}도색/모델 변경: {RED}불
 STR_REFIT_ADDITIONAL_UNABLE_VTX           :{BLACK}도색/모델 변경: {RED}불가능 {}{BLACK}복합가능열차{}{GREEN}VTX
 STR_REFIT_ADDITIONAL_UNABLE_YFX           :{BLACK}도색/모델 변경: {RED}불가능 {}{BLACK}복합가능열차{}{GREEN}YFX
 STR_REFIT_ADDITIONAL_UNABLE_YTX           :{BLACK}도색/모델 변경: {RED}불가능 {}{BLACK}복합가능열차{}{GREEN}YTX
-STR_REFIT_train_configuration_1F          :{BLACK}열차구성: 1층 승객차량용
-STR_REFIT_train_configuration_2F          :{BLACK}열차구성: 2층 승객차량용
-STR_REFIT_train_configuration_TGV_Poste   :{BLACK}열차구성: TGV Old Poste, TGV Pos Poste
+STR_REFIT_train_configuration_1F          :{BLACK}열차구성: {GREEN}1층 승객차량용
+STR_REFIT_train_configuration_2F          :{BLACK}열차구성: {GREEN}2층 승객차량용
+STR_REFIT_train_configuration_TGV_Poste   :{BLACK}열차구성: {GREEN}TGV Old Poste, TGV Pos Poste
 
 # Liveries
 STR_REFIT_LIVERY_CRH380A                  :(CRH380A)

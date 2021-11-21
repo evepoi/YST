@@ -119,9 +119,9 @@ STR_REFIT_ADDITIONAL_UNABLE_TGV_Ouigo     :{BLACK}Changing model/livery: {RED}Un
 STR_REFIT_ADDITIONAL_UNABLE_VTX           :{BLACK}Changing model/livery: {RED}Unavailable {} {BLACK}Combined train: {GREEN}VTX
 STR_REFIT_ADDITIONAL_UNABLE_YFX           :{BLACK}Changing model/livery: {RED}Unavailable {} {BLACK}Combined train: {GREEN}YFX
 STR_REFIT_ADDITIONAL_UNABLE_YTX           :{BLACK}Changing model/livery: {RED}Unavailable {} {BLACK}Combined train: {GREEN}YTX
-STR_REFIT_train_configuration_1F          :{BLACK}train configuration: 1F passenger vehicles
-STR_REFIT_train_configuration_2F          :{BLACK}train configuration: 2F passenger vehicles
-STR_REFIT_train_configuration_TGV_Poste   :{BLACK}train configuration: TGV Old Poste, TGV Pos Poste
+STR_REFIT_train_configuration_1F          :{BLACK}train configuration: {GREEN}1F passenger vehicles
+STR_REFIT_train_configuration_2F          :{BLACK}train configuration: {GREEN}2F passenger vehicles
+STR_REFIT_train_configuration_TGV_Poste   :{BLACK}train configuration: {GREEN}TGV Old Poste, TGV Pos Poste
 
 # Liveries
 STR_REFIT_LIVERY_CRH380A                  :(CRH380A)
