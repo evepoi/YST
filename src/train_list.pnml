@@ -59,6 +59,7 @@
 #include "locomotive/ZEFIRO380_Cool/ZEFIRO380_Cool.pnml"
 
 //Metro
+#include "metro/MTR/AD_Tranz_CAF_A/AD_Tranz_CAF_A.pnml"
 #include "metro/MTR/Cammall_AC/Cammall_AC.pnml"
 #include "metro/MTR/Cammall_DC/Cammall_DC.pnml"
 #include "metro/MTR/CNR_Changchun/CNR_Changchun.pnml"

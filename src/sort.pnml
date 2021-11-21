@@ -52,12 +52,13 @@ sort(FEAT_TRAINS, [
     ZEFIRO380_Black,           //3048
     ZEFIRO380_Cool,            //3049
 
-    MTR_AC_Cammall,            //4001
-    MTR_DC_Cammall,            //4002
-    MTR_CNR_Changchun,         //4003
-    MTR_CRRC,                  //4004
-    Hyundai_Rotem_Mitsubishi,  //4005
-    Hyundai_Rotem_R,           //4006
+    AD_Tranz_CAF_A,            //4001
+    MTR_AC_Cammall,            //4002
+    MTR_DC_Cammall,            //4003
+    MTR_CNR_Changchun,         //4004
+    MTR_CRRC,                  //4005
+    Hyundai_Rotem_Mitsubishi,  //4006
+    Hyundai_Rotem_R,           //4007
     YTRO_100,                  //3043
     YTRO_200,                  //3044
     

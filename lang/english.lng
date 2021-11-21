@@ -1,216 +1,219 @@
 ﻿##grflangid 0x00
 
 # GRF name and description
-STR_GRF_NAME                                    :YST 
-STR_GRF_NAME_WITH_VER                           :YST {VERSION}
-STR_GRF_DESC                                    :(Updated: {RECENT_UPDATED}){}{}{SILVER}+ Author: : Minen {}
+STR_GRF_NAME                                        :YST 
+STR_GRF_NAME_WITH_VER                               :YST {VERSION}
+STR_GRF_DESC                                        :(Updated: {RECENT_UPDATED}){}{}{SILVER}+ Author: : Minen {}
 
 # locomotive's name
-STR_AGV_NAME                                    :[YST] AGV
-STR_AGV_Cool_NAME                               :[YST] AGV Cool
-STR_AVE_NAME                                    :[YST] AVE
-STR_AVE_Velaro_NAME                             :[YST] AVE Velaro
-STR_BB15048_NAME                                :[YST] BB15048
-STR_CRH1_NAME                                   :[YST] CRH1
-STR_CRH3_NAME                                   :[YST] CRH3
-STR_CRH380A_NAME                                :[YST] CRH380A
-STR_CRH380A_Cool_NAME                           :[YST] CRH380A Cool
-STR_CRH380A_Test_NAME                           :[YST] CRH380A-Test
-STR_CRV600_NAME                                 :[YST] CRV600
-STR_Dr_Yellow_NAME                              :[YST] Dr. Yellow
-STR_E300_NAME                                   :[YST] E300
-STR_E320_NAME                                   :[YST] E320
-STR_EMU_NAME                                    :[YST] EMU
-STR_Glory_600_NAME                              :[YST] Glory 600
-STR_GT26CW_NAME                                 :[YST] GT26CW
-STR_HEMU_430_NAME                               :[YST] HEMU-430
-STR_HMX_NAME                                    :[YST] HMX
-STR_ICE3_NAME                                   :[YST] ICE3
-STR_ICE_SP_NAME                                 :[YST] ICE-SP
-STR_KTX_N_NAME                                  :[YST] KTX-N
-STR_NJ2_NAME                                    :[YST] NJ2
-STR_NKX_NAME                                    :[YST] NKX
-STR_Shinkansen_500_NAME                         :[YST] Shinkansen 500
-STR_Shinkansen_500_Cool_NAME                    :[YST] Shinkansen 500 Cool
-STR_Shinkansen_500_SP_NAME                      :[YST] Shinkansen 500 SP
-STR_Shinkansen_800_NAME                         :[YST] Shinkansen 800
-STR_Shinkansen_E5_NAME                          :[YST] Shinkansen E5
-STR_Shinkansen_E6_NAME                          :[YST] Shinkansen E6
-STR_Shinkansen_E7_NAME                          :[YST] Shinkansen E7
-STR_Shinkansen_N700_NAME                        :[YST] Shinkansen N700
-STR_TAE_NAME                                    :[YST] TAE
-STR_Talgo_250_NAME                              :[YST] Talgo250
-STR_TGV_Duplex_NAME                             :[YST] TGV Duplex
-STR_TGV_OLD_NAME                                :[YST] TGV Old
-STR_TGV_OLD_Duplex_NAME                         :[YST] TGV Old Duplex
-STR_TGV_OLD_Pos_NAME                            :[YST] TGV Old Pos
-STR_TGV_OLD_Poste_NAME                          :[YST] TGV Old Poste
-STR_TGV_Ouigo_NAME                              :[YST] TGV Ouigo
-STR_TGV_Pos_NAME                                :[YST] TGV Pos
-STR_TGV_Pos_Poste_NAME                          :[YST] TGV Pos Poste
-STR_THRS_NAME                                   :[YST] THRS
-STR_VTX_NAME                                    :[YST] VTX
-STR_YFX_NAME                                    :[YST] YFX
-STR_YTX_NAME                                    :[YST] YTX
-STR_ZEFIRO380_NAME                              :[YST] ZEFIRO380
-STR_ZEFIRO380_Black_NAME                        :[YST] ZEFIRO380 Black
-STR_ZEFIRO380_Cool_NAME                         :[YST] ZEFIRO380 Cool
+STR_AGV_NAME                                        :[YST] AGV
+STR_AGV_Cool_NAME                                   :[YST] AGV Cool
+STR_AVE_NAME                                        :[YST] AVE
+STR_AVE_Velaro_NAME                                 :[YST] AVE Velaro
+STR_BB15048_NAME                                    :[YST] BB15048
+STR_CRH1_NAME                                       :[YST] CRH1
+STR_CRH3_NAME                                       :[YST] CRH3
+STR_CRH380A_NAME                                    :[YST] CRH380A
+STR_CRH380A_Cool_NAME                               :[YST] CRH380A Cool
+STR_CRH380A_Test_NAME                               :[YST] CRH380A-Test
+STR_CRV600_NAME                                     :[YST] CRV600
+STR_Dr_Yellow_NAME                                  :[YST] Dr. Yellow
+STR_E300_NAME                                       :[YST] E300
+STR_E320_NAME                                       :[YST] E320
+STR_EMU_NAME                                        :[YST] EMU
+STR_Glory_600_NAME                                  :[YST] Glory 600
+STR_GT26CW_NAME                                     :[YST] GT26CW
+STR_HEMU_430_NAME                                   :[YST] HEMU-430
+STR_HMX_NAME                                        :[YST] HMX
+STR_ICE3_NAME                                       :[YST] ICE3
+STR_ICE_SP_NAME                                     :[YST] ICE-SP
+STR_KTX_N_NAME                                      :[YST] KTX-N
+STR_NJ2_NAME                                        :[YST] NJ2
+STR_NKX_NAME                                        :[YST] NKX
+STR_Shinkansen_500_NAME                             :[YST] Shinkansen 500
+STR_Shinkansen_500_Cool_NAME                        :[YST] Shinkansen 500 Cool
+STR_Shinkansen_500_SP_NAME                          :[YST] Shinkansen 500 SP
+STR_Shinkansen_800_NAME                             :[YST] Shinkansen 800
+STR_Shinkansen_E5_NAME                              :[YST] Shinkansen E5
+STR_Shinkansen_E6_NAME                              :[YST] Shinkansen E6
+STR_Shinkansen_E7_NAME                              :[YST] Shinkansen E7
+STR_Shinkansen_N700_NAME                            :[YST] Shinkansen N700
+STR_TAE_NAME                                        :[YST] TAE
+STR_Talgo_250_NAME                                  :[YST] Talgo250
+STR_TGV_Duplex_NAME                                 :[YST] TGV Duplex
+STR_TGV_OLD_NAME                                    :[YST] TGV Old
+STR_TGV_OLD_Duplex_NAME                             :[YST] TGV Old Duplex
+STR_TGV_OLD_Pos_NAME                                :[YST] TGV Old Pos
+STR_TGV_OLD_Poste_NAME                              :[YST] TGV Old Poste
+STR_TGV_Ouigo_NAME                                  :[YST] TGV Ouigo
+STR_TGV_Pos_NAME                                    :[YST] TGV Pos
+STR_TGV_Pos_Poste_NAME                              :[YST] TGV Pos Poste
+STR_THRS_NAME                                       :[YST] THRS
+STR_VTX_NAME                                        :[YST] VTX
+STR_YFX_NAME                                        :[YST] YFX
+STR_YTX_NAME                                        :[YST] YTX
+STR_ZEFIRO380_NAME                                  :[YST] ZEFIRO380
+STR_ZEFIRO380_Black_NAME                            :[YST] ZEFIRO380 Black
+STR_ZEFIRO380_Cool_NAME                             :[YST] ZEFIRO380 Cool
 
 # Metro's name
-STR_MTR_AC_Cammall_NAME                         :[YST] MTR Cammall AC Train
-STR_MTR_DC_Cammall_NAME                         :[YST] MTR Cammall DC Train
-STR_MTR_CNR_Changchun_NAME                      :[YST] MTR CNR Changchun Trian
-STR_MTR_CRRC_NAME                               :[YST] MTR CRRC Trian
-STR_MTR_Hyundai_Rotem_Mitsubishi_NAME           :[YST] MTR Hyundai Rotem Mitsubishi Trian
-STR_MTR_Hyundai_Rotem_R_NAME                    :[YST] MTR Hyundai Rotem R Type Train
+STR_MTR_AD_Tranz_CAF_A_NAME                         :[YST] MTR AD Tranz CAF A Type
+STR_MTR_AC_Cammall_NAME                             :[YST] MTR Cammall AC Train
+STR_MTR_DC_Cammall_NAME                             :[YST] MTR Cammall DC Train
+STR_MTR_CNR_Changchun_NAME                          :[YST] MTR CNR Changchun Trian
+STR_MTR_CRRC_NAME                                   :[YST] MTR CRRC Trian
+STR_MTR_Hyundai_Rotem_Mitsubishi_NAME               :[YST] MTR Hyundai Rotem Mitsubishi Trian
+STR_MTR_Hyundai_Rotem_R_NAME                        :[YST] MTR Hyundai Rotem R Type Train
 
 # wagon's name
-STR_YST_1F_PASS_NAME                            :[YST] 1F Passenger Car
-STR_YST_2F_PASS_NAME                            :[YST] 2F Passenger Car
-STR_TGV_Poste_wagon_NAME                        :[YST] TGV Poste Freight Car
-STR_YFXF_NAME                                   :[YST] YFX Freight Car
+STR_YST_1F_PASS_NAME                                :[YST] 1F Passenger Car
+STR_YST_2F_PASS_NAME                                :[YST] 2F Passenger Car
+STR_TGV_Poste_wagon_NAME                            :[YST] TGV Poste Freight Car
+STR_YFXF_NAME                                       :[YST] YFX Freight Car
 
-STR_FLAT_1F_NAME                                :[YST] Flat Car
-STR_FLAT_2F_NAME                                :[YST] Flat Car - American
-STR_FLAT_Tank_NAME                              :[YST] Flat Tank Car
-STR_Tank_NAME		                            :[YST] Tank
-STR_YTRO_100_NAME  	                            :[YST] YTRO 100
-STR_YTRO_200_NAME  	                            :[YST] YTRO 200
+STR_FLAT_1F_NAME                                    :[YST] Flat Car
+STR_FLAT_2F_NAME                                    :[YST] Flat Car - American
+STR_FLAT_Tank_NAME                                  :[YST] Flat Tank Car
+STR_Tank_NAME		                                :[YST] Tank
+STR_YTRO_100_NAME  	                                :[YST] YTRO 100
+STR_YTRO_200_NAME  	                                :[YST] YTRO 200
 
 # Parameters' value
-STR_PARAM_OPT_FACTOR_BY_1	                    :x 1 (Default)
-STR_PARAM_OPT_FACTOR_BY_2	                    :x 2
-STR_PARAM_OPT_FACTOR_BY_3	                    :x 3
+STR_PARAM_OPT_FACTOR_BY_1	                        :x 1 (Default)
+STR_PARAM_OPT_FACTOR_BY_2	                        :x 2
+STR_PARAM_OPT_FACTOR_BY_3    	                    :x 3
 
 # Parameters
-STR_PARAM_European_NAME                         :European trains not used
-STR_PARAM_European_DESC                         :We do not use European-style trains. (Default: Use)
-STR_PARAM_Chinese_NAME                          :Chinese trains not used
-STR_PARAM_Chinese_DESC                          :We do not use Chinese-style trains. (Default: Use)
-STR_PARAM_Japanese_NAME                         :Japanese trains not used
-STR_PARAM_Japanese_DESC                         :We do not use Japanese-style trains. (Default: Use)
-STR_PARAM_Taiwanese_NAME                        :Taiwanese trains not used
-STR_PARAM_Taiwanese_DESC                        :We do not use Taiwanese-style trains. (Default: Use)
-STR_PARAM_Hong_Kong_NAME                        :Hong_Kong trains not used
-STR_PARAM_Hong_Kong_DESC                        :We do not use Hong_Kong-style trains. (Default: Use)
-STR_PARAM_CARGO_CAPACITY_NAME                   :Cargo capacity
-STR_PARAM_CARGO_CAPACITY_DESC                   :Cargo capacity of trains
+STR_PARAM_European_NAME                             :European trains not used
+STR_PARAM_European_DESC                             :We do not use European-style trains. (Default: Use)
+STR_PARAM_Chinese_NAME                              :Chinese trains not used
+STR_PARAM_Chinese_DESC                              :We do not use Chinese-style trains. (Default: Use)
+STR_PARAM_Japanese_NAME                             :Japanese trains not used
+STR_PARAM_Japanese_DESC                             :We do not use Japanese-style trains. (Default: Use)
+STR_PARAM_Taiwanese_NAME                            :Taiwanese trains not used
+STR_PARAM_Taiwanese_DESC                            :We do not use Taiwanese-style trains. (Default: Use)
+STR_PARAM_Hong_Kong_NAME                            :Hong_Kong trains not used
+STR_PARAM_Hong_Kong_DESC                            :We do not use Hong_Kong-style trains. (Default: Use)
+STR_PARAM_CARGO_CAPACITY_NAME                       :Cargo capacity
+STR_PARAM_CARGO_CAPACITY_DESC                       :Cargo capacity of trains
 
 # Refit (Additional text)
-STR_REFIT_ADDITIONAL                            :{BLACK}Changing model/livery: {GREEN}Available
-STR_REFIT_ADDITIONAL_ABLE_UNADDTRAIN            :{BLACK}Changing model/livery: {GREEN}Available {} {BLACK}Combined train: {RED}UnavailableSTR_REFIT_ADDITIONAL_ABLE_AGV           :{BLACK}Changing model/livery: {GREEN}Available {} {BLACK}Combined train: {RED}Unavailable
-STR_REFIT_ADDITIONAL_ABLE_CRH380A               :{BLACK}Changing model/livery: {GREEN}Available {} {BLACK}Combined train: {GREEN}CRH380A, CRH380A Cool, CRH380A Red
-STR_REFIT_ADDITIONAL_ABLE_CR600                 :{BLACK}Changing model/livery: {GREEN}Available {} {BLACK}Combined train : {GREEN}CR600
-STR_REFIT_ADDITIONAL_ABLE_EMU                   :{BLACK}Changing model/livery: {GREEN}Available {} {BLACK}Combined train: {GREEN}EMU-250, EUM-300
-STR_REFIT_ADDITIONAL_ABLE_Glory600              :{BLACK}Changing model/livery: {GREEN}Available {} {BLACK}Combined train: {GREEN}Glory600
-STR_REFIT_ADDITIONAL_ABLE_HMX                   :{BLACK}Changing model/livery: {GREEN}Available {} {BLACK}Combined train: {GREEN}HMX
-STR_REFIT_ADDITIONAL_ABLE_E6                    :{BLACK}Changing model/livery: {GREEN}Available {} {BLACK}Combined train: {GREEN}E6
-STR_REFIT_ADDITIONAL_ABLE_ICESP                 :{BLACK}Changing model/livery: {GREEN}available {} {BLACK}Combined train: {GREEN}ICE-Sancheon, ICE-Patjug
-STR_REFIT_ADDITIONAL_ABLE_NKX                   :{BLACK}Changing model/livery: {GREEN}available {} {BLACK}Combined train: {GREEN}NKX
-STR_REFIT_ADDITIONAL_ABLE_Talgo_250             :{BLACK}Changing model/livery: {GREEN}available {} {BLACK}Combined train: {GREEN}Talgo 250
-STR_REFIT_ADDITIONAL_ABLE_TGV_Duplex            :{BLACK}Changing model/livery: {GREEN}available {} {BLACK}Combined train: {GREEN}TGV Old Duplex, TGV Duplex
-STR_REFIT_ADDITIONAL_ABLE_TGV                   :{BLACK}Changing model/livery: {GREEN}available {} {BLACK}Combined train: {GREEN}TGV Old Pos, TGV Pos
-STR_REFIT_ADDITIONAL_ABLE_TAE                   :{BLACK}Changing model/livery: {GREEN}available {} {BLACK}Combined train: {GREEN}TAE 100, TAE 200
-STR_REFIT_ADDITIONAL_ABLE_ZEFIRO380             :{BLACK}Changing model/livery: {GREEN}available {} {BLACK}Combined train: {GREEN}ZEFIRO380
-STR_REFIT_ADDITIONAL_ABLE_ZEFIRO380_Black       :{BLACK}Changing model/livery: {GREEN}available {} {BLACK}Combined train: {GREEN}ZEFIRO380 Black
-STR_REFIT_ADDITIONAL_ABLE_ZEFIRO380_Cool        :{BLACK}Changing model/livery: {GREEN}available {} {BLACK}Combined train: {GREEN}ZEFIRO380 Cool
-STR_REFIT_ADDITIONAL_UNABLE_UNADDTRAIN          :{BLACK}Changing model/livery: {RED}Unavailable {} {BLACK}Combined train: {RED}Unavailable
-STR_REFIT_ADDITIONAL_UNABLE_AVE                 :{BLACK}Changing model/livery: {RED}Unavailable {} {BLACK}Combined train: {GREEN}AVE
-STR_REFIT_ADDITIONAL_UNABLE_AVE_VElaro          :{BLACK}Changing model/livery: {RED}Unavailable {} {BLACK}Combined train: {GREEN}AVE Velaro
-STR_REFIT_ADDITIONAL_UNABLE_CRH1                :{BLACK}Changing model/livery: {RED}Unavailable {} {BLACK}Combined train: {GREEN}CRH1
-STR_REFIT_ADDITIONAL_UNABLE_CRH3                :{BLACK}Changing model/livery: {RED}Unavailable {} {BLACK}Combined train: {GREEN}CRH3
-STR_REFIT_ADDITIONAL_UNABLE_HEMU                :{BLACK}Changing model/livery: {RED}Unavailable {} {BLACK}Combined train: {GREEN}HEMU-430
-STR_REFIT_ADDITIONAL_UNABLE_ICE3                :{BLACK}Changing model/livery: {RED}Unavailable {} {BLACK}Combined train: {GREEN}ICE3
-STR_REFIT_ADDITIONAL_UNABLE_KTX_N               :{BLACK}Changing model/livery: {RED}Unavailable {} {BLACK}Combined train: {GREEN}KTX-N
-STR_REFIT_ADDITIONAL_UNABLE_E5_H5               :{BLACK}Changing model/livery: {RED}Unavailable {} {BLACK}Combined train: {GREEN}E5, H5
-STR_REFIT_ADDITIONAL_UNABLE_TGV_OLD             :{BLACK}Changing model/livery: {RED}Unavailable {} {BLACK}Combined train: {GREEN}TGV Old
-STR_REFIT_ADDITIONAL_UNABLE_TGV_Poste           :{BLACK}Changing model/livery: {RED}Unavailable {} {BLACK}Combined train: {GREEN}TGV Old Poste, TGV Pos Poste
-STR_REFIT_ADDITIONAL_UNABLE_TGV_Ouigo           :{BLACK}Changing model/livery: {RED}Unavailable {} {BLACK}Combined train: {GREEN}TGV Ouigo
-STR_REFIT_ADDITIONAL_UNABLE_VTX                 :{BLACK}Changing model/livery: {RED}Unavailable {} {BLACK}Combined train: {GREEN}VTX
-STR_REFIT_ADDITIONAL_UNABLE_YFX                 :{BLACK}Changing model/livery: {RED}Unavailable {} {BLACK}Combined train: {GREEN}YFX
-STR_REFIT_ADDITIONAL_UNABLE_YTX                 :{BLACK}Changing model/livery: {RED}Unavailable {} {BLACK}Combined train: {GREEN}YTX
-STR_REFIT_train_configuration_1F                :{BLACK}train configuration: {GREEN}1F passenger vehicles
-STR_REFIT_train_configuration_2F                :{BLACK}train configuration: {GREEN}2F passenger vehicles
-STR_REFIT_train_configuration_TGV_Poste         :{BLACK}train configuration: {GREEN}TGV Old Poste, TGV Pos Poste
-STR_REFIT_train_configuration_YFX_Freight       :{BLACK}train configuration: {GREEN}YFX Freight Car
+STR_REFIT_ADDITIONAL                                :{BLACK}Changing model/livery: {GREEN}Available
+STR_REFIT_ADDITIONAL_ABLE_UNADDTRAIN                :{BLACK}Changing model/livery: {GREEN}Available {} {BLACK}Combined train: {RED}UnavailableSTR_REFIT_ADDITIONAL_ABLE_AGV           :{BLACK}Changing model/livery: {GREEN}Available {} {BLACK}Combined train: {RED}Unavailable
+STR_REFIT_ADDITIONAL_ABLE_CRH380A                   :{BLACK}Changing model/livery: {GREEN}Available {} {BLACK}Combined train: {GREEN}CRH380A, CRH380A Cool, CRH380A Red
+STR_REFIT_ADDITIONAL_ABLE_CR600                     :{BLACK}Changing model/livery: {GREEN}Available {} {BLACK}Combined train : {GREEN}CR600
+STR_REFIT_ADDITIONAL_ABLE_EMU                       :{BLACK}Changing model/livery: {GREEN}Available {} {BLACK}Combined train: {GREEN}EMU-250, EUM-300
+STR_REFIT_ADDITIONAL_ABLE_Glory600                  :{BLACK}Changing model/livery: {GREEN}Available {} {BLACK}Combined train: {GREEN}Glory600
+STR_REFIT_ADDITIONAL_ABLE_HMX                       :{BLACK}Changing model/livery: {GREEN}Available {} {BLACK}Combined train: {GREEN}HMX
+STR_REFIT_ADDITIONAL_ABLE_E6                        :{BLACK}Changing model/livery: {GREEN}Available {} {BLACK}Combined train: {GREEN}E6
+STR_REFIT_ADDITIONAL_ABLE_ICESP                     :{BLACK}Changing model/livery: {GREEN}available {} {BLACK}Combined train: {GREEN}ICE-Sancheon, ICE-Patjug
+STR_REFIT_ADDITIONAL_ABLE_NKX                       :{BLACK}Changing model/livery: {GREEN}available {} {BLACK}Combined train: {GREEN}NKX
+STR_REFIT_ADDITIONAL_ABLE_Talgo_250                 :{BLACK}Changing model/livery: {GREEN}available {} {BLACK}Combined train: {GREEN}Talgo 250
+STR_REFIT_ADDITIONAL_ABLE_TGV_Duplex                :{BLACK}Changing model/livery: {GREEN}available {} {BLACK}Combined train: {GREEN}TGV Old Duplex, TGV Duplex
+STR_REFIT_ADDITIONAL_ABLE_TGV                       :{BLACK}Changing model/livery: {GREEN}available {} {BLACK}Combined train: {GREEN}TGV Old Pos, TGV Pos
+STR_REFIT_ADDITIONAL_ABLE_TAE                       :{BLACK}Changing model/livery: {GREEN}available {} {BLACK}Combined train: {GREEN}TAE 100, TAE 200
+STR_REFIT_ADDITIONAL_ABLE_ZEFIRO380                 :{BLACK}Changing model/livery: {GREEN}available {} {BLACK}Combined train: {GREEN}ZEFIRO380
+STR_REFIT_ADDITIONAL_ABLE_ZEFIRO380_Black           :{BLACK}Changing model/livery: {GREEN}available {} {BLACK}Combined train: {GREEN}ZEFIRO380 Black
+STR_REFIT_ADDITIONAL_ABLE_ZEFIRO380_Cool            :{BLACK}Changing model/livery: {GREEN}available {} {BLACK}Combined train: {GREEN}ZEFIRO380 Cool
+STR_REFIT_ADDITIONAL_UNABLE_UNADDTRAIN              :{BLACK}Changing model/livery: {RED}Unavailable {} {BLACK}Combined train: {RED}Unavailable
+STR_REFIT_ADDITIONAL_UNABLE_AVE                     :{BLACK}Changing model/livery: {RED}Unavailable {} {BLACK}Combined train: {GREEN}AVE
+STR_REFIT_ADDITIONAL_UNABLE_AVE_VElaro              :{BLACK}Changing model/livery: {RED}Unavailable {} {BLACK}Combined train: {GREEN}AVE Velaro
+STR_REFIT_ADDITIONAL_UNABLE_CRH1                    :{BLACK}Changing model/livery: {RED}Unavailable {} {BLACK}Combined train: {GREEN}CRH1
+STR_REFIT_ADDITIONAL_UNABLE_CRH3                    :{BLACK}Changing model/livery: {RED}Unavailable {} {BLACK}Combined train: {GREEN}CRH3
+STR_REFIT_ADDITIONAL_UNABLE_HEMU                    :{BLACK}Changing model/livery: {RED}Unavailable {} {BLACK}Combined train: {GREEN}HEMU-430
+STR_REFIT_ADDITIONAL_UNABLE_ICE3                    :{BLACK}Changing model/livery: {RED}Unavailable {} {BLACK}Combined train: {GREEN}ICE3
+STR_REFIT_ADDITIONAL_UNABLE_KTX_N                   :{BLACK}Changing model/livery: {RED}Unavailable {} {BLACK}Combined train: {GREEN}KTX-N
+STR_REFIT_ADDITIONAL_UNABLE_E5_H5                   :{BLACK}Changing model/livery: {RED}Unavailable {} {BLACK}Combined train: {GREEN}E5, H5
+STR_REFIT_ADDITIONAL_UNABLE_TGV_OLD                 :{BLACK}Changing model/livery: {RED}Unavailable {} {BLACK}Combined train: {GREEN}TGV Old
+STR_REFIT_ADDITIONAL_UNABLE_TGV_Poste               :{BLACK}Changing model/livery: {RED}Unavailable {} {BLACK}Combined train: {GREEN}TGV Old Poste, TGV Pos Poste
+STR_REFIT_ADDITIONAL_UNABLE_TGV_Ouigo               :{BLACK}Changing model/livery: {RED}Unavailable {} {BLACK}Combined train: {GREEN}TGV Ouigo
+STR_REFIT_ADDITIONAL_UNABLE_VTX                     :{BLACK}Changing model/livery: {RED}Unavailable {} {BLACK}Combined train: {GREEN}VTX
+STR_REFIT_ADDITIONAL_UNABLE_YFX                     :{BLACK}Changing model/livery: {RED}Unavailable {} {BLACK}Combined train: {GREEN}YFX
+STR_REFIT_ADDITIONAL_UNABLE_YTX                     :{BLACK}Changing model/livery: {RED}Unavailable {} {BLACK}Combined train: {GREEN}YTX
+STR_REFIT_train_configuration_1F                    :{BLACK}train configuration: {GREEN}1F passenger vehicles
+STR_REFIT_train_configuration_2F                    :{BLACK}train configuration: {GREEN}2F passenger vehicles
+STR_REFIT_train_configuration_TGV_Poste             :{BLACK}train configuration: {GREEN}TGV Old Poste, TGV Pos Poste
+STR_REFIT_train_configuration_YFX_Freight           :{BLACK}train configuration: {GREEN}YFX Freight Car
 
 # Liveries
-STR_REFIT_LIVERY_CRH380A                        :(CRH380A)
-STR_REFIT_LIVERY_CRH380AR                       :(CRH380A-Red)
-STR_REFIT_LIVERY_CR600R                         :(Red Color)
-STR_REFIT_LIVERY_CR600G                         :(Gold Color)
-STR_REFIT_LIVERY_E300                           :(Eurostar Yellow Color)
-STR_REFIT_LIVERY_E300B                          :(Eurostar Blue Color)
-STR_REFIT_LIVERY_EMU250                         :(EMU-250)
-STR_REFIT_LIVERY_EMU300                         :(EMU-300) 331km/h
-STR_REFIT_LIVERY_Glory600A                      :(Glory 600 A Color)
-STR_REFIT_LIVERY_Glory600B                      :(Glory 600 B Color)
-STR_REFIT_LIVERY_Glory600C                      :(Glory 600 C Color)
-STR_REFIT_LIVERY_Glory600D                      :(Glory 600 D Color)
-STR_REFIT_LIVERY_Glory600E                      :(Glory 600 E Color)
-STR_REFIT_LIVERY_HMXG                           :(HMX Green Color)
-STR_REFIT_LIVERY_HMXR                           :(HMX Red Color)
-STR_REFIT_LIVERY_ICE_Sancheon                   :(ICE-Sancheon)
-STR_REFIT_LIVERY_ICE_Patjug                     :(ICE-Patjug)
-STR_REFIT_LIVERY_NKXA                           :(NKX A Color)
-STR_REFIT_LIVERY_NKXB                           :(NKX B Color)
-STR_REFIT_LIVERY_NKXC                           :(NKX C Color)
-STR_REFIT_LIVERY_Shinkansen_500_Sancheon        :(Shinkansen 500-Sancheon)
-STR_REFIT_LIVERY_Shinkansen_500_Patjug          :(Shinkansen 500-Patjug)
-STR_REFIT_LIVERY_Shinkansen_E5                  :(Shinkansen E5)
-STR_REFIT_LIVERY_Shinkansen_H5                  :(Shinkansen H5)
-STR_REFIT_LIVERY_TAE_100                        :(TAE 100)
-STR_REFIT_LIVERY_TAE_100_Yellow                 :(TAE 100 Yellow)
-STR_REFIT_LIVERY_TAE_200                        :(TAE 200) 260km/h
-STR_REFIT_LIVERY_Talgo_250_Alvia                :(Talgo 250 Alvia)
-STR_REFIT_LIVERY_Talgo_250_Aprosiyob            :(Talgo 250 Aprosiyob)
-STR_REFIT_LIVERY_TGV_Duplex                     :(TGV Duplex)
-STR_REFIT_LIVERY_TGV_LYAIR_Duplex               :(TGV Lyair Duplex)
-STR_REFIT_LIVERY_TGV_OLD_Duplex                 :(TGV Old Duplex)
-STR_REFIT_LIVERY_TGV_OLD_LYAIR_Duplex           :(TGV Old Lyair Duplex)
-STR_REFIT_LIVERY_TGV_OLD_POS                    :(TGV Old Pos)
-STR_REFIT_LIVERY_TGV_OLD_LYAIR                  :(TGV Old Lyair)
-STR_REFIT_LIVERY_TGV_OLD_THALYS                 :(TGV Old Thalys)
-STR_REFIT_LIVERY_TGV_POS                        :(TGV Pos)
-STR_REFIT_LIVERY_TGV_LYAIR                      :(TGV Lyair)
-STR_REFIT_LIVERY_TGV_THALYS                     :(TGV Thalys)
+STR_REFIT_LIVERY_CRH380A                            :(CRH380A)
+STR_REFIT_LIVERY_CRH380AR                           :(CRH380A-Red)
+STR_REFIT_LIVERY_CR600R                             :(Red Color)
+STR_REFIT_LIVERY_CR600G                             :(Gold Color)
+STR_REFIT_LIVERY_E300                               :(Eurostar Yellow Color)
+STR_REFIT_LIVERY_E300B                              :(Eurostar Blue Color)
+STR_REFIT_LIVERY_EMU250                             :(EMU-250)
+STR_REFIT_LIVERY_EMU300                             :(EMU-300) 331km/h
+STR_REFIT_LIVERY_Glory600A                          :(Glory 600 A Color)
+STR_REFIT_LIVERY_Glory600B                          :(Glory 600 B Color)
+STR_REFIT_LIVERY_Glory600C                          :(Glory 600 C Color)
+STR_REFIT_LIVERY_Glory600D                          :(Glory 600 D Color)
+STR_REFIT_LIVERY_Glory600E                          :(Glory 600 E Color)
+STR_REFIT_LIVERY_HMXG                               :(HMX Green Color)
+STR_REFIT_LIVERY_HMXR                               :(HMX Red Color)
+STR_REFIT_LIVERY_ICE_Sancheon                       :(ICE-Sancheon)
+STR_REFIT_LIVERY_ICE_Patjug                         :(ICE-Patjug)
+STR_REFIT_LIVERY_NKXA                               :(NKX A Color)
+STR_REFIT_LIVERY_NKXB                               :(NKX B Color)
+STR_REFIT_LIVERY_NKXC                               :(NKX C Color)
+STR_REFIT_LIVERY_Shinkansen_500_Sancheon            :(Shinkansen 500-Sancheon)
+STR_REFIT_LIVERY_Shinkansen_500_Patjug              :(Shinkansen 500-Patjug)
+STR_REFIT_LIVERY_Shinkansen_E5                      :(Shinkansen E5)
+STR_REFIT_LIVERY_Shinkansen_H5                      :(Shinkansen H5)
+STR_REFIT_LIVERY_TAE_100                            :(TAE 100)
+STR_REFIT_LIVERY_TAE_100_Yellow                     :(TAE 100 Yellow)
+STR_REFIT_LIVERY_TAE_200                            :(TAE 200) 260km/h
+STR_REFIT_LIVERY_Talgo_250_Alvia                    :(Talgo 250 Alvia)
+STR_REFIT_LIVERY_Talgo_250_Aprosiyob                :(Talgo 250 Aprosiyob)
+STR_REFIT_LIVERY_TGV_Duplex                         :(TGV Duplex)
+STR_REFIT_LIVERY_TGV_LYAIR_Duplex                   :(TGV Lyair Duplex)
+STR_REFIT_LIVERY_TGV_OLD_Duplex                     :(TGV Old Duplex)
+STR_REFIT_LIVERY_TGV_OLD_LYAIR_Duplex               :(TGV Old Lyair Duplex)
+STR_REFIT_LIVERY_TGV_OLD_POS                        :(TGV Old Pos)
+STR_REFIT_LIVERY_TGV_OLD_LYAIR                      :(TGV Old Lyair)
+STR_REFIT_LIVERY_TGV_OLD_THALYS                     :(TGV Old Thalys)
+STR_REFIT_LIVERY_TGV_POS                            :(TGV Pos)
+STR_REFIT_LIVERY_TGV_LYAIR                          :(TGV Lyair)
+STR_REFIT_LIVERY_TGV_THALYS                         :(TGV Thalys)
 
 # Liveries metro
-STR_REFIT_LIVERY_MTR_DC_Cammall                 :(no remoding Car)
-STR_REFIT_LIVERY_MTR_DC_Cammall_Remoding        :(remoding Car)
-STR_REFIT_LIVERY_MTR_DC_Cammall_Disney          :(Disney Car)
-STR_REFIT_LIVERY_MTR_CNR_Changchun              :(MTR CNR Changchun)
-STR_REFIT_LIVERY_MTR_CNR_Changchun_South_Island :(MTR CNR Changchun South Island)
-STR_REFIT_LIVERY_MTR_CRRC_Changchun             :(MTR CRRC Changchun Train)
-STR_REFIT_LIVERY_MTR_CRRC_Sipang                :(MTR CRRC Sipang Train)
-STR_REFIT_LIVERY_MTR_Hyundai_Rotem_R_Nomal      :(MTR Hyundai Rotem R Type Nomal)
-STR_REFIT_LIVERY_MTR_Hyundai_Rotem_R_special    :(MTR Hyundai Rotem R Type special)
-STR_REFIT_LIVERY_YTRO_100A                      :(YTRO 100 A Color)
-STR_REFIT_LIVERY_YTRO_100B                      :(YTRO 100 B Color)
-STR_REFIT_LIVERY_YTRO_100C                      :(YTRO 100 C Color)
-STR_REFIT_LIVERY_YTRO_100D                      :(YTRO 100 D Color)
-STR_REFIT_LIVERY_YTRO_100E                      :(YTRO 100 E Color)
-STR_REFIT_LIVERY_YTRO_200A                      :(YTRO 200 A Color)
-STR_REFIT_LIVERY_YTRO_200B                      :(YTRO 200 B Color)
-STR_REFIT_LIVERY_YTRO_200C                      :(YTRO 200 C Color)
-STR_REFIT_LIVERY_YTRO_200D                      :(YTRO 200 D Color)
-STR_REFIT_LIVERY_YTRO_200E                      :(YTRO 200 E Color)
-STR_REFIT_LIVERY_YTRO_200F                      :(YTRO 200 F Color)
-STR_REFIT_LIVERY_YTRO_200G                      :(YTRO 200 G Color)
-STR_REFIT_LIVERY_YTRO_200H                      :(YTRO 200 H Color)
-STR_REFIT_LIVERY_YTRO_200I                      :(YTRO 200 I Color)
-STR_REFIT_LIVERY_YTRO_200J                      :(YTRO 200 J Color)
-STR_REFIT_LIVERY_TANKA                          :(Tank A Color)
-STR_REFIT_LIVERY_TANKB                          :(Tank B Color)
-STR_REFIT_LIVERY_TANKC                          :(Tank C Color)
-STR_REFIT_LIVERY_FlatGreen                      :(Flat Nomal Green Color)
-STR_REFIT_LIVERY_FlatPGreen                     :(Flat trailer Green Cololr)
-STR_REFIT_LIVERY_FlatRed                        :(Flat Nomal Red Color)
-STR_REFIT_LIVERY_FlatPRed                       :(Flat Trailer Red Color)
-STR_REFIT_LIVERY_FlatTankGreen                  :(Flat Tank Green Color)
-STR_REFIT_LIVERY_FlatTanKRed                    :(Flat Tank Red Color)
+STR_REFIT_LIVERY_MTR_AD_Tranz_CAF_A_Airport_Express :(MTR AD Tranz CAF A형 공항선)
+STR_REFIT_LIVERY_MTR_AD_Tranz_CAF_A_Tung_Chung      :(MTR AD Tranz CAF A형 뚱충선)
+STR_REFIT_LIVERY_MTR_DC_Cammall                     :(no remoding Car)
+STR_REFIT_LIVERY_MTR_DC_Cammall_Remoding            :(remoding Car)
+STR_REFIT_LIVERY_MTR_DC_Cammall_Disney              :(Disney Car)
+STR_REFIT_LIVERY_MTR_CNR_Changchun                  :(MTR CNR Changchun)
+STR_REFIT_LIVERY_MTR_CNR_Changchun_South_Island     :(MTR CNR Changchun South Island)
+STR_REFIT_LIVERY_MTR_CRRC_Changchun                 :(MTR CRRC Changchun Train)
+STR_REFIT_LIVERY_MTR_CRRC_Sipang                    :(MTR CRRC Sipang Train)
+STR_REFIT_LIVERY_MTR_Hyundai_Rotem_R_Nomal          :(MTR Hyundai Rotem R Type Nomal)
+STR_REFIT_LIVERY_MTR_Hyundai_Rotem_R_special        :(MTR Hyundai Rotem R Type special)
+STR_REFIT_LIVERY_YTRO_100A                          :(YTRO 100 A Color)
+STR_REFIT_LIVERY_YTRO_100B                          :(YTRO 100 B Color)
+STR_REFIT_LIVERY_YTRO_100C                          :(YTRO 100 C Color)
+STR_REFIT_LIVERY_YTRO_100D                          :(YTRO 100 D Color)
+STR_REFIT_LIVERY_YTRO_100E                          :(YTRO 100 E Color)
+STR_REFIT_LIVERY_YTRO_200A                          :(YTRO 200 A Color)
+STR_REFIT_LIVERY_YTRO_200B                          :(YTRO 200 B Color)
+STR_REFIT_LIVERY_YTRO_200C                          :(YTRO 200 C Color)
+STR_REFIT_LIVERY_YTRO_200D                          :(YTRO 200 D Color)
+STR_REFIT_LIVERY_YTRO_200E                          :(YTRO 200 E Color)
+STR_REFIT_LIVERY_YTRO_200F                          :(YTRO 200 F Color)
+STR_REFIT_LIVERY_YTRO_200G                          :(YTRO 200 G Color)
+STR_REFIT_LIVERY_YTRO_200H                          :(YTRO 200 H Color)
+STR_REFIT_LIVERY_YTRO_200I                          :(YTRO 200 I Color)
+STR_REFIT_LIVERY_YTRO_200J                          :(YTRO 200 J Color)
+STR_REFIT_LIVERY_TANKA                              :(Tank A Color)
+STR_REFIT_LIVERY_TANKB                              :(Tank B Color)
+STR_REFIT_LIVERY_TANKC                              :(Tank C Color)
+STR_REFIT_LIVERY_FlatGreen                          :(Flat Nomal Green Color)
+STR_REFIT_LIVERY_FlatPGreen                         :(Flat trailer Green Cololr)
+STR_REFIT_LIVERY_FlatRed                            :(Flat Nomal Red Color)
+STR_REFIT_LIVERY_FlatPRed                           :(Flat Trailer Red Color)
+STR_REFIT_LIVERY_FlatTankGreen                      :(Flat Tank Green Color)
+STR_REFIT_LIVERY_FlatTanKRed                        :(Flat Tank Red Color)
 
 # Errors
-STR_ERROR_NO_ATTACH                             :You can't attach this car here
-STR_ERROR_NOT_ENOUGH_LENGTH3                    :It's too short. It should be equal or more than 3 cars at least.
-STR_ERROR_NOT_ENOUGH_LENGTH6                    :It's too short. It should be equal or more than 6 cars at least.
+STR_ERROR_NO_ATTACH                                 :You can't attach this car here
+STR_ERROR_NOT_ENOUGH_LENGTH3                        :It's too short. It should be equal or more than 3 cars at least.
+STR_ERROR_NOT_ENOUGH_LENGTH6                        :It's too short. It should be equal or more than 6 cars at least.
