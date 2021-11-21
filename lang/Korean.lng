@@ -72,6 +72,7 @@ STR_YMT_200_NAME                                    :[YST] YMT 200
 STR_YST_1F_PASS_NAME                                :[YST] 1층 공통객차
 STR_YST_2F_PASS_NAME                                :[YST] 2층 공통객차
 STR_YPW_1F_NAME                                     :[YST] YPW 1층 객차
+STR_YPW_2F_NAME                                     :[YST] YPW 2층 객차
 STR_TGV_Poste_wagon_NAME                            :[YST] TGV Poste 화차
 STR_YFXF_NAME                                       :[YST] YFX용 화차
 STR_FLAT_1F_NAME                                    :[YST] 평판화차
@@ -129,6 +130,7 @@ STR_REFIT_ADDITIONAL_UNABLE_YTX                     :{BLACK}도색/모델 변경
 STR_REFIT_train_configuration_1F                    :{BLACK}열차구성: {GREEN}1층 승객차량용
 STR_REFIT_train_configuration_YPW_1F                :{BLACK}열차구성: {GREEN}1층 YPW 객차차량
 STR_REFIT_train_configuration_2F                    :{BLACK}열차구성: {GREEN}2층 승객차량용
+STR_REFIT_train_configuration_YPW_2F                :{BLACK}열차구성: {GREEN}2층 YPW 객차차량
 STR_REFIT_train_configuration_TGV_Poste             :{BLACK}열차구성: {GREEN}TGV Old Poste, TGV Pos Poste
 STR_REFIT_train_configuration_YFX_Freight           :{BLACK}열차구성: {GREEN}YFX용 화차
 

@@ -66,6 +66,7 @@ sort(FEAT_TRAINS, [
     YST_1F_Passenger_Car,      //2001
     YST_2F_Passenger_Car,      //2002
     YPW_1F,                    //2009
+    YPW_2F,                    //2010
     TGV_Poste_wagon,           //2003
     YFXF,                      //2004
     FLAT_1F,                   //2005
