@@ -53,6 +53,7 @@ STR_VTX_NAME                              :[YST] VTX
 STR_YFX_NAME                              :[YST] YFX
 STR_YTX_NAME                              :[YST] YTX
 STR_ZEFIRO380_NAME                        :[YST] ZEFIRO380
+STR_ZEFIRO380_Black_NAME                  :[YST] ZEFIRO380 Black
 STR_ZEFIRO380_Cool_NAME                   :[YST] ZEFIRO380 Cool
 
 # wagon's name
@@ -105,6 +106,7 @@ STR_REFIT_ADDITIONAL_ABLE_TGV_Duplex      :{BLACK}Changing model/livery: {GREEN}
 STR_REFIT_ADDITIONAL_ABLE_TGV             :{BLACK}Changing model/livery: {GREEN}available {} {BLACK}Combined train: {GREEN}TGV Old Pos, TGV Pos
 STR_REFIT_ADDITIONAL_ABLE_TAE             :{BLACK}Changing model/livery: {GREEN}available {} {BLACK}Combined train: {GREEN}TAE 100, TAE 200
 STR_REFIT_ADDITIONAL_ABLE_ZEFIRO380       :{BLACK}Changing model/livery: {GREEN}available {} {BLACK}Combined train: {GREEN}ZEFIRO380
+STR_REFIT_ADDITIONAL_ABLE_ZEFIRO380_Black :{BLACK}Changing model/livery: {GREEN}available {} {BLACK}Combined train: {GREEN}ZEFIRO380 Black
 STR_REFIT_ADDITIONAL_ABLE_ZEFIRO380_Cool  :{BLACK}Changing model/livery: {GREEN}available {} {BLACK}Combined train: {GREEN}ZEFIRO380 Cool
 STR_REFIT_ADDITIONAL_UNABLE_UNADDTRAIN    :{BLACK}Changing model/livery: {RED}Unavailable {} {BLACK}Combined train: {RED}Unavailable
 STR_REFIT_ADDITIONAL_UNABLE_AVE           :{BLACK}Changing model/livery: {RED}Unavailable {} {BLACK}Combined train: {GREEN}AVE
