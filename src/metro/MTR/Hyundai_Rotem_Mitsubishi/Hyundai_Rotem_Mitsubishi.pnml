@@ -10,7 +10,7 @@ MTR Rotem Mitsubishi
 /*--------------------------------------------------------------------
 열차정보
 --------------------------------------------------------------------*/
-item(FEAT_TRAINS, Hyundai_Rotem_Mitsubishi, 4005){
+item(FEAT_TRAINS, Hyundai_Rotem_Mitsubishi, 4006){
     property {
         name:                           string(STR_MTR_Hyundai_Rotem_Mitsubishi_NAME);
         climates_available:             ALL_CLIMATES;
