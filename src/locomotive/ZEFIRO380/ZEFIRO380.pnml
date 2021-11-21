@@ -69,7 +69,7 @@ item(FEAT_TRAINS, ZEFIRO380, 3047){
 
     livery_override(YST_2F_Passenger_Car) {
         default:                        sw_ZEFIRO380_2F_wagon;
-        cargo_capacity:                 90;
+        cargo_capacity:                 180;
         loading_speed:                  25;
         running_cost_factor:            150;
         }
