@@ -13,17 +13,6 @@ switch(FEAT_TRAINS, SELF, sw_YPW_1F_wagon, cargo_subtype) {
     set_YPW_Red_wagon;
 }
 
-switch(FEAT_TRAINS, SELF, sw_YPW_1F_wagon_r, cargo_subtype) {
-    1: set_YPW_Green_wagon_r;   //녹색도색
-    2: set_YPW_White_wagon_r;   //흰색도색
-    set_YPW_Red_wagon_r;
-}
-
-switch(FEAT_TRAINS, SELF, sw_YPW_wagon, (position_in_consist)) {
-    1: sw_YPW_1F_wagon_r;
-    sw_YPW_1F_wagon;
-}
-
 switch(FEAT_TRAINS, SELF, sw_YPW_wagon_attach, vehicle_type_id) {
     BB15048:    return CB_RESULT_ATTACH_ALLOW;
     GT26CW:     return CB_RESULT_ATTACH_ALLOW;
