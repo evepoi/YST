@@ -2,22 +2,22 @@
 스위치
 --------------------------------------------------------------------*/
 switch(FEAT_TRAINS, SELF, sw_TGV_Old_engine, position_in_consist_from_end == 0 && num_vehs_in_consist > 1){
-    1: set_Tgv_Old_engineT;
-    set_Tgv_Old_engineH;
+    1: set_TGV_Old_engineT;
+    set_TGV_Old_engineH;
 }
 
 switch(FEAT_TRAINS, SELF, sw_TGV_Old_wagon_middle, (position_in_consist)) {
-    1: set_Tgv_Old_wagon_r;
-    set_Tgv_Old_wagon;
+    1: set_TGV_Old_wagon_r;
+    set_TGV_Old_wagon;
 }
 
 switch(FEAT_TRAINS, SELF, sw_TGV_Old_wagon_rear, [STORE_TEMP(1, 0x10F), var[0x61, 0, 0x0000FFFF, 0xC6]]){
-    TGV_OLD: set_Tgv_Old_wagon_end;
+    TGV_OLD: set_TGV_Old_wagon_end;
     sw_TGV_Old_wagon_middle;
 }
 
 switch(FEAT_TRAINS, SELF, sw_TGV_Old_wagon, [STORE_TEMP(-1, 0x10F), var[0x61, 0, 0x0000FFFF, 0xC6]]) {
-    TGV_OLD: set_Tgv_Old_wagon_start;
+    TGV_OLD: set_TGV_Old_wagon_start;
     sw_TGV_Old_wagon_rear;
 }
 
