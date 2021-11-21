@@ -65,6 +65,8 @@ STR_MTR_CRRC_NAME                                   :[YST] MTR CRRC 전동차
 STR_MTR_Hyundai_Rotem_Mitsubishi_NAME               :[YST] MTR 현대로템 미쓰비시 전동차
 STR_MTR_Hyundai_Rotem_R_NAME                        :[YST] MTR 현대로템 R형 전동차
 STR_MTR_IKK_SP_1900_NAME                            :[YST] MTR IKK SP 1900
+STR_YMT_100_NAME                                    :[YST] YMT 100
+STR_YMT_200_NAME                                    :[YST] YMT 200
 
 # wagon's name
 STR_YST_1F_PASS_NAME                                :[YST] 1층 공통객차
@@ -76,8 +78,6 @@ STR_FLAT_1F_NAME                                    :[YST] 평판화차
 STR_FLAT_2F_NAME                                    :[YST] 평판화차 - 미국형
 STR_FLAT_Tank_NAME                                  :[YST] 평판유조 화차
 STR_Tank_NAME                                       :[YST] 유조차
-STR_YTRO_100_NAME                                   :[YST] YTRO 100
-STR_YTRO_200_NAME                                   :[YST] YTRO 200
 
 # Parameters
 STR_PARAM_European_NAME                             :유럽형 열차 미사용
@@ -184,21 +184,21 @@ STR_REFIT_LIVERY_MTR_CRRC_Changchun                 :(MTR CRRC 창춘 전동차)
 STR_REFIT_LIVERY_MTR_CRRC_Sipang                    :(MTR CRRC 쓰팡 전동차)
 STR_REFIT_LIVERY_MTR_Hyundai_Rotem_R_Nomal          :(MTR 현대로탬 R형 일반)
 STR_REFIT_LIVERY_MTR_Hyundai_Rotem_R_special        :(MTR 현대로탬 R형 특실)
-STR_REFIT_LIVERY_YTRO_100A                          :(YTRO 100 A 도색)
-STR_REFIT_LIVERY_YTRO_100B                          :(YTRO 100 B 도색)
-STR_REFIT_LIVERY_YTRO_100C                          :(YTRO 100 C 도색)
-STR_REFIT_LIVERY_YTRO_100D                          :(YTRO 100 D 도색)
-STR_REFIT_LIVERY_YTRO_100E                          :(YTRO 100 E 도색)
-STR_REFIT_LIVERY_YTRO_200A                          :(YTRO 200 A 도색)
-STR_REFIT_LIVERY_YTRO_200B                          :(YTRO 200 B 도색)
-STR_REFIT_LIVERY_YTRO_200C                          :(YTRO 200 C 도색)
-STR_REFIT_LIVERY_YTRO_200D                          :(YTRO 200 D 도색)
-STR_REFIT_LIVERY_YTRO_200E                          :(YTRO 200 E 도색)
-STR_REFIT_LIVERY_YTRO_200F                          :(YTRO 200 F 도색)
-STR_REFIT_LIVERY_YTRO_200G                          :(YTRO 200 G 도색)
-STR_REFIT_LIVERY_YTRO_200H                          :(YTRO 200 H 도색)
-STR_REFIT_LIVERY_YTRO_200I                          :(YTRO 200 I 도색)
-STR_REFIT_LIVERY_YTRO_200J                          :(YTRO 200 J 도색)
+STR_REFIT_LIVERY_YMT_100A                           :(YMT 100 A 도색)
+STR_REFIT_LIVERY_YMT_100B                           :(YMT 100 B 도색)
+STR_REFIT_LIVERY_YMT_100C                           :(YMT 100 C 도색)
+STR_REFIT_LIVERY_YMT_100D                           :(YMT 100 D 도색)
+STR_REFIT_LIVERY_YMT_100E                           :(YMT 100 E 도색)
+STR_REFIT_LIVERY_YMT_200A                           :(YMT 200 A 도색)
+STR_REFIT_LIVERY_YMT_200B                           :(YMT 200 B 도색)
+STR_REFIT_LIVERY_YMT_200C                           :(YMT 200 C 도색)
+STR_REFIT_LIVERY_YMT_200D                           :(YMT 200 D 도색)
+STR_REFIT_LIVERY_YMT_200E                           :(YMT 200 E 도색)
+STR_REFIT_LIVERY_YMT_200F                           :(YMT 200 F 도색)
+STR_REFIT_LIVERY_YMT_200G                           :(YMT 200 G 도색)
+STR_REFIT_LIVERY_YMT_200H                           :(YMT 200 H 도색)
+STR_REFIT_LIVERY_YMT_200I                           :(YMT 200 I 도색)
+STR_REFIT_LIVERY_YMT_200J                           :(YMT 200 J 도색)
 
 STR_REFIT_LIVERY_TANKA                              :(유조차 A도색)
 STR_REFIT_LIVERY_TANKB                              :(유조차 B도색)

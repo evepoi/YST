@@ -67,8 +67,8 @@
 #include "metro/MTR/Hyundai_Rotem_Mitsubishi/Hyundai_Rotem_Mitsubishi.pnml"
 #include "metro/MTR/Hyundai_Rotem_R/Hyundai_Rotem_R.pnml"
 #include "metro/MTR/IKK_SP_1900/IKK_SP_1900.pnml"
-#include "metro/YTRO/YTRO_100.pnml"
-#include "metro/YTRO/YTRO_200.pnml"
+#include "metro/YMT/YMT_100.pnml"
+#include "metro/YMT/YMT_200.pnml"
 
 // Sorting
 #include "sort.pnml"

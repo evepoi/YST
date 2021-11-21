@@ -60,8 +60,8 @@ sort(FEAT_TRAINS, [
     Hyundai_Rotem_Mitsubishi,  //4006
     Hyundai_Rotem_R,           //4007
     IKK_SP_1900,               //4008
-    YTRO_100,                  //3043
-    YTRO_200,                  //3044
+    YMT_100,                   //4009
+    YMT_200,                   //4010
     
     YST_1F_Passenger_Car,      //2001
     YST_2F_Passenger_Car,      //2002
