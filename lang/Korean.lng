@@ -60,6 +60,7 @@ STR_ZEFIRO380_Cool_NAME                         :[YST] ZEFIRO380 Cool
 STR_MTR_AC_Cammall_NAME                         :[YST] MTR 메트로카멜 교류형 전동차
 STR_MTR_DC_Cammall_NAME                         :[YST] MTR 메트로카멜 직류형 전동차
 STR_MTR_CNR_Changchun_NAME                      :[YST] MTR CNR 창춘 전동차
+STR_MTR_CRRC_NAME                               :[YST] MTR CRRC 전동차
 
 # wagon's name
 STR_YST_1F_PASS_NAME                            :[YST] 1층 공통객차
@@ -70,7 +71,6 @@ STR_YFXF_NAME                                   :[YST] YFX용 화차
 STR_FLAT_1F_NAME                                :[YST] 평판화차
 STR_FLAT_2F_NAME                                :[YST] 평판화차 - 미국형
 STR_FLAT_Tank_NAME                              :[YST] 평판유조 화차
-STR_MTR_CRRC_NAME                               :[YST] MTR CRRC 쓰팡 전동차
 STR_MTR_HM_NAME                                 :[YST] MTR 현대로템 - 미쓰비시 전동차
 STR_Tank_NAME                                   :[YST] 유조차
 STR_YTRO_100_NAME                               :[YST] YTRO 100
@@ -175,6 +175,8 @@ STR_REFIT_LIVERY_MTR_DC_Cammall_Remoding        :(개조형)
 STR_REFIT_LIVERY_MTR_DC_Cammall_Disney          :(디즈니선)
 STR_REFIT_LIVERY_MTR_CNR_Changchun              :(MTR CNR 창춘 전동차)
 STR_REFIT_LIVERY_MTR_CNR_Changchun_South_Island :(MTR CNR 창춘 남부섬선)
+STR_REFIT_LIVERY_MTR_CRRC_Changchun             :(MTR CRRC 창춘 전동차)
+STR_REFIT_LIVERY_MTR_CRRC_Sipang                :(MTR CRRC 쓰팡 전동차)
 STR_REFIT_LIVERY_YTRO_100A                      :(YTRO 100 A 도색)
 STR_REFIT_LIVERY_YTRO_100B                      :(YTRO 100 B 도색)
 STR_REFIT_LIVERY_YTRO_100C                      :(YTRO 100 C 도색)

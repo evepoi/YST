@@ -62,9 +62,9 @@
 #include "metro/MTR/Cammall_AC/Cammall_AC.pnml"
 #include "metro/MTR/Cammall_DC/Cammall_DC.pnml"
 #include "metro/MTR/CNR_Changchun/CNR_Changchun.pnml"
+#include "metro/MTR/CRRC/CRRC.pnml"
 #include "metro/YTRO/YTRO_100.pnml"
 #include "metro/YTRO/YTRO_200.pnml"
-#include "metro/MTR/CRRC_Sipang/CRRC_Sipang.pnml"
 #include "metro/MTR/Rotem_Mitsubishi/Rotem_Mitsubishi.pnml"
 
 // Sorting
