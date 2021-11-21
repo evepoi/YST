@@ -92,4 +92,5 @@ if (Hong_Kong) {
     disable_item(FEAT_TRAINS, 4003); //MTR_CNR_Changchun
     disable_item(FEAT_TRAINS, 4004); //MTR_CRRC
     disable_item(FEAT_TRAINS, 4005); //Hyundai_Rotem_Mitsubishi
+    disable_item(FEAT_TRAINS, 4006); //Hyundai_Rotem_R
     }

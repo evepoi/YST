@@ -57,6 +57,7 @@ sort(FEAT_TRAINS, [
     MTR_CNR_Changchun,         //4003
     MTR_CRRC,                  //4004
     Hyundai_Rotem_Mitsubishi,  //4005
+    Hyundai_Rotem_R,           //4006
     YTRO_100,                  //3043
     YTRO_200,                  //3044
     

@@ -62,6 +62,7 @@ STR_MTR_DC_Cammall_NAME                         :[YST] MTR Cammall DC Train
 STR_MTR_CNR_Changchun_NAME                      :[YST] MTR CNR Changchun Trian
 STR_MTR_CRRC_NAME                               :[YST] MTR CRRC Trian
 STR_MTR_Hyundai_Rotem_Mitsubishi_NAME           :[YST] MTR Hyundai Rotem Mitsubishi Trian
+STR_MTR_Hyundai_Rotem_R_NAME                    :[YST] MTR Hyundai Rotem R Type Train
 
 # wagon's name
 STR_YST_1F_PASS_NAME                            :[YST] 1F Passenger Car
@@ -182,6 +183,8 @@ STR_REFIT_LIVERY_MTR_CNR_Changchun              :(MTR CNR Changchun)
 STR_REFIT_LIVERY_MTR_CNR_Changchun_South_Island :(MTR CNR Changchun South Island)
 STR_REFIT_LIVERY_MTR_CRRC_Changchun             :(MTR CRRC Changchun Train)
 STR_REFIT_LIVERY_MTR_CRRC_Sipang                :(MTR CRRC Sipang Train)
+STR_REFIT_LIVERY_MTR_Hyundai_Rotem_R_Nomal      :(MTR Hyundai Rotem R Type Nomal)
+STR_REFIT_LIVERY_MTR_Hyundai_Rotem_R_special    :(MTR Hyundai Rotem R Type special)
 STR_REFIT_LIVERY_YTRO_100A                      :(YTRO 100 A Color)
 STR_REFIT_LIVERY_YTRO_100B                      :(YTRO 100 B Color)
 STR_REFIT_LIVERY_YTRO_100C                      :(YTRO 100 C Color)
