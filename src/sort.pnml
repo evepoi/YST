@@ -45,12 +45,12 @@ sort(FEAT_TRAINS, [
     TGV_Pos,              //3041
     TGV_Pos_Poste,        //3042
     THRS,                 //3043
+    VTX,                  //3044
 
     MTR,                  //3026
     MTR_CNR,              //3027
     MTR_CRRC,             //3028
     MTR_HM,               //3029
-    VTX,                  //3040
     YFX,                  //3041
     YTRO_100,             //3043
     YTRO_200,             //3044

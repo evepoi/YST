@@ -10,7 +10,7 @@ VTX
 /*--------------------------------------------------------------------
 열차정보
 --------------------------------------------------------------------*/
-item(FEAT_TRAINS, VTX){
+item(FEAT_TRAINS, VTX, 3044){
     property {
         name:                           string(STR_VTX_NAME);
         climates_available:             ALL_CLIMATES;
