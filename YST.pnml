@@ -89,4 +89,5 @@ if (Taiwanese) {
 if (Hong_Kong) {
     disable_item(FEAT_TRAINS, 4001); //MTR_AC_Cammall
     disable_item(FEAT_TRAINS, 4002); //MTR_DC_Cammall
+    disable_item(FEAT_TRAINS, 4003); //MTR_DC_Cammall
     }

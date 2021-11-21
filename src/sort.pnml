@@ -54,7 +54,7 @@ sort(FEAT_TRAINS, [
 
     MTR_AC_Cammall,       //4001
     MTR_DC_Cammall,       //4002
-    MTR_CNR,              //3027
+    MTR_CNR_Changchun,    //4003
     MTR_CRRC,             //3028
     MTR_HM,               //3029
     YTRO_100,             //3043
