@@ -6,7 +6,7 @@
 #include "wagon/flat_car/Flat_2F_Car/Flat_2F_Car.pnml"
 #include "wagon/flat_car/Flat_Tank_Car/Flat_Tank_Car.pnml"
 #include "wagon/tank_car/tank.pnml"
-#include "wagon/YPW/YPW_1F_Car.pnml"
+#include "wagon/YPW/1F_Car/YPW_1F_Car.pnml"
 
 //locomotive
 #include "locomotive/AGV/AGV.pnml"

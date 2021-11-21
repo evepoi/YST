@@ -30,7 +30,7 @@ item(FEAT_TRAINS, YPW_1F, 2009){
         reliability_decay:              0;
         
         //Cargo
-        cargo_capacity:                 200;
+        cargo_capacity:                 100;
         refittable_cargo_classes:       NO_CARGO_CLASS;
         non_refittable_cargo_classes:   NO_CARGO_CLASS;
         cargo_allow_refit:              [PASS];

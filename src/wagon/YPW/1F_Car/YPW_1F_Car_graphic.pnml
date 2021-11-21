@@ -1,19 +1,19 @@
 /*--------------------------------------------------------------------
 Graphics
 --------------------------------------------------------------------*/
-spriteset(set_YPW_purchase, "src\wagon\YPW\YPW_1F_Car.png"){
+spriteset(set_YPW_purchase, "src\wagon\YPW\1F_Car\YPW_1F_Car.png"){
     tmpl_wagon_purchase(0, 0)
 }
 
-spriteset(set_YPW_Red_wagon, "src\wagon\YPW\YPW_1F_Car.png") {
+spriteset(set_YPW_Red_wagon, "src\wagon\YPW\1F_Car\YPW_1F_Car.png") {
     wagon_1F_F(80, 0)
 }
 
-spriteset(set_YPW_Green_wagon, "src\wagon\YPW\YPW_1F_Car.png") {
+spriteset(set_YPW_Green_wagon, "src\wagon\YPW\1F_Car\YPW_1F_Car.png") {
     wagon_1F_F(80, 27)
 }
 
-spriteset(set_YPW_White_wagon, "src\wagon\YPW\YPW_1F_Car.png") {
+spriteset(set_YPW_White_wagon, "src\wagon\YPW\1F_Car\YPW_1F_Car.png") {
     wagon_1F_F(80, 54)
 }
 
