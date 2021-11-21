@@ -2,17 +2,17 @@
 YTRO 100
 --------------------------------------------------------------------*/
 // Graphics
-#include "YTRO_100_graphic.pnml"
+#include "YMT_100_graphic.pnml"
 
 // Switch
-#include "YTRO_100_switch.pnml"
+#include "YMT_100_switch.pnml"
 
 /*--------------------------------------------------------------------
 열차정보
 --------------------------------------------------------------------*/
-item(FEAT_TRAINS, YTRO_100){
+item(FEAT_TRAINS, YMT_100, 4009){
     property {
-        name:                           string(STR_YTRO_100_NAME);
+        name:                           string(STR_YMT_100_NAME);
         climates_available:             ALL_CLIMATES;
         introduction_date:              date(2020, 1, 1);
         track_type:                     ELRL;
@@ -50,19 +50,19 @@ item(FEAT_TRAINS, YTRO_100){
         }
 
 	graphics {
-        default:                        sw_YTRO_100_engine;
-        purchase:                       sw_YTRO_100_purchase;
+        default:                        sw_YMT_100_engine;
+        purchase:                       sw_YMT_100_purchase;
         loading_speed:                  25;
         cost_factor:                    10;
         running_cost_factor:            150;
-        can_attach_wagon:               sw_YTRO_100_wagon_attach;
+        can_attach_wagon:               sw_YMT_100_wagon_attach;
         cargo_subtype_text:             sw_YTRO_100_cargo_subtype_text;
         start_stop:                     sw_YST_train_start_stop_6;
         additional_text:                string(STR_REFIT_ADDITIONAL_ABLE_UNADDTRAIN);
         }
 
     livery_override(YST_1F_Passenger_Car) {
-        default:                        sw_YTRO_100_1F_wagon;
+        default:                        sw_YMT_100_1F_wagon;
         cargo_subtype_text:             sw_YTRO_100_cargo_subtype_text;
         cargo_capacity:                 80;
         loading_speed:                  25;
@@ -70,7 +70,7 @@ item(FEAT_TRAINS, YTRO_100){
         }
         
       livery_override(YST_2F_Passenger_Car) {
-        default:                        sw_YTRO_100_2F_wagon;
+        default:                        sw_YMT_100_2F_wagon;
         cargo_subtype_text:             sw_YTRO_100_cargo_subtype_text;
         cargo_capacity:                 160;
         loading_speed:                  25;
