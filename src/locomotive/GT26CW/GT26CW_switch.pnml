@@ -2,12 +2,13 @@
 스위치
 --------------------------------------------------------------------*/
 switch(FEAT_TRAINS, SELF, sw_GT26CW_wagon_attach, vehicle_type_id) {
-    GT26CW:     return CB_RESULT_ATTACH_ALLOW;
-    YPW_1F:     return CB_RESULT_ATTACH_ALLOW;
-    YPW_2F:     return CB_RESULT_ATTACH_ALLOW;
-    TANK:       return CB_RESULT_ATTACH_ALLOW;
-    FLAT_1F:    return CB_RESULT_ATTACH_ALLOW;
-    FLAT_2F:    return CB_RESULT_ATTACH_ALLOW;
-    FLAT_TANK:  return CB_RESULT_ATTACH_ALLOW;
+    GT26CW:      return CB_RESULT_ATTACH_ALLOW;
+    YPW_1F:      return CB_RESULT_ATTACH_ALLOW;
+    YPW_2F:      return CB_RESULT_ATTACH_ALLOW;
+    YPW_Bed_Car: return CB_RESULT_ATTACH_ALLOW;
+    TANK:        return CB_RESULT_ATTACH_ALLOW;
+    FLAT_1F:     return CB_RESULT_ATTACH_ALLOW;
+    FLAT_2F:     return CB_RESULT_ATTACH_ALLOW;
+    FLAT_TANK:   return CB_RESULT_ATTACH_ALLOW;
     return string(STR_ERROR_NO_ATTACH);
 }

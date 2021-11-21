@@ -14,7 +14,7 @@ item(FEAT_TRAINS, YPW_2F, 2010){
     property {
         name:                           string(STR_YPW_2F_NAME);
         climates_available:             ALL_CLIMATES;
-        introduction_date:              date(2020, 1, 1);
+        introduction_date:              date(1967, 1, 1);
         track_type:                     RAIL;
         sprite_id:                      SPRITE_ID_NEW_TRAIN;
         
@@ -51,6 +51,6 @@ item(FEAT_TRAINS, YPW_2F, 2010){
         cost_factor:                    10;
         running_cost_factor:            50;
         can_attach_wagon:               sw_YPW_2F_wagon_attach;
-        additional_text:                string(STR_REFIT_train_configuration_YPW_2F);
+        additional_text:                string(STR_REFIT_train_configuration_YPW);
         }
         }
