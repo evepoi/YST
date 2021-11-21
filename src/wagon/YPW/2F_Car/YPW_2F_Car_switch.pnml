@@ -2,11 +2,12 @@
 스위치
 --------------------------------------------------------------------*/
 switch(FEAT_TRAINS, SELF, sw_YPW_2F_wagon_attach, vehicle_type_id) {
-    BB15048:     return CB_RESULT_ATTACH_ALLOW;
-    GT26CW:      return CB_RESULT_ATTACH_ALLOW;
-    NJ2:         return CB_RESULT_ATTACH_ALLOW;
-    YPW_1F:      return CB_RESULT_ATTACH_ALLOW;
-    YPW_2F:      return CB_RESULT_ATTACH_ALLOW;
-    YPW_Bed_Car: return CB_RESULT_ATTACH_ALLOW;
+    BB15048:         return CB_RESULT_ATTACH_ALLOW;
+    GT26CW:          return CB_RESULT_ATTACH_ALLOW;
+    NJ2:             return CB_RESULT_ATTACH_ALLOW;
+    YPW_1F:          return CB_RESULT_ATTACH_ALLOW;
+    YPW_2F:          return CB_RESULT_ATTACH_ALLOW;
+    YPW_Bed_Car:     return CB_RESULT_ATTACH_ALLOW;
+    YPW_Luggage_Car: return CB_RESULT_ATTACH_ALLOW;
    return string(STR_ERROR_NO_ATTACH);
 }
