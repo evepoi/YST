@@ -73,7 +73,6 @@ STR_YST_1F_PASS_NAME                                :[YST] 1층 공통객차
 STR_YST_2F_PASS_NAME                                :[YST] 2층 공통객차
 STR_TGV_Poste_wagon_NAME                            :[YST] TGV Poste 화차
 STR_YFXF_NAME                                       :[YST] YFX용 화차
-
 STR_FLAT_1F_NAME                                    :[YST] 평판화차
 STR_FLAT_2F_NAME                                    :[YST] 평판화차 - 미국형
 STR_FLAT_Tank_NAME                                  :[YST] 평판유조 화차
@@ -200,15 +199,16 @@ STR_REFIT_LIVERY_YMT_200H                           :(YMT 200 H 도색)
 STR_REFIT_LIVERY_YMT_200I                           :(YMT 200 I 도색)
 STR_REFIT_LIVERY_YMT_200J                           :(YMT 200 J 도색)
 
-STR_REFIT_LIVERY_TANKA                              :(유조차 A도색)
-STR_REFIT_LIVERY_TANKB                              :(유조차 B도색)
-STR_REFIT_LIVERY_TANKC                              :(유조차 C도색)
+# Liveries wagon
 STR_REFIT_LIVERY_FlatGreen                          :(평판화차 녹색)
 STR_REFIT_LIVERY_FlatPGreen                         :(평판화차 패기형 녹색)
 STR_REFIT_LIVERY_FlatRed                            :(평판화차 빨강색)
 STR_REFIT_LIVERY_FlatPRed                           :(평판화차 패기형 빨강색)
 STR_REFIT_LIVERY_FlatTankGreen                      :(평판유조탱크 녹색)
 STR_REFIT_LIVERY_FlatTanKRed                        :(평판유조탱크 빨강색)
+STR_REFIT_LIVERY_TANKA                              :(유조차 A도색)
+STR_REFIT_LIVERY_TANKB                              :(유조차 B도색)
+STR_REFIT_LIVERY_TANKC                              :(유조차 C도색)
 
 # Errors
 STR_ERROR_NO_ATTACH                                 :여기에 이 차량을 붙일 수 없습니다

@@ -73,7 +73,6 @@ STR_YST_1F_PASS_NAME                                :[YST] 1F Passenger Car
 STR_YST_2F_PASS_NAME                                :[YST] 2F Passenger Car
 STR_TGV_Poste_wagon_NAME                            :[YST] TGV Poste Freight Car
 STR_YFXF_NAME                                       :[YST] YFX Freight Car
-
 STR_FLAT_1F_NAME                                    :[YST] Flat Car
 STR_FLAT_2F_NAME                                    :[YST] Flat Car - American
 STR_FLAT_Tank_NAME                                  :[YST] Flat Tank Car
@@ -204,15 +203,17 @@ STR_REFIT_LIVERY_YMT_200G                           :(YMT 200 G Color)
 STR_REFIT_LIVERY_YMT_200H                           :(YMT 200 H Color)
 STR_REFIT_LIVERY_YMT_200I                           :(YMT 200 I Color)
 STR_REFIT_LIVERY_YMT_200J                           :(YMT 200 J Color)
-STR_REFIT_LIVERY_TANKA                              :(Tank A Color)
-STR_REFIT_LIVERY_TANKB                              :(Tank B Color)
-STR_REFIT_LIVERY_TANKC                              :(Tank C Color)
+
+# Liveries wagon
 STR_REFIT_LIVERY_FlatGreen                          :(Flat Nomal Green Color)
 STR_REFIT_LIVERY_FlatPGreen                         :(Flat trailer Green Cololr)
 STR_REFIT_LIVERY_FlatRed                            :(Flat Nomal Red Color)
 STR_REFIT_LIVERY_FlatPRed                           :(Flat Trailer Red Color)
 STR_REFIT_LIVERY_FlatTankGreen                      :(Flat Tank Green Color)
 STR_REFIT_LIVERY_FlatTanKRed                        :(Flat Tank Red Color)
+STR_REFIT_LIVERY_TANKA                              :(Tank A Color)
+STR_REFIT_LIVERY_TANKB                              :(Tank B Color)
+STR_REFIT_LIVERY_TANKC                              :(Tank C Color)
 
 # Errors
 STR_ERROR_NO_ATTACH                                 :You can't attach this car here
