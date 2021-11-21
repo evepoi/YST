@@ -61,6 +61,7 @@ STR_MTR_AC_Cammall_NAME                         :[YST] MTR 메트로카멜 교�
 STR_MTR_DC_Cammall_NAME                         :[YST] MTR 메트로카멜 직류형 전동차
 STR_MTR_CNR_Changchun_NAME                      :[YST] MTR CNR 창춘 전동차
 STR_MTR_CRRC_NAME                               :[YST] MTR CRRC 전동차
+STR_MTR_Hyundai_Rotem_Mitsubishi_NAME           :[YST] MTR 현대로템 미쓰비시 전동차
 
 # wagon's name
 STR_YST_1F_PASS_NAME                            :[YST] 1층 공통객차
@@ -71,7 +72,6 @@ STR_YFXF_NAME                                   :[YST] YFX용 화차
 STR_FLAT_1F_NAME                                :[YST] 평판화차
 STR_FLAT_2F_NAME                                :[YST] 평판화차 - 미국형
 STR_FLAT_Tank_NAME                              :[YST] 평판유조 화차
-STR_MTR_HM_NAME                                 :[YST] MTR 현대로템 - 미쓰비시 전동차
 STR_Tank_NAME                                   :[YST] 유조차
 STR_YTRO_100_NAME                               :[YST] YTRO 100
 STR_YTRO_200_NAME                               :[YST] YTRO 200

@@ -2,17 +2,17 @@
 MTR Rotem Mitsubishi
 --------------------------------------------------------------------*/
 // Graphics
-#include "Rotem_Mitsubishi_graphic.pnml"
+#include "Hyundai_Rotem_Mitsubishi_graphic.pnml"
 
 // Switch
-#include "Rotem_Misubishi_switch.pnml"
+#include "Hyundai_Rotem_Mitsubishi_switch.pnml"
 
 /*--------------------------------------------------------------------
 열차정보
 --------------------------------------------------------------------*/
-item(FEAT_TRAINS, MTR_HM){
+item(FEAT_TRAINS, Hyundai_Rotem_Mitsubishi, 4005){
     property {
-        name:                           string(STR_MTR_HM_NAME);
+        name:                           string(STR_MTR_Hyundai_Rotem_Mitsubishi_NAME);
         climates_available:             ALL_CLIMATES;
         introduction_date:              date(1979, 1, 1);
         track_type:                     ELRL;
@@ -50,18 +50,18 @@ item(FEAT_TRAINS, MTR_HM){
         }
 
 	graphics {
-        default:                        sw_MTR_HM_engine;
-        purchase:                       sw_MTR_HM_purchase;
+        default:                        sw_MTR_Hyundai_Rotem_Mitsubishi_engine;
+        purchase:                       sw_MTR_Hyundai_Rotem_Mitsubishi_purchase;
         loading_speed:                  25;
         cost_factor:                    10;
         running_cost_factor:            150;
-        can_attach_wagon:               sw_MTR_HM_wagon_attach;
+        can_attach_wagon:               sw_MTR_Hyundai_Rotem_Mitsubishi_wagon_attach;
         start_stop:                     sw_YST_train_start_stop_3;
         additional_text:                string(STR_REFIT_ADDITIONAL_ABLE_UNADDTRAIN);
         }
 
     livery_override(YST_1F_Passenger_Car) {
-        default:                        sw_MTR_HM_wagon;
+        default:                        sw_MTR_Hyundai_Rotem_Mitsubishi_wagon;
         cargo_capacity:                 80;
         loading_speed:                  25;
         running_cost_factor:            100;

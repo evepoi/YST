@@ -61,6 +61,7 @@ STR_MTR_AC_Cammall_NAME                         :[YST] MTR Cammall AC Train
 STR_MTR_DC_Cammall_NAME                         :[YST] MTR Cammall DC Train
 STR_MTR_CNR_Changchun_NAME                      :[YST] MTR CNR Changchun Trian
 STR_MTR_CRRC_NAME                               :[YST] MTR CRRC Trian
+STR_MTR_Hyundai_Rotem_Mitsubishi_NAME           :[YST] MTR Hyundai Rotem Mitsubishi Trian
 
 # wagon's name
 STR_YST_1F_PASS_NAME                            :[YST] 1F Passenger Car
@@ -71,7 +72,6 @@ STR_YFXF_NAME                                   :[YST] YFX Freight Car
 STR_FLAT_1F_NAME                                :[YST] Flat Car
 STR_FLAT_2F_NAME                                :[YST] Flat Car - American
 STR_FLAT_Tank_NAME                              :[YST] Flat Tank Car
-STR_MTR_HM_NAME                                 :[YST] MTR Rotem Mitsubishi Trian
 STR_Tank_NAME		                            :[YST] Tank
 STR_YTRO_100_NAME  	                            :[YST] YTRO 100
 STR_YTRO_200_NAME  	                            :[YST] YTRO 200
