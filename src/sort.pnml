@@ -70,5 +70,5 @@ sort(FEAT_TRAINS, [
     FLAT_1F,                   //2005
     FLAT_2F,                   //2006
     FLAT_TANK,                 //2007
-    TANK,                      //2006
+    TANK,                      //2008
     ]);

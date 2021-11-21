@@ -10,7 +10,7 @@
 /*--------------------------------------------------------------------
 화물차량정보
 --------------------------------------------------------------------*/
-item(FEAT_TRAINS, TANK){
+item(FEAT_TRAINS, TANK, 2008){
     property {
         name:                           string(STR_Tank_NAME);
         climates_available:             ALL_CLIMATES;
