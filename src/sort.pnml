@@ -46,12 +46,12 @@ sort(FEAT_TRAINS, [
     TGV_Pos_Poste,        //3042
     THRS,                 //3043
     VTX,                  //3044
+    YFX,                  //3045
 
     MTR,                  //3026
     MTR_CNR,              //3027
     MTR_CRRC,             //3028
     MTR_HM,               //3029
-    YFX,                  //3041
     YTRO_100,             //3043
     YTRO_200,             //3044
     YTX,                  //3045
@@ -60,9 +60,9 @@ sort(FEAT_TRAINS, [
     YST_1F_Passenger_Car, //2001
     YST_2F_Passenger_Car, //2002
     TGV_Poste_wagon,      //2003
+    YFXF,                 //2004
     FLAT_1F,              //2003
     FLAT_2F,              //2004
     FLAT_TANK,            //2005
     TANK,                 //2006
-    YFXF,                 //2007
     ]);

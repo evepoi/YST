@@ -50,11 +50,13 @@ STR_TGV_Pos_NAME                          :[YST] TGV Pos
 STR_TGV_Pos_Poste_NAME                    :[YST] TGV Pos Poste
 STR_THRS_NAME                             :[YST] THRS
 STR_VTX_NAME                              :[YST] VTX
+STR_YFX_NAME                              :[YST] YFX
 
 # wagon's name
 STR_YST_1F_PASS_NAME                      :[YST] 1층 공통객차
 STR_YST_2F_PASS_NAME                      :[YST] 2층 공통객차
 STR_TGV_Poste_wagon_NAME                  :[YST] TGV Poste 화차
+STR_YFXF_NAME                             :[YST] YFX용 화차
 
 STR_FLAT_1F_NAME                          :[YST] 평판화차
 STR_FLAT_2F_NAME                          :[YST] 평판화차 - 미국형
@@ -64,8 +66,6 @@ STR_MTR_CNR_NAME                          :[YST] MTR CNR 창춘 전동차
 STR_MTR_CRRC_NAME                         :[YST] MTR CRRC 쓰팡 전동차
 STR_MTR_HM_NAME                           :[YST] MTR 현대로템 - 미쓰비시 전동차
 STR_Tank_NAME                             :[YST] 유조차
-STR_YFX_NAME                              :[YST] YFX
-STR_YFXF_NAME                             :[YST] 화물객차
 STR_YTRO_100_NAME                         :[YST] YTRO 100
 STR_YTRO_200_NAME                         :[YST] YTRO 200
 STR_YTX_NAME                              :[YST] YTX
@@ -117,6 +117,7 @@ STR_REFIT_ADDITIONAL_UNABLE_YTX           :{BLACK}도색/모델 변경: {RED}불
 STR_REFIT_train_configuration_1F          :{BLACK}열차구성: {GREEN}1층 승객차량용
 STR_REFIT_train_configuration_2F          :{BLACK}열차구성: {GREEN}2층 승객차량용
 STR_REFIT_train_configuration_TGV_Poste   :{BLACK}열차구성: {GREEN}TGV Old Poste, TGV Pos Poste
+STR_REFIT_train_configuration_YFX_Freight :{BLACK}열차구성: {GREEN}YFX용 화차
 
 # Liveries
 STR_REFIT_LIVERY_CRH380A                  :(CRH380A)

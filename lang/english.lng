@@ -50,11 +50,13 @@ STR_TGV_Pos_NAME                          :[YST] TGV Pos
 STR_TGV_Pos_Poste_NAME                    :[YST] TGV Pos Poste
 STR_THRS_NAME                             :[YST] THRS
 STR_VTX_NAME                              :[YST] VTX
+STR_YFX_NAME                              :[YST] YFX
 
 # wagon's name
 STR_YST_1F_PASS_NAME                      :[YST] 1F Passenger Car
 STR_YST_2F_PASS_NAME                      :[YST] 2F Passenger Car
 STR_TGV_Poste_wagon_NAME                  :[YST] TGV Poste Freight Car
+STR_YFXF_NAME                             :[YST] YFX Freight Car
 
 STR_FLAT_1F_NAME                          :[YST] Flat Car
 STR_FLAT_2F_NAME                          :[YST] Flat Car - American
@@ -64,8 +66,6 @@ STR_MTR_CNR_NAME                          :[YST] MTR CNR Changchun Trian
 STR_MTR_CRRC_NAME                         :[YST] MTR CRRC Sipang Trian
 STR_MTR_HM_NAME                           :[YST] MTR Rotem Mitsubishi Trian
 STR_Tank_NAME		                      :[YST] Tank
-STR_YFX_NAME                              :[YST] YFX
-STR_YFXF_NAME                             :[YST] Freight car
 STR_YTRO_100_NAME  	                      :[YST] YTRO 100
 STR_YTRO_200_NAME  	                      :[YST] YTRO 200
 STR_YTX_NAME                              :[YST] YTX
@@ -122,6 +122,7 @@ STR_REFIT_ADDITIONAL_UNABLE_YTX           :{BLACK}Changing model/livery: {RED}Un
 STR_REFIT_train_configuration_1F          :{BLACK}train configuration: {GREEN}1F passenger vehicles
 STR_REFIT_train_configuration_2F          :{BLACK}train configuration: {GREEN}2F passenger vehicles
 STR_REFIT_train_configuration_TGV_Poste   :{BLACK}train configuration: {GREEN}TGV Old Poste, TGV Pos Poste
+STR_REFIT_train_configuration_YFX_Freight :{BLACK}train configuration: {GREEN}YFX Freight Car
 
 # Liveries
 STR_REFIT_LIVERY_CRH380A                  :(CRH380A)
