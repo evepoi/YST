@@ -52,6 +52,7 @@ STR_THRS_NAME                             :[YST] THRS
 STR_VTX_NAME                              :[YST] VTX
 STR_YFX_NAME                              :[YST] YFX
 STR_YTX_NAME                              :[YST] YTX
+STR_ZEFIRO380_NAME                        :[YST] ZEFIRO380
 
 # wagon's name
 STR_YST_1F_PASS_NAME                      :[YST] 1층 공통객차
@@ -69,7 +70,6 @@ STR_MTR_HM_NAME                           :[YST] MTR 현대로템 - 미쓰비시
 STR_Tank_NAME                             :[YST] 유조차
 STR_YTRO_100_NAME                         :[YST] YTRO 100
 STR_YTRO_200_NAME                         :[YST] YTRO 200
-STR_ZEFIRO380_NAME                        :[YST] ZEFIRO380
 
 # Parameters
 STR_PARAM_European_NAME                   :유럽형 열차 미사용

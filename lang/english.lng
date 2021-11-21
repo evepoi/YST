@@ -52,6 +52,7 @@ STR_THRS_NAME                             :[YST] THRS
 STR_VTX_NAME                              :[YST] VTX
 STR_YFX_NAME                              :[YST] YFX
 STR_YTX_NAME                              :[YST] YTX
+STR_ZEFIRO380_NAME                        :[YST] ZEFIRO380
 
 # wagon's name
 STR_YST_1F_PASS_NAME                      :[YST] 1F Passenger Car
@@ -69,7 +70,6 @@ STR_MTR_HM_NAME                           :[YST] MTR Rotem Mitsubishi Trian
 STR_Tank_NAME		                      :[YST] Tank
 STR_YTRO_100_NAME  	                      :[YST] YTRO 100
 STR_YTRO_200_NAME  	                      :[YST] YTRO 200
-STR_ZEFIRO380_NAME                        :[YST] ZEFIRO380
 
 # Parameters' value
 STR_PARAM_OPT_FACTOR_BY_1	              :x 1 (Default)

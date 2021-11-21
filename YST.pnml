@@ -69,6 +69,7 @@ if (Chinese) {
     disable_item(FEAT_TRAINS, 3008); //CRH380A
     disable_item(FEAT_TRAINS, 3010); //CRH380A_Test
     disable_item(FEAT_TRAINS, 3023); //NJ2
+    disable_item(FEAT_TRAINS, 3047); //ZEFIRO380
     }
 
 if (Japanese) {

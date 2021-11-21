@@ -48,6 +48,7 @@ sort(FEAT_TRAINS, [
     VTX,                  //3044
     YFX,                  //3045
     YTX,                  //3046
+    ZEFIRO380,            //3047
 
     MTR,                  //3026
     MTR_CNR,              //3027
@@ -55,8 +56,7 @@ sort(FEAT_TRAINS, [
     MTR_HM,               //3029
     YTRO_100,             //3043
     YTRO_200,             //3044
-    ZEFIRO380,            //3046
-
+    
     YST_1F_Passenger_Car, //2001
     YST_2F_Passenger_Car, //2002
     TGV_Poste_wagon,      //2003
