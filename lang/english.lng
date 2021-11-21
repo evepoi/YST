@@ -64,6 +64,7 @@ STR_MTR_CNR_Changchun_NAME                          :[YST] MTR CNR Changchun Tri
 STR_MTR_CRRC_NAME                                   :[YST] MTR CRRC Trian
 STR_MTR_Hyundai_Rotem_Mitsubishi_NAME               :[YST] MTR Hyundai Rotem Mitsubishi Trian
 STR_MTR_Hyundai_Rotem_R_NAME                        :[YST] MTR Hyundai Rotem R Type Train
+STR_MTR_IKK_SP_1900_NAME                            :[YST] MTR IKK SP 1900
 
 # wagon's name
 STR_YST_1F_PASS_NAME                                :[YST] 1F Passenger Car

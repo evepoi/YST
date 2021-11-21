@@ -59,6 +59,7 @@ sort(FEAT_TRAINS, [
     MTR_CRRC,                  //4005
     Hyundai_Rotem_Mitsubishi,  //4006
     Hyundai_Rotem_R,           //4007
+    IKK_SP_1900,               //4008
     YTRO_100,                  //3043
     YTRO_200,                  //3044
     

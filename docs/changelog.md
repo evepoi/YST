@@ -1,5 +1,6 @@
 2021.11.21 (코딩중)
 [추가]
+- MTR IKK SP 1900 전동차
 - MTR 현대로템 R형 전동차
 - MTR CRRC 창춘 전동차
 - MTR AC Cammall 전동차

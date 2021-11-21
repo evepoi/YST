@@ -64,6 +64,7 @@ STR_MTR_CNR_Changchun_NAME                          :[YST] MTR CNR 창춘 전동
 STR_MTR_CRRC_NAME                                   :[YST] MTR CRRC 전동차
 STR_MTR_Hyundai_Rotem_Mitsubishi_NAME               :[YST] MTR 현대로템 미쓰비시 전동차
 STR_MTR_Hyundai_Rotem_R_NAME                        :[YST] MTR 현대로템 R형 전동차
+STR_MTR_IKK_SP_1900_NAME                            :[YST] MTR IKK SP 1900
 
 # wagon's name
 STR_YST_1F_PASS_NAME                                :[YST] 1층 공통객차
