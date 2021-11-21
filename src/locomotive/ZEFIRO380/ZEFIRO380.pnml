@@ -45,7 +45,7 @@ item(FEAT_TRAINS, ZEFIRO380, 3047){
         running_cost_base:              RUNNING_COST_ELECTRIC;
         
         //Flags
-        misc_flags:                     bitmask(TRAIN_FLAG_FLIP, TRAIN_FLAG_MU,TRAIN_FLAG_AUTOREFIT);
+        misc_flags:                     bitmask(TRAIN_FLAG_MU, TRAIN_FLAG_AUTOREFIT);
         extra_weight_per_wagon:         35 ton;
         }
 
