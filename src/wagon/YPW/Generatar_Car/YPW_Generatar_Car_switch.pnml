@@ -1,0 +1,24 @@
+/*--------------------------------------------------------------------
+스위치
+--------------------------------------------------------------------*/
+switch(FEAT_TRAINS, SELF, sw_YPW_Generatar_cargo_subtype_text, cargo_subtype) {
+    1: return string(STR_REFIT_LIVERY_YPW_Generatar_Car_Green);    //녹색
+    return string(STR_REFIT_LIVERY_YPW_Generatar_Car_White);
+}
+
+switch(FEAT_TRAINS, SELF, sw_YPW_Generatar_wagon, cargo_subtype) {
+    1: set_YPW_Generatar_Car_Green_wagon;    //녹색
+    set_YPW_Generatar_Car_White_wagon;
+}
+
+switch(FEAT_TRAINS, SELF, sw_YPW_Generatar_wagon_attach, vehicle_type_id) {
+    BB15048:           return CB_RESULT_ATTACH_ALLOW;
+    GT26CW:            return CB_RESULT_ATTACH_ALLOW;
+    NJ2:               return CB_RESULT_ATTACH_ALLOW;
+    YPW_1F:            return CB_RESULT_ATTACH_ALLOW;
+    YPW_2F:            return CB_RESULT_ATTACH_ALLOW;
+    YPW_Bed_Car:       return CB_RESULT_ATTACH_ALLOW;
+    YPW_Luggage_Car:   return CB_RESULT_ATTACH_ALLOW;
+    YPW_Generatar_Car: return CB_RESULT_ATTACH_ALLOW;
+   return string(STR_ERROR_NO_ATTACH);
+}

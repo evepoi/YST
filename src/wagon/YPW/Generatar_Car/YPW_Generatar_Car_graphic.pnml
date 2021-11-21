@@ -1,0 +1,21 @@
+/*--------------------------------------------------------------------
+Graphics
+--------------------------------------------------------------------*/
+spriteset(set_YPW_Generatar_Car_purchase, "src\wagon\YPW\Generatar_Car\YPW_Generator_Car.png"){
+    tmpl_wagon_purchase(0, 0)
+}
+
+spriteset(set_YPW_Generatar_Car_White_wagon, "src\wagon\YPW\Generatar_Car\YPW_Generator_Car.png") {
+    wagon_1F_F(80, 0)
+}
+
+spriteset(set_YPW_Generatar_Car_Green_wagon, "src\wagon\YPW\Generatar_Car\YPW_Generator_Car.png") {
+    wagon_1F_F(80, 27)
+}
+
+/*--------------------------------------------------------------------
+구매정보
+--------------------------------------------------------------------*/
+switch(FEAT_TRAINS, SELF, sw_YPW_Generatar_Car_purchase, cargo_subtype) {
+    set_YPW_Generatar_Car_purchase;
+}

@@ -68,7 +68,8 @@ sort(FEAT_TRAINS, [
     YPW_1F,                    //2009
     YPW_2F,                    //2010
     YPW_Bed_Car,               //2011
-    YPW_Luggage_Car,           //2012
+    YPW_Generatar_Car,         //2012
+    YPW_Luggage_Car,           //2013
     TGV_Poste_wagon,           //2003
     YFXF,                      //2004
     FLAT_1F,                   //2005

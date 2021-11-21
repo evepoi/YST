@@ -76,6 +76,7 @@ STR_YPW_2F_NAME                                     :[YST] YPW 2F Passenger Car
 STR_YPW_Bed_Car_NAME                                :[YST] YPW Bed Car
 STR_TGV_Poste_wagon_NAME                            :[YST] TGV Poste Freight Car
 STR_YFXF_NAME                                       :[YST] YFX Freight Car
+STR_YPW_Generatar_Car_NAME                          :[YST] YPW Generatar Car
 STR_YPW_Luggage_Car_NAME                            :[YST] YPW Luggage Car
 STR_FLAT_1F_NAME                                    :[YST] Flat Car
 STR_FLAT_2F_NAME                                    :[YST] Flat Car - American
@@ -216,6 +217,8 @@ STR_REFIT_LIVERY_YPW_1F_White                       :(White Color Car)
 STR_REFIT_LIVERY_YPW_3nd_Car                        :(3nd Car)
 STR_REFIT_LIVERY_YPW_2nd_Car                        :(2nd Car)
 STR_REFIT_LIVERY_YPW_1nd_Car                        :(1nd Car)
+STR_REFIT_LIVERY_YPW_Generatar_Car_White            :(Generatar White Car)
+STR_REFIT_LIVERY_YPW_Generatar_Car_Green            :(Generatar Green Car)
 STR_REFIT_LIVERY_YPW_Luggage_Car_Red                :(Luggage Red Car)
 STR_REFIT_LIVERY_YPW_Luggage_Car_Green              :(Luggage Green Car)
 STR_REFIT_LIVERY_YPW_Luggage_Car_WhiteA             :(Luggage White A Car)
