@@ -52,7 +52,6 @@ item(FEAT_TRAINS, ZEFIRO380, 3047){
 	graphics {
         default:                        sw_ZEFIRO380_engine;
         purchase:                       sw_ZEFIRO380_purchase;
-        speed:                          sw_ZEFIRO380_speed;
         loading_speed:                  25;
         cost_factor:                    10;
         running_cost_factor:            150;
