@@ -6,7 +6,7 @@ spriteset(set_ZEFIRO380_purchase, "src\locomotive\ZEFIRO380\ZEFIRO380.png"){
 }
 
 /*--------------------------------------------------------------------
-1. ZEFIRO380
+ZEFIRO380
 --------------------------------------------------------------------*/
 spriteset(set_ZEFIRO380H_purchase, "src\locomotive\ZEFIRO380\ZEFIRO380.png"){
     tmpl_purchase_for_dualhead(0, 135)
