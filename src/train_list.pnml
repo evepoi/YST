@@ -55,6 +55,7 @@
 #include "locomotive/YFX/YFX.pnml"
 #include "locomotive/YTX/YTX.pnml"
 #include "locomotive/ZEFIRO380/ZEFIRO380.pnml"
+#include "locomotive/ZEFIRO380_Cool/ZEFIRO380_Cool.pnml"
 
 //Metro
 #include "metro/YTRO/YTRO_100.pnml"

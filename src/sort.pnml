@@ -49,6 +49,7 @@ sort(FEAT_TRAINS, [
     YFX,                  //3045
     YTX,                  //3046
     ZEFIRO380,            //3047
+    ZEFIRO380_Cool,       //3048
 
     MTR,                  //3026
     MTR_CNR,              //3027
