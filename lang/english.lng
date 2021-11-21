@@ -57,6 +57,7 @@ STR_ZEFIRO380_Black_NAME                  :[YST] ZEFIRO380 Black
 STR_ZEFIRO380_Cool_NAME                   :[YST] ZEFIRO380 Cool
 
 # Metro's name
+STR_MTR_AC_Cammall_NAME                   :[YST] MTR Cammall AC Train
 STR_MTR_DC_Cammall_NAME                   :[YST] MTR Cammall DC Train
 
 # wagon's name

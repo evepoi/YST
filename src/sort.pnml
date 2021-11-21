@@ -52,6 +52,7 @@ sort(FEAT_TRAINS, [
     ZEFIRO380_Black,      //3048
     ZEFIRO380_Cool,       //3049
 
+    MTR_AC_Cammall,       //4001
     MTR_DC_Cammall,       //4002
     MTR_CNR,              //3027
     MTR_CRRC,             //3028
