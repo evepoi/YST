@@ -80,3 +80,7 @@ if (Japanese) {
     disable_item(FEAT_TRAINS, 3031); //Shinkansen_E7
     disable_item(FEAT_TRAINS, 3032); //Shinkansen_N700
     }
+
+if (Taiwanese) {
+    disable_item(FEAT_TRAINS, 3043); //THRS
+    }

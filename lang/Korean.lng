@@ -48,6 +48,7 @@ STR_TGV_OLD_Poste_NAME                    :[YST] TGV Old Poste
 STR_TGV_Ouigo_NAME                        :[YST] TGV Ouigo
 STR_TGV_Pos_NAME                          :[YST] TGV Pos
 STR_TGV_Pos_Poste_NAME                    :[YST] TGV Pos Poste
+STR_THRS_NAME                             :[YST] THRS
 
 # wagon's name
 STR_YST_1F_PASS_NAME                      :[YST] 1층 공통객차
@@ -77,6 +78,8 @@ STR_PARAM_Chinese_NAME                    :중국형 열차 미사용
 STR_PARAM_Chinese_DESC                    :중국형 열차를 사용하지 않습니다. (기본:사용)
 STR_PARAM_Japanese_NAME                   :일본형 열차 미사용
 STR_PARAM_Japanese_DESC                   :일본형 열차를 사용하지 않습니다. (기본:사용)
+STR_PARAM_Taiwanese_NAME                  :대만형 열차 미사용
+STR_PARAM_Taiwanese_DESC                  :대만형 열차를 사용하지 않습니다. (기본:사용)
 STR_PARAM_CARGO_CAPACITY_NAME             :화물수송량
 STR_PARAM_CARGO_CAPACITY_DESC             :열차 화물 수송량 변경 가능
 

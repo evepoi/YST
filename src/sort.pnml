@@ -44,6 +44,7 @@ sort(FEAT_TRAINS, [
     TGV_Ouigo,            //3040
     TGV_Pos,              //3041
     TGV_Pos_Poste,        //3042
+    THRS,                 //3043
 
     MTR,                  //3026
     MTR_CNR,              //3027

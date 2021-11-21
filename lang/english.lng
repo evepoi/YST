@@ -48,6 +48,7 @@ STR_TGV_OLD_Poste_NAME                    :[YST] TGV Old Poste
 STR_TGV_Ouigo_NAME                        :[YST] TGV Ouigo
 STR_TGV_Pos_NAME                          :[YST] TGV Pos
 STR_TGV_Pos_Poste_NAME                    :[YST] TGV Pos Poste
+STR_THRS_NAME                             :[YST] THRS
 
 # wagon's name
 STR_YST_1F_PASS_NAME                      :[YST] 1F Passenger Car
@@ -82,6 +83,8 @@ STR_PARAM_Chinese_NAME                    :Chinese trains not used
 STR_PARAM_Chinese_DESC                    :We do not use Chinese-style trains. (Default: Use)
 STR_PARAM_Japanese_NAME                   :Japanese trains not used
 STR_PARAM_Japanese_DESC                   :We do not use Japanese-style trains. (Default: Use)
+STR_PARAM_Taiwanese_NAME                  :Taiwanese trains not used
+STR_PARAM_Taiwanese_DESC                  :We do not use Taiwanese-style trains. (Default: Use)
 STR_PARAM_CARGO_CAPACITY_NAME             :Cargo capacity
 STR_PARAM_CARGO_CAPACITY_DESC             :Cargo capacity of trains
 

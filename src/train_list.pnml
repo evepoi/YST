@@ -50,6 +50,7 @@
 #include "locomotive/TGV_Ouigo/TGV_Ouigo.pnml"
 #include "locomotive/TGV_Pos/TGV_Pos.pnml"
 #include "locomotive/TGV_Pos_Poste/TGV_Pos_Poste.pnml"
+#include "locomotive/THRS/THRS.pnml"
 #include "locomotive/VTX/VTX.pnml"
 #include "locomotive/YFX/YFX.pnml"
 #include "locomotive/YTX/YTX.pnml"
