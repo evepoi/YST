@@ -10,7 +10,7 @@
 /*--------------------------------------------------------------------
 화물차량 정보
 --------------------------------------------------------------------*/
-item(FEAT_TRAINS, FLAT_1F){
+item(FEAT_TRAINS, FLAT_1F, 2005){
     property {
         name:                           string(STR_FLAT_1F_NAME);
         climates_available:             ALL_CLIMATES;
