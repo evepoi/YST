@@ -21,7 +21,7 @@
 [자료활용]
   그동안 많은 발전을 주신 분들께 진심으로 감사올립니다. 이미 자료를 업로드하여 공개된 자료라면, 얼마든지 수정 수 있으므로, 해당 제작자의 공지는 하지 않겠습니다.
 
-[YST 2021.11.21](https://github.com/evepoi/YST.grf/releases/tag/2021.11.22)
+[YST 2021.11.21](https://github.com/evepoi/YST.grf/releases/tag/2021.11.22)<br>
 [추가]
 - YPW 1층, 2층, 침대차, 수화물차, 발전차
 - MTR IKK SP 1900 전동차
