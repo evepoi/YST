@@ -3,7 +3,7 @@
    비영리조건이며, 스프라이트를 제공한 뒤엔 얼마든지 수정할 수 있습니다.
 
 [컴퍼일]
-  makefile, nml[https://github.com/OpenTTD/nml] 등의 최신버전을 사용합니다.
+  makefile, [nml](https://github.com/OpenTTD/nml) 등의 최신버전을 사용합니다.
 
 [주의사항]
   코딩으로 인해 불가피하게 게임내 열차편성이 꼬임이 발생할 수 있습니다.
