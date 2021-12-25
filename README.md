@@ -29,3 +29,9 @@ YST는 다소 까다로운 템플릿을 보유하고 보다 편한 코딩방식�
 [YST 2021.11.27](https://github.com/evepoi/YST.grf/releases/tag/2021.11.27)<br>
 - 운전차량 도색미변경 차량 : (E300, Glory600, Talgo250, TGV-Duplex, TGV Old Duplex, TGV Old Pos, TGV Pos) 도색가능토록 수정. / 운전차량만 있는 차량이므로, 수송량이 없어야 함. 구매목록에서는 수송량이 1로 표시되지만, 구매후 수송량은 없도록 설정되어 있음. 도색이 존재하는 경우엔 코드상 수송량이 1이상 되어야하는 단점이 있어야 하기에 구매목록에 1의 표시는 게임상 코드이므로 수정할 수는 없음. 타 GRF도 동일하게 적용하고 있음. ([#26](https://github.com/evepoi/YST.grf/issues/26))
 </details>
+
+## OpenTTD JGR 민은월드 세이브 보기
+<details markdown="1">
+<summary>내용보기</summary>
+- 곧 링크가 적용됩니다.
+</details>
