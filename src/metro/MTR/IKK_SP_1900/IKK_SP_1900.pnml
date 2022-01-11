@@ -29,7 +29,7 @@ item(FEAT_TRAINS, IKK_SP_1900, 4008){
         
         //Model
         model_life:                     VEHICLE_NEVER_EXPIRES;
-        vehicle_life:                   255;
+        vehicle_life:                   30;
         retire_early:                   0;
         reliability_decay:              0;
         

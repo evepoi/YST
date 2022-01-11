@@ -20,7 +20,7 @@ item(FEAT_TRAINS, GT26CW, 3017){
         sprite_id:                      SPRITE_ID_NEW_TRAIN;
         
         //spec
-        speed:                          180km/h;
+        speed:                          181km/h;
         power:                          10000 kW;
         weight:                         80 ton;
         tractive_effort_coefficient:    0.3;
@@ -28,7 +28,7 @@ item(FEAT_TRAINS, GT26CW, 3017){
         
         //Model
         model_life:                     VEHICLE_NEVER_EXPIRES;
-        vehicle_life:                   255;
+        vehicle_life:                   30;
         retire_early:                   0;
         reliability_decay:              0;
         
