@@ -149,7 +149,7 @@ STR_REFIT_LIVERY_CR600G                             :(Gold Color)
 STR_REFIT_LIVERY_E300                               :(Eurostar Yellow Color)
 STR_REFIT_LIVERY_E300B                              :(Eurostar Blue Color)
 STR_REFIT_LIVERY_EMU250                             :(EMU-250)
-STR_REFIT_LIVERY_EMU300                             :(EMU-300) 331km/h
+STR_REFIT_LIVERY_EMU362                             :(EMU-362) 362km/h
 STR_REFIT_LIVERY_Glory600A                          :(Glory 600 A Color)
 STR_REFIT_LIVERY_Glory600B                          :(Glory 600 B Color)
 STR_REFIT_LIVERY_Glory600C                          :(Glory 600 C Color)
