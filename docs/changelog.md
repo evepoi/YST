@@ -1,4 +1,13 @@
-2021.11.21 (최종 공개)
+2022.1.11 (최종 공개)
+[변경]
+- 열차이름 변경 (EMU-300)->(EMU-362)
+- 속도 증속 (AGV, AVE, AVE Velaro, CRH3, E300, E320, EMU-362, ICE-SP, ICE3, KTX-N, 신칸센 500계, 신칸센 500계 SP, 신칸센 E5,E6,E7, TGV Duplex, TGV Old, TGV Old Duplex, TGV Old Pos, TGV Old Poste, TGV Ouigo, TGV Pos, TGV Pos Poste) 331-> 362km/h 증속설정
+
+2022.1.07
+[변경]
+- 차량 연령 255-> 30 하향 조정
+
+2021.11.21
 [추가]
 - YPW 1층, 2층, 침대차, 수화물차, 발전차
 - MTR IKK SP 1900 전동차
