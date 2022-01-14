@@ -1,0 +1,30 @@
+/*--------------------------------------------------------------------
+스위치
+--------------------------------------------------------------------*/
+switch(FEAT_TRAINS, SELF, sw_EMU362_engine, position_in_consist_from_end == 0 && num_vehs_in_consist > 1){
+    1: set_EMU362_engineT;
+    set_EMU362_engineH;
+}
+
+switch(FEAT_TRAINS, SELF, sw_EMU362_wagon_middle, (position_in_consist)) {
+    1: set_EMU362_wagon_r;
+    set_EMU362_wagon;
+}
+
+switch(FEAT_TRAINS, SELF, sw_EMU362_wagon_rear, [STORE_TEMP(1, 0x10F), var[0x61, 0, 0x0000FFFF, 0xC6]]){
+    EMU362: set_EMU362_wagon_end;
+    sw_EMU362_wagon_middle;
+}
+
+switch(FEAT_TRAINS, SELF, sw_EMU362_wagon, [STORE_TEMP(-1, 0x10F), var[0x61, 0, 0x0000FFFF, 0xC6]]) {
+    EMU362: set_EMU362_wagon_start;
+    sw_EMU362_wagon_rear;
+}
+
+switch(FEAT_TRAINS, SELF, sw_EMU362_wagon_attach, vehicle_type_id) {
+    EMU180:                 return CB_RESULT_ATTACH_ALLOW;
+    EMU260:                 return CB_RESULT_ATTACH_ALLOW;
+    EMU362:                 return CB_RESULT_ATTACH_ALLOW;
+    YST_1F_Passenger_Car:   return CB_RESULT_ATTACH_ALLOW;
+    return string(STR_ERROR_NO_ATTACH);
+}
