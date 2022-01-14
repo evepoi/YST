@@ -22,8 +22,8 @@ item(FEAT_TRAINS, CRH380A, 3008){
         
         //spec
         speed:                          380km/h;
-        power:                          10000 kW;
-        weight:                         80 ton;
+        power:                          8000 kW;
+        weight:                         40 ton;
         tractive_effort_coefficient:    0.3;
         air_drag_coefficient:           0.01;
         

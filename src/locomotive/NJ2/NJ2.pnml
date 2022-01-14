@@ -21,8 +21,8 @@ item(FEAT_TRAINS, NJ2, 3023){
         
         //spec
         speed:                          181km/h;
-        power:                          10000 kW;
-        weight:                         80 ton;
+        power:                          4000 kW;
+        weight:                         40 ton;
         tractive_effort_coefficient:    0.3;
         air_drag_coefficient:           0.01;
         
