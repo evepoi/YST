@@ -1,7 +1,24 @@
-2022.1.11 (최종 공개)
+2022.1.15 (최종 공개)
+[추가]
+- EMU180 (도입:2023/힘 4,000kw/무게 운전 40T, 객차 15T / 운행속도 181km/h / 최소 4량이상 편성) / 도색 : 빨강, 녹색 2종
+- EMU362 (기존 EMU에서 별도 분리 목적이며, 기존 스팩과 동일함) / 도색 : 단일도색
+
+[변경]
+- 열차이름 EMU->EMU260
+- EMU260 (구EMU) 도색내 EMU362 - 362km/h => EMU362 다음번 업데이트시 제거예정
+
+[수정]
+- 무게, 힘 미수정본 수정.
+
+[주의사항]
+- EMU362차량은 기존에 도색변경으로 사용하신던 분들이 계실것이므로, 이번 업데이트에서 혼용기간의 개념으로 신규 EMU362차량으로 신규 운행을 하길 권장드립니다. 차량이미지는 동일하며, 다음번 업데이트에서 EMU260도색내 EMU362는 제거될 예정임.
+- EMU180은 EMU150으로 공개 운영될 예정이나, 게임요소를 추가하여 EMU180으로 적용함. 향후 EMU라는 이름의 별도 이름이 필요할 것으로 보임.
+
+2022.1.11
 [변경]
 - 열차이름 변경 (EMU-300)->(EMU-362)
-- 속도 증속 (AGV, AVE, AVE Velaro, CRH3, E300, E320, EMU-362, ICE-SP, ICE3, KTX-N, 신칸센 500계, 신칸센 500계 SP, 신칸센 E5,E6,E7, TGV Duplex, TGV Old, TGV Old Duplex, TGV Old Pos, TGV Old Poste, TGV Ouigo, TGV Pos, TGV Pos Poste) 331-> 362km/h 증속설정
+- 속도 증속 (AGV, AVE, AVE Velaro, CRH3, E300, E320, EMU-362, ICE-SP, ICE3, KTX-N, 신칸센 500계, 신칸센 500계 SP, 신칸센 E5,E6,E7, TGV Duplex, 
+TGV Old, TGV Old Duplex, TGV Old Pos, TGV Old Poste, TGV Ouigo, TGV Pos, TGV Pos Poste) 331-> 362km/h 증속설정
 
 2022.1.07
 [변경]
