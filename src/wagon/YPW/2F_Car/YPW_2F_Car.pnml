@@ -20,7 +20,7 @@ item(FEAT_TRAINS, YPW_2F, 2010){
         
         //spec
         power:                          0 kW;
-        weight:                         40 ton;
+        weight:                         30 ton;
         tractive_effort_coefficient:    0.3;
 
         //Model

@@ -20,7 +20,7 @@ item(FEAT_TRAINS, FLAT_2F, 2006){
         
         //spec
         power:                          0 kW;
-        weight:                         80 ton;
+        weight:                         30 ton;
         tractive_effort_coefficient:    0.3;
         
         //Cargo
