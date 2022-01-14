@@ -23,7 +23,7 @@ item(FEAT_TRAINS, Dr_Yellow, 3012){
         //spec
         speed:                          600km/h;
         power:                          10000 kW;
-        weight:                         80 ton;
+        weight:                         40 ton;
         tractive_effort_coefficient:    0.3;
         air_drag_coefficient:           0.01;
         
