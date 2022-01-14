@@ -1,0 +1,75 @@
+/*--------------------------------------------------------------------
+Graphics
+--------------------------------------------------------------------*/
+spriteset(set_EMU260_purchase, "src\locomotive\EMU\EMU260\EMU260.png"){
+	tmpl_purchase(0, 0)
+}
+
+/*--------------------------------------------------------------------
+1. EMU260
+--------------------------------------------------------------------*/
+spriteset(set_EMU260H_purchase, "src\locomotive\EMU\EMU260\EMU260.png"){
+	tmpl_purchase_for_dualhead(0, 108)
+}
+
+spriteset(set_EMU260_engineH, "src\locomotive\EMU\EMU260\EMU260.png"){
+	engine(80, 0)
+}
+
+spriteset(set_EMU260_wagon_start, "src\locomotive\EMU\EMU260\EMU260.png"){
+	wagon_start(80, 27)
+}
+
+spriteset(set_EMU260_wagon, "src\locomotive\EMU\EMU260\EMU260.png") {
+	wagon_1F(80, 54)
+}
+
+spriteset(set_EMU260_wagon_r, "src\locomotive\EMU\EMU260\EMU260.png") {
+	wagon_1F_r(80, 54)
+}
+
+spriteset(set_EMU260_wagon_end, "src\locomotive\EMU\EMU260\EMU260.png"){
+	wagon_start(80, 81)
+}
+
+spriteset(set_EMU260_engineT, "src\locomotive\EMU\EMU260\EMU260.png"){
+	engine_r(80, 108)
+}
+
+/*--------------------------------------------------------------------
+2. EMU-362
+--------------------------------------------------------------------*/
+spriteset(set_EMU_362H_purchase, "src\locomotive\EMU\EMU362\EMU362.png"){
+	tmpl_purchase_for_dualhead(0, 108)
+}
+
+spriteset(set_EMU_362_engineH, "src\locomotive\EMU\EMU362\EMU362.png"){
+	engine(80, 0)
+}
+
+spriteset(set_EMU_362_wagon_start, "src\locomotive\EMU\EMU362\EMU362.png"){
+	wagon_start(80, 27)
+}
+
+spriteset(set_EMU_362_wagon, "src\locomotive\EMU\EMU362\EMU362.png") {
+	wagon_1F(80, 54)
+}
+
+spriteset(set_EMU_362_wagon_r, "src\locomotive\EMU\EMU362\EMU362.png") {
+	wagon_1F_r(80, 54)
+}
+
+spriteset(set_EMU_362_wagon_end, "src\locomotive\EMU\EMU362\EMU362.png"){
+	wagon_start(80, 81)
+}
+
+spriteset(set_EMU_362_engineT, "src\locomotive\EMU\EMU362\EMU362.png"){
+	engine_r(80, 108)
+}
+
+/*--------------------------------------------------------------------
+구매정보
+--------------------------------------------------------------------*/
+switch(FEAT_TRAINS, SELF, sw_EMU260_purchase, cargo_subtype) {
+	set_EMU260_purchase;
+}
