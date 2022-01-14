@@ -20,7 +20,7 @@ item(FEAT_TRAINS, FLAT_TANK, 2007){
         
         //spec
         power:                          0 kW;
-        weight:                         40 ton;
+        weight:                         15 ton;
         tractive_effort_coefficient:    0.3;
         
         //Cargo

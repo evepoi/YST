@@ -21,7 +21,7 @@ item(FEAT_TRAINS, TGV_Poste_wagon, 2003){
         
         //spec
         power:                          0;
-        weight:                         80 ton;
+        weight:                         15 ton;
         tractive_effort_coefficient:    0.3;
         air_drag_coefficient:           0.01;
         

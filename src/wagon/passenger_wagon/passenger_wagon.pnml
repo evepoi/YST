@@ -4,6 +4,12 @@ switch(FEAT_TRAINS, SELF, sw_YST_train_start_stop_3, num_vehs_in_consist >= 3) {
     return string(STR_ERROR_NOT_ENOUGH_LENGTH3);
 }
 
+//최소 4량이상 편성
+switch(FEAT_TRAINS, SELF, sw_YST_train_start_stop_4, num_vehs_in_consist >= 4) {
+    1: return CB_RESULT_NO_TEXT;
+    return string(STR_ERROR_NOT_ENOUGH_LENGTH4);
+}
+
 //최소 6량이상 편성
 switch(FEAT_TRAINS, SELF, sw_YST_train_start_stop_6, num_vehs_in_consist >= 6) {
     1: return CB_RESULT_NO_TEXT;
@@ -79,7 +85,7 @@ item (FEAT_TRAINS, YST_1F_Passenger_Car, 2001){
 
         //spec
         power:                          0 kW;
-        weight:                         40 ton;
+        weight:                         15 ton;
         tractive_effort_coefficient:    0.3;
 
         //Model
@@ -126,7 +132,7 @@ item (FEAT_TRAINS, YST_2F_Passenger_Car, 2002){
 
         //spec
         power:                          0 kW;
-        weight:                         40 ton;
+        weight:                         30 ton;
         tractive_effort_coefficient:    0.3;
 
         //Model
