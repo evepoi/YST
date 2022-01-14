@@ -20,7 +20,9 @@ STR_CRV600_NAME                                     :[YST] CRV600
 STR_Dr_Yellow_NAME                                  :[YST] Dr. Yellow
 STR_E300_NAME                                       :[YST] E300
 STR_E320_NAME                                       :[YST] E320
-STR_EMU_NAME                                        :[YST] EMU
+STR_EMU180_NAME                                     :[YST] EMU180
+STR_EMU260_NAME                                     :[YST] EMU260
+STR_EMU362_NAME                                     :[YST] EMU362
 STR_Glory_600_NAME                                  :[YST] Glory 600
 STR_GT26CW_NAME                                     :[YST] GT26CW
 STR_HEMU_430_NAME                                   :[YST] HEMU-430
@@ -106,8 +108,9 @@ STR_PARAM_CARGO_CAPACITY_DESC                       :Cargo capacity of trains
 STR_REFIT_ADDITIONAL                                :{BLACK}Changing model/livery: {GREEN}Available
 STR_REFIT_ADDITIONAL_ABLE_UNADDTRAIN                :{BLACK}Changing model/livery: {GREEN}Available {} {BLACK}Combined train: {RED}UnavailableSTR_REFIT_ADDITIONAL_ABLE_AGV           :{BLACK}Changing model/livery: {GREEN}Available {} {BLACK}Combined train: {RED}Unavailable
 STR_REFIT_ADDITIONAL_ABLE_CRH380A                   :{BLACK}Changing model/livery: {GREEN}Available {} {BLACK}Combined train: {GREEN}CRH380A, CRH380A Cool, CRH380A Red
-STR_REFIT_ADDITIONAL_ABLE_CR600                     :{BLACK}Changing model/livery: {GREEN}Available {} {BLACK}Combined train : {GREEN}CR600
-STR_REFIT_ADDITIONAL_ABLE_EMU                       :{BLACK}Changing model/livery: {GREEN}Available {} {BLACK}Combined train: {GREEN}EMU-250, EUM-300
+STR_REFIT_ADDITIONAL_ABLE_CR600                     :{BLACK}Changing model/livery: {GREEN}Available {} {BLACK}Combined train: {GREEN}CR600
+STR_REFIT_ADDITIONAL_ABLE_EMU180                    :{BLACK}Changing model/livery: {GREEN}Available {} {BLACK}Combined train: {GREEN}EMU-260, EUM-362
+STR_REFIT_ADDITIONAL_ABLE_EMU260                    :{BLACK}Changing model/livery: {GREEN}Available {} {BLACK}Combined train: {GREEN}EMU-260, EUM-362
 STR_REFIT_ADDITIONAL_ABLE_Glory600                  :{BLACK}Changing model/livery: {GREEN}Available {} {BLACK}Combined train: {GREEN}Glory600
 STR_REFIT_ADDITIONAL_ABLE_HMX                       :{BLACK}Changing model/livery: {GREEN}Available {} {BLACK}Combined train: {GREEN}HMX
 STR_REFIT_ADDITIONAL_ABLE_E6                        :{BLACK}Changing model/livery: {GREEN}Available {} {BLACK}Combined train: {GREEN}E6
@@ -125,6 +128,7 @@ STR_REFIT_ADDITIONAL_UNABLE_AVE                     :{BLACK}Changing model/liver
 STR_REFIT_ADDITIONAL_UNABLE_AVE_VElaro              :{BLACK}Changing model/livery: {RED}Unavailable {} {BLACK}Combined train: {GREEN}AVE Velaro
 STR_REFIT_ADDITIONAL_UNABLE_CRH1                    :{BLACK}Changing model/livery: {RED}Unavailable {} {BLACK}Combined train: {GREEN}CRH1
 STR_REFIT_ADDITIONAL_UNABLE_CRH3                    :{BLACK}Changing model/livery: {RED}Unavailable {} {BLACK}Combined train: {GREEN}CRH3
+STR_REFIT_ADDITIONAL_UNABLE_EMU                     :{BLACK}Changing model/livery: {RED}Unavailable {} {BLACK}Combined train: {GREEN}EMU-260, EUM-362
 STR_REFIT_ADDITIONAL_UNABLE_HEMU                    :{BLACK}Changing model/livery: {RED}Unavailable {} {BLACK}Combined train: {GREEN}HEMU-430
 STR_REFIT_ADDITIONAL_UNABLE_ICE3                    :{BLACK}Changing model/livery: {RED}Unavailable {} {BLACK}Combined train: {GREEN}ICE3
 STR_REFIT_ADDITIONAL_UNABLE_KTX_N                   :{BLACK}Changing model/livery: {RED}Unavailable {} {BLACK}Combined train: {GREEN}KTX-N
@@ -148,8 +152,10 @@ STR_REFIT_LIVERY_CR600R                             :(Red Color)
 STR_REFIT_LIVERY_CR600G                             :(Gold Color)
 STR_REFIT_LIVERY_E300                               :(Eurostar Yellow Color)
 STR_REFIT_LIVERY_E300B                              :(Eurostar Blue Color)
-STR_REFIT_LIVERY_EMU250                             :(EMU-250)
-STR_REFIT_LIVERY_EMU362                             :(EMU-362) 362km/h
+STR_REFIT_LIVERY_EMU180R                            :(EMU-180 Red Color)
+STR_REFIT_LIVERY_EMU180G                            :(EMU-180 Green Color)
+STR_REFIT_LIVERY_EMU260                             :(EMU-260)
+STR_REFIT_LIVERY_EMU362                             :(EMU-362) To be removed in the next update
 STR_REFIT_LIVERY_Glory600A                          :(Glory 600 A Color)
 STR_REFIT_LIVERY_Glory600B                          :(Glory 600 B Color)
 STR_REFIT_LIVERY_Glory600C                          :(Glory 600 C Color)
@@ -236,4 +242,5 @@ STR_REFIT_LIVERY_TANKC                              :(Tank C Color)
 # Errors
 STR_ERROR_NO_ATTACH                                 :You can't attach this car here
 STR_ERROR_NOT_ENOUGH_LENGTH3                        :It's too short. It should be equal or more than 3 cars at least.
+STR_ERROR_NOT_ENOUGH_LENGTH4                        :It's too short. It should be equal or more than 4 cars at least.
 STR_ERROR_NOT_ENOUGH_LENGTH6                        :It's too short. It should be equal or more than 6 cars at least.

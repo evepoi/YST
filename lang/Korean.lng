@@ -20,7 +20,9 @@ STR_CRV600_NAME                                     :[YST] CRV600
 STR_Dr_Yellow_NAME                                  :[YST] Dr. Yellow
 STR_E300_NAME                                       :[YST] E300
 STR_E320_NAME                                       :[YST] E320
-STR_EMU_NAME                                        :[YST] EMU
+STR_EMU180_NAME                                     :[YST] EMU180
+STR_EMU260_NAME                                     :[YST] EMU260
+STR_EMU362_NAME                                     :[YST] EMU362
 STR_Glory_600_NAME                                  :[YST] Glory 600
 STR_GT26CW_NAME                                     :[YST] GT26CW
 STR_HEMU_430_NAME                                   :[YST] HEMU-430
@@ -102,7 +104,8 @@ STR_REFIT_ADDITIONAL                                :{BLACK}도색/모델 변경
 STR_REFIT_ADDITIONAL_ABLE_UNADDTRAIN                :{BLACK}도색/모델 변경: {GREEN}가능 {}{BLACK}복합열차구성 : {RED}불가능
 STR_REFIT_ADDITIONAL_ABLE_CRH380A                   :{BLACK}도색/모델 변경: {GREEN}가능 {}{BLACK}복합가능열차{}{GREEN}CRH380A, CRH380A Cool, CRH380A Red
 STR_REFIT_ADDITIONAL_ABLE_CR600                     :{BLACK}도색/모델 변경: {GREEN}가능 {}{BLACK}복합가능열차{}{GREEN}CR600
-STR_REFIT_ADDITIONAL_ABLE_EMU                       :{BLACK}도색/모델 변경: {GREEN}가능 {}{BLACK}복합가능열차{}{GREEN}EMU-250, EUM-300
+STR_REFIT_ADDITIONAL_ABLE_EMU180                    :{BLACK}도색/모델 변경: {GREEN}가능 {}{BLACK}복합가능열차{}{GREEN}EMU180, EMU260, EUM362
+STR_REFIT_ADDITIONAL_ABLE_EMU260                    :{BLACK}도색/모델 변경: {GREEN}가능 {}{BLACK}복합가능열차{}{GREEN}EMU180, EMU260, EUM362
 STR_REFIT_ADDITIONAL_ABLE_Glory600                  :{BLACK}도색/모델 변경: {GREEN}가능 {}{BLACK}복합가능열차{}{GREEN}Glory 600
 STR_REFIT_ADDITIONAL_ABLE_HMX                       :{BLACK}도색/모델 변경: {GREEN}가능 {}{BLACK}복합가능열차{}{GREEN}HMX
 STR_REFIT_ADDITIONAL_ABLE_E6                        :{BLACK}도색/모델 변경: {GREEN}가능 {}{BLACK}복합가능열차{}{GREEN}E6
@@ -120,6 +123,7 @@ STR_REFIT_ADDITIONAL_UNABLE_AVE                     :{BLACK}도색/모델 변경
 STR_REFIT_ADDITIONAL_UNABLE_AVE_VElaro              :{BLACK}도색/모델 변경: {RED}불가능 {}{BLACK}복합가능열차{}{GREEN}AVE Velaro
 STR_REFIT_ADDITIONAL_UNABLE_CRH1                    :{BLACK}도색/모델 변경: {RED}불가능 {}{BLACK}복합가능열차{}{GREEN}CRH1
 STR_REFIT_ADDITIONAL_UNABLE_CRH3                    :{BLACK}도색/모델 변경: {RED}불가능 {}{BLACK}복합가능열차{}{GREEN}CRH3
+STR_REFIT_ADDITIONAL_UNABLE_EMU                     :{BLACK}도색/모델 변경: {RED}불가능 {}{BLACK}복합가능열차{}{GREEN}EMU180, EMU260, EUM362
 STR_REFIT_ADDITIONAL_UNABLE_HEMU                    :{BLACK}도색/모델 변경: {RED}불가능 {}{BLACK}복합가능열차{}{GREEN}HEMU-430
 STR_REFIT_ADDITIONAL_UNABLE_ICE3                    :{BLACK}도색/모델 변경: {RED}불가능 {}{BLACK}복합가능열차{}{GREEN}ICE3
 STR_REFIT_ADDITIONAL_UNABLE_KTX_N                   :{BLACK}도색/모델 변경: {RED}불가능 {}{BLACK}복합가능열차{}{GREEN}KTX-N
@@ -143,8 +147,10 @@ STR_REFIT_LIVERY_CR600R                             :(빨강 도색)
 STR_REFIT_LIVERY_CR600G                             :(금색 도색)
 STR_REFIT_LIVERY_E300                               :(유로스타 노랑도색)
 STR_REFIT_LIVERY_E300B                              :(유로스타 파랑도색)
-STR_REFIT_LIVERY_EMU250                             :(EMU-250)
-STR_REFIT_LIVERY_EMU362                             :(EMU-362) 362km/h
+STR_REFIT_LIVERY_EMU180R                            :(EMU-180 빨강도색)
+STR_REFIT_LIVERY_EMU180G                            :(EMU-180 녹색도색)
+STR_REFIT_LIVERY_EMU260                             :(EMU-260)
+STR_REFIT_LIVERY_EMU362                             :(EMU-362) - 다음 업데이트시 제거예정
 STR_REFIT_LIVERY_Glory600A                          :(Glory 600 A도색)
 STR_REFIT_LIVERY_Glory600B                          :(Glory 600 B도색)
 STR_REFIT_LIVERY_Glory600C                          :(Glory 600 C도색)
@@ -231,4 +237,5 @@ STR_REFIT_LIVERY_TANKC                              :(유조차 C도색)
 # Errors
 STR_ERROR_NO_ATTACH                                 :여기에 이 차량을 붙일 수 없습니다
 STR_ERROR_NOT_ENOUGH_LENGTH3                        :열차 길이가 너무 짧습니다. 최소한 3량 이상을 연결해야 합니다.
+STR_ERROR_NOT_ENOUGH_LENGTH4                        :열차 길이가 너무 짧습니다. 최소한 4량 이상을 연결해야 합니다.
 STR_ERROR_NOT_ENOUGH_LENGTH6                        :열차 길이가 너무 짧습니다. 최소한 6량 이상을 연결해야 합니다.
