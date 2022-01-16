@@ -45,6 +45,7 @@ YST는 다소 까다로운 템플릿을 보유하고 보다 편한 코딩방식�
 ## OpenTTD JGR 민은월드
 <details markdown="1">
 <summary>내용보기</summary>
-- 이곳에 공개하기엔 YST.grf의 자료와 다르므로, 별도의 자료실을 통해 공개할 예정입니다.<br>
-- 곧 해당 자료실을 개설하고 공개할 예정이니 잠시만 기달려주세요.
+- 이곳에 공개하기엔 YST.grf의 자료와는 다릅니다.<br>
+[민은월드 세이브 변경기록](https://github.com/evepoi/YST.grf/wiki)<br>
+- 위 링크자료실에서 자료를 확인하시기 바랍니다.
 </details>
