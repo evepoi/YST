@@ -25,7 +25,7 @@ YST는 다소 까다로운 템플릿을 보유하고 보다 편한 코딩방식�
 ## 공개릴리즈  YST 2021.1.20
 <details markdown="1">
 <summary>내용보기</summary>
-[YST 2021.1.15](https://github.com/evepoi/YST.grf/releases/tag/2022.1.15)<br>
+[YST 2021.1.20](https://github.com/evepoi/YST.grf/releases/tag/2022.1.20)<br>
 [추가]<br>
 - EMU180 (도입 : 2023/힘 4,000kw / 무게 운전40T, 객차 15T/ 운행속도 181km/h / 최소 4량이상 자유편성) / 도색 : 빨강, 녹색 2종(#29 )<br>
 - EMU362 (기존 EMU에서 별도 분리목적이며, 기존 스팩과 동일함.) / 도색 : 단일차량<br>
