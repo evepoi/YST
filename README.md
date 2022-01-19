@@ -21,32 +21,3 @@ YST는 다소 까다로운 템플릿을 보유하고 보다 편한 코딩방식�
 ## 자료활용
 그동안 많은 발전을 주신 분들께 진심으로 감사올립니다.<br>
 저작권 특성상 자유로운 변경공개이므로, 이미 공개된 자료에 대해선 얼마든지 수정하실 수 있습니다.<br>
-
-## 공개릴리즈  YST 2021.1.20
-<details markdown="1">
-<summary>내용보기</summary>
-[YST 2021.1.20](https://github.com/evepoi/YST.grf/releases/tag/2022.1.20)<br>
-[추가]<br>
-- ITX-SM2 (도입 : 2020/힘 10,000kw / 무게 운전40T, 객차 30T/ 운행속도 181km/h / 최소 6량이상 자유편성) / 도색 : 빨강, 녹색, 흰색 3종<br>
-- KTX-SC2 (도입 : 2020/힘 10,000kw / 무게 운전40T, 객차 30T/ 운행속도 362km/h / 최소 6량이상 자유편성) / 도색 : 파랑, 녹색, 흰색 3종<br>
-- NRT2 (도입 : 2020/힘 10,000kw / 무게 운전40T, 객차 30T/ 운행속도 181km/h / 최소 4량이상 자유편성) / 도색 : 파랑, 녹색, 흰색 3종<br>
-<br>
-[속도 변경]<br>
-- CRH1 280->260km/h<br>
-<br>
-[열차이름 변경]<br>
-- CRH380A->CRH362A<br>
-- CRH380A-Cool ->CRH430A<br>
-- CRH380A-Test->CRH600A-Test<br>
-<br>
-[제거]<br>
-- EMU260 도색 내 EMU362열차 제거<br>
-</details>
-
-## OpenTTD JGR 민은월드
-<details markdown="1">
-<summary>내용보기</summary>
-- 이곳에 공개하기엔 YST.grf의 자료와는 다릅니다.<br>
-[민은월드 세이브 변경기록](https://github.com/evepoi/YST.grf/wiki)<br>
-- 위 링크자료실에서 자료를 확인하시기 바랍니다.
-</details>
