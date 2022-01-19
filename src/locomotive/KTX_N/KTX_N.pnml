@@ -5,7 +5,7 @@ KTX-N
 #include "KTX_N_graphic.pnml"
 
 // Switch
-#include "KTX_N.switch.pnml"
+#include "KTX_N_switch.pnml"
 
 /*--------------------------------------------------------------------
 열차정보
