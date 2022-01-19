@@ -9,9 +9,9 @@ sort(FEAT_TRAINS, [
     BB15048,                   //3005
     CRH1,                      //3006
     CRH3,                      //3007
-    CRH380A,                   //3008
-    CRH380A_Cool,              //3009
-    CRH380A_Test,              //3010
+    CRH362A,                   //3008
+    CRH430A,                   //3009
+    CRH600A_Test,              //3010
     CRV600,                    //3011
     Dr_Yellow,                 //3012
     E300,                      //3013
@@ -25,9 +25,12 @@ sort(FEAT_TRAINS, [
     HMX,                       //3019
     ICE_SP,                    //3020
     ICE3,                      //3021
+    ITX_SM2,                   //3052
     KTX_N,                     //3022
+    KTX_SC2,                   //3053
     NJ2,                       //3023
     NKX,                       //3024
+    NRT2,                      //3054
     Shinkansen_500,            //3025
     Shinkansen_500_Cool,       //3026
     Shinkansen_500_SP,         //3027

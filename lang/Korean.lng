@@ -13,9 +13,9 @@ STR_AVE_Velaro_NAME                                 :[YST] AVE Velaro
 STR_BB15048_NAME                                    :[YST] BB15048
 STR_CRH1_NAME                                       :[YST] CRH1
 STR_CRH3_NAME                                       :[YST] CRH3
-STR_CRH380A_NAME                                    :[YST] CRH380A
-STR_CRH380A_Cool_NAME                               :[YST] CRH380A Cool
-STR_CRH380A_Test_NAME                               :[YST] CRH380A-Test
+STR_CRH362A_NAME                                    :[YST] CRH362A
+STR_CRH430A_NAME                                    :[YST] CRH430A
+STR_CRH600A_Test_NAME                               :[YST] CRH600A-Test
 STR_CRV600_NAME                                     :[YST] CRV600
 STR_Dr_Yellow_NAME                                  :[YST] Dr. Yellow
 STR_E300_NAME                                       :[YST] E300
@@ -29,9 +29,12 @@ STR_HEMU_430_NAME                                   :[YST] HEMU-430
 STR_HMX_NAME                                        :[YST] HMX
 STR_ICE3_NAME                                       :[YST] ICE3
 STR_ICE_SP_NAME                                     :[YST] ICE-SP
+STR_ITX_SM2_NAME                                    :[YST] ITX-SM2
 STR_KTX_N_NAME                                      :[YST] KTX-N
+STR_KTX_SC2_NAME                                    :[YST] KTX-SC2
 STR_NJ2_NAME                                        :[YST] NJ2
 STR_NKX_NAME                                        :[YST] NKX
+STR_NRT2_NAME                                       :[YST] NRT2
 STR_Shinkansen_500_NAME                             :[YST] 신칸센 500계
 STR_Shinkansen_500_Cool_NAME                        :[YST] 신칸센 500계 Cool
 STR_Shinkansen_500_SP_NAME                          :[YST] 신칸센 500계 SP
@@ -102,15 +105,17 @@ STR_PARAM_CARGO_CAPACITY_DESC                       :열차 화물 수송량 변
 # Refit (Additional text)
 STR_REFIT_ADDITIONAL                                :{BLACK}도색/모델 변경: {GREEN}가능
 STR_REFIT_ADDITIONAL_ABLE_UNADDTRAIN                :{BLACK}도색/모델 변경: {GREEN}가능 {}{BLACK}복합열차구성 : {RED}불가능
-STR_REFIT_ADDITIONAL_ABLE_CRH380A                   :{BLACK}도색/모델 변경: {GREEN}가능 {}{BLACK}복합가능열차{}{GREEN}CRH380A, CRH380A Cool, CRH380A Red
+STR_REFIT_ADDITIONAL_ABLE_CRH362A                   :{BLACK}도색/모델 변경: {GREEN}가능 {}{BLACK}복합가능열차{}{GREEN}CRH362A, CRH430A Cool, CRH362A Red
 STR_REFIT_ADDITIONAL_ABLE_CR600                     :{BLACK}도색/모델 변경: {GREEN}가능 {}{BLACK}복합가능열차{}{GREEN}CR600
 STR_REFIT_ADDITIONAL_ABLE_EMU180                    :{BLACK}도색/모델 변경: {GREEN}가능 {}{BLACK}복합가능열차{}{GREEN}EMU180, EMU260, EUM362
-STR_REFIT_ADDITIONAL_ABLE_EMU260                    :{BLACK}도색/모델 변경: {GREEN}가능 {}{BLACK}복합가능열차{}{GREEN}EMU180, EMU260, EUM362
 STR_REFIT_ADDITIONAL_ABLE_Glory600                  :{BLACK}도색/모델 변경: {GREEN}가능 {}{BLACK}복합가능열차{}{GREEN}Glory 600
 STR_REFIT_ADDITIONAL_ABLE_HMX                       :{BLACK}도색/모델 변경: {GREEN}가능 {}{BLACK}복합가능열차{}{GREEN}HMX
 STR_REFIT_ADDITIONAL_ABLE_E6                        :{BLACK}도색/모델 변경: {GREEN}가능 {}{BLACK}복합가능열차{}{GREEN}E6
 STR_REFIT_ADDITIONAL_ABLE_ICESP                     :{BLACK}도색/모델 변경: {GREEN}가능 {}{BLACK}복합가능열차{}{GREEN}ICE-산천, ICE-팥죽
+STR_REFIT_ADDITIONAL_ABLE_ITX_SM2                   :{BLACK}도색/모델 변경: {GREEN}가능 {}{BLACK}복합가능열차{}{GREEN}ITX-SM2
+STR_REFIT_ADDITIONAL_ABLE_KTX_SC2                   :{BLACK}도색/모델 변경: {GREEN}가능 {}{BLACK}복합가능열차{}{GREEN}KTX-SC2
 STR_REFIT_ADDITIONAL_ABLE_NKX                       :{BLACK}도색/모델 변경: {GREEN}가능 {}{BLACK}복합가능열차{}{GREEN}NKX
+STR_REFIT_ADDITIONAL_ABLE_NRT2                      :{BLACK}도색/모델 변경: {GREEN}가능 {}{BLACK}복합가능열차{}{GREEN}NRT2
 STR_REFIT_ADDITIONAL_ABLE_Talgo_250                 :{BLACK}도색/모델 변경: {GREEN}가능 {}{BLACK}복합가능열차{}{GREEN}Talgo 250
 STR_REFIT_ADDITIONAL_ABLE_TGV_Duplex                :{BLACK}도색/모델 변경: {GREEN}가능 {}{BLACK}복합가능열차{}{GREEN}TGV Old Duplex, TGV Duplex
 STR_REFIT_ADDITIONAL_ABLE_TGV                       :{BLACK}도색/모델 변경: {GREEN}가능 {}{BLACK}복합가능열차{}{GREEN}TGV Old Pos, TGV Pos
@@ -123,6 +128,7 @@ STR_REFIT_ADDITIONAL_UNABLE_AVE                     :{BLACK}도색/모델 변경
 STR_REFIT_ADDITIONAL_UNABLE_AVE_VElaro              :{BLACK}도색/모델 변경: {RED}불가능 {}{BLACK}복합가능열차{}{GREEN}AVE Velaro
 STR_REFIT_ADDITIONAL_UNABLE_CRH1                    :{BLACK}도색/모델 변경: {RED}불가능 {}{BLACK}복합가능열차{}{GREEN}CRH1
 STR_REFIT_ADDITIONAL_UNABLE_CRH3                    :{BLACK}도색/모델 변경: {RED}불가능 {}{BLACK}복합가능열차{}{GREEN}CRH3
+STR_REFIT_ADDITIONAL_UNABLE_CRH430A                 :{BLACK}도색/모델 변경: {RED}불가능 {}{BLACK}복합가능열차{}{GREEN}CRH362A, CRH430A Cool, CRH362A Red
 STR_REFIT_ADDITIONAL_UNABLE_EMU                     :{BLACK}도색/모델 변경: {RED}불가능 {}{BLACK}복합가능열차{}{GREEN}EMU180, EMU260, EUM362
 STR_REFIT_ADDITIONAL_UNABLE_HEMU                    :{BLACK}도색/모델 변경: {RED}불가능 {}{BLACK}복합가능열차{}{GREEN}HEMU-430
 STR_REFIT_ADDITIONAL_UNABLE_ICE3                    :{BLACK}도색/모델 변경: {RED}불가능 {}{BLACK}복합가능열차{}{GREEN}ICE3
@@ -141,16 +147,14 @@ STR_REFIT_train_configuration_TGV_Poste             :{BLACK}열차구성: {GREEN
 STR_REFIT_train_configuration_YFX_Freight           :{BLACK}열차구성: {GREEN}YFX용 화차
 
 # Liveries locomotive
-STR_REFIT_LIVERY_CRH380A                            :(CRH380A)
-STR_REFIT_LIVERY_CRH380AR                           :(CRH380A-빨강)
+STR_REFIT_LIVERY_CRH362A                            :(CRH362A)
+STR_REFIT_LIVERY_CRH362AR                           :(CRH362A-빨강)
 STR_REFIT_LIVERY_CR600R                             :(빨강 도색)
 STR_REFIT_LIVERY_CR600G                             :(금색 도색)
 STR_REFIT_LIVERY_E300                               :(유로스타 노랑도색)
 STR_REFIT_LIVERY_E300B                              :(유로스타 파랑도색)
 STR_REFIT_LIVERY_EMU180R                            :(EMU-180 빨강도색)
 STR_REFIT_LIVERY_EMU180G                            :(EMU-180 녹색도색)
-STR_REFIT_LIVERY_EMU260                             :(EMU-260)
-STR_REFIT_LIVERY_EMU362                             :(EMU-362) - 다음 업데이트시 제거예정
 STR_REFIT_LIVERY_Glory600A                          :(Glory 600 A도색)
 STR_REFIT_LIVERY_Glory600B                          :(Glory 600 B도색)
 STR_REFIT_LIVERY_Glory600C                          :(Glory 600 C도색)
@@ -160,9 +164,18 @@ STR_REFIT_LIVERY_HMXG                               :(HMX 녹색도색)
 STR_REFIT_LIVERY_HMXR                               :(HMX 빨강도색)
 STR_REFIT_LIVERY_ICE_Sancheon                       :(ICE-산천)
 STR_REFIT_LIVERY_ICE_Patjug                         :(ICE-팥죽)
+STR_REFIT_LIVERY_ITX_SM2R                           :(ITX-SM2 빨강도색)
+STR_REFIT_LIVERY_ITX_SM2G                           :(ITX-SM2 녹색도색)
+STR_REFIT_LIVERY_ITX_SM2W                           :(ITX-SM2 흰색도색)
+STR_REFIT_LIVERY_KTX_SC2B                           :(KTX-SC2 파랑도색)
+STR_REFIT_LIVERY_KTX_SC2G                           :(KTX-SC2 녹색도색)
+STR_REFIT_LIVERY_KTX_SC2W                           :(KTX-SC2 흰색도색)
 STR_REFIT_LIVERY_NKXA                               :(NKX A도색)
 STR_REFIT_LIVERY_NKXB                               :(NKX B도색)
 STR_REFIT_LIVERY_NKXC                               :(NKX C도색)
+STR_REFIT_LIVERY_NRT2B                              :(NRT2 파랑도색)
+STR_REFIT_LIVERY_NRT2G                              :(NRT2 녹색도색)
+STR_REFIT_LIVERY_NRT2W                              :(NRT2 흰색도색)
 STR_REFIT_LIVERY_Shinkansen_500_Sancheon            :(신칸센 500-산천)
 STR_REFIT_LIVERY_Shinkansen_500_Patjug              :(신칸센 500-팥죽)
 STR_REFIT_LIVERY_Shinkansen_E5                      :(신칸센 E5)

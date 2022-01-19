@@ -13,9 +13,9 @@ STR_AVE_Velaro_NAME                                 :[YST] AVE Velaro
 STR_BB15048_NAME                                    :[YST] BB15048
 STR_CRH1_NAME                                       :[YST] CRH1
 STR_CRH3_NAME                                       :[YST] CRH3
-STR_CRH380A_NAME                                    :[YST] CRH380A
-STR_CRH380A_Cool_NAME                               :[YST] CRH380A Cool
-STR_CRH380A_Test_NAME                               :[YST] CRH380A-Test
+STR_CRH362A_NAME                                    :[YST] CRH362A
+STR_CRH430A_NAME                                    :[YST] CRH430A
+STR_CRH600A_Test_NAME                               :[YST] CRH600A-Test
 STR_CRV600_NAME                                     :[YST] CRV600
 STR_Dr_Yellow_NAME                                  :[YST] Dr. Yellow
 STR_E300_NAME                                       :[YST] E300
@@ -29,9 +29,12 @@ STR_HEMU_430_NAME                                   :[YST] HEMU-430
 STR_HMX_NAME                                        :[YST] HMX
 STR_ICE3_NAME                                       :[YST] ICE3
 STR_ICE_SP_NAME                                     :[YST] ICE-SP
+STR_ITX_SM2_NAME                                    :[YST] ITX-SM2
 STR_KTX_N_NAME                                      :[YST] KTX-N
+STR_KTX_SC2_NAME                                    :[YST] KTX-SC2
 STR_NJ2_NAME                                        :[YST] NJ2
 STR_NKX_NAME                                        :[YST] NKX
+STR_NRT2_NAME                                       :[YST] NRT2
 STR_Shinkansen_500_NAME                             :[YST] Shinkansen 500
 STR_Shinkansen_500_Cool_NAME                        :[YST] Shinkansen 500 Cool
 STR_Shinkansen_500_SP_NAME                          :[YST] Shinkansen 500 SP
@@ -107,15 +110,17 @@ STR_PARAM_CARGO_CAPACITY_DESC                       :Cargo capacity of trains
 # Refit (Additional text)
 STR_REFIT_ADDITIONAL                                :{BLACK}Changing model/livery: {GREEN}Available
 STR_REFIT_ADDITIONAL_ABLE_UNADDTRAIN                :{BLACK}Changing model/livery: {GREEN}Available {} {BLACK}Combined train: {RED}UnavailableSTR_REFIT_ADDITIONAL_ABLE_AGV           :{BLACK}Changing model/livery: {GREEN}Available {} {BLACK}Combined train: {RED}Unavailable
-STR_REFIT_ADDITIONAL_ABLE_CRH380A                   :{BLACK}Changing model/livery: {GREEN}Available {} {BLACK}Combined train: {GREEN}CRH380A, CRH380A Cool, CRH380A Red
+STR_REFIT_ADDITIONAL_ABLE_CRH362A                   :{BLACK}Changing model/livery: {GREEN}Available {} {BLACK}Combined train: {GREEN}CRH362A, CRH430A Cool, CRH362A Red
 STR_REFIT_ADDITIONAL_ABLE_CR600                     :{BLACK}Changing model/livery: {GREEN}Available {} {BLACK}Combined train: {GREEN}CR600
 STR_REFIT_ADDITIONAL_ABLE_EMU180                    :{BLACK}Changing model/livery: {GREEN}Available {} {BLACK}Combined train: {GREEN}EMU-260, EUM-362
-STR_REFIT_ADDITIONAL_ABLE_EMU260                    :{BLACK}Changing model/livery: {GREEN}Available {} {BLACK}Combined train: {GREEN}EMU-260, EUM-362
 STR_REFIT_ADDITIONAL_ABLE_Glory600                  :{BLACK}Changing model/livery: {GREEN}Available {} {BLACK}Combined train: {GREEN}Glory600
 STR_REFIT_ADDITIONAL_ABLE_HMX                       :{BLACK}Changing model/livery: {GREEN}Available {} {BLACK}Combined train: {GREEN}HMX
 STR_REFIT_ADDITIONAL_ABLE_E6                        :{BLACK}Changing model/livery: {GREEN}Available {} {BLACK}Combined train: {GREEN}E6
 STR_REFIT_ADDITIONAL_ABLE_ICESP                     :{BLACK}Changing model/livery: {GREEN}available {} {BLACK}Combined train: {GREEN}ICE-Sancheon, ICE-Patjug
+STR_REFIT_ADDITIONAL_ABLE_ITX_SM2                   :{BLACK}Changing model/livery: {GREEN}available {} {BLACK}Combined train: {GREEN}ITX-SM2
+STR_REFIT_ADDITIONAL_ABLE_KTX_SC2                   :{BLACK}Changing model/livery: {GREEN}available {} {BLACK}Combined train: {GREEN}KTX-SC2
 STR_REFIT_ADDITIONAL_ABLE_NKX                       :{BLACK}Changing model/livery: {GREEN}available {} {BLACK}Combined train: {GREEN}NKX
+STR_REFIT_ADDITIONAL_ABLE_NRT2                      :{BLACK}Changing model/livery: {GREEN}available {} {BLACK}Combined train: {GREEN}NRT2
 STR_REFIT_ADDITIONAL_ABLE_Talgo_250                 :{BLACK}Changing model/livery: {GREEN}available {} {BLACK}Combined train: {GREEN}Talgo 250
 STR_REFIT_ADDITIONAL_ABLE_TGV_Duplex                :{BLACK}Changing model/livery: {GREEN}available {} {BLACK}Combined train: {GREEN}TGV Old Duplex, TGV Duplex
 STR_REFIT_ADDITIONAL_ABLE_TGV                       :{BLACK}Changing model/livery: {GREEN}available {} {BLACK}Combined train: {GREEN}TGV Old Pos, TGV Pos
@@ -128,6 +133,7 @@ STR_REFIT_ADDITIONAL_UNABLE_AVE                     :{BLACK}Changing model/liver
 STR_REFIT_ADDITIONAL_UNABLE_AVE_VElaro              :{BLACK}Changing model/livery: {RED}Unavailable {} {BLACK}Combined train: {GREEN}AVE Velaro
 STR_REFIT_ADDITIONAL_UNABLE_CRH1                    :{BLACK}Changing model/livery: {RED}Unavailable {} {BLACK}Combined train: {GREEN}CRH1
 STR_REFIT_ADDITIONAL_UNABLE_CRH3                    :{BLACK}Changing model/livery: {RED}Unavailable {} {BLACK}Combined train: {GREEN}CRH3
+STR_REFIT_ADDITIONAL_UNABLE_CRH430A                 :{BLACK}Changing model/livery: {RED}Unavailable {} {BLACK}Combined train: {GREEN}CRH362A, CRH430A Cool, CRH362A Red
 STR_REFIT_ADDITIONAL_UNABLE_EMU                     :{BLACK}Changing model/livery: {RED}Unavailable {} {BLACK}Combined train: {GREEN}EMU-260, EUM-362
 STR_REFIT_ADDITIONAL_UNABLE_HEMU                    :{BLACK}Changing model/livery: {RED}Unavailable {} {BLACK}Combined train: {GREEN}HEMU-430
 STR_REFIT_ADDITIONAL_UNABLE_ICE3                    :{BLACK}Changing model/livery: {RED}Unavailable {} {BLACK}Combined train: {GREEN}ICE3
@@ -146,16 +152,14 @@ STR_REFIT_train_configuration_TGV_Poste             :{BLACK}train configuration:
 STR_REFIT_train_configuration_YFX_Freight           :{BLACK}train configuration: {GREEN}YFX Freight Car
 
 # Liveries
-STR_REFIT_LIVERY_CRH380A                            :(CRH380A)
-STR_REFIT_LIVERY_CRH380AR                           :(CRH380A-Red)
+STR_REFIT_LIVERY_CRH362A                            :(CRH362A)
+STR_REFIT_LIVERY_CRH362AR                           :(CRH362A-Red)
 STR_REFIT_LIVERY_CR600R                             :(Red Color)
 STR_REFIT_LIVERY_CR600G                             :(Gold Color)
 STR_REFIT_LIVERY_E300                               :(Eurostar Yellow Color)
 STR_REFIT_LIVERY_E300B                              :(Eurostar Blue Color)
 STR_REFIT_LIVERY_EMU180R                            :(EMU-180 Red Color)
 STR_REFIT_LIVERY_EMU180G                            :(EMU-180 Green Color)
-STR_REFIT_LIVERY_EMU260                             :(EMU-260)
-STR_REFIT_LIVERY_EMU362                             :(EMU-362) To be removed in the next update
 STR_REFIT_LIVERY_Glory600A                          :(Glory 600 A Color)
 STR_REFIT_LIVERY_Glory600B                          :(Glory 600 B Color)
 STR_REFIT_LIVERY_Glory600C                          :(Glory 600 C Color)
@@ -165,9 +169,18 @@ STR_REFIT_LIVERY_HMXG                               :(HMX Green Color)
 STR_REFIT_LIVERY_HMXR                               :(HMX Red Color)
 STR_REFIT_LIVERY_ICE_Sancheon                       :(ICE-Sancheon)
 STR_REFIT_LIVERY_ICE_Patjug                         :(ICE-Patjug)
+STR_REFIT_LIVERY_ITX_SM2R                           :(ITX-SM2 Red Color)
+STR_REFIT_LIVERY_ITX_SM2G                           :(ITX-SM2 Green Color)
+STR_REFIT_LIVERY_ITX_SM2W                           :(ITX-SM2 White Color)
+STR_REFIT_LIVERY_KTX_SC2B                           :(KTX-SC2 Blue Color)
+STR_REFIT_LIVERY_KTX_SC2G                           :(KTX-SC2 Green Color)
+STR_REFIT_LIVERY_KTX_SC2W                           :(KTX-SC2 White Color)
 STR_REFIT_LIVERY_NKXA                               :(NKX A Color)
 STR_REFIT_LIVERY_NKXB                               :(NKX B Color)
 STR_REFIT_LIVERY_NKXC                               :(NKX C Color)
+STR_REFIT_LIVERY_NRT2B                              :(NRT2 Blue Color)
+STR_REFIT_LIVERY_NRT2G                              :(NRT2 Green Color)
+STR_REFIT_LIVERY_NRT2W                              :(NRT2 White Color)
 STR_REFIT_LIVERY_Shinkansen_500_Sancheon            :(Shinkansen 500-Sancheon)
 STR_REFIT_LIVERY_Shinkansen_500_Patjug              :(Shinkansen 500-Patjug)
 STR_REFIT_LIVERY_Shinkansen_E5                      :(Shinkansen E5)
