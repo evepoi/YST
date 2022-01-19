@@ -1,0 +1,82 @@
+/*--------------------------------------------------------------------
+Graphics
+--------------------------------------------------------------------*/
+spriteset(set_ITX_SM2_purchase, "src\locomotive\ITX_SM2\ITX_SM2R.png"){
+    tmpl_purchase(0, 0)
+}
+
+/*--------------------------------------------------------------------
+1 ITX-SM2 Red
+--------------------------------------------------------------------*/
+spriteset(set_ITX_SM2RH_purchase, "src\locomotive\ITX_SM2\ITX_SM2R.png"){
+    tmpl_purchase_for_dualhead(0, 54)
+}
+
+spriteset(set_ITX_SM2R_engineH, "src\locomotive\ITX_SM2\ITX_SM2R.png"){
+    engine(80, 0)
+}
+
+spriteset(set_ITX_SM2R_wagon, "src\locomotive\ITX_SM2\ITX_SM2R.png") {
+    wagon_1F(80, 27)
+}
+
+spriteset(set_ITX_SM2R_wagon_r, "src\locomotive\ITX_SM2\ITX_SM2R.png") {
+    wagon_1F_r(80, 27)
+}
+
+spriteset(set_ITX_SM2R_engineT, "src\locomotive\ITX_SM2\ITX_SM2R.png"){
+    engine_r(80, 54)
+}
+
+/*--------------------------------------------------------------------
+2. ITX-SM2 Green
+--------------------------------------------------------------------*/
+spriteset(set_ITX_SM2GH_purchase, "src\locomotive\ITX_SM2\ITX_SM2G.png"){
+    tmpl_purchase_for_dualhead(0, 54)
+}
+
+spriteset(set_ITX_SM2G_engineH, "src\locomotive\ITX_SM2\ITX_SM2G.png"){
+    engine(80, 0)
+}
+
+spriteset(set_ITX_SM2G_wagon, "src\locomotive\ITX_SM2\ITX_SM2G.png") {
+    wagon_1F(80, 27)
+}
+
+spriteset(set_ITX_SM2G_wagon_r, "src\locomotive\ITX_SM2\ITX_SM2G.png") {
+    wagon_1F_r(80, 27)
+}
+
+spriteset(set_ITX_SM2G_engineT, "src\locomotive\ITX_SM2\ITX_SM2G.png"){
+    engine_r(80, 54)
+}
+
+/*--------------------------------------------------------------------
+3. ITX-SM2 White
+--------------------------------------------------------------------*/
+spriteset(set_ITX_SM2WH_purchase, "src\locomotive\ITX_SM2\ITX_SM2W.png"){
+    tmpl_purchase_for_dualhead(0, 54)
+}
+
+spriteset(set_ITX_SM2W_engineH, "src\locomotive\ITX_SM2\ITX_SM2W.png"){
+    engine(80, 0)
+}
+
+spriteset(set_ITX_SM2W_wagon, "src\locomotive\ITX_SM2\ITX_SM2W.png") {
+    wagon_1F(80, 27)
+}
+
+spriteset(set_ITX_SM2W_wagon_r, "src\locomotive\ITX_SM2\ITX_SM2W.png") {
+    wagon_1F_r(80, 27)
+}
+
+spriteset(set_ITX_SM2W_engineT, "src\locomotive\ITX_SM2\ITX_SM2W.png"){
+    engine_r(80, 54)
+}
+
+/*--------------------------------------------------------------------
+구매정보
+--------------------------------------------------------------------*/
+switch(FEAT_TRAINS, SELF, sw_ITX_SM2_purchase, cargo_subtype) {
+    set_ITX_SM2_purchase;
+}
