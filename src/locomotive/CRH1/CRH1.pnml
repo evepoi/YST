@@ -21,7 +21,7 @@ item(FEAT_TRAINS, CRH1, 3006){
         dual_headed:                    1;
         
         //spec
-        speed:                          280km/h;
+        speed:                          260km/h;
         power:                          8000 kW;
         weight:                         40 ton;
         tractive_effort_coefficient:    0.3;
