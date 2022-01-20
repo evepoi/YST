@@ -43,9 +43,74 @@ YST는 다소 까다로운 템플릿을 보유하고 보다 편한 코딩방식�
 			<td colspan="4"><img src="docs/img/YST/ITX_SM2_Red.png" alt="ITX-SM2 Red"></td>
 		</tr>
 		<tr>
-			<td>ITX-SM2 빨강도색</td><td>2020년</td><td>181km/h</td><td>운전160, 객차200</td>
+			<td>ITX-SM2 빨강도색</td><td>2020년</td><td>181km/h</td><td>운전차량 160, 객차차량 200</td>
 		</tr>
-		<!-- // ITX-SM2  -->
+		<!-- // ITX-SM2 빨강-->
+		<tr>
+			<td rowspan="4">일반열차</td>
+		</tr>
+		<tr>
+			<td rowspan="3">3052</td>
+		</tr>
+		<tr>
+			<td colspan="4"><img src="docs/img/YST/ITX_SM2_Green.png" alt="ITX-SM2 Green"></td>
+		</tr>
+		<tr>
+			<td>ITX-SM2 녹색도색</td><td>2020년</td><td>181km/h</td><td>운전차량 160, 객차차량 200</td>
+		</tr>
+		<!-- // ITX-SM2 녹색-->
+		<tr>
+			<td rowspan="4">일반열차</td>
+		</tr>
+		<tr>
+			<td rowspan="3">3052</td>
+		</tr>
+		<tr>
+			<td colspan="4"><img src="docs/img/YST/ITX_SM2_White.png" alt="ITX-SM2 White"></td>
+		</tr>
+		<tr>
+			<td>ITX-SM2 흰색도색</td><td>2020년</td><td>181km/h</td><td>운전차량 160, 객차차량 200</td>
+		</tr>
+		<!-- // ITX-SM2 흰색-->
+		<tr>
+			<td rowspan="4">고속열차</td>
+		</tr>
+		<tr>
+			<td rowspan="3">3053</td>
+		</tr>
+		<tr>
+			<td colspan="4"><img src="docs/img/YST/KTX_SC2_Blue.png" alt="KTX SC2 Blue"></td>
+		</tr>
+		<tr>
+			<td>KTX-SC2 파랑도색</td><td>2020년</td><td>362km/h</td><td>객차차량 116</td>
+		</tr>
+		<!-- // KTX-SC2 파랑-->
+		<tr>
+			<td rowspan="4">고속열차</td>
+		</tr>
+		<tr>
+			<td rowspan="3">3053</td>
+		</tr>
+		<tr>
+			<td colspan="4"><img src="docs/img/YST/KTX_SC2_Green.png" alt="KTX SC2 Green"></td>
+		</tr>
+		<tr>
+			<td>KTX-SC2 녹색도색</td><td>2020년</td><td>362km/h</td><td>객차차량 116</td>
+		</tr>
+		<!-- // KTX-SC2 녹색-->
+		<tr>
+			<td rowspan="4">고속열차</td>
+		</tr>
+		<tr>
+			<td rowspan="3">3053</td>
+		</tr>
+		<tr>
+			<td colspan="4"><img src="docs/img/YST/KTX_SC2_White.png" alt="KTX SC2 White"></td>
+		</tr>
+		<tr>
+			<td>KTX-SC2 흰색도색</td><td>2020년</td><td>362km/h</td><td>객차차량 116</td>
+		</tr>
+		<!-- // KTX-SC2 흰색-->
 </table>
 </details>
 
