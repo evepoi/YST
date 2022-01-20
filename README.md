@@ -25,3 +25,50 @@ YST는 다소 까다로운 템플릿을 보유하고 보다 편한 코딩방식�
 
 ## 열차
 -500계 ![캡처](docs/img/YST/500.png)
+<table class="table2">
+                                    <thead>
+                                        <tr>
+                                            <th>구분</th><th>열차이름</th><th>도입년도</th><th>열차속도</th><th>수송량</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td rowspan="4">전기기관차</td>
+                                        </tr>
+                                        <tr>
+                                            <td rowspan="3">BB15048</td>
+                                        </tr>
+                                            <tr>
+                                                <td colspan="3"><img src="img/YST/BB15048.png" alt="BB15048"></td>
+                                            </tr>
+                                        <tr class="tr">
+                                            <td>1971년</td><td>180km/h</td><td>전기기관차로 수송량 없음.</td>
+                                        </tr>
+                                        <!-- // BB15048 -->
+                                        <tr>
+                                            <td rowspan="4">디젤기관차</td>
+                                        </tr>
+                                        <tr>
+                                            <td rowspan="3">GT26CW</td>
+                                        </tr>
+                                            <tr>
+                                                <td colspan="3"><img src="img/YST/GT26CW.png" alt="GT26CW"></td>
+                                            </tr>
+                                        <tr class="tr">
+                                            <td>1967년</td><td>180km/h</td><td>디젤기관차로 수송량 없음.</td>
+                                        </tr>
+                                        <!-- // GT26CW -->
+                                        <tr>
+                                            <td rowspan="4">디젤기관차</td>
+                                        </tr>
+                                        <tr>
+                                            <td rowspan="3">NJ2</td>
+                                        </tr>
+                                            <tr>
+                                                <td colspan="3"><img src="img/YST/NJ2.png" alt="NJ2"></td>
+                                            </tr>
+                                        <tr class="tr">
+                                            <td>2006년</td><td>180km/h</td><td>디젤기관차로 수송량 없음.</td>
+                                        </tr>
+                                        <!-- // NJ2 -->
+                                </table>
