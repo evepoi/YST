@@ -17,20 +17,19 @@ makefile, [nml0.6.1](https://github.com/OpenTTD/nml) 등의 최신버전을 사�
 ## 자료제공
 YST는 다소 까다로운 템플릿을 보유하고 보다 편한 코딩방식을 택하고 있습니다. 기본적인 템플릿은 순차적으로 만들겠습니다.<br>
 
-# YST에 적용된 열차들
-## 열차 고유 ID번호
+# YST Set 열차 목록
+## 개요
 객차/화차는 2000번대, 열차는 3000번대, 지하철은 4000번대를 사용합니다. <br>
 타 grf의 고유 ID를 사용시 열차고유 ID충돌로 YST 열차셋이 등장하지 않을 수도 있습니다.<br>
 우선순위를 위해 grf목록의 YST를 상위로 올리시면 충돌할 일을 없습니다.<br>
 
-## 열차
--500계 ![캡처](docs/img/YST/500.png)
-<table class="table2">
-                                    <thead>
-                                        <tr>
-                                            <th>구분</th><th>열차이름</th><th>도입년도</th><th>열차속도</th><th>수송량</th>
-                                        </tr>
-                                    </thead>
+## 열차목록
+<table>
+<thead>
+<tr>
+<th>구분</th><th>열차이름</th><th>도입년도</th><th>열차속도</th><th>수송량</th>
+</tr>
+</thead>
                                     <tbody>
                                         <tr>
                                             <td rowspan="4">전기기관차</td>
