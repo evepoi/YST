@@ -1507,3 +1507,122 @@ YST는 다소 까다로운 템플릿을 보유하고 보다 편한 코딩방식�
                                 </table>
 	
 </details>
+
+## 기관차
+<details markdown="8">
+<summary>접기/펼치기</summary>
+<table class="table2">
+                                    <thead>
+                                        <tr>
+                                            <th>구분</th><th>열차이름</th><th>도입년도</th><th>열차속도</th><th>수송량</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td rowspan="4">전기기관차</td>
+                                        </tr>
+                                        <tr>
+                                            <td rowspan="3">BB15048</td>
+                                        </tr>
+                                            <tr>
+                                                <td colspan="3"><img src="img/YST/BB15048.png" alt="BB15048"></td>
+                                            </tr>
+                                        <tr class="tr">
+                                            <td>1971년</td><td>180km/h</td><td>전기기관차로 수송량 없음.</td>
+                                        </tr>
+                                        <!-- // BB15048 -->
+                                        <tr>
+                                            <td rowspan="4">디젤기관차</td>
+                                        </tr>
+                                        <tr>
+                                            <td rowspan="3">GT26CW</td>
+                                        </tr>
+                                            <tr>
+                                                <td colspan="3"><img src="img/YST/GT26CW.png" alt="GT26CW"></td>
+                                            </tr>
+                                        <tr class="tr">
+                                            <td>1967년</td><td>180km/h</td><td>디젤기관차로 수송량 없음.</td>
+                                        </tr>
+                                        <!-- // GT26CW -->
+                                        <tr>
+                                            <td rowspan="4">디젤기관차</td>
+                                        </tr>
+                                        <tr>
+                                            <td rowspan="3">NJ2</td>
+                                        </tr>
+                                            <tr>
+                                                <td colspan="3"><img src="img/YST/NJ2.png" alt="NJ2"></td>
+                                            </tr>
+                                        <tr class="tr">
+                                            <td>2006년</td><td>180km/h</td><td>디젤기관차로 수송량 없음.</td>
+                                        </tr>
+                                        <!-- // NJ2 -->
+                                </table>
+	
+</details>
+
+## 화물열차
+<details markdown="9">
+<summary>접기/펼치기</summary>
+<table class="table2">
+                                    <thead>
+                                        <tr>
+                                            <th>구분</th><th>열차이름</th><th>도입년도</th><th>열차속도</th><th>수송량</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td rowspan="4">화차</td>
+                                        </tr>
+                                        <tr>
+                                            <td rowspan="3">컨테이너화차</td>
+                                        </tr>
+                                            <tr>
+                                                <td colspan="3"><img src="img/YST/Flat_1F.png" alt="Flat 1F"></td>
+                                            </tr>
+                                        <tr class="tr">
+                                            <td>1967년</td><td>기관차 속도 귀속</td><td>50 / FIRS 대응</td>
+                                        </tr>
+                                        <!-- // 컨테이너 화차 1F -->
+                                        <tr>
+                                            <td rowspan="4">화차</td>
+                                        </tr>
+                                        <tr>
+                                            <td rowspan="3">컨테이너 탱크화차</td>
+                                        </tr>
+                                            <tr>
+                                                <td colspan="3"><img src="img/YST/Flat_Tank.png" alt="Flat Tank"></td>
+                                            </tr>
+                                        <tr class="tr">
+                                            <td>1967년</td><td>기관차 속도 귀속</td><td>액체화물 100 / FIRS 대응</td>
+                                        </tr>
+                                        <!-- // 컨테이너 화차 1F -->
+                                        <tr>
+                                            <td rowspan="4">화차</td>
+                                        </tr>
+                                        <tr>
+                                            <td rowspan="3">컨테이너 미국형</td>
+                                        </tr>
+                                            <tr>
+                                                <td colspan="3"><img src="img/YST/Flat_2F.png" alt="Flat 미국형"></td>
+                                            </tr>
+                                        <tr class="tr">
+                                            <td>1967년</td><td>기관차 속도 귀속</td><td>50 / FIRS 대응</td>
+                                        </tr>
+                                        <!-- // 컨테이너 화차 2F -->
+                                        <tr>
+                                            <td rowspan="4">화차</td>
+                                        </tr>
+                                        <tr>
+                                            <td rowspan="3">유조화차</td>
+                                        </tr>
+                                            <tr>
+                                                <td colspan="3"><img src="img/YST/tank.png" alt="Tank"></td>
+                                            </tr>
+                                        <tr class="tr">
+                                            <td>1967년</td><td>기관차 속도귀속</td><td>액체화물 200,000L / FIRS 대응함.</td>
+                                        </tr>
+                                        <!-- // Tank -->
+                                </table>
+	
+</details>
