@@ -26,287 +26,92 @@ YST는 다소 까다로운 템플릿을 보유하고 보다 편한 코딩방식�
 ## 최근 추가 열차
 <details markdown="1">
 <summary>내용보기</summary>
-<table class="table2">
-                                    <thead>
-                                        <tr>
-                                            <th>구분</th><th>열차이름</th><th>도입년도</th><th>열차속도</th><th>수송량</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td rowspan="4">지하철</td>
-                                        </tr>
-                                        <tr>
-                                            <td rowspan="3">MTR</td>
-                                        </tr>
-                                            <tr>
-                                                <td colspan="3"><img src="img/YST/MTR.png" alt="MTR"></td>
-                                            </tr>
-                                        <tr class="tr">
-                                            <td>1979년</td><td>120km/h</td><td>운전차량 80, 객차차량 80</td>
-                                        </tr>
-                                        <!-- // MTR -->
-                                        <tr>
-                                            <td rowspan="4">지하철</td>
-                                        </tr>
-                                        <tr>
-                                            <td rowspan="3">MTR 개조형</td>
-                                        </tr>
-                                            <tr>
-                                                <td colspan="3"><img src="img/YST/MTR_remoding.png" alt="MTR remoding"></td>
-                                            </tr>
-                                        <tr class="tr">
-                                            <td>1979년</td><td>120km/h</td><td>운전차량 80, 객차차량 80</td>
-                                        </tr>
-                                        <!-- // MTR 개조형-->
-                                        <tr>
-                                            <td rowspan="4">지하철</td>
-                                        </tr>
-                                        <tr>
-                                            <td rowspan="3">MTR 디즈니</td>
-                                        </tr>
-                                            <tr>
-                                                <td colspan="3"><img src="img/YST/MTR_Disney.png" alt="MTR Disney"></td>
-                                            </tr>
-                                        <tr class="tr">
-                                            <td>1979년</td><td>120km/h</td><td>운전차량 80, 객차차량 80</td>
-                                        </tr>
-                                        <!-- // MTR 디즈니-->
-                                        <tr>
-                                            <td rowspan="4">지하철</td>
-                                        </tr>
-                                        <tr>
-                                            <td rowspan="3">MTR CNR</td>
-                                        </tr>
-                                            <tr>
-                                                <td colspan="3"><img src="img/YST/MTR_CNR.png" alt="MTR CNR"></td>
-                                            </tr>
-                                        <tr class="tr">
-                                            <td>1979년</td><td>120km/h</td><td>운전차량 80, 객차차량 80</td>
-                                        </tr>
-                                        <!-- // MTR CNR-->
-                                        <tr>
-                                            <td rowspan="4">지하철</td>
-                                        </tr>
-                                        <tr>
-                                            <td rowspan="3">MTR CNR 남부섬</td>
-                                        </tr>
-                                            <tr>
-                                                <td colspan="3"><img src="img/YST/MTR_CNRN.png" alt="MTR CNR 남부섬"></td>
-                                            </tr>
-                                        <tr class="tr">
-                                            <td>1979년</td><td>120km/h</td><td>운전차량 80, 객차차량 80</td>
-                                        </tr>
-                                        <!-- // MTR CNR 남부섬-->
-                                        <tr>
-                                            <td rowspan="4">지하철</td>
-                                        </tr>
-                                        <tr>
-                                            <td rowspan="3">MTR CRRC</td>
-                                        </tr>
-                                            <tr>
-                                                <td colspan="3"><img src="img/YST/MTR_CRRC.png" alt="MTR CRRC"></td>
-                                            </tr>
-                                        <tr class="tr">
-                                            <td>1979년</td><td>120km/h</td><td>운전차량 80, 객차차량 80</td>
-                                        </tr>
-                                        <!-- // MTR CRRC-->
-                                        <tr>
-                                            <td rowspan="4">지하철</td>
-                                        </tr>
-                                        <tr>
-                                            <td rowspan="3">MTR 미쓰비시</td>
-                                        </tr>
-                                            <tr>
-                                                <td colspan="3"><img src="img/YST/MTR_H.png" alt="MTR 미쓰비시"></td>
-                                            </tr>
-                                        <tr class="tr">
-                                            <td>1979년</td><td>120km/h</td><td>운전차량 80, 객차차량 80</td>
-                                        </tr>
-                                        <!-- // MTR 미쓰비시-->
-                                        <tr>
-                                            <td rowspan="4">지하철</td>
-                                        </tr>
-                                        <tr>
-                                            <td rowspan="3">YTRO 100 A도색</td>
-                                        </tr>
-                                        <tr>
-                                            <td colspan="3"><img src="img/YST/YTRO_100_A.png" alt="YTRO 100 A도색"></td>
-                                        </tr>
-                                        <tr class="tr">
-                                            <td>2020년</td><td>120km/h</td><td>운전차량 80, 1층 객차차량 80, 2층 객차차량 160</td>
-                                        </tr>
-                                        <tr>
-                                            <td rowspan="4">지하철</td>
-                                        </tr>
-                                        <tr>
-                                            <td rowspan="3">YTRO 100 B도색</td>
-                                        </tr>
-                                        <tr>
-                                            <td colspan="3"><img src="img/YST/YTRO_100_B.png" alt="YTRO 100 B도색"></td>
-                                        </tr>
-                                        <tr class="tr">
-                                            <td>2020년</td><td>120km/h</td><td>운전차량 80, 1층 객차차량 80, 2층 객차차량 160</td>
-                                        </tr>
-                                        <tr>
-                                            <td rowspan="4">지하철</td>
-                                        </tr>
-                                        <tr>
-                                            <td rowspan="3">YTRO 100 C도색</td>
-                                        </tr>
-                                        <tr>
-                                            <td colspan="3"><img src="img/YST/YTRO_100_C.png" alt="YTRO 100 C도색"></td>
-                                        </tr>
-                                        <tr class="tr">
-                                            <td>2020년</td><td>120km/h</td><td>운전차량 80, 1층 객차차량 80, 2층 객차차량 160</td>
-                                        </tr>
-                                        <tr>
-                                            <td rowspan="4">지하철</td>
-                                        </tr>
-                                        <tr>
-                                            <td rowspan="3">YTRO 100 D도색</td>
-                                        </tr>
-                                        <tr>
-                                            <td colspan="3"><img src="img/YST/YTRO_100_D.png" alt="YTRO 100 D도색"></td>
-                                        </tr>
-                                        <tr class="tr">
-                                            <td>2020년</td><td>120km/h</td><td>운전차량 80, 1층 객차차량 80, 2층 객차차량 160</td>
-                                        </tr>
-                                        <tr>
-                                            <td rowspan="4">지하철</td>
-                                        </tr>
-                                        <tr>
-                                            <td rowspan="3">YTRO 100 E도색</td>
-                                        </tr>
-                                        <tr>
-                                            <td colspan="3"><img src="img/YST/YTRO_100_E.png" alt="YTRO 100 E도색"></td>
-                                        </tr>
-                                        <tr class="tr">
-                                            <td>2020년</td><td>120km/h</td><td>운전차량 80, 1층 객차차량 80, 2층 객차차량 160</td>
-                                        </tr>
-                                        <!-- // YTRO 100 -->
-                                        <tr>
-                                            <td rowspan="4">지하철</td>
-                                        </tr>
-                                        <tr>
-                                            <td rowspan="3">YTRO 200 A도색</td>
-                                        </tr>
-                                        <tr>
-                                            <td colspan="3"><img src="img/YST/YTRO_200_A.png" alt="YTRO 200 A도색"></td>
-                                        </tr>
-                                        <tr class="tr">
-                                            <td>2020년</td><td>120km/h</td><td>운전차량 80, 1층 객차차량 80, 2층 객차차량 160</td>
-                                        </tr>
-                                        <tr>
-                                            <td rowspan="4">지하철</td>
-                                        </tr>
-                                        <tr>
-                                            <td rowspan="3">YTRO 200 B도색</td>
-                                        </tr>
-                                        <tr>
-                                            <td colspan="3"><img src="img/YST/YTRO_200_B.png" alt="YTRO 200 B도색"></td>
-                                        </tr>
-                                        <tr class="tr">
-                                            <td>2020년</td><td>120km/h</td><td>운전차량 80, 1층 객차차량 80, 2층 객차차량 160</td>
-                                        </tr>
-                                        <tr>
-                                            <td rowspan="4">지하철</td>
-                                        </tr>
-                                        <tr>
-                                            <td rowspan="3">YTRO 200 C도색</td>
-                                        </tr>
-                                        <tr>
-                                            <td colspan="3"><img src="img/YST/YTRO_200_C.png" alt="YTRO 200 C도색"></td>
-                                        </tr>
-                                        <tr class="tr">
-                                            <td>2020년</td><td>120km/h</td><td>운전차량 80, 1층 객차차량 80, 2층 객차차량 160</td>
-                                        </tr>
-                                        <tr>
-                                            <td rowspan="4">지하철</td>
-                                        </tr>
-                                        <tr>
-                                            <td rowspan="3">YTRO 200 D도색</td>
-                                        </tr>
-                                        <tr>
-                                            <td colspan="3"><img src="img/YST/YTRO_200_D.png" alt="YTRO 200 D도색"></td>
-                                        </tr>
-                                        <tr class="tr">
-                                            <td>2020년</td><td>120km/h</td><td>운전차량 80, 1층 객차차량 80, 2층 객차차량 160</td>
-                                        </tr>
-                                        <tr>
-                                            <td rowspan="4">지하철</td>
-                                        </tr>
-                                        <tr>
-                                            <td rowspan="3">YTRO 200 E도색</td>
-                                        </tr>
-                                        <tr>
-                                            <td colspan="3"><img src="img/YST/YTRO_200_E.png" alt="YTRO 200 E도색"></td>
-                                        </tr>
-                                        <tr class="tr">
-                                            <td>2020년</td><td>120km/h</td><td>운전차량 80, 1층 객차차량 80, 2층 객차차량 160</td>
-                                        </tr>
-                                        <tr>
-                                            <td rowspan="4">지하철</td>
-                                        </tr>
-                                        <tr>
-                                            <td rowspan="3">YTRO 200 F도색</td>
-                                        </tr>
-                                        <tr>
-                                            <td colspan="3"><img src="img/YST/YTRO_200_F.png" alt="YTRO 200 F도색"></td>
-                                        </tr>
-                                        <tr class="tr">
-                                            <td>2020년</td><td>120km/h</td><td>운전차량 80, 1층 객차차량 80, 2층 객차차량 160</td>
-                                        </tr>
-                                        <tr>
-                                            <td rowspan="4">지하철</td>
-                                        </tr>
-                                        <tr>
-                                            <td rowspan="3">YTRO 200 G도색</td>
-                                        </tr>
-                                        <tr>
-                                            <td colspan="3"><img src="img/YST/YTRO_200_G.png" alt="YTRO 200 G도색"></td>
-                                        </tr>
-                                        <tr class="tr">
-                                            <td>2020년</td><td>120km/h</td><td>운전차량 80, 1층 객차차량 80, 2층 객차차량 160</td>
-                                        </tr>
-                                        <tr>
-                                            <td rowspan="4">지하철</td>
-                                        </tr>
-                                        <tr>
-                                            <td rowspan="3">YTRO 200 H도색</td>
-                                        </tr>
-                                        <tr>
-                                            <td colspan="3"><img src="img/YST/YTRO_200_H.png" alt="YTRO 200 H도색"></td>
-                                        </tr>
-                                        <tr class="tr">
-                                            <td>2020년</td><td>120km/h</td><td>운전차량 80, 1층 객차차량 80, 2층 객차차량 160</td>
-                                        </tr>
-                                        <tr>
-                                            <td rowspan="4">지하철</td>
-                                        </tr>
-                                        <tr>
-                                            <td rowspan="3">YTRO 200 I도색</td>
-                                        </tr>
-                                        <tr>
-                                            <td colspan="3"><img src="img/YST/YTRO_200_I.png" alt="YTRO 200 I도색"></td>
-                                        </tr>
-                                        <tr class="tr">
-                                            <td>2020년</td><td>120km/h</td><td>운전차량 80, 1층 객차차량 80, 2층 객차차량 160</td>
-                                        </tr>
-                                        <tr>
-                                            <td rowspan="4">지하철</td>
-                                        </tr>
-                                        <tr>
-                                            <td rowspan="3">YTRO 200 J도색</td>
-                                        </tr>
-                                        <tr>
-                                            <td colspan="3"><img src="img/YST/YTRO_200_J.png" alt="YTRO 200 J도색"></td>
-                                        </tr>
-                                        <tr class="tr">
-                                            <td>2020년</td><td>120km/h</td><td>운전차량 80, 1층 객차차량 80, 2층 객차차량 160</td>
-                                        </tr>
-                                        <!-- // YTRO 200 -->
-                                </table>
+<table>
+	<thead>
+		<tr>
+			<th>구분</th><th>ID</th><th>열차이름</th><th>도입년도</th><th>열차속도</th><th>수송량</th>
+		</tr>
+	</thead>
+	<tbody>
+        	<tr>
+			<td rowspan="4">일반열차</td>
+		</tr>
+		<tr>
+			<td rowspan="3">3052</td>
+		</tr>
+		<tr>
+			<td colspan="4"><img src="docs/img/YST/ITX_SM2_Red.png" alt="ITX-SM2 Red"></td>
+		</tr>
+		<tr>
+			<td>ITX-SM2 빨강도색</td><td>2020년</td><td>181km/h</td><td>운전차량 160, 객차차량 200</td>
+		</tr>
+		<!-- // ITX-SM2 빨강-->
+		<tr>
+			<td rowspan="4">일반열차</td>
+		</tr>
+		<tr>
+			<td rowspan="3">3052</td>
+		</tr>
+		<tr>
+			<td colspan="4"><img src="docs/img/YST/ITX_SM2_Green.png" alt="ITX-SM2 Green"></td>
+		</tr>
+		<tr>
+			<td>ITX-SM2 녹색도색</td><td>2020년</td><td>181km/h</td><td>운전차량 160, 객차차량 200</td>
+		</tr>
+		<!-- // ITX-SM2 녹색-->
+		<tr>
+			<td rowspan="4">일반열차</td>
+		</tr>
+		<tr>
+			<td rowspan="3">3052</td>
+		</tr>
+		<tr>
+			<td colspan="4"><img src="docs/img/YST/ITX_SM2_White.png" alt="ITX-SM2 White"></td>
+		</tr>
+		<tr>
+			<td>ITX-SM2 흰색도색</td><td>2020년</td><td>181km/h</td><td>운전차량 160, 객차차량 200</td>
+		</tr>
+		<!-- // ITX-SM2 흰색-->
+		<tr>
+			<td rowspan="4">고속열차</td>
+		</tr>
+		<tr>
+			<td rowspan="3">3053</td>
+		</tr>
+		<tr>
+			<td colspan="4"><img src="docs/img/YST/KTX_SC2_Blue.png" alt="KTX SC2 Blue"></td>
+		</tr>
+		<tr>
+			<td>KTX-SC2 파랑도색</td><td>2020년</td><td>362km/h</td><td>객차차량 116</td>
+		</tr>
+		<!-- // KTX-SC2 파랑-->
+		<tr>
+			<td rowspan="4">고속열차</td>
+		</tr>
+		<tr>
+			<td rowspan="3">3053</td>
+		</tr>
+		<tr>
+			<td colspan="4"><img src="docs/img/YST/KTX_SC2_Green.png" alt="KTX SC2 Green"></td>
+		</tr>
+		<tr>
+			<td>KTX-SC2 녹색도색</td><td>2020년</td><td>362km/h</td><td>객차차량 116</td>
+		</tr>
+		<!-- // KTX-SC2 녹색-->
+		<tr>
+			<td rowspan="4">고속열차</td>
+		</tr>
+		<tr>
+			<td rowspan="3">3053</td>
+		</tr>
+		<tr>
+			<td colspan="4"><img src="docs/img/YST/KTX_SC2_White.png" alt="KTX SC2 White"></td>
+		</tr>
+		<tr>
+			<td>KTX-SC2 흰색도색</td><td>2020년</td><td>362km/h</td><td>객차차량 116</td>
+		</tr>
+		<!-- // KTX-SC2 흰색-->
+</table>
 </details>
 
 ## 지하철
