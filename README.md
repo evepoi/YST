@@ -26,26 +26,26 @@ YST는 다소 까다로운 템플릿을 보유하고 보다 편한 코딩방식�
 ## 최근 추가 열차
 <details markdown="1">
 <summary>내용보기</summary>
-<table class="table2">
-                                    <thead>
-                                        <tr>
-                                            <th>구분</th><th>열차이름</th><th>도입년도</th><th>열차속도</th><th>수송량</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td rowspan="4">지하철</td>
-                                        </tr>
-                                        <tr>
-                                            <td rowspan="3">MTR</td>
-                                        </tr>
-                                            <tr>
-                                                <td colspan="3"><img src="img/YST/MTR.png" alt="MTR"></td>
-                                            </tr>
-                                        <tr class="tr">
-                                            <td>1979년</td><td>120km/h</td><td>운전차량 80, 객차차량 80</td>
-                                        </tr>
-                                        <!-- // MTR -->
+<table>
+	<thead>
+		<tr>
+			<th>구분</th><th>ID</th><th>열차이름</th><th>도입년도</th><th>열차속도</th><th>수송량</th>
+		</tr>
+	</thead>
+	<tbody>
+        	<tr>
+			<td rowspan="4">일반열차</td>
+		</tr>
+		<tr>
+			<td rowspan="3">3052</td>
+		</tr>
+		<tr>
+			<td colspan="4"><img src="img/YST/MTR.png" alt="MTR"></td>
+		</tr>
+		<tr>
+			<td>MTR</td><td>1979년</td><td>120km/h</td><td>운전차량 80, 객차차량 80</td>
+		</tr>
+		<!-- // MTR -->
                                         <tr>
                                             <td rowspan="4">지하철</td>
                                         </tr>
