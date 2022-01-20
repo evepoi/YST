@@ -24,3 +24,4 @@ YST는 다소 까다로운 템플릿을 보유하고 보다 편한 코딩방식�
 
 이하 문서 작성중입니다.
 ## 추가열차 
+https://github.com/evepoi/YST/blob/minengallery/docs/img/YST/500.png
