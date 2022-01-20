@@ -111,6 +111,45 @@ YST는 다소 까다로운 템플릿을 보유하고 보다 편한 코딩방식�
 			<td>KTX-SC2 흰색도색</td><td>2020년</td><td>362km/h</td><td>객차차량 116</td>
 		</tr>
 		<!-- // KTX-SC2 흰색-->
+        <tr>
+			<td rowspan="4">일반열차</td>
+		</tr>
+		<tr>
+			<td rowspan="3">3054</td>
+		</tr>
+		<tr>
+			<td colspan="4"><img src="docs/img/YST/NRT2_Blue.png" alt="NRT2 Blue"></td>
+		</tr>
+		<tr>
+			<td>NRT2 파랑도색</td><td>2020년</td><td>181km/h</td><td>운전차량 160, 객차차량 116</td>
+		</tr>
+		<!-- // NRT2 파랑-->
+        <tr>
+			<td rowspan="4">일반열차</td>
+		</tr>
+		<tr>
+			<td rowspan="3">3054</td>
+		</tr>
+		<tr>
+			<td colspan="4"><img src="docs/img/YST/NRT2_Green.png" alt="NRT2 Green"></td>
+		</tr>
+		<tr>
+			<td>NRT2 녹색도색</td><td>2020년</td><td>181km/h</td><td>운전차량 160, 객차차량 116</td>
+		</tr>
+		<!-- // NRT2 녹색-->
+        <tr>
+			<td rowspan="4">일반열차</td>
+		</tr>
+		<tr>
+			<td rowspan="3">3054</td>
+		</tr>
+		<tr>
+			<td colspan="4"><img src="docs/img/YST/NRT2_White.png" alt="NRT2 White"></td>
+		</tr>
+		<tr>
+			<td>NRT2 흰색도색</td><td>2020년</td><td>181km/h</td><td>운전차량 160, 객차차량 116</td>
+		</tr>
+		<!-- // NRT2 흰색-->
 </table>
 </details>
 
