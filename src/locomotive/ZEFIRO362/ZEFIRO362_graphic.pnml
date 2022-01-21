@@ -1,0 +1,52 @@
+/*--------------------------------------------------------------------
+Graphics
+--------------------------------------------------------------------*/
+spriteset(set_ZEFIRO362_purchase, "src\locomotive\ZEFIRO362\ZEFIRO362.png"){
+    tmpl_purchase(0, 0)
+}
+
+/*--------------------------------------------------------------------
+ZEFIRO362
+--------------------------------------------------------------------*/
+spriteset(set_ZEFIRO362H_purchase, "src\locomotive\ZEFIRO362\ZEFIRO362.png"){
+    tmpl_purchase_for_dualhead(0, 135)
+}
+
+spriteset(set_ZEFIRO362_engineH, "src\locomotive\ZEFIRO362\ZEFIRO362.png"){
+    engine(80, 0)
+}
+
+spriteset(set_ZEFIRO362_wagon_start, "src\locomotive\ZEFIRO362\ZEFIRO362.png"){
+    wagon_start(80, 27)
+}
+
+spriteset(set_ZEFIRO362_1F_wagon, "src\locomotive\ZEFIRO362\ZEFIRO362.png") {
+    wagon_1F(80, 54)
+}
+
+spriteset(set_ZEFIRO362_1F_wagon_r, "src\locomotive\ZEFIRO362\ZEFIRO362.png") {
+    wagon_1F_r(80, 54)
+}
+
+spriteset(set_ZEFIRO362_2F_wagon, "src\locomotive\ZEFIRO362\ZEFIRO362.png") {
+    wagon_2F(80, 81)
+}
+
+spriteset(set_ZEFIRO362_2F_wagon_r, "src\locomotive\ZEFIRO362\ZEFIRO362.png") {
+    wagon_2F_r(80, 81)
+}
+
+spriteset(set_ZEFIRO362_wagon_end, "src\locomotive\ZEFIRO362\ZEFIRO362.png"){
+    wagon_start(80, 108)
+}
+
+spriteset(set_ZEFIRO362_engineT, "src\locomotive\ZEFIRO362\ZEFIRO362.png"){
+    engine_r(80, 135)
+}
+
+/*--------------------------------------------------------------------
+구매정보
+--------------------------------------------------------------------*/
+switch(FEAT_TRAINS, SELF, sw_ZEFIRO362_purchase, cargo_subtype) {
+    set_ZEFIRO362_purchase;
+}
