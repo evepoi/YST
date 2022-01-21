@@ -301,7 +301,7 @@ YST는 다소 까다로운 템플릿을 보유하고 보다 편한 코딩방식�
 			<td colspan="3">3004 : AVE Velaro</td>
 		</tr>
 		<tr>
-			<td></td><td>2006</td><td>362km/h</td>
+			<td><img src="docs/img/YST/3004.png" alt="3004"></td><td>2006</td><td>362km/h</td>
 		</tr>
 		<!-- // 3004-->
 		<tr>
