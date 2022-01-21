@@ -420,7 +420,7 @@ YST는 다소 까다로운 템플릿을 보유하고 보다 편한 코딩방식�
 			<td colspan="3">3021 : ICE3</td>
 		</tr>
 		<tr>
-			<td></td><td>1997</td><td>362km/h</td>
+			<td><img src="docs/img/YST/3021.png" alt="3021"></td><td>1997</td><td>362km/h</td>
 		</tr>
 		<!-- // 3021-->
 		<tr>
