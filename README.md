@@ -595,7 +595,7 @@ YST는 다소 까다로운 템플릿을 보유하고 보다 편한 코딩방식�
 			<td colspan="3">3045 : YFX</td>
 		</tr>
 		<tr>
-			<td></td><td>2020</td><td>600km/h</td>
+			<td><img src="docs/img/YST/3045.png" alt="3045"></td><td>2020</td><td>600km/h</td>
 		</tr>
 		<!-- // 3045-->
 		<tr>
