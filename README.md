@@ -153,192 +153,569 @@ YST는 다소 까다로운 템플릿을 보유하고 보다 편한 코딩방식�
 </table>
 </details>
 
-## 지하철
+## 열차목록
 <details markdown="2">
 <summary>내용보기</summary>
 <table>
     <thead>
         <tr>
-            <th>열차<th>도입</th><th>열차속도</th><th>수송</th>
+            <th>열차<th>도입</th><th>열차속도</th>
         </tr>
     </thead>
 	<tbody>
 		<tr>
-			<td colspan="4">4001 : MTR AD Tranz CAF A형</td>
+			<td colspan="3">2001 : 1층 공통객차</td>
 		</tr>
 		<tr>
-			<td><img src="docs/img/YST/4001.png" alt="4001"></td><td>1979</td><td>120km/h</td><td>80</td>
+			<td></td><td>1978</td><td></td>
+		</tr>
+		<!-- // 2001-->
+		<tr>
+			<td colspan="3">2002 : 2층 공통객차</td>
+		</tr>
+		<tr>
+			<td></td><td>2020</td><td></td>
+		</tr>
+		<!-- // 2002-->
+		<tr>
+			<td colspan="3">2003 : TGV Poste 화차</td>
+		</tr>
+		<tr>
+			<td></td><td>1978</td><td></td>
+		</tr>
+		<!-- // 2003-->
+		<tr>
+			<td colspan="3">2004 : YFX용 화차</td>
+		</tr>
+		<tr>
+			<td></td><td>2020</td><td></td>
+		</tr>
+		<!-- // 2004-->
+		<tr>
+			<td colspan="3">2005 : 평판화차</td>
+		</tr>
+		<tr>
+			<td></td><td>1967</td><td></td>
+		</tr>
+		<!-- // 2005-->
+		<tr>
+			<td colspan="3">2006 : 평판화차 - 미국형</td>
+		</tr>
+		<tr>
+			<td></td><td>1967</td><td></td>
+		</tr>
+		<!-- // 2006-->
+		<tr>
+			<td colspan="3">2007 : 평판유조 화차</td>
+		</tr>
+		<tr>
+			<td></td><td>1967</td><td></td>
+		</tr>
+		<!-- // 2007-->
+		<tr>
+			<td colspan="3">2008 : 유조차</td>
+		</tr>
+		<tr>
+			<td></td><td>1967</td><td></td>
+		</tr>
+		<!-- // 2008-->
+		<tr>
+			<td colspan="3">2009 : YPW 1층 객차</td>
+		</tr>
+		<tr>
+			<td></td><td>1967</td><td></td>
+		</tr>
+		<!-- // 2009-->
+		<tr>
+			<td colspan="3">2010 : YPW 2층 객차</td>
+		</tr>
+		<tr>
+			<td></td><td>2020</td><td></td>
+		</tr>
+		<!-- // 2010-->
+		<tr>
+			<td colspan="3">2011 : YPW 침대차</td>
+		</tr>
+		<tr>
+			<td></td><td>1967</td><td></td>
+		</tr>
+		<!-- // 2011-->
+		<tr>
+			<td colspan="3">2012 : YPW 발전차</td>
+		</tr>
+		<tr>
+			<td></td><td>1967</td><td></td>
+		</tr>
+		<!-- // 2012-->
+		<tr>
+			<td colspan="3">2013 : YPW 수화물차</td>
+		</tr>
+		<tr>
+			<td></td><td>1967</td><td></td>
+		</tr>
+		<!-- // 2013-->
+		<tr>
+			<td colspan="3">2014 : (예정) 무궁화 2층객차</td>
+		</tr>
+		<tr>
+			<td></td><td>2020</td><td></td>
+		</tr>
+		<!-- // 2014-->
+		<tr>
+			<td colspan="3">3001 : AGV</td>
+		</tr>
+		<tr>
+			<td></td><td>2012</td>362km/h<td></td>
+		</tr>
+		<!-- // 3001-->
+		<tr>
+			<td colspan="3">3002 : AGV Cool</td>
+		</tr>
+		<tr>
+			<td></td><td>2020</td>430km/h<td></td>
+		</tr>
+		<!-- // 3002-->
+		<tr>
+			<td colspan="3">3003 : AVE</td>
+		</tr>
+		<tr>
+			<td></td><td>2012</td>362km/h<td></td>
+		</tr>
+		<!-- // 3003-->
+		<tr>
+			<td colspan="3">3004 : AVE Velaro</td>
+		</tr>
+		<tr>
+			<td></td><td>2006</td>362km/h<td></td>
+		</tr>
+		<!-- // 3004-->
+		<tr>
+			<td colspan="3">3005 : BB15048</td>
+		</tr>
+		<tr>
+			<td></td><td>1971</td>181km/h<td></td>
+		</tr>
+		<!-- // 3005-->
+		<tr>
+			<td colspan="3">3006 : CRH1</td>
+		</tr>
+		<tr>
+			<td></td><td>2007</td>260km/h<td></td>
+		</tr>
+		<!-- // 3006-->
+		<tr>
+			<td colspan="3">3007 : CRH3</td>
+		</tr>
+		<tr>
+			<td></td><td>2017</td>362km/h<td></td>
+		</tr>
+		<!-- // 3007-->
+		<tr>
+			<td colspan="3">3008 : CRH362A</td>
+		</tr>
+		<tr>
+			<td></td><td>2017</td>362km/h<td></td>
+		</tr>
+		<!-- // 3008-->
+		<tr>
+			<td colspan="3">3009 : CRH430A</td>
+		</tr>
+		<tr>
+			<td></td><td>2017</td>430km/h<td></td>
+		</tr>
+		<!-- // 3009-->
+		<tr>
+			<td colspan="3">3010 : CRH600A-Test</td>
+		</tr>
+		<tr>
+			<td></td><td>2017</td>600km/h<td></td>
+		</tr>
+		<!-- // 3010-->
+		<tr>
+			<td colspan="3">3011 : CRV600</td>
+		</tr>
+		<tr>
+			<td></td><td>2012</td>600km/h<td></td>
+		</tr>
+		<!-- // 3011-->
+		<tr>
+			<td colspan="3">3012 : Dr. Yellow</td>
+		</tr>
+		<tr>
+			<td></td><td>2007</td>600km/h<td></td>
+		</tr>
+		<!-- // 3012-->
+		<tr>
+			<td colspan="3">3013 : E300</td>
+		</tr>
+		<tr>
+			<td></td><td>1992</td>362km/h<td></td>
+		</tr>
+		<!-- // 3013-->
+		<tr>
+			<td colspan="3">3014 : E320</td>
+		</tr>
+		<tr>
+			<td></td><td>2014</td>362km/h<td></td>
+		</tr>
+		<!-- // 3014-->
+		<tr>
+			<td colspan="3">3015 : EMU260</td>
+		</tr>
+		<tr>
+			<td></td><td>2020</td>260km/h<td></td>
+		</tr>
+		<!-- // 3015-->
+		<tr>
+			<td colspan="3">3016 : Glory 600</td>
+		</tr>
+		<tr>
+			<td></td><td>2020</td>600km/h<td></td>
+		</tr>
+		<!-- // 3016-->
+		<tr>
+			<td colspan="3">3017 : GT26CW</td>
+		</tr>
+		<tr>
+			<td></td><td>1967</td>181km/h<td></td>
+		</tr>
+		<!-- // 3017-->
+		<tr>
+			<td colspan="3">3018 : HEMU-430</td>
+		</tr>
+		<tr>
+			<td></td><td>2007</td>430km/h<td></td>
+		</tr>
+		<!-- // 3018-->
+		<tr>
+			<td colspan="3">3019 : HMX</td>
+		</tr>
+		<tr>
+			<td></td><td>2020</td>260km/h<td></td>
+		</tr>
+		<!-- // 3019-->
+		<tr>
+			<td colspan="3">3020 : ICE-SP</td>
+		</tr>
+		<tr>
+			<td></td><td>2020</td>362km/h<td></td>
+		</tr>
+		<!-- // 3020-->
+		<tr>
+			<td colspan="3">3021 : ICE3</td>
+		</tr>
+		<tr>
+			<td></td><td>1997</td>362km/h<td></td>
+		</tr>
+		<!-- // 3021-->
+		<tr>
+			<td colspan="3">3022 : KTX-N</td>
+		</tr>
+		<tr>
+			<td></td><td>2020</td>362km/h<td></td>
+		</tr>
+		<!-- // 3022-->
+		<tr>
+			<td colspan="3">3023 : NJ2</td>
+		</tr>
+		<tr>
+			<td></td><td>2006</td>181km/h<td></td>
+		</tr>
+		<!-- // 3023-->
+		<tr>
+			<td colspan="3">3024 : NKX</td>
+		</tr>
+		<tr>
+			<td></td><td>2020</td>181km/h<td></td>
+		</tr>
+		<!-- // 3024-->
+		<tr>
+			<td colspan="3">3025 : 신칸센 500계</td>
+		</tr>
+		<tr>
+			<td></td><td>1996</td>362km/h<td></td>
+		</tr>
+		<!-- // 3025-->
+		<tr>
+			<td colspan="3">3026 : 신칸센 500계 Cool</td>
+		</tr>
+		<tr>
+			<td></td><td>2020</td>430km/h<td></td>
+		</tr>
+		<!-- // 3026-->
+		<tr>
+			<td colspan="3">3027 : 신칸센 500계 SP</td>
+		</tr>
+		<tr>
+			<td></td><td>2020</td>430km/h<td></td>
+		</tr>
+		<!-- // 3027-->
+		<tr>
+			<td colspan="3">3028 : 신칸센 800계</td>
+		</tr>
+		<tr>
+			<td></td><td>1996</td>260km/h<td></td>
+		</tr>
+		<!-- // 3028-->
+		<tr>
+			<td colspan="3">3029 : 신칸센 E5</td>
+		</tr>
+		<tr>
+			<td></td><td>2011</td>362km/h<td></td>
+		</tr>
+		<!-- // 3029-->
+		<tr>
+			<td colspan="3">3030 : 신칸센 E6</td>
+		</tr>
+		<tr>
+			<td></td><td>2011</td>362km/h<td></td>
+		</tr>
+		<!-- // 3030-->
+		<tr>
+			<td colspan="3">3031 : 신칸센 E7</td>
+		</tr>
+		<tr>
+			<td></td><td>2014</td>362km/h<td></td>
+		</tr>
+		<!-- // 3031-->
+		<tr>
+			<td colspan="3">3032 : 신칸센 N700</td>
+		</tr>
+		<tr>
+			<td></td><td>2007</td>362km/h<td></td>
+		</tr>
+		<!-- // 3032-->
+		<tr>
+			<td colspan="3">3033 : TAE</td>
+		</tr>
+		<tr>
+			<td></td><td>2020</td>181km/h<td></td>
+		</tr>
+		<!-- // 3033-->
+		<tr>
+			<td colspan="3">3033 : TAE</td>
+		</tr>
+		<tr>
+			<td></td><td>2020</td>260km/h<td></td>
+		</tr>
+		<!-- // 3033-->
+		<tr>
+			<td colspan="3">3034 : Talgo250</td>
+		</tr>
+		<tr>
+			<td></td><td>2012</td>260km/h<td></td>
+		</tr>
+		<!-- // 3034-->
+		<tr>
+			<td colspan="3">3035 : TGV Duplex</td>
+		</tr>
+		<tr>
+			<td></td><td>1994</td>362km/h<td></td>
+		</tr>
+		<!-- // 3035-->
+		<tr>
+			<td colspan="3">3036 : TGV Old</td>
+		</tr>
+		<tr>
+			<td></td><td>1978</td>362km/h<td></td>
+		</tr>
+		<!-- // 3036-->
+		<tr>
+			<td colspan="3">3037 : TGV Old Duplex</td>
+		</tr>
+		<tr>
+			<td></td><td>1994</td>362km/h<td></td>
+		</tr>
+		<!-- // 3037-->
+		<tr>
+			<td colspan="3">3038 : TGV Old Pos</td>
+		</tr>
+		<tr>
+			<td></td><td>1978</td>362km/h<td></td>
+		</tr>
+		<!-- // 3038-->
+		<tr>
+			<td colspan="3">3039 : TGV Old Poste</td>
+		</tr>
+		<tr>
+			<td></td><td>1978</td>362km/h<td></td>
+		</tr>
+		<!-- // 3039-->
+		<tr>
+			<td colspan="3">3040 : TGV Ouigo</td>
+		</tr>
+		<tr>
+			<td></td><td>2013</td>362km/h<td></td>
+		</tr>
+		<!-- // 3040-->
+		<tr>
+			<td colspan="3">3041 : TGV Pos</td>
+		</tr>
+		<tr>
+			<td></td><td>2006</td>362km/h<td></td>
+		</tr>
+		<!-- // 3041-->
+		<tr>
+			<td colspan="3">3042 : TGV Pos Poste</td>
+		</tr>
+		<tr>
+			<td></td><td>2006</td>362km/h<td></td>
+		</tr>
+		<!-- // 3042-->
+		<tr>
+			<td colspan="3">3043 : THRS</td>
+		</tr>
+		<tr>
+			<td></td><td>2007</td>362km/h<td></td>
+		</tr>
+		<!-- // 3043-->
+		<tr>
+			<td colspan="3">3044 : VTX</td>
+		</tr>
+		<tr>
+			<td></td><td>2020</td>600km/h<td></td>
+		</tr>
+		<!-- // 3044-->
+		<tr>
+			<td colspan="3">3045 : YFX</td>
+		</tr>
+		<tr>
+			<td></td><td>2020</td>600km/h<td></td>
+		</tr>
+		<!-- // 3045-->
+		<tr>
+			<td colspan="3">3046 : YTX</td>
+		</tr>
+		<tr>
+			<td></td><td>2020</td>362km/h<td></td>
+		</tr>
+		<!-- // 3046-->
+		<tr>
+			<td colspan="3">3047 : ZEFIRO380</td>
+		</tr>
+		<tr>
+			<td></td><td>2014</td>380km/h<td></td>
+		</tr>
+		<!-- // 3047-->
+		<tr>
+			<td colspan="3">3048 : ZEFIRO380 Black</td>
+		</tr>
+		<tr>
+			<td></td><td>2020</td>600km/h<td></td>
+		</tr>
+		<!-- // 3048-->
+		<tr>
+			<td colspan="3">3049 : ZEFIRO380 Cool</td>
+		</tr>
+		<tr>
+			<td></td><td>2020</td>430km/h<td></td>
+		</tr>
+		<!-- // 3049-->
+		<tr>
+			<td colspan="3">3050 : EMU362</td>
+		</tr>
+		<tr>
+			<td></td><td>2020</td>362km/h<td></td>
+		</tr>
+		<!-- // 3050-->
+		<tr>
+			<td colspan="3">3051 : EMU180</td>
+		</tr>
+		<tr>
+			<td></td><td>2023</td>181km/h<td></td>
+		</tr>
+		<!-- // 3051-->
+		<tr>
+			<td colspan="3">3052 : ITX-SM2</td>
+		</tr>
+		<tr>
+			<td></td><td>2020</td>181km/h<td></td>
+		</tr>
+		<!-- // 3052-->
+		<tr>
+			<td colspan="3">3053 : KTX-SC2</td>
+		</tr>
+		<tr>
+			<td></td><td>2020</td>362km/h<td></td>
+		</tr>
+		<!-- // 3053-->
+		<tr>
+			<td colspan="3">3054 : NRT2</td>
+		</tr>
+		<tr>
+			<td></td><td>2020</td>181km/h<td></td>
+		</tr>
+		<!-- // 3054-->
+		<tr>
+			<td colspan="3">4001 : MTR AD Tranz CAF A형</td>
+		</tr>
+		<tr>
+			<td><img src="docs/img/YST/4001.png" alt="4001"></td><td>1979</td><td>120km/h</td>
 		</tr>
 		<!-- // 4001-->
 		<tr>
-			<td colspan="4">4002 : MTR 메트로카멜 교류형 전동차</td>
+			<td colspan="3">4002 : MTR 메트로카멜 교류형 전동차</td>
 		</tr>
 		<tr>
-			<td><img src="docs/img/YST/4002.png" alt="4002"></td><td>1979</td><td>120km/h</td><td>80</td>
+			<td><img src="docs/img/YST/4002.png" alt="4002"></td><td>1979</td><td>120km/h</td>
 		</tr>
 		<!-- // 4002-->
 		<tr>
-			<td colspan="4">4003 : MTR 메트로카멜 직류형 전동차</td>
+			<td colspan="3">4003 : MTR 메트로카멜 직류형 전동차</td>
 		</tr>
 		<tr>
-			<td><img src="docs/img/YST/4003.png" alt="4003"></td><td>1979</td><td>120km/h</td><td>80</td>
+			<td><img src="docs/img/YST/4003.png" alt="4003"></td><td>1979</td><td>120km/h</td>
 		</tr>
 		<!-- // 4003-->
 		<tr>
-			<td colspan="4">4004 : MTR CNR 창춘 전동차</td>
+			<td colspan="3">4004 : MTR CNR 창춘 전동차</td>
 		</tr>
 		<tr>
-			<td><img src="docs/img/YST/4004.png" alt="4004"></td><td>1979</td><td>120km/h</td><td>80</td>
+			<td><img src="docs/img/YST/4004.png" alt="4004"></td><td>1979</td><td>120km/h</td>
 		</tr>
 		<!-- // 4004-->
 		<tr>
-			<td colspan="4">4005 : MTR CRRC 전동차</td>
+			<td colspan="3">4005 : MTR CRRC 전동차</td>
 		</tr>
 		<tr>
-			<td><img src="docs/img/YST/4005.png" alt="4005"></td><td>1979</td><td>120km/h</td><td>80</td>
+			<td><img src="docs/img/YST/4005.png" alt="4005"></td><td>1979</td><td>120km/h</td>
 		</tr>
 		<!-- // 4005-->
 		<tr>
-			<td colspan="4">4006 : MTR 현대로템 미쓰비시 전동차</td>
+			<td colspan="3">4006 : MTR 현대로템 미쓰비시 전동차</td>
 		</tr>
 		<tr>
-			<td><img src="docs/img/YST/4006.png" alt="4006"></td><td>1979</td><td>120km/h</td><td>80</td>
+			<td><img src="docs/img/YST/4006.png" alt="4006"></td><td>1979</td><td>120km/h</td>
 		</tr>
 		<!-- // 4006-->
 		<tr>
-			<td colspan="4">4007 : MTR 현대로템 R형 전동차</td>
+			<td colspan="3">4007 : MTR 현대로템 R형 전동차</td>
 		</tr>
 		<tr>
-			<td><img src="docs/img/YST/4007.png" alt="4007"></td><td>1979</td><td>120km/h</td><td>80</td>
+			<td><img src="docs/img/YST/4007.png" alt="4007"></td><td>1979</td><td>120km/h</td>
 		</tr>
 		<!-- // 4007-->
 		<tr>
-			<td colspan="4">4008 : MTR IKK SP 1900</td>
+			<td colspan="3">4008 : MTR IKK SP 1900</td>
 		</tr>
 		<tr>
-			<td><img src="docs/img/YST/4008.png" alt="4008"></td><td>1979</td><td>120km/h</td><td>80</td>
+			<td><img src="docs/img/YST/4008.png" alt="4008"></td><td>1979</td><td>120km/h</td>
 		</tr>
 		<!-- // 4008-->
 		<tr>
-			<td colspan="4">4009 : YMT 100</td>
+			<td colspan="3">4009 : YMT 100</td>
 		</tr>
 		<tr>
-			<td></td><td>2020</td><td>120km/h</td><td>80</td>
+			<td><img src="docs/img/YST/4009.png" alt="4009"></td><td>2020</td><td>120km/h</td>
 		</tr>
 		<!-- // 4009-->
 		<tr>
-			<td colspan="4">4010 : YMT 200</td>
+			<td colspan="3">4010 : YMT 200</td>
 		</tr>
 		<tr>
-			<td></td><td>2020</td><td>120km/h</td><td>80</td>
+			<td></td><td>2020</td><td>120km/h</td>
 		</tr>
 		<!-- // 4010-->
-	</tbody>
-</table>
-</details>
-
-## 일반열차
-<details markdown="3">
-<summary>내용보기</summary>
-곧 추가됩니다.
-<table>
-    <thead>
-        <tr>
-            <th>구분</th><th>ID</th><th>열차이름</th><th>도입년도</th><th>열차속도</th><th>수송량</th>
-        </tr>
-    </thead>
-	<tbody>
-	</tbody>
-</table>
-</details>
-
-## 고속열차
-### 260km/h급 
-<details markdown="4">
-<summary>내용보기</summary>
-곧 추가됩니다.
-<table>
-    <thead>
-        <tr>
-            <th>구분</th><th>ID</th><th>열차이름</th><th>도입년도</th><th>열차속도</th><th>수송량</th>
-        </tr>
-    </thead>
-	<tbody>
-	</tbody>
-</table>
-</details>
-	
-### 362km/h급 
-<details markdown="5">
-<summary>내용보기</summary>
-곧 추가됩니다.
-<table>
-    <thead>
-        <tr>
-            <th>구분</th><th>ID</th><th>열차이름</th><th>도입년도</th><th>열차속도</th><th>수송량</th>
-        </tr>
-    </thead>
-	<tbody>
-	</tbody>
-</table>
-</details>
-	
-### 430km/h급 
-<details markdown="6">
-<summary>내용보기</summary>
-곧 추가됩니다.
-<table>
-    <thead>
-        <tr>
-            <th>구분</th><th>ID</th><th>열차이름</th><th>도입년도</th><th>열차속도</th><th>수송량</th>
-        </tr>
-    </thead>
-	<tbody>
-	</tbody>
-</table>
-</details>
-
-### 600km/h급 
-<details markdown="7">
-<summary>내용보기</summary>
-곧 추가됩니다.
-<table>
-    <thead>
-        <tr>
-            <th>구분</th><th>ID</th><th>열차이름</th><th>도입년도</th><th>열차속도</th><th>수송량</th>
-        </tr>
-    </thead>
-	<tbody>
-	</tbody>
-</table>
-</details>
-
-## 기관차
-<details markdown="8">
-<summary>내용보기</summary>
-곧 추가됩니다.
-<table>
-    <thead>
-        <tr>
-            <th>구분</th><th>ID</th><th>열차이름</th><th>도입년도</th><th>열차속도</th><th>수송량</th>
-        </tr>
-    </thead>
-	<tbody>
-	</tbody>
-</table>
-</details>
-
-## 화물열차
-<details markdown="9">
-<summary>내용보기</summary>
-곧 추가됩니다.
-<table>
-    <thead>
-        <tr>
-            <th>구분</th><th>ID</th><th>열차이름</th><th>도입년도</th><th>열차속도</th><th>수송량</th>
-        </tr>
-    </thead>
-	<tbody>
 	</tbody>
 </table>
 </details>
