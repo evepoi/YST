@@ -1,0 +1,20 @@
+/*--------------------------------------------------------------------
+Graphics
+--------------------------------------------------------------------*/
+spriteset(set_MUGH_Wagon_purchase, "src\wagon\Mugunghwa_wagon\Mugunghwa_wagon.png"){
+    tmpl_wagon_purchase(0, 0)
+}
+
+spriteset(set_MUGH_Wagon, "src\wagon\Mugunghwa_wagon\Mugunghwa_wagon.png") {
+    wagon_1F(80, 0)
+}
+
+spriteset(set_MUGH_Wagon_r, "src\wagon\Mugunghwa_wagon\Mugunghwa_wagon.png") {
+    wagon_1F_r(80, 0)
+}
+/*--------------------------------------------------------------------
+구매정보
+--------------------------------------------------------------------*/
+switch(FEAT_TRAINS, SELF, sw_MUGH_Wagon_purchase, cargo_subtype) {
+    set_MUGH_Wagon_purchase;
+}
