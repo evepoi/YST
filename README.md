@@ -154,6 +154,7 @@ YST는 다소 까다로운 템플릿을 보유하고 보다 편한 코딩방식�
 </details>
 
 ## 열차목록
+### 객차 & 화차
 <details markdown="2">
 <summary>내용보기</summary>
 <table>
@@ -164,103 +165,117 @@ YST는 다소 까다로운 템플릿을 보유하고 보다 편한 코딩방식�
     </thead>
 	<tbody>
 		<tr>
-			<td colspan="3">2001 : 1층 공통객차</td>
+			<td colspan="2">2001 : 1층 공통객차</td>
 		</tr>
 		<tr>
-			<td><img src="docs/img/YST/2001.png" alt="2001"></td><td>1978</td><td></td>
+			<td><img src="docs/img/YST/2001.png" alt="2001"></td><td>1978</td>
 		</tr>
 		<!-- // 2001-->
 		<tr>
-			<td colspan="3">2002 : 2층 공통객차</td>
+			<td colspan="2">2002 : 2층 공통객차</td>
 		</tr>
 		<tr>
-			<td><img src="docs/img/YST/2002.png" alt="2002"></td><td>2020</td><td></td>
+			<td><img src="docs/img/YST/2002.png" alt="2002"></td><td>2020</td>
 		</tr>
 		<!-- // 2002-->
 		<tr>
-			<td colspan="3">2003 : TGV Poste 화차</td>
+			<td colspan="2">2003 : TGV Poste 화차</td>
 		</tr>
 		<tr>
-			<td><img src="docs/img/YST/2003.png" alt="2003"></td><td>1978</td><td></td>
+			<td><img src="docs/img/YST/2003.png" alt="2003"></td><td>1978</td>
 		</tr>
 		<!-- // 2003-->
 		<tr>
-			<td colspan="3">2004 : YFX용 화차</td>
+			<td colspan="2">2004 : YFX용 화차</td>
 		</tr>
 		<tr>
-			<td><img src="docs/img/YST/2004.png" alt="2004"></td><td>2020</td><td></td>
+			<td><img src="docs/img/YST/2004.png" alt="2004"></td><td>2020</td>
 		</tr>
 		<!-- // 2004-->
 		<tr>
-			<td colspan="3">2005 : 평판화차</td>
+			<td colspan="2">2005 : 평판화차</td>
 		</tr>
 		<tr>
-			<td><img src="docs/img/YST/2005.png" alt="2005"></td><td>1967</td><td></td>
+			<td><img src="docs/img/YST/2005.png" alt="2005"></td><td>1967</td>
 		</tr>
 		<!-- // 2005-->
 		<tr>
-			<td colspan="3">2006 : 평판화차 - 미국형</td>
+			<td colspan="2">2006 : 평판화차 - 미국형</td>
 		</tr>
 		<tr>
-			<td><img src="docs/img/YST/2006.png" alt="2006"></td><td>1967</td><td></td>
+			<td><img src="docs/img/YST/2006.png" alt="2006"></td><td>1967</td>
 		</tr>
 		<!-- // 2006-->
 		<tr>
-			<td colspan="3">2007 : 평판유조 화차</td>
+			<td colspan="2">2007 : 평판유조 화차</td>
 		</tr>
 		<tr>
-			<td><img src="docs/img/YST/2007.png" alt="2007"></td><td>1967</td><td></td>
+			<td><img src="docs/img/YST/2007.png" alt="2007"></td><td>1967</td>
 		</tr>
 		<!-- // 2007-->
 		<tr>
-			<td colspan="3">2008 : 유조차</td>
+			<td colspan="2">2008 : 유조차</td>
 		</tr>
 		<tr>
-			<td><img src="docs/img/YST/2008.png" alt="2008"></td><td>1967</td><td></td>
+			<td><img src="docs/img/YST/2008.png" alt="2008"></td><td>1967</td>
 		</tr>
 		<!-- // 2008-->
 		<tr>
-			<td colspan="3">2009 : YPW 1층 객차</td>
+			<td colspan="2">2009 : YPW 1층 객차</td>
 		</tr>
 		<tr>
-			<td><img src="docs/img/YST/2009.png" alt="2009"></td><td>1967</td><td></td>
+			<td><img src="docs/img/YST/2009.png" alt="2009"></td><td>1967</td>
 		</tr>
 		<!-- // 2009-->
 		<tr>
-			<td colspan="3">2010 : YPW 2층 객차</td>
+			<td colspan="2">2010 : YPW 2층 객차</td>
 		</tr>
 		<tr>
-			<td></td><td>2020</td><td></td>
+			<td><img src="docs/img/YST/2010.png" alt="2010"></td><td>2020</td>
 		</tr>
 		<!-- // 2010-->
 		<tr>
-			<td colspan="3">2011 : YPW 침대차</td>
+			<td colspan="2">2011 : YPW 침대차</td>
 		</tr>
 		<tr>
-			<td>추가예정</td><td>1967</td><td></td>
+			<td>추가예정</td><td>1967</td>
 		</tr>
 		<!-- // 2011-->
 		<tr>
-			<td colspan="3">2012 : YPW 발전차</td>
+			<td colspan="2">2012 : YPW 발전차</td>
 		</tr>
 		<tr>
-			<td></td><td>1967</td><td></td>
+			<td></td><td>1967</td>
 		</tr>
 		<!-- // 2012-->
 		<tr>
-			<td colspan="3">2013 : YPW 수화물차</td>
+			<td colspan="2">2013 : YPW 수화물차</td>
 		</tr>
 		<tr>
-			<td>추가예정</td><td>1967</td><td></td>
+			<td>추가예정</td><td>1967</td>
 		</tr>
 		<!-- // 2013-->
 		<tr>
-			<td colspan="3">2014 : (예정) 무궁화 2층객차</td>
+			<td colspan="2">2014 : (예정) 무궁화 2층객차</td>
 		</tr>
 		<tr>
-			<td></td><td>2020</td><td></td>
+			<td></td><td>2020</td>
 		</tr>
 		<!-- // 2014-->
+	</tbody>
+</table>
+</details>
+
+### 일반열차, 기관차, 고속열차
+<details markdown="3">
+<summary>내용보기</summary>
+<table>
+    <thead>
+        <tr>
+            <th>열차<th>도입</th><th>열차속도</th>
+        </tr>
+    </thead>
+	<tbody>
 		<tr>
 			<td colspan="3">3001 : AGV</td>
 		</tr>
@@ -646,6 +661,20 @@ YST는 다소 까다로운 템플릿을 보유하고 보다 편한 코딩방식�
 			<td></td><td>2020</td><td>181km/h</td>
 		</tr>
 		<!-- // 3054-->
+	</tbody>
+</table>
+</details>
+
+### 지하철
+<details markdown="4">
+<summary>내용보기</summary>
+<table>
+    <thead>
+        <tr>
+            <th>열차<th>도입</th><th>열차속도</th>
+        </tr>
+    </thead>
+	<tbody>
 		<tr>
 			<td colspan="3">4001 : MTR AD Tranz CAF A형</td>
 		</tr>
