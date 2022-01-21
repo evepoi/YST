@@ -713,7 +713,7 @@ YST는 다소 까다로운 템플릿을 보유하고 보다 편한 코딩방식�
 			<td colspan="3">4010 : YMT 200</td>
 		</tr>
 		<tr>
-			<td></td><td>2020</td><td>120km/h</td>
+			<td><img src="docs/img/YST/4010.png" alt="4010"></td><td>2020</td><td>120km/h</td>
 		</tr>
 		<!-- // 4010-->
 	</tbody>
