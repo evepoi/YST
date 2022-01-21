@@ -160,18 +160,12 @@ YST는 다소 까다로운 템플릿을 보유하고 보다 편한 코딩방식�
 <table>
     <thead>
         <tr>
-            <th>ID</th><th>열차이름</th><th>도입년도</th><th>열차속도</th><th>수송량</th>
+            <th>ID</th><th>이미지</th><th>열차이름</th><th>도입년도</th><th>열차속도</th><th>수송량</th>
         </tr>
     </thead>
 	<tbody>
 		<tr>
-			<td rowspan="3">4001</td>
-		</tr>
-		<tr>
-			<td colspan="3"><img src="docs/img/YST/4001.png" alt="4001"></td>
-		</tr>
-		<tr>
-			<td>TR AD Tranz CAF A형</td><td>1979년</td><td>120km/h</td><td>80</td>
+			<td>4001</td><td><img src="docs/img/YST/4001.png" alt="4001"></td><td>TR AD Tranz CAF A형</td><td>1979년</td><td>120km/h</td><td>80</td>
 		</tr>
 		<!-- // 4001-->
 	</tbody>
