@@ -44,7 +44,7 @@ YST는 다소 까다로운 템플릿을 보유하고 보다 편한 코딩방식�
 			<td colspan="4">3053 : KTX-SC2</td>
 		</tr>
 		<tr>
-			<td>고속열차</td><td><img src="docs/img/YST/KTX_SC2_Blue.png" alt="KTX SC2 Blue"><br><img src="docs/img/YST/KTX_SC2_Green.png" alt="KTX SC2 Green"><br><img src="docs/img/YST/KTX_SC2_White.png" alt="KTX SC2 White"></td><td>2020</td><td>362km/h</td>
+			<td>고속열차</td><td><img src="docs/img/YST/3053.png" alt="3053"></td><td>2020</td><td>362km/h</td>
 		</tr>
 		<!-- // 3053-->
 		<tr>
@@ -555,7 +555,7 @@ YST는 다소 까다로운 템플릿을 보유하고 보다 편한 코딩방식�
 			<td colspan="3">3053 : KTX-SC2</td>
 		</tr>
 		<tr>
-			<td></td><td>2020</td><td>362km/h</td>
+			<td><img src="docs/img/YST/3053.png" alt="3053"></td><td>2020</td><td>362km/h</td>
 		</tr>
 		<!-- // 3053-->
 		<tr>
