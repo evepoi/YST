@@ -8,8 +8,8 @@ grf {
 	grfid: "YSN2";
 	name: string(STR_GRF_NAME_WITH_VER);
 	desc: string(STR_GRF_DESC);
-	version: 20;
-	min_compatible_version: 19;
+	version: 21;
+	min_compatible_version: 20;
     
 	// Parameters
     #include "src/parameter.pnml"
@@ -95,4 +95,17 @@ if (Hong_Kong) {
     disable_item(FEAT_TRAINS, 4006); //Hyundai_Rotem_Mitsubishi
     disable_item(FEAT_TRAINS, 4007); //Hyundai_Rotem_R
     disable_item(FEAT_TRAINS, 4008); //IKK_SP_1900
+    }
+
+if (Korea) {
+    disable_item(FEAT_TRAINS, 2014); //MUGH_2F
+    disable_item(FEAT_TRAINS, 3015); //EMU260
+    disable_item(FEAT_TRAINS, 3018); //HEMU_430
+    disable_item(FEAT_TRAINS, 3022); //KTX_N
+    disable_item(FEAT_TRAINS, 3050); //EMU362
+    disable_item(FEAT_TRAINS, 3051); //EMU180
+    disable_item(FEAT_TRAINS, 3052); //ITX_SM2
+    disable_item(FEAT_TRAINS, 3053); //KTX_SC2
+    disable_item(FEAT_TRAINS, 3054); //NRT2
+    disable_item(FEAT_TRAINS, 3055); //ITX_CW
     }
