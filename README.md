@@ -159,18 +159,31 @@ YST는 다소 까다로운 템플릿을 보유하고 보다 편한 코딩방식�
 <table>
     <thead>
         <tr>
-            <th>ID</th><th>이미지</th><th>열차이름</th><th>도입년도</th><th>열차속도</th><th>수송량</th>
+            <th>ID</th><th>도입년도</th><th>열차속도</th><th>수송량</th>
         </tr>
     </thead>
 	<tbody>
 		<tr>
-			<td>4001</td><td><img src="docs/img/YST/4001.png" alt="4001"></td><td>TR AD Tranz CAF A형</td><td>1979년</td><td>120km/h</td><td>80</td>
+			<td colspan="4">TR AD Tranz CAF A형</td>
+		</tr>
+		<tr>
+			<td>4001<img src="docs/img/YST/4001.png" alt="4001"></td><td>1979년</td><td>120km/h</td><td>80</td>
 		</tr>
 		<!-- // 4001-->
 		<tr>
-			<td>4002</td><td><img src="docs/img/YST/4002.png" alt="4002"></td><td>MTR 메트로카멜 교류형 전동차</td><td>1979년</td><td>120km/h</td><td>80</td>
+			<td colspan="4">MTR 메트로카멜 교류형 전동차</td>
+		</tr>
+		<tr>
+			<td>4002<img src="docs/img/YST/4002.png" alt="4002"></td><td>1979년</td><td>120km/h</td><td>80</td>
 		</tr>
 		<!-- // 4002-->
+		<tr>
+			<td colspan="4">MTR 메트로카멜 직류형 전동차</td>
+		</tr>
+		<tr>
+			<td>4003<img src="docs/img/YST/4003.png" alt="4003"></td><td>1979년</td><td>120km/h</td><td>80</td>
+		</tr>
+		<!-- // 4003-->
 	</tbody>
 </table>
 </details>
