@@ -34,26 +34,19 @@ YST는 다소 까다로운 템플릿을 보유하고 보다 편한 코딩방식�
 	</thead>
 	<tbody>
 		<tr>
-			<td colspan="4">3052 : ITX-SM2</td>
+			<td colspan="4">2014 : 무궁화 2층객차</td>
 		</tr>
 		<tr>
-			<td>일반열차</td><td><img src="docs/img/YST/3052.png" alt="3052"></td><td>2020</td><td>181km/h</td>
+			<td>객차</td><td><img src="docs/img/YST/2014.png" alt="2014"></td><td>2020</td><td></td>
 		</tr>
-		<!-- // 3052-->
+		<!-- // 2014-->
 		<tr>
-			<td colspan="4">3053 : KTX-SC2</td>
-		</tr>
-		<tr>
-			<td>고속열차</td><td><img src="docs/img/YST/3053.png" alt="3053"></td><td>2020</td><td>362km/h</td>
-		</tr>
-		<!-- // 3053-->
-		<tr>
-			<td colspan="4">3054 : NRT2</td>
+			<td colspan="4">3055 : ITX-초월</td>
 		</tr>
 		<tr>
-			<td>일반열차</td><td><img src="docs/img/YST/3054.png" alt="3054"></td><td>2020</td><td>181km/h</td>
+			<td>일반열차</td><td><img src="docs/img/YST/3055.png" alt="3055"></td><td>2020</td><td>181km/h</td>
 		</tr>
-		<!-- // 3054-->
+		<!-- // 3055-->
 </table>
 </details>
 
@@ -160,10 +153,10 @@ YST는 다소 까다로운 템플릿을 보유하고 보다 편한 코딩방식�
 		</tr>
 		<!-- // 2013-->
 		<tr>
-			<td colspan="2">2014 : (예정) 무궁화 2층객차</td>
+			<td colspan="2">2014 : 무궁화 2층객차</td>
 		</tr>
 		<tr>
-			<td></td><td>2020</td>
+			<td><img src="docs/img/YST/2014.png" alt="2014"></td><td>2020</td>
 		</tr>
 		<!-- // 2014-->
 	</tbody>
@@ -565,6 +558,13 @@ YST는 다소 까다로운 템플릿을 보유하고 보다 편한 코딩방식�
 			<td><img src="docs/img/YST/3054.png" alt="3054"></td><td>2020</td><td>181km/h</td>
 		</tr>
 		<!-- // 3054-->
+		<tr>
+			<td colspan="3">3055 : 3055 : ITX-초월</td>
+		</tr>
+		<tr>
+			<td><img src="docs/img/YST/3055.png" alt="3055"></td><td>2020</td><td>181km/h</td>
+		</tr>
+		<!-- // 3055-->
 	</tbody>
 </table>
 </details>
