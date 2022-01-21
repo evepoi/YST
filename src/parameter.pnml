@@ -36,7 +36,7 @@ param {
         type: bool;
         name: string(STR_PARAM_European_NAME);
         desc: string(STR_PARAM_European_DESC);
-        def_value: 1;
+        def_value: 0;
         }
     }
 
@@ -45,7 +45,7 @@ param {
         type: bool;
         name: string(STR_PARAM_Chinese_NAME);
         desc: string(STR_PARAM_Chinese_DESC);
-        def_value: 1;
+        def_value: 0;
         }
     }
 
@@ -54,7 +54,7 @@ param {
         type: bool;
         name: string(STR_PARAM_Japanese_NAME);
         desc: string(STR_PARAM_Japanese_DESC);
-        def_value: 1;
+        def_value: 0;
         }
     }
 
@@ -63,7 +63,7 @@ param {
         type: bool;
         name: string(STR_PARAM_Taiwanese_NAME);
         desc: string(STR_PARAM_Taiwanese_DESC);
-        def_value: 1;
+        def_value: 0;
         }
     }
 
@@ -72,6 +72,15 @@ param {
         type: bool;
         name: string(STR_PARAM_Hong_Kong_NAME);
         desc: string(STR_PARAM_Hong_Kong_DESC);
-        def_value: 1;
+        def_value: 0;
+        }
+    }
+
+param {
+    Korea {
+        type: bool;
+        name: string(STR_PARAM_Korea_NAME);
+        desc: string(STR_PARAM_Korea_DESC);
+        def_value: 0;
         }
     }
