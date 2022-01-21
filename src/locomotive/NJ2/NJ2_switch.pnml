@@ -3,6 +3,7 @@
 --------------------------------------------------------------------*/
 switch(FEAT_TRAINS, SELF, sw_NJ2_wagon_attach, vehicle_type_id) {
     NJ2:               return CB_RESULT_ATTACH_ALLOW;
+    MUGH_2F:           return CB_RESULT_ATTACH_ALLOW;
     YPW_1F:            return CB_RESULT_ATTACH_ALLOW;
     YPW_2F:            return CB_RESULT_ATTACH_ALLOW;
     YPW_Bed_Car:       return CB_RESULT_ATTACH_ALLOW;
