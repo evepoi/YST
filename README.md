@@ -336,7 +336,7 @@ YST는 다소 까다로운 템플릿을 보유하고 보다 편한 코딩방식�
 			<td colspan="3">3009 : CRH430A</td>
 		</tr>
 		<tr>
-			<td></td><td>2017</td><td>430km/h</td>
+			<td><img src="docs/img/YST/3009.png" alt="3009"></td><td>2017</td><td>430km/h</td>
 		</tr>
 		<!-- // 3009-->
 		<tr>
