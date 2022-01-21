@@ -518,7 +518,7 @@ YST는 다소 까다로운 템플릿을 보유하고 보다 편한 코딩방식�
 			<td colspan="3">3034 : Talgo250</td>
 		</tr>
 		<tr>
-			<td></td><td>2012</td><td>260km/h</td>
+			<td><img src="docs/img/YST/3034.png" alt="3034"></td><td>2012</td><td>260km/h</td>
 		</tr>
 		<!-- // 3034-->
 		<tr>
