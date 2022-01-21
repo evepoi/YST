@@ -1,5 +1,6 @@
 //wagon
 #include "wagon/passenger_wagon/passenger_wagon.pnml"
+#include "wagon/Mugunghwa_wagon/Mugunghwa_wagon.pnml"
 #include "wagon/TGV_Poste_wagon/TGV_Poste_wagon.pnml"
 #include "wagon/YFX_wagon/YFX_wagon.pnml"
 #include "wagon/flat_car/Flat_1F_Car/Flat_1F_Car.pnml"
@@ -36,6 +37,7 @@
 #include "locomotive/HMX/HMX.pnml"
 #include "locomotive/ICE_SP/ICE_SP.pnml"
 #include "locomotive/ICE3/ICE3.pnml"
+#include "locomotive/ITX_CW/ITX_CW.pnml"
 #include "locomotive/ITX_SM2/ITX_SM2.pnml"
 #include "locomotive/KTX_N/KTX_N.pnml"
 #include "locomotive/KTX_SC2/KTX_SC2.pnml"
@@ -64,9 +66,9 @@
 #include "locomotive/VTX/VTX.pnml"
 #include "locomotive/YFX/YFX.pnml"
 #include "locomotive/YTX/YTX.pnml"
-#include "locomotive/ZEFIRO380/ZEFIRO380.pnml"
-#include "locomotive/ZEFIRO380_Black/ZEFIRO380_Black.pnml"
-#include "locomotive/ZEFIRO380_Cool/ZEFIRO380_Cool.pnml"
+#include "locomotive/ZEFIRO362/ZEFIRO362.pnml"
+#include "locomotive/ZEFIRO430/ZEFIRO430.pnml"
+#include "locomotive/ZEFIRO600/ZEFIRO600.pnml"
 
 //Metro
 #include "metro/MTR/AD_Tranz_CAF_A/AD_Tranz_CAF_A.pnml"

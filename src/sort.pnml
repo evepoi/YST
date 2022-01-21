@@ -25,6 +25,7 @@ sort(FEAT_TRAINS, [
     HMX,                       //3019
     ICE_SP,                    //3020
     ICE3,                      //3021
+    ITX_CW,                    //3055
     ITX_SM2,                   //3052
     KTX_N,                     //3022
     KTX_SC2,                   //3053
@@ -53,9 +54,9 @@ sort(FEAT_TRAINS, [
     VTX,                       //3044
     YFX,                       //3045
     YTX,                       //3046
-    ZEFIRO380,                 //3047
-    ZEFIRO380_Black,           //3048
-    ZEFIRO380_Cool,            //3049
+    ZEFIRO362,                 //3047
+    ZEFIRO430,                 //3049
+    ZEFIRO600,                 //3048
 
     AD_Tranz_CAF_A,            //4001
     MTR_AC_Cammall,            //4002
@@ -70,6 +71,7 @@ sort(FEAT_TRAINS, [
     
     YST_1F_Passenger_Car,      //2001
     YST_2F_Passenger_Car,      //2002
+    MUGH_2F,                   //2014
     YPW_1F,                    //2009
     YPW_2F,                    //2010
     YPW_Bed_Car,               //2011

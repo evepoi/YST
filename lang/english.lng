@@ -28,6 +28,7 @@ STR_GT26CW_NAME                                     :[YST] GT26CW
 STR_HEMU_430_NAME                                   :[YST] HEMU-430
 STR_HMX_NAME                                        :[YST] HMX
 STR_ICE3_NAME                                       :[YST] ICE3
+STR_ICE_CW_NAME                                     :[YST] ITX-Chowol
 STR_ICE_SP_NAME                                     :[YST] ICE-SP
 STR_ITX_SM2_NAME                                    :[YST] ITX-SM2
 STR_KTX_N_NAME                                      :[YST] KTX-N
@@ -57,9 +58,9 @@ STR_THRS_NAME                                       :[YST] THRS
 STR_VTX_NAME                                        :[YST] VTX
 STR_YFX_NAME                                        :[YST] YFX
 STR_YTX_NAME                                        :[YST] YTX
-STR_ZEFIRO380_NAME                                  :[YST] ZEFIRO380
-STR_ZEFIRO380_Black_NAME                            :[YST] ZEFIRO380 Black
-STR_ZEFIRO380_Cool_NAME                             :[YST] ZEFIRO380 Cool
+STR_ZEFIRO362_NAME                                  :[YST] ZEFIRO362
+STR_ZEFIRO430_NAME                                  :[YST] ZEFIRO430
+STR_ZEFIRO600_NAME                                  :[YST] ZEFIRO600
 
 # Metro's name
 STR_MTR_AD_Tranz_CAF_A_NAME                         :[YST] MTR AD Tranz CAF A Type
@@ -76,6 +77,7 @@ STR_YMT_200_NAME                                    :[YST] YMT 200
 # wagon's name
 STR_YST_1F_PASS_NAME                                :[YST] 1F Passenger Car
 STR_YST_2F_PASS_NAME                                :[YST] 2F Passenger Car
+STR_MUGH_2F_NAME                                    :[YST] Mugunghwa 2F Passenger Car
 STR_YPW_1F_NAME                                     :[YST] YPW 1F Passenger Car
 STR_YPW_2F_NAME                                     :[YST] YPW 2F Passenger Car
 STR_YPW_Bed_Car_NAME                                :[YST] YPW Bed Car
@@ -94,18 +96,18 @@ STR_PARAM_OPT_FACTOR_BY_2	                        :x 2
 STR_PARAM_OPT_FACTOR_BY_3    	                    :x 3
 
 # Parameters
-STR_PARAM_European_NAME                             :European trains not used
-STR_PARAM_European_DESC                             :We do not use European-style trains. (Default: Use)
-STR_PARAM_Chinese_NAME                              :Chinese trains not used
-STR_PARAM_Chinese_DESC                              :We do not use Chinese-style trains. (Default: Use)
-STR_PARAM_Japanese_NAME                             :Japanese trains not used
-STR_PARAM_Japanese_DESC                             :We do not use Japanese-style trains. (Default: Use)
-STR_PARAM_Taiwanese_NAME                            :Taiwanese trains not used
-STR_PARAM_Taiwanese_DESC                            :We do not use Taiwanese-style trains. (Default: Use)
-STR_PARAM_Hong_Kong_NAME                            :Hong_Kong trains not used
-STR_PARAM_Hong_Kong_DESC                            :We do not use Hong_Kong-style trains. (Default: Use)
-STR_PARAM_CARGO_CAPACITY_NAME                       :Cargo capacity
-STR_PARAM_CARGO_CAPACITY_DESC                       :Cargo capacity of trains
+STR_PARAM_European_NAME                             :No European trains allowed.
+STR_PARAM_European_DESC                             :Check if you don't use a European train. (Default: Use)
+STR_PARAM_Chinese_NAME                              :No Chinese trains allowed.
+STR_PARAM_Chinese_DESC                              :Check if you don't use a Chinese train. (Default: Use)
+STR_PARAM_Japanese_NAME                             :No Japanese trains allowed.
+STR_PARAM_Japanese_DESC                             :Check if you don't use a Japanese train. (Default: Use)
+STR_PARAM_Taiwanese_NAME                            :No Taiwanese trains allowed.
+STR_PARAM_Taiwanese_DESC                            :Check if you don't use a Taiwanese train. (Default: Use)
+STR_PARAM_Hong_Kong_NAME                            :No Hong Kong type trains allowed.
+STR_PARAM_Hong_Kong_DESC                            :Check if you don't use the Hong Kong type train. (Default: Use)
+STR_PARAM_Korea_NAME                                :No Korea type trains allowed.
+STR_PARAM_Korea_DESC                                :Check if you don't use the Korea type trains. (Default: Use)
 
 # Refit (Additional text)
 STR_REFIT_ADDITIONAL                                :{BLACK}Changing model/livery: {GREEN}Available
@@ -117,6 +119,7 @@ STR_REFIT_ADDITIONAL_ABLE_Glory600                  :{BLACK}Changing model/liver
 STR_REFIT_ADDITIONAL_ABLE_HMX                       :{BLACK}Changing model/livery: {GREEN}Available {} {BLACK}Combined train: {GREEN}HMX
 STR_REFIT_ADDITIONAL_ABLE_E6                        :{BLACK}Changing model/livery: {GREEN}Available {} {BLACK}Combined train: {GREEN}E6
 STR_REFIT_ADDITIONAL_ABLE_ICESP                     :{BLACK}Changing model/livery: {GREEN}available {} {BLACK}Combined train: {GREEN}ICE-Sancheon, ICE-Patjug
+STR_REFIT_ADDITIONAL_ABLE_ITX_CW                    :{BLACK}Changing model/livery: {GREEN}available {} {BLACK}Combined train: {GREEN}ITX-Chowol
 STR_REFIT_ADDITIONAL_ABLE_ITX_SM2                   :{BLACK}Changing model/livery: {GREEN}available {} {BLACK}Combined train: {GREEN}ITX-SM2
 STR_REFIT_ADDITIONAL_ABLE_KTX_SC2                   :{BLACK}Changing model/livery: {GREEN}available {} {BLACK}Combined train: {GREEN}KTX-SC2
 STR_REFIT_ADDITIONAL_ABLE_NKX                       :{BLACK}Changing model/livery: {GREEN}available {} {BLACK}Combined train: {GREEN}NKX
@@ -125,9 +128,9 @@ STR_REFIT_ADDITIONAL_ABLE_Talgo_250                 :{BLACK}Changing model/liver
 STR_REFIT_ADDITIONAL_ABLE_TGV_Duplex                :{BLACK}Changing model/livery: {GREEN}available {} {BLACK}Combined train: {GREEN}TGV Old Duplex, TGV Duplex
 STR_REFIT_ADDITIONAL_ABLE_TGV                       :{BLACK}Changing model/livery: {GREEN}available {} {BLACK}Combined train: {GREEN}TGV Old Pos, TGV Pos
 STR_REFIT_ADDITIONAL_ABLE_TAE                       :{BLACK}Changing model/livery: {GREEN}available {} {BLACK}Combined train: {GREEN}TAE 100, TAE 200
-STR_REFIT_ADDITIONAL_ABLE_ZEFIRO380                 :{BLACK}Changing model/livery: {GREEN}available {} {BLACK}Combined train: {GREEN}ZEFIRO380
-STR_REFIT_ADDITIONAL_ABLE_ZEFIRO380_Black           :{BLACK}Changing model/livery: {GREEN}available {} {BLACK}Combined train: {GREEN}ZEFIRO380 Black
-STR_REFIT_ADDITIONAL_ABLE_ZEFIRO380_Cool            :{BLACK}Changing model/livery: {GREEN}available {} {BLACK}Combined train: {GREEN}ZEFIRO380 Cool
+STR_REFIT_ADDITIONAL_ABLE_ZEFIRO362                 :{BLACK}Changing model/livery: {GREEN}available {} {BLACK}Combined train: {GREEN}ZEFIRO362
+STR_REFIT_ADDITIONAL_ABLE_ZEFIRO430                 :{BLACK}Changing model/livery: {GREEN}available {} {BLACK}Combined train: {GREEN}ZEFIRO430
+STR_REFIT_ADDITIONAL_ABLE_ZEFIRO600                 :{BLACK}Changing model/livery: {GREEN}available {} {BLACK}Combined train: {GREEN}ZEFIRO600
 STR_REFIT_ADDITIONAL_UNABLE_UNADDTRAIN              :{BLACK}Changing model/livery: {RED}Unavailable {} {BLACK}Combined train: {RED}Unavailable
 STR_REFIT_ADDITIONAL_UNABLE_AVE                     :{BLACK}Changing model/livery: {RED}Unavailable {} {BLACK}Combined train: {GREEN}AVE
 STR_REFIT_ADDITIONAL_UNABLE_AVE_VElaro              :{BLACK}Changing model/livery: {RED}Unavailable {} {BLACK}Combined train: {GREEN}AVE Velaro
@@ -147,6 +150,7 @@ STR_REFIT_ADDITIONAL_UNABLE_YFX                     :{BLACK}Changing model/liver
 STR_REFIT_ADDITIONAL_UNABLE_YTX                     :{BLACK}Changing model/livery: {RED}Unavailable {} {BLACK}Combined train: {GREEN}YTX
 STR_REFIT_train_configuration_1F                    :{BLACK}train configuration: {GREEN}1F passenger vehicles
 STR_REFIT_train_configuration_2F                    :{BLACK}train configuration: {GREEN}2F passenger vehicles
+STR_REFIT_train_configuration_MUGH                  :{BLACK}train configuration: {GREEN}Mugunghwa 2F Passenger Car
 STR_REFIT_train_configuration_YPW                   :{BLACK}train configuration: {GREEN}YPW passenger vehicles
 STR_REFIT_train_configuration_TGV_Poste             :{BLACK}train configuration: {GREEN}TGV Old Poste, TGV Pos Poste
 STR_REFIT_train_configuration_YFX_Freight           :{BLACK}train configuration: {GREEN}YFX Freight Car

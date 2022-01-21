@@ -28,6 +28,7 @@ STR_GT26CW_NAME                                     :[YST] GT26CW
 STR_HEMU_430_NAME                                   :[YST] HEMU-430
 STR_HMX_NAME                                        :[YST] HMX
 STR_ICE3_NAME                                       :[YST] ICE3
+STR_ICE_CW_NAME                                     :[YST] ITX-초월
 STR_ICE_SP_NAME                                     :[YST] ICE-SP
 STR_ITX_SM2_NAME                                    :[YST] ITX-SM2
 STR_KTX_N_NAME                                      :[YST] KTX-N
@@ -57,9 +58,9 @@ STR_THRS_NAME                                       :[YST] THRS
 STR_VTX_NAME                                        :[YST] VTX
 STR_YFX_NAME                                        :[YST] YFX
 STR_YTX_NAME                                        :[YST] YTX
-STR_ZEFIRO380_NAME                                  :[YST] ZEFIRO380
-STR_ZEFIRO380_Black_NAME                            :[YST] ZEFIRO380 Black
-STR_ZEFIRO380_Cool_NAME                             :[YST] ZEFIRO380 Cool
+STR_ZEFIRO362_NAME                                  :[YST] ZEFIRO362
+STR_ZEFIRO430_NAME                                  :[YST] ZEFIRO430
+STR_ZEFIRO600_NAME                                  :[YST] ZEFIRO600
 
 # Metro's name
 STR_MTR_AD_Tranz_CAF_A_NAME                         :[YST] MTR AD Tranz CAF A형
@@ -76,6 +77,7 @@ STR_YMT_200_NAME                                    :[YST] YMT 200
 # wagon's name
 STR_YST_1F_PASS_NAME                                :[YST] 1층 공통객차
 STR_YST_2F_PASS_NAME                                :[YST] 2층 공통객차
+STR_MUGH_2F_NAME                                    :[YST] 무궁화 2층객차
 STR_YPW_1F_NAME                                     :[YST] YPW 1층 객차
 STR_YPW_2F_NAME                                     :[YST] YPW 2층 객차
 STR_YPW_Bed_Car_NAME                                :[YST] YPW 침대차
@@ -89,18 +91,18 @@ STR_FLAT_Tank_NAME                                  :[YST] 평판유조 화차
 STR_Tank_NAME                                       :[YST] 유조차
 
 # Parameters
-STR_PARAM_European_NAME                             :유럽형 열차 미사용
-STR_PARAM_European_DESC                             :유럽형 열차를 사용하지 않습니다. (기본:사용)
-STR_PARAM_Chinese_NAME                              :중국형 열차 미사용
-STR_PARAM_Chinese_DESC                              :중국형 열차를 사용하지 않습니다. (기본:사용)
-STR_PARAM_Japanese_NAME                             :일본형 열차 미사용
-STR_PARAM_Japanese_DESC                             :일본형 열차를 사용하지 않습니다. (기본:사용)
-STR_PARAM_Taiwanese_NAME                            :대만형 열차 미사용
-STR_PARAM_Taiwanese_DESC                            :대만형 열차를 사용하지 않습니다. (기본:사용)
-STR_PARAM_Hong_Kong_NAME                            :홍콩형 열차 미사용
-STR_PARAM_Hong_Kong_DESC                            :홍콩형 열차를 사용하지 않습니다. (기본:사용)
-STR_PARAM_CARGO_CAPACITY_NAME                       :화물수송량
-STR_PARAM_CARGO_CAPACITY_DESC                       :열차 화물 수송량 변경 가능
+STR_PARAM_European_NAME                             :유럽형 열차 사용금지
+STR_PARAM_European_DESC                             :유럽형 열차를 사용하지 않을 시 체크하세요. (기본:사용)
+STR_PARAM_Chinese_NAME                              :중국형 열차 사용금지
+STR_PARAM_Chinese_DESC                              :중국형 열차를 사용하지 않을 시 체크하세요.  (기본:사용)
+STR_PARAM_Japanese_NAME                             :일본형 열차 사용금지
+STR_PARAM_Japanese_DESC                             :일본형 열차를 사용하지 않을 시 체크하세요.  (기본:사용)
+STR_PARAM_Taiwanese_NAME                            :대만형 열차 사용금지
+STR_PARAM_Taiwanese_DESC                            :대만형 열차를 사용하지 않을 시 체크하세요.  (기본:사용)
+STR_PARAM_Hong_Kong_NAME                            :홍콩형 열차 사용금지
+STR_PARAM_Hong_Kong_DESC                            :홍콩형 열차를 사용하지 않을 시 체크하세요.  (기본:사용)
+STR_PARAM_Korea_NAME                                :한국형 열차 사용금지
+STR_PARAM_Korea_DESC                                :한국형 열차를 사용하지 않을 시 체크하세요.  (기본:사용)
 
 # Refit (Additional text)
 STR_REFIT_ADDITIONAL                                :{BLACK}도색/모델 변경: {GREEN}가능
@@ -112,6 +114,7 @@ STR_REFIT_ADDITIONAL_ABLE_Glory600                  :{BLACK}도색/모델 변경
 STR_REFIT_ADDITIONAL_ABLE_HMX                       :{BLACK}도색/모델 변경: {GREEN}가능 {}{BLACK}복합가능열차{}{GREEN}HMX
 STR_REFIT_ADDITIONAL_ABLE_E6                        :{BLACK}도색/모델 변경: {GREEN}가능 {}{BLACK}복합가능열차{}{GREEN}E6
 STR_REFIT_ADDITIONAL_ABLE_ICESP                     :{BLACK}도색/모델 변경: {GREEN}가능 {}{BLACK}복합가능열차{}{GREEN}ICE-산천, ICE-팥죽
+STR_REFIT_ADDITIONAL_ABLE_ITX_CW                    :{BLACK}도색/모델 변경: {GREEN}가능 {}{BLACK}복합가능열차{}{GREEN}ITX-초월
 STR_REFIT_ADDITIONAL_ABLE_ITX_SM2                   :{BLACK}도색/모델 변경: {GREEN}가능 {}{BLACK}복합가능열차{}{GREEN}ITX-SM2
 STR_REFIT_ADDITIONAL_ABLE_KTX_SC2                   :{BLACK}도색/모델 변경: {GREEN}가능 {}{BLACK}복합가능열차{}{GREEN}KTX-SC2
 STR_REFIT_ADDITIONAL_ABLE_NKX                       :{BLACK}도색/모델 변경: {GREEN}가능 {}{BLACK}복합가능열차{}{GREEN}NKX
@@ -120,9 +123,9 @@ STR_REFIT_ADDITIONAL_ABLE_Talgo_250                 :{BLACK}도색/모델 변경
 STR_REFIT_ADDITIONAL_ABLE_TGV_Duplex                :{BLACK}도색/모델 변경: {GREEN}가능 {}{BLACK}복합가능열차{}{GREEN}TGV Old Duplex, TGV Duplex
 STR_REFIT_ADDITIONAL_ABLE_TGV                       :{BLACK}도색/모델 변경: {GREEN}가능 {}{BLACK}복합가능열차{}{GREEN}TGV Old Pos, TGV Pos
 STR_REFIT_ADDITIONAL_ABLE_TAE                       :{BLACK}도색/모델 변경: {GREEN}가능 {}{BLACK}복합가능열차{}{GREEN}TAE 100, TAE 200
-STR_REFIT_ADDITIONAL_ABLE_ZEFIRO380                 :{BLACK}도색/모델 변경: {GREEN}가능 {}{BLACK}복합가능열차{}{GREEN}ZEFIRO380
-STR_REFIT_ADDITIONAL_ABLE_ZEFIRO380_Black           :{BLACK}도색/모델 변경: {GREEN}가능 {}{BLACK}복합가능열차{}{GREEN}ZEFIRO380 Black
-STR_REFIT_ADDITIONAL_ABLE_ZEFIRO380_Cool            :{BLACK}도색/모델 변경: {GREEN}가능 {}{BLACK}복합가능열차{}{GREEN}ZEFIRO380 Cool
+STR_REFIT_ADDITIONAL_ABLE_ZEFIRO362                 :{BLACK}도색/모델 변경: {GREEN}가능 {}{BLACK}복합가능열차{}{GREEN}ZEFIRO362
+STR_REFIT_ADDITIONAL_ABLE_ZEFIRO430                 :{BLACK}도색/모델 변경: {GREEN}가능 {}{BLACK}복합가능열차{}{GREEN}ZEFIRO430
+STR_REFIT_ADDITIONAL_ABLE_ZEFIRO600                 :{BLACK}도색/모델 변경: {GREEN}가능 {}{BLACK}복합가능열차{}{GREEN}ZEFIRO600
 STR_REFIT_ADDITIONAL_UNABLE_UNADDTRAIN              :{BLACK}도색/모델 변경: {RED}불가능 {}{BLACK}복합열차구성 : {RED}불가능
 STR_REFIT_ADDITIONAL_UNABLE_AVE                     :{BLACK}도색/모델 변경: {RED}불가능 {}{BLACK}복합가능열차{}{GREEN}AVE
 STR_REFIT_ADDITIONAL_UNABLE_AVE_VElaro              :{BLACK}도색/모델 변경: {RED}불가능 {}{BLACK}복합가능열차{}{GREEN}AVE Velaro
@@ -142,6 +145,7 @@ STR_REFIT_ADDITIONAL_UNABLE_YFX                     :{BLACK}도색/모델 변경
 STR_REFIT_ADDITIONAL_UNABLE_YTX                     :{BLACK}도색/모델 변경: {RED}불가능 {}{BLACK}복합가능열차{}{GREEN}YTX
 STR_REFIT_train_configuration_1F                    :{BLACK}열차구성: {GREEN}1층 승객차량용
 STR_REFIT_train_configuration_2F                    :{BLACK}열차구성: {GREEN}2층 승객차량용
+STR_REFIT_train_configuration_MUGH                  :{BLACK}열차구성: {GREEN}무궁화 2층 객차
 STR_REFIT_train_configuration_YPW                   :{BLACK}열차구성: {GREEN}YPW용 객차
 STR_REFIT_train_configuration_TGV_Poste             :{BLACK}열차구성: {GREEN}TGV Old Poste, TGV Pos Poste
 STR_REFIT_train_configuration_YFX_Freight           :{BLACK}열차구성: {GREEN}YFX용 화차
