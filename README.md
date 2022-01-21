@@ -202,7 +202,7 @@ YST는 다소 까다로운 템플릿을 보유하고 보다 편한 코딩방식�
 			<td colspan="3">2006 : 평판화차 - 미국형</td>
 		</tr>
 		<tr>
-			<td>추가예정</td><td>1967</td><td></td>
+			<td><img src="docs/img/YST/2006.png" alt="2006"></td><td>1967</td><td></td>
 		</tr>
 		<!-- // 2006-->
 		<tr>
@@ -272,378 +272,378 @@ YST는 다소 까다로운 템플릿을 보유하고 보다 편한 코딩방식�
 			<td colspan="3">3002 : AGV Cool</td>
 		</tr>
 		<tr>
-			<td></td><td>2020</td>430km/h<td></td>
+			<td></td><td>2020</td><td>430km/h<td></td>
 		</tr>
 		<!-- // 3002-->
 		<tr>
 			<td colspan="3">3003 : AVE</td>
 		</tr>
 		<tr>
-			<td></td><td>2012</td>362km/h<td></td>
+			<td></td><td>2012</td><td>362km/h<td></td>
 		</tr>
 		<!-- // 3003-->
 		<tr>
 			<td colspan="3">3004 : AVE Velaro</td>
 		</tr>
 		<tr>
-			<td></td><td>2006</td>362km/h<td></td>
+			<td></td><td>2006</td><td>362km/h<td></td>
 		</tr>
 		<!-- // 3004-->
 		<tr>
 			<td colspan="3">3005 : BB15048</td>
 		</tr>
 		<tr>
-			<td></td><td>1971</td>181km/h<td></td>
+			<td></td><td>1971</td><td>181km/h<td></td>
 		</tr>
 		<!-- // 3005-->
 		<tr>
 			<td colspan="3">3006 : CRH1</td>
 		</tr>
 		<tr>
-			<td></td><td>2007</td>260km/h<td></td>
+			<td></td><td>2007</td><td>260km/h<td></td>
 		</tr>
 		<!-- // 3006-->
 		<tr>
 			<td colspan="3">3007 : CRH3</td>
 		</tr>
 		<tr>
-			<td></td><td>2017</td>362km/h<td></td>
+			<td></td><td>2017</td><td>362km/h<td></td>
 		</tr>
 		<!-- // 3007-->
 		<tr>
 			<td colspan="3">3008 : CRH362A</td>
 		</tr>
 		<tr>
-			<td></td><td>2017</td>362km/h<td></td>
+			<td></td><td>2017</td><td>362km/h<td></td>
 		</tr>
 		<!-- // 3008-->
 		<tr>
 			<td colspan="3">3009 : CRH430A</td>
 		</tr>
 		<tr>
-			<td></td><td>2017</td>430km/h<td></td>
+			<td></td><td>2017</td><td>430km/h<td></td>
 		</tr>
 		<!-- // 3009-->
 		<tr>
 			<td colspan="3">3010 : CRH600A-Test</td>
 		</tr>
 		<tr>
-			<td></td><td>2017</td>600km/h<td></td>
+			<td></td><td>2017</td><td>600km/h<td></td>
 		</tr>
 		<!-- // 3010-->
 		<tr>
 			<td colspan="3">3011 : CRV600</td>
 		</tr>
 		<tr>
-			<td></td><td>2012</td>600km/h<td></td>
+			<td></td><td>2012</td><td>600km/h<td></td>
 		</tr>
 		<!-- // 3011-->
 		<tr>
 			<td colspan="3">3012 : Dr. Yellow</td>
 		</tr>
 		<tr>
-			<td></td><td>2007</td>600km/h<td></td>
+			<td></td><td>2007</td><td>600km/h<td></td>
 		</tr>
 		<!-- // 3012-->
 		<tr>
 			<td colspan="3">3013 : E300</td>
 		</tr>
 		<tr>
-			<td></td><td>1992</td>362km/h<td></td>
+			<td></td><td>1992</td><td>362km/h<td></td>
 		</tr>
 		<!-- // 3013-->
 		<tr>
 			<td colspan="3">3014 : E320</td>
 		</tr>
 		<tr>
-			<td></td><td>2014</td>362km/h<td></td>
+			<td></td><td>2014</td><td>362km/h<td></td>
 		</tr>
 		<!-- // 3014-->
 		<tr>
 			<td colspan="3">3015 : EMU260</td>
 		</tr>
 		<tr>
-			<td></td><td>2020</td>260km/h<td></td>
+			<td></td><td>2020</td><td>260km/h<td></td>
 		</tr>
 		<!-- // 3015-->
 		<tr>
 			<td colspan="3">3016 : Glory 600</td>
 		</tr>
 		<tr>
-			<td></td><td>2020</td>600km/h<td></td>
+			<td></td><td>2020</td><td>600km/h<td></td>
 		</tr>
 		<!-- // 3016-->
 		<tr>
 			<td colspan="3">3017 : GT26CW</td>
 		</tr>
 		<tr>
-			<td></td><td>1967</td>181km/h<td></td>
+			<td></td><td>1967</td><td>181km/h<td></td>
 		</tr>
 		<!-- // 3017-->
 		<tr>
 			<td colspan="3">3018 : HEMU-430</td>
 		</tr>
 		<tr>
-			<td></td><td>2007</td>430km/h<td></td>
+			<td></td><td>2007</td><td>430km/h<td></td>
 		</tr>
 		<!-- // 3018-->
 		<tr>
 			<td colspan="3">3019 : HMX</td>
 		</tr>
 		<tr>
-			<td></td><td>2020</td>260km/h<td></td>
+			<td></td><td>2020</td><td>260km/h<td></td>
 		</tr>
 		<!-- // 3019-->
 		<tr>
 			<td colspan="3">3020 : ICE-SP</td>
 		</tr>
 		<tr>
-			<td></td><td>2020</td>362km/h<td></td>
+			<td></td><td>2020</td><td>362km/h<td></td>
 		</tr>
 		<!-- // 3020-->
 		<tr>
 			<td colspan="3">3021 : ICE3</td>
 		</tr>
 		<tr>
-			<td></td><td>1997</td>362km/h<td></td>
+			<td></td><td>1997</td><td>362km/h<td></td>
 		</tr>
 		<!-- // 3021-->
 		<tr>
 			<td colspan="3">3022 : KTX-N</td>
 		</tr>
 		<tr>
-			<td></td><td>2020</td>362km/h<td></td>
+			<td></td><td>2020</td><td>362km/h<td></td>
 		</tr>
 		<!-- // 3022-->
 		<tr>
 			<td colspan="3">3023 : NJ2</td>
 		</tr>
 		<tr>
-			<td></td><td>2006</td>181km/h<td></td>
+			<td></td><td>2006</td><td>181km/h<td></td>
 		</tr>
 		<!-- // 3023-->
 		<tr>
 			<td colspan="3">3024 : NKX</td>
 		</tr>
 		<tr>
-			<td></td><td>2020</td>181km/h<td></td>
+			<td></td><td>2020</td><td>181km/h<td></td>
 		</tr>
 		<!-- // 3024-->
 		<tr>
 			<td colspan="3">3025 : 신칸센 500계</td>
 		</tr>
 		<tr>
-			<td></td><td>1996</td>362km/h<td></td>
+			<td></td><td>1996</td><td>362km/h<td></td>
 		</tr>
 		<!-- // 3025-->
 		<tr>
 			<td colspan="3">3026 : 신칸센 500계 Cool</td>
 		</tr>
 		<tr>
-			<td></td><td>2020</td>430km/h<td></td>
+			<td></td><td>2020</td><td>430km/h<td></td>
 		</tr>
 		<!-- // 3026-->
 		<tr>
 			<td colspan="3">3027 : 신칸센 500계 SP</td>
 		</tr>
 		<tr>
-			<td></td><td>2020</td>430km/h<td></td>
+			<td></td><td>2020</td><td>430km/h<td></td>
 		</tr>
 		<!-- // 3027-->
 		<tr>
 			<td colspan="3">3028 : 신칸센 800계</td>
 		</tr>
 		<tr>
-			<td></td><td>1996</td>260km/h<td></td>
+			<td></td><td>1996</td><td>260km/h<td></td>
 		</tr>
 		<!-- // 3028-->
 		<tr>
 			<td colspan="3">3029 : 신칸센 E5</td>
 		</tr>
 		<tr>
-			<td></td><td>2011</td>362km/h<td></td>
+			<td></td><td>2011</td><td>362km/h<td></td>
 		</tr>
 		<!-- // 3029-->
 		<tr>
 			<td colspan="3">3030 : 신칸센 E6</td>
 		</tr>
 		<tr>
-			<td></td><td>2011</td>362km/h<td></td>
+			<td></td><td>2011</td><td>362km/h<td></td>
 		</tr>
 		<!-- // 3030-->
 		<tr>
 			<td colspan="3">3031 : 신칸센 E7</td>
 		</tr>
 		<tr>
-			<td></td><td>2014</td>362km/h<td></td>
+			<td></td><td>2014</td><td>362km/h<td></td>
 		</tr>
 		<!-- // 3031-->
 		<tr>
 			<td colspan="3">3032 : 신칸센 N700</td>
 		</tr>
 		<tr>
-			<td></td><td>2007</td>362km/h<td></td>
+			<td></td><td>2007</td><td>362km/h<td></td>
 		</tr>
 		<!-- // 3032-->
 		<tr>
 			<td colspan="3">3033 : TAE</td>
 		</tr>
 		<tr>
-			<td></td><td>2020</td>181km/h<td></td>
+			<td></td><td>2020</td><td>181km/h<td></td>
 		</tr>
 		<!-- // 3033-->
 		<tr>
 			<td colspan="3">3033 : TAE</td>
 		</tr>
 		<tr>
-			<td></td><td>2020</td>260km/h<td></td>
+			<td></td><td>2020</td><td>260km/h<td></td>
 		</tr>
 		<!-- // 3033-->
 		<tr>
 			<td colspan="3">3034 : Talgo250</td>
 		</tr>
 		<tr>
-			<td></td><td>2012</td>260km/h<td></td>
+			<td></td><td>2012</td><td>260km/h<td></td>
 		</tr>
 		<!-- // 3034-->
 		<tr>
 			<td colspan="3">3035 : TGV Duplex</td>
 		</tr>
 		<tr>
-			<td></td><td>1994</td>362km/h<td></td>
+			<td></td><td>1994</td><td>362km/h<td></td>
 		</tr>
 		<!-- // 3035-->
 		<tr>
 			<td colspan="3">3036 : TGV Old</td>
 		</tr>
 		<tr>
-			<td></td><td>1978</td>362km/h<td></td>
+			<td></td><td>1978</td><td>362km/h<td></td>
 		</tr>
 		<!-- // 3036-->
 		<tr>
 			<td colspan="3">3037 : TGV Old Duplex</td>
 		</tr>
 		<tr>
-			<td></td><td>1994</td>362km/h<td></td>
+			<td></td><td>1994</td><td>362km/h<td></td>
 		</tr>
 		<!-- // 3037-->
 		<tr>
 			<td colspan="3">3038 : TGV Old Pos</td>
 		</tr>
 		<tr>
-			<td></td><td>1978</td>362km/h<td></td>
+			<td></td><td>1978</td><td>362km/h<td></td>
 		</tr>
 		<!-- // 3038-->
 		<tr>
 			<td colspan="3">3039 : TGV Old Poste</td>
 		</tr>
 		<tr>
-			<td></td><td>1978</td>362km/h<td></td>
+			<td></td><td>1978</td><td>362km/h<td></td>
 		</tr>
 		<!-- // 3039-->
 		<tr>
 			<td colspan="3">3040 : TGV Ouigo</td>
 		</tr>
 		<tr>
-			<td></td><td>2013</td>362km/h<td></td>
+			<td></td><td>2013</td><td>362km/h<td></td>
 		</tr>
 		<!-- // 3040-->
 		<tr>
 			<td colspan="3">3041 : TGV Pos</td>
 		</tr>
 		<tr>
-			<td></td><td>2006</td>362km/h<td></td>
+			<td></td><td>2006</td><td>362km/h<td></td>
 		</tr>
 		<!-- // 3041-->
 		<tr>
 			<td colspan="3">3042 : TGV Pos Poste</td>
 		</tr>
 		<tr>
-			<td></td><td>2006</td>362km/h<td></td>
+			<td></td><td>2006</td><td>362km/h<td></td>
 		</tr>
 		<!-- // 3042-->
 		<tr>
 			<td colspan="3">3043 : THRS</td>
 		</tr>
 		<tr>
-			<td></td><td>2007</td>362km/h<td></td>
+			<td></td><td>2007</td><td>362km/h<td></td>
 		</tr>
 		<!-- // 3043-->
 		<tr>
 			<td colspan="3">3044 : VTX</td>
 		</tr>
 		<tr>
-			<td></td><td>2020</td>600km/h<td></td>
+			<td></td><td>2020</td><td>600km/h<td></td>
 		</tr>
 		<!-- // 3044-->
 		<tr>
 			<td colspan="3">3045 : YFX</td>
 		</tr>
 		<tr>
-			<td></td><td>2020</td>600km/h<td></td>
+			<td></td><td>2020</td><td>600km/h<td></td>
 		</tr>
 		<!-- // 3045-->
 		<tr>
 			<td colspan="3">3046 : YTX</td>
 		</tr>
 		<tr>
-			<td></td><td>2020</td>362km/h<td></td>
+			<td></td><td>2020</td><td>362km/h<td></td>
 		</tr>
 		<!-- // 3046-->
 		<tr>
 			<td colspan="3">3047 : ZEFIRO380</td>
 		</tr>
 		<tr>
-			<td></td><td>2014</td>380km/h<td></td>
+			<td></td><td>2014</td><td>380km/h<td></td>
 		</tr>
 		<!-- // 3047-->
 		<tr>
 			<td colspan="3">3048 : ZEFIRO380 Black</td>
 		</tr>
 		<tr>
-			<td></td><td>2020</td>600km/h<td></td>
+			<td></td><td>2020</td><td>600km/h<td></td>
 		</tr>
 		<!-- // 3048-->
 		<tr>
 			<td colspan="3">3049 : ZEFIRO380 Cool</td>
 		</tr>
 		<tr>
-			<td></td><td>2020</td>430km/h<td></td>
+			<td></td><td>2020</td><td>430km/h<td></td>
 		</tr>
 		<!-- // 3049-->
 		<tr>
 			<td colspan="3">3050 : EMU362</td>
 		</tr>
 		<tr>
-			<td></td><td>2020</td>362km/h<td></td>
+			<td></td><td>2020</td><td>362km/h<td></td>
 		</tr>
 		<!-- // 3050-->
 		<tr>
 			<td colspan="3">3051 : EMU180</td>
 		</tr>
 		<tr>
-			<td></td><td>2023</td>181km/h<td></td>
+			<td></td><td>2023</td><td>181km/h<td></td>
 		</tr>
 		<!-- // 3051-->
 		<tr>
 			<td colspan="3">3052 : ITX-SM2</td>
 		</tr>
 		<tr>
-			<td></td><td>2020</td>181km/h<td></td>
+			<td></td><td>2020</td><td>181km/h<td></td>
 		</tr>
 		<!-- // 3052-->
 		<tr>
 			<td colspan="3">3053 : KTX-SC2</td>
 		</tr>
 		<tr>
-			<td></td><td>2020</td>362km/h<td></td>
+			<td></td><td>2020</td><td>362km/h<td></td>
 		</tr>
 		<!-- // 3053-->
 		<tr>
 			<td colspan="3">3054 : NRT2</td>
 		</tr>
 		<tr>
-			<td></td><td>2020</td>181km/h<td></td>
+			<td></td><td>2020</td><td>181km/h<td></td>
 		</tr>
 		<!-- // 3054-->
 		<tr>
