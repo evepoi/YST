@@ -164,54 +164,75 @@ YST는 다소 까다로운 템플릿을 보유하고 보다 편한 코딩방식�
     </thead>
 	<tbody>
 		<tr>
-			<td>4001</td><td colspan="3">TR AD Tranz CAF A형</td>
+			<td colspan="4">4001 : MTR AD Tranz CAF A형</td>
 		</tr>
 		<tr>
 			<td><img src="docs/img/YST/4001.png" alt="4001"></td><td>1979</td><td>120km/h</td><td>80</td>
 		</tr>
 		<!-- // 4001-->
 		<tr>
-			<td>4002</td><td colspan="3">MTR 메트로카멜 교류형 전동차</td>
+			<td colspan="4">4002 : MTR 메트로카멜 교류형 전동차</td>
 		</tr>
 		<tr>
 			<td><img src="docs/img/YST/4002.png" alt="4002"></td><td>1979</td><td>120km/h</td><td>80</td>
 		</tr>
 		<!-- // 4002-->
 		<tr>
-			<td>4003</td><td colspan="3">MTR 메트로카멜 직류형 전동차</td>
+			<td colspan="4">4003 : MTR 메트로카멜 직류형 전동차</td>
 		</tr>
 		<tr>
 			<td><img src="docs/img/YST/4003.png" alt="4003"></td><td>1979</td><td>120km/h</td><td>80</td>
 		</tr>
 		<!-- // 4003-->
 		<tr>
-			<td>4004</td><td colspan="3">MTR CNR 창춘 전동차</td>
+			<td colspan="4">4004 : MTR CNR 창춘 전동차</td>
 		</tr>
 		<tr>
 			<td><img src="docs/img/YST/4004.png" alt="4004"></td><td>1979</td><td>120km/h</td><td>80</td>
 		</tr>
 		<!-- // 4004-->
 		<tr>
-			<td>4005</td><td colspan="3">MTR CRRC 전동차</td>
+			<td colspan="4">4005 : MTR CRRC 전동차</td>
 		</tr>
 		<tr>
 			<td><img src="docs/img/YST/4005.png" alt="4005"></td><td>1979</td><td>120km/h</td><td>80</td>
 		</tr>
 		<!-- // 4005-->
 		<tr>
-			<td>4006</td><td colspan="3">MTR 현대로템 미쓰비시 전동차</td>
+			<td colspan="4">4006 : MTR 현대로템 미쓰비시 전동차</td>
 		</tr>
 		<tr>
 			<td><img src="docs/img/YST/4006.png" alt="4006"></td><td>1979</td><td>120km/h</td><td>80</td>
 		</tr>
 		<!-- // 4006-->
 		<tr>
-			<td>4007</td><td colspan="3">MTR 현대로템 R형 전동차</td>
+			<td colspan="4">4007 : MTR 현대로템 R형 전동차</td>
 		</tr>
 		<tr>
 			<td><img src="docs/img/YST/4007.png" alt="4007"></td><td>1979</td><td>120km/h</td><td>80</td>
 		</tr>
 		<!-- // 4007-->
+		<tr>
+			<td colspan="4">4008 : MTR IKK SP 1900</td>
+		</tr>
+		<tr>
+			<td><img src="docs/img/YST/4008.png" alt="4008"></td><td>1979</td><td>120km/h</td><td>80</td>
+		</tr>
+		<!-- // 4008-->
+		<tr>
+			<td colspan="4">4009 : YMT 100</td>
+		</tr>
+		<tr>
+			<td></td><td>2020</td><td>120km/h</td><td>80</td>
+		</tr>
+		<!-- // 4009-->
+		<tr>
+			<td colspan="4">4010 : YMT 200</td>
+		</tr>
+		<tr>
+			<td></td><td>2020</td><td>120km/h</td><td>80</td>
+		</tr>
+		<!-- // 4010-->
 	</tbody>
 </table>
 </details>
