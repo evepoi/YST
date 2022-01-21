@@ -525,7 +525,7 @@ YST는 다소 까다로운 템플릿을 보유하고 보다 편한 코딩방식�
 			<td colspan="3">3035 : TGV Duplex</td>
 		</tr>
 		<tr>
-			<td></td><td>1994</td><td>362km/h</td>
+			<td><img src="docs/img/YST/3035.png" alt="3035"></td><td>1994</td><td>362km/h</td>
 		</tr>
 		<!-- // 3035-->
 		<tr>
