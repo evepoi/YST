@@ -51,7 +51,7 @@ YST는 다소 까다로운 템플릿을 보유하고 보다 편한 코딩방식�
 			<td colspan="4">3054 : NRT2</td>
 		</tr>
 		<tr>
-			<td>일반열차</td><td><img src="docs/img/YST/NRT2_Blue.png" alt="NRT2 Blue"><br><img src="docs/img/YST/NRT2_Green.png" alt="NRT2 Green"><br><img src="docs/img/YST/NRT2_White.png" alt="NRT2 White"></td><td>2020</td><td>181km/h</td>
+			<td>일반열차</td><td><img src="docs/img/YST/3054.png" alt="3054"></td><td>2020</td><td>181km/h</td>
 		</tr>
 		<!-- // 3054-->
 </table>
@@ -562,7 +562,7 @@ YST는 다소 까다로운 템플릿을 보유하고 보다 편한 코딩방식�
 			<td colspan="3">3054 : NRT2</td>
 		</tr>
 		<tr>
-			<td></td><td>2020</td><td>181km/h</td>
+			<td><img src="docs/img/YST/3054.png" alt="3054"></td><td>2020</td><td>181km/h</td>
 		</tr>
 		<!-- // 3054-->
 	</tbody>
