@@ -441,7 +441,7 @@ YST는 다소 까다로운 템플릿을 보유하고 보다 편한 코딩방식�
 			<td colspan="3">3024 : NKX</td>
 		</tr>
 		<tr>
-			<td></td><td>2020</td><td>181km/h</td>
+			<td><img src="docs/img/YST/3024.png" alt="3024"></td><td>2020</td><td>181km/h</td>
 		</tr>
 		<!-- // 3024-->
 		<tr>
