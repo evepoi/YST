@@ -1,8 +1,27 @@
 # OpenTTD 민은월드 기록
 ## OPenTTD JGR 버전
-최신버전 : 0.45
+최신버전 : 0.46.rc-2
 
 ## GRF 목록
-- 
+- 한국 도시 이름 V5.1
+- Korea Bridge
+- 한국 열차 세트 2.1.0
+- 키위트리 한국역 세트 v1.1.2 part 1
+- 키위트리 한국역 세트 v1.1.2 part 2
+- Kiwitree Station Extension Shadowed v0.85
+- Kiwitree Station Extension v0.85
+- 한국 신호기 세트 1.2.0
+- Korea station Develop 150619
+- 한국 기찻길 1.1.0
+- YST 2022.01.24
+- Fake Airport Objects v0.1
 
-## 변경기록
+## 세이브 기록
+- 세이브 기록은 역순으로 기록합니다.
+
+### 운영총괄
+- 지하철 : 다기능 배차기능을 통해 열차 편성함.
+- 181km/h로 운행하는 열차의 등급은 모두 동일하게 운영함.
+
+### 2022.02.01
+- OpenTTD JGR 0.46. rc-2 적용
