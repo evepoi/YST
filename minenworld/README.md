@@ -5,7 +5,7 @@
 ## GRF 목록
 - 한국 도시 이름 V5.1
 - Korea Bridge
-- 한국 열차 세트 2.1.0
+- 한국 열차 세트 2.2.0-rc-1
 - 키위트리 한국역 세트 v1.1.2 part 1
 - 키위트리 한국역 세트 v1.1.2 part 2
 - Kiwitree Station Extension Shadowed v0.85
@@ -24,4 +24,5 @@
 - 181km/h로 운행하는 열차의 등급은 모두 동일하게 운영함.
 
 ### 2022.02.01
+- 한국 열차 세트 2.2.0 rc-1 적용
 - OpenTTD JGR 0.46. rc-2 적용
