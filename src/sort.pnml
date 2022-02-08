@@ -21,12 +21,14 @@ sort(FEAT_TRAINS, [
     EMU362,                    //3050
     Glory_600,                 //3016
     GT26CW,                    //3017
+    GTX,                       //3056
     HEMU_430,                  //3018
     HMX,                       //3019
     ICE_SP,                    //3020
     ICE3,                      //3021
     ITX_CW,                    //3055
     ITX_SM2,                   //3052
+    KTX_EM,                    //3057
     KTX_N,                     //3022
     KTX_SC2,                   //3053
     NJ2,                       //3023

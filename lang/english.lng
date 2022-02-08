@@ -25,12 +25,14 @@ STR_EMU260_NAME                                     :[YST] EMU260
 STR_EMU362_NAME                                     :[YST] EMU362
 STR_Glory_600_NAME                                  :[YST] Glory 600
 STR_GT26CW_NAME                                     :[YST] GT26CW
+STR_GTX_NAME                                        :[YST] GTX
 STR_HEMU_430_NAME                                   :[YST] HEMU-430
 STR_HMX_NAME                                        :[YST] HMX
 STR_ICE3_NAME                                       :[YST] ICE3
 STR_ICE_CW_NAME                                     :[YST] ITX-Chowol
 STR_ICE_SP_NAME                                     :[YST] ICE-SP
 STR_ITX_SM2_NAME                                    :[YST] ITX-SM2
+STR_KTX_EM_NAME                                     :[YST] KTX-EM
 STR_KTX_N_NAME                                      :[YST] KTX-N
 STR_KTX_SC2_NAME                                    :[YST] KTX-SC2
 STR_NJ2_NAME                                        :[YST] NJ2
@@ -137,9 +139,11 @@ STR_REFIT_ADDITIONAL_UNABLE_AVE_VElaro              :{BLACK}Changing model/liver
 STR_REFIT_ADDITIONAL_UNABLE_CRH1                    :{BLACK}Changing model/livery: {RED}Unavailable {} {BLACK}Combined train: {GREEN}CRH1
 STR_REFIT_ADDITIONAL_UNABLE_CRH3                    :{BLACK}Changing model/livery: {RED}Unavailable {} {BLACK}Combined train: {GREEN}CRH3
 STR_REFIT_ADDITIONAL_UNABLE_CRH430A                 :{BLACK}Changing model/livery: {RED}Unavailable {} {BLACK}Combined train: {GREEN}CRH362A, CRH430A Cool, CRH362A Red
-STR_REFIT_ADDITIONAL_UNABLE_EMU                     :{BLACK}Changing model/livery: {RED}Unavailable {} {BLACK}Combined train: {GREEN}EMU-260, EUM-362
+STR_REFIT_ADDITIONAL_UNABLE_EMU                     :{BLACK}Changing model/livery: {RED}Unavailable {} {BLACK}Combined train: {GREEN}EMU180, EMU260, EUM362
+STR_REFIT_ADDITIONAL_UNABLE_GTX                     :{BLACK}Changing model/livery: {RED}Unavailable {} {BLACK}Combined train: {GREEN}GTX
 STR_REFIT_ADDITIONAL_UNABLE_HEMU                    :{BLACK}Changing model/livery: {RED}Unavailable {} {BLACK}Combined train: {GREEN}HEMU-430
 STR_REFIT_ADDITIONAL_UNABLE_ICE3                    :{BLACK}Changing model/livery: {RED}Unavailable {} {BLACK}Combined train: {GREEN}ICE3
+STR_REFIT_ADDITIONAL_UNABLE_KTX_EM                  :{BLACK}Changing model/livery: {RED}Unavailable {} {BLACK}Combined train: {GREEN}KTX-EM
 STR_REFIT_ADDITIONAL_UNABLE_KTX_N                   :{BLACK}Changing model/livery: {RED}Unavailable {} {BLACK}Combined train: {GREEN}KTX-N
 STR_REFIT_ADDITIONAL_UNABLE_E5_H5                   :{BLACK}Changing model/livery: {RED}Unavailable {} {BLACK}Combined train: {GREEN}E5, H5
 STR_REFIT_ADDITIONAL_UNABLE_TGV_OLD                 :{BLACK}Changing model/livery: {RED}Unavailable {} {BLACK}Combined train: {GREEN}TGV Old
