@@ -8,8 +8,8 @@ grf {
 	grfid: "YSN2";
 	name: string(STR_GRF_NAME_WITH_VER);
 	desc: string(STR_GRF_DESC);
-	version: 22;
-	min_compatible_version: 21;
+	version: 23;
+	min_compatible_version: 22;
     
 	// Parameters
     #include "src/parameter.pnml"
@@ -108,4 +108,6 @@ if (Korea) {
     disable_item(FEAT_TRAINS, 3053); //KTX_SC2
     disable_item(FEAT_TRAINS, 3054); //NRT2
     disable_item(FEAT_TRAINS, 3055); //ITX_CW
+    disable_item(FEAT_TRAINS, 3056); //GTX
+    disable_item(FEAT_TRAINS, 3057); //KTX_EM
     }
