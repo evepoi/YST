@@ -34,19 +34,19 @@ YST는 다소 까다로운 템플릿을 보유하고 보다 편한 코딩방식�
 	</thead>
 	<tbody>
 		<tr>
-			<td colspan="4">2014 : 무궁화 2층객차</td>
+			<td colspan="4">3056 : GTX</td>
 		</tr>
 		<tr>
-			<td>객차</td><td><img src="docs/img/YST/2014.png" alt="2014"></td><td>2020</td><td></td>
+			<td>일반열차</td><td><img src="docs/img/YST/3056.png" alt="3056"></td><td>2023</td><td>181km/h</td>
 		</tr>
-		<!-- // 2014-->
+		<!-- // 3056-->
 		<tr>
-			<td colspan="4">3055 : ITX-초월</td>
+			<td colspan="4">3057 : KTX-이음 2층</td>
 		</tr>
 		<tr>
-			<td>일반열차</td><td><img src="docs/img/YST/3055.png" alt="3055"></td><td>2020</td><td>181km/h</td>
+			<td>준고속열차</td><td><img src="docs/img/YST/3057.png" alt="3057"></td><td>2022</td><td>260km/h</td>
 		</tr>
-		<!-- // 3055-->
+		<!-- // 3057-->
 </table>
 </details>
 
@@ -565,6 +565,20 @@ YST는 다소 까다로운 템플릿을 보유하고 보다 편한 코딩방식�
 			<td><img src="docs/img/YST/3055.png" alt="3055"></td><td>2020</td><td>181km/h</td>
 		</tr>
 		<!-- // 3055-->
+		<tr>
+			<td colspan="3">3056 : GTX</td>
+		</tr>
+		<tr>
+			<td><img src="docs/img/YST/3056.png" alt="3056"></td><td>2023</td><td>181km/h</td>
+		</tr>
+		<!-- // 3056-->
+		<tr>
+			<td colspan="3">3057 : KTX-이음 2층</td>
+		</tr>
+		<tr>
+			<td><img src="docs/img/YST/3057.png" alt="3057"></td><td>2022</td><td>260km/h</td>
+		</tr>
+		<!-- // 3057-->
 	</tbody>
 </table>
 </details>
