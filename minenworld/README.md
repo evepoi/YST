@@ -5,7 +5,7 @@
 ## GRF 목록
 - 한국 도시 이름 V5.1
 - Korea Bridge
-- 한국 열차 세트 2.2.0-rc-1
+- 한국 열차 세트 2.2.0
 - 키위트리 한국역 세트 v1.2.1 part 1
 - 키위트리 한국역 세트 v1.2.1 part 2
 - Kiwitree Station Extension Shadowed v0.85
