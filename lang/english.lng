@@ -45,6 +45,7 @@ STR_Shinkansen_800_NAME                             :[YST] Shinkansen 800
 STR_Shinkansen_E5_NAME                              :[YST] Shinkansen E5
 STR_Shinkansen_E6_NAME                              :[YST] Shinkansen E6
 STR_Shinkansen_E7_NAME                              :[YST] Shinkansen E7
+STR_Shinkansen_E8_NAME                              :[YST] Shinkansen E8
 STR_Shinkansen_N700_NAME                            :[YST] Shinkansen N700
 STR_TAE_NAME                                        :[YST] TAE
 STR_Talgo_250_NAME                                  :[YST] Talgo250
@@ -113,13 +114,13 @@ STR_PARAM_Korea_DESC                                :Check if you don't use the 
 
 # Refit (Additional text)
 STR_REFIT_ADDITIONAL                                :{BLACK}Changing model/livery: {GREEN}Available
-STR_REFIT_ADDITIONAL_ABLE_UNADDTRAIN                :{BLACK}Changing model/livery: {GREEN}Available {} {BLACK}Combined train: {RED}UnavailableSTR_REFIT_ADDITIONAL_ABLE_AGV           :{BLACK}Changing model/livery: {GREEN}Available {} {BLACK}Combined train: {RED}Unavailable
+STR_REFIT_ADDITIONAL_ABLE_UNADDTRAIN                :{BLACK}Changing model/livery: {GREEN}Available {} {BLACK}Combined train: {RED}UnavailableSTR_REFIT_ADDITIONAL_ABLE_AGV
 STR_REFIT_ADDITIONAL_ABLE_CRH362A                   :{BLACK}Changing model/livery: {GREEN}Available {} {BLACK}Combined train: {GREEN}CRH362A, CRH430A Cool, CRH362A Red
 STR_REFIT_ADDITIONAL_ABLE_CR600                     :{BLACK}Changing model/livery: {GREEN}Available {} {BLACK}Combined train: {GREEN}CR600
 STR_REFIT_ADDITIONAL_ABLE_EMU180                    :{BLACK}Changing model/livery: {GREEN}Available {} {BLACK}Combined train: {GREEN}EMU-260, EUM-362
 STR_REFIT_ADDITIONAL_ABLE_Glory600                  :{BLACK}Changing model/livery: {GREEN}Available {} {BLACK}Combined train: {GREEN}Glory600
 STR_REFIT_ADDITIONAL_ABLE_HMX                       :{BLACK}Changing model/livery: {GREEN}Available {} {BLACK}Combined train: {GREEN}HMX
-STR_REFIT_ADDITIONAL_ABLE_E6                        :{BLACK}Changing model/livery: {GREEN}Available {} {BLACK}Combined train: {GREEN}E6
+STR_REFIT_ADDITIONAL_ABLE_E6_E8                     :{BLACK}Changing model/livery: {GREEN}Available {} {BLACK}Combined train: {GREEN}E6, E8
 STR_REFIT_ADDITIONAL_ABLE_ICESP                     :{BLACK}Changing model/livery: {GREEN}available {} {BLACK}Combined train: {GREEN}ICE-Sancheon, ICE-Patjug
 STR_REFIT_ADDITIONAL_ABLE_ITX_CW                    :{BLACK}Changing model/livery: {GREEN}available {} {BLACK}Combined train: {GREEN}ITX-Chowol
 STR_REFIT_ADDITIONAL_ABLE_ITX_SM2                   :{BLACK}Changing model/livery: {GREEN}available {} {BLACK}Combined train: {GREEN}ITX-SM2

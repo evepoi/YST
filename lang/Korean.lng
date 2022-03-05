@@ -45,6 +45,7 @@ STR_Shinkansen_800_NAME                             :[YST] 신칸센 800계
 STR_Shinkansen_E5_NAME                              :[YST] 신칸센 E5
 STR_Shinkansen_E6_NAME                              :[YST] 신칸센 E6
 STR_Shinkansen_E7_NAME                              :[YST] 신칸센 E7
+STR_Shinkansen_E8_NAME                              :[YST] 신칸센 E8
 STR_Shinkansen_N700_NAME                            :[YST] 신칸센 N700
 STR_TAE_NAME                                        :[YST] TAE
 STR_Talgo_250_NAME                                  :[YST] Talgo250
@@ -114,7 +115,7 @@ STR_REFIT_ADDITIONAL_ABLE_CR600                     :{BLACK}도색/모델 변경
 STR_REFIT_ADDITIONAL_ABLE_EMU180                    :{BLACK}도색/모델 변경: {GREEN}가능 {}{BLACK}복합가능열차{}{GREEN}EMU180, EMU260, EUM362
 STR_REFIT_ADDITIONAL_ABLE_Glory600                  :{BLACK}도색/모델 변경: {GREEN}가능 {}{BLACK}복합가능열차{}{GREEN}Glory 600
 STR_REFIT_ADDITIONAL_ABLE_HMX                       :{BLACK}도색/모델 변경: {GREEN}가능 {}{BLACK}복합가능열차{}{GREEN}HMX
-STR_REFIT_ADDITIONAL_ABLE_E6                        :{BLACK}도색/모델 변경: {GREEN}가능 {}{BLACK}복합가능열차{}{GREEN}E6
+STR_REFIT_ADDITIONAL_ABLE_E6_E8                     :{BLACK}도색/모델 변경: {GREEN}가능 {}{BLACK}복합가능열차{}{GREEN}E6, E8
 STR_REFIT_ADDITIONAL_ABLE_ICESP                     :{BLACK}도색/모델 변경: {GREEN}가능 {}{BLACK}복합가능열차{}{GREEN}ICE-산천, ICE-팥죽
 STR_REFIT_ADDITIONAL_ABLE_ITX_CW                    :{BLACK}도색/모델 변경: {GREEN}가능 {}{BLACK}복합가능열차{}{GREEN}ITX-초월
 STR_REFIT_ADDITIONAL_ABLE_ITX_SM2                   :{BLACK}도색/모델 변경: {GREEN}가능 {}{BLACK}복합가능열차{}{GREEN}ITX-SM2

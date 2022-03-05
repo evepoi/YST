@@ -53,6 +53,7 @@
 #include "locomotive/Shinkansen_E5/Shinkansen_E5.pnml"
 #include "locomotive/Shinkansen_E6/Shinkansen_E6.pnml"
 #include "locomotive/Shinkansen_E7/Shinkansen_E7.pnml"
+#include "locomotive/Shinkansen_E8/Shinkansen_E8.pnml"
 #include "locomotive/Shinkansen_N700/Shinkansen_N700.pnml"
 #include "locomotive/TAE/TAE.pnml"
 #include "locomotive/Talgo_250/Talgo_250.pnml"

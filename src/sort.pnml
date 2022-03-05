@@ -41,6 +41,7 @@ sort(FEAT_TRAINS, [
     Shinkansen_E5,             //3029
     Shinkansen_E6,             //3030
     Shinkansen_E7,             //3031
+    Shinkansen_E8,             //3058
     Shinkansen_N700,           //3032
     TAE,                       //3033
     Talgo_250,                 //3034
