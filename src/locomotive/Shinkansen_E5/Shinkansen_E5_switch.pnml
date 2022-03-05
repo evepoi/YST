@@ -11,13 +11,13 @@ switch(FEAT_TRAINS, SELF, sw_Shinkansen_E5_engineH, cargo_subtype) {
     set_Shinkansen_E5_engineH;
 }
 
-switch(FEAT_TRAINS, SELF, sw_Shinkansen_H5_engineT, cargo_subtype) {
+switch(FEAT_TRAINS, SELF, sw_Shinkansen_E5_engineT, cargo_subtype) {
     1: set_Shinkansen_H5_engineT;   // H5
     set_Shinkansen_E5_engineT;
 }
 
 switch(FEAT_TRAINS, SELF, sw_Shinkansen_E5_engine, position_in_consist_from_end == 0 && num_vehs_in_consist > 1){
-    1: sw_Shinkansen_H5_engineT;
+    1: sw_Shinkansen_E5_engineT;
     sw_Shinkansen_E5_engineH;
 }
 
@@ -58,6 +58,7 @@ switch(FEAT_TRAINS, SELF, sw_Shinkansen_E5_wagon, [STORE_TEMP(-1, 0x10F), var[0x
 
 switch(FEAT_TRAINS, SELF, sw_Shinkansen_E5_wagon_attach, vehicle_type_id) {
     Shinkansen_E6:          return CB_RESULT_ATTACH_ALLOW;
+    Shinkansen_E8:          return CB_RESULT_ATTACH_ALLOW;
     YST_1F_Passenger_Car:   return CB_RESULT_ATTACH_ALLOW;
     return string(STR_ERROR_NO_ATTACH);
 }
