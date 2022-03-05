@@ -34,19 +34,12 @@ YST는 다소 까다로운 템플릿을 보유하고 보다 편한 코딩방식�
 	</thead>
 	<tbody>
 		<tr>
-			<td colspan="4">3056 : GTX</td>
+			<td colspan="4">3058 : 신칸센 E8</td>
 		</tr>
 		<tr>
-			<td>일반열차</td><td><img src="docs/img/YST/3056.png" alt="3056"></td><td>2023</td><td>181km/h</td>
+			<td>고속열차</td><td><img src="docs/img/YST/3058.png" alt="3058"></td><td>2024</td><td>362km/h</td>
 		</tr>
-		<!-- // 3056-->
-		<tr>
-			<td colspan="4">3057 : KTX-이음 2층</td>
-		</tr>
-		<tr>
-			<td>준고속열차</td><td><img src="docs/img/YST/3057.png" alt="3057"></td><td>2022</td><td>260km/h</td>
-		</tr>
-		<!-- // 3057-->
+		<!-- // 3058-->
 </table>
 </details>
 
@@ -579,6 +572,13 @@ YST는 다소 까다로운 템플릿을 보유하고 보다 편한 코딩방식�
 			<td><img src="docs/img/YST/3057.png" alt="3057"></td><td>2022</td><td>260km/h</td>
 		</tr>
 		<!-- // 3057-->
+		<tr>
+			<td colspan="3">3058 : 신칸센 E8</td>
+		</tr>
+		<tr>
+			<td><img src="docs/img/YST/3058.png" alt="3058"></td><td>2024</td><td>362km/h</td>
+		</tr>
+		<!-- // 3058-->
 	</tbody>
 </table>
 </details>
