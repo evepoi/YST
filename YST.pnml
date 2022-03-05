@@ -8,8 +8,8 @@ grf {
 	grfid: "YSN2";
 	name: string(STR_GRF_NAME_WITH_VER);
 	desc: string(STR_GRF_DESC);
-	version: 24;
-	min_compatible_version: 23;
+	version: 25;
+	min_compatible_version: 24;
     
 	// Parameters
     #include "src/parameter.pnml"
@@ -79,6 +79,7 @@ if (Japanese) {
     disable_item(FEAT_TRAINS, 3029); //Shinkansen_E5
     disable_item(FEAT_TRAINS, 3030); //Shinkansen_E6
     disable_item(FEAT_TRAINS, 3031); //Shinkansen_E7
+    disable_item(FEAT_TRAINS, 3058); //Shinkansen_E8
     disable_item(FEAT_TRAINS, 3032); //Shinkansen_N700
     }
 
