@@ -19,7 +19,7 @@ makefile, [nml0.6.1](https://github.com/OpenTTD/nml) 등의 최신버전을 사�
 YST는 다소 까다로운 템플릿을 보유하고 보다 편한 코딩방식을 택하고 있습니다. 기본적인 템플릿은 순차적으로 만들겠습니다.<br>
 
 ## 커뮤니티
-![discord_logo](https://discord.gg/WNrjUatFkz)
+![디스코드로고](https://github.com/evepoi/YST/blob/minengallery/docs/img/discord_logo.png)(https://discord.gg/WNrjUatFkz)
 
 # YST Set 열차 목록
 ## 개요
