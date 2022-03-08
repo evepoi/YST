@@ -54,6 +54,7 @@ sort(FEAT_TRAINS, [
     TGV_Pos,                   //3041
     TGV_Pos_Poste,             //3042
     THRS,                      //3043
+    VHST_600X,                 //3059
     VTX,                       //3044
     YFX,                       //3045
     YTX,                       //3046

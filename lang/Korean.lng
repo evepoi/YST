@@ -58,6 +58,7 @@ STR_TGV_Ouigo_NAME                                  :[YST] TGV Ouigo
 STR_TGV_Pos_NAME                                    :[YST] TGV Pos
 STR_TGV_Pos_Poste_NAME                              :[YST] TGV Pos Poste
 STR_THRS_NAME                                       :[YST] THRS
+STR_VHST_600X_NAME                                  :[YST] VHST-600X
 STR_VTX_NAME                                        :[YST] VTX
 STR_YFX_NAME                                        :[YST] YFX
 STR_YTX_NAME                                        :[YST] YTX
@@ -106,6 +107,8 @@ STR_PARAM_Hong_Kong_NAME                            :홍콩형 열차 사용금�
 STR_PARAM_Hong_Kong_DESC                            :홍콩형 열차를 사용하지 않을 시 체크하세요.  (기본:사용)
 STR_PARAM_Korea_NAME                                :한국형 열차 사용금지
 STR_PARAM_Korea_DESC                                :한국형 열차를 사용하지 않을 시 체크하세요.  (기본:사용)
+STR_PARAM_Hight_SPEED_Train_NAME                    :고속열차 속도변수
+STR_PARAM_Hight_SPEED_Train_DESC                    :고속열차의 속도를 조정합니다. (기본:331km/h)
 
 # Refit (Additional text)
 STR_REFIT_ADDITIONAL                                :{BLACK}도색/모델 변경: {GREEN}가능
@@ -145,6 +148,7 @@ STR_REFIT_ADDITIONAL_UNABLE_E5_H5                   :{BLACK}도색/모델 변경
 STR_REFIT_ADDITIONAL_UNABLE_TGV_OLD                 :{BLACK}도색/모델 변경: {RED}불가능 {}{BLACK}복합가능열차{}{GREEN}TGV Old
 STR_REFIT_ADDITIONAL_UNABLE_TGV_Poste               :{BLACK}도색/모델 변경: {RED}불가능 {}{BLACK}복합가능열차{}{GREEN}TGV Old Poste, TGV Pos Poste
 STR_REFIT_ADDITIONAL_UNABLE_TGV_Ouigo               :{BLACK}도색/모델 변경: {RED}불가능 {}{BLACK}복합가능열차{}{GREEN}TGV Ouigo
+STR_REFIT_ADDITIONAL_UNABLE_VHST_600X               :{BLACK}도색/모델 변경: {RED}불가능 {}{BLACK}복합가능열차{}{GREEN}VHST-600X
 STR_REFIT_ADDITIONAL_UNABLE_VTX                     :{BLACK}도색/모델 변경: {RED}불가능 {}{BLACK}복합가능열차{}{GREEN}VTX
 STR_REFIT_ADDITIONAL_UNABLE_YFX                     :{BLACK}도색/모델 변경: {RED}불가능 {}{BLACK}복합가능열차{}{GREEN}YFX
 STR_REFIT_ADDITIONAL_UNABLE_YTX                     :{BLACK}도색/모델 변경: {RED}불가능 {}{BLACK}복합가능열차{}{GREEN}YTX
@@ -187,6 +191,8 @@ STR_REFIT_LIVERY_NRT2G                              :(NRT2 녹색도색)
 STR_REFIT_LIVERY_NRT2W                              :(NRT2 흰색도색)
 STR_REFIT_LIVERY_Shinkansen_500_Sancheon            :(신칸센 500-산천)
 STR_REFIT_LIVERY_Shinkansen_500_Patjug              :(신칸센 500-팥죽)
+STR_REFIT_LIVERY_Shinkansen_N700                    :(신칸센 N700)
+STR_REFIT_LIVERY_Shinkansen_N700S_Kyushu            :(신칸센 N700S-Kyushu)
 STR_REFIT_LIVERY_Shinkansen_E5                      :(신칸센 E5)
 STR_REFIT_LIVERY_Shinkansen_H5                      :(신칸센 H5)
 STR_REFIT_LIVERY_TAE_100                            :(TAE 100)
@@ -261,3 +267,4 @@ STR_ERROR_NO_ATTACH                                 :여기에 이 차량을 붙
 STR_ERROR_NOT_ENOUGH_LENGTH3                        :열차 길이가 너무 짧습니다. 최소한 3량 이상을 연결해야 합니다.
 STR_ERROR_NOT_ENOUGH_LENGTH4                        :열차 길이가 너무 짧습니다. 최소한 4량 이상을 연결해야 합니다.
 STR_ERROR_NOT_ENOUGH_LENGTH6                        :열차 길이가 너무 짧습니다. 최소한 6량 이상을 연결해야 합니다.
+STR_ERROR_NOT_ENOUGH_LENGTH8                        :열차 길이가 너무 짧습니다. 최소한 8량 이상을 연결해야 합니다.
