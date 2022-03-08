@@ -16,6 +16,12 @@ switch(FEAT_TRAINS, SELF, sw_YST_train_start_stop_6, num_vehs_in_consist >= 6) {
     return string(STR_ERROR_NOT_ENOUGH_LENGTH6);
 }
 
+//최소 8량이상 편성
+switch(FEAT_TRAINS, SELF, sw_YST_train_start_stop_8, num_vehs_in_consist >= 8) {
+    1: return CB_RESULT_NO_TEXT;
+    return string(STR_ERROR_NOT_ENOUGH_LENGTH8);
+}
+
 //공통객차 텍스트
 switch(FEAT_TRAINS, SELF, sw_Passenger_wagon_cargo_subtype_text, vehicle_type_id) {
     return CB_RESULT_NO_TEXT;
@@ -125,7 +131,7 @@ item (FEAT_TRAINS, YST_2F_Passenger_Car, 2002){
     property {
         name:                           string(STR_YST_2F_PASS_NAME);
         climates_available:             ALL_CLIMATES;
-        introduction_date:              date(2020, 1, 1);
+        introduction_date:              date(1994, 1, 1);
         track_type:                     RAIL;
         engine_class:                   ENGINE_CLASS_ELECTRIC;
         sprite_id:                      SPRITE_ID_NEW_TRAIN;
