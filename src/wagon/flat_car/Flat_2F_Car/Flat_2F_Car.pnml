@@ -24,7 +24,7 @@ item(FEAT_TRAINS, FLAT_2F, 2006){
         tractive_effort_coefficient:    0.3;
         
         //Cargo
-        cargo_capacity:                 50;
+        cargo_capacity:                 100;
         refittable_cargo_classes:       NO_CARGO_CLASS;
         non_refittable_cargo_classes:   NO_CARGO_CLASS;
         cargo_allow_refit:              [GOOD, VALU, FOOD, BATT, SWET, TOYS, FISH, BOOM, JAVA, GLAS, POWR, NUTS, MNSP];
