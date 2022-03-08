@@ -38,12 +38,12 @@ YST는 다소 까다로운 템플릿을 보유하고 보다 편한 코딩방식�
 	</thead>
 	<tbody>
 		<tr>
-			<td colspan="4">3058 : 신칸센 E8</td>
+			<td colspan="4">3059 : VHST-600X</td>
 		</tr>
 		<tr>
-			<td>고속열차</td><td><img src="docs/img/YST/3058.png" alt="3058"></td><td>2024</td><td>362km/h</td>
+			<td>고속열차</td><td><img src="docs/img/YST/3059.png" alt="3059"></td><td>2025</td><td>600km/h</td>
 		</tr>
-		<!-- // 3058-->
+		<!-- // 3059-->
 </table>
 </details>
 
@@ -583,6 +583,13 @@ YST는 다소 까다로운 템플릿을 보유하고 보다 편한 코딩방식�
 			<td><img src="docs/img/YST/3058.png" alt="3058"></td><td>2024</td><td>362km/h</td>
 		</tr>
 		<!-- // 3058-->
+		<tr>
+			<td colspan="3">3059 : VHST-600X</td>
+		</tr>
+		<tr>
+			<td><img src="docs/img/YST/3059.png" alt="3059"></td><td>2025</td><td>600km/h</td>
+		</tr>
+		<!-- // 3059-->
 	</tbody>
 </table>
 </details>
