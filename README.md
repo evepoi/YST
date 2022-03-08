@@ -500,21 +500,21 @@ YST는 다소 까다로운 템플릿을 보유하고 보다 편한 코딩방식�
 		</tr>
 		<!-- // 3046-->
 		<tr>
-			<td colspan="3">3047 : ZEFIRO380</td>
+			<td colspan="3">3047 : ZEFIRO362</td>
 		</tr>
 		<tr>
-			<td><img src="docs/img/YST/3047.png" alt="3047"></td><td>2014</td><td>380km/h</td>
+			<td><img src="docs/img/YST/3047.png" alt="3047"></td><td>2014</td><td>362km/h</td>
 		</tr>
 		<!-- // 3047-->
 		<tr>
-			<td colspan="3">3048 : ZEFIRO380 Black</td>
+			<td colspan="3">3048 : ZEFIRO600</td>
 		</tr>
 		<tr>
 			<td><img src="docs/img/YST/3048.png" alt="3048"></td><td>2020</td><td>600km/h</td>
 		</tr>
 		<!-- // 3048-->
 		<tr>
-			<td colspan="3">3049 : ZEFIRO380 Cool</td>
+			<td colspan="3">3049 : ZEFIRO430</td>
 		</tr>
 		<tr>
 			<td><img src="docs/img/YST/3049.png" alt="3049"></td><td>2020</td><td>430km/h</td>
@@ -556,7 +556,7 @@ YST는 다소 까다로운 템플릿을 보유하고 보다 편한 코딩방식�
 		</tr>
 		<!-- // 3054-->
 		<tr>
-			<td colspan="3">3055 : 3055 : ITX-초월</td>
+			<td colspan="3">3055 : ITX-초월</td>
 		</tr>
 		<tr>
 			<td><img src="docs/img/YST/3055.png" alt="3055"></td><td>2020</td><td>181km/h</td>
