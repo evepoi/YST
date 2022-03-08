@@ -11,24 +11,24 @@ switch(FEAT_TRAINS, SELF, sw_MTR_Hyundai_Rotem_R_engine, position_in_consist_fro
     set_MTR_Hyundai_Rotem_R_engineH;
 }
 
-switch(FEAT_TRAINS, SELF, sw_MTR_Hyundai_Rotem_R_wagon_front, cargo_subtype) {
-    1: set_MTR_Hyundai_Rotem_R_special_wagon; // 특실
+switch(FEAT_TRAINS, SELF, sw_MTR_Hyundai_Rotem_R_wagon_middle_Nomal, (position_in_consist)) {
+    1: set_MTR_Hyundai_Rotem_R_Nomal_wagon_r;
     set_MTR_Hyundai_Rotem_R_Nomal_wagon;
 }
 
-switch(FEAT_TRAINS, SELF, sw_MTR_Hyundai_Rotem_R_wagon_tail, cargo_subtype) {
-    1: set_MTR_Hyundai_Rotem_R_special_wagon_r;   // 특실
-    set_MTR_Hyundai_Rotem_R_Nomal_wagon_r;
+switch(FEAT_TRAINS, SELF, sw_MTR_Hyundai_Rotem_R_wagon_middle_Special, (position_in_consist)) {
+    1: set_MTR_Hyundai_Rotem_R_special_wagon_r;
+    set_MTR_Hyundai_Rotem_R_special_wagon;
 }
 
-switch(FEAT_TRAINS, SELF, sw_MTR_Hyundai_Rotem_R_wagon_middle, (position_in_consist)) {
-    1: sw_MTR_Hyundai_Rotem_R_wagon_tail;
-    sw_MTR_Hyundai_Rotem_R_wagon_front;
+switch(FEAT_TRAINS, SELF, sw_sw_MTR_Hyundai_Rotem_R_wagon_special_rear, [STORE_TEMP(3, 0x10F), var[0x61, 0, 0x0000FFFF, 0xC6]]){
+    Hyundai_Rotem_R: sw_MTR_Hyundai_Rotem_R_wagon_middle_Special;
+    sw_MTR_Hyundai_Rotem_R_wagon_middle_Nomal;
 }
 
 switch(FEAT_TRAINS, SELF, sw_MTR_Hyundai_Rotem_R_wagon_rear, [STORE_TEMP(1, 0x10F), var[0x61, 0, 0x0000FFFF, 0xC6]]){
     Hyundai_Rotem_R: set_MTR_Hyundai_Rotem_R_wagon_end;
-    sw_MTR_Hyundai_Rotem_R_wagon_middle;
+    sw_sw_MTR_Hyundai_Rotem_R_wagon_special_rear;
 }
 
 switch(FEAT_TRAINS, SELF, sw_MTR_Hyundai_Rotem_R_wagon, [STORE_TEMP(-1, 0x10F), var[0x61, 0, 0x0000FFFF, 0xC6]]) {
@@ -37,6 +37,7 @@ switch(FEAT_TRAINS, SELF, sw_MTR_Hyundai_Rotem_R_wagon, [STORE_TEMP(-1, 0x10F), 
 }
 
 switch(FEAT_TRAINS, SELF, sw_MTR_Hyundai_Rotem_R_wagon_attach, vehicle_type_id) {
+    Hyundai_Rotem_R:        return CB_RESULT_ATTACH_ALLOW;
     YST_1F_Passenger_Car:   return CB_RESULT_ATTACH_ALLOW;
     return string(STR_ERROR_NO_ATTACH);
 }
