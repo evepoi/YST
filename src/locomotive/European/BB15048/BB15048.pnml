@@ -51,6 +51,7 @@ item(FEAT_TRAINS, BB15048, 3005){
     graphics {
         default:                        set_BB15048_engine;
         purchase:                       sw_BB15048_purchase;
+        speed:                          Regular_Speed_Train;
         cost_factor:                    10;
         running_cost_factor:            150;
         can_attach_wagon:               sw_BB15048_wagon_attach;
