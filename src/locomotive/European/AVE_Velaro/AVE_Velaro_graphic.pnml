@@ -1,0 +1,42 @@
+/*--------------------------------------------------------------------
+Graphics
+--------------------------------------------------------------------*/
+spriteset(set_AVE_Velaro_purchase, "src\locomotive\European\AVE_Velaro\AVE_Velaro.png"){
+    tmpl_purchase(0, 0)
+}
+
+spriteset(set_AVE_VelaroH_purchase, "src\locomotive\European\AVE_Velaro\AVE_Velaro.png"){
+    tmpl_purchase_for_dualhead(0, 108)
+}
+
+spriteset(set_AVE_Velaro_engineH, "src\locomotive\European\AVE_Velaro\AVE_Velaro.png"){
+    engine(80, 0)
+}
+
+spriteset(set_AVE_Velaro_wagon_start, "src\locomotive\European\AVE_Velaro\AVE_Velaro.png"){
+    wagon_start(80, 27)
+}
+
+spriteset(set_AVE_Velaro_wagon, "src\locomotive\European\AVE_Velaro\AVE_Velaro.png") {
+    wagon_1F(80, 54)
+}
+
+spriteset(set_AVE_Velaro_wagon_r, "src\locomotive\European\AVE_Velaro\AVE_Velaro.png") {
+    wagon_1F_r(80, 54)
+}
+
+spriteset(set_AVE_Velaro_wagon_end, "src\locomotive\European\AVE_Velaro\AVE_Velaro.png"){
+    wagon_start(80, 81)
+}
+
+spriteset(set_AVE_Velaro_engineT, "src\locomotive\European\AVE_Velaro\AVE_Velaro.png"){
+    engine_r(80, 108)
+}
+
+/*--------------------------------------------------------------------
+5.7.2. 구매정보
+--------------------------------------------------------------------*/
+switch(FEAT_TRAINS, SELF, sw_AVE_Velaro_purchase, cargo_subtype) {
+    set_AVE_Velaro_purchase;
+}
+
