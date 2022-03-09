@@ -13,7 +13,7 @@ STR_AVE_Velaro_NAME                                 :[YST] AVE Velaro
 STR_BB15048_NAME                                    :[YST] BB15048
 STR_CRH1_NAME                                       :[YST] CRH1
 STR_CRH3_NAME                                       :[YST] CRH3
-STR_CRH362A_NAME                                    :[YST] CRH362A
+STR_CRH380A_NAME                                    :[YST] CRH380A
 STR_CRH430A_NAME                                    :[YST] CRH430A
 STR_CRH600A_Test_NAME                               :[YST] CRH600A-Test
 STR_CRV600_NAME                                     :[YST] CRV600
@@ -115,7 +115,7 @@ STR_PARAM_High_SPEED_Train_DESC                     :고속열차의 속도를 �
 # Refit (Additional text)
 STR_REFIT_ADDITIONAL                                :{BLACK}도색/모델 변경: {GREEN}가능
 STR_REFIT_ADDITIONAL_ABLE_UNADDTRAIN                :{BLACK}도색/모델 변경: {GREEN}가능 {}{BLACK}복합열차구성 : {RED}불가능
-STR_REFIT_ADDITIONAL_ABLE_CRH362A                   :{BLACK}도색/모델 변경: {GREEN}가능 {}{BLACK}복합가능열차{}{GREEN}CRH362A, CRH430A Cool, CRH362A Red
+STR_REFIT_ADDITIONAL_ABLE_CRH380A                   :{BLACK}도색/모델 변경: {GREEN}가능 {}{BLACK}복합가능열차{}{GREEN}CRH380A, CRH380A Red, CRH430A
 STR_REFIT_ADDITIONAL_ABLE_CR600                     :{BLACK}도색/모델 변경: {GREEN}가능 {}{BLACK}복합가능열차{}{GREEN}CR600
 STR_REFIT_ADDITIONAL_ABLE_EMU180                    :{BLACK}도색/모델 변경: {GREEN}가능 {}{BLACK}복합가능열차{}{GREEN}EMU180, EMU260, EUM362
 STR_REFIT_ADDITIONAL_ABLE_Glory600                  :{BLACK}도색/모델 변경: {GREEN}가능 {}{BLACK}복합가능열차{}{GREEN}Glory 600
@@ -162,8 +162,8 @@ STR_REFIT_train_configuration_TGV_Poste             :{BLACK}열차구성: {GREEN
 STR_REFIT_train_configuration_YFX_Freight           :{BLACK}열차구성: {GREEN}YFX용 화차
 
 # Liveries locomotive
-STR_REFIT_LIVERY_CRH362A                            :(CRH362A)
-STR_REFIT_LIVERY_CRH362AR                           :(CRH362A-빨강)
+STR_REFIT_LIVERY_CRH380A                            :(CRH380A)
+STR_REFIT_LIVERY_CRH380AR                           :(CRH380A-빨강)
 STR_REFIT_LIVERY_CR600R                             :(빨강 도색)
 STR_REFIT_LIVERY_CR600G                             :(금색 도색)
 STR_REFIT_LIVERY_E300                               :(유로스타 노랑도색)

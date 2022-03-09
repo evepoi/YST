@@ -15,6 +15,8 @@
 
 //locomotive / Chinese
 #include "locomotive/Chinese/CRH1/CRH1.pnml"
+#include "locomotive/Chinese/CRH3/CRH3.pnml"
+#include "locomotive/Chinese/CRH380A/CRH380A.pnml"
 
 //locomotive / European
 #include "locomotive/European/AGV/AGV.pnml"
@@ -25,8 +27,6 @@
 //locomotive / YST_Train
 #include "locomotive/YST_Train/AGV_Cool/AGV_Cool.pnml"
 
-#include "locomotive/CRH3/CRH3.pnml"
-#include "locomotive/CRH362A/CRH362A.pnml"
 #include "locomotive/CRH430A/CRH430A.pnml"
 #include "locomotive/CRH600A_Test/CRH600A_Test.pnml"
 #include "locomotive/CRV600/CRV600.pnml"

@@ -2,17 +2,17 @@
 CRH380A
 --------------------------------------------------------------------*/
 // Graphics
-#include "CRH362A_graphic.pnml"
+#include "CRH380A_graphic.pnml"
 
 // Switch
-#include "CRH362A_switch.pnml"
+#include "CRH380A_switch.pnml"
 
 /*--------------------------------------------------------------------
 열차정보
 --------------------------------------------------------------------*/
-item(FEAT_TRAINS, CRH362A, 3008){
+item(FEAT_TRAINS, CRH380A, 3008){
     property {
-        name:                           string(STR_CRH362A_NAME);
+        name:                           string(STR_CRH380A_NAME);
         climates_available:             ALL_CLIMATES;
         introduction_date:              date(2017, 1, 1);
         track_type:                     ELRL;
@@ -21,7 +21,7 @@ item(FEAT_TRAINS, CRH362A, 3008){
         dual_headed:                    1;
         
         //spec
-        speed:                          362km/h;
+        speed:                          380km/h;
         power:                          8000 kW;
         weight:                         40 ton;
         tractive_effort_coefficient:    0.3;
@@ -50,20 +50,21 @@ item(FEAT_TRAINS, CRH362A, 3008){
         }
         
     graphics {
-        default:                        sw_CRH362A_engine;
-        purchase:                       sw_CRH362A_purchase;
+        default:                        sw_CRH380A_engine;
+        purchase:                       sw_CRH380A_purchase;
+        speed:                          High_Speed_Train;
         loading_speed:                  25;
         cost_factor:                    10;
         running_cost_factor:            150;
-        can_attach_wagon:               sw_CRH362A_wagon_attach;
-        cargo_subtype_text:             sw_CRH362A_cargo_subtype_text;
+        can_attach_wagon:               sw_CRH380A_wagon_attach;
+        cargo_subtype_text:             sw_CRH380A_cargo_subtype_text;
         start_stop:                     sw_YST_train_start_stop_6;
-        additional_text:                string(STR_REFIT_ADDITIONAL_ABLE_CRH362A);
+        additional_text:                string(STR_REFIT_ADDITIONAL_ABLE_CRH380A);
         }
         
     livery_override(YST_1F_Passenger_Car) {
-        default:                        sw_CRH362A_wagon;
-        cargo_subtype_text:             sw_CRH362A_cargo_subtype_text;
+        default:                        sw_CRH380A_wagon;
+        cargo_subtype_text:             sw_CRH380A_cargo_subtype_text;
         cargo_capacity:                 85;
         loading_speed:                  25;
         running_cost_factor:            150;
