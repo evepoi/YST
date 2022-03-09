@@ -11,7 +11,7 @@ sort(FEAT_TRAINS, [
     CRH3,                      //3007
     CRH380A,                   //3008
     CRH430A,                   //3009
-    CRH600A_Test,              //3010
+    CRH600A,                   //3010
     CRV600,                    //3011
     Dr_Yellow,                 //3012
     E300,                      //3013
