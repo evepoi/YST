@@ -52,6 +52,7 @@ item(FEAT_TRAINS, AVE, 3003){
     graphics {
         default:                        sw_AVE_engine;
         purchase:                       sw_AVE_purchase;
+        speed:                          High_Speed_Train;
         loading_speed:                  25;
         cost_factor:                    10;
         running_cost_factor:            150;
