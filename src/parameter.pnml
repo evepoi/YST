@@ -102,7 +102,7 @@ param {
             name: string(STR_PARAM_High_SPEED_Train_NAME);
             desc: string(STR_PARAM_High_SPEED_Train_DESC);
             min_value: 300;
-            max_value: 362;
+            max_value: 379;
             def_value: 330;
             }
     }
