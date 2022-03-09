@@ -13,13 +13,18 @@
 #include "wagon/YPW/Luggage_Car/YPW_luggage_Car.pnml"
 #include "wagon/YPW/Generatar_Car/YPW_Generatar_Car.pnml"
 
-//locomotive
-#include "locomotive/AGV/AGV.pnml"
-#include "locomotive/AGV_Cool/AGV_Cool.pnml"
-#include "locomotive/AVE/AVE.pnml"
-#include "locomotive/AVE_Velaro/AVE_Velaro.pnml"
-#include "locomotive/BB15048/BB15048.pnml"
-#include "locomotive/CRH1/CRH1.pnml"
+//locomotive / Chinese
+#include "locomotive/Chinese/CRH1/CRH1.pnml"
+
+//locomotive / European
+#include "locomotive/European/AGV/AGV.pnml"
+#include "locomotive/European/AVE/AVE.pnml"
+#include "locomotive/European/AVE_Velaro/AVE_Velaro.pnml"
+#include "locomotive/European/BB15048/BB15048.pnml"
+
+//locomotive / YST_Train
+#include "locomotive/YST_Train/AGV_Cool/AGV_Cool.pnml"
+
 #include "locomotive/CRH3/CRH3.pnml"
 #include "locomotive/CRH362A/CRH362A.pnml"
 #include "locomotive/CRH430A/CRH430A.pnml"
