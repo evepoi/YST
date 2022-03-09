@@ -43,6 +43,14 @@ railtypetable {
 #include "src/train_list.pnml"
 
 //disabe_train
+if (Chinese) {
+    disable_item(FEAT_TRAINS, 3006); //CRH1
+    disable_item(FEAT_TRAINS, 3007); //CRH3
+    disable_item(FEAT_TRAINS, 3008); //CRH380A
+    disable_item(FEAT_TRAINS, 3023); //NJ2
+    disable_item(FEAT_TRAINS, 3047); //ZEFIRO380
+    }
+
 if (European) {
     disable_item(FEAT_TRAINS, 3001); //AGV
     disable_item(FEAT_TRAINS, 3003); //AVE
@@ -63,30 +71,6 @@ if (European) {
     disable_item(FEAT_TRAINS, 3042); //TGV_Old_Poste
     }
 
-if (Chinese) {
-    disable_item(FEAT_TRAINS, 3006); //CRH1
-    disable_item(FEAT_TRAINS, 3007); //CRH3
-    disable_item(FEAT_TRAINS, 3008); //CRH380A
-    disable_item(FEAT_TRAINS, 3010); //CRH380A_Test
-    disable_item(FEAT_TRAINS, 3023); //NJ2
-    disable_item(FEAT_TRAINS, 3047); //ZEFIRO380
-    }
-
-if (Japanese) {
-    disable_item(FEAT_TRAINS, 3012); //Dr_Yellow
-    disable_item(FEAT_TRAINS, 3025); //Shinkansen_500
-    disable_item(FEAT_TRAINS, 3028); //Shinkansen_800
-    disable_item(FEAT_TRAINS, 3029); //Shinkansen_E5
-    disable_item(FEAT_TRAINS, 3030); //Shinkansen_E6
-    disable_item(FEAT_TRAINS, 3031); //Shinkansen_E7
-    disable_item(FEAT_TRAINS, 3058); //Shinkansen_E8
-    disable_item(FEAT_TRAINS, 3032); //Shinkansen_N700
-    }
-
-if (Taiwanese) {
-    disable_item(FEAT_TRAINS, 3043); //THRS
-    }
-
 if (Hong_Kong) {
     disable_item(FEAT_TRAINS, 4001); //AD_Tranz_CAF_A
     disable_item(FEAT_TRAINS, 4002); //MTR_AC_Cammall
@@ -96,6 +80,16 @@ if (Hong_Kong) {
     disable_item(FEAT_TRAINS, 4006); //Hyundai_Rotem_Mitsubishi
     disable_item(FEAT_TRAINS, 4007); //Hyundai_Rotem_R
     disable_item(FEAT_TRAINS, 4008); //IKK_SP_1900
+    }
+
+if (Japanese) {
+    disable_item(FEAT_TRAINS, 3025); //Shinkansen_500
+    disable_item(FEAT_TRAINS, 3028); //Shinkansen_800
+    disable_item(FEAT_TRAINS, 3029); //Shinkansen_E5
+    disable_item(FEAT_TRAINS, 3030); //Shinkansen_E6
+    disable_item(FEAT_TRAINS, 3031); //Shinkansen_E7
+    disable_item(FEAT_TRAINS, 3058); //Shinkansen_E8
+    disable_item(FEAT_TRAINS, 3032); //Shinkansen_N700
     }
 
 if (Korea) {
@@ -112,4 +106,13 @@ if (Korea) {
     disable_item(FEAT_TRAINS, 3056); //GTX
     disable_item(FEAT_TRAINS, 3057); //KTX_EM
     //disable_item(FEAT_TRAINS, 3059); //VHST-600X
+    }
+
+if (Taiwanese) {
+    disable_item(FEAT_TRAINS, 3043); //THRS
+    }
+
+if (Test_Train) {
+    disable_item(FEAT_TRAINS, 3010); //CRH600A
+    disable_item(FEAT_TRAINS, 3012); //Dr_Yellow
     }
