@@ -52,6 +52,7 @@ item(FEAT_TRAINS, CRH3, 3007){
     graphics {
         default:                        sw_CRH3_engine;
         purchase:                       sw_CRH3_purchase;
+        speed:                          High_Speed_Train;
         loading_speed:                  25;
         cost_factor:                    10;
         running_cost_factor:            150;
