@@ -32,15 +32,6 @@ param 1 {
 		}
 --------------------------------------------------------------------*/
 param {
-    European {
-        type: bool;
-        name: string(STR_PARAM_European_NAME);
-        desc: string(STR_PARAM_European_DESC);
-        def_value: 0;
-        }
-    }
-
-param {
     Chinese {
         type: bool;
         name: string(STR_PARAM_Chinese_NAME);
@@ -50,19 +41,10 @@ param {
     }
 
 param {
-    Japanese {
+    European {
         type: bool;
-        name: string(STR_PARAM_Japanese_NAME);
-        desc: string(STR_PARAM_Japanese_DESC);
-        def_value: 0;
-        }
-    }
-
-param {
-    Taiwanese {
-        type: bool;
-        name: string(STR_PARAM_Taiwanese_NAME);
-        desc: string(STR_PARAM_Taiwanese_DESC);
+        name: string(STR_PARAM_European_NAME);
+        desc: string(STR_PARAM_European_DESC);
         def_value: 0;
         }
     }
@@ -77,10 +59,37 @@ param {
     }
 
 param {
+    Japanese {
+        type: bool;
+        name: string(STR_PARAM_Japanese_NAME);
+        desc: string(STR_PARAM_Japanese_DESC);
+        def_value: 0;
+        }
+    }
+
+param {
     Korea {
         type: bool;
         name: string(STR_PARAM_Korea_NAME);
         desc: string(STR_PARAM_Korea_DESC);
+        def_value: 0;
+        }
+    }
+
+param {
+    Taiwanese {
+        type: bool;
+        name: string(STR_PARAM_Taiwanese_NAME);
+        desc: string(STR_PARAM_Taiwanese_DESC);
+        def_value: 0;
+        }
+    }
+
+param {
+    Test_Train {
+        type: bool;
+        name: string(STR_PARAM_Text_Train_NAME);
+        desc: string(STR_PARAM_Text_Train_DESC);
         def_value: 0;
         }
     }

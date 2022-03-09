@@ -15,7 +15,7 @@ STR_CRH1_NAME                                       :[YST] CRH1
 STR_CRH3_NAME                                       :[YST] CRH3
 STR_CRH380A_NAME                                    :[YST] CRH380A
 STR_CRH430A_NAME                                    :[YST] CRH430A
-STR_CRH600A_Test_NAME                               :[YST] CRH600A-Test
+STR_CRH600A_NAME                                    :[YST] CRH600A
 STR_CRV600_NAME                                     :[YST] CRV600
 STR_Dr_Yellow_NAME                                  :[YST] Dr. Yellow
 STR_E300_NAME                                       :[YST] E300
@@ -112,6 +112,8 @@ STR_PARAM_Hong_Kong_NAME                            :No Hong Kong type trains al
 STR_PARAM_Hong_Kong_DESC                            :Check if you don't use the Hong Kong type train. (Default: Use)
 STR_PARAM_Korea_NAME                                :No Korea type trains allowed.
 STR_PARAM_Korea_DESC                                :Check if you don't use the Korea type trains. (Default: Use)
+STR_PARAM_Text_Train_NAME                           :No Test trains allowed
+STR_PARAM_Text_Train_DESC                           :Check if you don't use the Test trains. (Default: Use)
 STR_PARAM_Regular_SPEED_Train_NAME                  :Regular Speed Train Speed
 STR_PARAM_Regular_SPEED_Train_DESC                  :Adjust the speed of the Regular-speed train (Default:151km/h)
 STR_PARAM_High_SPEED_Train_NAME                     :High Speed Train Speed
