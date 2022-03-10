@@ -32,6 +32,64 @@ param 1 {
 		}
 --------------------------------------------------------------------*/
 param {
+        Regular_Speed_Train {
+            type: int;
+            name: string(STR_PARAM_Regular_SPEED_Train_NAME);
+            desc: string(STR_PARAM_Regular_SPEED_Train_DESC);
+            min_value: 151;
+            max_value: 180;
+            def_value: 151;
+            }
+    }
+
+param {
+        High_Speed_Train {
+            type: int;
+            name: string(STR_PARAM_High_SPEED_Train_NAME);
+            desc: string(STR_PARAM_High_SPEED_Train_DESC);
+            min_value: 300;
+            max_value: 379;
+            def_value: 330;
+            }
+    }
+
+param {
+    Plan_Train {
+        type: bool;
+        name: string(STR_PARAM_Plan_Train_NAME);
+        desc: string(STR_PARAM_Plan_Train_DESC);
+        def_value: 0;
+        }
+    }
+
+param {
+    Real_Train {
+        type: bool;
+        name: string(STR_PARAM_Real_Train_NAME);
+        desc: string(STR_PARAM_Real_Train_DESC);
+        def_value: 0;
+        }
+    }
+
+param {
+    Test_Train {
+        type: bool;
+        name: string(STR_PARAM_Text_Train_NAME);
+        desc: string(STR_PARAM_Text_Train_DESC);
+        def_value: 0;
+        }
+    }
+
+param {
+    Virtual_Train {
+        type: bool;
+        name: string(STR_PARAM_Virtual_Train_NAME);
+        desc: string(STR_PARAM_Virtual_Train_DESC);
+        def_value: 0;
+        }
+    }
+
+param {
     Chinese {
         type: bool;
         name: string(STR_PARAM_Chinese_NAME);
@@ -83,35 +141,4 @@ param {
         desc: string(STR_PARAM_Taiwanese_DESC);
         def_value: 0;
         }
-    }
-
-param {
-    Test_Train {
-        type: bool;
-        name: string(STR_PARAM_Text_Train_NAME);
-        desc: string(STR_PARAM_Text_Train_DESC);
-        def_value: 0;
-        }
-    }
-
-param {
-        Regular_Speed_Train {
-            type: int;
-            name: string(STR_PARAM_Regular_SPEED_Train_NAME);
-            desc: string(STR_PARAM_Regular_SPEED_Train_DESC);
-            min_value: 151;
-            max_value: 180;
-            def_value: 151;
-            }
-    }
-
-param {
-        High_Speed_Train {
-            type: int;
-            name: string(STR_PARAM_High_SPEED_Train_NAME);
-            desc: string(STR_PARAM_High_SPEED_Train_DESC);
-            min_value: 300;
-            max_value: 379;
-            def_value: 330;
-            }
     }
