@@ -13,20 +13,27 @@
 #include "wagon/YPW/Luggage_Car/YPW_luggage_Car.pnml"
 #include "wagon/YPW/Generatar_Car/YPW_Generatar_Car.pnml"
 
+//locomotive / Plan Trian
+//locomotive / Real Trian
+//locomotive / Real Trian / European
+#include "locomotive/Real_Train/European/AGV/AGV.pnml"
+
+//locomotive / Test_train
+#include "locomotive/Test_Train/CRH600A/CRH600A.pnml"
+#include "locomotive/Test_Train/Dr_Yellow/Dr_Yellow.pnml"
+
+//locomotive / Virual_train
+
+//이하 미정리중
 //locomotive / Chinese
 #include "locomotive/Chinese/CRH1/CRH1.pnml"
 #include "locomotive/Chinese/CRH3/CRH3.pnml"
 #include "locomotive/Chinese/CRH380A/CRH380A.pnml"
 
 //locomotive / European
-#include "locomotive/European/AGV/AGV.pnml"
 #include "locomotive/European/AVE/AVE.pnml"
 #include "locomotive/European/AVE_Velaro/AVE_Velaro.pnml"
 #include "locomotive/European/BB15048/BB15048.pnml"
-
-//locomotive / Test_train
-#include "locomotive/Test_Train/CRH600A/CRH600A.pnml"
-#include "locomotive/Test_Train/Dr_Yellow/Dr_Yellow.pnml"
 
 //locomotive / YST_Train
 #include "locomotive/YST_Train/AGV_Cool/AGV_Cool.pnml"
