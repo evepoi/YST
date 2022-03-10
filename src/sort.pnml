@@ -4,18 +4,15 @@
 sort(FEAT_TRAINS, [
     AGV,                       //3001
     AGV_Cool,                  //3002
-    AVE,                       //3003
-    AVE_Velaro,                //3004
     BB15048,                   //3005
     CRH1,                      //3006
     CRH3,                      //3007
     CRH380A,                   //3008
     CRH430A,                   //3009
-    CRH600A,                   //3010
-    CRV600,                    //3011
-    Dr_Yellow,                 //3012
-    E300,                      //3013
-    E320,                      //3014
+    CRH380AJ,                  //3010
+    CR400,                     //3011
+    Eurostar_E300,             //3013
+    Eurostar_E320,             //3014
     EMU180,                    //3051
     EMU260,                    //3015
     EMU362,                    //3050
@@ -34,10 +31,13 @@ sort(FEAT_TRAINS, [
     NJ2,                       //3023
     NKX,                       //3024
     NRT2,                      //3054
+    Renfe_S_100,               //3003
+    Renfe_S_103,               //3004
     Shinkansen_500,            //3025
     Shinkansen_500_Cool,       //3026
     Shinkansen_500_SP,         //3027
     Shinkansen_800,            //3028
+    Shinkansen_923,            //3012
     Shinkansen_E5,             //3029
     Shinkansen_E6,             //3030
     Shinkansen_E7,             //3031

@@ -42,21 +42,23 @@ railtypetable {
 // Load trains
 #include "src/train_list.pnml"
 
-//disabe_train
+// disabe train
+// disabe train by Country
 if (Chinese) {
     disable_item(FEAT_TRAINS, 3006); //CRH1
     disable_item(FEAT_TRAINS, 3007); //CRH3
     disable_item(FEAT_TRAINS, 3008); //CRH380A
+    disable_item(FEAT_TRAINS, 3011); //CR400
     disable_item(FEAT_TRAINS, 3023); //NJ2
     disable_item(FEAT_TRAINS, 3047); //ZEFIRO380
     }
 
 if (European) {
     disable_item(FEAT_TRAINS, 3001); //AGV
-    disable_item(FEAT_TRAINS, 3003); //AVE
-    disable_item(FEAT_TRAINS, 3004); //AVE_Velaro
+    disable_item(FEAT_TRAINS, 3003); //Renfe_S_100
+    disable_item(FEAT_TRAINS, 3004); //Renfe_S_103
     disable_item(FEAT_TRAINS, 3005); //BB15048
-    disable_item(FEAT_TRAINS, 3013); //E300
+    disable_item(FEAT_TRAINS, 3013); //Eurostar_E300
     disable_item(FEAT_TRAINS, 3014); //E320
     disable_item(FEAT_TRAINS, 3021); //ICE3
     disable_item(FEAT_TRAINS, 3034); //Talgo_250
@@ -112,7 +114,33 @@ if (Taiwanese) {
     disable_item(FEAT_TRAINS, 3043); //THRS
     }
 
+// disabe train by Use
+// Plan train 계획열차
+if (Plan_Train) {
+    }
+
+// Real train 실제운영열차
+if (Real_Train) {
+    disable_item(FEAT_TRAINS, 3001); //AGV
+    disable_item(FEAT_TRAINS, 3003); //Renfe_S_100
+    disable_item(FEAT_TRAINS, 3004); //Renfe_S_103
+    disable_item(FEAT_TRAINS, 3005); //BB15048
+    disable_item(FEAT_TRAINS, 3006); //CRH1
+    disable_item(FEAT_TRAINS, 3007); //CRH3
+    disable_item(FEAT_TRAINS, 3008); //CRH380A
+    disable_item(FEAT_TRAINS, 3011); //CR400
+    disable_item(FEAT_TRAINS, 3013); //Eurostar_E300
+    disable_item(FEAT_TRAINS, 3014); //E320
+    }
+
+// Test train 시험차량
 if (Test_Train) {
-    disable_item(FEAT_TRAINS, 3010); //CRH600A
-    disable_item(FEAT_TRAINS, 3012); //Dr_Yellow
+    disable_item(FEAT_TRAINS, 3010); //CRH380AJ
+    disable_item(FEAT_TRAINS, 3012); //Shinkansen_923
+}
+
+// Virtual train 가상열차
+if (Virtual_Train) {
+    disable_item(FEAT_TRAINS, 3002); //AGV_Cool
+    disable_item(FEAT_TRAINS, 3009); //CRH430A
     }
