@@ -13,7 +13,7 @@ sort(FEAT_TRAINS, [
     CR400,                     //3011
     Eurostar_E300,             //3013
     Eurostar_E320,             //3014
-    EMU180,                    //3051
+    EMU150,                    //3051
     EMU260,                    //3015
     EMU362,                    //3050
     Glory_600,                 //3016

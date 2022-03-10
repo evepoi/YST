@@ -1,0 +1,55 @@
+/*--------------------------------------------------------------------
+스위치
+--------------------------------------------------------------------*/
+switch(FEAT_TRAINS, SELF, sw_EMU150_cargo_subtype_text, cargo_subtype) {
+    1: return string(STR_REFIT_LIVERY_EMU150G);   // 녹색
+    return string(STR_REFIT_LIVERY_EMU150R);
+}
+
+switch(FEAT_TRAINS, SELF, sw_EMU150_engineH, cargo_subtype) {
+    1: set_EMU150G_engineH;   // 녹색
+    set_EMU150R_engineH;
+}
+
+switch(FEAT_TRAINS, SELF, sw_EMU150_engineT, cargo_subtype) {
+    1: set_EMU150G_engineT;   // 녹색
+    set_EMU150R_engineT;
+}
+
+switch(FEAT_TRAINS, SELF, sw_EMU150_engine, position_in_consist_from_end == 0 && num_vehs_in_consist > 1){
+    1: sw_EMU150_engineT;
+    sw_EMU150_engineH;
+}
+
+switch(FEAT_TRAINS, SELF, sw_EMU150_wagon_start, cargo_subtype) {
+    1: set_EMU150G_wagon_start;   // 녹색
+    set_EMU150R_wagon_start;
+}
+
+switch(FEAT_TRAINS, SELF, sw_EMU150_wagon_end, cargo_subtype) {
+    1: set_EMU150G_wagon_end;   // 녹색
+    set_EMU150R_wagon_end;
+}
+
+switch(FEAT_TRAINS, SELF, sw_EMU150_wagon_middle, (cargo_subtype)) {
+    1: set_EMU150G_wagon;   // 녹색
+    set_EMU150R_wagon;
+}
+
+switch(FEAT_TRAINS, SELF, sw_EMU150_wagon_rear, [STORE_TEMP(1, 0x10F), var[0x61, 0, 0x0000FFFF, 0xC6]]){
+    EMU150: sw_EMU150_wagon_end;
+    sw_EMU150_wagon_middle;
+}
+
+switch(FEAT_TRAINS, SELF, sw_EMU150_wagon, [STORE_TEMP(-1, 0x10F), var[0x61, 0, 0x0000FFFF, 0xC6]]) {
+    EMU150: sw_EMU150_wagon_start;
+    sw_EMU150_wagon_rear;
+}
+
+switch(FEAT_TRAINS, SELF, sw_EMU150_wagon_attach, vehicle_type_id) {
+    EMU150:                 return CB_RESULT_ATTACH_ALLOW;
+    EMU260:                 return CB_RESULT_ATTACH_ALLOW;
+    EMU362:                 return CB_RESULT_ATTACH_ALLOW;
+    YST_1F_Passenger_Car:   return CB_RESULT_ATTACH_ALLOW;
+    return string(STR_ERROR_NO_ATTACH);
+}

@@ -14,6 +14,8 @@
 #include "wagon/YPW/Generatar_Car/YPW_Generatar_Car.pnml"
 
 //locomotive / Plan Trian
+#include "locomotive/Plan_Train/EMU/EMU150/EMU150.pnml"
+
 //locomotive / Real_Train
 //locomotive / Real_Train / European
 #include "locomotive/Real_Train/European/AGV/AGV.pnml"
@@ -38,7 +40,6 @@
 #include "locomotive/Virtual_train/CRH430A/CRH430A.pnml"
 
 //이하 미정리중
-#include "locomotive/EMU/EMU180/EMU180.pnml"
 #include "locomotive/EMU/EMU260/EMU260.pnml"
 #include "locomotive/EMU/EMU362/EMU362.pnml"
 #include "locomotive/Glory_600/Glory_600.pnml"

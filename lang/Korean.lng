@@ -17,9 +17,9 @@ STR_CRH380AJ_NAME                                   :[YST] CRH380AJ
 STR_CR400_NAME                                      :[YST] CR400
 STR_Eurostar_E300_NAME                              :[YST] 유로스타 E300
 STR_Eurostar_E320_NAME                              :[YST] 유로스타 E320
-STR_EMU180_NAME                                     :[YST] EMU180
-STR_EMU260_NAME                                     :[YST] EMU260
-STR_EMU362_NAME                                     :[YST] EMU362
+STR_EMU150_NAME                                     :[YST] EMU-150
+STR_EMU260_NAME                                     :[YST] EMU-260
+STR_EMU362_NAME                                     :[YST] EMU-362
 STR_Glory_600_NAME                                  :[YST] Glory 600
 STR_GT26CW_NAME                                     :[YST] GT26CW
 STR_GTX_NAME                                        :[YST] GTX
@@ -125,11 +125,11 @@ STR_REFIT_ADDITIONAL                                :{BLACK}도색/모델 변경
 STR_REFIT_ADDITIONAL_ABLE_AGV                       :{BLACK}열차 실존여부 : {BLUE}실제 {}{BLACK} 도색/모델 변경: {GREEN}가능 {}{BLACK}복합열차구성 : {RED}불가능
 STR_REFIT_ADDITIONAL_ABLE_AGV_Cool                  :{BLACK}열차 실존여부 : {RED}가상 {}{BLACK} 도색/모델 변경: {GREEN}가능 {}{BLACK}복합열차구성 : {RED}불가능
 STR_REFIT_ADDITIONAL_ABLE_UNADDTRAIN                :{BLACK}도색/모델 변경: {GREEN}가능 {}{BLACK}복합열차구성 : {RED}불가능
-STR_REFIT_ADDITIONAL_ABLE_CRH380A                   :{BLACK}열차 실존여부 : {BLUE}실제 {}{BLACK}도색/모델 변경: {GREEN}가능 {}{BLACK}복합가능열차{}{GREEN}CRH380A, CRH380A Red, CRH430A
+STR_REFIT_ADDITIONAL_ABLE_CRH380A                   :{BLACK}열차 실존여부 : {BLUE}실제 {}{BLACK}도색/모델 변경: {GREEN}가능 {}{BLACK}복합가능열차{}{GREEN}CRH380A, Vibrant Express, CRH430A
 STR_REFIT_ADDITIONAL_ABLE_CR400                     :{BLACK}열차 실존여부 : {BLUE}실제 {}{BLACK}도색/모델 변경: {GREEN}가능 {}{BLACK}복합가능열차{}{GREEN}CR400
 STR_REFIT_ADDITIONAL_ABLE_Eurostar_E300             :{BLACK}열차 실존여부 : {BLUE}실제 {}{BLACK}도색/모델 변경: {GREEN}가능 {}{BLACK}복합열차구성 : {RED}불가능
 STR_REFIT_ADDITIONAL_ABLE_Eurostar_E320             :{BLACK}열차 실존여부 : {BLUE}실제 {}{BLACK}도색/모델 변경: {GREEN}가능 {}{BLACK}복합열차구성 : {RED}불가능
-STR_REFIT_ADDITIONAL_ABLE_EMU180                    :{BLACK}도색/모델 변경: {GREEN}가능 {}{BLACK}복합가능열차{}{GREEN}EMU180, EMU260, EUM362
+STR_REFIT_ADDITIONAL_ABLE_EMU150                    :{BLACK}열차 실존여부 : {PURPLE}계획 {}{BLACK}도색/모델 변경: {GREEN}가능 {}{BLACK}복합가능열차{}{GREEN}EMU-150, EMU-260, EUM-362
 STR_REFIT_ADDITIONAL_ABLE_Glory600                  :{BLACK}도색/모델 변경: {GREEN}가능 {}{BLACK}복합가능열차{}{GREEN}Glory 600
 STR_REFIT_ADDITIONAL_ABLE_HMX                       :{BLACK}도색/모델 변경: {GREEN}가능 {}{BLACK}복합가능열차{}{GREEN}HMX
 STR_REFIT_ADDITIONAL_ABLE_E6_E8                     :{BLACK}도색/모델 변경: {GREEN}가능 {}{BLACK}복합가능열차{}{GREEN}E6, E8
@@ -178,13 +178,13 @@ STR_REFIT_train_configuration_YFX_Freight           :{BLACK}열차구성: {GREEN
 
 # Liveries locomotive
 STR_REFIT_LIVERY_CRH380A                            :(CRH380A)
-STR_REFIT_LIVERY_CRH380AR                           :(CRH380A-빨강)
+STR_REFIT_LIVERY_Vibrant_Express                    :(Vibrant Express)
 STR_REFIT_LIVERY_CR400AF                            :(CR400AF)
 STR_REFIT_LIVERY_CR400BF                            :(CR400BF)
 STR_REFIT_LIVERY_Eurostar_E300_Old                  :(유로스타 구도색)
 STR_REFIT_LIVERY_Eurostar_E300_New                  :(유로스타 신도색)
-STR_REFIT_LIVERY_EMU180R                            :(EMU-180 빨강도색)
-STR_REFIT_LIVERY_EMU180G                            :(EMU-180 녹색도색)
+STR_REFIT_LIVERY_EMU150R                            :(EMU-150 빨강도색)
+STR_REFIT_LIVERY_EMU150G                            :(EMU-150 녹색도색)
 STR_REFIT_LIVERY_Glory600A                          :(Glory 600 A도색)
 STR_REFIT_LIVERY_Glory600B                          :(Glory 600 B도색)
 STR_REFIT_LIVERY_Glory600C                          :(Glory 600 C도색)

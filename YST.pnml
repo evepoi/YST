@@ -117,6 +117,7 @@ if (Taiwanese) {
 // disabe train by Use
 // Plan train 계획열차
 if (Plan_Train) {
+    disable_item(FEAT_TRAINS, 3051); //EMU-150
     }
 
 // Real train 실제운영열차
