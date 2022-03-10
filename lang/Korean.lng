@@ -123,6 +123,7 @@ STR_PARAM_Taiwanese_DESC                            :대만형 열차를 사용�
 # Refit (Additional text) 실제(BLUE), 시험(YELLOW), 계획 (PURPLE), 가상 (RED)
 STR_REFIT_ADDITIONAL                                :{BLACK}도색/모델 변경: {GREEN}가능
 STR_REFIT_ADDITIONAL_ABLE_AGV                       :{BLACK}열차 실존여부 : {BLUE}실제 {BLACK} {}도색/모델 변경: {GREEN}가능 {}{BLACK}복합열차구성 : {RED}불가능
+STR_REFIT_ADDITIONAL_ABLE_AGV_Cool                  :{BLACK}열차 실존여부 : {RED}가상 {BLACK} {}도색/모델 변경: {GREEN}가능 {}{BLACK}복합열차구성 : {RED}불가능
 STR_REFIT_ADDITIONAL_ABLE_UNADDTRAIN                :{BLACK}도색/모델 변경: {GREEN}가능 {}{BLACK}복합열차구성 : {RED}불가능
 STR_REFIT_ADDITIONAL_ABLE_CRH380A                   :{BLACK}도색/모델 변경: {GREEN}가능 {}{BLACK}복합가능열차{}{GREEN}CRH380A, CRH380A Red, CRH430A
 STR_REFIT_ADDITIONAL_ABLE_CR600                     :{BLACK}도색/모델 변경: {GREEN}가능 {}{BLACK}복합가능열차{}{GREEN}CR600
@@ -144,7 +145,7 @@ STR_REFIT_ADDITIONAL_ABLE_ZEFIRO362                 :{BLACK}도색/모델 변경
 STR_REFIT_ADDITIONAL_ABLE_ZEFIRO430                 :{BLACK}도색/모델 변경: {GREEN}가능 {}{BLACK}복합가능열차{}{GREEN}ZEFIRO430
 STR_REFIT_ADDITIONAL_ABLE_ZEFIRO600                 :{BLACK}도색/모델 변경: {GREEN}가능 {}{BLACK}복합가능열차{}{GREEN}ZEFIRO600
 STR_REFIT_ADDITIONAL_UNABLE_UNADDTRAIN              :{BLACK}도색/모델 변경: {RED}불가능 {}{BLACK}복합열차구성 : {RED}불가능
-STR_REFIT_ADDITIONAL_UNABLE_AVE                     :{BLACK}열차 실존여부 : 실제 {}{BLACK}도색/모델 변경: {RED}불가능 {}{BLACK}복합가능열차{}{GREEN}AVE
+STR_REFIT_ADDITIONAL_UNABLE_AVE                     :{BLACK}열차 실존여부 : {BLUE}실제 {}{BLACK}도색/모델 변경: {RED}불가능 {}{BLACK}복합가능열차{}{GREEN}AVE
 STR_REFIT_ADDITIONAL_UNABLE_AVE_VElaro              :{BLACK}도색/모델 변경: {RED}불가능 {}{BLACK}복합가능열차{}{GREEN}AVE Velaro
 STR_REFIT_ADDITIONAL_UNABLE_CRH1                    :{BLACK}도색/모델 변경: {RED}불가능 {}{BLACK}복합가능열차{}{GREEN}CRH1
 STR_REFIT_ADDITIONAL_UNABLE_CRH3                    :{BLACK}도색/모델 변경: {RED}불가능 {}{BLACK}복합가능열차{}{GREEN}CRH3
