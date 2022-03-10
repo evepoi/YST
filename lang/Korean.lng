@@ -95,28 +95,34 @@ STR_FLAT_Tank_NAME                                  :[YST] 평판유조 화차
 STR_Tank_NAME                                       :[YST] 유조차
 
 # Parameters
-STR_PARAM_Taiwanese_NAME                            :대만형 열차 사용금지
-STR_PARAM_Taiwanese_DESC                            :대만형 열차를 사용하지 않을 시 체크하세요.  (기본:사용)
-STR_PARAM_European_NAME                             :유럽형 열차 사용금지
-STR_PARAM_European_DESC                             :유럽형 열차를 사용하지 않을 시 체크하세요. (기본:사용)
-STR_PARAM_Chinese_NAME                              :중국형 열차 사용금지
-STR_PARAM_Chinese_DESC                              :중국형 열차를 사용하지 않을 시 체크하세요.  (기본:사용)
-
-STR_PARAM_Japanese_NAME                             :일본형 열차 사용금지
-STR_PARAM_Japanese_DESC                             :일본형 열차를 사용하지 않을 시 체크하세요.  (기본:사용)
-STR_PARAM_Hong_Kong_NAME                            :홍콩형 열차 사용금지
-STR_PARAM_Hong_Kong_DESC                            :홍콩형 열차를 사용하지 않을 시 체크하세요.  (기본:사용)
-STR_PARAM_Korea_NAME                                :한국형 열차 사용금지
-STR_PARAM_Korea_DESC                                :한국형 열차를 사용하지 않을 시 체크하세요.  (기본:사용)
-STR_PARAM_Text_Train_NAME                           :테스트 열차 사용금지
-STR_PARAM_Text_Train_DESC                           :테스트 열차를 사용하지 않을 시 체크하세요.  (기본:사용)
 STR_PARAM_Regular_SPEED_Train_NAME                  :일반열차 속도변수
 STR_PARAM_Regular_SPEED_Train_DESC                  :일반열차의 속도를 조정합니다. (기본:151km/h)
 STR_PARAM_High_SPEED_Train_NAME                     :고속열차 속도변수
 STR_PARAM_High_SPEED_Train_DESC                     :고속열차의 속도를 조정합니다. (기본:331km/h)
+STR_PARAM_Plan_Train_NAME                           :계획 열차 사용금지
+STR_PARAM_Plan_Train_DESC                           :계획 열차를 사용하지 않을 시 체크하세요.  (기본:사용)
+STR_PARAM_Real_Train_NAME                           :실제 열차 사용금지
+STR_PARAM_Real_Train_DESC                           :실제 열차를 사용하지 않을 시 체크하세요.  (기본:사용)
+STR_PARAM_Text_Train_NAME                           :테스트 열차 사용금지
+STR_PARAM_Text_Train_DESC                           :테스트 열차를 사용하지 않을 시 체크하세요.  (기본:사용)
+STR_PARAM_Virtual_Train_NAME                        :가상 열차 사용금지
+STR_PARAM_Virtual_Train_DESC                        :가상 열차를 사용하지 않을 시 체크하세요.  (기본:사용)
+STR_PARAM_Chinese_NAME                              :중국형 열차 사용금지
+STR_PARAM_Chinese_DESC                              :중국형 열차를 사용하지 않을 시 체크하세요.  (기본:사용)
+STR_PARAM_European_NAME                             :유럽형 열차 사용금지
+STR_PARAM_European_DESC                             :유럽형 열차를 사용하지 않을 시 체크하세요. (기본:사용)
+STR_PARAM_Hong_Kong_NAME                            :홍콩형 열차 사용금지
+STR_PARAM_Hong_Kong_DESC                            :홍콩형 열차를 사용하지 않을 시 체크하세요.  (기본:사용)
+STR_PARAM_Japanese_NAME                             :일본형 열차 사용금지
+STR_PARAM_Japanese_DESC                             :일본형 열차를 사용하지 않을 시 체크하세요.  (기본:사용)
+STR_PARAM_Korea_NAME                                :한국형 열차 사용금지
+STR_PARAM_Korea_DESC                                :한국형 열차를 사용하지 않을 시 체크하세요.  (기본:사용)
+STR_PARAM_Taiwanese_NAME                            :대만형 열차 사용금지
+STR_PARAM_Taiwanese_DESC                            :대만형 열차를 사용하지 않을 시 체크하세요.  (기본:사용)
 
-# Refit (Additional text)
+# Refit (Additional text) 실제(BLUE), 시험(YELLOW), 계획 (PURPLE), 가상 (RED)
 STR_REFIT_ADDITIONAL                                :{BLACK}도색/모델 변경: {GREEN}가능
+STR_REFIT_ADDITIONAL_ABLE_AGV                       :{BLACK}열차 실존여부 : {BLUE}실제 {BLACK} {}도색/모델 변경: {GREEN}가능 {}{BLACK}복합열차구성 : {RED}불가능
 STR_REFIT_ADDITIONAL_ABLE_UNADDTRAIN                :{BLACK}도색/모델 변경: {GREEN}가능 {}{BLACK}복합열차구성 : {RED}불가능
 STR_REFIT_ADDITIONAL_ABLE_CRH380A                   :{BLACK}도색/모델 변경: {GREEN}가능 {}{BLACK}복합가능열차{}{GREEN}CRH380A, CRH380A Red, CRH430A
 STR_REFIT_ADDITIONAL_ABLE_CR600                     :{BLACK}도색/모델 변경: {GREEN}가능 {}{BLACK}복합가능열차{}{GREEN}CR600
@@ -138,7 +144,7 @@ STR_REFIT_ADDITIONAL_ABLE_ZEFIRO362                 :{BLACK}도색/모델 변경
 STR_REFIT_ADDITIONAL_ABLE_ZEFIRO430                 :{BLACK}도색/모델 변경: {GREEN}가능 {}{BLACK}복합가능열차{}{GREEN}ZEFIRO430
 STR_REFIT_ADDITIONAL_ABLE_ZEFIRO600                 :{BLACK}도색/모델 변경: {GREEN}가능 {}{BLACK}복합가능열차{}{GREEN}ZEFIRO600
 STR_REFIT_ADDITIONAL_UNABLE_UNADDTRAIN              :{BLACK}도색/모델 변경: {RED}불가능 {}{BLACK}복합열차구성 : {RED}불가능
-STR_REFIT_ADDITIONAL_UNABLE_AVE                     :{BLACK}도색/모델 변경: {RED}불가능 {}{BLACK}복합가능열차{}{GREEN}AVE
+STR_REFIT_ADDITIONAL_UNABLE_AVE                     :{BLACK}열차 실존여부 : 실제 {}{BLACK}도색/모델 변경: {RED}불가능 {}{BLACK}복합가능열차{}{GREEN}AVE
 STR_REFIT_ADDITIONAL_UNABLE_AVE_VElaro              :{BLACK}도색/모델 변경: {RED}불가능 {}{BLACK}복합가능열차{}{GREEN}AVE Velaro
 STR_REFIT_ADDITIONAL_UNABLE_CRH1                    :{BLACK}도색/모델 변경: {RED}불가능 {}{BLACK}복합가능열차{}{GREEN}CRH1
 STR_REFIT_ADDITIONAL_UNABLE_CRH3                    :{BLACK}도색/모델 변경: {RED}불가능 {}{BLACK}복합가능열차{}{GREEN}CRH3

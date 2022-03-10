@@ -100,27 +100,34 @@ STR_PARAM_OPT_FACTOR_BY_2	                        :x 2
 STR_PARAM_OPT_FACTOR_BY_3    	                    :x 3
 
 # Parameters
-STR_PARAM_European_NAME                             :No European trains allowed.
-STR_PARAM_European_DESC                             :Check if you don't use a European train. (Default: Use)
-STR_PARAM_Chinese_NAME                              :No Chinese trains allowed.
-STR_PARAM_Chinese_DESC                              :Check if you don't use a Chinese train. (Default: Use)
-STR_PARAM_Japanese_NAME                             :No Japanese trains allowed.
-STR_PARAM_Japanese_DESC                             :Check if you don't use a Japanese train. (Default: Use)
-STR_PARAM_Taiwanese_NAME                            :No Taiwanese trains allowed.
-STR_PARAM_Taiwanese_DESC                            :Check if you don't use a Taiwanese train. (Default: Use)
-STR_PARAM_Hong_Kong_NAME                            :No Hong Kong type trains allowed.
-STR_PARAM_Hong_Kong_DESC                            :Check if you don't use the Hong Kong type train. (Default: Use)
-STR_PARAM_Korea_NAME                                :No Korea type trains allowed.
-STR_PARAM_Korea_DESC                                :Check if you don't use the Korea type trains. (Default: Use)
-STR_PARAM_Text_Train_NAME                           :No Test trains allowed
-STR_PARAM_Text_Train_DESC                           :Check if you don't use the Test trains. (Default: Use)
 STR_PARAM_Regular_SPEED_Train_NAME                  :Regular Speed Train Speed
 STR_PARAM_Regular_SPEED_Train_DESC                  :Adjust the speed of the Regular-speed train (Default:151km/h)
 STR_PARAM_High_SPEED_Train_NAME                     :High Speed Train Speed
 STR_PARAM_High_SPEED_Train_DESC                     :Adjust the speed of the high-speed train (Default:331km/h)
+STR_PARAM_Plan_Train_NAME                           :No Plan trains allowed
+STR_PARAM_Plan_Train_DESC                           :Check if you don't use the Plan trains. (Default: Use)
+STR_PARAM_Real_Train_NAME                           :No Real trains allowed
+STR_PARAM_Real_Train_DESC                           :Check if you don't use the Real trains. (Default: Use)
+STR_PARAM_Text_Train_NAME                           :No Test trains allowed
+STR_PARAM_Text_Train_DESC                           :Check if you don't use the Test trains. (Default: Use)
+STR_PARAM_Virtual_Train_NAME                        :No Virtual trains allowed
+STR_PARAM_Virtual_Train_DESC                        :Check if you don't use the Virtual trains. (Default: Use)
+STR_PARAM_Chinese_NAME                              :No Chinese trains allowed.
+STR_PARAM_Chinese_DESC                              :Check if you don't use a Chinese train. (Default: Use)
+STR_PARAM_European_NAME                             :No European trains allowed.
+STR_PARAM_European_DESC                             :Check if you don't use a European train. (Default: Use)
+STR_PARAM_Hong_Kong_NAME                            :No Hong Kong type trains allowed.
+STR_PARAM_Hong_Kong_DESC                            :Check if you don't use the Hong Kong type train. (Default: Use)
+STR_PARAM_Japanese_NAME                             :No Japanese trains allowed.
+STR_PARAM_Japanese_DESC                             :Check if you don't use a Japanese train. (Default: Use)
+STR_PARAM_Korea_NAME                                :No Korea type trains allowed.
+STR_PARAM_Korea_DESC                                :Check if you don't use the Korea type trains. (Default: Use)
+STR_PARAM_Taiwanese_NAME                            :No Taiwanese trains allowed.
+STR_PARAM_Taiwanese_DESC                            :Check if you don't use a Taiwanese train. (Default: Use)
 
-# Refit (Additional text)
+# Refit (Additional text) Real Trian(BLUE), Test Train(YELLOW), PlanTrain(PURPLE), VirtualTrain(RED)
 STR_REFIT_ADDITIONAL                                :{BLACK}Changing model/livery: {GREEN}Available
+STR_REFIT_ADDITIONAL_ABLE_AGV                       :{BLACK}Existence of trains : {BLUE}Real train {}{BLACK}Changing model/livery: {GREEN}Available {}{BLACK}Combined train: {RED}UnavailableSTR_REFIT_ADDITIONAL_ABLE_AGV
 STR_REFIT_ADDITIONAL_ABLE_UNADDTRAIN                :{BLACK}Changing model/livery: {GREEN}Available {} {BLACK}Combined train: {RED}UnavailableSTR_REFIT_ADDITIONAL_ABLE_AGV
 STR_REFIT_ADDITIONAL_ABLE_CRH380A                   :{BLACK}Changing model/livery: {GREEN}Available {} {BLACK}Combined train: {GREEN}CRH380A, CRH380A Red, CRH430A
 STR_REFIT_ADDITIONAL_ABLE_CR600                     :{BLACK}Changing model/livery: {GREEN}Available {} {BLACK}Combined train: {GREEN}CR600
@@ -142,7 +149,7 @@ STR_REFIT_ADDITIONAL_ABLE_ZEFIRO362                 :{BLACK}Changing model/liver
 STR_REFIT_ADDITIONAL_ABLE_ZEFIRO430                 :{BLACK}Changing model/livery: {GREEN}available {} {BLACK}Combined train: {GREEN}ZEFIRO430
 STR_REFIT_ADDITIONAL_ABLE_ZEFIRO600                 :{BLACK}Changing model/livery: {GREEN}available {} {BLACK}Combined train: {GREEN}ZEFIRO600
 STR_REFIT_ADDITIONAL_UNABLE_UNADDTRAIN              :{BLACK}Changing model/livery: {RED}Unavailable {} {BLACK}Combined train: {RED}Unavailable
-STR_REFIT_ADDITIONAL_UNABLE_AVE                     :{BLACK}Changing model/livery: {RED}Unavailable {} {BLACK}Combined train: {GREEN}AVE
+STR_REFIT_ADDITIONAL_UNABLE_AVE                     :{BLACK}Existence of trains : Real train {}{BLACK}Changing model/livery: {RED}Unavailable {}{BLACK}Combined train: {GREEN}AVE
 STR_REFIT_ADDITIONAL_UNABLE_AVE_VElaro              :{BLACK}Changing model/livery: {RED}Unavailable {} {BLACK}Combined train: {GREEN}AVE Velaro
 STR_REFIT_ADDITIONAL_UNABLE_CRH1                    :{BLACK}Changing model/livery: {RED}Unavailable {} {BLACK}Combined train: {GREEN}CRH1
 STR_REFIT_ADDITIONAL_UNABLE_CRH3                    :{BLACK}Changing model/livery: {RED}Unavailable {} {BLACK}Combined train: {GREEN}CRH3
