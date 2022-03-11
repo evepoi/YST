@@ -1,0 +1,75 @@
+/*--------------------------------------------------------------------
+Graphics
+--------------------------------------------------------------------*/
+spriteset(set_Shinkansen_E5_purchase, "src/locomotive/Real_Train/Japanese/Shinkansen_E5/Shinkansen_E5.png"){
+    tmpl_purchase(0, 0)
+}
+
+/*--------------------------------------------------------------------
+1. E5
+--------------------------------------------------------------------*/
+spriteset(set_Shinkansen_E5H_purchase, "src/locomotive/Real_Train/Japanese/Shinkansen_E5/Shinkansen_E5.png"){
+    tmpl_purchase_for_dualhead(0, 108)
+}
+
+spriteset(set_Shinkansen_E5_engineH, "src/locomotive/Real_Train/Japanese/Shinkansen_E5/Shinkansen_E5.png"){
+    engine(80, 0)
+}
+
+spriteset(set_Shinkansen_E5_wagon_start, "src/locomotive/Real_Train/Japanese/Shinkansen_E5/Shinkansen_E5.png"){
+    wagon_start(80, 27)
+}
+
+spriteset(set_Shinkansen_E5_wagon, "src/locomotive/Real_Train/Japanese/Shinkansen_E5/Shinkansen_E5.png") {
+    wagon_1F(80, 54)
+}
+
+spriteset(set_Shinkansen_E5_wagon_r, "src/locomotive/Real_Train/Japanese/Shinkansen_E5/Shinkansen_E5.png") {
+    wagon_1F_r(80, 54)
+}
+
+spriteset(set_Shinkansen_E5_wagon_end, "src/locomotive/Real_Train/Japanese/Shinkansen_E5/Shinkansen_E5.png"){
+    wagon_start(80, 81)
+}
+
+spriteset(set_Shinkansen_E5_engineT, "src/locomotive/Real_Train/Japanese/Shinkansen_E5/Shinkansen_E5.png"){
+    engine_r(80, 108)
+}
+
+/*--------------------------------------------------------------------
+2. H5
+--------------------------------------------------------------------*/
+spriteset(set_Shinkansen_H5H_purchase, "src/locomotive/Real_Train/Japanese/Shinkansen_E5/Shinkansen_H5.png"){
+    tmpl_purchase_for_dualhead(0, 108)
+}
+
+spriteset(set_Shinkansen_H5_engineH, "src/locomotive/Real_Train/Japanese/Shinkansen_E5/Shinkansen_H5.png"){
+    engine(80, 0)
+}
+
+spriteset(set_Shinkansen_H5_wagon_start, "src/locomotive/Real_Train/Japanese/Shinkansen_E5/Shinkansen_H5.png"){
+    wagon_start(80, 27)
+}
+
+spriteset(set_Shinkansen_H5_wagon, "src/locomotive/Real_Train/Japanese/Shinkansen_E5/Shinkansen_H5.png") {
+    wagon_1F(80, 54)
+}
+
+spriteset(set_Shinkansen_H5_wagon_r, "src/locomotive/Real_Train/Japanese/Shinkansen_E5/Shinkansen_H5.png") {
+    wagon_1F_r(80, 54)
+}
+
+spriteset(set_Shinkansen_H5_wagon_end, "src/locomotive/Real_Train/Japanese/Shinkansen_E5/Shinkansen_H5.png"){
+    wagon_start(80, 81)
+}
+
+spriteset(set_Shinkansen_H5_engineT, "src/locomotive/Real_Train/Japanese/Shinkansen_E5/Shinkansen_H5.png"){
+    engine_r(80, 108)
+}
+
+/*--------------------------------------------------------------------
+구매정보
+--------------------------------------------------------------------*/
+switch(FEAT_TRAINS, SELF, sw_Shinkansen_E5_purchase, cargo_subtype) {
+    set_Shinkansen_E5_purchase;
+}

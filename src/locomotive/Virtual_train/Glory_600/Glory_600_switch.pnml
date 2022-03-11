@@ -1,0 +1,84 @@
+/*--------------------------------------------------------------------
+스위치
+--------------------------------------------------------------------*/
+switch(FEAT_TRAINS, SELF, sw_Glory_600_cargo_subtype_text, cargo_subtype) {
+    1: return string(STR_REFIT_LIVERY_Glory600B);   // Glory-600 B
+    2: return string(STR_REFIT_LIVERY_Glory600C);   // Glory-600 C
+    3: return string(STR_REFIT_LIVERY_Glory600D);   // Glory-600 D
+    4: return string(STR_REFIT_LIVERY_Glory600E);   // Glory-600 E
+    return string(STR_REFIT_LIVERY_Glory600A);
+}
+
+switch(FEAT_TRAINS, SELF, sw_Glory_600_engineH, cargo_subtype) {
+    1: set_Glory_600_B_engineH;    // Glory-600 B
+    2: set_Glory_600_C_engineH;    // Glory-600 C
+    3: set_Glory_600_D_engineH;    // Glory-600 D
+    4: set_Glory_600_E_engineH;    // Glory-600 E
+    set_Glory_600_A_engineH;
+}
+
+switch(FEAT_TRAINS, SELF, sw_Glory_600_engineT, cargo_subtype) {
+    1: set_Glory_600_B_engineT;    // Glory-600 B
+    2: set_Glory_600_C_engineT;    // Glory-600 C
+    3: set_Glory_600_D_engineT;    // Glory-600 D
+    4: set_Glory_600_E_engineT;    // Glory-600 E
+    set_Glory_600_A_engineT;
+}
+
+switch(FEAT_TRAINS, SELF, sw_Glory_600_engine, position_in_consist_from_end == 0 && num_vehs_in_consist > 1){
+    1: sw_Glory_600_engineT;
+    sw_Glory_600_engineH;
+}
+
+switch(FEAT_TRAINS, SELF, sw_Glory_600_wagon_start, cargo_subtype) {
+    1: set_Glory_600_B_wagon_start;    // Glory-600 B
+    2: set_Glory_600_C_wagon_start;    // Glory-600 C
+    3: set_Glory_600_D_wagon_start;    // Glory-600 D
+    4: set_Glory_600_E_wagon_start;    // Glory-600 E
+    set_Glory_600_A_wagon_start;
+}
+
+switch(FEAT_TRAINS, SELF, sw_Glory_600_wagon_front, cargo_subtype) {
+    1: set_Glory_600_B_wagon;    // Glory-600 B
+    2: set_Glory_600_C_wagon;    // Glory-600 C
+    3: set_Glory_600_D_wagon;    // Glory-600 D
+    4: set_Glory_600_E_wagon;    // Glory-600 E
+    set_Glory_600_A_wagon;
+}
+
+switch(FEAT_TRAINS, SELF, sw_Glory_600_wagon_tail, cargo_subtype) {
+    1: set_Glory_600_B_wagon_r;    // Glory-600 B
+    2: set_Glory_600_C_wagon_r;    // Glory-600 C
+    3: set_Glory_600_D_wagon_r;    // Glory-600 D
+    4: set_Glory_600_E_wagon_r;    // Glory-600 E
+    set_Glory_600_A_wagon_r;
+}
+
+switch(FEAT_TRAINS, SELF, sw_Glory_600_wagon_end, cargo_subtype) {
+    1: set_Glory_600_B_wagon_end;    // Glory-600 B
+    2: set_Glory_600_C_wagon_end;    // Glory-600 C
+    3: set_Glory_600_D_wagon_end;    // Glory-600 D
+    4: set_Glory_600_E_wagon_end;    // Glory-600 E
+    set_Glory_600_A_wagon_end;
+}
+
+switch(FEAT_TRAINS, SELF, sw_Glory_600_wagon_middle, (position_in_consist)) {
+    1: sw_Glory_600_wagon_tail;
+    sw_Glory_600_wagon_front;
+}
+
+switch(FEAT_TRAINS, SELF, sw_Glory_600_wagon_rear, [STORE_TEMP(1, 0x10F), var[0x61, 0, 0x0000FFFF, 0xC6]]){
+    Glory_600: sw_Glory_600_wagon_end;
+    sw_Glory_600_wagon_middle;
+}
+
+switch(FEAT_TRAINS, SELF, sw_Glory_600_wagon, [STORE_TEMP(-1, 0x10F), var[0x61, 0, 0x0000FFFF, 0xC6]]) {
+    Glory_600: sw_Glory_600_wagon_start;
+    sw_Glory_600_wagon_rear;
+}
+
+switch(FEAT_TRAINS, SELF, sw_Glory_600_wagon_attach, vehicle_type_id) {
+    Glory_600:              return CB_RESULT_ATTACH_ALLOW;
+    YST_1F_Passenger_Car:   return CB_RESULT_ATTACH_ALLOW;
+    return string(STR_ERROR_NO_ATTACH);
+}

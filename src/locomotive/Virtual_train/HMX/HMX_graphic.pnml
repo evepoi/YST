@@ -1,0 +1,75 @@
+/*--------------------------------------------------------------------
+Graphics
+--------------------------------------------------------------------*/
+spriteset(set_HMX_purchase, "src/locomotive/Virtual_train/HMX/HMX_R.png"){
+    tmpl_purchase(0, 0)
+}
+
+/*--------------------------------------------------------------------
+1. HMX 빨강도색
+--------------------------------------------------------------------*/
+spriteset(set_HMX_RH_purchase, "src/locomotive/Virtual_train/HMX/HMX_R.png"){
+    tmpl_purchase_for_dualhead(0, 81)
+}
+
+spriteset(set_HMX_R_engineH, "src/locomotive/Virtual_train/HMX/HMX_R.png"){
+    engine(80, 0)
+}
+
+spriteset(set_HMX_R_1F_wagon, "src/locomotive/Virtual_train/HMX/HMX_R.png") {
+    wagon_1F(80, 27)
+}
+
+spriteset(set_HMX_R_1F_wagon_r, "src/locomotive/Virtual_train/HMX/HMX_R.png") {
+    wagon_1F_r(80, 27)
+}
+
+spriteset(set_HMX_R_2F_wagon, "src/locomotive/Virtual_train/HMX/HMX_R.png") {
+    wagon_2F(80, 54)
+}
+
+spriteset(set_HMX_R_2F_wagon_r, "src/locomotive/Virtual_train/HMX/HMX_R.png") {
+    wagon_2F_r(80, 54)
+}
+
+spriteset(set_HMX_R_engineT, "src/locomotive/Virtual_train/HMX/HMX_R.png"){
+    engine_r(80, 81)
+}
+
+/*--------------------------------------------------------------------
+2. HMX 녹색도색
+--------------------------------------------------------------------*/
+spriteset(set_HMX_GH_purchase, "src/locomotive/Virtual_train/HMX/HMX_G.png"){
+    tmpl_purchase_for_dualhead(0, 81)
+}
+
+spriteset(set_HMX_G_engineH, "src/locomotive/Virtual_train/HMX/HMX_G.png"){
+    engine(80, 0)
+}
+
+spriteset(set_HMX_G_1F_wagon, "src/locomotive/Virtual_train/HMX/HMX_G.png") {
+    wagon_1F(80, 27)
+}
+
+spriteset(set_HMX_G_1F_wagon_r, "src/locomotive/Virtual_train/HMX/HMX_G.png") {
+    wagon_1F_r(80, 27)
+}
+
+spriteset(set_HMX_G_2F_wagon, "src/locomotive/Virtual_train/HMX/HMX_G.png") {
+    wagon_2F(80, 54)
+}
+
+spriteset(set_HMX_G_2F_wagon_r, "src/locomotive/Virtual_train/HMX/HMX_G.png") {
+    wagon_2F_r(80, 54)
+}
+
+spriteset(set_HMX_G_engineT, "src/locomotive/Virtual_train/HMX/HMX_G.png"){
+    engine_r(80, 81)
+}
+
+/*--------------------------------------------------------------------
+구매정보
+--------------------------------------------------------------------*/
+switch(FEAT_TRAINS, SELF, sw_HMX_purchase, cargo_subtype) {
+    set_HMX_purchase;
+}

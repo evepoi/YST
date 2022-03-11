@@ -8,14 +8,17 @@ sort(FEAT_TRAINS, [
     CRH1,                      //3006
     CRH3,                      //3007
     CRH380A,                   //3008
-    CRH430A,                   //3009
     CRH380AJ,                  //3010
+    CRH380D,                   //3047
+    CRH430A,                   //3009
+    CRH430D,                   //3049
+    CRH600D,                   //3048
     CR400,                     //3011
     Eurostar_E300,             //3013
     Eurostar_E320,             //3014
     EMU150,                    //3051
     EMU260,                    //3015
-    EMU362,                    //3050
+    EMU320,                    //3050
     Glory_600,                 //3016
     GT26CW,                    //3017
     GTX,                       //3056
@@ -33,6 +36,7 @@ sort(FEAT_TRAINS, [
     NRT2,                      //3054
     Renfe_S_100,               //3003
     Renfe_S_103,               //3004
+    Renfe_S_130,               //3034
     Shinkansen_500,            //3025
     Shinkansen_500_Cool,       //3026
     Shinkansen_500_SP,         //3027
@@ -43,8 +47,8 @@ sort(FEAT_TRAINS, [
     Shinkansen_E7,             //3031
     Shinkansen_E8,             //3058
     Shinkansen_N700,           //3032
-    TAE,                       //3033
-    Talgo_250,                 //3034
+    TAE_100,                   //3033
+    TAE_200,                   //3060
     TGV_Duplex,                //3035
     TGV_OLD,                   //3036
     TGV_OLD_Duplex,            //3037
@@ -53,15 +57,12 @@ sort(FEAT_TRAINS, [
     TGV_Ouigo,                 //3040
     TGV_Pos,                   //3041
     TGV_Pos_Poste,             //3042
-    THRS,                      //3043
+    THRS_700T,                 //3043
     VHST_600X,                 //3059
     VTX,                       //3044
     YFX,                       //3045
     YTX,                       //3046
-    ZEFIRO362,                 //3047
-    ZEFIRO430,                 //3049
-    ZEFIRO600,                 //3048
-
+    
     AD_Tranz_CAF_A,            //4001
     MTR_AC_Cammall,            //4002
     MTR_DC_Cammall,            //4003

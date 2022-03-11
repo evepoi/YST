@@ -1,0 +1,82 @@
+/*--------------------------------------------------------------------
+Graphics
+--------------------------------------------------------------------*/
+spriteset(set_NRT2_purchase, "src/locomotive/Virtual_train/NRT2/NRT2_B.png"){
+    tmpl_purchase(0, 0)
+}
+
+/*--------------------------------------------------------------------
+1. NRT2 Red
+--------------------------------------------------------------------*/
+spriteset(set_NRT2_BH_purchase, "src/locomotive/Virtual_train/NRT2/NRT2_B.png"){
+    tmpl_purchase_for_dualhead(0, 54)
+}
+
+spriteset(set_NRT2_B_engineH, "src/locomotive/Virtual_train/NRT2/NRT2_B.png"){
+    engine(80, 0)
+}
+
+spriteset(set_NRT2_B_wagon, "src/locomotive/Virtual_train/NRT2/NRT2_B.png") {
+    wagon_1F(80, 27)
+}
+
+spriteset(set_NRT2_B_wagon_r, "src/locomotive/Virtual_train/NRT2/NRT2_B.png") {
+    wagon_1F_r(80, 27)
+}
+
+spriteset(set_NRT2_B_engineT, "src/locomotive/Virtual_train/NRT2/NRT2_B.png"){
+    engine_r(80, 54)
+}
+
+/*--------------------------------------------------------------------
+2. NRT2 Green
+--------------------------------------------------------------------*/
+spriteset(set_NRT2_GH_purchase, "src/locomotive/Virtual_train/NRT2/NRT2_G.png"){
+    tmpl_purchase_for_dualhead(0, 54)
+}
+
+spriteset(set_NRT2_G_engineH, "src/locomotive/Virtual_train/NRT2/NRT2_G.png"){
+    engine(80, 0)
+}
+
+spriteset(set_NRT2_G_wagon, "src/locomotive/Virtual_train/NRT2/NRT2_G.png") {
+    wagon_1F(80, 27)
+}
+
+spriteset(set_NRT2_G_wagon_r, "src/locomotive/Virtual_train/NRT2/NRT2_G.png") {
+    wagon_1F_r(80, 27)
+}
+
+spriteset(set_NRT2_G_engineT, "src/locomotive/Virtual_train/NRT2/NRT2_G.png"){
+    engine_r(80, 54)
+}
+
+/*--------------------------------------------------------------------
+3. NRT2 White
+--------------------------------------------------------------------*/
+spriteset(set_NRT2_WH_purchase, "src/locomotive/Virtual_train/NRT2/NRT2_W.png"){
+    tmpl_purchase_for_dualhead(0, 54)
+}
+
+spriteset(set_NRT2_W_engineH, "src/locomotive/Virtual_train/NRT2/NRT2_W.png"){
+    engine(80, 0)
+}
+
+spriteset(set_NRT2_W_wagon, "src/locomotive/Virtual_train/NRT2/NRT2_W.png") {
+    wagon_1F(80, 27)
+}
+
+spriteset(set_NRT2_W_wagon_r, "src/locomotive/Virtual_train/NRT2/NRT2_W.png") {
+    wagon_1F_r(80, 27)
+}
+
+spriteset(set_NRT2_W_engineT, "src/locomotive/Virtual_train/NRT2/NRT2_W.png"){
+    engine_r(80, 54)
+}
+
+/*--------------------------------------------------------------------
+구매정보
+--------------------------------------------------------------------*/
+switch(FEAT_TRAINS, SELF, sw_NRT2_purchase, cargo_subtype) {
+    set_NRT2_purchase;
+}

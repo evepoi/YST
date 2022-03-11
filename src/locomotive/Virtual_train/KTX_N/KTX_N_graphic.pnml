@@ -1,0 +1,41 @@
+/*--------------------------------------------------------------------
+Graphics
+--------------------------------------------------------------------*/
+spriteset(set_KTX_N_purchase, "src/locomotive/Virtual_train/KTX_N/KTX_N.png"){
+	tmpl_purchase(0, 0)
+}
+
+spriteset(set_KTX_NH_purchase, "src/locomotive/Virtual_train/KTX_N/KTX_N.png"){
+	tmpl_purchase_for_dualhead(0, 108)
+}
+
+spriteset(set_KTX_N_engineH, "src/locomotive/Virtual_train/KTX_N/KTX_N.png"){
+	engine(80, 0)
+}
+
+spriteset(set_KTX_N_wagon_start, "src/locomotive/Virtual_train/KTX_N/KTX_N.png"){
+	wagon_start(80, 27)
+}
+
+spriteset(set_KTX_N_wagon, "src/locomotive/Virtual_train/KTX_N/KTX_N.png") {
+	wagon_1F(80, 54)
+}
+
+spriteset(set_KTX_N_wagon_r, "src/locomotive/Virtual_train/KTX_N/KTX_N.png") {
+	wagon_1F_r(80, 54)
+}
+
+spriteset(set_KTX_N_wagon_end, "src/locomotive/Virtual_train/KTX_N/KTX_N.png"){
+	wagon_start(80, 81)
+}
+
+spriteset(set_KTX_N_engineT, "src/locomotive/Virtual_train/KTX_N/KTX_N.png"){
+	engine_r(80, 108)
+}
+
+/*--------------------------------------------------------------------
+구매정보
+--------------------------------------------------------------------*/
+switch(FEAT_TRAINS, SELF, sw_KTX_N_purchase, cargo_subtype) {
+	set_KTX_N_purchase;
+}

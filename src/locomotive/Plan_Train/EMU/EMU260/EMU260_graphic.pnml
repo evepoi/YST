@@ -1,0 +1,44 @@
+/*--------------------------------------------------------------------
+Graphics
+--------------------------------------------------------------------*/
+spriteset(set_EMU260_purchase, "src/locomotive/Plan_Train/EMU/EMU260/EMU260.png"){
+	tmpl_purchase(0, 0)
+}
+
+/*--------------------------------------------------------------------
+EMU260
+--------------------------------------------------------------------*/
+spriteset(set_EMU260H_purchase, "src/locomotive/Plan_Train/EMU/EMU260/EMU260.png"){
+	tmpl_purchase_for_dualhead(0, 108)
+}
+
+spriteset(set_EMU260_engineH, "src/locomotive/Plan_Train/EMU/EMU260/EMU260.png"){
+	engine(80, 0)
+}
+
+spriteset(set_EMU260_wagon_start, "src/locomotive/Plan_Train/EMU/EMU260/EMU260.png"){
+	wagon_start(80, 27)
+}
+
+spriteset(set_EMU260_wagon, "src/locomotive/Plan_Train/EMU/EMU260/EMU260.png") {
+	wagon_1F(80, 54)
+}
+
+spriteset(set_EMU260_wagon_r, "src/locomotive/Plan_Train/EMU/EMU260/EMU260.png") {
+	wagon_1F_r(80, 54)
+}
+
+spriteset(set_EMU260_wagon_end, "src/locomotive/Plan_Train/EMU/EMU260/EMU260.png"){
+	wagon_start(80, 81)
+}
+
+spriteset(set_EMU260_engineT, "src/locomotive/Plan_Train/EMU/EMU260/EMU260.png"){
+	engine_r(80, 108)
+}
+
+/*--------------------------------------------------------------------
+구매정보
+--------------------------------------------------------------------*/
+switch(FEAT_TRAINS, SELF, sw_EMU260_purchase, cargo_subtype) {
+	set_EMU260_purchase;
+}

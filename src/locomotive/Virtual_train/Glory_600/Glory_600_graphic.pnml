@@ -1,0 +1,168 @@
+/*--------------------------------------------------------------------
+Graphics
+--------------------------------------------------------------------*/
+spriteset(set_Glory_600_purchase, "src/locomotive/Virtual_train/Glory_600/Glory_600_A.png"){
+	tmpl_purchase(0, 0)
+}
+
+/*--------------------------------------------------------------------
+1. Glory 600 A
+--------------------------------------------------------------------*/
+spriteset(set_Glory_600_AH_purchase, "src/locomotive/Virtual_train/Glory_600/Glory_600_A.png"){
+	tmpl_purchase_for_dualhead(0, 108)
+}
+
+spriteset(set_Glory_600_A_engineH, "src/locomotive/Virtual_train/Glory_600/Glory_600_A.png"){
+	engine(80, 0)
+}
+
+spriteset(set_Glory_600_A_wagon_start, "src/locomotive/Virtual_train/Glory_600/Glory_600_A.png"){
+	wagon_start(80, 27)
+}
+
+spriteset(set_Glory_600_A_wagon, "src/locomotive/Virtual_train/Glory_600/Glory_600_A.png") {
+	wagon_1F(80, 54)
+}
+
+spriteset(set_Glory_600_A_wagon_r, "src/locomotive/Virtual_train/Glory_600/Glory_600_A.png") {
+	wagon_1F_r(80, 54)
+}
+
+spriteset(set_Glory_600_A_wagon_end, "src/locomotive/Virtual_train/Glory_600/Glory_600_A.png"){
+	wagon_start(80, 81)
+}
+
+spriteset(set_Glory_600_A_engineT, "src/locomotive/Virtual_train/Glory_600/Glory_600_A.png"){
+	engine_r(80, 108)
+}
+
+/*--------------------------------------------------------------------
+2. Glory 600 B
+--------------------------------------------------------------------*/
+spriteset(set_Glory_600_BH_purchase, "src/locomotive/Virtual_train/Glory_600/Glory_600_B.png"){
+	tmpl_purchase_for_dualhead(0, 108)
+}
+
+spriteset(set_Glory_600_B_engineH, "src/locomotive/Virtual_train/Glory_600/Glory_600_B.png"){
+	engine(80, 0)
+}
+
+spriteset(set_Glory_600_B_wagon_start, "src/locomotive/Virtual_train/Glory_600/Glory_600_B.png"){
+	wagon_start(80, 27)
+}
+
+spriteset(set_Glory_600_B_wagon, "src/locomotive/Virtual_train/Glory_600/Glory_600_B.png") {
+	wagon_1F(80, 54)
+}
+
+spriteset(set_Glory_600_B_wagon_r, "src/locomotive/Virtual_train/Glory_600/Glory_600_B.png") {
+	wagon_1F_r(80, 54)
+}
+
+spriteset(set_Glory_600_B_wagon_end, "src/locomotive/Virtual_train/Glory_600/Glory_600_B.png"){
+	wagon_start(80, 81)
+}
+
+spriteset(set_Glory_600_B_engineT, "src/locomotive/Virtual_train/Glory_600/Glory_600_B.png"){
+	engine_r(80, 108)
+}
+
+/*--------------------------------------------------------------------
+3. Glory 600 C
+--------------------------------------------------------------------*/
+spriteset(set_Glory_600_CH_purchase, "src/locomotive/Virtual_train/Glory_600/Glory_600_C.png"){
+	tmpl_purchase_for_dualhead(0, 108)
+}
+
+spriteset(set_Glory_600_C_engineH, "src/locomotive/Virtual_train/Glory_600/Glory_600_C.png"){
+	engine(80, 0)
+}
+
+spriteset(set_Glory_600_C_wagon_start, "src/locomotive/Virtual_train/Glory_600/Glory_600_C.png"){
+	wagon_start(80, 27)
+}
+
+spriteset(set_Glory_600_C_wagon, "src/locomotive/Virtual_train/Glory_600/Glory_600_C.png") {
+	wagon_1F(80, 54)
+}
+
+spriteset(set_Glory_600_C_wagon_r, "src/locomotive/Virtual_train/Glory_600/Glory_600_C.png") {
+	wagon_1F_r(80, 54)
+}
+
+spriteset(set_Glory_600_C_wagon_end, "src/locomotive/Virtual_train/Glory_600/Glory_600_C.png"){
+	wagon_start(80, 81)
+}
+
+spriteset(set_Glory_600_C_engineT, "src/locomotive/Virtual_train/Glory_600/Glory_600_C.png"){
+	engine_r(80, 108)
+}
+
+/*--------------------------------------------------------------------
+4. Glory 600 D
+--------------------------------------------------------------------*/
+spriteset(set_Glory_600_DH_purchase, "src/locomotive/Virtual_train/Glory_600/Glory_600_D.png"){
+	tmpl_purchase_for_dualhead(0, 108)
+}
+
+spriteset(set_Glory_600_D_engineH, "src/locomotive/Virtual_train/Glory_600/Glory_600_D.png"){
+	engine(80, 0)
+}
+
+spriteset(set_Glory_600_D_wagon_start, "src/locomotive/Virtual_train/Glory_600/Glory_600_D.png"){
+	wagon_start(80, 27)
+}
+
+spriteset(set_Glory_600_D_wagon, "src/locomotive/Virtual_train/Glory_600/Glory_600_D.png") {
+	wagon_1F(80, 54)
+}
+
+spriteset(set_Glory_600_D_wagon_r, "src/locomotive/Virtual_train/Glory_600/Glory_600_D.png") {
+	wagon_1F_r(80, 54)
+}
+
+spriteset(set_Glory_600_D_wagon_end, "src/locomotive/Virtual_train/Glory_600/Glory_600_D.png"){
+	wagon_start(80, 81)
+}
+
+spriteset(set_Glory_600_D_engineT, "src/locomotive/Virtual_train/Glory_600/Glory_600_D.png"){
+	engine_r(80, 108)
+}
+
+/*--------------------------------------------------------------------
+5. Glory 600 E
+--------------------------------------------------------------------*/
+spriteset(set_Glory_600_EH_purchase, "src/locomotive/Virtual_train/Glory_600/Glory_600_E.png"){
+	tmpl_purchase_for_dualhead(0, 108)
+}
+
+spriteset(set_Glory_600_E_engineH, "src/locomotive/Virtual_train/Glory_600/Glory_600_E.png"){
+	engine(80, 0)
+}
+
+spriteset(set_Glory_600_E_wagon_start, "src/locomotive/Virtual_train/Glory_600/Glory_600_E.png"){
+	wagon_start(80, 27)
+}
+
+spriteset(set_Glory_600_E_wagon, "src/locomotive/Virtual_train/Glory_600/Glory_600_E.png") {
+	wagon_1F(80, 54)
+}
+
+spriteset(set_Glory_600_E_wagon_r, "src/locomotive/Virtual_train/Glory_600/Glory_600_E.png") {
+	wagon_1F_r(80, 54)
+}
+
+spriteset(set_Glory_600_E_wagon_end, "src/locomotive/Virtual_train/Glory_600/Glory_600_E.png"){
+	wagon_start(80, 81)
+}
+
+spriteset(set_Glory_600_E_engineT, "src/locomotive/Virtual_train/Glory_600/Glory_600_E.png"){
+	engine_r(80, 108)
+}
+
+/*--------------------------------------------------------------------
+구매정보
+--------------------------------------------------------------------*/
+switch(FEAT_TRAINS, SELF, sw_Glory_600_purchase, cargo_subtype) {
+	set_Glory_600_purchase;
+}

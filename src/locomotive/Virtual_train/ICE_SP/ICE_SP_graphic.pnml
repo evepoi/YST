@@ -1,0 +1,75 @@
+/*--------------------------------------------------------------------
+Graphics
+--------------------------------------------------------------------*/
+spriteset(set_ICE_SP_purchase, "src/locomotive/Virtual_train/ICE_SP/ICE_Sancheon.png"){
+	tmpl_purchase(0, 0)
+}
+
+/*--------------------------------------------------------------------
+1. ICE-산천
+--------------------------------------------------------------------*/
+spriteset(set_ICE_SancheonH_purchase, "src/locomotive/Virtual_train/ICE_SP/ICE_Sancheon.png"){
+	tmpl_purchase_for_dualhead(0, 108)
+}
+
+spriteset(set_ICE_Sancheon_engineH, "src/locomotive/Virtual_train/ICE_SP/ICE_Sancheon.png"){
+	engine(80, 0)
+}
+
+spriteset(set_ICE_Sancheon_wagon_start, "src/locomotive/Virtual_train/ICE_SP/ICE_Sancheon.png"){
+	wagon_start(80, 27)
+}
+
+spriteset(set_ICE_Sancheon_wagon, "src/locomotive/Virtual_train/ICE_SP/ICE_Sancheon.png") {
+	wagon_1F(80, 54)
+}
+
+spriteset(set_ICE_Sancheon_wagon_r, "src/locomotive/Virtual_train/ICE_SP/ICE_Sancheon.png") {
+	wagon_1F_r(80, 54)
+}
+
+spriteset(set_ICE_Sancheon_wagon_end, "src/locomotive/Virtual_train/ICE_SP/ICE_Sancheon.png"){
+	wagon_start(80, 81)
+}
+
+spriteset(set_ICE_Sancheon_engineT, "src/locomotive/Virtual_train/ICE_SP/ICE_Sancheon.png"){
+	engine_r(80, 108)
+}
+
+/*--------------------------------------------------------------------
+2. ICE-팥죽
+--------------------------------------------------------------------*/
+spriteset(set_ICE_PatjugH_purchase, "src/locomotive/Virtual_train/ICE_SP/ICE_Patjug.png"){
+	tmpl_purchase_for_dualhead(0, 108)
+}
+
+spriteset(set_ICE_Patjug_engineH, "src/locomotive/Virtual_train/ICE_SP/ICE_Patjug.png"){
+	engine(80, 0)
+}
+
+spriteset(set_ICE_Patjug_wagon_start, "src/locomotive/Virtual_train/ICE_SP/ICE_Patjug.png"){
+	wagon_start(80, 27)
+}
+
+spriteset(set_ICE_Patjug_wagon, "src/locomotive/Virtual_train/ICE_SP/ICE_Patjug.png") {
+	wagon_1F(80, 54)
+}
+
+spriteset(set_ICE_Patjug_wagon_r, "src/locomotive/Virtual_train/ICE_SP/ICE_Patjug.png") {
+	wagon_1F_r(80, 54)
+}
+
+spriteset(set_ICE_Patjug_wagon_end, "src/locomotive/Virtual_train/ICE_SP/ICE_Patjug.png"){
+	wagon_start(80, 81)
+}
+
+spriteset(set_ICE_Patjug_engineT, "src/locomotive/Virtual_train/ICE_SP/ICE_Patjug.png"){
+	engine_r(80, 108)
+}
+
+/*--------------------------------------------------------------------
+구매정보
+--------------------------------------------------------------------*/
+switch(FEAT_TRAINS, SELF, sw_ICE_SP_purchase, cargo_subtype) {
+	set_ICE_SP_purchase;
+}

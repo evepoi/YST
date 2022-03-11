@@ -1,0 +1,41 @@
+/*--------------------------------------------------------------------
+Graphics
+--------------------------------------------------------------------*/
+spriteset(set_TGV_Ouigo_purchase, "src/locomotive/Real_Train/European/TGV/TGV_Ouigo/TGV_Ouigo.png"){
+    tmpl_purchase(0, 0)
+}
+
+spriteset(set_TGV_OuigoH_purchase, "src/locomotive/Real_Train/European/TGV/TGV_Ouigo/TGV_Ouigo.png"){
+    tmpl_purchase_for_dualhead(0, 135)
+}
+
+spriteset(set_TGV_Ouigo_engineH, "src/locomotive/Real_Train/European/TGV/TGV_Ouigo/TGV_Ouigo.png"){
+    engine(80, 0)
+}
+
+spriteset(set_TGV_Ouigo_wagon_start, "src/locomotive/Real_Train/European/TGV/TGV_Ouigo/TGV_Ouigo.png"){
+    wagon_start(80, 27)
+}
+
+spriteset(set_TGV_Ouigo_wagon, "src/locomotive/Real_Train/European/TGV/TGV_Ouigo/TGV_Ouigo.png") {
+    wagon_1F_F(80, 54)
+}
+
+spriteset(set_TGV_Ouigo_wagon_bar, "src/locomotive/Real_Train/European/TGV/TGV_Ouigo/TGV_Ouigo.png") {
+    wagon_bar(80, 81)
+}
+
+spriteset(set_TGV_Ouigo_wagon_end, "src/locomotive/Real_Train/European/TGV/TGV_Ouigo/TGV_Ouigo.png"){
+    wagon_start(80, 108)
+}
+
+spriteset(set_TGV_Ouigo_engineT, "src/locomotive/Real_Train/European/TGV/TGV_Ouigo/TGV_Ouigo.png"){
+    engine_r(80, 135)
+}
+
+/*--------------------------------------------------------------------
+구매정보
+--------------------------------------------------------------------*/
+switch(FEAT_TRAINS, SELF, sw_TGV_Ouigo_purchase, cargo_subtype) {
+    set_TGV_Ouigo_purchase;
+}

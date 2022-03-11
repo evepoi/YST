@@ -1,0 +1,130 @@
+/*--------------------------------------------------------------------
+Graphics
+--------------------------------------------------------------------*/
+spriteset(set_NKX_purchase, "src/locomotive/Virtual_train/NKX/NKX_A.png"){
+    tmpl_purchase(0, 0)
+}
+
+/*--------------------------------------------------------------------
+1. NKX A도색
+--------------------------------------------------------------------*/
+spriteset(set_NKX_AH_purchase, "src/locomotive/Virtual_train/NKX/NKX_A.png"){
+    tmpl_purchase_for_dualhead(0, 135)
+}
+
+spriteset(set_NKX_A_engineH, "src/locomotive/Virtual_train/NKX/NKX_A.png"){
+    engine(80, 0)
+}
+
+spriteset(set_NKX_A_wagon_start, "src/locomotive/Virtual_train/NKX/NKX_A.png"){
+    wagon_panto(80, 27)
+}
+
+spriteset(set_NKX_A_1F_wagon, "src/locomotive/Virtual_train/NKX/NKX_A.png") {
+    wagon_1F(80, 54)
+}
+
+spriteset(set_NKX_A_1F_wagon_r, "src/locomotive/Virtual_train/NKX/NKX_A.png") {
+    wagon_1F_r(80, 54)
+}
+
+spriteset(set_NKX_A_2F_wagon, "src/locomotive/Virtual_train/NKX/NKX_A.png") {
+    wagon_2F(80, 81)
+}
+
+spriteset(set_NKX_A_2F_wagon_r, "src/locomotive/Virtual_train/NKX/NKX_A.png") {
+    wagon_2F_r(80, 81)
+}
+
+spriteset(set_NKX_A_wagon_end, "src/locomotive/Virtual_train/NKX/NKX_A.png"){
+    wagon_panto(80, 108)
+}
+
+spriteset(set_NKX_A_engineT, "src/locomotive/Virtual_train/NKX/NKX_A.png"){
+    engine_r(80, 135)
+}
+
+/*--------------------------------------------------------------------
+2. NKX B도색
+--------------------------------------------------------------------*/
+spriteset(set_NKX_BH_purchase, "src/locomotive/Virtual_train/NKX/NKX_B.png"){
+    tmpl_purchase_for_dualhead(0, 135)
+}
+
+spriteset(set_NKX_B_engineH, "src/locomotive/Virtual_train/NKX/NKX_B.png"){
+    engine(80, 0)
+}
+
+spriteset(set_NKX_B_wagon_start, "src/locomotive/Virtual_train/NKX/NKX_B.png"){
+    wagon_panto(80, 27)
+}
+
+spriteset(set_NKX_B_1F_wagon, "src/locomotive/Virtual_train/NKX/NKX_B.png") {
+    wagon_1F(80, 54)
+}
+
+spriteset(set_NKX_B_1F_wagon_r, "src/locomotive/Virtual_train/NKX/NKX_B.png") {
+    wagon_1F_r(80, 54)
+}
+
+spriteset(set_NKX_B_2F_wagon, "src/locomotive/Virtual_train/NKX/NKX_B.png") {
+    wagon_2F(80, 81)
+}
+
+spriteset(set_NKX_B_2F_wagon_r, "src/locomotive/Virtual_train/NKX/NKX_B.png") {
+    wagon_2F_r(80, 81)
+}
+
+spriteset(set_NKX_B_wagon_end, "src/locomotive/Virtual_train/NKX/NKX_B.png"){
+    wagon_panto(80, 108)
+}
+
+spriteset(set_NKX_B_engineT, "src/locomotive/Virtual_train/NKX/NKX_B.png"){
+    engine_r(80, 135)
+}
+
+/*--------------------------------------------------------------------
+3. NKX C도색
+--------------------------------------------------------------------*/
+spriteset(set_NKX_CH_purchase, "src/locomotive/Virtual_train/NKX/NKX_C.png"){
+    tmpl_purchase_for_dualhead(0, 135)
+}
+
+spriteset(set_NKX_C_engineH, "src/locomotive/Virtual_train/NKX/NKX_C.png"){
+    engine(80, 0)
+}
+
+spriteset(set_NKX_C_wagon_start, "src/locomotive/Virtual_train/NKX/NKX_C.png"){
+    wagon_panto(80, 27)
+}
+
+spriteset(set_NKX_C_1F_wagon, "src/locomotive/Virtual_train/NKX/NKX_C.png") {
+    wagon_1F(80, 54)
+}
+
+spriteset(set_NKX_C_1F_wagon_r, "src/locomotive/Virtual_train/NKX/NKX_C.png") {
+    wagon_1F_r(80, 54)
+}
+
+spriteset(set_NKX_C_2F_wagon, "src/locomotive/Virtual_train/NKX/NKX_C.png") {
+    wagon_2F(80, 81)
+}
+
+spriteset(set_NKX_C_2F_wagon_r, "src/locomotive/Virtual_train/NKX/NKX_C.png") {
+    wagon_2F_r(80, 81)
+}
+
+spriteset(set_NKX_C_wagon_end, "src/locomotive/Virtual_train/NKX/NKX_C.png"){
+    wagon_panto(80, 108)
+}
+
+spriteset(set_NKX_C_engineT, "src/locomotive/Virtual_train/NKX/NKX_C.png"){
+    engine_r(80, 135)
+}
+
+/*--------------------------------------------------------------------
+구매정보
+--------------------------------------------------------------------*/
+switch(FEAT_TRAINS, SELF, sw_NKX_purchase, cargo_subtype) {
+    set_NKX_purchase;
+}
