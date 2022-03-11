@@ -97,7 +97,7 @@ if (Korea) {
     }
 
 if (Taiwanese) {
-    disable_item(FEAT_TRAINS, 3043); //THRS_700T
+    disable_item(FEAT_TRAINS, 3043); //THSR_700T
     }
 
 // disabe train by Use
@@ -140,7 +140,7 @@ if (Real_Train) {
     disable_item(FEAT_TRAINS, 3039); //TGV_Old_Poste
     disable_item(FEAT_TRAINS, 3040); //TGV_Ouigo
     disable_item(FEAT_TRAINS, 3041); //TGV_Pos
-    disable_item(FEAT_TRAINS, 3043); //THRS_700T
+    disable_item(FEAT_TRAINS, 3043); //THSR_700T
     disable_item(FEAT_TRAINS, 3047); //CRH380D
     disable_item(FEAT_TRAINS, 4001); //AD_Tranz_CAF_A
     disable_item(FEAT_TRAINS, 4002); //MTR_AC_Cammall

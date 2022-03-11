@@ -59,7 +59,7 @@
 #include "locomotive/Real_Train/Korea/GT26CW/GT26CW.pnml"
 
 //locomotive / Real_Train / Taiwanese
-#include "locomotive/Real_Train/Taiwanese/THRS_700T/THRS_700T.pnml"
+#include "locomotive/Real_Train/Taiwanese/THSR_700T/THSR_700T.pnml"
 
 //locomotive / Test_train
 #include "locomotive/Test_Train/CR380AJ/CR380AJ.pnml"
