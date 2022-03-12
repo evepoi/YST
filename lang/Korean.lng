@@ -26,8 +26,9 @@ STR_EMU320_NAME                                     :[YST] EMU-320
 STR_Glory_600_NAME                                  :[YST] Glory 600
 STR_GT26CW_NAME                                     :[YST] GT26CW
 STR_GTX_NAME                                        :[YST] GTX
-STR_HEMU_430_NAME                                   :[YST] HEMU-430
+STR_HEMU_430X_NAME                                  :[YST] HEMU-430X
 STR_HMX_NAME                                        :[YST] HMX
+STR_HSR_350X_NAME                                   :[YST] HSR-350X
 STR_ICE3_NAME                                       :[YST] ICE3
 STR_ICE_CW_NAME                                     :[YST] ITX-초월
 STR_ICE_SP_NAME                                     :[YST] ICE-SP
@@ -142,8 +143,9 @@ STR_REFIT_ADDITIONAL_EMU320                         :{BLACK}열차 실존여부 
 STR_REFIT_ADDITIONAL_Glory600                       :{BLACK}열차 실존여부 : {RED}가상 {}{BLACK}도색/모델 변경: {GREEN}가능 {}{BLACK}복합가능열차{}{GREEN}Glory-600
 STR_REFIT_ADDITIONAL_GT26CW                         :{BLACK}열차 실존여부 : {BLUE}실제 {}{BLACK}도색/모델 변경: {GREEN}가능 {}{BLACK}복합가능열차{}{GREEN}BB15048, GT26CW, NJ2
 STR_REFIT_ADDITIONAL_GTX                            :{BLACK}열차 실존여부 : {PURPLE}계획 {}{BLACK}도색/모델 변경: {RED}불가능 {}{BLACK}복합가능열차{}{GREEN}GTX
-STR_REFIT_ADDITIONAL_HEMU_430                       :{BLACK}열차 실존여부 : {YELLOW}시험 {}{BLACK}도색/모델 변경: {RED}불가능 {}{BLACK}복합가능열차{}{GREEN}HEMU-430
+STR_REFIT_ADDITIONAL_HEMU_430X                      :{BLACK}열차 실존여부 : {YELLOW}시험 {}{BLACK}도색/모델 변경: {RED}불가능 {}{BLACK}복합가능열차{}{GREEN}HEMU-430X
 STR_REFIT_ADDITIONAL_HMX                            :{BLACK}열차 실존여부 : {RED}가상 {}{BLACK}도색/모델 변경: {GREEN}가능 {}{BLACK}복합가능열차{}{GREEN}HMX
+STR_REFIT_ADDITIONAL_HSR_350X                       :{BLACK}열차 실존여부 : {YELLOW}시험 {}{BLACK}도색/모델 변경: {RED}불가능 {}{BLACK}복합가능열차{}{GREEN}HSR-350X
 STR_REFIT_ADDITIONAL_ICE_SP                         :{BLACK}열차 실존여부 : {RED}가상 {}{BLACK}도색/모델 변경: {GREEN}가능 {}{BLACK}복합가능열차{}{GREEN}ICE-SP
 STR_REFIT_ADDITIONAL_ICE3                           :{BLACK}열차 실존여부 : {BLUE}실제 {}{BLACK}도색/모델 변경: {RED}불가능 {}{BLACK}복합가능열차{}{GREEN}ICE3
 STR_REFIT_ADDITIONAL_ITX_CW                         :{BLACK}열차 실존여부 : {RED}가상 {}{BLACK}도색/모델 변경: {GREEN}가능 {}{BLACK}복합가능열차{}{GREEN}ITX-초월

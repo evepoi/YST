@@ -26,8 +26,9 @@ STR_EMU320_NAME                                     :[YST] EMU-320
 STR_Glory_600_NAME                                  :[YST] Glory 600
 STR_GT26CW_NAME                                     :[YST] GT26CW
 STR_GTX_NAME                                        :[YST] GTX
-STR_HEMU_430_NAME                                   :[YST] HEMU-430
+STR_HEMU_430X_NAME                                  :[YST] HEMU-430X
 STR_HMX_NAME                                        :[YST] HMX
+STR_HSR_350X_NAME                                   :[YST] HSR-350X
 STR_ICE3_NAME                                       :[YST] ICE3
 STR_ICE_CW_NAME                                     :[YST] ITX-Chowol
 STR_ICE_SP_NAME                                     :[YST] ICE-SP
@@ -147,8 +148,9 @@ STR_REFIT_ADDITIONAL_EMU320                         :{BLACK}Existence of trains 
 STR_REFIT_ADDITIONAL_Glory600                       :{BLACK}Existence of trains : {RED}Virtual Train {}{BLACK}Changing model/livery: {GREEN}Available {}{BLACK}Combined train: {GREEN}Glory-600
 STR_REFIT_ADDITIONAL_GT26CW                         :{BLACK}Existence of trains : {BLUE}Real train {}{BLACK}Changing model/livery: {GREEN}Available {}{BLACK}Combined train: {GREEN}BB15048, GT26CW, NJ2
 STR_REFIT_ADDITIONAL_GTX                            :{BLACK}Existence of trains : {PURPLE}Plan Train {}{BLACK}Changing model/livery: {RED}Unavailable {}{BLACK}Combined train: {GREEN}GTX
-STR_REFIT_ADDITIONAL_HEMU_430                       :{BLACK}Existence of trains : {YELLOW}Test Train {}{BLACK}Changing model/livery: {RED}Unavailable {}{BLACK}Combined train: {GREEN}HEMU-430
+STR_REFIT_ADDITIONAL_HEMU_430X                      :{BLACK}Existence of trains : {YELLOW}Test Train {}{BLACK}Changing model/livery: {RED}Unavailable {}{BLACK}Combined train: {GREEN}HEMU-430X
 STR_REFIT_ADDITIONAL_HMX                            :{BLACK}Existence of trains : {RED}Virtual Train {}{BLACK}Changing model/livery: {GREEN}Available {}{BLACK}Combined train: {GREEN}HMX
+STR_REFIT_ADDITIONAL_HSR_350X                       :{BLACK}Existence of trains : {YELLOW}Test Train {}{BLACK}Changing model/livery: {RED}Unavailable {}{BLACK}Combined train: {GREEN}HSR-350X
 STR_REFIT_ADDITIONAL_ICE_SP                         :{BLACK}Existence of trains : {RED}Virtual Train {}{BLACK}Changing model/livery: {GREEN}available {}{BLACK}Combined train: {GREEN}ICE-SP
 STR_REFIT_ADDITIONAL_ICE3                           :{BLACK}Existence of trains : {BLUE}Real train {}{BLACK}Changing model/livery: {RED}Unavailable {} {BLACK}Combined train: {GREEN}ICE3
 STR_REFIT_ADDITIONAL_ITX_CW                         :{BLACK}Existence of trains : {RED}Virtual Train {}{BLACK}Changing model/livery: {GREEN}available {}{BLACK}Combined train: {GREEN}ITX-Chowol

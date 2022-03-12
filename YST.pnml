@@ -156,7 +156,8 @@ if (Real_Train) {
 if (Test_Train) {
     disable_item(FEAT_TRAINS, 3010); //CRH380AJ
     disable_item(FEAT_TRAINS, 3012); //Shinkansen_923
-    disable_item(FEAT_TRAINS, 3018); //HEMU_430
+    disable_item(FEAT_TRAINS, 3018); //HEMU_430X
+    disable_item(FEAT_TRAINS, 3061); //HSR_350X
 }
 
 // Virtual train 가상열차

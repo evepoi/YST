@@ -22,8 +22,9 @@ sort(FEAT_TRAINS, [
     Glory_600,                 //3016
     GT26CW,                    //3017
     GTX,                       //3056
-    HEMU_430,                  //3018
+    HEMU_430X,                 //3018
     HMX,                       //3019
+    HSR_350X,                  //3061
     ICE_SP,                    //3020
     ICE3,                      //3021
     ITX_CW,                    //3055

@@ -63,7 +63,8 @@
 
 //locomotive / Test_train
 #include "locomotive/Test_Train/CR380AJ/CR380AJ.pnml"
-#include "locomotive/Test_Train/HEMU_430/HEMU_430.pnml"
+#include "locomotive/Test_Train/HEMU_430X/HEMU_430X.pnml"
+#include "locomotive/Test_Train/HSR_350X/HSR_350X.pnml"
 #include "locomotive/Test_Train/Shinkansen_923/Shinkansen_923.pnml"
 
 //locomotive / Virual_train
