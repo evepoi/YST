@@ -74,10 +74,18 @@ switch(FEAT_TRAINS, SELF, sw_N700_panto_wagon_for_8cars, (position_in_consist + 
     sw_N700_wagon_cargo_subtype;
 }
 
+// Pantograph - 6car
+switch(FEAT_TRAINS, SELF, sw_N700_panto_wagon_for_6cars, (position_in_consist + 1) % 6) {
+    2: sw_N700_panto_wagon_cargo_subtype;
+    5: sw_N700_panto_wagon_r_cargo_subtype;
+    sw_N700_wagon_cargo_subtype;
+}
+
 switch(FEAT_TRAINS, SELF, sw_Shinkansen_N700_wagon, num_vehs_in_consist) {
+    8:  sw_N700_panto_wagon_for_8cars;
     10:  sw_N700_panto_wagon_for_10cars;
     16:  sw_N700_panto_wagon_for_16cars;
-    sw_N700_panto_wagon_for_8cars;
+    sw_N700_panto_wagon_for_6cars;
 }
 
 switch(FEAT_TRAINS, SELF, sw_Shinkansen_N700_wagon_attach, vehicle_type_id) {
