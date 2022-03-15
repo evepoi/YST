@@ -6,19 +6,36 @@ switch(FEAT_TRAINS, SELF, sw_Shinkansen_500_engine, position_in_consist_from_end
     set_Shinkansen_500_engineH;
 }
 
-switch(FEAT_TRAINS, SELF, sw_Shinkansen_500_wagon_middle, (position_in_consist)) {
+switch(FEAT_TRAINS, SELF, sw_Shinkansen_500_wagon_cargo_subtype, (position_in_consist)) {
     1: set_Shinkansen_500_wagon_r;
     set_Shinkansen_500_wagon;
 }
 
-switch(FEAT_TRAINS, SELF, sw_Shinkansen_500_wagon_rear, [STORE_TEMP(4, 0x10F), var[0x61, 0, 0x0000FFFF, 0xC6]]){
-    Shinkansen_500: set_Shinkansen_500_wagon_end;
-    sw_Shinkansen_500_wagon_middle;
+// Pantograph - 16car
+switch(FEAT_TRAINS, SELF, sw_Shinkansen_500_panto_wagon_for_16cars, (position_in_consist + 1) % 16) {
+    5: set_Shinkansen_500_panto_wagon;
+    12: set_Shinkansen_500_panto_wagon_r;
+    sw_Shinkansen_500_wagon_cargo_subtype;
 }
 
-switch(FEAT_TRAINS, SELF, sw_Shinkansen_500_wagon, [STORE_TEMP(-4, 0x10F), var[0x61, 0, 0x0000FFFF, 0xC6]]) {
-    Shinkansen_500: set_Shinkansen_500_wagon_start;
-    sw_Shinkansen_500_wagon_rear;
+// Pantograph - 10car
+switch(FEAT_TRAINS, SELF, sw_Shinkansen_500_panto_wagon_for_10cars, (position_in_consist + 1) % 10) {
+    2: set_Shinkansen_500_panto_wagon;
+    9: set_Shinkansen_500_panto_wagon_r;
+    sw_Shinkansen_500_wagon_cargo_subtype;
+}
+
+// Pantograph - 8car
+switch(FEAT_TRAINS, SELF, sw_Shinkansen_500_panto_wagon_for_8cars, (position_in_consist + 1) % 8) {
+    2: set_Shinkansen_500_panto_wagon;
+    7: set_Shinkansen_500_panto_wagon_r;
+    sw_Shinkansen_500_wagon_cargo_subtype;
+}
+
+switch(FEAT_TRAINS, SELF, sw_Shinkansen_500_wagon, num_vehs_in_consist) {
+    10:  sw_Shinkansen_500_panto_wagon_for_10cars;
+    16:  sw_Shinkansen_500_panto_wagon_for_16cars;
+    sw_Shinkansen_500_panto_wagon_for_8cars;
 }
 
 switch(FEAT_TRAINS, SELF, sw_Shinkansen_500_wagon_attach, vehicle_type_id) {

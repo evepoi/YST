@@ -9,15 +9,19 @@ spriteset(set_Shinkansen_500_purchase, "src/locomotive/Real_Train/Japanese/Shink
 1. 신칸센 500계
 --------------------------------------------------------------------*/
 spriteset(set_Shinkansen_500H_purchase, "src/locomotive/Real_Train/Japanese/Shinkansen_500/Shinkansen_500.png"){
-    tmpl_purchase_for_dualhead(0, 108)
+    tmpl_purchase_for_dualhead(0, 81)
 }
 
 spriteset(set_Shinkansen_500_engineH, "src/locomotive/Real_Train/Japanese/Shinkansen_500/Shinkansen_500.png"){
     engine(80, 0)
 }
 
-spriteset(set_Shinkansen_500_wagon_start, "src/locomotive/Real_Train/Japanese/Shinkansen_500/Shinkansen_500.png"){
-    wagon_panto(80, 27)
+spriteset(set_Shinkansen_500_panto_wagon, "src/locomotive/Real_Train/Japanese/Shinkansen_500/Shinkansen_500.png"){
+    wagon_1F_F(80, 27)
+}
+
+spriteset(set_Shinkansen_500_panto_wagon_r, "src/locomotive/Real_Train/Japanese/Shinkansen_500/Shinkansen_500.png"){
+    wagon_1F_F_r(80, 27)
 }
 
 spriteset(set_Shinkansen_500_wagon, "src/locomotive/Real_Train/Japanese/Shinkansen_500/Shinkansen_500.png") {
@@ -28,12 +32,8 @@ spriteset(set_Shinkansen_500_wagon_r, "src/locomotive/Real_Train/Japanese/Shinka
     wagon_1F_r(80, 54)
 }
 
-spriteset(set_Shinkansen_500_wagon_end, "src/locomotive/Real_Train/Japanese/Shinkansen_500/Shinkansen_500.png"){
-    wagon_panto(80, 81)
-}
-
 spriteset(set_Shinkansen_500_engineT, "src/locomotive/Real_Train/Japanese/Shinkansen_500/Shinkansen_500.png"){
-    engine_r(80, 108)
+    engine_r(80, 81)
 }
 
 /*--------------------------------------------------------------------

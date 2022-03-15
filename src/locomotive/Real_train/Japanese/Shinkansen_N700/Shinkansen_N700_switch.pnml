@@ -24,10 +24,16 @@ switch(FEAT_TRAINS, SELF, sw_Shinkansen_N700_engine, position_in_consist_from_en
     sw_N700_engineH;
 }
 
-switch(FEAT_TRAINS, SELF, sw_N700_wagon_start, cargo_subtype) {
-    1: set_Sanyo_Kyushu_wagon_start; // 산요-큐슈
-    2: set_Nishikyushu_wagon_start; // 큐슈
-    set_Tokaido_Sanyo_wagon_start;
+switch(FEAT_TRAINS, SELF, sw_N700_panto_wagon_cargo_subtype, cargo_subtype) {
+    1: set_Sanyo_Kyushu_panto_wagon; // 산요-큐슈
+    2: set_Nishikyushu_panto_wagon; // 큐슈
+    set_Tokaido_Sanyo_panto_wagon;
+}
+
+switch(FEAT_TRAINS, SELF, sw_N700_panto_wagon_r_cargo_subtype, cargo_subtype) {
+    1: set_Sanyo_Kyushu_panto_wagon_r; // 산요-큐슈
+    2: set_Nishikyushu_panto_wagon_r; // 큐슈
+    set_Tokaido_Sanyo_panto_wagon_r;
 }
 
 switch(FEAT_TRAINS, SELF, sw_N700_wagon_front, cargo_subtype) {
@@ -42,25 +48,36 @@ switch(FEAT_TRAINS, SELF, sw_N700_wagon_tail, cargo_subtype) {
     set_Tokaido_Sanyo_wagon_r;
 }
 
-switch(FEAT_TRAINS, SELF, sw_N700_wagon_end, cargo_subtype) {
-    1: set_Sanyo_Kyushu_wagon_end; // 산요-큐슈
-    2: set_Nishikyushu_wagon_end; // 큐슈
-    set_Tokaido_Sanyo_wagon_end;
-}
-
-switch(FEAT_TRAINS, SELF, sw_Shinkansen_N700_wagon_middle, (position_in_consist)) {
+switch(FEAT_TRAINS, SELF, sw_N700_wagon_cargo_subtype, (position_in_consist)) {
     1: sw_N700_wagon_tail;
     sw_N700_wagon_front;
 }
 
-switch(FEAT_TRAINS, SELF, sw_Shinkansen_N700_wagon_rear, [STORE_TEMP(4, 0x10F), var[0x61, 0, 0x0000FFFF, 0xC6]]){
-    Shinkansen_N700: sw_N700_wagon_end;
-    sw_Shinkansen_N700_wagon_middle;
+// Pantograph - 16car
+switch(FEAT_TRAINS, SELF, sw_N700_panto_wagon_for_16cars, (position_in_consist + 1) % 16) {
+    5: sw_N700_panto_wagon_cargo_subtype;
+    12: sw_N700_panto_wagon_r_cargo_subtype;
+    sw_N700_wagon_cargo_subtype;
 }
 
-switch(FEAT_TRAINS, SELF, sw_Shinkansen_N700_wagon, [STORE_TEMP(-4, 0x10F), var[0x61, 0, 0x0000FFFF, 0xC6]]) {
-    Shinkansen_N700: sw_N700_wagon_start;
-    sw_Shinkansen_N700_wagon_rear;
+// Pantograph - 10car
+switch(FEAT_TRAINS, SELF, sw_N700_panto_wagon_for_10cars, (position_in_consist + 1) % 10) {
+    2: sw_N700_panto_wagon_cargo_subtype;
+    9: sw_N700_panto_wagon_r_cargo_subtype;
+    sw_N700_wagon_cargo_subtype;
+}
+
+// Pantograph - 8car
+switch(FEAT_TRAINS, SELF, sw_N700_panto_wagon_for_8cars, (position_in_consist + 1) % 8) {
+    2: sw_N700_panto_wagon_cargo_subtype;
+    7: sw_N700_panto_wagon_r_cargo_subtype;
+    sw_N700_wagon_cargo_subtype;
+}
+
+switch(FEAT_TRAINS, SELF, sw_Shinkansen_N700_wagon, num_vehs_in_consist) {
+    10:  sw_N700_panto_wagon_for_10cars;
+    16:  sw_N700_panto_wagon_for_16cars;
+    sw_N700_panto_wagon_for_8cars;
 }
 
 switch(FEAT_TRAINS, SELF, sw_Shinkansen_N700_wagon_attach, vehicle_type_id) {

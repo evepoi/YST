@@ -57,7 +57,7 @@ item(FEAT_TRAINS, Shinkansen_500, 3025){
         cost_factor:                    10;
         running_cost_factor:            150;
         can_attach_wagon:               sw_Shinkansen_500_wagon_attach;
-        start_stop:                     sw_YST_train_start_stop_6;
+        start_stop:                     sw_YST_train_start_stop_8;
         additional_text:                string(STR_REFIT_ADDITIONAL_Shinkansen_500);
         }
         
