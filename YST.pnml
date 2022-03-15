@@ -8,8 +8,8 @@ grf {
 	grfid: "YSN2";
 	name: string(STR_GRF_NAME_WITH_VER);
 	desc: string(STR_GRF_DESC);
-	version: 27;
-	min_compatible_version: 26;
+	version: 28;
+	min_compatible_version: 27;
     
 	// Parameters
     #include "src/parameter.pnml"

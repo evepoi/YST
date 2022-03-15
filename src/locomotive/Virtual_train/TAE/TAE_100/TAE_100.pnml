@@ -54,7 +54,7 @@ item(FEAT_TRAINS, TAE_100, 3033){
 	graphics {
         default:                        sw_TAE_100_engine;
         purchase:                       sw_TAE_100_purchase;
-        speed:                          sw_TAE_100_speed;
+        speed:                          Regular_Speed_Train;
         loading_speed:                  25;
         can_attach_wagon:               sw_TAE_100_wagon_attach;
         cargo_subtype_text:             sw_TAE_100_cargo_subtype_text;

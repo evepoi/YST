@@ -1,69 +1,100 @@
 /*--------------------------------------------------------------------
 Graphics
 --------------------------------------------------------------------*/
-spriteset(set_Shinkansen_N700_purchase, "src/locomotive/Real_Train/Japanese/Shinkansen_N700/Shinkansen_N700.png"){
+spriteset(set_Shinkansen_N700_purchase, "src/locomotive/Real_Train/Japanese/Shinkansen_N700/Tokaido_Sanyo.png"){
     tmpl_purchase(0, 0)
 }
 
 /*--------------------------------------------------------------------
-1 N700계
+1 N700계 도카이도-산요
 --------------------------------------------------------------------*/
-spriteset(set_Shinkansen_N700H_purchase, "src/locomotive/Real_Train/Japanese/Shinkansen_N700/Shinkansen_N700.png"){
+spriteset(set_Tokaido_SanyoH_purchase, "src/locomotive/Real_Train/Japanese/Shinkansen_N700/Tokaido_Sanyo.png"){
     tmpl_purchase_for_dualhead(0, 108)
 }
 
-spriteset(set_Shinkansen_N700_engineH, "src/locomotive/Real_Train/Japanese/Shinkansen_N700/Shinkansen_N700.png"){
+spriteset(set_Tokaido_Sanyo_engineH, "src/locomotive/Real_Train/Japanese/Shinkansen_N700/Tokaido_Sanyo.png"){
     engine(80, 0)
 }
 
-spriteset(set_Shinkansen_N700_wagon_start, "src/locomotive/Real_Train/Japanese/Shinkansen_N700/Shinkansen_N700.png"){
+spriteset(set_Tokaido_Sanyo_wagon_start, "src/locomotive/Real_Train/Japanese/Shinkansen_N700/Tokaido_Sanyo.png"){
     wagon_panto(80, 27)
 }
 
-spriteset(set_Shinkansen_N700_wagon, "src/locomotive/Real_Train/Japanese/Shinkansen_N700/Shinkansen_N700.png") {
+spriteset(set_Tokaido_Sanyo_wagon, "src/locomotive/Real_Train/Japanese/Shinkansen_N700/Tokaido_Sanyo.png") {
     wagon_1F(80, 54)
 }
 
-spriteset(set_Shinkansen_N700_wagon_r, "src/locomotive/Real_Train/Japanese/Shinkansen_N700/Shinkansen_N700.png") {
+spriteset(set_Tokaido_Sanyo_wagon_r, "src/locomotive/Real_Train/Japanese/Shinkansen_N700/Tokaido_Sanyo.png") {
     wagon_1F_r(80, 54)
 }
 
-spriteset(set_Shinkansen_N700_wagon_end, "src/locomotive/Real_Train/Japanese/Shinkansen_N700/Shinkansen_N700.png"){
+spriteset(set_Tokaido_Sanyo_wagon_end, "src/locomotive/Real_Train/Japanese/Shinkansen_N700/Tokaido_Sanyo.png"){
     wagon_panto(80, 81)
 }
 
-spriteset(set_Shinkansen_N700_engineT, "src/locomotive/Real_Train/Japanese/Shinkansen_N700/Shinkansen_N700.png"){
+spriteset(set_Tokaido_Sanyo_engineT, "src/locomotive/Real_Train/Japanese/Shinkansen_N700/Tokaido_Sanyo.png"){
     engine_r(80, 108)
 }
 
 /*--------------------------------------------------------------------
-2 N700 큐슈
+2 N700계 산요-큐슈
 --------------------------------------------------------------------*/
-spriteset(set_Shinkansen_N700_KyushuH_purchase, "src/locomotive/Real_Train/Japanese/Shinkansen_N700/Shinkansen_N700_Kyushu.png"){
+spriteset(set_Sanyo_KyushuH_purchase, "src/locomotive/Real_Train/Japanese/Shinkansen_N700/Sanyo_Kyushu.png"){
     tmpl_purchase_for_dualhead(0, 108)
 }
 
-spriteset(set_Shinkansen_N700_Kyushu_engineH, "src/locomotive/Real_Train/Japanese/Shinkansen_N700/Shinkansen_N700_Kyushu.png"){
+spriteset(set_Sanyo_Kyushu_engineH, "src/locomotive/Real_Train/Japanese/Shinkansen_N700/Sanyo_Kyushu.png"){
     engine(80, 0)
 }
 
-spriteset(set_Shinkansen_N700_Kyushu_wagon_start, "src/locomotive/Real_Train/Japanese/Shinkansen_N700/Shinkansen_N700_Kyushu.png"){
+spriteset(set_Sanyo_Kyushu_wagon_start, "src/locomotive/Real_Train/Japanese/Shinkansen_N700/Sanyo_Kyushu.png"){
     wagon_panto(80, 27)
 }
 
-spriteset(set_Shinkansen_N700_Kyushu_wagon, "src/locomotive/Real_Train/Japanese/Shinkansen_N700/Shinkansen_N700_Kyushu.png") {
+spriteset(set_Sanyo_Kyushu_wagon, "src/locomotive/Real_Train/Japanese/Shinkansen_N700/Sanyo_Kyushu.png") {
     wagon_1F(80, 54)
 }
 
-spriteset(set_Shinkansen_N700_Kyushu_wagon_r, "src/locomotive/Real_Train/Japanese/Shinkansen_N700/Shinkansen_N700_Kyushu.png") {
+spriteset(set_Sanyo_Kyushu_wagon_r, "src/locomotive/Real_Train/Japanese/Shinkansen_N700/Sanyo_Kyushu.png") {
     wagon_1F_r(80, 54)
 }
 
-spriteset(set_Shinkansen_N700_Kyushu_wagon_end, "src/locomotive/Real_Train/Japanese/Shinkansen_N700/Shinkansen_N700_Kyushu.png"){
+spriteset(set_Sanyo_Kyushu_wagon_end, "src/locomotive/Real_Train/Japanese/Shinkansen_N700/Sanyo_Kyushu.png"){
     wagon_panto(80, 81)
 }
 
-spriteset(set_Shinkansen_N700_Kyushu_engineT, "src/locomotive/Real_Train/Japanese/Shinkansen_N700/Shinkansen_N700_Kyushu.png"){
+spriteset(set_Sanyo_Kyushu_engineT, "src/locomotive/Real_Train/Japanese/Shinkansen_N700/Sanyo_Kyushu.png"){
+    engine_r(80, 108)
+}
+
+/*--------------------------------------------------------------------
+3 N700계 니시큐슈
+--------------------------------------------------------------------*/
+spriteset(set_NishikyushuH_purchase, "src/locomotive/Real_Train/Japanese/Shinkansen_N700/Nishikyushu.png"){
+    tmpl_purchase_for_dualhead(0, 108)
+}
+
+spriteset(set_Nishikyushu_engineH, "src/locomotive/Real_Train/Japanese/Shinkansen_N700/Nishikyushu.png"){
+    engine(80, 0)
+}
+
+spriteset(set_Nishikyushu_wagon_start, "src/locomotive/Real_Train/Japanese/Shinkansen_N700/Nishikyushu.png"){
+    wagon_panto(80, 27)
+}
+
+spriteset(set_Nishikyushu_wagon, "src/locomotive/Real_Train/Japanese/Shinkansen_N700/Nishikyushu.png") {
+    wagon_1F(80, 54)
+}
+
+spriteset(set_Nishikyushu_wagon_r, "src/locomotive/Real_Train/Japanese/Shinkansen_N700/Nishikyushu.png") {
+    wagon_1F_r(80, 54)
+}
+
+spriteset(set_Nishikyushu_wagon_end, "src/locomotive/Real_Train/Japanese/Shinkansen_N700/Nishikyushu.png"){
+    wagon_panto(80, 81)
+}
+
+spriteset(set_Nishikyushu_engineT, "src/locomotive/Real_Train/Japanese/Shinkansen_N700/Nishikyushu.png"){
     engine_r(80, 108)
 }
 

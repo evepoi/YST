@@ -52,6 +52,7 @@ item(FEAT_TRAINS, Shinkansen_500_Cool, 3026){
     graphics {
         default:                        sw_Shinkansen_500_Cool_engine;
         purchase:                       sw_Shinkansen_500_Cool_purchase;
+        speed:                          High_Speed_Train_430;
         loading_speed:                  25;
         cost_factor:                    10;
         running_cost_factor:            150;

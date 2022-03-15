@@ -66,36 +66,6 @@ spriteset(set_TAE_100_Yellow_wagon_end, "src/locomotive/Virtual_train/TAE/TAE_10
 spriteset(set_TAE_100_Yellow_engineT, "src/locomotive/Virtual_train/TAE/TAE_100/TAE_100_Yellow.png"){
     engine_r(80, 108)
 }
-/*--------------------------------------------------------------------
-3. TAE 200
---------------------------------------------------------------------*/
-spriteset(set_TAE_200DH_purchase, "src/locomotive/Virtual_train/TAE/TAE_200/TAE_200.png"){
-    tmpl_purchase_for_dualhead(0, 108)
-}
-
-spriteset(set_TAE_200D_engineH, "src/locomotive/Virtual_train/TAE/TAE_200/TAE_200.png"){
-    engine(80, 0)
-}
-
-spriteset(set_TAE_200D_wagon_start, "src/locomotive/Virtual_train/TAE/TAE_200/TAE_200.png"){
-    wagon_start(80, 27)
-}
-
-spriteset(set_TAE_200D_wagon, "src/locomotive/Virtual_train/TAE/TAE_200/TAE_200.png") {
-    wagon_1F(80, 54)
-}
-
-spriteset(set_TAE_200D_wagon_r, "src/locomotive/Virtual_train/TAE/TAE_200/TAE_200.png") {
-    wagon_1F(80, 54)
-}
-
-spriteset(set_TAE_200D_wagon_end, "src/locomotive/Virtual_train/TAE/TAE_200/TAE_200.png"){
-    wagon_start(80, 81)
-}
-
-spriteset(set_TAE_200D_engineT, "src/locomotive/Virtual_train/TAE/TAE_200/TAE_200.png"){
-    engine_r(80, 108)
-}
 
 /*--------------------------------------------------------------------
 구매정보

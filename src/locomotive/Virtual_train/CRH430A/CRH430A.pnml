@@ -52,6 +52,7 @@ item(FEAT_TRAINS, CRH430A, 3009){
     graphics {
         default:                        sw_CRH430A_engine;
         purchase:                       sw_CRH430A_purchase;
+        speed:                          High_Speed_Train_430;
         loading_speed:                  25;
         cost_factor:                    10;
         running_cost_factor:            150;

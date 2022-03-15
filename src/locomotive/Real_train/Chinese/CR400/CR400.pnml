@@ -52,6 +52,7 @@ item(FEAT_TRAINS, CR400, 3011){
     graphics {
         default:                        sw_CR400_engine;
         purchase:                       sw_CR400_purchase;
+        speed:                          High_Speed_Train_430;
         loading_speed:                  25;
         cost_factor:                    10;
         running_cost_factor:            150;

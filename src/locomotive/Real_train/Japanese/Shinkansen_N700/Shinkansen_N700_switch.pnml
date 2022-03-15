@@ -2,18 +2,21 @@
 스위치
 --------------------------------------------------------------------*/
 switch(FEAT_TRAINS, SELF, sw_N700_cargo_subtype_text, cargo_subtype) {
-    1: return string(STR_REFIT_LIVERY_Shinkansen_N700S_Kyushu);           
-    return string(STR_REFIT_LIVERY_Shinkansen_N700);
+    1: return string(STR_REFIT_LIVERY_N700_Sanyo_Kyushu);           
+    2: return string(STR_REFIT_LIVERY_N700S_Nishikyushu);           
+    return string(STR_REFIT_LIVERY_N700_Tokaido_Sanyo);
 }
 
 switch(FEAT_TRAINS, SELF, sw_N700_engineH, cargo_subtype) {
-    1: set_Shinkansen_N700_Kyushu_engineH; // 큐슈
-    set_Shinkansen_N700_engineH;
+    1: set_Sanyo_Kyushu_engineH; // 산요-큐슈
+    2: set_Nishikyushu_engineH; // 큐슈
+    set_Tokaido_Sanyo_engineH;
 }
 
 switch(FEAT_TRAINS, SELF, sw_N700_engineT, cargo_subtype) {
-    1: set_Shinkansen_N700_Kyushu_engineT; //큐슈
-    set_Shinkansen_N700_engineT;
+    1: set_Sanyo_Kyushu_engineT; // 산요-큐슈
+    2: set_Nishikyushu_engineT; //큐슈
+    set_Tokaido_Sanyo_engineT;
 }
 
 switch(FEAT_TRAINS, SELF, sw_Shinkansen_N700_engine, position_in_consist_from_end == 0 && num_vehs_in_consist > 1){
@@ -22,23 +25,27 @@ switch(FEAT_TRAINS, SELF, sw_Shinkansen_N700_engine, position_in_consist_from_en
 }
 
 switch(FEAT_TRAINS, SELF, sw_N700_wagon_start, cargo_subtype) {
-    1: set_Shinkansen_N700_Kyushu_wagon_start; //큐슈
-    set_Shinkansen_N700_wagon_start;
+    1: set_Sanyo_Kyushu_wagon_start; // 산요-큐슈
+    2: set_Nishikyushu_wagon_start; // 큐슈
+    set_Tokaido_Sanyo_wagon_start;
 }
 
 switch(FEAT_TRAINS, SELF, sw_N700_wagon_front, cargo_subtype) {
-    1: set_Shinkansen_N700_Kyushu_wagon; //큐슈
-    set_Shinkansen_N700_wagon;
+    1: set_Sanyo_Kyushu_wagon; // 산요-큐슈
+    2: set_Nishikyushu_wagon; // 큐슈
+    set_Tokaido_Sanyo_wagon;
 }
 
 switch(FEAT_TRAINS, SELF, sw_N700_wagon_tail, cargo_subtype) {
-    1: set_Shinkansen_N700_Kyushu_wagon_r; //큐슈
-    set_Shinkansen_N700_wagon_r;
+    1: set_Sanyo_Kyushu_wagon_r; // 산요-큐슈
+    2: set_Nishikyushu_wagon_r; // 큐슈
+    set_Tokaido_Sanyo_wagon_r;
 }
 
 switch(FEAT_TRAINS, SELF, sw_N700_wagon_end, cargo_subtype) {
-    1: set_Shinkansen_N700_Kyushu_wagon_end; //큐슈
-    set_Shinkansen_N700_wagon_end;
+    1: set_Sanyo_Kyushu_wagon_end; // 산요-큐슈
+    2: set_Nishikyushu_wagon_end; // 큐슈
+    set_Tokaido_Sanyo_wagon_end;
 }
 
 switch(FEAT_TRAINS, SELF, sw_Shinkansen_N700_wagon_middle, (position_in_consist)) {
@@ -57,7 +64,6 @@ switch(FEAT_TRAINS, SELF, sw_Shinkansen_N700_wagon, [STORE_TEMP(-4, 0x10F), var[
 }
 
 switch(FEAT_TRAINS, SELF, sw_Shinkansen_N700_wagon_attach, vehicle_type_id) {
-    Shinkansen_N700:        return CB_RESULT_ATTACH_ALLOW;
     YST_1F_Passenger_Car:   return CB_RESULT_ATTACH_ALLOW;
     return string(STR_ERROR_NO_ATTACH);
 }

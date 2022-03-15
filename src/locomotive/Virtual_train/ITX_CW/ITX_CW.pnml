@@ -52,6 +52,7 @@ item(FEAT_TRAINS, ITX_CW, 3055){
 	graphics {
         default:                        sw_ITX_CW_engine;
         purchase:                       sw_ITX_CW_purchase;
+        speed:                          Semi_High_SPEED_Train;
         loading_speed:                  25;
         cost_factor:                    10;
         running_cost_factor:            150;

@@ -3,19 +3,16 @@
 --------------------------------------------------------------------*/
 switch(FEAT_TRAINS, SELF, sw_TAE_100_cargo_subtype_text, cargo_subtype) {
     1: return string(STR_REFIT_LIVERY_TAE_100_Yellow);  // TAE 100 Yellow
-    2: return string(STR_REFIT_LIVERY_TAE_200D);         // TAE 200
     return string(STR_REFIT_LIVERY_TAE_100);
 }
 
 switch(FEAT_TRAINS, SELF, sw_TAE_100_engineH, cargo_subtype) {
     1: set_TAE_100_Yellow_engineH;  // TAE 100 Yellow
-    2: set_TAE_200D_engineH;         // TAE 200
     set_TAE_100_engineH;
 }
 
 switch(FEAT_TRAINS, SELF, sw_TAE_100_engineT, cargo_subtype) {
     1: set_TAE_100_Yellow_engineT;  // TAE 100 Yellow
-    2: set_TAE_200D_engineT;         // TAE 200
     set_TAE_100_engineT;
 }
 
@@ -26,32 +23,22 @@ switch(FEAT_TRAINS, SELF, sw_TAE_100_engine, position_in_consist_from_end == 0 &
 
 switch(FEAT_TRAINS, SELF, sw_TAE_100_wagon_start, cargo_subtype) {
     1: set_TAE_100_Yellow_wagon_start;  // TAE 100 Yellow
-    2: set_TAE_200D_wagon_start;         // TAE 200
     set_TAE_100_wagon_start;
 }
 
 switch(FEAT_TRAINS, SELF, sw_TAE_100_wagon_front, cargo_subtype) {
     1: set_TAE_100_Yellow_wagon;    // TAE 100 Yellow
-    2: set_TAE_200D_wagon;           // TAE 200
     set_TAE_100_wagon;
 }
 
 switch(FEAT_TRAINS, SELF, sw_TAE_100_wagon_tail, cargo_subtype) {
     1: set_TAE_100_Yellow_wagon_r;  // TAE 100 Yellow
-    2: set_TAE_200D_wagon_r;         // TAE 200
     set_TAE_100_wagon_r;
 }
 
 switch(FEAT_TRAINS, SELF, sw_TAE_100_wagon_end, cargo_subtype) {
     1: set_TAE_100_Yellow_wagon_end;    // TAE 100 Yellow
-    2: set_TAE_200D_wagon_end;           // TAE 200
     set_TAE_100_wagon_end;
-}
-
-switch(FEAT_TRAINS, SELF, sw_TAE_100_speed, cargo_subtype) {
-    1: return 180;
-    2: return 259;
-    return 180;
 }
 
 switch(FEAT_TRAINS, SELF, sw_TAE_100_wagon_middle, (position_in_consist)) {

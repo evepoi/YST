@@ -52,6 +52,7 @@ item(FEAT_TRAINS, AGV_Cool, 3002){
     graphics {
         default:                        sw_AGV_Cool_engine;
         purchase:                       sw_AGV_Cool_purchase;
+        speed:                          High_Speed_Train_430;
         loading_speed:                  25;
         cost_factor:                    10;
         running_cost_factor:            150;
