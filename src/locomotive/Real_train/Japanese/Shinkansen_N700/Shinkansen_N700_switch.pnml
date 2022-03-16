@@ -53,39 +53,33 @@ switch(FEAT_TRAINS, SELF, sw_N700_wagon_cargo_subtype, (position_in_consist)) {
     sw_N700_wagon_front;
 }
 
-// Pantograph - 16car
-switch(FEAT_TRAINS, SELF, sw_N700_panto_wagon_for_16cars, (position_in_consist + 1) % 16) {
-    5: sw_N700_panto_wagon_cargo_subtype;
-    12: sw_N700_panto_wagon_r_cargo_subtype;
+switch(FEAT_TRAINS, SELF, sw_N700_wagon_10car_rear, [STORE_TEMP(1, 0x10F), var[0x61, 0, 0x0000FFFF, 0xC6]]){
+    Shinkansen_N700: sw_N700_panto_wagon_r_cargo_subtype;
     sw_N700_wagon_cargo_subtype;
 }
 
-// Pantograph - 10car
-switch(FEAT_TRAINS, SELF, sw_N700_panto_wagon_for_10cars, (position_in_consist + 1) % 10) {
-    2: sw_N700_panto_wagon_cargo_subtype;
-    9: sw_N700_panto_wagon_r_cargo_subtype;
+switch(FEAT_TRAINS, SELF, sw_N700_10car_10car_wagon, [STORE_TEMP(-1, 0x10F), var[0x61, 0, 0x0000FFFF, 0xC6]]) {
+    Shinkansen_N700: sw_N700_panto_wagon_cargo_subtype;
+    sw_N700_wagon_10car_rear;
+}
+
+switch(FEAT_TRAINS, SELF, sw_N700_wagon_16car_rear, [STORE_TEMP(4, 0x10F), var[0x61, 0, 0x0000FFFF, 0xC6]]){
+    Shinkansen_N700: sw_N700_panto_wagon_r_cargo_subtype;
     sw_N700_wagon_cargo_subtype;
 }
 
-// Pantograph - 8car
-switch(FEAT_TRAINS, SELF, sw_N700_panto_wagon_for_8cars, (position_in_consist + 1) % 8) {
-    2: sw_N700_panto_wagon_cargo_subtype;
-    7: sw_N700_panto_wagon_r_cargo_subtype;
-    sw_N700_wagon_cargo_subtype;
-}
-
-// Pantograph - 6car
-switch(FEAT_TRAINS, SELF, sw_N700_panto_wagon_for_6cars, (position_in_consist + 1) % 6) {
-    2: sw_N700_panto_wagon_cargo_subtype;
-    5: sw_N700_panto_wagon_r_cargo_subtype;
-    sw_N700_wagon_cargo_subtype;
+switch(FEAT_TRAINS, SELF, sw_N700_wagon_16car_wagon, [STORE_TEMP(-4, 0x10F), var[0x61, 0, 0x0000FFFF, 0xC6]]) {
+    Shinkansen_N700: sw_N700_panto_wagon_cargo_subtype;
+    sw_N700_wagon_16car_rear;
 }
 
 switch(FEAT_TRAINS, SELF, sw_Shinkansen_N700_wagon, num_vehs_in_consist) {
-    8:  sw_N700_panto_wagon_for_8cars;
-    10:  sw_N700_panto_wagon_for_10cars;
-    16:  sw_N700_panto_wagon_for_16cars;
-    sw_N700_panto_wagon_for_6cars;
+    6: sw_N700_10car_10car_wagon;
+    7: sw_N700_10car_10car_wagon;
+    8: sw_N700_10car_10car_wagon;
+    9: sw_N700_10car_10car_wagon;
+    10: sw_N700_10car_10car_wagon;
+    sw_N700_wagon_16car_wagon;
 }
 
 switch(FEAT_TRAINS, SELF, sw_Shinkansen_N700_wagon_attach, vehicle_type_id) {

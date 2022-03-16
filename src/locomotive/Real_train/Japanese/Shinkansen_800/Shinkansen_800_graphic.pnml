@@ -6,15 +6,19 @@ spriteset(set_Shinkansen_800_purchase, "src/locomotive/Real_Train/Japanese/Shink
 }
 
 spriteset(set_Shinkansen_800H_purchase, "src/locomotive/Real_Train/Japanese/Shinkansen_800/Shinkansen_800.png"){
-    tmpl_purchase_for_dualhead(0, 108)
+    tmpl_purchase_for_dualhead(0, 81)
 }
 
 spriteset(set_Shinkansen_800_engineH, "src/locomotive/Real_Train/Japanese/Shinkansen_800/Shinkansen_800.png"){
     engine(80, 0)
 }
 
-spriteset(set_Shinkansen_800_wagon_start, "src/locomotive/Real_Train/Japanese/Shinkansen_800/Shinkansen_800.png"){
-    wagon_panto(80, 27)
+spriteset(set_Shinkansen_800_panto_wagon, "src/locomotive/Real_Train/Japanese/Shinkansen_800/Shinkansen_800.png"){
+    wagon_1F_F(80, 27)
+}
+
+spriteset(set_Shinkansen_800_panto_wagon_r, "src/locomotive/Real_Train/Japanese/Shinkansen_800/Shinkansen_800.png"){
+    wagon_1F_F_r(80, 27)
 }
 
 spriteset(set_Shinkansen_800_wagon, "src/locomotive/Real_Train/Japanese/Shinkansen_800/Shinkansen_800.png") {
@@ -25,12 +29,8 @@ spriteset(set_Shinkansen_800_wagon_r, "src/locomotive/Real_Train/Japanese/Shinka
     wagon_1F_r(80, 54)
 }
 
-spriteset(set_Shinkansen_800_wagon_end, "src/locomotive/Real_Train/Japanese/Shinkansen_800/Shinkansen_800.png"){
-    wagon_panto(80, 81)
-}
-
 spriteset(set_Shinkansen_800_engineT, "src/locomotive/Real_Train/Japanese/Shinkansen_800/Shinkansen_800.png"){
-    engine_r(80, 108)
+    engine_r(80, 81)
 }
 
 /*--------------------------------------------------------------------

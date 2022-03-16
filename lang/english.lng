@@ -47,9 +47,9 @@ STR_Shinkansen_500_Cool_NAME                        :[YST] Shinkansen 500 Cool
 STR_Shinkansen_500_SP_NAME                          :[YST] Shinkansen 500 SP
 STR_Shinkansen_800_NAME                             :[YST] Shinkansen 800
 STR_Shinkansen_923_NAME                             :[YST] Shinkansen 923
-STR_Shinkansen_E5_NAME                              :[YST] Shinkansen E5
+STR_Shinkansen_E5_H5_NAME                           :[YST] Shinkansen E5·H5
 STR_Shinkansen_E6_NAME                              :[YST] Shinkansen E6
-STR_Shinkansen_E7_NAME                              :[YST] Shinkansen E7
+STR_Shinkansen_E7_W7_NAME                           :[YST] Shinkansen E7·W7
 STR_Shinkansen_E8_NAME                              :[YST] Shinkansen E8
 STR_Shinkansen_N700_NAME                            :[YST] Shinkansen N700
 STR_TAE_100_NAME                                    :[YST] TAE 100
@@ -148,7 +148,7 @@ STR_REFIT_ADDITIONAL_Eurostar_E300                  :{BLACK}Existence of trains 
 STR_REFIT_ADDITIONAL_Eurostar_E320                  :{BLACK}Existence of trains : {BLUE}Real train {}{BLACK}Changing model/livery: {GREEN}Available {}{BLACK}Combined train: {RED}Unavailable
 STR_REFIT_ADDITIONAL_EMU150                         :{BLACK}Existence of trains : {PURPLE}Plan Train {}{BLACK}Changing model/livery: {GREEN}Available {}{BLACK}Combined train: {GREEN}EMU-150, EMU-260, EUM-320
 STR_REFIT_ADDITIONAL_EMU260                         :{BLACK}Existence of trains : {PURPLE}Plan Train {}{BLACK}Changing model/livery: {RED}Unavailable {}{BLACK}Combined train: {GREEN}EMU-150, EMU-260, EUM-320
-STR_REFIT_ADDITIONAL_EMU320                         :{BLACK}Existence of trains : {PURPLE}Plan Train {}{BLACK}Changing model/livery: {RED}Unavailable {}{BLACK}Combined train: {GREEN}EMU-150, EMU-260, EUM-320
+STR_REFIT_ADDITIONAL_EMU320                         :{BLACK}Existence of trains : {PURPLE}Plan Train {}{BLACK}Changing model/livery: {GREEN}Available {}{BLACK}Combined train: {GREEN}EMU-150, EMU-260, EUM-320
 STR_REFIT_ADDITIONAL_Glory600                       :{BLACK}Existence of trains : {RED}Virtual Train {}{BLACK}Changing model/livery: {GREEN}Available {}{BLACK}Combined train: {GREEN}Glory-600
 STR_REFIT_ADDITIONAL_GT26CW                         :{BLACK}Existence of trains : {BLUE}Real train {}{BLACK}Changing model/livery: {GREEN}Available {}{BLACK}Combined train: {GREEN}BB15048, GT26CW, NJ2
 STR_REFIT_ADDITIONAL_GTX                            :{BLACK}Existence of trains : {PURPLE}Plan Train {}{BLACK}Changing model/livery: {RED}Unavailable {}{BLACK}Combined train: {GREEN}GTX
@@ -173,7 +173,7 @@ STR_REFIT_ADDITIONAL_Shinkansen_500_Cool            :{BLACK}Existence of trains 
 STR_REFIT_ADDITIONAL_Shinkansen_500_SP              :{BLACK}Existence of trains : {RED}Virtual Train {}{BLACK}Changing model/livery: {GREEN}available {}{BLACK}Combined train: {RED}Unavailable
 STR_REFIT_ADDITIONAL_Shinkansen_800                 :{BLACK}Existence of trains : {BLUE}Real train {}{BLACK}Changing model/livery: {RED}Unavailable {}{BLACK}Combined train: {RED}Unavailable
 STR_REFIT_ADDITIONAL_Shinkansen_923                 :{BLACK}Existence of trains : {YELLOW}Test Train {}{BLACK}Changing model/livery: {RED}Unavailable {}{BLACK}Combined train: {RED}Unavailable
-STR_REFIT_ADDITIONAL_Shinkansen_E5                  :{BLACK}Existence of trains : {BLUE}Real train {}{BLACK}Changing model/livery: {GREEN}Available {}{BLACK}Combined train: {GREEN}E6, E8
+STR_REFIT_ADDITIONAL_Shinkansen_E5_H5               :{BLACK}Existence of trains : {BLUE}Real train {}{BLACK}Changing model/livery: {GREEN}Available {}{BLACK}Combined train: {GREEN}E6, E8
 STR_REFIT_ADDITIONAL_Shinkansen_E6                  :{BLACK}Existence of trains : {BLUE}Real train {}{BLACK}Changing model/livery: {RED}Unavailable {}{BLACK}Combined train: {GREEN}E5, H5
 STR_REFIT_ADDITIONAL_Shinkansen_E7                  :{BLACK}Existence of trains : {BLUE}Real train {}{BLACK}Changing model/livery: {RED}Unavailable {}{BLACK}Combined train: {RED}Unavailable
 STR_REFIT_ADDITIONAL_Shinkansen_E8                  :{BLACK}Existence of trains : {PURPLE}Plan Train {}{BLACK}Changing model/livery: {RED}Unavailable {}{BLACK}Combined train: {GREEN}E5, H5
@@ -221,6 +221,8 @@ STR_REFIT_LIVERY_Eurostar_E300_Old                  :(Eurostar Old Color)
 STR_REFIT_LIVERY_Eurostar_E300_New                  :(Eurostar New Color)
 STR_REFIT_LIVERY_EMU150R                            :(EMU-150 Red Color)
 STR_REFIT_LIVERY_EMU150G                            :(EMU-150 Green Color)
+STR_REFIT_LIVERY_EMU320                             :(EMU-320)
+STR_REFIT_LIVERY_EMU320_SRT                         :(EMU-320 SRT)
 STR_REFIT_LIVERY_Glory600A                          :(Glory 600 A Color)
 STR_REFIT_LIVERY_Glory600B                          :(Glory 600 B Color)
 STR_REFIT_LIVERY_Glory600C                          :(Glory 600 C Color)

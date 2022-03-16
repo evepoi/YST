@@ -44,9 +44,9 @@ sort(FEAT_TRAINS, [
     Shinkansen_800,            //3028
     Shinkansen_N700,           //3032
     Shinkansen_923,            //3012
-    Shinkansen_E5,             //3029
+    Shinkansen_E5_H5,          //3029
     Shinkansen_E6,             //3030
-    Shinkansen_E7,             //3031
+    Shinkansen_E7_W7,          //3031
     Shinkansen_E8,             //3058
     TAE_100,                   //3033
     TAE_200,                   //3060

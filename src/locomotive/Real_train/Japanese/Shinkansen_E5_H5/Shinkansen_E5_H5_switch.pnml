@@ -1,0 +1,64 @@
+/*--------------------------------------------------------------------
+스위치
+--------------------------------------------------------------------*/
+switch(FEAT_TRAINS, SELF, sw_Shinkansen_E5_H5_cargo_subtype_text, cargo_subtype) {
+    1: return string(STR_REFIT_LIVERY_Shinkansen_H5);   // H5
+    return string(STR_REFIT_LIVERY_Shinkansen_E5);
+}
+
+switch(FEAT_TRAINS, SELF, sw_Shinkansen_E5_H5_engineH, cargo_subtype) {
+    1: set_Shinkansen_H5_engineH;   // H5
+    set_Shinkansen_E5_engineH;
+}
+
+switch(FEAT_TRAINS, SELF, sw_Shinkansen_E5_H5_engineT, cargo_subtype) {
+    1: set_Shinkansen_H5_engineT;   // H5
+    set_Shinkansen_E5_engineT;
+}
+
+switch(FEAT_TRAINS, SELF, sw_Shinkansen_E5_H5_engine, position_in_consist_from_end == 0 && num_vehs_in_consist > 1){
+    1: sw_Shinkansen_E5_H5_engineT;
+    sw_Shinkansen_E5_H5_engineH;
+}
+
+switch(FEAT_TRAINS, SELF, sw_Shinkansen_E5_H5_wagon_start, cargo_subtype) {
+    1: set_Shinkansen_H5_wagon_start;   // H5
+    set_Shinkansen_E5_wagon_start;
+}
+
+switch(FEAT_TRAINS, SELF, sw_Shinkansen_E5_H5_wagon_front, cargo_subtype) {
+    1: set_Shinkansen_H5_wagon;   // H5
+    set_Shinkansen_E5_wagon;
+}
+
+switch(FEAT_TRAINS, SELF, sw_Shinkansen_E5_H5_wagon_tail, cargo_subtype) {
+    1: set_Shinkansen_H5_wagon_r;   // H5
+    set_Shinkansen_E5_wagon_r;
+}
+
+switch(FEAT_TRAINS, SELF, sw_Shinkansen_E5_H5_wagon_end, cargo_subtype) {
+    1: set_Shinkansen_H5_wagon_end;   // H5
+    set_Shinkansen_E5_wagon_end;
+}
+
+switch(FEAT_TRAINS, SELF, sw_Shinkansen_E5_H5_wagon_middle, (position_in_consist)) {
+    1: sw_Shinkansen_E5_H5_wagon_tail;
+    sw_Shinkansen_E5_H5_wagon_front;
+}
+
+switch(FEAT_TRAINS, SELF, sw_Shinkansen_E5_H5_wagon_rear, [STORE_TEMP(1, 0x10F), var[0x61, 0, 0x0000FFFF, 0xC6]]){
+    Shinkansen_E5_H5: sw_Shinkansen_E5_H5_wagon_end;
+    sw_Shinkansen_E5_H5_wagon_middle;
+}
+
+switch(FEAT_TRAINS, SELF, sw_Shinkansen_E5_H5_wagon, [STORE_TEMP(-1, 0x10F), var[0x61, 0, 0x0000FFFF, 0xC6]]) {
+    Shinkansen_E5_H5: sw_Shinkansen_E5_H5_wagon_start;
+    sw_Shinkansen_E5_H5_wagon_rear;
+}
+
+switch(FEAT_TRAINS, SELF, sw_Shinkansen_E5_H5_wagon_attach, vehicle_type_id) {
+    Shinkansen_E6:          return CB_RESULT_ATTACH_ALLOW;
+    Shinkansen_E8:          return CB_RESULT_ATTACH_ALLOW;
+    YST_1F_Passenger_Car:   return CB_RESULT_ATTACH_ALLOW;
+    return string(STR_ERROR_NO_ATTACH);
+}

@@ -50,9 +50,9 @@
 //locomotive / Real_Train / Japanese
 #include "locomotive/Real_Train/Japanese/Shinkansen_500/Shinkansen_500.pnml"
 #include "locomotive/Real_Train/Japanese/Shinkansen_800/Shinkansen_800.pnml"
-#include "locomotive/Real_Train/Japanese/Shinkansen_E5/Shinkansen_E5.pnml"
+#include "locomotive/Real_Train/Japanese/Shinkansen_E5_H5/Shinkansen_E5_H5.pnml"
 #include "locomotive/Real_Train/Japanese/Shinkansen_E6/Shinkansen_E6.pnml"
-#include "locomotive/Real_Train/Japanese/Shinkansen_E7/Shinkansen_E7.pnml"
+#include "locomotive/Real_Train/Japanese/Shinkansen_E7_W7/Shinkansen_E7_W7.pnml"
 #include "locomotive/Real_Train/Japanese/Shinkansen_N700/Shinkansen_N700.pnml"
 
 //locomotive / Real_Train / Korea

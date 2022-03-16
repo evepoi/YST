@@ -24,13 +24,7 @@ switch(FEAT_TRAINS, SELF, sw_KTX_SC2_engine, position_in_consist_from_end == 0 &
     sw_KTX_SC2_engineH;
 }
 
-switch(FEAT_TRAINS, SELF, sw_KTX_SC2_wagon_start, cargo_subtype) {
-    1: set_KTX_SC2_G_wagon_start;    // 녹색
-    2: set_KTX_SC2_W_wagon_start;    // 흰색
-    set_KTX_SC2_B_wagon_start;
-}
-
-switch(FEAT_TRAINS, SELF, sw_KTX_SC2_wagon_special, cargo_subtype) {
+switch(FEAT_TRAINS, SELF, sw_KTX_SC2_wagon_special_cargo_subtype, cargo_subtype) {
     1: set_KTX_SC2_G_wagon_special;    // 녹색
     2: set_KTX_SC2_W_wagon_special;    // 흰색
     set_KTX_SC2_B_wagon_special;
@@ -48,30 +42,15 @@ switch(FEAT_TRAINS, SELF, sw_KTX_SC2_wagon_tail, cargo_subtype) {
     set_KTX_SC2_B_wagon_r;
 }
 
-switch(FEAT_TRAINS, SELF, sw_KTX_SC2_wagon_end, cargo_subtype) {
-    1: set_KTX_SC2_G_wagon_end;    // 녹색
-    2: set_KTX_SC2_W_wagon_end;    // 흰색
-    set_KTX_SC2_B_wagon_end;
-}
-
-switch(FEAT_TRAINS, SELF, sw_KTX_SC2_wagon_middle, (position_in_consist)) {
+switch(FEAT_TRAINS, SELF, sw_KTX_SC2_wagon_cargo_subtype, (position_in_consist)) {
     1: sw_KTX_SC2_wagon_tail;
     sw_KTX_SC2_wagon_front;
 }
 
-switch(FEAT_TRAINS, SELF, sw_KTX_SC2_wagon_special_rear, [STORE_TEMP(2, 0x10F), var[0x61, 0, 0x0000FFFF, 0xC6]]){
-    KTX_SC2: sw_KTX_SC2_wagon_special;
-    sw_KTX_SC2_wagon_middle;
-}
-
-switch(FEAT_TRAINS, SELF, sw_KTX_SC2_wagon_rear, [STORE_TEMP(1, 0x10F), var[0x61, 0, 0x0000FFFF, 0xC6]]){
-    KTX_SC2: sw_KTX_SC2_wagon_end;
-    sw_KTX_SC2_wagon_special_rear;
-}
-
-switch(FEAT_TRAINS, SELF, sw_KTX_SC2_wagon, [STORE_TEMP(-1, 0x10F), var[0x61, 0, 0x0000FFFF, 0xC6]]) {
-    KTX_SC2: sw_KTX_SC2_wagon_start;
-    sw_KTX_SC2_wagon_rear;
+// Pantograph - 10 cars
+switch(FEAT_TRAINS, SELF, sw_KTX_SC2_wagon, (position_in_consist + 1) % 10) {
+    4: sw_KTX_SC2_wagon_special_cargo_subtype;
+    sw_KTX_SC2_wagon_cargo_subtype;
 }
 
 switch(FEAT_TRAINS, SELF, sw_KTX_SC2_wagon_attach, vehicle_type_id) {
