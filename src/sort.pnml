@@ -42,12 +42,12 @@ sort(FEAT_TRAINS, [
     Shinkansen_500_Cool,       //3026
     Shinkansen_500_SP,         //3027
     Shinkansen_800,            //3028
+    Shinkansen_N700,           //3032
     Shinkansen_923,            //3012
     Shinkansen_E5,             //3029
     Shinkansen_E6,             //3030
     Shinkansen_E7,             //3031
     Shinkansen_E8,             //3058
-    Shinkansen_N700,           //3032
     TAE_100,                   //3033
     TAE_200,                   //3060
     TGV_Duplex,                //3035

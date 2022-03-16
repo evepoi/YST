@@ -14,7 +14,7 @@ item(FEAT_TRAINS, Shinkansen_800, 3028){
     property {
         name:                           string(STR_Shinkansen_800_NAME);
         climates_available:             ALL_CLIMATES;
-        introduction_date:              date(1996, 1, 1);
+        introduction_date:              date(2004, 1, 1);
         track_type:                     ELRL;
         engine_class:                   ENGINE_CLASS_ELECTRIC;
         sprite_id:                      SPRITE_ID_NEW_TRAIN;
