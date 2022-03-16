@@ -38,12 +38,12 @@ YST는 다소 까다로운 템플릿을 보유하고 보다 편한 코딩방식�
 	</thead>
 	<tbody>
 		<tr>
-			<td colspan="4">3059 : VHST-600X</td>
+			<td colspan="4">3061 : HSR-350X</td>
 		</tr>
 		<tr>
-			<td>고속열차</td><td><img src="docs/img/YST/3059.png" alt="3059"></td><td>2025</td><td>600km/h</td>
+			<td>고속열차</td><td><img src="docs/img/YST/3061.png" alt="3061"></td><td>2002</td><td>331km/h</td>
 		</tr>
-		<!-- // 3059-->
+		<!-- // 3061-->
 </table>
 </details>
 
@@ -69,7 +69,7 @@ YST는 다소 까다로운 템플릿을 보유하고 보다 편한 코딩방식�
 			<td colspan="2">2002 : 2층 공통객차</td>
 		</tr>
 		<tr>
-			<td><img src="docs/img/YST/2002.png" alt="2002"></td><td>2020</td>
+			<td><img src="docs/img/YST/2002.png" alt="2002"></td><td>1994</td>
 		</tr>
 		<!-- // 2002-->
 		<tr>
@@ -160,442 +160,8 @@ YST는 다소 까다로운 템플릿을 보유하고 보다 편한 코딩방식�
 </table>
 </details>
 
-### 일반열차, 기관차, 고속열차
+### 지하철 (120km/h)
 <details markdown="3">
-<summary>내용보기</summary>
-<table>
-    <thead>
-        <tr>
-            <th>열차</th><th>도입</th><th>열차속도</th>
-        </tr>
-    </thead>
-	<tbody>
-		<tr>
-			<td colspan="3">3001 : AGV</td>
-		</tr>
-		<tr>
-			<td><img src="docs/img/YST/3001.png" alt="3001"></td><td>2012</td><td>362km/h</td>
-		</tr>
-		<!-- // 3001-->
-		<tr>
-			<td colspan="3">3002 : AGV Cool</td>
-		</tr>
-		<tr>
-			<td><img src="docs/img/YST/3002.png" alt="3002"></td><td>2020</td><td>430km/h</td>
-		</tr>
-		<!-- // 3002-->
-		<tr>
-			<td colspan="3">3003 : AVE</td>
-		</tr>
-		<tr>
-			<td><img src="docs/img/YST/3003.png" alt="3003"></td><td>2012</td><td>362km/h</td>
-		</tr>
-		<!-- // 3003-->
-		<tr>
-			<td colspan="3">3004 : AVE Velaro</td>
-		</tr>
-		<tr>
-			<td><img src="docs/img/YST/3004.png" alt="3004"></td><td>2006</td><td>362km/h</td>
-		</tr>
-		<!-- // 3004-->
-		<tr>
-			<td colspan="3">3005 : BB15048</td>
-		</tr>
-		<tr>
-			<td><img src="docs/img/YST/3005.png" alt="3005"></td><td>1971</td><td>181km/h</td>
-		</tr>
-		<!-- // 3005-->
-		<tr>
-			<td colspan="3">3006 : CRH1</td>
-		</tr>
-		<tr>
-			<td><img src="docs/img/YST/3006.png" alt="3006"></td><td>2007</td><td>260km/h</td>
-		</tr>
-		<!-- // 3006-->
-		<tr>
-			<td colspan="3">3007 : CRH3</td>
-		</tr>
-		<tr>
-			<td><img src="docs/img/YST/3007.png" alt="3007"></td><td>2017</td><td>362km/h</td>
-		</tr>
-		<!-- // 3007-->
-		<tr>
-			<td colspan="3">3008 : CRH362A</td>
-		</tr>
-		<tr>
-			<td><img src="docs/img/YST/3008.png" alt="3008"></td><td>2017</td><td>362km/h</td>
-		</tr>
-		<!-- // 3008-->
-		<tr>
-			<td colspan="3">3009 : CRH430A</td>
-		</tr>
-		<tr>
-			<td><img src="docs/img/YST/3009.png" alt="3009"></td><td>2017</td><td>430km/h</td>
-		</tr>
-		<!-- // 3009-->
-		<tr>
-			<td colspan="3">3010 : CRH600A-Test</td>
-		</tr>
-		<tr>
-			<td><img src="docs/img/YST/3010.png" alt="3010"></td><td>2017</td><td>600km/h</td>
-		</tr>
-		<!-- // 3010-->
-		<tr>
-			<td colspan="3">3011 : CRV600</td>
-		</tr>
-		<tr>
-			<td><img src="docs/img/YST/3011.png" alt="3011"></td><td>2012</td><td>600km/h</td>
-		</tr>
-		<!-- // 3011-->
-		<tr>
-			<td colspan="3">3012 : Dr. Yellow</td>
-		</tr>
-		<tr>
-			<td><img src="docs/img/YST/3012.png" alt="3012"></td><td>2007</td><td>600km/h</td>
-		</tr>
-		<!-- // 3012-->
-		<tr>
-			<td colspan="3">3013 : E300</td>
-		</tr>
-		<tr>
-			<td><img src="docs/img/YST/3013.png" alt="3013"></td><td>1992</td><td>362km/h</td>
-		</tr>
-		<!-- // 3013-->
-		<tr>
-			<td colspan="3">3014 : E320</td>
-		</tr>
-		<tr>
-			<td><img src="docs/img/YST/3014.png" alt="3014"></td><td>2014</td><td>362km/h</td>
-		</tr>
-		<!-- // 3014-->
-		<tr>
-			<td colspan="3">3015 : EMU260</td>
-		</tr>
-		<tr>
-			<td><img src="docs/img/YST/3015.png" alt="3015"></td><td>2020</td><td>260km/h</td>
-		</tr>
-		<!-- // 3015-->
-		<tr>
-			<td colspan="3">3016 : Glory 600</td>
-		</tr>
-		<tr>
-			<td><img src="docs/img/YST/3016.png" alt="3016"></td><td>2020</td><td>600km/h</td>
-		</tr>
-		<!-- // 3016-->
-		<tr>
-			<td colspan="3">3017 : GT26CW</td>
-		</tr>
-		<tr>
-			<td><img src="docs/img/YST/3017.png" alt="3017"></td><td>1967</td><td>181km/h</td>
-		</tr>
-		<!-- // 3017-->
-		<tr>
-			<td colspan="3">3018 : HEMU-430</td>
-		</tr>
-		<tr>
-			<td><img src="docs/img/YST/3018.png" alt="3018"></td><td>2007</td><td>430km/h</td>
-		</tr>
-		<!-- // 3018-->
-		<tr>
-			<td colspan="3">3019 : HMX</td>
-		</tr>
-		<tr>
-			<td><img src="docs/img/YST/3019.png" alt="3019"></td><td>2020</td><td>260km/h</td>
-		</tr>
-		<!-- // 3019-->
-		<tr>
-			<td colspan="3">3020 : ICE-SP</td>
-		</tr>
-		<tr>
-			<td><img src="docs/img/YST/3020.png" alt="3020"></td><td>2020</td><td>362km/h</td>
-		</tr>
-		<!-- // 3020-->
-		<tr>
-			<td colspan="3">3021 : ICE3</td>
-		</tr>
-		<tr>
-			<td><img src="docs/img/YST/3021.png" alt="3021"></td><td>1997</td><td>362km/h</td>
-		</tr>
-		<!-- // 3021-->
-		<tr>
-			<td colspan="3">3022 : KTX-N</td>
-		</tr>
-		<tr>
-			<td><img src="docs/img/YST/3022.png" alt="3022"></td><td>2020</td><td>362km/h</td>
-		</tr>
-		<!-- // 3022-->
-		<tr>
-			<td colspan="3">3023 : NJ2</td>
-		</tr>
-		<tr>
-			<td><img src="docs/img/YST/3023.png" alt="3023"></td><td>2006</td><td>181km/h</td>
-		</tr>
-		<!-- // 3023-->
-		<tr>
-			<td colspan="3">3024 : NKX</td>
-		</tr>
-		<tr>
-			<td><img src="docs/img/YST/3024.png" alt="3024"></td><td>2020</td><td>181km/h</td>
-		</tr>
-		<!-- // 3024-->
-		<tr>
-			<td colspan="3">3025 : 신칸센 500계</td>
-		</tr>
-		<tr>
-			<td><img src="docs/img/YST/3025.png" alt="3025"></td><td>1996</td><td>362km/h</td>
-		</tr>
-		<!-- // 3025-->
-		<tr>
-			<td colspan="3">3026 : 신칸센 500계 Cool</td>
-		</tr>
-		<tr>
-			<td><img src="docs/img/YST/3026.png" alt="3026"></td><td>2020</td><td>430km/h</td>
-		</tr>
-		<!-- // 3026-->
-		<tr>
-			<td colspan="3">3027 : 신칸센 500계 SP</td>
-		</tr>
-		<tr>
-			<td><img src="docs/img/YST/3027.png" alt="3027"></td><td>2020</td><td>362km/h</td>
-		</tr>
-		<!-- // 3027-->
-		<tr>
-			<td colspan="3">3028 : 신칸센 800계</td>
-		</tr>
-		<tr>
-			<td><img src="docs/img/YST/3028.png" alt="3028"></td><td>1996</td><td>260km/h</td>
-		</tr>
-		<!-- // 3028-->
-		<tr>
-			<td colspan="3">3029 : 신칸센 E5</td>
-		</tr>
-		<tr>
-			<td><img src="docs/img/YST/3029.png" alt="3029"></td><td>2011</td><td>362km/h</td>
-		</tr>
-		<!-- // 3029-->
-		<tr>
-			<td colspan="3">3030 : 신칸센 E6</td>
-		</tr>
-		<tr>
-			<td><img src="docs/img/YST/3030.png" alt="3030"></td><td>2011</td><td>362km/h</td>
-		</tr>
-		<!-- // 3030-->
-		<tr>
-			<td colspan="3">3031 : 신칸센 E7</td>
-		</tr>
-		<tr>
-			<td><img src="docs/img/YST/3031.png" alt="3031"></td><td>2014</td><td>362km/h</td>
-		</tr>
-		<!-- // 3031-->
-		<tr>
-			<td colspan="3">3032 : 신칸센 N700</td>
-		</tr>
-		<tr>
-			<td><img src="docs/img/YST/3032.png" alt="3032"></td><td>2007</td><td>362km/h</td>
-		</tr>
-		<!-- // 3032-->
-		<tr>
-			<td colspan="3">3033 : TAE</td>
-		</tr>
-		<tr>
-			<td><img src="docs/img/YST/3033_181.png" alt="3033-181km/h"></td><td>2020</td><td>181km/h</td>
-		</tr>
-		<!-- // 3033-->
-		<tr>
-			<td colspan="3">3033 : TAE</td>
-		</tr>
-		<tr>
-			<td><img src="docs/img/YST/3033_260.png" alt="3033-260km/h"></td><td>2020</td><td>260km/h</td>
-		</tr>
-		<!-- // 3033-->
-		<tr>
-			<td colspan="3">3034 : Talgo250</td>
-		</tr>
-		<tr>
-			<td><img src="docs/img/YST/3034.png" alt="3034"></td><td>2012</td><td>260km/h</td>
-		</tr>
-		<!-- // 3034-->
-		<tr>
-			<td colspan="3">3035 : TGV Duplex</td>
-		</tr>
-		<tr>
-			<td><img src="docs/img/YST/3035.png" alt="3035"></td><td>1994</td><td>362km/h</td>
-		</tr>
-		<!-- // 3035-->
-		<tr>
-			<td colspan="3">3036 : TGV Old</td>
-		</tr>
-		<tr>
-			<td><img src="docs/img/YST/3036.png" alt="3036"></td><td>1978</td><td>362km/h</td>
-		</tr>
-		<!-- // 3036-->
-		<tr>
-			<td colspan="3">3037 : TGV Old Duplex</td>
-		</tr>
-		<tr>
-			<td><img src="docs/img/YST/3037.png" alt="3037"></td><td>1994</td><td>362km/h</td>
-		</tr>
-		<!-- // 3037-->
-		<tr>
-			<td colspan="3">3038 : TGV Old Pos</td>
-		</tr>
-		<tr>
-			<td><img src="docs/img/YST/3038.png" alt="3038"></td><td>1978</td><td>362km/h</td>
-		</tr>
-		<!-- // 3038-->
-		<tr>
-			<td colspan="3">3039 : TGV Old Poste</td>
-		</tr>
-		<tr>
-			<td><img src="docs/img/YST/3039.png" alt="3039"></td><td>1978</td><td>362km/h</td>
-		</tr>
-		<!-- // 3039-->
-		<tr>
-			<td colspan="3">3040 : TGV Ouigo</td>
-		</tr>
-		<tr>
-			<td><img src="docs/img/YST/3040.png" alt="3040"></td><td>2013</td><td>362km/h</td>
-		</tr>
-		<!-- // 3040-->
-		<tr>
-			<td colspan="3">3041 : TGV Pos</td>
-		</tr>
-		<tr>
-			<td><img src="docs/img/YST/3041.png" alt="3041"></td><td>2006</td><td>362km/h</td>
-		</tr>
-		<!-- // 3041-->
-		<tr>
-			<td colspan="3">3042 : TGV Pos Poste</td>
-		</tr>
-		<tr>
-			<td><img src="docs/img/YST/3042.png" alt="3042"></td><td>2006</td><td>362km/h</td>
-		</tr>
-		<!-- // 3042-->
-		<tr>
-			<td colspan="3">3043 : THRS</td>
-		</tr>
-		<tr>
-			<td><img src="docs/img/YST/3043.png" alt="3043"></td><td>2007</td><td>362km/h</td>
-		</tr>
-		<!-- // 3043-->
-		<tr>
-			<td colspan="3">3044 : VTX</td>
-		</tr>
-		<tr>
-			<td><img src="docs/img/YST/3044.png" alt="3044"></td><td>2020</td><td>600km/h</td>
-		</tr>
-		<!-- // 3044-->
-		<tr>
-			<td colspan="3">3045 : YFX</td>
-		</tr>
-		<tr>
-			<td><img src="docs/img/YST/3045.png" alt="3045"></td><td>2020</td><td>600km/h</td>
-		</tr>
-		<!-- // 3045-->
-		<tr>
-			<td colspan="3">3046 : YTX</td>
-		</tr>
-		<tr>
-			<td><img src="docs/img/YST/3046.png" alt="3046"></td><td>2020</td><td>362km/h</td>
-		</tr>
-		<!-- // 3046-->
-		<tr>
-			<td colspan="3">3047 : ZEFIRO362</td>
-		</tr>
-		<tr>
-			<td><img src="docs/img/YST/3047.png" alt="3047"></td><td>2014</td><td>362km/h</td>
-		</tr>
-		<!-- // 3047-->
-		<tr>
-			<td colspan="3">3048 : ZEFIRO600</td>
-		</tr>
-		<tr>
-			<td><img src="docs/img/YST/3048.png" alt="3048"></td><td>2020</td><td>600km/h</td>
-		</tr>
-		<!-- // 3048-->
-		<tr>
-			<td colspan="3">3049 : ZEFIRO430</td>
-		</tr>
-		<tr>
-			<td><img src="docs/img/YST/3049.png" alt="3049"></td><td>2020</td><td>430km/h</td>
-		</tr>
-		<!-- // 3049-->
-		<tr>
-			<td colspan="3">3050 : EMU362</td>
-		</tr>
-		<tr>
-			<td><img src="docs/img/YST/3050.png" alt="3050"></td><td>2020</td><td>362km/h</td>
-		</tr>
-		<!-- // 3050-->
-		<tr>
-			<td colspan="3">3051 : EMU180</td>
-		</tr>
-		<tr>
-			<td><img src="docs/img/YST/3051.png" alt="3051"></td><td>2023</td><td>181km/h</td>
-		</tr>
-		<!-- // 3051-->
-		<tr>
-			<td colspan="3">3052 : ITX-SM2</td>
-		</tr>
-		<tr>
-			<td><img src="docs/img/YST/3052.png" alt="3052"></td><td>2020</td><td>181km/h</td>
-		</tr>
-		<!-- // 3052-->
-		<tr>
-			<td colspan="3">3053 : KTX-SC2</td>
-		</tr>
-		<tr>
-			<td><img src="docs/img/YST/3053.png" alt="3053"></td><td>2020</td><td>362km/h</td>
-		</tr>
-		<!-- // 3053-->
-		<tr>
-			<td colspan="3">3054 : NRT2</td>
-		</tr>
-		<tr>
-			<td><img src="docs/img/YST/3054.png" alt="3054"></td><td>2020</td><td>181km/h</td>
-		</tr>
-		<!-- // 3054-->
-		<tr>
-			<td colspan="3">3055 : ITX-초월</td>
-		</tr>
-		<tr>
-			<td><img src="docs/img/YST/3055.png" alt="3055"></td><td>2020</td><td>181km/h</td>
-		</tr>
-		<!-- // 3055-->
-		<tr>
-			<td colspan="3">3056 : GTX</td>
-		</tr>
-		<tr>
-			<td><img src="docs/img/YST/3056.png" alt="3056"></td><td>2023</td><td>181km/h</td>
-		</tr>
-		<!-- // 3056-->
-		<tr>
-			<td colspan="3">3057 : KTX-이음 2층</td>
-		</tr>
-		<tr>
-			<td><img src="docs/img/YST/3057.png" alt="3057"></td><td>2022</td><td>260km/h</td>
-		</tr>
-		<!-- // 3057-->
-		<tr>
-			<td colspan="3">3058 : 신칸센 E8</td>
-		</tr>
-		<tr>
-			<td><img src="docs/img/YST/3058.png" alt="3058"></td><td>2024</td><td>362km/h</td>
-		</tr>
-		<!-- // 3058-->
-		<tr>
-			<td colspan="3">3059 : VHST-600X</td>
-		</tr>
-		<tr>
-			<td><img src="docs/img/YST/3059.png" alt="3059"></td><td>2025</td><td>600km/h</td>
-		</tr>
-		<!-- // 3059-->
-	</tbody>
-</table>
-</details>
-
-### 지하철
-<details markdown="4">
 <summary>내용보기</summary>
 <table>
     <thead>
@@ -674,6 +240,519 @@ YST는 다소 까다로운 템플릿을 보유하고 보다 편한 코딩방식�
 			<td><img src="docs/img/YST/4010.png" alt="4010"></td><td>2020</td><td>120km/h</td>
 		</tr>
 		<!-- // 4010-->
+	</tbody>
+</table>
+</details>
+
+### 일반열차 (150 ~ 181km/h)
+<details markdown="4">
+<summary>내용보기</summary>
+<table>
+    <thead>
+        <tr>
+            <th>열차</th><th>도입</th><th>열차속도</th>
+        </tr>
+    </thead>
+	<tbody>
+		<tr>
+			<td colspan="3">3005 : BB15048</td>
+		</tr>
+		<tr>
+			<td><img src="docs/img/YST/3005.png" alt="3005"></td><td>1971</td><td>151km/h</td>
+		</tr>
+		<!-- // 3005-->
+		<tr>
+			<td colspan="3">3017 : GT26CW</td>
+		</tr>
+		<tr>
+			<td><img src="docs/img/YST/3017.png" alt="3017"></td><td>1967</td><td>151km/h</td>
+		</tr>
+		<!-- // 3017-->
+		<tr>
+			<td colspan="3">3023 : NJ2</td>
+		</tr>
+		<tr>
+			<td><img src="docs/img/YST/3023.png" alt="3023"></td><td>2006</td><td>151km/h</td>
+		</tr>
+		<!-- // 3023-->
+		<tr>
+			<td colspan="3">3024 : NKX</td>
+		</tr>
+		<tr>
+			<td><img src="docs/img/YST/3024.png" alt="3024"></td><td>2020</td><td>151km/h</td>
+		</tr>
+		<!-- // 3024-->
+		<tr>
+			<td colspan="3">3033 : TAE 100</td>
+		</tr>
+		<tr>
+			<td><img src="docs/img/YST/3033.png" alt="3033"></td><td>2020</td><td>151km/h</td>
+		</tr>
+		<!-- // 3033-->
+		<tr>
+			<td colspan="3">3051 : EMU150</td>
+		</tr>
+		<tr>
+			<td><img src="docs/img/YST/3051.png" alt="3051"></td><td>2023</td><td>151km/h</td>
+		</tr>
+		<!-- // 3051-->
+		<tr>
+			<td colspan="3">3052 : ITX-SM2</td>
+		</tr>
+		<tr>
+			<td><img src="docs/img/YST/3052.png" alt="3052"></td><td>2020</td><td>151km/h</td>
+		</tr>
+		<!-- // 3052-->
+		<tr>
+			<td colspan="3">3054 : NRT2</td>
+		</tr>
+		<tr>
+			<td><img src="docs/img/YST/3054.png" alt="3054"></td><td>2020</td><td>151km/h</td>
+		</tr>
+		<!-- // 3054-->
+	</tbody>
+</table>
+</details>
+
+### 준고속열차 (181km/h)
+<details markdown="5">
+<summary>내용보기</summary>
+<table>
+    <thead>
+        <tr>
+            <th>열차</th><th>도입</th><th>열차속도</th>
+        </tr>
+    </thead>
+	<tbody>
+		<tr>
+			<td colspan="3">3055 : ITX-초월</td>
+		</tr>
+		<tr>
+			<td><img src="docs/img/YST/3055.png" alt="3055"></td><td>2020</td><td>181km/h</td>
+		</tr>
+		<!-- // 3055-->
+		<tr>
+			<td colspan="3">3056 : GTX</td>
+		</tr>
+		<tr>
+			<td><img src="docs/img/YST/3056.png" alt="3056"></td><td>2023</td><td>181km/h</td>
+		</tr>
+		<!-- // 3056-->
+	</tbody>
+</table>
+</details>
+
+### 준고속열차 (260km/h)
+<details markdown="6">
+<summary>내용보기</summary>
+<table>
+    <thead>
+        <tr>
+            <th>열차</th><th>도입</th><th>열차속도</th>
+        </tr>
+    </thead>
+	<tbody>
+		<tr>
+			<td colspan="3">3006 : CRH1</td>
+		</tr>
+		<tr>
+			<td><img src="docs/img/YST/3006.png" alt="3006"></td><td>2007</td><td>260km/h</td>
+		</tr>
+		<!-- // 3006-->
+		<tr>
+			<td colspan="3">3015 : EMU260</td>
+		</tr>
+		<tr>
+			<td><img src="docs/img/YST/3015.png" alt="3015"></td><td>2020</td><td>260km/h</td>
+		</tr>
+		<!-- // 3015-->
+		<tr>
+			<td colspan="3">3019 : HMX</td>
+		</tr>
+		<tr>
+			<td><img src="docs/img/YST/3019.png" alt="3019"></td><td>2020</td><td>260km/h</td>
+		</tr>
+		<!-- // 3019-->
+		<tr>
+			<td colspan="3">3028 : 신칸센 800계</td>
+		</tr>
+		<tr>
+			<td><img src="docs/img/YST/3028.png" alt="3028"></td><td>1996</td><td>260km/h</td>
+		</tr>
+		<!-- // 3028-->
+		<tr>
+			<td colspan="3">3034 : Renfe S-130</td>
+		</tr>
+		<tr>
+			<td><img src="docs/img/YST/3034.png" alt="3034"></td><td>2012</td><td>260km/h</td>
+		</tr>
+		<!-- // 3034-->
+		<tr>
+			<td colspan="3">3057 : KTX-이음 2층</td>
+		</tr>
+		<tr>
+			<td><img src="docs/img/YST/3057.png" alt="3057"></td><td>2022</td><td>260km/h</td>
+		</tr>
+		<!-- // 3057-->
+		<tr>
+			<td colspan="3">3060 : TAE 200</td>
+		</tr>
+		<tr>
+			<td><img src="docs/img/YST/3060.png" alt="3060"></td><td>2020</td><td>260km/h</td>
+		</tr>
+		<!-- // 3060-->
+	</tbody>
+</table>
+</details>
+
+### 고속열차 (300 ~ 380km/h)
+<details markdown="7">
+<summary>내용보기</summary>
+<table>
+    <thead>
+        <tr>
+            <th>열차</th><th>도입</th><th>열차속도</th>
+        </tr>
+    </thead>
+	<tbody>
+		<tr>
+			<td colspan="3">3001 : AGV</td>
+		</tr>
+		<tr>
+			<td><img src="docs/img/YST/3001.png" alt="3001"></td><td>2012</td><td>331km/h</td>
+		</tr>
+		<!-- // 3001-->
+		<tr>
+			<td colspan="3">3003 : Renfe_S_100</td>
+		</tr>
+		<tr>
+			<td><img src="docs/img/YST/3003.png" alt="3003"></td><td>2012</td><td>331km/h</td>
+		</tr>
+		<!-- // 3003-->
+		<tr>
+			<td colspan="3">3004 : Renfe_S_103</td>
+		</tr>
+		<tr>
+			<td><img src="docs/img/YST/3004.png" alt="3004"></td><td>2006</td><td>331km/h</td>
+		</tr>
+		<!-- // 3004-->
+		<tr>
+			<td colspan="3">3007 : CRH3</td>
+		</tr>
+		<tr>
+			<td><img src="docs/img/YST/3007.png" alt="3007"></td><td>2017</td><td>331km/h</td>
+		</tr>
+		<!-- // 3007-->
+		<tr>
+			<td colspan="3">3008 : CRH380A</td>
+		</tr>
+		<tr>
+			<td><img src="docs/img/YST/3008.png" alt="3008"></td><td>2017</td><td>380km/h</td>
+		</tr>
+		<!-- // 3008-->
+		<tr>
+			<td colspan="3">3013 : 유로스타 E300</td>
+		</tr>
+		<tr>
+			<td><img src="docs/img/YST/3013.png" alt="3013"></td><td>1992</td><td>331km/h</td>
+		</tr>
+		<!-- // 3013-->
+		<tr>
+			<td colspan="3">3014 : 유로스타 E320</td>
+		</tr>
+		<tr>
+			<td><img src="docs/img/YST/3014.png" alt="3014"></td><td>2014</td><td>362km/h</td>
+		</tr>
+		<!-- // 3014-->
+		<tr>
+			<td colspan="3">3020 : ICE-SP</td>
+		</tr>
+		<tr>
+			<td><img src="docs/img/YST/3020.png" alt="3020"></td><td>2020</td><td>331km/h</td>
+		</tr>
+		<!-- // 3020-->
+		<tr>
+			<td colspan="3">3021 : ICE3</td>
+		</tr>
+		<tr>
+			<td><img src="docs/img/YST/3021.png" alt="3021"></td><td>1997</td><td>331km/h</td>
+		</tr>
+		<!-- // 3021-->
+		<tr>
+			<td colspan="3">3022 : KTX-N</td>
+		</tr>
+		<tr>
+			<td><img src="docs/img/YST/3022.png" alt="3022"></td><td>2020</td><td>331km/h</td>
+		</tr>
+		<!-- // 3022-->
+		<tr>
+			<td colspan="3">3025 : 신칸센 500계</td>
+		</tr>
+		<tr>
+			<td><img src="docs/img/YST/3025.png" alt="3025"></td><td>1996</td><td>331km/h</td>
+		</tr>
+		<!-- // 3025-->
+		<tr>
+			<td colspan="3">3027 : 신칸센 500계 SP</td>
+		</tr>
+		<tr>
+			<td><img src="docs/img/YST/3027.png" alt="3027"></td><td>2020</td><td>331km/h</td>
+		</tr>
+		<!-- // 3027-->
+		<tr>
+			<td colspan="3">3029 : 신칸센 E5·H5</td>
+		</tr>
+		<tr>
+			<td><img src="docs/img/YST/3029.png" alt="3029"></td><td>2011</td><td>331km/h</td>
+		</tr>
+		<!-- // 3029-->
+		<tr>
+			<td colspan="3">3030 : 신칸센 E6</td>
+		</tr>
+		<tr>
+			<td><img src="docs/img/YST/3030.png" alt="3030"></td><td>2011</td><td>331km/h</td>
+		</tr>
+		<!-- // 3030-->
+		<tr>
+			<td colspan="3">3031 : 신칸센 E7·W7</td>
+		</tr>
+		<tr>
+			<td><img src="docs/img/YST/3031.png" alt="3031"></td><td>2014</td><td>331km/h</td>
+		</tr>
+		<!-- // 3031-->
+		<tr>
+			<td colspan="3">3032 : 신칸센 N700</td>
+		</tr>
+		<tr>
+			<td><img src="docs/img/YST/3032.png" alt="3032"></td><td>2007</td><td>331km/h</td>
+		</tr>
+		<!-- // 3032-->
+		<tr>
+			<td colspan="3">3035 : TGV Duplex</td>
+		</tr>
+		<tr>
+			<td><img src="docs/img/YST/3035.png" alt="3035"></td><td>1994</td><td>331km/h</td>
+		</tr>
+		<!-- // 3035-->
+		<tr>
+			<td colspan="3">3036 : TGV Old</td>
+		</tr>
+		<tr>
+			<td><img src="docs/img/YST/3036.png" alt="3036"></td><td>1978</td><td>331km/h</td>
+		</tr>
+		<!-- // 3036-->
+		<tr>
+			<td colspan="3">3037 : TGV Old Duplex</td>
+		</tr>
+		<tr>
+			<td><img src="docs/img/YST/3037.png" alt="3037"></td><td>1994</td><td>331km/h</td>
+		</tr>
+		<!-- // 3037-->
+		<tr>
+			<td colspan="3">3038 : TGV Old Pos</td>
+		</tr>
+		<tr>
+			<td><img src="docs/img/YST/3038.png" alt="3038"></td><td>1978</td><td>331km/h</td>
+		</tr>
+		<!-- // 3038-->
+		<tr>
+			<td colspan="3">3039 : TGV Old Poste</td>
+		</tr>
+		<tr>
+			<td><img src="docs/img/YST/3039.png" alt="3039"></td><td>1978</td><td>331km/h</td>
+		</tr>
+		<!-- // 3039-->
+		<tr>
+			<td colspan="3">3040 : TGV Ouigo</td>
+		</tr>
+		<tr>
+			<td><img src="docs/img/YST/3040.png" alt="3040"></td><td>2013</td><td>331km/h</td>
+		</tr>
+		<!-- // 3040-->
+		<tr>
+			<td colspan="3">3041 : TGV Pos</td>
+		</tr>
+		<tr>
+			<td><img src="docs/img/YST/3041.png" alt="3041"></td><td>2006</td><td>331km/h</td>
+		</tr>
+		<!-- // 3041-->
+		<tr>
+			<td colspan="3">3042 : TGV Pos Poste</td>
+		</tr>
+		<tr>
+			<td><img src="docs/img/YST/3042.png" alt="3042"></td><td>2006</td><td>331km/h</td>
+		</tr>
+		<!-- // 3042-->
+		<tr>
+			<td colspan="3">3043 : THRS</td>
+		</tr>
+		<tr>
+			<td><img src="docs/img/YST/3043.png" alt="3043"></td><td>2007</td><td>331km/h</td>
+		</tr>
+		<!-- // 3043-->
+		<tr>
+			<td colspan="3">3046 : YTX</td>
+		</tr>
+		<tr>
+			<td><img src="docs/img/YST/3046.png" alt="3046"></td><td>2020</td><td>331km/h</td>
+		</tr>
+		<!-- // 3046-->
+		<tr>
+			<td colspan="3">3047 : CRH380D</td>
+		</tr>
+		<tr>
+			<td><img src="docs/img/YST/3047.png" alt="3047"></td><td>2014</td><td>380km/h</td>
+		</tr>
+		<!-- // 3047-->
+		<tr>
+			<td colspan="3">3050 : EMU320</td>
+		</tr>
+		<tr>
+			<td><img src="docs/img/YST/3050.png" alt="3050"></td><td>2020</td><td>331km/h</td>
+		</tr>
+		<!-- // 3050-->
+		<tr>
+			<td colspan="3">3053 : KTX-SC2</td>
+		</tr>
+		<tr>
+			<td><img src="docs/img/YST/3053.png" alt="3053"></td><td>2020</td><td>331km/h</td>
+		</tr>
+		<!-- // 3053-->
+		<tr>
+			<td colspan="3">3058 : 신칸센 E8</td>
+		</tr>
+		<tr>
+			<td><img src="docs/img/YST/3058.png" alt="3058"></td><td>2024</td><td>331km/h</td>
+		</tr>
+		<!-- // 3058-->
+		<tr>
+			<td colspan="3">3061 : HSR-350X</td>
+		</tr>
+		<tr>
+			<td><img src="docs/img/YST/3061.png" alt="3061"></td><td>2002</td><td>331km/h</td>
+		</tr>
+		<!-- // 3061-->
+	</tbody>
+</table>
+</details>
+
+### 고속열차 (430km/h)
+<details markdown="8">
+<summary>내용보기</summary>
+<table>
+    <thead>
+        <tr>
+            <th>열차</th><th>도입</th><th>열차속도</th>
+        </tr>
+    </thead>
+	<tbody>
+		<tr>
+			<td colspan="3">3002 : AGV Cool</td>
+		</tr>
+		<tr>
+			<td><img src="docs/img/YST/3002.png" alt="3002"></td><td>2020</td><td>430km/h</td>
+		</tr>
+		<!-- // 3002-->
+		<tr>
+			<td colspan="3">3009 : CRH430A</td>
+		</tr>
+		<tr>
+			<td><img src="docs/img/YST/3009.png" alt="3009"></td><td>2017</td><td>430km/h</td>
+		</tr>
+		<!-- // 3009-->
+		<tr>
+			<td colspan="3">3011 : CR400</td>
+		</tr>
+		<tr>
+			<td><img src="docs/img/YST/3011.png" alt="3011"></td><td>2012</td><td>430km/h</td>
+		</tr>
+		<!-- // 3011-->
+		<tr>
+			<td colspan="3">3018 : HEMU-430</td>
+		</tr>
+		<tr>
+			<td><img src="docs/img/YST/3018.png" alt="3018"></td><td>2007</td><td>430km/h</td>
+		</tr>
+		<!-- // 3018-->
+		<tr>
+			<td colspan="3">3026 : 신칸센 500계 Cool</td>
+		</tr>
+		<tr>
+			<td><img src="docs/img/YST/3026.png" alt="3026"></td><td>2020</td><td>430km/h</td>
+		</tr>
+		<!-- // 3026-->
+		<tr>
+			<td colspan="3">3049 : CRH430D</td>
+		</tr>
+		<tr>
+			<td><img src="docs/img/YST/3049.png" alt="3049"></td><td>2020</td><td>430km/h</td>
+		</tr>
+		<!-- // 3049-->
+
+	</tbody>
+</table>
+</details>
+
+### 고속열차 (600km/h)
+<details markdown="9">
+<summary>내용보기</summary>
+<table>
+    <thead>
+        <tr>
+            <th>열차</th><th>도입</th><th>열차속도</th>
+        </tr>
+    </thead>
+	<tbody>
+		<tr>
+			<td colspan="3">3010 : CRH380AJ</td>
+		</tr>
+		<tr>
+			<td><img src="docs/img/YST/3010.png" alt="3010"></td><td>2017</td><td>600km/h</td>
+		</tr>
+		<!-- // 3010-->
+		<tr>
+			<td colspan="3">3012 : 신칸센 923형</td>
+		</tr>
+		<tr>
+			<td><img src="docs/img/YST/3012.png" alt="3012"></td><td>2007</td><td>600km/h</td>
+		</tr>
+		<!-- // 3012-->
+		<tr>
+			<td colspan="3">3016 : Glory 600</td>
+		</tr>
+		<tr>
+			<td><img src="docs/img/YST/3016.png" alt="3016"></td><td>2020</td><td>600km/h</td>
+		</tr>
+		<!-- // 3016-->
+		<tr>
+			<td colspan="3">3044 : VTX</td>
+		</tr>
+		<tr>
+			<td><img src="docs/img/YST/3044.png" alt="3044"></td><td>2020</td><td>600km/h</td>
+		</tr>
+		<!-- // 3044-->
+		<tr>
+			<td colspan="3">3045 : YFX</td>
+		</tr>
+		<tr>
+			<td><img src="docs/img/YST/3045.png" alt="3045"></td><td>2020</td><td>600km/h</td>
+		</tr>
+		<!-- // 3045-->
+		<tr>
+			<td colspan="3">3048 : CRH600D</td>
+		</tr>
+		<tr>
+			<td><img src="docs/img/YST/3048.png" alt="3048"></td><td>2020</td><td>600km/h</td>
+		</tr>
+		<!-- // 3048-->
+		<tr>
+			<td colspan="3">3059 : VHST-600X</td>
+		</tr>
+		<tr>
+			<td><img src="docs/img/YST/3059.png" alt="3059"></td><td>2025</td><td>600km/h</td>
+		</tr>
+		<!-- // 3059-->
+		
 	</tbody>
 </table>
 </details>
