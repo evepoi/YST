@@ -8,7 +8,7 @@ STR_GRF_DESC                                        :(Updated: {RECENT_UPDATED})
 # locomotive's name
 STR_AGV_NAME                                        :[YST] AGV
 STR_AGV_Cool_NAME                                   :[YST] AGV Cool
-STR_BB15048_NAME                                    :[YST] BB15048
+STR_BB15000_NAME                                    :[YST] BB15000
 STR_CRH1_NAME                                       :[YST] CRH1
 STR_CRH3_NAME                                       :[YST] CRH3
 STR_CRH380A_NAME                                    :[YST] CRH380A
@@ -29,6 +29,7 @@ STR_GTX_NAME                                        :[YST] GTX
 STR_HEMU_430X_NAME                                  :[YST] HEMU-430X
 STR_HMX_NAME                                        :[YST] HMX
 STR_HSR_350X_NAME                                   :[YST] HSR-350X
+STR_HYEL_100_NAME                                   :[YST] HYEL-100
 STR_ICE3_NAME                                       :[YST] ICE3
 STR_ICE_CW_NAME                                     :[YST] ITX-Chowol
 STR_ICE_SP_NAME                                     :[YST] ICE-SP
@@ -134,7 +135,7 @@ STR_PARAM_Taiwanese_DESC                            :Check if you don't use a Ta
 # Refit (Additional text) Real Trian(BLUE), Test Train(YELLOW), Plan Train(PURPLE), Virtual Train(RED)
 STR_REFIT_ADDITIONAL_AGV                            :{BLACK}Existence of trains : {BLUE}Real train {}{BLACK}Changing model/livery: {GREEN}Available {}{BLACK}Combined train: {RED}Unavailable
 STR_REFIT_ADDITIONAL_AGV_Cool                       :{BLACK}Existence of trains : {RED}Virtual Train {}{BLACK}Changing model/livery: {GREEN}Available {}{BLACK}Combined train: {RED}Unavailable
-STR_REFIT_ADDITIONAL_BB15048                        :{BLACK}Existence of trains : {BLUE}Real train {}{BLACK}Changing model/livery: {RED}Unavailable {}{BLACK}Combined train: {GREEN}BB15048, GT26CW, NJ2
+STR_REFIT_ADDITIONAL_BB15000                        :{BLACK}Existence of trains : {RED}Virtual Train {}{BLACK}Changing model/livery: {RED}Unavailable {}{BLACK}Combined train: {GREEN}BB15000, GT26CW, HYEL-100, NJ2
 STR_REFIT_ADDITIONAL_CRH1                           :{BLACK}Existence of trains : {BLUE}Real train {}{BLACK}Changing model/livery: {RED}Unavailable {}{BLACK}Combined train: {GREEN}CRH1
 STR_REFIT_ADDITIONAL_CRH3                           :{BLACK}Existence of trains : {BLUE}Real train {}{BLACK}Changing model/livery: {RED}Unavailable {}{BLACK}Combined train: {GREEN}CRH3
 STR_REFIT_ADDITIONAL_CRH380A                        :{BLACK}Existence of trains : {BLUE}Real train {}{BLACK}Changing model/livery: {GREEN}Available {}{BLACK}Combined train: {GREEN}CRH380A, Vibrant Express, CRH430A
@@ -150,11 +151,12 @@ STR_REFIT_ADDITIONAL_EMU150                         :{BLACK}Existence of trains 
 STR_REFIT_ADDITIONAL_EMU260                         :{BLACK}Existence of trains : {PURPLE}Plan Train {}{BLACK}Changing model/livery: {RED}Unavailable {}{BLACK}Combined train: {GREEN}EMU-150, EMU-260, EUM-320
 STR_REFIT_ADDITIONAL_EMU320                         :{BLACK}Existence of trains : {PURPLE}Plan Train {}{BLACK}Changing model/livery: {GREEN}Available {}{BLACK}Combined train: {GREEN}EMU-150, EMU-260, EUM-320
 STR_REFIT_ADDITIONAL_Glory600                       :{BLACK}Existence of trains : {RED}Virtual Train {}{BLACK}Changing model/livery: {GREEN}Available {}{BLACK}Combined train: {GREEN}Glory-600
-STR_REFIT_ADDITIONAL_GT26CW                         :{BLACK}Existence of trains : {BLUE}Real train {}{BLACK}Changing model/livery: {GREEN}Available {}{BLACK}Combined train: {GREEN}BB15048, GT26CW, NJ2
+STR_REFIT_ADDITIONAL_GT26CW                         :{BLACK}Existence of trains : {BLUE}Real train {}{BLACK}Changing model/livery: {GREEN}Available {}{BLACK}Combined train: {GREEN}BB15000, GT26CW, HYEL-100, NJ2
 STR_REFIT_ADDITIONAL_GTX                            :{BLACK}Existence of trains : {PURPLE}Plan Train {}{BLACK}Changing model/livery: {RED}Unavailable {}{BLACK}Combined train: {GREEN}GTX
 STR_REFIT_ADDITIONAL_HEMU_430X                      :{BLACK}Existence of trains : {YELLOW}Test Train {}{BLACK}Changing model/livery: {RED}Unavailable {}{BLACK}Combined train: {GREEN}HEMU-430X
 STR_REFIT_ADDITIONAL_HMX                            :{BLACK}Existence of trains : {RED}Virtual Train {}{BLACK}Changing model/livery: {GREEN}Available {}{BLACK}Combined train: {GREEN}HMX
 STR_REFIT_ADDITIONAL_HSR_350X                       :{BLACK}Existence of trains : {YELLOW}Test Train {}{BLACK}Changing model/livery: {RED}Unavailable {}{BLACK}Combined train: {GREEN}HSR-350X
+STR_REFIT_ADDITIONAL_HYEL_100                       :{BLACK}Existence of trains : {RED}Virtual Train {}{BLACK}Changing model/livery: {RED}Unavailable {}{BLACK}Combined train: {GREEN}BB15000, GT26CW, HYEL-100, NJ2
 STR_REFIT_ADDITIONAL_ICE_SP                         :{BLACK}Existence of trains : {RED}Virtual Train {}{BLACK}Changing model/livery: {GREEN}available {}{BLACK}Combined train: {GREEN}ICE-SP
 STR_REFIT_ADDITIONAL_ICE3                           :{BLACK}Existence of trains : {BLUE}Real train {}{BLACK}Changing model/livery: {RED}Unavailable {} {BLACK}Combined train: {GREEN}ICE3
 STR_REFIT_ADDITIONAL_ITX_CW                         :{BLACK}Existence of trains : {RED}Virtual Train {}{BLACK}Changing model/livery: {GREEN}available {}{BLACK}Combined train: {GREEN}ITX-Chowol
@@ -162,7 +164,7 @@ STR_REFIT_ADDITIONAL_ITX_SM2                        :{BLACK}Existence of trains 
 STR_REFIT_ADDITIONAL_KTX_EM                         :{BLACK}Existence of trains : {RED}Virtual Train {}{BLACK}Changing model/livery: {RED}Unavailable {}{BLACK}Combined train: {GREEN}KTX-EM
 STR_REFIT_ADDITIONAL_KTX_N                          :{BLACK}Existence of trains : {RED}Virtual Train {}{BLACK}Changing model/livery: {RED}Unavailable {}{BLACK}Combined train: {GREEN}KTX-N
 STR_REFIT_ADDITIONAL_KTX_SC2                        :{BLACK}Existence of trains : {RED}Virtual Train {}{BLACK}Changing model/livery: {GREEN}available {}{BLACK}Combined train: {GREEN}KTX-SC2
-STR_REFIT_ADDITIONAL_NJ2                            :{BLACK}Existence of trains : {BLUE}Real train {}{BLACK}Changing model/livery: {GREEN}Available {}{BLACK}Combined train: {GREEN}BB15048, GT26CW, NJ2
+STR_REFIT_ADDITIONAL_NJ2                            :{BLACK}Existence of trains : {BLUE}Real train {}{BLACK}Changing model/livery: {GREEN}Available {}{BLACK}Combined train: {GREEN}BB15000, GT26CW, HYEL-100, NJ2
 STR_REFIT_ADDITIONAL_NKX                            :{BLACK}Existence of trains : {RED}Virtual Train {}{BLACK}Changing model/livery: {GREEN}available {}{BLACK}Combined train: {GREEN}NKX
 STR_REFIT_ADDITIONAL_NRT2                           :{BLACK}Existence of trains : {RED}Virtual Train {}{BLACK}Changing model/livery: {GREEN}available {}{BLACK}Combined train: {GREEN}NRT2
 STR_REFIT_ADDITIONAL_Renfe_S_100                    :{BLACK}Existence of trains : {BLUE}Real train {}{BLACK}Changing model/livery: {RED}Unavailable {}{BLACK}Combined train: {GREEN}Renfe S-100
@@ -230,6 +232,8 @@ STR_REFIT_LIVERY_Glory600D                          :(Glory 600 D Color)
 STR_REFIT_LIVERY_Glory600E                          :(Glory 600 E Color)
 STR_REFIT_LIVERY_HMXG                               :(HMX Green Color)
 STR_REFIT_LIVERY_HMXR                               :(HMX Red Color)
+STR_REFIT_LIVERY_SRT                                :(SRT)
+STR_REFIT_LIVERY_CJ                                 :(CJ Logistics)
 STR_REFIT_LIVERY_ICE_Sancheon                       :(ICE-Sancheon)
 STR_REFIT_LIVERY_ICE_Patjug                         :(ICE-Patjug)
 STR_REFIT_LIVERY_ITX_SM2_R                          :(ITX-SM2 Red Color)

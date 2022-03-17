@@ -32,7 +32,6 @@
 
 //locomotive / Real_Train / European
 #include "locomotive/Real_Train/European/AGV/AGV.pnml"
-#include "locomotive/Real_Train/European/BB15048/BB15048.pnml"
 #include "locomotive/Real_Train/European/Eurostar_E300/Eurostar_E300.pnml"
 #include "locomotive/Real_Train/European/Eurostar_E320/Eurostar_E320.pnml"
 #include "locomotive/Real_Train/European/ICE3/ICE3.pnml"
@@ -69,11 +68,13 @@
 
 //locomotive / Virual_train
 #include "locomotive/Virtual_train/AGV_Cool/AGV_Cool.pnml"
+#include "locomotive/Virtual_train/BB15000/BB15000.pnml"
 #include "locomotive/Virtual_train/CRH430A/CRH430A.pnml"
 #include "locomotive/Virtual_train/CRH430D/CRH430D.pnml"
 #include "locomotive/Virtual_train/CRH600D/CRH600D.pnml"
 #include "locomotive/Virtual_train/Glory_600/Glory_600.pnml"
 #include "locomotive/Virtual_train/HMX/HMX.pnml"
+#include "locomotive/Virtual_train/HYEL_100/HYEL_100.pnml"
 #include "locomotive/Virtual_train/ICE_SP/ICE_SP.pnml"
 #include "locomotive/Virtual_train/ITX_CW/ITX_CW.pnml"
 #include "locomotive/Virtual_train/ITX_SM2/ITX_SM2.pnml"

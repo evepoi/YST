@@ -24,8 +24,9 @@ switch(FEAT_TRAINS, SELF, sw_FLAT_2F_CAR_wagon, random_bits % 15) {
 }
 
 switch(FEAT_TRAINS, SELF, sw_Flat_2F_wagon_attach, vehicle_type_id) {
-    BB15048:    return CB_RESULT_ATTACH_ALLOW;
+    BB15000:    return CB_RESULT_ATTACH_ALLOW;
     GT26CW:     return CB_RESULT_ATTACH_ALLOW;
+    HYEL_100:   return CB_RESULT_ATTACH_ALLOW;
     NJ2:        return CB_RESULT_ATTACH_ALLOW;
     TANK:       return CB_RESULT_ATTACH_ALLOW;
     FLAT_1F:    return CB_RESULT_ATTACH_ALLOW;

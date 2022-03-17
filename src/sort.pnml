@@ -4,7 +4,7 @@
 sort(FEAT_TRAINS, [
     AGV,                       //3001
     AGV_Cool,                  //3002
-    BB15048,                   //3005
+    BB15000,                   //3005
     CRH1,                      //3006
     CRH3,                      //3007
     CRH380A,                   //3008
@@ -25,6 +25,7 @@ sort(FEAT_TRAINS, [
     HEMU_430X,                 //3018
     HMX,                       //3019
     HSR_350X,                  //3061
+    HYEL_100,                  //3062
     ICE_SP,                    //3020
     ICE3,                      //3021
     ITX_CW,                    //3055

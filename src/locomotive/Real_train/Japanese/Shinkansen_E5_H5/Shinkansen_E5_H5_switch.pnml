@@ -21,9 +21,14 @@ switch(FEAT_TRAINS, SELF, sw_Shinkansen_E5_H5_engine, position_in_consist_from_e
     sw_Shinkansen_E5_H5_engineH;
 }
 
-switch(FEAT_TRAINS, SELF, sw_Shinkansen_E5_H5_wagon_start, cargo_subtype) {
-    1: set_Shinkansen_H5_wagon_start;   // H5
-    set_Shinkansen_E5_wagon_start;
+switch(FEAT_TRAINS, SELF, sw_Shinkansen_E5_H5_panto_wagon_cargo_subtype, cargo_subtype) {
+    1: set_Shinkansen_H5_panto_wagon; // H5
+    set_Shinkansen_E5_panto_wagon;
+}
+
+switch(FEAT_TRAINS, SELF, sw_Shinkansen_E5_H5_panto_wagon_r_cargo_subtype, cargo_subtype) {
+    1: set_Shinkansen_H5_panto_wagon_r; // H5
+    set_Shinkansen_E5_panto_wagon_r;
 }
 
 switch(FEAT_TRAINS, SELF, sw_Shinkansen_E5_H5_wagon_front, cargo_subtype) {
@@ -36,23 +41,18 @@ switch(FEAT_TRAINS, SELF, sw_Shinkansen_E5_H5_wagon_tail, cargo_subtype) {
     set_Shinkansen_E5_wagon_r;
 }
 
-switch(FEAT_TRAINS, SELF, sw_Shinkansen_E5_H5_wagon_end, cargo_subtype) {
-    1: set_Shinkansen_H5_wagon_end;   // H5
-    set_Shinkansen_E5_wagon_end;
-}
-
-switch(FEAT_TRAINS, SELF, sw_Shinkansen_E5_H5_wagon_middle, (position_in_consist)) {
+switch(FEAT_TRAINS, SELF, sw_Shinkansen_E5_H5_wagon_cargo_subtype, (position_in_consist)) {
     1: sw_Shinkansen_E5_H5_wagon_tail;
     sw_Shinkansen_E5_H5_wagon_front;
 }
 
-switch(FEAT_TRAINS, SELF, sw_Shinkansen_E5_H5_wagon_rear, [STORE_TEMP(1, 0x10F), var[0x61, 0, 0x0000FFFF, 0xC6]]){
-    Shinkansen_E5_H5: sw_Shinkansen_E5_H5_wagon_end;
-    sw_Shinkansen_E5_H5_wagon_middle;
+switch(FEAT_TRAINS, SELF, sw_Shinkansen_E5_H5_wagon_rear, [STORE_TEMP(3, 0x10F), var[0x61, 0, 0x0000FFFF, 0xC6]]){
+    Shinkansen_E5_H5: sw_Shinkansen_E5_H5_panto_wagon_cargo_subtype;
+    sw_Shinkansen_E5_H5_wagon_cargo_subtype;
 }
 
-switch(FEAT_TRAINS, SELF, sw_Shinkansen_E5_H5_wagon, [STORE_TEMP(-1, 0x10F), var[0x61, 0, 0x0000FFFF, 0xC6]]) {
-    Shinkansen_E5_H5: sw_Shinkansen_E5_H5_wagon_start;
+switch(FEAT_TRAINS, SELF, sw_Shinkansen_E5_H5_wagon, [STORE_TEMP(-2, 0x10F), var[0x61, 0, 0x0000FFFF, 0xC6]]) {
+    Shinkansen_E5_H5: sw_Shinkansen_E5_H5_panto_wagon_cargo_subtype;
     sw_Shinkansen_E5_H5_wagon_rear;
 }
 

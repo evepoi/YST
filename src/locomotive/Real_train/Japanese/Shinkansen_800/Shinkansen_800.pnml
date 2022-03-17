@@ -21,7 +21,7 @@ item(FEAT_TRAINS, Shinkansen_800, 3028){
         dual_headed:                    1;
         
         //spec
-        speed:                          260km/h;
+        speed:                          285km/h;
         power:                          8000 kW;
         weight:                         40 ton;
         tractive_effort_coefficient:    0.3;

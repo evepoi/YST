@@ -8,7 +8,7 @@ STR_GRF_DESC                                        :(최근 업데이트: {RECE
 # locomotive's name
 STR_AGV_NAME                                        :[YST] AGV
 STR_AGV_Cool_NAME                                   :[YST] AGV Cool
-STR_BB15048_NAME                                    :[YST] BB15048
+STR_BB15000_NAME                                    :[YST] BB15000
 STR_CRH1_NAME                                       :[YST] CRH1
 STR_CRH3_NAME                                       :[YST] CRH3
 STR_CRH380A_NAME                                    :[YST] CRH380A
@@ -29,6 +29,7 @@ STR_GTX_NAME                                        :[YST] GTX
 STR_HEMU_430X_NAME                                  :[YST] HEMU-430X
 STR_HMX_NAME                                        :[YST] HMX
 STR_HSR_350X_NAME                                   :[YST] HSR-350X
+STR_HYEL_100_NAME                                   :[YST] HYEL-100
 STR_ICE3_NAME                                       :[YST] ICE3
 STR_ICE_CW_NAME                                     :[YST] ITX-초월
 STR_ICE_SP_NAME                                     :[YST] ICE-SP
@@ -47,7 +48,7 @@ STR_Shinkansen_500_Cool_NAME                        :[YST] 신칸센 500계 Cool
 STR_Shinkansen_500_SP_NAME                          :[YST] 신칸센 500계 SP
 STR_Shinkansen_800_NAME                             :[YST] 신칸센 800계
 STR_Shinkansen_923_NAME                             :[YST] 신칸센 923형
-STR_Shinkansen_E5_H5_NAME                           :[YST] 신칸센 E5(32bpp)·H5 
+STR_Shinkansen_E5_H5_NAME                           :[YST] 신칸센 E5·H5 
 STR_Shinkansen_E6_NAME                              :[YST] 신칸센 E6
 STR_Shinkansen_E7_W7_NAME                           :[YST] 신칸센 E7·W7
 STR_Shinkansen_E8_NAME                              :[YST] 신칸센 E8
@@ -129,7 +130,7 @@ STR_PARAM_Taiwanese_DESC                            :대만형 열차를 사용�
 # Refit (Additional text) 실제(BLUE), 시험(YELLOW), 계획 (PURPLE), 가상 (RED)
 STR_REFIT_ADDITIONAL_AGV                            :{BLACK}열차 실존여부 : {BLUE}실제 {}{BLACK} 도색/모델 변경: {GREEN}가능 {}{BLACK}복합열차구성 : {RED}불가능
 STR_REFIT_ADDITIONAL_AGV_Cool                       :{BLACK}열차 실존여부 : {RED}가상 {}{BLACK} 도색/모델 변경: {GREEN}가능 {}{BLACK}복합열차구성 : {RED}불가능
-STR_REFIT_ADDITIONAL_BB15048                        :{BLACK}열차 실존여부 : {BLUE}실제 {}{BLACK}도색/모델 변경: {RED}불가능 {}{BLACK}복합가능열차{}{GREEN}BB15048, GT26CW, NJ2
+STR_REFIT_ADDITIONAL_BB15000                        :{BLACK}열차 실존여부 : {RED}가상 {}{BLACK}도색/모델 변경: {RED}불가능 {}{BLACK}복합가능열차{}{GREEN}BB15000, GT26CW, HYEL-100, NJ2
 STR_REFIT_ADDITIONAL_CRH1                           :{BLACK}열차 실존여부 : {BLUE}실제 {}{BLACK}도색/모델 변경: {RED}불가능 {}{BLACK}복합가능열차{}{GREEN}CRH1
 STR_REFIT_ADDITIONAL_CRH3                           :{BLACK}열차 실존여부 : {BLUE}실제 {}{BLACK}도색/모델 변경: {RED}불가능 {}{BLACK}복합가능열차{}{GREEN}CRH3
 STR_REFIT_ADDITIONAL_CRH380A                        :{BLACK}열차 실존여부 : {BLUE}실제 {}{BLACK}도색/모델 변경: {GREEN}가능 {}{BLACK}복합가능열차{}{GREEN}CRH380A, Vibrant Express, CRH430A
@@ -145,11 +146,12 @@ STR_REFIT_ADDITIONAL_EMU150                         :{BLACK}열차 실존여부 
 STR_REFIT_ADDITIONAL_EMU260                         :{BLACK}열차 실존여부 : {PURPLE}계획 {}{BLACK}도색/모델 변경: {RED}불가능 {}{BLACK}복합가능열차{}{GREEN}EMU-150, EMU-260, EUM-320
 STR_REFIT_ADDITIONAL_EMU320                         :{BLACK}열차 실존여부 : {PURPLE}계획 {}{BLACK}도색/모델 변경: {GREEN}가능 {}{BLACK}복합가능열차{}{GREEN}EMU-150, EMU-260, EUM-320
 STR_REFIT_ADDITIONAL_Glory600                       :{BLACK}열차 실존여부 : {RED}가상 {}{BLACK}도색/모델 변경: {GREEN}가능 {}{BLACK}복합가능열차{}{GREEN}Glory-600
-STR_REFIT_ADDITIONAL_GT26CW                         :{BLACK}열차 실존여부 : {BLUE}실제 {}{BLACK}도색/모델 변경: {GREEN}가능 {}{BLACK}복합가능열차{}{GREEN}BB15048, GT26CW, NJ2
+STR_REFIT_ADDITIONAL_GT26CW                         :{BLACK}열차 실존여부 : {BLUE}실제 {}{BLACK}도색/모델 변경: {GREEN}가능 {}{BLACK}복합가능열차{}{GREEN}BB15000, GT26CW, HYEL-100, NJ2
 STR_REFIT_ADDITIONAL_GTX                            :{BLACK}열차 실존여부 : {PURPLE}계획 {}{BLACK}도색/모델 변경: {RED}불가능 {}{BLACK}복합가능열차{}{GREEN}GTX
 STR_REFIT_ADDITIONAL_HEMU_430X                      :{BLACK}열차 실존여부 : {YELLOW}시험 {}{BLACK}도색/모델 변경: {RED}불가능 {}{BLACK}복합가능열차{}{GREEN}HEMU-430X
 STR_REFIT_ADDITIONAL_HMX                            :{BLACK}열차 실존여부 : {RED}가상 {}{BLACK}도색/모델 변경: {GREEN}가능 {}{BLACK}복합가능열차{}{GREEN}HMX
 STR_REFIT_ADDITIONAL_HSR_350X                       :{BLACK}열차 실존여부 : {YELLOW}시험 {}{BLACK}도색/모델 변경: {RED}불가능 {}{BLACK}복합가능열차{}{GREEN}HSR-350X
+STR_REFIT_ADDITIONAL_HYEL_100                       :{BLACK}열차 실존여부 : {RED}가상 {}{BLACK}도색/모델 변경: {RED}불가능 {}{BLACK}복합가능열차{}{GREEN}BB15000, GT26CW, HYEL-100, NJ2
 STR_REFIT_ADDITIONAL_ICE_SP                         :{BLACK}열차 실존여부 : {RED}가상 {}{BLACK}도색/모델 변경: {GREEN}가능 {}{BLACK}복합가능열차{}{GREEN}ICE-SP
 STR_REFIT_ADDITIONAL_ICE3                           :{BLACK}열차 실존여부 : {BLUE}실제 {}{BLACK}도색/모델 변경: {RED}불가능 {}{BLACK}복합가능열차{}{GREEN}ICE3
 STR_REFIT_ADDITIONAL_ITX_CW                         :{BLACK}열차 실존여부 : {RED}가상 {}{BLACK}도색/모델 변경: {GREEN}가능 {}{BLACK}복합가능열차{}{GREEN}ITX-초월
@@ -157,7 +159,7 @@ STR_REFIT_ADDITIONAL_ITX_SM2                        :{BLACK}열차 실존여부 
 STR_REFIT_ADDITIONAL_KTX_EM                         :{BLACK}열차 실존여부 : {RED}가상 {}{BLACK}도색/모델 변경: {RED}불가능 {}{BLACK}복합가능열차{}{GREEN}KTX-EM
 STR_REFIT_ADDITIONAL_KTX_N                          :{BLACK}열차 실존여부 : {RED}가상 {}{BLACK}도색/모델 변경: {RED}불가능 {}{BLACK}복합가능열차{}{GREEN}KTX-N
 STR_REFIT_ADDITIONAL_KTX_SC2                        :{BLACK}열차 실존여부 : {RED}가상 {}{BLACK}도색/모델 변경: {GREEN}가능 {}{BLACK}복합가능열차{}{GREEN}KTX-SC2
-STR_REFIT_ADDITIONAL_NJ2                            :{BLACK}열차 실존여부 : {BLUE}실제 {}{BLACK}도색/모델 변경: {GREEN}가능 {}{BLACK}복합가능열차{}{GREEN}BB15048, GT26CW, NJ2
+STR_REFIT_ADDITIONAL_NJ2                            :{BLACK}열차 실존여부 : {BLUE}실제 {}{BLACK}도색/모델 변경: {GREEN}가능 {}{BLACK}복합가능열차{}{GREEN}BB15000, GT26CW, HYEL-100, NJ2
 STR_REFIT_ADDITIONAL_NKX                            :{BLACK}열차 실존여부 : {RED}가상 {}{BLACK}도색/모델 변경: {GREEN}가능 {}{BLACK}복합가능열차{}{GREEN}NKX
 STR_REFIT_ADDITIONAL_NRT2                           :{BLACK}열차 실존여부 : {RED}가상 {}{BLACK}도색/모델 변경: {GREEN}가능 {}{BLACK}복합가능열차{}{GREEN}NRT2
 STR_REFIT_ADDITIONAL_Renfe_S_100                    :{BLACK}열차 실존여부 : {BLUE}실제 {}{BLACK}도색/모델 변경: {RED}불가능 {}{BLACK}복합가능열차{}{GREEN}Renfe S-100
@@ -225,6 +227,8 @@ STR_REFIT_LIVERY_Glory600D                          :(Glory 600 D도색)
 STR_REFIT_LIVERY_Glory600E                          :(Glory 600 E도색)
 STR_REFIT_LIVERY_HMXG                               :(HMX 녹색도색)
 STR_REFIT_LIVERY_HMXR                               :(HMX 빨강도색)
+STR_REFIT_LIVERY_SRT                                :(SRT)
+STR_REFIT_LIVERY_CJ                                 :(CJ 대한통운)
 STR_REFIT_LIVERY_ICE_Sancheon                       :(ICE-산천)
 STR_REFIT_LIVERY_ICE_Patjug                         :(ICE-팥죽)
 STR_REFIT_LIVERY_ITX_SM2_R                          :(ITX-SM2 빨강도색)
