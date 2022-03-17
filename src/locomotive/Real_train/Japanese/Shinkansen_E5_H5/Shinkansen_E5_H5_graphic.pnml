@@ -5,6 +5,10 @@ spriteset(set_Shinkansen_E5_H5_purchase, "src/locomotive/Real_Train/Japanese/Shi
     tmpl_purchase(0, 0)
 }
 
+alternative_sprites(set_Shinkansen_E5_H5_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "src/locomotive/Real_Train/Japanese/Shinkansen_E5_H5/Shinkansen_E5_32bpp.png"){
+    tmpl_purchase(0, 0)
+}
+
 /*--------------------------------------------------------------------
 1. E5
 --------------------------------------------------------------------*/
@@ -33,6 +37,37 @@ spriteset(set_Shinkansen_E5_wagon_end, "src/locomotive/Real_Train/Japanese/Shink
 }
 
 spriteset(set_Shinkansen_E5_engineT, "src/locomotive/Real_Train/Japanese/Shinkansen_E5_H5/Shinkansen_E5.png"){
+    engine_r(80, 108)
+}
+
+/*--------------------------------------------------------------------
+1. E5 32bpp
+--------------------------------------------------------------------*/
+alternative_sprites(set_Shinkansen_E5H_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "src/locomotive/Real_Train/Japanese/Shinkansen_E5_H5/Shinkansen_E5_32bpp.png"){
+    tmpl_purchase_for_dualhead(0, 108)
+}
+
+alternative_sprites(set_Shinkansen_E5_engineH, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "src/locomotive/Real_Train/Japanese/Shinkansen_E5_H5/Shinkansen_E5_32bpp.png"){
+    engine(80, 0)
+}
+
+alternative_sprites(set_Shinkansen_E5_wagon_start, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "src/locomotive/Real_Train/Japanese/Shinkansen_E5_H5/Shinkansen_E5_32bpp.png"){
+    wagon_start(80, 27)
+}
+
+alternative_sprites(set_Shinkansen_E5_wagon, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "src/locomotive/Real_Train/Japanese/Shinkansen_E5_H5/Shinkansen_E5_32bpp.png") {
+    wagon_1F(80, 54)
+}
+
+alternative_sprites(set_Shinkansen_E5_wagon_r, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "src/locomotive/Real_Train/Japanese/Shinkansen_E5_H5/Shinkansen_E5_32bpp.png") {
+    wagon_1F_r(80, 54)
+}
+
+alternative_sprites(set_Shinkansen_E5_wagon_end, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "src/locomotive/Real_Train/Japanese/Shinkansen_E5_H5/Shinkansen_E5_32bpp.png"){
+    wagon_start(80, 81)
+}
+
+alternative_sprites(set_Shinkansen_E5_engineT, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "src/locomotive/Real_Train/Japanese/Shinkansen_E5_H5/Shinkansen_E5_32bpp.png"){
     engine_r(80, 108)
 }
 
