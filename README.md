@@ -27,4 +27,4 @@ YST는 다소 까다로운 템플릿을 보유하고 보다 편한 코딩방식�
 타 grf의 고유 ID를 사용시 열차고유 ID충돌로 YST 열차셋이 등장하지 않을 수도 있습니다.<br>
 우선순위를 위해 grf목록의 YST를 상위로 올리시면 충돌할 일을 없습니다.<br>
 
-(https://github.com/evepoi/YST/blob/minengallery/docs/img/train_list.png)
+[YST열차목록](https://github.com/evepoi/YST/blob/minengallery/docs/img/train_list.png)
