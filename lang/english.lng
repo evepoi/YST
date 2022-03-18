@@ -159,7 +159,7 @@ STR_REFIT_ADDITIONAL_HMX                            :{BLACK}Existence of trains 
 STR_REFIT_ADDITIONAL_HSR_350X                       :{BLACK}Existence of trains : {YELLOW}Test Train {}{BLACK}Changing model/livery: {RED}Unavailable {}{BLACK}Combined train: {GREEN}HSR-350X
 STR_REFIT_ADDITIONAL_HYEL_100                       :{BLACK}Existence of trains : {RED}Virtual Train {}{BLACK}Changing model/livery: {GREEN}Available {}{BLACK}Combined train: {GREEN}BB15000, GT26CW, HYEL-100, NJ2
 STR_REFIT_ADDITIONAL_ICE_SP                         :{BLACK}Existence of trains : {RED}Virtual Train {}{BLACK}Changing model/livery: {GREEN}available {}{BLACK}Combined train: {GREEN}ICE-SP
-STR_REFIT_ADDITIONAL_ICE3                           :{BLACK}Existence of trains : {BLUE}Real train {}{BLACK}Changing model/livery: {RED}Unavailable {} {BLACK}Combined train: {GREEN}ICE3
+STR_REFIT_ADDITIONAL_ICE3                           :{BLACK}Existence of trains : {BLUE}Real train {}{BLACK}Changing model/livery: {RED}Unavailable {}{BLACK}Combined train: {GREEN}ICE3
 STR_REFIT_ADDITIONAL_ITX_CW                         :{BLACK}Existence of trains : {RED}Virtual Train {}{BLACK}Changing model/livery: {GREEN}available {}{BLACK}Combined train: {GREEN}ITX-Chowol
 STR_REFIT_ADDITIONAL_ITX_SM2                        :{BLACK}Existence of trains : {RED}Virtual Train {}{BLACK}Changing model/livery: {GREEN}available {}{BLACK}Combined train: {GREEN}ITX-SM2
 STR_REFIT_ADDITIONAL_KTX_EM                         :{BLACK}Existence of trains : {RED}Virtual Train {}{BLACK}Changing model/livery: {RED}Unavailable {}{BLACK}Combined train: {GREEN}KTX-EM
