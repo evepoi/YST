@@ -12,6 +12,15 @@ spriteset(set_MUGH_Wagon, "src\wagon\Mugunghwa_wagon\Mugunghwa_wagon.png") {
 spriteset(set_MUGH_Wagon_r, "src\wagon\Mugunghwa_wagon\Mugunghwa_wagon.png") {
     wagon_1F_r(80, 0)
 }
+
+spriteset(set_MUGH_Wagon_Driver_Car_B, "src\wagon\Mugunghwa_wagon\Mugunghwa_wagon.png") {
+    wagon_1F_F(80, 27)
+}
+
+spriteset(set_MUGH_Wagon_Driver_Car_F, "src\wagon\Mugunghwa_wagon\Mugunghwa_wagon.png") {
+    wagon_1F_F(80, 54)
+}
+
 /*--------------------------------------------------------------------
 구매정보
 --------------------------------------------------------------------*/

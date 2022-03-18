@@ -39,9 +39,10 @@ sort(FEAT_TRAINS, [
     Renfe_S_100,               //3003
     Renfe_S_103,               //3004
     Renfe_S_130,               //3034
+    Shinkansen_0,              //3063
     Shinkansen_500,            //3025
     Shinkansen_500_Cool,       //3026
-    Shinkansen_500_SP,         //3027
+    Shinkansen_500_KR,         //3027
     Shinkansen_800,            //3028
     Shinkansen_N700,           //3032
     Shinkansen_923,            //3012

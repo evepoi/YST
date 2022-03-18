@@ -2,26 +2,26 @@
 신칸센 500계
 --------------------------------------------------------------------*/
 // Graphics
-#include "Shinkansen_500_SP_graphic.pnml"
+#include "Shinkansen_0_graphic.pnml"
 
 // Switch
-#include "Shinkansen_500_SP_switch.pnml"
+#include "Shinkansen_0_switch.pnml"
 
 /*--------------------------------------------------------------------
 열차정보
 --------------------------------------------------------------------*/
-item(FEAT_TRAINS, Shinkansen_500_SP, 3027){
+item(FEAT_TRAINS, Shinkansen_0, 3063){
     property {
-        name:                           string(STR_Shinkansen_500_SP_NAME);
+        name:                           string(STR_Shinkansen_0_NAME);
         climates_available:             ALL_CLIMATES;
-        introduction_date:              date(2020, 1, 1);
+        introduction_date:              date(1964, 1, 1);
         track_type:                     ELRL;
         engine_class:                   ENGINE_CLASS_ELECTRIC;
         sprite_id:                      SPRITE_ID_NEW_TRAIN;
         dual_headed:                    1;
         
         //spec
-        speed:                          362km/h;
+        speed:                          230km/h;
         power:                          8000 kW;
         weight:                         40 ton;
         tractive_effort_coefficient:    0.3;
@@ -34,7 +34,7 @@ item(FEAT_TRAINS, Shinkansen_500_SP, 3027){
         reliability_decay:              0;
         
         //Cargo
-        cargo_capacity:                 53;
+        cargo_capacity:                 75;
         refittable_cargo_classes:       NO_CARGO_CLASS;
         non_refittable_cargo_classes:   NO_CARGO_CLASS;
         cargo_allow_refit:              [PASS];
@@ -50,22 +50,19 @@ item(FEAT_TRAINS, Shinkansen_500_SP, 3027){
         }
         
     graphics {
-        default:                        sw_Shinkansen_500_SP_engine;
-        purchase:                       sw_Shinkansen_500_SP_purchase;
-        speed:                          High_Speed_Train;
+        default:                        sw_Shinkansen_0_engine;
+        purchase:                       sw_Shinkansen_0_purchase;
         loading_speed:                  25;
         cost_factor:                    10;
         running_cost_factor:            150;
-        can_attach_wagon:               sw_Shinkansen_500_SP_wagon_attach;
-        cargo_subtype_text:             sw_Shinkansen_500_SP_cargo_subtype_text;
-        start_stop:                     sw_YST_train_start_stop_6;
-        additional_text:                string(STR_REFIT_ADDITIONAL_Shinkansen_500_SP);
+        can_attach_wagon:               sw_Shinkansen_0_wagon_attach;
+        start_stop:                     sw_YST_train_start_stop_4;
+        additional_text:                string(STR_REFIT_ADDITIONAL_Shinkansen_0);
         }
         
     livery_override(YST_1F_Passenger_Car) {
-        default:                        sw_Shinkansen_500_SP_wagon;
-        cargo_subtype_text:             sw_Shinkansen_500_SP_cargo_subtype_text;
-        cargo_capacity:                 100;
+        default:                        sw_Shinkansen_0_wagon;
+        cargo_capacity:                 75;
         loading_speed:                  25;
         running_cost_factor:            100;
         }

@@ -43,9 +43,10 @@ STR_NRT2_NAME                                       :[YST] NRT2
 STR_Renfe_S_100_NAME                                :[YST] Renfe S-100
 STR_Renfe_S_103_NAME                                :[YST] Renfe S-103
 STR_Renfe_S_130_NAME                                :[YST] Renfe S-130 & Talgo-250
+STR_Shinkansen_0_NAME                               :[YST] Shinkansen 0
 STR_Shinkansen_500_NAME                             :[YST] Shinkansen 500
 STR_Shinkansen_500_Cool_NAME                        :[YST] Shinkansen 500 Cool
-STR_Shinkansen_500_SP_NAME                          :[YST] Shinkansen 500 SP
+STR_Shinkansen_500_KR_NAME                          :[YST] Shinkansen 500 KR
 STR_Shinkansen_800_NAME                             :[YST] Shinkansen 800
 STR_Shinkansen_923_NAME                             :[YST] Shinkansen 923
 STR_Shinkansen_E5_H5_NAME                           :[YST] Shinkansen E5·H5
@@ -170,9 +171,10 @@ STR_REFIT_ADDITIONAL_NRT2                           :{BLACK}Existence of trains 
 STR_REFIT_ADDITIONAL_Renfe_S_100                    :{BLACK}Existence of trains : {BLUE}Real train {}{BLACK}Changing model/livery: {RED}Unavailable {}{BLACK}Combined train: {GREEN}Renfe S-100
 STR_REFIT_ADDITIONAL_Renfe_S_103                    :{BLACK}Existence of trains : {BLUE}Real train {}{BLACK}Changing model/livery: {RED}Unavailable {}{BLACK}Combined train: {GREEN}Renfe S-103
 STR_REFIT_ADDITIONAL_Renfe_S_130                    :{BLACK}Existence of trains : {BLUE}Real train {}{BLACK}Changing model/livery: {GREEN}available {}{BLACK}Combined train: {GREEN}Renfe S-130
+STR_REFIT_ADDITIONAL_Shinkansen_0                   :{BLACK}Existence of trains : {BLUE}Real train {}{BLACK}Changing model/livery: {RED}Unavailable {}{BLACK}Combined train: {RED}Unavailable
 STR_REFIT_ADDITIONAL_Shinkansen_500                 :{BLACK}Existence of trains : {BLUE}Real train {}{BLACK}Changing model/livery: {RED}Unavailable {}{BLACK}Combined train: {RED}Unavailable
 STR_REFIT_ADDITIONAL_Shinkansen_500_Cool            :{BLACK}Existence of trains : {RED}Virtual Train {}{BLACK}Changing model/livery: {RED}Unavailable {}{BLACK}Combined train: {RED}Unavailable
-STR_REFIT_ADDITIONAL_Shinkansen_500_SP              :{BLACK}Existence of trains : {RED}Virtual Train {}{BLACK}Changing model/livery: {GREEN}available {}{BLACK}Combined train: {RED}Unavailable
+STR_REFIT_ADDITIONAL_Shinkansen_500_KR              :{BLACK}Existence of trains : {RED}Virtual Train {}{BLACK}Changing model/livery: {GREEN}available {}{BLACK}Combined train: {RED}Unavailable
 STR_REFIT_ADDITIONAL_Shinkansen_800                 :{BLACK}Existence of trains : {BLUE}Real train {}{BLACK}Changing model/livery: {RED}Unavailable {}{BLACK}Combined train: {RED}Unavailable
 STR_REFIT_ADDITIONAL_Shinkansen_923                 :{BLACK}Existence of trains : {YELLOW}Test Train {}{BLACK}Changing model/livery: {RED}Unavailable {}{BLACK}Combined train: {RED}Unavailable
 STR_REFIT_ADDITIONAL_Shinkansen_E5_H5               :{BLACK}Existence of trains : {BLUE}Real train {}{BLACK}Changing model/livery: {GREEN}Available {}{BLACK}Combined train: {GREEN}E6, E8
@@ -232,8 +234,16 @@ STR_REFIT_LIVERY_Glory600D                          :(Glory 600 D Color)
 STR_REFIT_LIVERY_Glory600E                          :(Glory 600 E Color)
 STR_REFIT_LIVERY_HMXG                               :(HMX Green Color)
 STR_REFIT_LIVERY_HMXR                               :(HMX Red Color)
-STR_REFIT_LIVERY_SRT                                :(SRT)
-STR_REFIT_LIVERY_CJ                                 :(CJ Logistics)
+STR_REFIT_LIVERY_HYEL_100_SRT                       :(SRT)
+STR_REFIT_LIVERY_HYEL_100_CJ                        :(CJ Logistics)
+STR_REFIT_LIVERY_HYEL_100_poste                     :(Poste mail)
+STR_REFIT_LIVERY_HYEL_100_fedex                     :(Fedex)
+STR_REFIT_LIVERY_HYEL_100_ShanCheon                 :(ShanCheon)
+STR_REFIT_LIVERY_HYEL_100_Hanjin                    :(Hanjin Logistics)
+STR_REFIT_LIVERY_HYEL_100_logen                     :(logen Logistics)
+STR_REFIT_LIVERY_HYEL_100_lotte                     :(lotte Logistics)
+STR_REFIT_LIVERY_HYEL_100_DHL                       :(DHL)
+STR_REFIT_LIVERY_HYEL_100_Yellowcap                 :(Yellowcap)
 STR_REFIT_LIVERY_ICE_Sancheon                       :(ICE-Sancheon)
 STR_REFIT_LIVERY_ICE_Patjug                         :(ICE-Patjug)
 STR_REFIT_LIVERY_ITX_SM2_R                          :(ITX-SM2 Red Color)

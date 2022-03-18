@@ -8,8 +8,8 @@ grf {
 	grfid: "YSN2";
 	name: string(STR_GRF_NAME_WITH_VER);
 	desc: string(STR_GRF_DESC);
-	version: 30;
-	min_compatible_version: 29;
+	version: 31;
+	min_compatible_version: 30;
     
 	// Parameters
     #include "src/parameter.pnml"
@@ -84,6 +84,7 @@ if (Hong_Kong) {
     }
 
 if (Japanese) {
+    disable_item(FEAT_TRAINS, 3063); //Shinkansen_0
     disable_item(FEAT_TRAINS, 3025); //Shinkansen_500
     disable_item(FEAT_TRAINS, 3028); //Shinkansen_800
     disable_item(FEAT_TRAINS, 3029); //Shinkansen_E5
@@ -142,6 +143,7 @@ if (Real_Train) {
     disable_item(FEAT_TRAINS, 3041); //TGV_Pos
     disable_item(FEAT_TRAINS, 3043); //THSR_700T
     disable_item(FEAT_TRAINS, 3047); //CRH380D
+    disable_item(FEAT_TRAINS, 3063); //Shinkansen_0
     disable_item(FEAT_TRAINS, 4001); //AD_Tranz_CAF_A
     disable_item(FEAT_TRAINS, 4002); //MTR_AC_Cammall
     disable_item(FEAT_TRAINS, 4003); //MTR_DC_Cammall
@@ -182,6 +184,7 @@ if (Virtual_Train) {
     disable_item(FEAT_TRAINS, 3054); //NRT2
     disable_item(FEAT_TRAINS, 3055); //ITX_CW
     disable_item(FEAT_TRAINS, 3057); //KTX_EM
+    disable_item(FEAT_TRAINS, 3062); //HYEL_100
     disable_item(FEAT_TRAINS, 3060); //TAE_200
     disable_item(FEAT_TRAINS, 4009); //YMT_100
     disable_item(FEAT_TRAINS, 4010); //YMT_200

@@ -47,6 +47,7 @@
 #include "locomotive/Real_Train/European/TGV/TGV_Ouigo/TGV_Ouigo.pnml"
 
 //locomotive / Real_Train / Japanese
+#include "locomotive/Real_Train/Japanese/Shinkansen_0/Shinkansen_0.pnml"
 #include "locomotive/Real_Train/Japanese/Shinkansen_500/Shinkansen_500.pnml"
 #include "locomotive/Real_Train/Japanese/Shinkansen_800/Shinkansen_800.pnml"
 #include "locomotive/Real_Train/Japanese/Shinkansen_E5_H5/Shinkansen_E5_H5.pnml"
@@ -84,7 +85,7 @@
 #include "locomotive/Virtual_train/NKX/NKX.pnml"
 #include "locomotive/Virtual_train/NRT2/NRT2.pnml"
 #include "locomotive/Virtual_train/Shinkansen_500_Cool/Shinkansen_500_Cool.pnml"
-#include "locomotive/Virtual_train/Shinkansen_500_SP/Shinkansen_500_SP.pnml"
+#include "locomotive/Virtual_train/Shinkansen_500_KR/Shinkansen_500_KR.pnml"
 #include "locomotive/Virtual_train/TAE/TAE_100/TAE_100.pnml"
 #include "locomotive/Virtual_train/TAE/TAE_200/TAE_200.pnml"
 #include "locomotive/Virtual_train/TGV_Pos_Poste/TGV_Pos_Poste.pnml"
