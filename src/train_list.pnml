@@ -1,6 +1,7 @@
 //wagon
 #include "wagon/passenger_wagon/passenger_wagon.pnml"
-#include "wagon/Mugunghwa_wagon/Mugunghwa_wagon.pnml"
+#include "wagon/Coach_2F_wagon/Coach_2F_wagon.pnml"
+#include "wagon/Coach_2F_Last_wagon/Coach_2F_Last_wagon.pnml"
 #include "wagon/TGV_Poste_wagon/TGV_Poste_wagon.pnml"
 #include "wagon/YFX_wagon/YFX_wagon.pnml"
 #include "wagon/flat_car/Flat_1F_Car/Flat_1F_Car.pnml"
@@ -75,7 +76,8 @@
 #include "locomotive/Virtual_train/CRH600D/CRH600D.pnml"
 #include "locomotive/Virtual_train/Glory_600/Glory_600.pnml"
 #include "locomotive/Virtual_train/HMX/HMX.pnml"
-#include "locomotive/Virtual_train/HYEL_100/HYEL_100.pnml"
+#include "locomotive/Virtual_train/HYEL/HYEL_100/HYEL_100.pnml"
+#include "locomotive/Virtual_train/HYEL/HYEL_200/HYEL_200.pnml"
 #include "locomotive/Virtual_train/ICE_SP/ICE_SP.pnml"
 #include "locomotive/Virtual_train/ITX_CW/ITX_CW.pnml"
 #include "locomotive/Virtual_train/ITX_SM2/ITX_SM2.pnml"

@@ -30,6 +30,8 @@ STR_HEMU_430X_NAME                                  :[YST] HEMU-430X
 STR_HMX_NAME                                        :[YST] HMX
 STR_HSR_350X_NAME                                   :[YST] HSR-350X
 STR_HYEL_100_NAME                                   :[YST] HYEL-100
+STR_HYEL_200_NAME                                   :[YST] HYEL-200
+STR_HYEL_JET_NAME                                   :[YST] HYEL-JET
 STR_ICE3_NAME                                       :[YST] ICE3
 STR_ICE_CW_NAME                                     :[YST] ITX-Chowol
 STR_ICE_SP_NAME                                     :[YST] ICE-SP
@@ -85,7 +87,8 @@ STR_YMT_200_NAME                                    :[YST] YMT 200
 # wagon's name
 STR_YST_1F_PASS_NAME                                :[YST] 1F Passenger Car
 STR_YST_2F_PASS_NAME                                :[YST] 2F Passenger Car
-STR_MUGH_2F_NAME                                    :[YST] Mugunghwa 2F Passenger Car
+STR_Coach_2F_NAME                                   :[YST] Coach 2F Passenger Car
+STR_Coach_2F_Last_NAME                              :[YST] Coach Last 2F Passenger Car
 STR_YPW_1F_NAME                                     :[YST] YPW 1F Passenger Car
 STR_YPW_2F_NAME                                     :[YST] YPW 2F Passenger Car
 STR_YPW_Bed_Car_NAME                                :[YST] YPW Bed Car
@@ -158,6 +161,7 @@ STR_REFIT_ADDITIONAL_HEMU_430X                      :{BLACK}Existence of trains 
 STR_REFIT_ADDITIONAL_HMX                            :{BLACK}Existence of trains : {RED}Virtual Train {}{BLACK}Changing model/livery: {GREEN}Available {}{BLACK}Combined train: {GREEN}HMX
 STR_REFIT_ADDITIONAL_HSR_350X                       :{BLACK}Existence of trains : {YELLOW}Test Train {}{BLACK}Changing model/livery: {RED}Unavailable {}{BLACK}Combined train: {GREEN}HSR-350X
 STR_REFIT_ADDITIONAL_HYEL_100                       :{BLACK}Existence of trains : {RED}Virtual Train {}{BLACK}Changing model/livery: {GREEN}Available {}{BLACK}Combined train: {GREEN}BB15000, GT26CW, HYEL-100, NJ2
+STR_REFIT_ADDITIONAL_HYEL_200                       :{BLACK}Existence of trains : {RED}Virtual Train {}{BLACK}Changing model/livery: {RED}Unavailable {}{BLACK}Combined train: {GREEN}HYEL-200
 STR_REFIT_ADDITIONAL_ICE_SP                         :{BLACK}Existence of trains : {RED}Virtual Train {}{BLACK}Changing model/livery: {GREEN}available {}{BLACK}Combined train: {GREEN}ICE-SP
 STR_REFIT_ADDITIONAL_ICE3                           :{BLACK}Existence of trains : {BLUE}Real train {}{BLACK}Changing model/livery: {RED}Unavailable {}{BLACK}Combined train: {GREEN}ICE3
 STR_REFIT_ADDITIONAL_ITX_CW                         :{BLACK}Existence of trains : {RED}Virtual Train {}{BLACK}Changing model/livery: {GREEN}available {}{BLACK}Combined train: {GREEN}ITX-Chowol
@@ -211,7 +215,8 @@ STR_REFIT_ADDITIONAL_YMT_200                        :{BLACK}Existence of trains 
 STR_REFIT_ADDITIONAL                                :{BLACK}Changing model/livery: {GREEN}Available
 STR_REFIT_train_configuration_1F                    :{BLACK}train configuration: {GREEN}1F passenger vehicles
 STR_REFIT_train_configuration_2F                    :{BLACK}train configuration: {GREEN}2F passenger vehicles
-STR_REFIT_train_configuration_MUGH                  :{BLACK}train configuration: {GREEN}Mugunghwa 2F Passenger Car
+STR_REFIT_train_configuration_Coach                 :{BLACK}train configuration: {GREEN}Coach 2F Passenger vehicles
+STR_REFIT_train_configuration_Coach_Last            :{BLACK}train configuration: {GREEN}Coach 2F Passenger vehicles
 STR_REFIT_train_configuration_YPW                   :{BLACK}train configuration: {GREEN}YPW passenger vehicles
 STR_REFIT_train_configuration_TGV_Poste             :{BLACK}train configuration: {GREEN}TGV Old Poste, TGV Pos Poste
 STR_REFIT_train_configuration_YFX_Freight           :{BLACK}train configuration: {GREEN}YFX Freight Car
@@ -244,6 +249,8 @@ STR_REFIT_LIVERY_HYEL_100_logen                     :(logen Logistics)
 STR_REFIT_LIVERY_HYEL_100_lotte                     :(lotte Logistics)
 STR_REFIT_LIVERY_HYEL_100_DHL                       :(DHL)
 STR_REFIT_LIVERY_HYEL_100_Yellowcap                 :(Yellowcap)
+STR_REFIT_LIVERY_HYEL_JET_A                         :(HYEL-JET A Color)
+STR_REFIT_LIVERY_HYEL_JET_A_r                       :(HYEL-JET A Color OverTurn)
 STR_REFIT_LIVERY_ICE_Sancheon                       :(ICE-Sancheon)
 STR_REFIT_LIVERY_ICE_Patjug                         :(ICE-Patjug)
 STR_REFIT_LIVERY_ITX_SM2_R                          :(ITX-SM2 Red Color)
@@ -281,8 +288,8 @@ STR_REFIT_LIVERY_TGV_LYAIR                          :(TGV Lyair)
 STR_REFIT_LIVERY_TGV_THALYS                         :(TGV Thalys)
 
 # Liveries metro
-STR_REFIT_LIVERY_MTR_AD_Tranz_CAF_A_Airport_Express :(MTR AD Tranz CAF A형 공항선)
-STR_REFIT_LIVERY_MTR_AD_Tranz_CAF_A_Tung_Chung      :(MTR AD Tranz CAF A형 뚱충선)
+STR_REFIT_LIVERY_MTR_AD_Tranz_CAF_A_Airport_Express :(MTR AD Tranz CAF A Type Airport Express)
+STR_REFIT_LIVERY_MTR_AD_Tranz_CAF_A_Tung_Chung      :(MTR AD Tranz CAF A Type Tung Chung)
 STR_REFIT_LIVERY_MTR_DC_Cammall                     :(no remoding Car)
 STR_REFIT_LIVERY_MTR_DC_Cammall_Remoding            :(remoding Car)
 STR_REFIT_LIVERY_MTR_DC_Cammall_Disney              :(Disney Car)

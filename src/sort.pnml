@@ -26,6 +26,7 @@ sort(FEAT_TRAINS, [
     HMX,                       //3019
     HSR_350X,                  //3061
     HYEL_100,                  //3062
+    HYEL_200,                  //3064
     ICE_SP,                    //3020
     ICE3,                      //3021
     ITX_CW,                    //3055
@@ -79,7 +80,8 @@ sort(FEAT_TRAINS, [
     
     YST_1F_Passenger_Car,      //2001
     YST_2F_Passenger_Car,      //2002
-    MUGH_2F,                   //2014
+    Coach_2F,                  //2014
+    Coach_2F_Last,             //2015
     YPW_1F,                    //2009
     YPW_2F,                    //2010
     YPW_Bed_Car,               //2011

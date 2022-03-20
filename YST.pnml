@@ -8,8 +8,8 @@ grf {
 	grfid: "YSN2";
 	name: string(STR_GRF_NAME_WITH_VER);
 	desc: string(STR_GRF_DESC);
-	version: 32;
-	min_compatible_version: 31;
+	version: 33;
+	min_compatible_version: 32;
     
 	// Parameters
     #include "src/parameter.pnml"
@@ -184,8 +184,9 @@ if (Virtual_Train) {
     disable_item(FEAT_TRAINS, 3054); //NRT2
     disable_item(FEAT_TRAINS, 3055); //ITX_CW
     disable_item(FEAT_TRAINS, 3057); //KTX_EM
-    disable_item(FEAT_TRAINS, 3062); //HYEL_100
     disable_item(FEAT_TRAINS, 3060); //TAE_200
+    disable_item(FEAT_TRAINS, 3062); //HYEL_100
+    disable_item(FEAT_TRAINS, 3064); //HYEL_200
     disable_item(FEAT_TRAINS, 4009); //YMT_100
     disable_item(FEAT_TRAINS, 4010); //YMT_200
     }
