@@ -86,7 +86,6 @@ item (FEAT_TRAINS, YST_1F_Passenger_Car, 2001){
         climates_available:             ALL_CLIMATES;
         introduction_date:              date(1978, 1, 1);
         track_type:                     RAIL;
-        engine_class:                   ENGINE_CLASS_ELECTRIC;
         sprite_id:                      SPRITE_ID_NEW_TRAIN;
 
         //spec
@@ -133,7 +132,6 @@ item (FEAT_TRAINS, YST_2F_Passenger_Car, 2002){
         climates_available:             ALL_CLIMATES;
         introduction_date:              date(1994, 1, 1);
         track_type:                     RAIL;
-        engine_class:                   ENGINE_CLASS_ELECTRIC;
         sprite_id:                      SPRITE_ID_NEW_TRAIN;
 
         //spec
