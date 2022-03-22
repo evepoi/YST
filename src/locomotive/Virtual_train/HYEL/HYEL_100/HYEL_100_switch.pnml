@@ -11,6 +11,7 @@ switch(FEAT_TRAINS, SELF, sw_HYEL_100_cargo_subtype_text, cargo_subtype) {
     7: return string(STR_REFIT_LIVERY_HYEL_100_lotte);     // 롯데 택배
     8: return string(STR_REFIT_LIVERY_HYEL_100_DHL);       // DHL
     9: return string(STR_REFIT_LIVERY_HYEL_100_Yellowcap); // 옐로우캡
+    10: return string(STR_REFIT_LIVERY_HYEL_100_Daesin);    // 대신 택배
     return string(STR_REFIT_LIVERY_HYEL_100_SRT);
 }
 
@@ -24,6 +25,7 @@ switch(FEAT_TRAINS, SELF, sw_HYEL_100_engine, cargo_subtype) {
     7: set_HYEL_100_lotte_engine;     // 롯데 택배
     8: set_HYEL_100_DHL_engine;       // DHL
     9: set_HYEL_100_Yellowcap_engine; // 옐로우캡
+    10: set_HYEL_100_Daesin_engine;    // 대신 택배
     set_HYEL_100_engine;
 }
 
