@@ -34,7 +34,7 @@ item(FEAT_TRAINS, Shinkansen_E7_W7, 3031){
         reliability_decay:              0;
         
         //Cargo
-        cargo_capacity:                 50;
+        cargo_capacity:                 34;
         refittable_cargo_classes:       NO_CARGO_CLASS;
         non_refittable_cargo_classes:   NO_CARGO_CLASS;
         cargo_allow_refit:              [PASS];
@@ -62,7 +62,8 @@ item(FEAT_TRAINS, Shinkansen_E7_W7, 3031){
         
     livery_override(YST_1F_Passenger_Car) {
         default:                        sw_Shinkansen_E7_W7_wagon;
-        cargo_capacity:                 98;
+        cargo_subtype_text:             sw_Shinkansen_E7_W7_cargo_subtype_text;
+        cargo_capacity:                 sw_Shinkansen_E7_W7_wagon_capacity_in_custom;
         loading_speed:                  25;
         running_cost_factor:            150;
         }

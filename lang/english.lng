@@ -183,7 +183,7 @@ STR_REFIT_ADDITIONAL_Shinkansen_800                 :{BLACK}Existence of trains 
 STR_REFIT_ADDITIONAL_Shinkansen_923                 :{BLACK}Existence of trains : {YELLOW}Test Train {}{BLACK}Changing model/livery: {RED}Unavailable {}{BLACK}Combined train: {RED}Unavailable
 STR_REFIT_ADDITIONAL_Shinkansen_E5_H5               :{BLACK}Existence of trains : {BLUE}Real train {}{BLACK}Changing model/livery: {GREEN}Available {}{BLACK}Combined train: {GREEN}E6, E8
 STR_REFIT_ADDITIONAL_Shinkansen_E6                  :{BLACK}Existence of trains : {BLUE}Real train {}{BLACK}Changing model/livery: {RED}Unavailable {}{BLACK}Combined train: {GREEN}E5, H5
-STR_REFIT_ADDITIONAL_Shinkansen_E7                  :{BLACK}Existence of trains : {BLUE}Real train {}{BLACK}Changing model/livery: {RED}Unavailable {}{BLACK}Combined train: {RED}Unavailable
+STR_REFIT_ADDITIONAL_Shinkansen_E7                  :{BLACK}Existence of trains : {BLUE}Real train {}{BLACK}Changing model/livery: {GREEN}available {}{BLACK}Combined train: {RED}Unavailable
 STR_REFIT_ADDITIONAL_Shinkansen_E8                  :{BLACK}Existence of trains : {PURPLE}Plan Train {}{BLACK}Changing model/livery: {RED}Unavailable {}{BLACK}Combined train: {GREEN}E5, H5
 STR_REFIT_ADDITIONAL_Shinkansen_N700                :{BLACK}Existence of trains : {BLUE}Real train {}{BLACK}Changing model/livery: {GREEN}available {}{BLACK}Combined train: {RED}Unavailable
 STR_REFIT_ADDITIONAL_TAE_100                        :{BLACK}Existence of trains : {RED}Virtual Train {}{BLACK}Changing model/livery: {GREEN}available {}{BLACK}Combined train: {GREEN}TAE-100, TAE-200
@@ -243,13 +243,15 @@ STR_REFIT_LIVERY_HYEL_100_SRT                       :(SRT)
 STR_REFIT_LIVERY_HYEL_100_CJ                        :(CJ Logistics)
 STR_REFIT_LIVERY_HYEL_100_poste                     :(Poste mail)
 STR_REFIT_LIVERY_HYEL_100_fedex                     :(Fedex)
-STR_REFIT_LIVERY_HYEL_100_ShanCheon                 :(ShanCheon)
+STR_REFIT_LIVERY_HYEL_100_SanCheon                  :(SanCheon)
 STR_REFIT_LIVERY_HYEL_100_Hanjin                    :(Hanjin Logistics)
 STR_REFIT_LIVERY_HYEL_100_logen                     :(logen Logistics)
 STR_REFIT_LIVERY_HYEL_100_lotte                     :(lotte Logistics)
 STR_REFIT_LIVERY_HYEL_100_DHL                       :(DHL)
 STR_REFIT_LIVERY_HYEL_100_Yellowcap                 :(Yellowcap)
 STR_REFIT_LIVERY_HYEL_100_Daesin                    :(Daesin Logistics)
+STR_REFIT_LIVERY_HYEL_100_Ilyang                    :(Ilyang Logistics)
+STR_REFIT_LIVERY_HYEL_100_Korail                    :(Korail)
 STR_REFIT_LIVERY_HYEL_JET_A                         :(HYEL-JET A Color)
 STR_REFIT_LIVERY_HYEL_JET_A_r                       :(HYEL-JET A Color OverTurn)
 STR_REFIT_LIVERY_ICE_Sancheon                       :(ICE-Sancheon)
@@ -275,6 +277,8 @@ STR_REFIT_LIVERY_N700_Sanyo_Kyushu                  :(Sanyo-Kyushu Shinkansen)
 STR_REFIT_LIVERY_N700S_Nishikyushu                  :(Nishikyushu Shinkansen)
 STR_REFIT_LIVERY_Shinkansen_E5                      :(Shinkansen E5)
 STR_REFIT_LIVERY_Shinkansen_H5                      :(Shinkansen H5)
+STR_REFIT_LIVERY_Nomal_wagon                        :(Nomal Car)
+STR_REFIT_LIVERY_Green_wagon                        :(Green Car)
 STR_REFIT_LIVERY_TAE_100                            :(TAE 100)
 STR_REFIT_LIVERY_TAE_100_Yellow                     :(TAE 100 Yellow)
 STR_REFIT_LIVERY_Renfe_S_130_Alvia                  :(Renfe S-130 Alvia)

@@ -178,7 +178,7 @@ STR_REFIT_ADDITIONAL_Shinkansen_800                 :{BLACK}열차 실존여부 
 STR_REFIT_ADDITIONAL_Shinkansen_923                 :{BLACK}열차 실존여부 : {YELLOW}시험 {}{BLACK}도색/모델 변경: {RED}불가능 {}{BLACK}복합열차구성 : {RED}불가능
 STR_REFIT_ADDITIONAL_Shinkansen_E5_H5               :{BLACK}열차 실존여부 : {BLUE}실제 {}{BLACK}도색/모델 변경: {GREEN}가능 {}{BLACK}복합가능열차{}{GREEN}E6, E8
 STR_REFIT_ADDITIONAL_Shinkansen_E6                  :{BLACK}열차 실존여부 : {BLUE}실제 {}{BLACK}도색/모델 변경: {RED}불가능 {}{BLACK}복합가능열차{}{GREEN}E5, H5
-STR_REFIT_ADDITIONAL_Shinkansen_E7                  :{BLACK}열차 실존여부 : {BLUE}실제 {}{BLACK}도색/모델 변경: {RED}불가능 {}{BLACK}복합열차구성 : {RED}불가능
+STR_REFIT_ADDITIONAL_Shinkansen_E7                  :{BLACK}열차 실존여부 : {BLUE}실제 {}{BLACK}도색/모델 변경: {GREEN}가능 {}{BLACK}복합열차구성 : {RED}불가능
 STR_REFIT_ADDITIONAL_Shinkansen_E8                  :{BLACK}열차 실존여부 : {PURPLE}계획 {}{BLACK}도색/모델 변경: {RED}불가능 {}{BLACK}복합가능열차{}{GREEN}E5, H5
 STR_REFIT_ADDITIONAL_Shinkansen_N700                :{BLACK}열차 실존여부 : {BLUE}실제 {}{BLACK}도색/모델 변경: {GREEN}가능 {}{BLACK}복합열차구성 : {RED}불가능
 STR_REFIT_ADDITIONAL_TAE_100                        :{BLACK}열차 실존여부 : {RED}가상 {}{BLACK}도색/모델 변경: {GREEN}가능 {}{BLACK}복합가능열차{}{GREEN}TAE-100, TAE-200
@@ -238,13 +238,15 @@ STR_REFIT_LIVERY_HYEL_100_SRT                       :(SRT)
 STR_REFIT_LIVERY_HYEL_100_CJ                        :(CJ 대한통운)
 STR_REFIT_LIVERY_HYEL_100_poste                     :(우체국 택배)
 STR_REFIT_LIVERY_HYEL_100_fedex                     :(Fedex)
-STR_REFIT_LIVERY_HYEL_100_ShanCheon                 :(산천)
+STR_REFIT_LIVERY_HYEL_100_SanCheon                  :(산천)
 STR_REFIT_LIVERY_HYEL_100_Hanjin                    :(한진 택배)
 STR_REFIT_LIVERY_HYEL_100_logen                     :(로젠 택배)
 STR_REFIT_LIVERY_HYEL_100_lotte                     :(롯데 택배)
 STR_REFIT_LIVERY_HYEL_100_DHL                       :(DHL)
 STR_REFIT_LIVERY_HYEL_100_Yellowcap                 :(옐로우캡)
 STR_REFIT_LIVERY_HYEL_100_Daesin                    :(대신 택배)
+STR_REFIT_LIVERY_HYEL_100_Ilyang                    :(일양 택배)
+STR_REFIT_LIVERY_HYEL_100_Korail                    :(코레일)
 STR_REFIT_LIVERY_HYEL_JET_A                         :(HYEL-JET A도색)
 STR_REFIT_LIVERY_HYEL_JET_A_r                       :(HYEL-JET A도색 뒤집힘)
 STR_REFIT_LIVERY_ICE_Sancheon                       :(ICE-산천)
@@ -270,6 +272,8 @@ STR_REFIT_LIVERY_N700_Sanyo_Kyushu                  :(산요-큐슈 신칸센)
 STR_REFIT_LIVERY_N700S_Nishikyushu                  :(니시큐슈 신칸센)
 STR_REFIT_LIVERY_Shinkansen_E5                      :(신칸센 E5)
 STR_REFIT_LIVERY_Shinkansen_H5                      :(신칸센 H5)
+STR_REFIT_LIVERY_Nomal_wagon                        :(일반실)
+STR_REFIT_LIVERY_Green_wagon                        :(그린샤)
 STR_REFIT_LIVERY_TAE_100                            :(TAE 100)
 STR_REFIT_LIVERY_TAE_100_Yellow                     :(TAE 100 Yellow)
 STR_REFIT_LIVERY_Renfe_S_130_Alvia                  :(Renfe S-130 Alvia)
