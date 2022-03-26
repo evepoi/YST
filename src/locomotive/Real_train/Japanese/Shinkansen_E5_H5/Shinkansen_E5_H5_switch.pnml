@@ -41,14 +41,29 @@ switch(FEAT_TRAINS, SELF, sw_Shinkansen_E5_H5_wagon_tail, cargo_subtype) {
     set_Shinkansen_E5_wagon_r;
 }
 
+switch(FEAT_TRAINS, SELF, sw_Shinkansen_E5_H5_green_wagon_cargo_subtype, cargo_subtype) {
+    1: set_Shinkansen_H5_green_wagon; // H5
+    set_Shinkansen_E5_green_wagon;
+}
+
 switch(FEAT_TRAINS, SELF, sw_Shinkansen_E5_H5_wagon_cargo_subtype, (position_in_consist)) {
     1: sw_Shinkansen_E5_H5_wagon_tail;
     sw_Shinkansen_E5_H5_wagon_front;
 }
 
+switch(FEAT_TRAINS, SELF, sw_Shinkansen_E5_H5_wagon_capacity_in_custom, (position_in_consist_from_end)) {
+    1: return 55;
+       89;
+}
+
+switch(FEAT_TRAINS, SELF, sw_Shinkansen_E5_H5_green_wagon_rear, [STORE_TEMP(1, 0x10F), var[0x61, 0, 0x0000FFFF, 0xC6]]){
+    Shinkansen_E5_H5: sw_Shinkansen_E5_H5_green_wagon_cargo_subtype;
+    sw_Shinkansen_E5_H5_wagon_cargo_subtype;
+}
+
 switch(FEAT_TRAINS, SELF, sw_Shinkansen_E5_H5_wagon_rear, [STORE_TEMP(3, 0x10F), var[0x61, 0, 0x0000FFFF, 0xC6]]){
     Shinkansen_E5_H5: sw_Shinkansen_E5_H5_panto_wagon_cargo_subtype;
-    sw_Shinkansen_E5_H5_wagon_cargo_subtype;
+    sw_Shinkansen_E5_H5_green_wagon_rear;
 }
 
 switch(FEAT_TRAINS, SELF, sw_Shinkansen_E5_H5_wagon, [STORE_TEMP(-2, 0x10F), var[0x61, 0, 0x0000FFFF, 0xC6]]) {

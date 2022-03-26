@@ -1,9 +1,9 @@
 /*--------------------------------------------------------------------
 스위치
 --------------------------------------------------------------------*/
-switch(FEAT_TRAINS, SELF, sw_YFX_wagon, (position_in_consist)) {
-    1: set_YFX_wagon_r;
-    set_YFX_wagon;
+switch(FEAT_TRAINS, SELF, sw_YFX_wagon, random_bits) {
+     1: sg_YFX_wagon;
+     set_YFX_wagon;
 }
 
 switch(FEAT_TRAINS, SELF, sw_YFXF_wagon_attach, vehicle_type_id) {

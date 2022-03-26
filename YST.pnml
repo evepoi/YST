@@ -8,8 +8,8 @@ grf {
 	grfid: "YSN2";
 	name: string(STR_GRF_NAME_WITH_VER);
 	desc: string(STR_GRF_DESC);
-	version: 36;
-	min_compatible_version: 35;
+	version: 37;
+	min_compatible_version: 36;
     
 	// Parameters
     #include "src/parameter.pnml"
@@ -110,7 +110,8 @@ if (Plan_Train) {
     disable_item(FEAT_TRAINS, 3056); //GTX
     disable_item(FEAT_TRAINS, 3058); //Shinkansen_E8
     disable_item(FEAT_TRAINS, 3059); //VHST_600X
-    }
+    disable_item(FEAT_TRAINS, 3065); //NHSRCL_E5
+}
 
 // Real train 실제운영열차
 if (Real_Train) {

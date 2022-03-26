@@ -34,7 +34,7 @@ item(FEAT_TRAINS, Shinkansen_E5_H5, 3029){
         reliability_decay:              0;
         
         //Cargo
-        cargo_capacity:                 20;
+        cargo_capacity:                 38;
         refittable_cargo_classes:       NO_CARGO_CLASS;
         non_refittable_cargo_classes:   NO_CARGO_CLASS;
         cargo_allow_refit:              [PASS];
@@ -65,7 +65,7 @@ item(FEAT_TRAINS, Shinkansen_E5_H5, 3029){
     livery_override(YST_1F_Passenger_Car) {
         default:                        sw_Shinkansen_E5_H5_wagon;
         cargo_subtype_text:             sw_Shinkansen_E5_H5_cargo_subtype_text;
-        cargo_capacity:                 100;
+        cargo_capacity:                 sw_Shinkansen_E5_H5_wagon_capacity_in_custom;
         loading_speed:                  25;
         running_cost_factor:            100;
         }

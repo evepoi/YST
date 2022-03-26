@@ -62,7 +62,6 @@ item(FEAT_TRAINS, Shinkansen_E7_W7, 3031){
         
     livery_override(YST_1F_Passenger_Car) {
         default:                        sw_Shinkansen_E7_W7_wagon;
-        cargo_subtype_text:             sw_Shinkansen_E7_W7_cargo_subtype_text;
         cargo_capacity:                 sw_Shinkansen_E7_W7_wagon_capacity_in_custom;
         loading_speed:                  25;
         running_cost_factor:            150;

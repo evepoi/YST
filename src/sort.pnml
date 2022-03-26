@@ -34,6 +34,7 @@ sort(FEAT_TRAINS, [
     KTX_EM,                    //3057
     KTX_N,                     //3022
     KTX_SC2,                   //3053
+    NHSRCL_E5,                 //3065
     NJ2,                       //3023
     NKX,                       //3024
     NRT2,                      //3054

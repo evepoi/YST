@@ -19,6 +19,7 @@
 #include "locomotive/Plan_Train/EMU/EMU260/EMU260.pnml"
 #include "locomotive/Plan_Train/EMU/EMU320/EMU320.pnml"
 #include "locomotive/Plan_Train/GTX/GTX.pnml"
+#include "locomotive/Plan_Train/NHSRCL_E5/NHSRCL_E5.pnml"
 #include "locomotive/Plan_Train/Shinkansen_E8/Shinkansen_E8.pnml"
 #include "locomotive/Plan_Train/VHST_600X/VHST_600X.pnml"
 

@@ -39,6 +39,7 @@ STR_ITX_SM2_NAME                                    :[YST] ITX-SM2
 STR_KTX_EM_NAME                                     :[YST] KTX-EM
 STR_KTX_N_NAME                                      :[YST] KTX-N
 STR_KTX_SC2_NAME                                    :[YST] KTX-SC2
+STR_NHSRCL_E5_NAME                                  :[YST] NHSRCL E5
 STR_NJ2_NAME                                        :[YST] NJ2
 STR_NKX_NAME                                        :[YST] NKX
 STR_NRT2_NAME                                       :[YST] NRT2
@@ -164,6 +165,7 @@ STR_REFIT_ADDITIONAL_ITX_SM2                        :{BLACK}열차 실존여부 
 STR_REFIT_ADDITIONAL_KTX_EM                         :{BLACK}열차 실존여부 : {RED}가상 {}{BLACK}도색/모델 변경: {RED}불가능 {}{BLACK}복합가능열차{}{GREEN}KTX-EM
 STR_REFIT_ADDITIONAL_KTX_N                          :{BLACK}열차 실존여부 : {RED}가상 {}{BLACK}도색/모델 변경: {RED}불가능 {}{BLACK}복합가능열차{}{GREEN}KTX-N
 STR_REFIT_ADDITIONAL_KTX_SC2                        :{BLACK}열차 실존여부 : {RED}가상 {}{BLACK}도색/모델 변경: {GREEN}가능 {}{BLACK}복합가능열차{}{GREEN}KTX-SC2
+STR_REFIT_ADDITIONAL_NHSRCL_E5                      :{BLACK}열차 실존여부 : {PURPLE}계획 {}{BLACK}도색/모델 변경: {RED}불가능 {}{BLACK}복합가능열차{}{GREEN}NHSRCL E5
 STR_REFIT_ADDITIONAL_NJ2                            :{BLACK}열차 실존여부 : {BLUE}실제 {}{BLACK}도색/모델 변경: {GREEN}가능 {}{BLACK}복합가능열차{}{GREEN}BB15000, GT26CW, HYEL-100, NJ2
 STR_REFIT_ADDITIONAL_NKX                            :{BLACK}열차 실존여부 : {RED}가상 {}{BLACK}도색/모델 변경: {GREEN}가능 {}{BLACK}복합가능열차{}{GREEN}NKX
 STR_REFIT_ADDITIONAL_NRT2                           :{BLACK}열차 실존여부 : {RED}가상 {}{BLACK}도색/모델 변경: {GREEN}가능 {}{BLACK}복합가능열차{}{GREEN}NRT2
@@ -274,6 +276,10 @@ STR_REFIT_LIVERY_Shinkansen_E5                      :(신칸센 E5)
 STR_REFIT_LIVERY_Shinkansen_H5                      :(신칸센 H5)
 STR_REFIT_LIVERY_Nomal_wagon                        :(일반실)
 STR_REFIT_LIVERY_Green_wagon                        :(그린샤)
+STR_REFIT_LIVERY_E5_Nomal_wagon                     :(E5 일반실)
+STR_REFIT_LIVERY_H5_Nomal_wagon                     :(H5 일반실)
+STR_REFIT_LIVERY_E5_Green_wagon                     :(E5 그린샤)
+STR_REFIT_LIVERY_H5_Green_wagon                     :(H5 그린샤)
 STR_REFIT_LIVERY_TAE_100                            :(TAE 100)
 STR_REFIT_LIVERY_TAE_100_Yellow                     :(TAE 100 Yellow)
 STR_REFIT_LIVERY_Renfe_S_130_Alvia                  :(Renfe S-130 Alvia)
