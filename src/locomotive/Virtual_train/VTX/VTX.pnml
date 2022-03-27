@@ -25,7 +25,6 @@ item(FEAT_TRAINS, VTX, 3044){
         power:                          10000 kW;
         weight:                         40 ton;
         tractive_effort_coefficient:    0.3;
-        air_drag_coefficient:           0.01;
         
         //Model
         model_life:                     VEHICLE_NEVER_EXPIRES;
