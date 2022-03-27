@@ -78,8 +78,11 @@ sort(FEAT_TRAINS, [
     IKK_SP_1900,               //4008
     YMT_100,                   //4009
     YMT_200,                   //4010
+
+    Shinkansen_L0,             //3066
     
     YST_1F_Passenger_Car,      //2001
+    MAGV_Passenger_Car,        //2016
     YST_2F_Passenger_Car,      //2002
     Coach_2F,                  //2014
     Coach_2F_Last,             //2015

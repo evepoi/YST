@@ -8,8 +8,8 @@ grf {
 	grfid: "YSN2";
 	name: string(STR_GRF_NAME_WITH_VER);
 	desc: string(STR_GRF_DESC);
-	version: 37;
-	min_compatible_version: 36;
+	version: 38;
+	min_compatible_version: 37;
     
 	// Parameters
     #include "src/parameter.pnml"
@@ -34,7 +34,7 @@ cargotable {
 
 // Railtypetable
 railtypetable {
-    RAIL, ELRL}
+    RAIL, ELRL, MGLV}
 
 // Load templates
 #include "src/template_list.pnml"
