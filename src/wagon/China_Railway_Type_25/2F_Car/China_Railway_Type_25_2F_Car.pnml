@@ -2,17 +2,17 @@
 YFX
 --------------------------------------------------------------------*/
 // Graphics
-#include "YPW_Luggage_Car_graphic.pnml"
+#include "China_Railway_Type_25_2F_Car_graphic.pnml"
 
 // Switch
-#include "YPW_Luggage_Car_switch.pnml"
+#include "China_Railway_Type_25_2F_Car_switch.pnml"
 
 /*--------------------------------------------------------------------
 열차정보
 --------------------------------------------------------------------*/
-item(FEAT_TRAINS, YPW_Luggage_Car, 2013){
+item(FEAT_TRAINS, China_Railway_Type_25_2F, 2010){
     property {
-        name:                           string(STR_YPW_Luggage_Car_NAME);
+        name:                           string(STR_China_Railway_Type_25_2F_NAME);
         climates_available:             ALL_CLIMATES;
         introduction_date:              date(1967, 1, 1);
         track_type:                     RAIL;
@@ -20,7 +20,7 @@ item(FEAT_TRAINS, YPW_Luggage_Car, 2013){
         
         //spec
         power:                          0 kW;
-        weight:                         15 ton;
+        weight:                         30 ton;
         tractive_effort_coefficient:    0.3;
 
         //Model
@@ -33,7 +33,7 @@ item(FEAT_TRAINS, YPW_Luggage_Car, 2013){
         cargo_capacity:                 200;
         refittable_cargo_classes:       NO_CARGO_CLASS;
         non_refittable_cargo_classes:   NO_CARGO_CLASS;
-        cargo_allow_refit:              [MAIL, VALU];
+        cargo_allow_refit:              [PASS];
         cargo_disallow_refit:           [];
         
         //Costs
@@ -45,13 +45,12 @@ item(FEAT_TRAINS, YPW_Luggage_Car, 2013){
         }
 
 	graphics {
-        default:                        sw_YPW_Luggage_wagon;
-        purchase:                       sw_YPW_Luggage_Car_purchase;
+        default:                        set_China_Railway_Type_25_2F_Car_wagon;
+        purchase:                       sw_China_Railway_Type_25_2F_Car_purchase;
         loading_speed:                  25;
         cost_factor:                    10;
         running_cost_factor:            50;
-        can_attach_wagon:               sw_YPW_Luggage_wagon_attach;
-        cargo_subtype_text:             sw_YPW_Luggage_cargo_subtype_text;
-        additional_text:                string(STR_REFIT_train_configuration_YPW);
+        can_attach_wagon:               sw_China_Railway_Type_25_2F_wagon_attach;
+        additional_text:                string(STR_REFIT_train_configuration_China_Railway_Type_25);
         }
         }

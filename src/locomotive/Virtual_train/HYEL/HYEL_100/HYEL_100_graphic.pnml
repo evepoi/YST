@@ -149,6 +149,17 @@ alternative_sprites(set_HYEL_100_Korail_engine, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32B
 	engine(80, 0)
 }
 
+/*--------------------------------------------------------------------
+13. HYEL_100_아이언맨
+--------------------------------------------------------------------*/
+spriteset(set_HYEL_100_Ironman_engine, "src/locomotive/Virtual_train/HYEL/HYEL_100/HYEL_100.png"){
+	engine(80, 0)
+}
+
+alternative_sprites(set_HYEL_100_Ironman_engine, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "src/locomotive/Virtual_train/HYEL/HYEL_100/HYEL_100_Ironman_32bPP.png"){
+	engine(80, 0)
+}
+
 
 /*--------------------------------------------------------------------
 구매정보

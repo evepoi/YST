@@ -1,0 +1,25 @@
+/*--------------------------------------------------------------------
+Graphics
+--------------------------------------------------------------------*/
+spriteset(set_China_Railway_Type_25_Bed_Car_purchase, "src\wagon\China_Railway_Type_25\Bed_Car\China_Railway_Type_25_Bed_Car.png"){
+    tmpl_wagon_purchase(0, 0)
+}
+
+spriteset(set_China_Railway_Type_25_Bed_3nd_Car_wagon, "src\wagon\China_Railway_Type_25\Bed_Car\China_Railway_Type_25_Bed_Car.png") {
+    wagon_1F_F(80, 0)
+}
+
+spriteset(set_China_Railway_Type_25_Bed_2nd_Car_wagon, "src\wagon\China_Railway_Type_25\Bed_Car\China_Railway_Type_25_Bed_Car.png") {
+    wagon_1F_F(80, 27)
+}
+
+spriteset(set_China_Railway_Type_25_Bed_1nd_Car_wagon, "src\wagon\China_Railway_Type_25\Bed_Car\China_Railway_Type_25_Bed_Car.png") {
+    wagon_1F_F(80, 54)
+}
+
+/*--------------------------------------------------------------------
+구매정보
+--------------------------------------------------------------------*/
+switch(FEAT_TRAINS, SELF, sw_China_Railway_Type_25_Bed_Car_purchase, cargo_subtype) {
+    set_China_Railway_Type_25_Bed_Car_purchase;
+}

@@ -8,7 +8,7 @@ grf {
 	grfid: "YSN2";
 	name: string(STR_GRF_NAME_WITH_VER);
 	desc: string(STR_GRF_DESC);
-	version: 38;
+	version: 39;
 	min_compatible_version: 37;
     
 	// Parameters

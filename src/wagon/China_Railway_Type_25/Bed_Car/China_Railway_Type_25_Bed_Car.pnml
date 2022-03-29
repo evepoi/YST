@@ -2,17 +2,17 @@
 YFX
 --------------------------------------------------------------------*/
 // Graphics
-#include "YPW_Bed_Car_graphic.pnml"
+#include "China_Railway_Type_25_Bed_Car_graphic.pnml"
 
 // Switch
-#include "YPW_Bed_Car_switch.pnml"
+#include "China_Railway_Type_25_Bed_Car_switch.pnml"
 
 /*--------------------------------------------------------------------
 열차정보
 --------------------------------------------------------------------*/
-item(FEAT_TRAINS, YPW_Bed_Car, 2011){
+item(FEAT_TRAINS, China_Railway_Type_25_Bed_Car, 2011){
     property {
-        name:                           string(STR_YPW_Bed_Car_NAME);
+        name:                           string(STR_China_Railway_Type_25_Bed_Car_NAME);
         climates_available:             ALL_CLIMATES;
         introduction_date:              date(1967, 1, 1);
         track_type:                     RAIL;
@@ -45,13 +45,13 @@ item(FEAT_TRAINS, YPW_Bed_Car, 2011){
         }
 
 	graphics {
-        default:                        sw_YPW_Bed_wagon;
-        purchase:                       sw_YPW_Bed_Car_purchase;
+        default:                        sw_China_Railway_Type_25_Bed_wagon;
+        purchase:                       sw_China_Railway_Type_25_Bed_Car_purchase;
         loading_speed:                  25;
         cost_factor:                    10;
         running_cost_factor:            50;
-        can_attach_wagon:               sw_YPW_Bed_wagon_attach;
-        cargo_subtype_text:             sw_YPW_Bed_cargo_subtype_text;
-        additional_text:                string(STR_REFIT_train_configuration_YPW);
+        can_attach_wagon:               sw_China_Railway_Type_25_Bed_wagon_attach;
+        cargo_subtype_text:             sw_China_Railway_Type_25_Bed_cargo_subtype_text;
+        additional_text:                string(STR_REFIT_train_configuration_China_Railway_Type_25);
         }
         }

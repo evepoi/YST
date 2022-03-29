@@ -1,0 +1,27 @@
+/*--------------------------------------------------------------------
+스위치
+--------------------------------------------------------------------*/
+switch(FEAT_TRAINS, SELF, sw_China_Railway_Type_25_Bed_cargo_subtype_text, cargo_subtype) {
+    1: return string(STR_REFIT_LIVERY_China_Railway_Type_25_2nd_Car);    //2등석
+    2: return string(STR_REFIT_LIVERY_China_Railway_Type_25_1nd_Car);    //1등석
+    return string(STR_REFIT_LIVERY_China_Railway_Type_25_3nd_Car);
+}
+
+switch(FEAT_TRAINS, SELF, sw_China_Railway_Type_25_Bed_wagon, cargo_subtype) {
+    1: set_China_Railway_Type_25_Bed_2nd_Car_wagon;    //2등석
+    2: set_China_Railway_Type_25_Bed_1nd_Car_wagon;    //1등석
+    set_China_Railway_Type_25_Bed_3nd_Car_wagon;
+}
+
+switch(FEAT_TRAINS, SELF, sw_China_Railway_Type_25_Bed_wagon_attach, vehicle_type_id) {
+    BB15000:                             return CB_RESULT_ATTACH_ALLOW;
+    GT26CW:                              return CB_RESULT_ATTACH_ALLOW;
+    HYEL_100:                            return CB_RESULT_ATTACH_ALLOW;
+    NJ2:                                 return CB_RESULT_ATTACH_ALLOW;
+    China_Railway_Type_1F:               return CB_RESULT_ATTACH_ALLOW;
+    China_Railway_Type_25_2F:            return CB_RESULT_ATTACH_ALLOW;
+    China_Railway_Type_25_Bed_Car:       return CB_RESULT_ATTACH_ALLOW;
+    China_Railway_Type_25_Generatar_Car: return CB_RESULT_ATTACH_ALLOW;
+    China_Railway_Type_25_Luggage_Car:   return CB_RESULT_ATTACH_ALLOW;
+   return string(STR_ERROR_NO_ATTACH);
+}

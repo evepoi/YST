@@ -92,11 +92,11 @@ STR_YST_Magv_PASS_NAME                              :[YST] 자기부상 객차
 STR_YST_2F_PASS_NAME                                :[YST] 2층 공통 객차
 STR_Coach_2F_NAME                                   :[YST] 객차형 2층 공통 객차
 STR_Coach_2F_Last_NAME                              :[YST] 객차형 2층 공통 후미객차
-STR_YPW_1F_NAME                                     :[YST] YPW 1층 객차
-STR_YPW_2F_NAME                                     :[YST] YPW 2층 객차
-STR_YPW_Bed_Car_NAME                                :[YST] YPW 침대차
-STR_YPW_Generatar_Car_NAME                          :[YST] YPW 발전차
-STR_YPW_Luggage_Car_NAME                            :[YST] YPW 수화물차
+STR_China_Railway_Type_25_1F_NAME                   :[YST] 중국철도 25형 1층 객차
+STR_China_Railway_Type_25_2F_NAME                   :[YST] 중국철도 25형 2층 객차
+STR_China_Railway_Type_25_Bed_Car_NAME              :[YST] 중국철도 25형 침대차
+STR_China_Railway_Type_25_Generatar_Car_NAME        :[YST] 중국철도 25형 발전차
+STR_China_Railway_Type_25_Luggage_Car_NAME          :[YST] 중국철도 25형 수화물차
 STR_TGV_Poste_wagon_NAME                            :[YST] TGV Poste 화차
 STR_YFXF_NAME                                       :[YST] YFX용 화차
 STR_FLAT_1F_NAME                                    :[YST] 평판화차
@@ -218,7 +218,7 @@ STR_REFIT_train_configuration_Magv                  :{BLACK}열차구성: {GREEN
 STR_REFIT_train_configuration_2F                    :{BLACK}열차구성: {GREEN}2층 승객 차량용
 STR_REFIT_train_configuration_Coach                 :{BLACK}열차구성: {GREEN}객차형 승객 차량용
 STR_REFIT_train_configuration_Coach_Last            :{BLACK}열차구성: {GREEN}객차형 승객 차량용
-STR_REFIT_train_configuration_YPW                   :{BLACK}열차구성: {GREEN}YPW용 객차
+STR_REFIT_train_configuration_China_Railway_Type_25 :{BLACK}열차구성: {GREEN}중국철도 25형 객차
 STR_REFIT_train_configuration_TGV_Poste             :{BLACK}열차구성: {GREEN}TGV Old Poste, TGV Pos Poste
 STR_REFIT_train_configuration_YFX_Freight           :{BLACK}열차구성: {GREEN}YFX용 화차
 
@@ -253,6 +253,7 @@ STR_REFIT_LIVERY_HYEL_100_Yellowcap                 :(옐로우캡)
 STR_REFIT_LIVERY_HYEL_100_Daesin                    :(대신 택배)
 STR_REFIT_LIVERY_HYEL_100_Ilyang                    :(일양 택배)
 STR_REFIT_LIVERY_HYEL_100_Korail                    :(코레일)
+STR_REFIT_LIVERY_HYEL_100_Ironman                   :(아이언맨)
 STR_REFIT_LIVERY_HYEL_JET_A                         :(HYEL-JET A도색)
 STR_REFIT_LIVERY_HYEL_JET_A_r                       :(HYEL-JET A도색 뒤집힘)
 STR_REFIT_LIVERY_ICE_Sancheon                       :(ICE-산천)
@@ -331,18 +332,18 @@ STR_REFIT_LIVERY_YMT_200_J                          :(YMT 200 J 도색)
 STR_REFIT_LIVERY_Coach_2F_BR                        :(기본 도색)
 STR_REFIT_LIVERY_Coach_2F_Taegeuk                   :(태극 도색)
 STR_REFIT_LIVERY_Coach_2F_SR                        :(SR 도색)
-STR_REFIT_LIVERY_YPW_1F_Red                         :(빨강 도색)
-STR_REFIT_LIVERY_YPW_1F_Green                       :(녹색 도색)
-STR_REFIT_LIVERY_YPW_1F_White                       :(흰색 도색)
-STR_REFIT_LIVERY_YPW_3nd_Car                        :(3등석 차량)
-STR_REFIT_LIVERY_YPW_2nd_Car                        :(2등석 차량)
-STR_REFIT_LIVERY_YPW_1nd_Car                        :(1등석 차량)
-STR_REFIT_LIVERY_YPW_Generatar_Car_White            :(발전차 흰색도색)
-STR_REFIT_LIVERY_YPW_Generatar_Car_Green            :(발전차 녹색도색)
-STR_REFIT_LIVERY_YPW_Luggage_Car_Red                :(수화물차 빨강도색)
-STR_REFIT_LIVERY_YPW_Luggage_Car_Green              :(수화물차 녹색도색)
-STR_REFIT_LIVERY_YPW_Luggage_Car_WhiteA             :(수화물차 흰색도색 A)
-STR_REFIT_LIVERY_YPW_Luggage_Car_WhiteB             :(수화물차 흰색도색 B)
+STR_REFIT_LIVERY_China_Railway_Type_25_1F_Red       :(빨강 도색)
+STR_REFIT_LIVERY_China_Railway_Type_25_1F_Green     :(녹색 도색)
+STR_REFIT_LIVERY_China_Railway_Type_25_1F_White     :(흰색 도색)
+STR_REFIT_LIVERY_China_Railway_Type_25_3nd_Car      :(3등석 차량)
+STR_REFIT_LIVERY_China_Railway_Type_25_2nd_Car      :(2등석 차량)
+STR_REFIT_LIVERY_China_Railway_Type_25_1nd_Car      :(1등석 차량)
+STR_REFIT_LIVERY_China_Railway_Type_25_Generatar_Car_White :(발전차 흰색도색)
+STR_REFIT_LIVERY_China_Railway_Type_25_Generatar_Car_Green :(발전차 녹색도색)
+STR_REFIT_LIVERY_China_Railway_Type_25_Luggage_Car_Red     :(수화물차 빨강도색)
+STR_REFIT_LIVERY_China_Railway_Type_25_Luggage_Car_Green   :(수화물차 녹색도색)
+STR_REFIT_LIVERY_China_Railway_Type_25_Luggage_Car_WhiteA  :(수화물차 흰색도색 A)
+STR_REFIT_LIVERY_China_Railway_Type_25_Luggage_Car_WhiteB  :(수화물차 흰색도색 B)
 STR_REFIT_LIVERY_FlatGreen                          :(평판화차 녹색)
 STR_REFIT_LIVERY_FlatPGreen                         :(평판화차 패기형 녹색)
 STR_REFIT_LIVERY_FlatRed                            :(평판화차 빨강색)

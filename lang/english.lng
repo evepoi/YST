@@ -92,13 +92,13 @@ STR_YST_Magv_PASS_NAME                              :[YST] maglev Passenger Car
 STR_YST_2F_PASS_NAME                                :[YST] 2F Passenger Car
 STR_Coach_2F_NAME                                   :[YST] Coach 2F Passenger Car
 STR_Coach_2F_Last_NAME                              :[YST] Coach Last 2F Passenger Car
-STR_YPW_1F_NAME                                     :[YST] YPW 1F Passenger Car
-STR_YPW_2F_NAME                                     :[YST] YPW 2F Passenger Car
-STR_YPW_Bed_Car_NAME                                :[YST] YPW Bed Car
+STR_China_Railway_Type_25_1F_NAME                   :[YST] China Railway Type 25 1F Passenger Car
+STR_China_Railway_Type_25_2F_NAME                   :[YST] China Railway Type 25 2F Passenger Car
+STR_China_Railway_Type_25_Bed_Car_NAME              :[YST] China Railway Type 25 Bed Car
+STR_China_Railway_Type_25_Generatar_Car_NAME        :[YST] China Railway Type 25 Generatar Car
+STR_China_Railway_Type_25_Luggage_Car_NAME          :[YST] China Railway Type 25 Luggage Car
 STR_TGV_Poste_wagon_NAME                            :[YST] TGV Poste Freight Car
 STR_YFXF_NAME                                       :[YST] YFX Freight Car
-STR_YPW_Generatar_Car_NAME                          :[YST] YPW Generatar Car
-STR_YPW_Luggage_Car_NAME                            :[YST] YPW Luggage Car
 STR_FLAT_1F_NAME                                    :[YST] Flat Car
 STR_FLAT_2F_NAME                                    :[YST] Flat Car - American
 STR_FLAT_Tank_NAME                                  :[YST] Flat Tank Car
@@ -223,7 +223,7 @@ STR_REFIT_train_configuration_Magv                  :{BLACK}train configuration:
 STR_REFIT_train_configuration_2F                    :{BLACK}train configuration: {GREEN}2F passenger vehicles
 STR_REFIT_train_configuration_Coach                 :{BLACK}train configuration: {GREEN}Coach 2F Passenger vehicles
 STR_REFIT_train_configuration_Coach_Last            :{BLACK}train configuration: {GREEN}Coach 2F Passenger vehicles
-STR_REFIT_train_configuration_YPW                   :{BLACK}train configuration: {GREEN}YPW passenger vehicles
+STR_REFIT_train_configuration_China_Railway_Type_25 :{BLACK}train configuration: {GREEN}China Railway Type 25 passenger vehicles
 STR_REFIT_train_configuration_TGV_Poste             :{BLACK}train configuration: {GREEN}TGV Old Poste, TGV Pos Poste
 STR_REFIT_train_configuration_YFX_Freight           :{BLACK}train configuration: {GREEN}YFX Freight Car
 
@@ -258,6 +258,7 @@ STR_REFIT_LIVERY_HYEL_100_Yellowcap                 :(Yellowcap)
 STR_REFIT_LIVERY_HYEL_100_Daesin                    :(Daesin Logistics)
 STR_REFIT_LIVERY_HYEL_100_Ilyang                    :(Ilyang Logistics)
 STR_REFIT_LIVERY_HYEL_100_Korail                    :(Korail)
+STR_REFIT_LIVERY_HYEL_100_Ironman                   :(Ironman)
 STR_REFIT_LIVERY_HYEL_JET_A                         :(HYEL-JET A Color)
 STR_REFIT_LIVERY_HYEL_JET_A_r                       :(HYEL-JET A Color OverTurn)
 STR_REFIT_LIVERY_ICE_Sancheon                       :(ICE-Sancheon)
@@ -336,18 +337,18 @@ STR_REFIT_LIVERY_YMT_200_J                          :(YMT 200 J Color)
 STR_REFIT_LIVERY_Coach_2F_BR                        :(Default Color)
 STR_REFIT_LIVERY_Coach_2F_Taegeuk                   :(Taegeuk Color)
 STR_REFIT_LIVERY_Coach_2F_SR                        :(SR Color)
-STR_REFIT_LIVERY_YPW_1F_Red                         :(Red Color Car)
-STR_REFIT_LIVERY_YPW_1F_Green                       :(Green Color Car)
-STR_REFIT_LIVERY_YPW_1F_White                       :(White Color Car)
-STR_REFIT_LIVERY_YPW_3nd_Car                        :(3nd Car)
-STR_REFIT_LIVERY_YPW_2nd_Car                        :(2nd Car)
-STR_REFIT_LIVERY_YPW_1nd_Car                        :(1nd Car)
-STR_REFIT_LIVERY_YPW_Generatar_Car_White            :(Generatar White Car)
-STR_REFIT_LIVERY_YPW_Generatar_Car_Green            :(Generatar Green Car)
-STR_REFIT_LIVERY_YPW_Luggage_Car_Red                :(Luggage Red Car)
-STR_REFIT_LIVERY_YPW_Luggage_Car_Green              :(Luggage Green Car)
-STR_REFIT_LIVERY_YPW_Luggage_Car_WhiteA             :(Luggage White A Car)
-STR_REFIT_LIVERY_YPW_Luggage_Car_WhiteB             :(Luggage White B Car)
+STR_REFIT_LIVERY_China_Railway_Type_25_1F_Red       :(Red Color Car)
+STR_REFIT_LIVERY_China_Railway_Type_25_1F_Green     :(Green Color Car)
+STR_REFIT_LIVERY_China_Railway_Type_25_1F_White     :(White Color Car)
+STR_REFIT_LIVERY_China_Railway_Type_25_3nd_Car      :(3nd Car)
+STR_REFIT_LIVERY_China_Railway_Type_25_2nd_Car      :(2nd Car)
+STR_REFIT_LIVERY_China_Railway_Type_25_1nd_Car      :(1nd Car)
+STR_REFIT_LIVERY_China_Railway_Type_25_Generatar_Car_White :(Generatar White Car)
+STR_REFIT_LIVERY_China_Railway_Type_25_Generatar_Car_Green :(Generatar Green Car)
+STR_REFIT_LIVERY_China_Railway_Type_25_Luggage_Car_Red     :(Luggage Red Car)
+STR_REFIT_LIVERY_China_Railway_Type_25_Luggage_Car_Green   :(Luggage Green Car)
+STR_REFIT_LIVERY_China_Railway_Type_25_Luggage_Car_WhiteA  :(Luggage White A Car)
+STR_REFIT_LIVERY_China_Railway_Type_25_Luggage_Car_WhiteB  :(Luggage White B Car)
 STR_REFIT_LIVERY_FlatGreen                          :(Flat Nomal Green Color)
 STR_REFIT_LIVERY_FlatPGreen                         :(Flat trailer Green Cololr)
 STR_REFIT_LIVERY_FlatRed                            :(Flat Nomal Red Color)

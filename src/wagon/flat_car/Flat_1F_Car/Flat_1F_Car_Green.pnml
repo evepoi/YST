@@ -45,6 +45,14 @@ spriteset(set_FLAT_CAR_Green_40ft_loaded_09_wagon, "src\wagon\flat_Car\Flat_1F_C
     flat_car_1f_container(80, 243)
 }
 
+spriteset(set_FLAT_CAR_Green_40ft_loaded_10_wagon, "src\wagon\flat_Car\Flat_1F_Car\Flat_1F_Car_Green.png") {
+    flat_car_1f_container(80, 243)
+}
+
+alternative_sprites(set_FLAT_CAR_Green_40ft_loaded_10_wagon, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "src\wagon\flat_Car\Flat_1F_Car\Flat_1F_Car_Green_32bpp.png") {
+    flat_car_1f_container(80, 0)
+}
+
 /*--------------------------------------------------------------------
 적재 스위치 40ft Green
 --------------------------------------------------------------------*/
@@ -144,6 +152,17 @@ spritegroup sg_FLAT_CAR_Green_40ft_09_wagon {
     loaded: [
         set_FLAT_CAR_Green_empty_wagon,
         set_FLAT_CAR_Green_40ft_loaded_09_wagon
+    ];
+}
+
+spritegroup sg_FLAT_CAR_Green_40ft_10_wagon {
+    loading: [
+        set_FLAT_CAR_Green_empty_wagon,
+        set_FLAT_CAR_Green_40ft_loaded_10_wagon
+    ];
+    loaded: [
+        set_FLAT_CAR_Green_empty_wagon,
+        set_FLAT_CAR_Green_40ft_loaded_10_wagon
     ];
 }
 

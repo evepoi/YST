@@ -8,11 +8,11 @@ switch(FEAT_TRAINS, SELF, sw_NJ2_wagon_attach, vehicle_type_id) {
     NJ2:               return CB_RESULT_ATTACH_ALLOW;
     Coach_2F:          return CB_RESULT_ATTACH_ALLOW;
     Coach_2F_Last:     return CB_RESULT_ATTACH_ALLOW;
-    YPW_1F:            return CB_RESULT_ATTACH_ALLOW;
-    YPW_2F:            return CB_RESULT_ATTACH_ALLOW;
-    YPW_Bed_Car:       return CB_RESULT_ATTACH_ALLOW;
-    YPW_Luggage_Car:   return CB_RESULT_ATTACH_ALLOW;
-    YPW_Generatar_Car: return CB_RESULT_ATTACH_ALLOW;
+    China_Railway_Type_1F:               return CB_RESULT_ATTACH_ALLOW;
+    China_Railway_Type_25_2F:            return CB_RESULT_ATTACH_ALLOW;
+    China_Railway_Type_25_Bed_Car:       return CB_RESULT_ATTACH_ALLOW;
+    China_Railway_Type_25_Generatar_Car: return CB_RESULT_ATTACH_ALLOW;
+    China_Railway_Type_25_Luggage_Car:   return CB_RESULT_ATTACH_ALLOW;
     TANK:              return CB_RESULT_ATTACH_ALLOW;
     FLAT_1F:           return CB_RESULT_ATTACH_ALLOW;
     FLAT_2F:           return CB_RESULT_ATTACH_ALLOW;

@@ -1,9 +1,12 @@
 /*--------------------------------------------------------------------
 스위치
 --------------------------------------------------------------------*/
-switch(FEAT_TRAINS, SELF, sw_YFX_wagon, random_bits) {
-     1: sg_YFX_wagon;
-     set_YFX_wagon;
+switch(FEAT_TRAINS, SELF, sw_YFX_wagon, random_bits % 4) {
+     1: sg_YFX_wagon_01;
+     2: sg_YFX_wagon_02;
+     3: sg_YFX_wagon_03;
+     4: sg_YFX_wagon_04;
+     set_YFX_empty_wagon;
 }
 
 switch(FEAT_TRAINS, SELF, sw_YFXF_wagon_attach, vehicle_type_id) {

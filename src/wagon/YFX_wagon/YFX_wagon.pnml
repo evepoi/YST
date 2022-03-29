@@ -45,7 +45,7 @@ item(FEAT_TRAINS, YFXF, 2004){
         }
 
 	graphics {
-        default:                        sg_YFX_wagon;
+        default:                        sw_YFX_wagon;
         purchase:                       sw_YFXF_purchase;
         can_attach_wagon:               sw_YFXF_wagon_attach;
         loading_speed:                  25;

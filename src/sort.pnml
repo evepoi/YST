@@ -86,11 +86,11 @@ sort(FEAT_TRAINS, [
     YST_2F_Passenger_Car,      //2002
     Coach_2F,                  //2014
     Coach_2F_Last,             //2015
-    YPW_1F,                    //2009
-    YPW_2F,                    //2010
-    YPW_Bed_Car,               //2011
-    YPW_Generatar_Car,         //2012
-    YPW_Luggage_Car,           //2013
+    China_Railway_Type_1F,     //2009
+    China_Railway_Type_25_2F,  //2010
+    China_Railway_Type_25_Bed_Car, //2011
+    China_Railway_Type_25_Generatar_Car, //2012
+    China_Railway_Type_25_Luggage_Car, //2013
     TGV_Poste_wagon,           //2003
     YFXF,                      //2004
     FLAT_1F,                   //2005

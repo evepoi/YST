@@ -14,6 +14,7 @@ switch(FEAT_TRAINS, SELF, sw_HYEL_100_cargo_subtype_text, cargo_subtype) {
     10: return string(STR_REFIT_LIVERY_HYEL_100_Daesin);    // 대신 택배
     11: return string(STR_REFIT_LIVERY_HYEL_100_Ilyang);    // 일양 택배
     12: return string(STR_REFIT_LIVERY_HYEL_100_Korail);    // 코레일
+    13: return string(STR_REFIT_LIVERY_HYEL_100_Ironman);    // 아이언맨
     return string(STR_REFIT_LIVERY_HYEL_100_SRT);
 }
 
@@ -30,6 +31,7 @@ switch(FEAT_TRAINS, SELF, sw_HYEL_100_engine, cargo_subtype) {
     10: set_HYEL_100_Daesin_engine;    // 대신 택배
     11: set_HYEL_100_Ilyang_engine;    // 일양 택배
     12: set_HYEL_100_Korail_engine;    // 코레일
+    13: set_HYEL_100_Ironman_engine;    // 아이언맨
     set_HYEL_100_engine;
 }
 
@@ -40,11 +42,11 @@ switch(FEAT_TRAINS, SELF, sw_HYEL_100_wagon_attach, vehicle_type_id) {
     NJ2:               return CB_RESULT_ATTACH_ALLOW;
     Coach_2F:          return CB_RESULT_ATTACH_ALLOW;
     Coach_2F_Last:     return CB_RESULT_ATTACH_ALLOW;
-    YPW_1F:            return CB_RESULT_ATTACH_ALLOW;
-    YPW_2F:            return CB_RESULT_ATTACH_ALLOW;
-    YPW_Bed_Car:       return CB_RESULT_ATTACH_ALLOW;
-    YPW_Luggage_Car:   return CB_RESULT_ATTACH_ALLOW;
-    YPW_Generatar_Car: return CB_RESULT_ATTACH_ALLOW;
+    China_Railway_Type_1F:               return CB_RESULT_ATTACH_ALLOW;
+    China_Railway_Type_25_2F:            return CB_RESULT_ATTACH_ALLOW;
+    China_Railway_Type_25_Bed_Car:       return CB_RESULT_ATTACH_ALLOW;
+    China_Railway_Type_25_Generatar_Car: return CB_RESULT_ATTACH_ALLOW;
+    China_Railway_Type_25_Luggage_Car:   return CB_RESULT_ATTACH_ALLOW;
     TANK:              return CB_RESULT_ATTACH_ALLOW;
     FLAT_1F:           return CB_RESULT_ATTACH_ALLOW;
     FLAT_2F:           return CB_RESULT_ATTACH_ALLOW;
