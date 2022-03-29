@@ -3,7 +3,7 @@
 # GRF name and description
 STR_GRF_NAME                                        :YST
 STR_GRF_NAME_WITH_VER                               :YST {VERSION}
-STR_GRF_DESC                                        :(최근 업데이트: {RECENT_UPDATED}){}{}{SILVER} + 제작 : 민은 {}
+STR_GRF_DESC                                        :(최근 업데이트: {RECENT_UPDATED}{}{}{SILVER} 코딩 : ME Making {}{} 스프라이트 :{} Las{} 그날트리{} 킹거{} Dat Tree{} Gamunbi{} 경부라이너{} 죽전와니{} POKERFACE{}
 
 # locomotive's name
 STR_AGV_NAME                                        :[YST] AGV

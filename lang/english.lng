@@ -3,7 +3,7 @@
 # GRF name and description
 STR_GRF_NAME                                        :YST 
 STR_GRF_NAME_WITH_VER                               :YST {VERSION}
-STR_GRF_DESC                                        :(Updated: {RECENT_UPDATED}){}{}{SILVER}+ Author: : Minen {}
+STR_GRF_DESC                                        :(Updated: {RECENT_UPDATED}{}{}{SILVER} coded By : ME Making {}{} Sprite By :{} Las{} 그날트리{} 킹거{} Dat Tree{} Gamunbi{ } GBLINER{} 죽전와니{} POKERFACE{}
 
 # locomotive's name
 STR_AGV_NAME                                        :[YST] AGV
