@@ -5,7 +5,7 @@ item (FEAT_TRAINS, YST_1F_Passenger_Car, 2001){
     property {
         name:                           string(STR_YST_1F_PASS_NAME);
         climates_available:             ALL_CLIMATES;
-        introduction_date:              date(1978, 1, 1);
+        introduction_date:              date(1964, 1, 1);
         track_type:                     RAIL;
         sprite_id:                      SPRITE_ID_NEW_TRAIN;
 
