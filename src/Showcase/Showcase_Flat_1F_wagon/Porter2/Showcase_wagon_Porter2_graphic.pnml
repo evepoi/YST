@@ -1,0 +1,27 @@
+/*--------------------------------------------------------------------
+Graphics
+--------------------------------------------------------------------*/
+/*--------------------------------------------------------------------
+1. 평판 포터2차량
+--------------------------------------------------------------------*/
+spriteset(set_Showcase_Flat_1F_Porter2_purchase, "src/wagon/flat_Car/Flat_1F_Car/Flat_1F_Car_Red.png"){
+	tmpl_single_purchase(0, 0)
+}
+
+spriteset(set_Showcase_Flat_1F_Porter2_wagon, "src/wagon/flat_Car/Flat_1F_Car/Flat_1F_Car_Red.png"){
+	engine(80, 0)
+}
+
+alternative_sprites(set_Showcase_Flat_1F_Porter2_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "src/Showcase/Showcase_Flat_1F_wagon/Porter2/Showcase_wagon_porter2_32bpp.png"){
+	tmpl_single_purchase(0, 0)
+}
+
+alternative_sprites(set_Showcase_Flat_1F_Porter2_wagon, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "src/Showcase/Showcase_Flat_1F_wagon/Porter2/Showcase_wagon_porter2_32bpp.png"){
+	engine(80, 0)
+}
+/*--------------------------------------------------------------------
+구매정보
+--------------------------------------------------------------------*/
+switch(FEAT_TRAINS, SELF, sw_Showcase_Flat_1F_Porter2_purchase, cargo_subtype) {
+    set_Showcase_Flat_1F_Porter2_purchase;
+}

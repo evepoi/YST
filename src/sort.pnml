@@ -97,4 +97,7 @@ sort(FEAT_TRAINS, [
     FLAT_2F,                   //2006
     FLAT_TANK,                 //2007
     TANK,                      //2008
+    Showcase_Flat_1F,          //2017
+
+    MAGV_Passenger_Car,        //2016
     ]);

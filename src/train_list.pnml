@@ -14,6 +14,9 @@
 #include "wagon/China_Railway_Type_25/Luggage_Car/China_Railway_Type_25_luggage_Car.pnml"
 #include "wagon/China_Railway_Type_25/Generatar_Car/China_Railway_Type_25_Generatar_Car.pnml"
 
+//Showcase
+#include "Showcase/Showcase_Flat_1F_wagon/Porter2/Showcase_wagon_Porter2.pnml"
+
 //locomotive / Plan Trian
 #include "locomotive/Plan_Train/EMU/EMU150/EMU150.pnml"
 #include "locomotive/Plan_Train/EMU/EMU260/EMU260.pnml"

@@ -160,6 +160,16 @@ alternative_sprites(set_HYEL_100_Ironman_engine, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32
 	engine(80, 0)
 }
 
+/*--------------------------------------------------------------------
+14. HYEL_100_K 리무진
+--------------------------------------------------------------------*/
+spriteset(set_HYEL_100_K_Limousine_engine, "src/locomotive/Virtual_train/HYEL/HYEL_100/HYEL_100.png"){
+	engine(80, 0)
+}
+
+alternative_sprites(set_HYEL_100_K_Limousine_engine, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "src/locomotive/Virtual_train/HYEL/HYEL_100/HYEL_100_K_Limousine_32bPP.png"){
+	engine(80, 0)
+}
 
 /*--------------------------------------------------------------------
 구매정보

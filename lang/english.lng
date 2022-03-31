@@ -102,6 +102,7 @@ STR_YFXF_NAME                                       :[YST] YFX Freight Car
 STR_FLAT_1F_NAME                                    :[YST] Flat Car
 STR_FLAT_2F_NAME                                    :[YST] Flat Car - American
 STR_FLAT_Tank_NAME                                  :[YST] Flat Tank Car
+STR_Showcase_FLAT_1F_NAME                           :[YST] Showcase Flat car
 STR_Tank_NAME		                                :[YST] Tank
 
 # Parameters' value
@@ -224,6 +225,7 @@ STR_REFIT_train_configuration_2F                    :{BLACK}train configuration:
 STR_REFIT_train_configuration_Coach                 :{BLACK}train configuration: {GREEN}Coach 2F Passenger vehicles
 STR_REFIT_train_configuration_Coach_Last            :{BLACK}train configuration: {GREEN}Coach 2F Passenger vehicles
 STR_REFIT_train_configuration_China_Railway_Type_25 :{BLACK}train configuration: {GREEN}China Railway Type 25 passenger vehicles
+STR_REFIT_train_configuration_Showcse_Flat_1F       :{BLACK}train configuration: {GREEN}Showcase Flat 1F Car
 STR_REFIT_train_configuration_TGV_Poste             :{BLACK}train configuration: {GREEN}TGV Old Poste, TGV Pos Poste
 STR_REFIT_train_configuration_YFX_Freight           :{BLACK}train configuration: {GREEN}YFX Freight Car
 
@@ -259,6 +261,7 @@ STR_REFIT_LIVERY_HYEL_100_Daesin                    :(Daesin Logistics)
 STR_REFIT_LIVERY_HYEL_100_Ilyang                    :(Ilyang Logistics)
 STR_REFIT_LIVERY_HYEL_100_Korail                    :(Korail)
 STR_REFIT_LIVERY_HYEL_100_Ironman                   :(Ironman)
+STR_REFIT_LIVERY_HYEL_100_K_Limousine               :(K Limousine)
 STR_REFIT_LIVERY_HYEL_JET_A                         :(HYEL-JET A Color)
 STR_REFIT_LIVERY_HYEL_JET_A_r                       :(HYEL-JET A Color OverTurn)
 STR_REFIT_LIVERY_ICE_Sancheon                       :(ICE-Sancheon)
@@ -337,6 +340,7 @@ STR_REFIT_LIVERY_YMT_200_J                          :(YMT 200 J Color)
 STR_REFIT_LIVERY_Coach_2F_BR                        :(Default Color)
 STR_REFIT_LIVERY_Coach_2F_Taegeuk                   :(Taegeuk Color)
 STR_REFIT_LIVERY_Coach_2F_SR                        :(SR Color)
+STR_REFIT_LIVERY_Coach_2F_K_Limousion               :(K Limousion Color)
 STR_REFIT_LIVERY_China_Railway_Type_25_1F_Red       :(Red Color Car)
 STR_REFIT_LIVERY_China_Railway_Type_25_1F_Green     :(Green Color Car)
 STR_REFIT_LIVERY_China_Railway_Type_25_1F_White     :(White Color Car)
