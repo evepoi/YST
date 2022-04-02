@@ -74,9 +74,6 @@ spritegroup sg_YFX_wagon_01 {
         set_YFX_loaded_01_wagon,
     ];
     loaded: [
-        set_YFX_empty_wagon,
-        set_YFX_loaded_wagon,
-        set_YFX_loaded_01_wagon,
         set_YFX_empty_wagon
     ];
 }
@@ -87,9 +84,6 @@ spritegroup sg_YFX_wagon_02 {
         set_YFX_loaded_02_wagon,
     ];
     loaded: [
-        set_YFX_empty_wagon,
-        set_YFX_loaded_wagon,
-        set_YFX_loaded_02_wagon,
         set_YFX_empty_wagon
     ];
 }
@@ -100,9 +94,6 @@ spritegroup sg_YFX_wagon_03 {
         set_YFX_loaded_03_wagon,
     ];
     loaded: [
-        set_YFX_empty_wagon,
-        set_YFX_loaded_wagon,
-        set_YFX_loaded_03_wagon,
         set_YFX_empty_wagon
     ];
 }
@@ -113,9 +104,6 @@ spritegroup sg_YFX_wagon_04 {
         set_YFX_loaded_04_wagon,
     ];
     loaded: [
-        set_YFX_empty_wagon,
-        set_YFX_loaded_wagon,
-        set_YFX_loaded_04_wagon,
         set_YFX_empty_wagon
     ];
 }

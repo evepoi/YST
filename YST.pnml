@@ -11,7 +11,7 @@ grf {
 	version: 40;
 	min_compatible_version: 37;
     
-	// Parameters
+	// Parameters 매개변수
     #include "src/parameter.pnml"
 }
 

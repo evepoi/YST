@@ -3,7 +3,7 @@
 # GRF name and description
 STR_GRF_NAME                                        :YST
 STR_GRF_NAME_WITH_VER                               :YST {VERSION}
-STR_GRF_DESC                                        :(최근 업데이트: {RECENT_UPDATED}{}{}{SILVER} 코딩 : ME Making {}{} 스프라이트 :{} Las{} 그날트리{} 킹거{} Dat Tree{} Gamunbi{} 경부라이너{} 죽전와니{} POKERFACE{}
+STR_GRF_DESC                                        :{}{RED} 업데이트 지원 중단!!{} {GREEN}분리되는 GRF는 계속 지원됨.{}{} 분리된 GRF 목록{}{}{ORANGE} - KTS+(한국열차세트 플러스){} - JTS+(일본열차세트 플러스){} - ETS (유럽열차세트){} - CTS (중국열차세트){} - WTS (국제열차세트){} - VTS (가상열차세트)
 
 # locomotive's name
 STR_AGV_NAME                                        :[YST] AGV
