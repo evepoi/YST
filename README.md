@@ -12,17 +12,17 @@ YST는 이제 GRF 분리 개편되며
 
 분리되는 각각 6개의 깃허브 링크를 참고하시기 바랍니다.
 
-[한국열차세트 플러스 (실존하는 한국열차, 가상의 한국 2층 여객열차 부분)](https://github.com/GBLINER/KoreanTrainSet_Plus)
+- [한국열차세트 플러스 (실존하는 한국열차, 가상의 한국 2층 여객열차 부분)](https://github.com/GBLINER/KoreanTrainSet_Plus)
 
-[일본열차세트 플러스 (신칸센 부분)](https://github.com/GBLINER/JapaneseTrainSet_Plus)
+- [일본열차세트 플러스 (신칸센 부분)](https://github.com/GBLINER/JapaneseTrainSet_Plus)
 
-[중국열차세트 (CRH,CR, 홍콩 MTR 부분)](https://github.com/GBLINER/ChineseTrainSet)
+- [중국열차세트 (CRH,CR, 홍콩 MTR 부분)](https://github.com/GBLINER/ChineseTrainSet)
 
-[유럽열차세트 (TGV,ICE,AVE,AGV 등등 유럽 열차 부분)](https://github.com/GBLINER/EuropeanTrainSet)
+- [유럽열차세트 (TGV,ICE,AVE,AGV 등등 유럽 열차 부분)](https://github.com/GBLINER/EuropeanTrainSet)
 
-[세계열차세트 (인도, 미국, 대만 열차 부분)](https://github.com/GBLINER/WorldTrainSet)
+- [세계열차세트 (인도, 미국, 대만 열차 부분)](https://github.com/GBLINER/WorldTrainSet)
 
-[가상열차세트 (가상열차 부분)](https://github.com/GBLINER/VirtualTrainSet)
+- [가상열차세트 (가상열차 부분)](https://github.com/GBLINER/VirtualTrainSet)
 
 
 # YST Set 열차 목록
