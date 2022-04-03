@@ -3,23 +3,25 @@
 ## 저작권
  CC-BY-NC-SA v3.0 : 비영리조건이며, 스프라이트를 제공한 뒤엔 얼마든지 수정할 수 있습니다.<br>
 
-## 컴퍼일
-makefile, [nml0.6.1](https://github.com/OpenTTD/nml) 등의 최신버전을 사용합니다.<br>
+## GRF 분리 개편 안내
+YST는 개발중단되었습니다.
 
-## 자료활용
-그동안 많은 발전을 주신 분들께 진심으로 감사올립니다.<br>
-저작권 특성상 자유로운 변경공개이므로, 이미 공개된 자료에 대해선 얼마든지 수정하실 수 있습니다.<br>
+YST는 이제 GRF 분리 개편되며
+컨셉에 따라 맞는 GRF로 분리되어 계속 개발되고 업데이트 됩니다.
+분리되는 각각 6개의 GRF 링크를 참고하시기 바랍니다.
 
-## 자료공개
-공식 : 일자별 최종본이 완성되면 공개합니다. 공개버전은 매주 토요일 0:00 이후에 등록하는 것으로 하겠습니다.<br>
-베타 : 본자료는 Pre-relesase 다음 토요일 날에 공개될 자료를 업로드해두는 곳입니다. 공식 릴리즈보다는 앞서 만나볼 수 있으며, 테스트의 목적와 선공개의 목적이 있으므로, <br>
-공개일 : 정해지지 않습니다. 공개되면 공개되었구나, 하며 넘어가십시오.<br>
+한국열차세트 플러스 (실존하는 한국열차, 가상의 한국 2층 여객열차 부분)  https://github.com/GBLINER/KoreanTrainSet_Plus
 
-## 자료제공
-YST는 다소 까다로운 템플릿을 보유하고 보다 편한 코딩방식을 택하고 있습니다. 기본적인 템플릿은 순차적으로 만들겠습니다.<br>
+일본열차세트 플러스 (신칸센 부분) https://github.com/GBLINER/JapaneseTrainSet_Plus
 
-## 커뮤니티
-[![디스코드로고](https://github.com/evepoi/YST/blob/minengallery/docs/img/discord_logo.png)](https://discord.gg/WNrjUatFkz)
+중국열차세트 (CRH,CR, 홍콩 MTR 부분)  https://github.com/GBLINER/ChineseTrainSet
+
+유럽열차세트 (TGV,ICE,AVE,AGV 등등 유럽 열차 부분) https://github.com/GBLINER/EuropeanTrainSet
+
+세계열차세트 (인도, 미국, 대만 열차 부분) https://github.com/GBLINER/WorldTrainSet
+
+가상열차세트 (가상열차 부분) https://github.com/GBLINER/VirtualTrainSet
+
 
 # YST Set 열차 목록
 ## 개요
