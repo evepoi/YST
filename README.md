@@ -30,9 +30,5 @@ https://github.com/GBLINER/VirtualTrainSet
 
 
 # YST Set 열차 목록
-## 개요
-객차/화차는 2000번대, 열차는 3000번대, 지하철은 4000번대를 사용합니다. <br>
-타 grf의 고유 ID를 사용시 열차고유 ID충돌로 YST 열차셋이 등장하지 않을 수도 있습니다.<br>
-우선순위를 위해 grf목록의 YST를 상위로 올리시면 충돌할 일을 없습니다.<br>
 
 ![train_list](https://github.com/evepoi/YST/blob/minengallery/docs/img/train_list.png)
