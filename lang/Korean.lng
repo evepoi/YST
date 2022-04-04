@@ -6,99 +6,98 @@ STR_GRF_NAME_WITH_VER                               :YST {VERSION}
 STR_GRF_DESC                                        :{}{RED} 업데이트 지원 중단!!{} {GREEN}분리되는 GRF는 계속 지원됨.{}{} 분리된 GRF 목록{}{}{ORANGE} - KTS+(한국열차세트 플러스){} - JTS+(일본열차세트 플러스){} - ETS (유럽열차세트){} - CTS (중국열차세트){} - WTS (국제열차세트){} - VTS (가상열차세트)
 
 # locomotive's name
-STR_AGV_NAME                                        :[YST] AGV
+STR_AGV_NAME                                        :[ETS 이관] 삭제예정 (일정미정)
 STR_AGV_Cool_NAME                                   :[YST] AGV Cool
-STR_BB15000_NAME                                    :[YST] BB15000
-STR_CRH1_NAME                                       :[YST] CRH1
-STR_CRH3_NAME                                       :[YST] CRH3
-STR_CRH380A_NAME                                    :[YST] CRH380A
-STR_CRH380AJ_NAME                                   :[YST] CRH380AJ
-STR_CRH380D_NAME                                    :[YST] CRH380D
+STR_BB15000_NAME                                    :[ETS 이관] 삭제예정 (일정미정)
+STR_CRH1_NAME                                       :[CTS 이관] 삭제예정 (일정미정)
+STR_CRH3_NAME                                       :[CTS 이관] 삭제예정 (일정미정)
+STR_CRH380A_NAME                                    :[CTS 이관] 삭제예정 (일정미정)
+STR_CRH380AJ_NAME                                   :[CTS 이관] 삭제예정 (일정미정)
+STR_CRH380D_NAME                                    :[CTS 이관] 삭제예정 (일정미정)
 STR_CRH430A_NAME                                    :[YST] CRH430A
 STR_CRH430D_NAME                                    :[YST] CRH430D
 STR_CRH600D_NAME                                    :[YST] CRH600D
-STR_CR400_NAME                                      :[YST] CR400
-STR_Eurostar_E300_NAME                              :[YST] 유로스타 E300
-STR_Eurostar_E320_NAME                              :[YST] 유로스타 E320
-STR_EMU150_NAME                                     :[YST] EMU-150
-STR_EMU260_NAME                                     :[YST] EMU-260
-STR_EMU320_NAME                                     :[YST] EMU-320
-STR_Glory_600_NAME                                  :[YST] Glory 600
-STR_GT26CW_NAME                                     :[YST] GT26CW
-STR_GTX_NAME                                        :[YST] GTX
-STR_HEMU_430X_NAME                                  :[YST] HEMU-430X
-STR_HMX_NAME                                        :[YST] HMX
-STR_HSR_350X_NAME                                   :[YST] HSR-350X
-STR_HYEL_100_NAME                                   :[YST] HYEL-100
-STR_HYEL_200_NAME                                   :[YST] HYEL-200
-STR_HYEL_JET_NAME                                   :[YST] HYEL-JET
-STR_ICE3_NAME                                       :[YST] ICE3
-STR_ICE_CW_NAME                                     :[YST] ITX-초월
-STR_ICE_SP_NAME                                     :[YST] ICE-SP
-STR_ITX_SM2_NAME                                    :[YST] ITX-SM2
-STR_KTX_EM_NAME                                     :[YST] KTX-EM
-STR_KTX_N_NAME                                      :[YST] KTX-N
-STR_KTX_SC2_NAME                                    :[YST] KTX-SC2
-STR_NHSRCL_E5_NAME                                  :[YST] NHSRCL E5
-STR_NJ2_NAME                                        :[YST] NJ2
-STR_NKX_NAME                                        :[YST] NKX
-STR_NRT2_NAME                                       :[YST] NRT2
-STR_Renfe_S_100_NAME                                :[YST] Renfe S-100
-STR_Renfe_S_103_NAME                                :[YST] Renfe S-103
-STR_Renfe_S_130_NAME                                :[YST] Renfe S-130 & Talgo-250
-STR_Shinkansen_0_NAME                               :[YST] 신칸센 0계
-STR_Shinkansen_500_NAME                             :[YST] 신칸센 500계
+STR_CR400_NAME                                      :[CTS 이관] 삭제예정 (일정미정)
+STR_Eurostar_E300_NAME                              :[ETS 이관] 삭제예정 (일정미정)
+STR_Eurostar_E320_NAME                              :[ETS 이관] 삭제예정 (일정미정)
+STR_EMU150_NAME                                     :[KTS+ 이관] 삭제예정 (일정미정)
+STR_EMU260_NAME                                     :[KTS+ 이관] 삭제예정 (일정미정)
+STR_EMU320_NAME                                     :[KTS+ 이관] 삭제예정 (일정미정)
+STR_Glory_600_NAME                                  :[MSset 이관] 삭제예정 (일정미정)
+STR_GT26CW_NAME                                     :[WTS 이관] 삭제예정 (일정미정)
+STR_GTX_NAME                                        :[KTS+ 이관] 삭제예정 (일정미정)
+STR_HEMU_430X_NAME                                  :[KTS+ 이관] 삭제예정 (일정미정)
+STR_HMX_NAME                                        :[MSset 이관] 삭제예정 (일정미정)
+STR_HSR_350X_NAME                                   :[KTS+ 이관] 삭제예정 (일정미정)
+STR_HYEL_100_NAME                                   :[VTS 이관] 삭제예정 (일정미정)
+STR_HYEL_200_NAME                                   :[VTS 이관] 삭제예정 (일정미정)
+STR_ICE3_NAME                                       :[ETS 이관] 삭제예정 (일정미정)
+STR_ICE_CW_NAME                                     :[KTS+ 이관] 삭제예정 (일정미정)
+STR_ICE_SP_NAME                                     :[MSset 이관] 삭제예정 (일정미정)
+STR_ITX_SM2_NAME                                    :[KTS+ 이관] 삭제예정 (일정미정)
+STR_KTX_EM_NAME                                     :[KTS+ 이관] 삭제예정 (일정미정)
+STR_KTX_N_NAME                                      :[KTS+ 이관] 삭제예정 (일정미정)
+STR_KTX_SC2_NAME                                    :[KTS+ 이관] 삭제예정 (일정미정)
+STR_NHSRCL_E5_NAME                                  :[WTS 이관] 삭제예정 (일정미정)
+STR_NJ2_NAME                                        :[CTS 이관] 삭제예정 (일정미정)
+STR_NKX_NAME                                        :[MSset 이관] 삭제예정 (일정미정)
+STR_NRT2_NAME                                       :[KTS+ 이관] 삭제예정 (일정미정)
+STR_Renfe_S_100_NAME                                :[ETS 이관] 삭제예정 (일정미정)
+STR_Renfe_S_103_NAME                                :[ETS 이관] 삭제예정 (일정미정)
+STR_Renfe_S_130_NAME                                :[ETS 이관] 삭제예정 (일정미정)
+STR_Shinkansen_0_NAME                               :[JTS+ 이관] 삭제예정 (일정미정)
+STR_Shinkansen_500_NAME                             :[JTS+ 이관] 삭제예정 (일정미정)
 STR_Shinkansen_500_Cool_NAME                        :[YST] 신칸센 500계 Cool
-STR_Shinkansen_500_KR_NAME                          :[YST] 신칸센 500계 KR
-STR_Shinkansen_800_NAME                             :[YST] 신칸센 800계
-STR_Shinkansen_923_NAME                             :[YST] 신칸센 923형
-STR_Shinkansen_E5_H5_NAME                           :[YST] 신칸센 E5·H5 
-STR_Shinkansen_E6_NAME                              :[YST] 신칸센 E6
-STR_Shinkansen_E7_W7_NAME                           :[YST] 신칸센 E7·W7
-STR_Shinkansen_E8_NAME                              :[YST] 신칸센 E8
-STR_Shinkansen_N700_NAME                            :[YST] 신칸센 N700계
-STR_Shinkansen_L0_NAME                              :[YST] 신칸센 L0계
+STR_Shinkansen_500_KR_NAME                          :[MSset 이관] 삭제예정 (일정미정)
+STR_Shinkansen_800_NAME                             :[JTS+ 이관] 삭제예정 (일정미정)
+STR_Shinkansen_923_NAME                             :[JTS+ 이관] 삭제예정 (일정미정)
+STR_Shinkansen_E5_H5_NAME                           :[JTS+ 이관] 삭제예정 (일정미정)
+STR_Shinkansen_E6_NAME                              :[JTS+ 이관] 삭제예정 (일정미정)
+STR_Shinkansen_E7_W7_NAME                           :[JTS+ 이관] 삭제예정 (일정미정)
+STR_Shinkansen_E8_NAME                              :[JTS+ 이관] 삭제예정 (일정미정)
+STR_Shinkansen_N700_NAME                            :[JTS+ 이관] 삭제예정 (일정미정)
+STR_Shinkansen_L0_NAME                              :[JTS+ 이관] 삭제예정 (일정미정)
 STR_TAE_100_NAME                                    :[YST] TAE 100
 STR_TAE_200_NAME                                    :[YST] TAE 200
-STR_TGV_Duplex_NAME                                 :[YST] TGV Duplex
-STR_TGV_OLD_NAME                                    :[YST] TGV Old
-STR_TGV_OLD_Duplex_NAME                             :[YST] TGV Old Duplex
-STR_TGV_OLD_Pos_NAME                                :[YST] TGV Old Pos
-STR_TGV_OLD_Poste_NAME                              :[YST] TGV Old Poste
-STR_TGV_Ouigo_NAME                                  :[YST] TGV Ouigo
-STR_TGV_Pos_NAME                                    :[YST] TGV Pos
+STR_TGV_Duplex_NAME                                 :[ETS 이관] 삭제예정 (일정미정)
+STR_TGV_OLD_NAME                                    :[ETS 이관] 삭제예정 (일정미정)
+STR_TGV_OLD_Duplex_NAME                             :[ETS 이관] 삭제예정 (일정미정)
+STR_TGV_OLD_Pos_NAME                                :[ETS 이관] 삭제예정 (일정미정)
+STR_TGV_OLD_Poste_NAME                              :[ETS 이관] 삭제예정 (일정미정)
+STR_TGV_Ouigo_NAME                                  :[ETS 이관] 삭제예정 (일정미정)
+STR_TGV_Pos_NAME                                    :[ETS 이관] 삭제예정 (일정미정)
 STR_TGV_Pos_Poste_NAME                              :[YST] TGV Pos Poste
-STR_THSR_700T_NAME                                  :[YST] THSR 700T
-STR_VHST_600X_NAME                                  :[YST] VHST-600X
+STR_THSR_700T_NAME                                  :[WTS 이관] 삭제예정 (일정미정)
+STR_VHST_600X_NAME                                  :[MSset 이관] 삭제예정 (일정미정)
 STR_VTX_NAME                                        :[YST] VTX
-STR_YFX_NAME                                        :[YST] YFX
+STR_YFX_NAME                                        :[VTS 이관] 삭제예정 (일정미정)
 STR_YTX_NAME                                        :[YST] YTX
 
 # Metro's name
-STR_MTR_AD_Tranz_CAF_A_NAME                         :[YST] MTR AD Tranz CAF A형
-STR_MTR_AC_Cammall_NAME                             :[YST] MTR 메트로카멜 교류형 전동차
-STR_MTR_DC_Cammall_NAME                             :[YST] MTR 메트로카멜 직류형 전동차
-STR_MTR_CNR_Changchun_NAME                          :[YST] MTR CNR 창춘 전동차
-STR_MTR_CRRC_NAME                                   :[YST] MTR CRRC 전동차
-STR_MTR_Hyundai_Rotem_Mitsubishi_NAME               :[YST] MTR 현대로템 미쓰비시 전동차
-STR_MTR_Hyundai_Rotem_R_NAME                        :[YST] MTR 현대로템 R형 전동차
-STR_MTR_IKK_SP_1900_NAME                            :[YST] MTR IKK SP 1900
+STR_MTR_AD_Tranz_CAF_A_NAME                         :[CTS 이관] 삭제예정 (일정미정)
+STR_MTR_AC_Cammall_NAME                             :[CTS 이관] 삭제예정 (일정미정)
+STR_MTR_DC_Cammall_NAME                             :[CTS 이관] 삭제예정 (일정미정)
+STR_MTR_CNR_Changchun_NAME                          :[CTS 이관] 삭제예정 (일정미정)
+STR_MTR_CRRC_NAME                                   :[CTS 이관] 삭제예정 (일정미정)
+STR_MTR_Hyundai_Rotem_Mitsubishi_NAME               :[CTS 이관] 삭제예정 (일정미정)
+STR_MTR_Hyundai_Rotem_R_NAME                        :[CTS 이관] 삭제예정 (일정미정)
+STR_MTR_IKK_SP_1900_NAME                            :[CTS 이관] 삭제예정 (일정미정)
 STR_YMT_100_NAME                                    :[YST] YMT 100
 STR_YMT_200_NAME                                    :[YST] YMT 200
 
 # wagon's name
 STR_YST_1F_PASS_NAME                                :[YST] 1층 공통 객차
-STR_YST_Magv_PASS_NAME                              :[YST] 자기부상 객차
+STR_YST_Magv_PASS_NAME                              :[JTS+ 이관] 삭제예정 (일정미정)
 STR_YST_2F_PASS_NAME                                :[YST] 2층 공통 객차
-STR_Coach_2F_NAME                                   :[YST] 객차형 2층 공통 객차
-STR_Coach_2F_Last_NAME                              :[YST] 객차형 2층 공통 후미객차
-STR_China_Railway_Type_25_1F_NAME                   :[YST] 중국철도 25형 1층 객차
-STR_China_Railway_Type_25_2F_NAME                   :[YST] 중국철도 25형 2층 객차
-STR_China_Railway_Type_25_Bed_Car_NAME              :[YST] 중국철도 25형 침대차
-STR_China_Railway_Type_25_Generatar_Car_NAME        :[YST] 중국철도 25형 발전차
-STR_China_Railway_Type_25_Luggage_Car_NAME          :[YST] 중국철도 25형 수화물차
+STR_Coach_2F_NAME                                   :[VTS 이관] 삭제예정 (일정미정)
+STR_Coach_2F_Last_NAME                              :[VTS 이관] 삭제예정 (일정미정)
+STR_China_Railway_Type_25_1F_NAME                   :[CTS 이관] 삭제예정 (일정미정)
+STR_China_Railway_Type_25_2F_NAME                   :[CTS 이관] 삭제예정 (일정미정)
+STR_China_Railway_Type_25_Bed_Car_NAME              :[CTS 이관] 삭제예정 (일정미정)
+STR_China_Railway_Type_25_Generatar_Car_NAME        :[CTS 이관] 삭제예정 (일정미정)
+STR_China_Railway_Type_25_Luggage_Car_NAME          :[CTS 이관] 삭제예정 (일정미정)
 STR_TGV_Poste_wagon_NAME                            :[YST] TGV Poste 화차
-STR_YFXF_NAME                                       :[YST] YFX용 화차
+STR_YFXF_NAME                                       :[VTS 이관] 삭제예정 (일정미정)
 STR_FLAT_1F_NAME                                    :[YST] 평판화차
 STR_FLAT_2F_NAME                                    :[YST] 평판화차 - 미국형
 STR_FLAT_Tank_NAME                                  :[YST] 평판유조 화차
@@ -114,26 +113,20 @@ STR_PARAM_High_SPEED_Train_NAME                     :고속열차 속도변수
 STR_PARAM_High_SPEED_Train_DESC                     :고속열차의 속도를 조정합니다. (기본:331km/h)
 STR_PARAM_High_SPEED_Train_430_NAME                 :고속열차 속도변수 (430km/h 열차속도조절)
 STR_PARAM_High_SPEED_Train_430_DESC                 :고속열차의 속도를 조정합니다. (기본:430km/h)
-STR_PARAM_Plan_Train_NAME                           :계획 열차 사용금지
-STR_PARAM_Plan_Train_DESC                           :계획 열차를 사용하지 않을 시 체크하세요.  (기본:사용)
-STR_PARAM_Real_Train_NAME                           :실제 열차 사용금지
-STR_PARAM_Real_Train_DESC                           :실제 열차를 사용하지 않을 시 체크하세요.  (기본:사용){}나라별 열차 사용여부도 같이 체크해야 합니다.
-STR_PARAM_Text_Train_NAME                           :시험용 열차 사용금지
-STR_PARAM_Text_Train_DESC                           :시험용 열차를 사용하지 않을 시 체크하세요.  (기본:사용)
-STR_PARAM_Virtual_Train_NAME                        :가상 열차 사용금지
-STR_PARAM_Virtual_Train_DESC                        :가상 열차를 사용하지 않을 시 체크하세요.  (기본:사용)
-STR_PARAM_Chinese_NAME                              :중국형 열차 사용금지
-STR_PARAM_Chinese_DESC                              :중국형 열차를 사용하지 않을 시 체크하세요.  (기본:사용){}실제 열차 사용여부도 같이 체크해야 합니다.
-STR_PARAM_European_NAME                             :유럽형 열차 사용금지
-STR_PARAM_European_DESC                             :유럽형 열차를 사용하지 않을 시 체크하세요. (기본:사용){}실제 열차 사용여부도 같이 체크해야 합니다.
-STR_PARAM_Hong_Kong_NAME                            :홍콩형 열차 사용금지
-STR_PARAM_Hong_Kong_DESC                            :홍콩형 열차를 사용하지 않을 시 체크하세요.  (기본:사용){}실제 열차 사용여부도 같이 체크해야 합니다.
-STR_PARAM_Japanese_NAME                             :일본형 열차 사용금지
-STR_PARAM_Japanese_DESC                             :일본형 열차를 사용하지 않을 시 체크하세요.  (기본:사용){}실제 열차 사용여부도 같이 체크해야 합니다.
-STR_PARAM_Korea_NAME                                :한국형 열차 사용금지
-STR_PARAM_Korea_DESC                                :한국형 열차를 사용하지 않을 시 체크하세요.  (기본:사용){}실제 열차 사용여부도 같이 체크해야 합니다.
-STR_PARAM_Taiwanese_NAME                            :대만형 열차 사용금지
-STR_PARAM_Taiwanese_DESC                            :대만형 열차를 사용하지 않을 시 체크하세요.  (기본:사용){}실제 열차 사용여부도 같이 체크해야 합니다.
+STR_PARAM_MEset_NAME                                :MEset 이관
+STR_PARAM_MEset_DESC                                :MEset 이관 열차는 기본적으로 숨겨집니다.{}https://github.com/evepoi/MEset{}개인소장용 GRF이므로 온라인컨텐츠 비공개 자료입니다.
+STR_PARAM_KTS_Plus_NAME                             :KTS+ 이관
+STR_PARAM_KTS_Plus_DESC                             :KTS+ 이관 열차는 기본적으로 숨겨집니다.{}https://github.com/GBLINER/KoreanTrainSet_Plus
+STR_PARAM_JTS_Plus_NAME                             :JTS+ 이관
+STR_PARAM_JTS_Plus_DESC                             :JTS+ 이관 열차는 기본적으로 숨겨집니다.{}https://github.com/GBLINER/JapaneseTrainSet_Plus
+STR_PARAM_ETS_NAME                                  :ETS 이관
+STR_PARAM_ETS_DESC                                  :ETS 이관 열차는 기본적으로 숨겨집니다.{}https://github.com/GBLINER/EuropeanTrainSet
+STR_PARAM_CTS_NAME                                  :CTS 이관
+STR_PARAM_CTS_DESC                                  :CTS 이관 열차는 기본적으로 숨겨집니다.{}https://github.com/GBLINER/ChineseTrainSet
+STR_PARAM_WTS_NAME                                  :WTS 이관
+STR_PARAM_WTS_DESC                                  :WTS 이관 열차는 기본적으로 숨겨집니다.{}https://github.com/GBLINER/WorldTrainSet
+STR_PARAM_VTS_NAME                                  :VTS 이관
+STR_PARAM_VTS_DESC                                  :VTS 이관 열차는 기본적으로 숨겨집니다.{}https://github.com/GBLINER/VirtualTrainSet
 
 # Refit (Additional text) 실제(BLUE), 시험(YELLOW), 계획 (PURPLE), 가상 (RED)
 STR_REFIT_ADDITIONAL_AGV                            :{BLACK}열차 실존여부 : {BLUE}실제 {}{BLACK} 도색/모델 변경: {GREEN}가능 {}{BLACK}복합열차구성 : {RED}불가능

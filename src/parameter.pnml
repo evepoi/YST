@@ -1,35 +1,5 @@
 /*--------------------------------------------------------------------
 매개변수
-
-사용안함.
-param 1 {
-		coeff_cargo_capacity_factor {
-			type: int;
-			name: string(STR_PARAM_CARGO_CAPACITY_NAME);
-			desc: string(STR_PARAM_CARGO_CAPACITY_DESC);
-			min_value: 0;
-			max_value: 2;
-			def_value: 0;
-			names: {
-				0:	string(STR_PARAM_OPT_FACTOR_BY_1);
-				1:	string(STR_PARAM_OPT_FACTOR_BY_2);
-				2:	string(STR_PARAM_OPT_FACTOR_BY_3);
-			};
-		}
-		}
-        
-//수송량
-	 
-    param 1 {
-		coeff_speed_AGV {
-			type: int;
-			name: string(STR_PARAM_AGV_SPEED_NAME);
-			desc: string(STR_PARAM_AGV_SPEED_DESC);
-			min_value: 330;
-			max_value: 597;
-			def_value: 330;
-			}
-		}
 --------------------------------------------------------------------*/
 param {
         Regular_Speed_Train {
@@ -76,91 +46,64 @@ param {
     }
 
 param {
-    Plan_Train {
+    MEset {
         type: bool;
-        name: string(STR_PARAM_Plan_Train_NAME);
-        desc: string(STR_PARAM_Plan_Train_DESC);
-        def_value: 0;
+        name: string(STR_PARAM_MEset_NAME);
+        desc: string(STR_PARAM_MEset_DESC);
+        def_value: 1;
         }
     }
 
 param {
-    Real_Train {
+    KTS_Plus {
         type: bool;
-        name: string(STR_PARAM_Real_Train_NAME);
-        desc: string(STR_PARAM_Real_Train_DESC);
-        def_value: 0;
+        name: string(STR_PARAM_KTS_Plus_NAME);
+        desc: string(STR_PARAM_KTS_Plus_DESC);
+        def_value: 1;
         }
     }
 
 param {
-    Test_Train {
+    JTS_Plus {
         type: bool;
-        name: string(STR_PARAM_Text_Train_NAME);
-        desc: string(STR_PARAM_Text_Train_DESC);
-        def_value: 0;
+        name: string(STR_PARAM_JTS_Plus_NAME);
+        desc: string(STR_PARAM_JTS_Plus_DESC);
+        def_value: 1;
         }
     }
 
 param {
-    Virtual_Train {
+    ETS {
         type: bool;
-        name: string(STR_PARAM_Virtual_Train_NAME);
-        desc: string(STR_PARAM_Virtual_Train_DESC);
-        def_value: 0;
+        name: string(STR_PARAM_ETS_NAME);
+        desc: string(STR_PARAM_ETS_DESC);
+        def_value: 1;
         }
     }
 
 param {
-    Chinese {
+    CTS {
         type: bool;
-        name: string(STR_PARAM_Chinese_NAME);
-        desc: string(STR_PARAM_Chinese_DESC);
-        def_value: 0;
+        name: string(STR_PARAM_CTS_NAME);
+        desc: string(STR_PARAM_CTS_DESC);
+        def_value: 1;
         }
     }
 
 param {
-    European {
+    WTS {
         type: bool;
-        name: string(STR_PARAM_European_NAME);
-        desc: string(STR_PARAM_European_DESC);
-        def_value: 0;
+        name: string(STR_PARAM_WTS_NAME);
+        desc: string(STR_PARAM_WTS_DESC);
+        def_value: 1;
         }
     }
 
 param {
-    Hong_Kong {
+    VTS {
         type: bool;
-        name: string(STR_PARAM_Hong_Kong_NAME);
-        desc: string(STR_PARAM_Hong_Kong_DESC);
-        def_value: 0;
-        }
-    }
-
-param {
-    Japanese {
-        type: bool;
-        name: string(STR_PARAM_Japanese_NAME);
-        desc: string(STR_PARAM_Japanese_DESC);
-        def_value: 0;
-        }
-    }
-
-param {
-    Korea {
-        type: bool;
-        name: string(STR_PARAM_Korea_NAME);
-        desc: string(STR_PARAM_Korea_DESC);
-        def_value: 0;
-        }
-    }
-
-param {
-    Taiwanese {
-        type: bool;
-        name: string(STR_PARAM_Taiwanese_NAME);
-        desc: string(STR_PARAM_Taiwanese_DESC);
-        def_value: 0;
+        name: string(STR_PARAM_VTS_NAME);
+        desc: string(STR_PARAM_VTS_DESC);
+        def_value: 1;
         }
     }

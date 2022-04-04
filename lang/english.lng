@@ -6,109 +6,103 @@ STR_GRF_NAME_WITH_VER                               :YST {VERSION}
 STR_GRF_DESC                                        :(Updated: {RECENT_UPDATED}{}{}{SILVER} coded By : ME Making {}{} Sprite By :{} Las{} 그날트리{} 킹거{} Dat Tree{} Gamunbi{ } GBLINER{} 죽전와니{} POKERFACE{}
 
 # locomotive's name
-STR_AGV_NAME                                        :[YST] AGV
+STR_AGV_NAME                                        :[ETS Escalation] To be deleted (schedule undecided)
 STR_AGV_Cool_NAME                                   :[YST] AGV Cool
-STR_BB15000_NAME                                    :[YST] BB15000
-STR_CRH1_NAME                                       :[YST] CRH1
-STR_CRH3_NAME                                       :[YST] CRH3
-STR_CRH380A_NAME                                    :[YST] CRH380A
-STR_CRH380AJ_NAME                                   :[YST] CRH380AJ
-STR_CRH380D_NAME                                    :[YST] CRH380D
+STR_BB15000_NAME                                    :[ETS Escalation] To be deleted (schedule undecided)
+STR_CRH1_NAME                                       :[CTS Escalation] To be deleted (schedule undecided)
+STR_CRH3_NAME                                       :[CTS Escalation] To be deleted (schedule undecided)
+STR_CRH380A_NAME                                    :[CTS Escalation] To be deleted (schedule undecided)
+STR_CRH380AJ_NAME                                   :[CTS Escalation] To be deleted (schedule undecided)
+STR_CRH380D_NAME                                    :[CTS Escalation] To be deleted (schedule undecided)
 STR_CRH430A_NAME                                    :[YST] CRH430A
 STR_CRH430D_NAME                                    :[YST] CRH430D
 STR_CRH600D_NAME                                    :[YST] CRH600D
-STR_CR400_NAME                                      :[YST] CR400
+STR_CR400_NAME                                      :[CTS Escalation] To be deleted (schedule undecided)
 STR_Eurostar_E300_NAME                              :[YST] Eurostar E300
 STR_Eurostar_E320_NAME                              :[YST] Eurostar E320
-STR_EMU150_NAME                                     :[YST] EMU-150
-STR_EMU260_NAME                                     :[YST] EMU-260
-STR_EMU320_NAME                                     :[YST] EMU-320
-STR_Glory_600_NAME                                  :[YST] Glory 600
-STR_GT26CW_NAME                                     :[YST] GT26CW
-STR_GTX_NAME                                        :[YST] GTX
-STR_HEMU_430X_NAME                                  :[YST] HEMU-430X
-STR_HMX_NAME                                        :[YST] HMX
-STR_HSR_350X_NAME                                   :[YST] HSR-350X
-STR_HYEL_100_NAME                                   :[YST] HYEL-100
-STR_HYEL_200_NAME                                   :[YST] HYEL-200
-STR_HYEL_JET_NAME                                   :[YST] HYEL-JET
+STR_EMU150_NAME                                     :[KTS+ Escalation] To be deleted (schedule undecided)
+STR_EMU260_NAME                                     :[KTS+ Escalation] To be deleted (schedule undecided)
+STR_EMU320_NAME                                     :[KTS+ Escalation] To be deleted (schedule undecided)
+STR_Glory_600_NAME                                  :[MSset Escalation] To be deleted (schedule undecided)
+STR_GT26CW_NAME                                     :[WTS Escalation] To be deleted (schedule undecided)
+STR_GTX_NAME                                        :[KTS+ Escalation] To be deleted (schedule undecided)
+STR_HEMU_430X_NAME                                  :[KTS+ Escalation] To be deleted (schedule undecided)
+STR_HMX_NAME                                        :[MSset Escalation] To be deleted (schedule undecided)
+STR_HSR_350X_NAME                                   :[KTS+ Escalation] To be deleted (schedule undecided)
+STR_HYEL_100_NAME                                   :[VTS Escalation] To be deleted (schedule undecided)
+STR_HYEL_200_NAME                                   :[VTS Escalation] To be deleted (schedule undecided)
 STR_ICE3_NAME                                       :[YST] ICE3
-STR_ICE_CW_NAME                                     :[YST] ITX-Chowol
-STR_ICE_SP_NAME                                     :[YST] ICE-SP
-STR_ITX_SM2_NAME                                    :[YST] ITX-SM2
-STR_KTX_EM_NAME                                     :[YST] KTX-EM
-STR_KTX_N_NAME                                      :[YST] KTX-N
-STR_KTX_SC2_NAME                                    :[YST] KTX-SC2
-STR_NHSRCL_E5_NAME                                  :[YST] NHSRCL E5
-STR_NJ2_NAME                                        :[YST] NJ2
-STR_NKX_NAME                                        :[YST] NKX
-STR_NRT2_NAME                                       :[YST] NRT2
-STR_Renfe_S_100_NAME                                :[YST] Renfe S-100
-STR_Renfe_S_103_NAME                                :[YST] Renfe S-103
-STR_Renfe_S_130_NAME                                :[YST] Renfe S-130 & Talgo-250
-STR_Shinkansen_0_NAME                               :[YST] Shinkansen 0
-STR_Shinkansen_500_NAME                             :[YST] Shinkansen 500
+STR_ICE_CW_NAME                                     :[KTS+ Escalation] To be deleted (schedule undecided)
+STR_ICE_SP_NAME                                     :[MSset Escalation] To be deleted (schedule undecided)
+STR_ITX_SM2_NAME                                    :[KTS+ Escalation] To be deleted (schedule undecided)
+STR_KTX_EM_NAME                                     :[KTS+ Escalation] To be deleted (schedule undecided)
+STR_KTX_N_NAME                                      :[KTS+ Escalation] To be deleted (schedule undecided)
+STR_KTX_SC2_NAME                                    :[KTS+ Escalation] To be deleted (schedule undecided)
+STR_NHSRCL_E5_NAME                                  :[WTS Escalation] To be deleted (schedule undecided)
+STR_NJ2_NAME                                        :[CTS Escalation] To be deleted (schedule undecided)
+STR_NKX_NAME                                        :[MSset Escalation] To be deleted (schedule undecided)
+STR_NRT2_NAME                                       :[KTS+ Escalation] To be deleted (schedule undecided)
+STR_Renfe_S_100_NAME                                :[ETS Escalation] To be deleted (schedule undecided)
+STR_Renfe_S_103_NAME                                :[ETS Escalation] To be deleted (schedule undecided)
+STR_Renfe_S_130_NAME                                :[ETS Escalation] To be deleted (schedule undecided)
+STR_Shinkansen_0_NAME                               :[JTS+ Escalation] To be deleted (schedule undecided)
+STR_Shinkansen_500_NAME                             :[JTS+ Escalation] To be deleted (schedule undecided)
 STR_Shinkansen_500_Cool_NAME                        :[YST] Shinkansen 500 Cool
-STR_Shinkansen_500_KR_NAME                          :[YST] Shinkansen 500 KR
-STR_Shinkansen_800_NAME                             :[YST] Shinkansen 800
-STR_Shinkansen_923_NAME                             :[YST] Shinkansen 923
-STR_Shinkansen_E5_H5_NAME                           :[YST] Shinkansen E5·H5
-STR_Shinkansen_E6_NAME                              :[YST] Shinkansen E6
-STR_Shinkansen_E7_W7_NAME                           :[YST] Shinkansen E7·W7
-STR_Shinkansen_E8_NAME                              :[YST] Shinkansen E8
-STR_Shinkansen_N700_NAME                            :[YST] Shinkansen N700
-STR_Shinkansen_L0_NAME                              :[YST] Shinkansen L0
+STR_Shinkansen_500_KR_NAME                          :[MSset Escalation] To be deleted (schedule undecided)
+STR_Shinkansen_800_NAME                             :[JTS+ Escalation] To be deleted (schedule undecided)
+STR_Shinkansen_923_NAME                             :[JTS+ Escalation] To be deleted (schedule undecided)
+STR_Shinkansen_E5_H5_NAME                           :[JTS+ Escalation] To be deleted (schedule undecided)
+STR_Shinkansen_E6_NAME                              :[JTS+ Escalation] To be deleted (schedule undecided)
+STR_Shinkansen_E7_W7_NAME                           :[JTS+ Escalation] To be deleted (schedule undecided)
+STR_Shinkansen_E8_NAME                              :[JTS+ Escalation] To be deleted (schedule undecided)
+STR_Shinkansen_N700_NAME                            :[JTS+ Escalation] To be deleted (schedule undecided)
+STR_Shinkansen_L0_NAME                              :[JTS+ Escalation] To be deleted (schedule undecided)
 STR_TAE_100_NAME                                    :[YST] TAE 100
 STR_TAE_200_NAME                                    :[YST] TAE 200
-STR_TGV_Duplex_NAME                                 :[YST] TGV Duplex
-STR_TGV_OLD_NAME                                    :[YST] TGV Old
-STR_TGV_OLD_Duplex_NAME                             :[YST] TGV Old Duplex
-STR_TGV_OLD_Pos_NAME                                :[YST] TGV Old Pos
-STR_TGV_OLD_Poste_NAME                              :[YST] TGV Old Poste
-STR_TGV_Ouigo_NAME                                  :[YST] TGV Ouigo
-STR_TGV_Pos_NAME                                    :[YST] TGV Pos
+STR_TGV_Duplex_NAME                                 :[ETS Escalation] To be deleted (schedule undecided)
+STR_TGV_OLD_NAME                                    :[ETS Escalation] To be deleted (schedule undecided)
+STR_TGV_OLD_Duplex_NAME                             :[ETS Escalation] To be deleted (schedule undecided)
+STR_TGV_OLD_Pos_NAME                                :[ETS Escalation] To be deleted (schedule undecided)
+STR_TGV_OLD_Poste_NAME                              :[ETS Escalation] To be deleted (schedule undecided)
+STR_TGV_Ouigo_NAME                                  :[ETS Escalation] To be deleted (schedule undecided)
+STR_TGV_Pos_NAME                                    :[ETS Escalation] To be deleted (schedule undecided)
 STR_TGV_Pos_Poste_NAME                              :[YST] TGV Pos Poste
-STR_THSR_700T_NAME                                  :[YST] THSR 700T
-STR_VHST_600X_NAME                                  :[YST] VHST-600X
+STR_THSR_700T_NAME                                  :[WTS Escalation] To be deleted (schedule undecided)
+STR_VHST_600X_NAME                                  :[MSset Escalation] To be deleted (schedule undecided)
 STR_VTX_NAME                                        :[YST] VTX
-STR_YFX_NAME                                        :[YST] YFX
+STR_YFX_NAME                                        :[VTS Escalation] To be deleted (schedule undecided)
 STR_YTX_NAME                                        :[YST] YTX
 
 # Metro's name
-STR_MTR_AD_Tranz_CAF_A_NAME                         :[YST] MTR AD Tranz CAF A Type
-STR_MTR_AC_Cammall_NAME                             :[YST] MTR Cammall AC Train
-STR_MTR_DC_Cammall_NAME                             :[YST] MTR Cammall DC Train
-STR_MTR_CNR_Changchun_NAME                          :[YST] MTR CNR Changchun Trian
-STR_MTR_CRRC_NAME                                   :[YST] MTR CRRC Trian
-STR_MTR_Hyundai_Rotem_Mitsubishi_NAME               :[YST] MTR Hyundai Rotem Mitsubishi Trian
-STR_MTR_Hyundai_Rotem_R_NAME                        :[YST] MTR Hyundai Rotem R Type Train
-STR_MTR_IKK_SP_1900_NAME                            :[YST] MTR IKK SP 1900
+STR_MTR_AD_Tranz_CAF_A_NAME                         :[CTS Escalation] To be deleted (schedule undecided)
+STR_MTR_AC_Cammall_NAME                             :[CTS Escalation] To be deleted (schedule undecided)
+STR_MTR_DC_Cammall_NAME                             :[CTS Escalation] To be deleted (schedule undecided)
+STR_MTR_CNR_Changchun_NAME                          :[CTS Escalation] To be deleted (schedule undecided)
+STR_MTR_CRRC_NAME                                   :[CTS Escalation] To be deleted (schedule undecided)
+STR_MTR_Hyundai_Rotem_Mitsubishi_NAME               :[CTS Escalation] To be deleted (schedule undecided)
+STR_MTR_Hyundai_Rotem_R_NAME                        :[CTS Escalation] To be deleted (schedule undecided)
+STR_MTR_IKK_SP_1900_NAME                            :[CTS Escalation] To be deleted (schedule undecided)
 STR_YMT_100_NAME                                    :[YST] YMT 100
 STR_YMT_200_NAME                                    :[YST] YMT 200
 
 # wagon's name
 STR_YST_1F_PASS_NAME                                :[YST] 1F Passenger Car
-STR_YST_Magv_PASS_NAME                              :[YST] maglev Passenger Car
+STR_YST_Magv_PASS_NAME                              :[JTS+ Escalation] To be deleted (schedule undecided)
 STR_YST_2F_PASS_NAME                                :[YST] 2F Passenger Car
-STR_Coach_2F_NAME                                   :[YST] Coach 2F Passenger Car
-STR_Coach_2F_Last_NAME                              :[YST] Coach Last 2F Passenger Car
-STR_China_Railway_Type_25_1F_NAME                   :[YST] China Railway Type 25 1F Passenger Car
-STR_China_Railway_Type_25_2F_NAME                   :[YST] China Railway Type 25 2F Passenger Car
-STR_China_Railway_Type_25_Bed_Car_NAME              :[YST] China Railway Type 25 Bed Car
-STR_China_Railway_Type_25_Generatar_Car_NAME        :[YST] China Railway Type 25 Generatar Car
-STR_China_Railway_Type_25_Luggage_Car_NAME          :[YST] China Railway Type 25 Luggage Car
+STR_Coach_2F_NAME                                   :[VTS Escalation] To be deleted (schedule undecided)
+STR_Coach_2F_Last_NAME                              :[VTS Escalation] To be deleted (schedule undecided)
+STR_China_Railway_Type_25_1F_NAME                   :[CTS Escalation] To be deleted (schedule undecided)
+STR_China_Railway_Type_25_2F_NAME                   :[CTS Escalation] To be deleted (schedule undecided)
+STR_China_Railway_Type_25_Bed_Car_NAME              :[CTS Escalation] To be deleted (schedule undecided)
+STR_China_Railway_Type_25_Generatar_Car_NAME        :[CTS Escalation] To be deleted (schedule undecided)
+STR_China_Railway_Type_25_Luggage_Car_NAME          :[CTS Escalation] To be deleted (schedule undecided)
 STR_TGV_Poste_wagon_NAME                            :[YST] TGV Poste Freight Car
-STR_YFXF_NAME                                       :[YST] YFX Freight Car
+STR_YFXF_NAME                                       :[VTS Escalation] To be deleted (schedule undecided)
 STR_FLAT_1F_NAME                                    :[YST] Flat Car
 STR_FLAT_2F_NAME                                    :[YST] Flat Car - American
 STR_FLAT_Tank_NAME                                  :[YST] Flat Tank Car
 STR_Showcase_FLAT_1F_NAME                           :[YST] Showcase Flat car
 STR_Tank_NAME		                                :[YST] Tank
-
-# Parameters' value
-STR_PARAM_OPT_FACTOR_BY_1	                        :x 1 (Default)
-STR_PARAM_OPT_FACTOR_BY_2	                        :x 2
-STR_PARAM_OPT_FACTOR_BY_3    	                    :x 3
 
 # Parameters
 STR_PARAM_Regular_SPEED_Train_NAME                  :Regular Train Speed Variable
@@ -119,26 +113,20 @@ STR_PARAM_High_SPEED_Train_NAME                     :High Speed Train Speed
 STR_PARAM_High_SPEED_Train_DESC                     :Adjust the speed of the high-speed train (Default:331km/h)
 STR_PARAM_High_SPEED_Train_430_NAME                 :High Speed Train Speed (430km/h train speed control)
 STR_PARAM_High_SPEED_Train_430_DESC                 :Adjust the speed of the high-speed train (Default:430km/h)
-STR_PARAM_Plan_Train_NAME                           :No Plan trains allowed
-STR_PARAM_Plan_Train_DESC                           :Check if you don't use the Plan trains. (Default: Use)
-STR_PARAM_Real_Train_NAME                           :No Real trains allowed
-STR_PARAM_Real_Train_DESC                           :Check if you don't use the Real trains. (Default: Use){}You should also check whether trains are used by country.
-STR_PARAM_Text_Train_NAME                           :No Test trains allowed
-STR_PARAM_Text_Train_DESC                           :Check if you don't use the Test trains. (Default: Use)
-STR_PARAM_Virtual_Train_NAME                        :No Virtual trains allowed
-STR_PARAM_Virtual_Train_DESC                        :Check if you don't use the Virtual trains. (Default: Use)
-STR_PARAM_Chinese_NAME                              :No Chinese trains allowed.
-STR_PARAM_Chinese_DESC                              :Check if you don't use a Chinese train. (Default: Use){}You should also check whether the actual train is being used.
-STR_PARAM_European_NAME                             :No European trains allowed.
-STR_PARAM_European_DESC                             :Check if you don't use a European train. (Default: Use){}You should also check whether the actual train is being used.
-STR_PARAM_Hong_Kong_NAME                            :No Hong Kong type trains allowed.
-STR_PARAM_Hong_Kong_DESC                            :Check if you don't use the Hong Kong type train. (Default: Use){}You should also check whether the actual train is being used.
-STR_PARAM_Japanese_NAME                             :No Japanese trains allowed.
-STR_PARAM_Japanese_DESC                             :Check if you don't use a Japanese train. (Default: Use){}You should also check whether the actual train is being used.
-STR_PARAM_Korea_NAME                                :No Korea type trains allowed.
-STR_PARAM_Korea_DESC                                :Check if you don't use the Korea type trains. (Default: Use){}You should also check whether the actual train is being used.
-STR_PARAM_Taiwanese_NAME                            :No Taiwanese trains allowed.
-STR_PARAM_Taiwanese_DESC                            :Check if you don't use a Taiwanese train. (Default: Use){}You should also check whether the actual train is being used.
+STR_PARAM_MEset_NAME                                :MEset Escalation
+STR_PARAM_MEset_DESC                                :MEset Transfer trains are hidden by default.{}https://github.com/evepoi/MEset{}개인소장용 GRF이므로 온라인컨텐츠 비공개 자료입니다.
+STR_PARAM_KTS_Plus_NAME                             :KTS+ Escalation
+STR_PARAM_KTS_Plus_DESC                             :KTS+ Transfer trains are hidden by default.{}https://github.com/GBLINER/KoreanTrainSet_Plus
+STR_PARAM_JTS_Plus_NAME                             :JTS+ Escalation
+STR_PARAM_JTS_Plus_DESC                             :JTS+ Transfer trains are hidden by default.{}https://github.com/GBLINER/JapaneseTrainSet_Plus
+STR_PARAM_ETS_NAME                                  :ETS Escalation
+STR_PARAM_ETS_DESC                                  :ETS Transfer trains are hidden by default.{}https://github.com/GBLINER/EuropeanTrainSet
+STR_PARAM_CTS_NAME                                  :CTS Escalation
+STR_PARAM_CTS_DESC                                  :CTS Transfer trains are hidden by default.{}https://github.com/GBLINER/ChineseTrainSet
+STR_PARAM_WTS_NAME                                  :WTS Escalation
+STR_PARAM_WTS_DESC                                  :WTS Transfer trains are hidden by default.{}https://github.com/GBLINER/WorldTrainSet
+STR_PARAM_VTS_NAME                                  :VTS Escalation
+STR_PARAM_VTS_DESC                                  :VTS Transfer trains are hidden by default.{}https://github.com/GBLINER/VirtualTrainSet
 
 # Refit (Additional text) Real Trian(BLUE), Test Train(YELLOW), Plan Train(PURPLE), Virtual Train(RED)
 STR_REFIT_ADDITIONAL_AGV                            :{BLACK}Existence of trains : {BLUE}Real train {}{BLACK}Changing model/livery: {GREEN}Available {}{BLACK}Combined train: {RED}Unavailable

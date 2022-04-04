@@ -10,7 +10,7 @@ VTX
 /*--------------------------------------------------------------------
 열차정보
 --------------------------------------------------------------------*/
-item(FEAT_TRAINS, Shinkansen_L0, 3065){
+item(FEAT_TRAINS, Shinkansen_L0, 3066){
     property {
         name:                           string(STR_Shinkansen_L0_NAME);
         climates_available:             ALL_CLIMATES;
