@@ -1,4 +1,3 @@
-
 # 공식 업데이트 중단!!
   공식적인 업데이트 지원은 중단되었습니다.
   이제 YST는 GRF 개편을 통해 분리 이관됩니다.
@@ -28,10 +27,5 @@ makefile, [nml0.6.1](https://github.com/OpenTTD/nml) 등의 최신버전을 사�
 ## 커뮤니티
 [![디스코드로고](https://github.com/evepoi/YST/blob/minengallery/docs/img/discord_logo.png)](https://discord.gg/WNrjUatFkz)
 
-# YST 열차목록 (향후 업데이트 변경업데이트 진행 예정)
-## 개요
-객차/화차는 2000번대, 열차는 3000번대, 지하철은 4000번대를 사용합니다. <br>
-타 grf의 고유 ID를 사용시 열차고유 ID충돌로 YST 열차셋이 등장하지 않을 수도 있습니다.<br>
-우선순위를 위해 grf목록의 YST를 상위로 올리시면 충돌할 일을 없습니다.<br>
-
-![train_list](https://github.com/evepoi/YST/blob/minengallery/docs/img/train_list.png)
+# YST 열차목록
+![YST 남은 열차들](https://user-images.githubusercontent.com/55119879/171110101-1d9ac895-f0a2-4ce8-9c81-73efa8bf785a.jpg)
