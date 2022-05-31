@@ -8,8 +8,8 @@ grf {
 	grfid: "YSN2";
 	name: string(STR_GRF_NAME_WITH_VER);
 	desc: string(STR_GRF_DESC);
-	version: 40;
-	min_compatible_version: 37;
+	version: 41;
+	min_compatible_version: 40;
     
 	// Parameters 매개변수
     #include "src/parameter.pnml"
@@ -34,106 +34,10 @@ cargotable {
 
 // Railtypetable
 railtypetable {
-    RAIL, ELRL, MGLV}
+    RAIL, ELRL}
 
 // Load templates
 #include "src/template_list.pnml"
 
 // Load trains
 #include "src/train_list.pnml"
-
-// disabe train
-// disabe train by Country
-if (MEset) {
-    disable_item(FEAT_TRAINS, 3016); //Glory_600
-    disable_item(FEAT_TRAINS, 3019); //HMX
-    disable_item(FEAT_TRAINS, 3020); //ICE_SP
-    disable_item(FEAT_TRAINS, 3024); //NKX
-    disable_item(FEAT_TRAINS, 3027); //Shinkansen_500_KR
-    disable_item(FEAT_TRAINS, 3059); //VHST_600X
-    }
-
-if (KTS_Plus) {
-    disable_item(FEAT_TRAINS, 3015); //EMU260
-    disable_item(FEAT_TRAINS, 3018); //HEMU_430X
-    disable_item(FEAT_TRAINS, 3022); //KTX_N
-    disable_item(FEAT_TRAINS, 3050); //EMU320
-    disable_item(FEAT_TRAINS, 3051); //EMU150
-    disable_item(FEAT_TRAINS, 3052); //ITX_SM2
-    disable_item(FEAT_TRAINS, 3053); //KTX_SC2
-    disable_item(FEAT_TRAINS, 3054); //NRT2
-    disable_item(FEAT_TRAINS, 3055); //ITX_CW
-    disable_item(FEAT_TRAINS, 3056); //GTX
-    disable_item(FEAT_TRAINS, 3057); //KTX_EM
-    disable_item(FEAT_TRAINS, 3061); //HSR_350X
-    }
-
-if (JTS_Plus) {
-    disable_item(FEAT_TRAINS, 2016); //MAGV_Passenger_Car
-    disable_item(FEAT_TRAINS, 3012); //Shinkansen_923
-    disable_item(FEAT_TRAINS, 3025); //Shinkansen_500
-    disable_item(FEAT_TRAINS, 3028); //Shinkansen_800
-    disable_item(FEAT_TRAINS, 3029); //Shinkansen_E5_H5
-    disable_item(FEAT_TRAINS, 3030); //Shinkansen_E6
-    disable_item(FEAT_TRAINS, 3031); //Shinkansen_E7_W7
-    disable_item(FEAT_TRAINS, 3032); //Shinkansen_N700
-    disable_item(FEAT_TRAINS, 3058); //Shinkansen_E8
-    disable_item(FEAT_TRAINS, 3063); //Shinkansen_0
-    disable_item(FEAT_TRAINS, 3066); //Shinkansen_L0
-    }
-
-if (ETS) {
-    disable_item(FEAT_TRAINS, 3001); //AGV
-    disable_item(FEAT_TRAINS, 3003); //Renfe_S_100
-    disable_item(FEAT_TRAINS, 3004); //Renfe_S_103
-    disable_item(FEAT_TRAINS, 3005); //BB15000
-    disable_item(FEAT_TRAINS, 3013); //Eurostar_E300
-    disable_item(FEAT_TRAINS, 3014); //Eurostar_E320
-    disable_item(FEAT_TRAINS, 3021); //ICE3
-    disable_item(FEAT_TRAINS, 3034); //Renfe_S_130
-    disable_item(FEAT_TRAINS, 3035); //TGV_Duplex
-    disable_item(FEAT_TRAINS, 3036); //TGV_OLD
-    disable_item(FEAT_TRAINS, 3037); //TGV_OLD_Duplex
-    disable_item(FEAT_TRAINS, 3038); //TGV_OLD_Pos
-    disable_item(FEAT_TRAINS, 3039); //TGV_Old_Poste
-    disable_item(FEAT_TRAINS, 3040); //TGV_Ouigo
-    disable_item(FEAT_TRAINS, 3041); //TGV_Pos
-    }
-
-if (CTS) {
-    disable_item(FEAT_TRAINS, 2009); //China_Railway_Type_1F
-    disable_item(FEAT_TRAINS, 2010); //China_Railway_Type_25_2F
-    disable_item(FEAT_TRAINS, 2011); //China_Railway_Type_25_Bed_Car
-    disable_item(FEAT_TRAINS, 2012); //China_Railway_Type_25_Generatar_Car
-    disable_item(FEAT_TRAINS, 2013); //China_Railway_Type_25_Luggage_Car
-    disable_item(FEAT_TRAINS, 3006); //CRH1
-    disable_item(FEAT_TRAINS, 3007); //CRH3
-    disable_item(FEAT_TRAINS, 3008); //CRH380A
-    disable_item(FEAT_TRAINS, 3010); //CRH380AJ
-    disable_item(FEAT_TRAINS, 3011); //CR400
-    disable_item(FEAT_TRAINS, 3023); //NJ2
-    disable_item(FEAT_TRAINS, 3047); //CRH380D
-    disable_item(FEAT_TRAINS, 4001); //AD_Tranz_CAF_A
-    disable_item(FEAT_TRAINS, 4002); //MTR_AC_Cammall
-    disable_item(FEAT_TRAINS, 4003); //MTR_DC_Cammall
-    disable_item(FEAT_TRAINS, 4004); //MTR_CNR_Changchun
-    disable_item(FEAT_TRAINS, 4005); //MTR_CRRC
-    disable_item(FEAT_TRAINS, 4006); //Hyundai_Rotem_Mitsubishi
-    disable_item(FEAT_TRAINS, 4007); //Hyundai_Rotem_R
-    disable_item(FEAT_TRAINS, 4008); //IKK_SP_1900
-    }
-
-if (WTS) {
-    disable_item(FEAT_TRAINS, 3017); //GT26CW
-    disable_item(FEAT_TRAINS, 3043); //THSR_700T
-    disable_item(FEAT_TRAINS, 3065); //NHSRCL_E5
-    }
-
-if (VTS) {
-    disable_item(FEAT_TRAINS, 2004); //YFXF
-    disable_item(FEAT_TRAINS, 2014); //Coach_2F
-    disable_item(FEAT_TRAINS, 2015); //Coach_2F_Last
-    disable_item(FEAT_TRAINS, 3045); //YFX
-    disable_item(FEAT_TRAINS, 3062); //HYEL_100
-    disable_item(FEAT_TRAINS, 3064); //HYEL_200
-    }

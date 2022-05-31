@@ -6,98 +6,18 @@ STR_GRF_NAME_WITH_VER                               :YST {VERSION}
 STR_GRF_DESC                                        :(Updated: {RECENT_UPDATED}{}{}{SILVER} coded By : ME Making {}{} Sprite By :{} Las{} 그날트리{} 킹거{} Dat Tree{} Gamunbi{ } GBLINER{} 죽전와니{} POKERFACE{}
 
 # locomotive's name
-STR_AGV_NAME                                        :[ETS Escalation] To be deleted (schedule undecided)
-STR_AGV_Cool_NAME                                   :[YST] AGV Cool
-STR_BB15000_NAME                                    :[ETS Escalation] To be deleted (schedule undecided)
-STR_CRH1_NAME                                       :[CTS Escalation] To be deleted (schedule undecided)
-STR_CRH3_NAME                                       :[CTS Escalation] To be deleted (schedule undecided)
-STR_CRH380A_NAME                                    :[CTS Escalation] To be deleted (schedule undecided)
-STR_CRH380AJ_NAME                                   :[CTS Escalation] To be deleted (schedule undecided)
-STR_CRH380D_NAME                                    :[CTS Escalation] To be deleted (schedule undecided)
-STR_CRH430A_NAME                                    :[YST] CRH430A
-STR_CRH430D_NAME                                    :[YST] CRH430D
-STR_CRH600D_NAME                                    :[YST] CRH600D
-STR_CR400_NAME                                      :[CTS Escalation] To be deleted (schedule undecided)
-STR_Eurostar_E300_NAME                              :[YST] Eurostar E300
-STR_Eurostar_E320_NAME                              :[YST] Eurostar E320
-STR_EMU150_NAME                                     :[KTS+ Escalation] To be deleted (schedule undecided)
-STR_EMU260_NAME                                     :[KTS+ Escalation] To be deleted (schedule undecided)
-STR_EMU320_NAME                                     :[KTS+ Escalation] To be deleted (schedule undecided)
-STR_Glory_600_NAME                                  :[MSset Escalation] To be deleted (schedule undecided)
-STR_GT26CW_NAME                                     :[WTS Escalation] To be deleted (schedule undecided)
-STR_GTX_NAME                                        :[KTS+ Escalation] To be deleted (schedule undecided)
-STR_HEMU_430X_NAME                                  :[KTS+ Escalation] To be deleted (schedule undecided)
-STR_HMX_NAME                                        :[MSset Escalation] To be deleted (schedule undecided)
-STR_HSR_350X_NAME                                   :[KTS+ Escalation] To be deleted (schedule undecided)
-STR_HYEL_100_NAME                                   :[VTS Escalation] To be deleted (schedule undecided)
-STR_HYEL_200_NAME                                   :[VTS Escalation] To be deleted (schedule undecided)
-STR_ICE3_NAME                                       :[YST] ICE3
-STR_ICE_CW_NAME                                     :[KTS+ Escalation] To be deleted (schedule undecided)
-STR_ICE_SP_NAME                                     :[MSset Escalation] To be deleted (schedule undecided)
-STR_ITX_SM2_NAME                                    :[KTS+ Escalation] To be deleted (schedule undecided)
-STR_KTX_EM_NAME                                     :[KTS+ Escalation] To be deleted (schedule undecided)
-STR_KTX_N_NAME                                      :[KTS+ Escalation] To be deleted (schedule undecided)
-STR_KTX_SC2_NAME                                    :[KTS+ Escalation] To be deleted (schedule undecided)
-STR_NHSRCL_E5_NAME                                  :[WTS Escalation] To be deleted (schedule undecided)
-STR_NJ2_NAME                                        :[CTS Escalation] To be deleted (schedule undecided)
-STR_NKX_NAME                                        :[MSset Escalation] To be deleted (schedule undecided)
-STR_NRT2_NAME                                       :[KTS+ Escalation] To be deleted (schedule undecided)
-STR_Renfe_S_100_NAME                                :[ETS Escalation] To be deleted (schedule undecided)
-STR_Renfe_S_103_NAME                                :[ETS Escalation] To be deleted (schedule undecided)
-STR_Renfe_S_130_NAME                                :[ETS Escalation] To be deleted (schedule undecided)
-STR_Shinkansen_0_NAME                               :[JTS+ Escalation] To be deleted (schedule undecided)
-STR_Shinkansen_500_NAME                             :[JTS+ Escalation] To be deleted (schedule undecided)
-STR_Shinkansen_500_Cool_NAME                        :[YST] Shinkansen 500 Cool
-STR_Shinkansen_500_KR_NAME                          :[MSset Escalation] To be deleted (schedule undecided)
-STR_Shinkansen_800_NAME                             :[JTS+ Escalation] To be deleted (schedule undecided)
-STR_Shinkansen_923_NAME                             :[JTS+ Escalation] To be deleted (schedule undecided)
-STR_Shinkansen_E5_H5_NAME                           :[JTS+ Escalation] To be deleted (schedule undecided)
-STR_Shinkansen_E6_NAME                              :[JTS+ Escalation] To be deleted (schedule undecided)
-STR_Shinkansen_E7_W7_NAME                           :[JTS+ Escalation] To be deleted (schedule undecided)
-STR_Shinkansen_E8_NAME                              :[JTS+ Escalation] To be deleted (schedule undecided)
-STR_Shinkansen_N700_NAME                            :[JTS+ Escalation] To be deleted (schedule undecided)
-STR_Shinkansen_L0_NAME                              :[JTS+ Escalation] To be deleted (schedule undecided)
 STR_TAE_100_NAME                                    :[YST] TAE 100
 STR_TAE_200_NAME                                    :[YST] TAE 200
-STR_TGV_Duplex_NAME                                 :[ETS Escalation] To be deleted (schedule undecided)
-STR_TGV_OLD_NAME                                    :[ETS Escalation] To be deleted (schedule undecided)
-STR_TGV_OLD_Duplex_NAME                             :[ETS Escalation] To be deleted (schedule undecided)
-STR_TGV_OLD_Pos_NAME                                :[ETS Escalation] To be deleted (schedule undecided)
-STR_TGV_OLD_Poste_NAME                              :[ETS Escalation] To be deleted (schedule undecided)
-STR_TGV_Ouigo_NAME                                  :[ETS Escalation] To be deleted (schedule undecided)
-STR_TGV_Pos_NAME                                    :[ETS Escalation] To be deleted (schedule undecided)
-STR_TGV_Pos_Poste_NAME                              :[YST] TGV Pos Poste
-STR_THSR_700T_NAME                                  :[WTS Escalation] To be deleted (schedule undecided)
-STR_VHST_600X_NAME                                  :[MSset Escalation] To be deleted (schedule undecided)
 STR_VTX_NAME                                        :[YST] VTX
-STR_YFX_NAME                                        :[VTS Escalation] To be deleted (schedule undecided)
 STR_YTX_NAME                                        :[YST] YTX
 
 # Metro's name
-STR_MTR_AD_Tranz_CAF_A_NAME                         :[CTS Escalation] To be deleted (schedule undecided)
-STR_MTR_AC_Cammall_NAME                             :[CTS Escalation] To be deleted (schedule undecided)
-STR_MTR_DC_Cammall_NAME                             :[CTS Escalation] To be deleted (schedule undecided)
-STR_MTR_CNR_Changchun_NAME                          :[CTS Escalation] To be deleted (schedule undecided)
-STR_MTR_CRRC_NAME                                   :[CTS Escalation] To be deleted (schedule undecided)
-STR_MTR_Hyundai_Rotem_Mitsubishi_NAME               :[CTS Escalation] To be deleted (schedule undecided)
-STR_MTR_Hyundai_Rotem_R_NAME                        :[CTS Escalation] To be deleted (schedule undecided)
-STR_MTR_IKK_SP_1900_NAME                            :[CTS Escalation] To be deleted (schedule undecided)
 STR_YMT_100_NAME                                    :[YST] YMT 100
 STR_YMT_200_NAME                                    :[YST] YMT 200
 
 # wagon's name
 STR_YST_1F_PASS_NAME                                :[YST] 1F Passenger Car
-STR_YST_Magv_PASS_NAME                              :[JTS+ Escalation] To be deleted (schedule undecided)
 STR_YST_2F_PASS_NAME                                :[YST] 2F Passenger Car
-STR_Coach_2F_NAME                                   :[VTS Escalation] To be deleted (schedule undecided)
-STR_Coach_2F_Last_NAME                              :[VTS Escalation] To be deleted (schedule undecided)
-STR_China_Railway_Type_25_1F_NAME                   :[CTS Escalation] To be deleted (schedule undecided)
-STR_China_Railway_Type_25_2F_NAME                   :[CTS Escalation] To be deleted (schedule undecided)
-STR_China_Railway_Type_25_Bed_Car_NAME              :[CTS Escalation] To be deleted (schedule undecided)
-STR_China_Railway_Type_25_Generatar_Car_NAME        :[CTS Escalation] To be deleted (schedule undecided)
-STR_China_Railway_Type_25_Luggage_Car_NAME          :[CTS Escalation] To be deleted (schedule undecided)
-STR_TGV_Poste_wagon_NAME                            :[YST] TGV Poste Freight Car
-STR_YFXF_NAME                                       :[VTS Escalation] To be deleted (schedule undecided)
 STR_FLAT_1F_NAME                                    :[YST] Flat Car
 STR_FLAT_2F_NAME                                    :[YST] Flat Car - American
 STR_FLAT_Tank_NAME                                  :[YST] Flat Tank Car
@@ -107,207 +27,27 @@ STR_Tank_NAME		                                :[YST] Tank
 # Parameters
 STR_PARAM_Regular_SPEED_Train_NAME                  :Regular Train Speed Variable
 STR_PARAM_Regular_SPEED_Train_DESC                  :Adjust the speed of the Regular-speed train (Default:151km/h)
-STR_PARAM_Semi_High_SPEED_Train_NAME                :Semi High Speed Train Speed variable
-STR_PARAM_Semi_High_SPEED_Train_DESC                :Adjust the speed of the Semi High Speed Train (Default:181km/h)
 STR_PARAM_High_SPEED_Train_NAME                     :High Speed Train Speed
 STR_PARAM_High_SPEED_Train_DESC                     :Adjust the speed of the high-speed train (Default:331km/h)
-STR_PARAM_High_SPEED_Train_430_NAME                 :High Speed Train Speed (430km/h train speed control)
-STR_PARAM_High_SPEED_Train_430_DESC                 :Adjust the speed of the high-speed train (Default:430km/h)
-STR_PARAM_MEset_NAME                                :MEset Escalation
-STR_PARAM_MEset_DESC                                :MEset Transfer trains are hidden by default.{}https://github.com/evepoi/MEset{}개인소장용 GRF이므로 온라인컨텐츠 비공개 자료입니다.
-STR_PARAM_KTS_Plus_NAME                             :KTS+ Escalation
-STR_PARAM_KTS_Plus_DESC                             :KTS+ Transfer trains are hidden by default.{}https://github.com/GBLINER/KoreanTrainSet_Plus
-STR_PARAM_JTS_Plus_NAME                             :JTS+ Escalation
-STR_PARAM_JTS_Plus_DESC                             :JTS+ Transfer trains are hidden by default.{}https://github.com/GBLINER/JapaneseTrainSet_Plus
-STR_PARAM_ETS_NAME                                  :ETS Escalation
-STR_PARAM_ETS_DESC                                  :ETS Transfer trains are hidden by default.{}https://github.com/GBLINER/EuropeanTrainSet
-STR_PARAM_CTS_NAME                                  :CTS Escalation
-STR_PARAM_CTS_DESC                                  :CTS Transfer trains are hidden by default.{}https://github.com/GBLINER/ChineseTrainSet
-STR_PARAM_WTS_NAME                                  :WTS Escalation
-STR_PARAM_WTS_DESC                                  :WTS Transfer trains are hidden by default.{}https://github.com/GBLINER/WorldTrainSet
-STR_PARAM_VTS_NAME                                  :VTS Escalation
-STR_PARAM_VTS_DESC                                  :VTS Transfer trains are hidden by default.{}https://github.com/GBLINER/VirtualTrainSet
 
 # Refit (Additional text) Real Trian(BLUE), Test Train(YELLOW), Plan Train(PURPLE), Virtual Train(RED)
-STR_REFIT_ADDITIONAL_AGV                            :{BLACK}Existence of trains : {BLUE}Real train {}{BLACK}Changing model/livery: {GREEN}Available {}{BLACK}Combined train: {RED}Unavailable
-STR_REFIT_ADDITIONAL_AGV_Cool                       :{BLACK}Existence of trains : {RED}Virtual Train {}{BLACK}Changing model/livery: {GREEN}Available {}{BLACK}Combined train: {RED}Unavailable
-STR_REFIT_ADDITIONAL_BB15000                        :{BLACK}Existence of trains : {RED}Virtual Train {}{BLACK}Changing model/livery: {RED}Unavailable {}{BLACK}Combined train: {GREEN}BB15000, GT26CW, HYEL-100, NJ2
-STR_REFIT_ADDITIONAL_CRH1                           :{BLACK}Existence of trains : {BLUE}Real train {}{BLACK}Changing model/livery: {RED}Unavailable {}{BLACK}Combined train: {GREEN}CRH1
-STR_REFIT_ADDITIONAL_CRH3                           :{BLACK}Existence of trains : {BLUE}Real train {}{BLACK}Changing model/livery: {RED}Unavailable {}{BLACK}Combined train: {GREEN}CRH3
-STR_REFIT_ADDITIONAL_CRH380A                        :{BLACK}Existence of trains : {BLUE}Real train {}{BLACK}Changing model/livery: {GREEN}Available {}{BLACK}Combined train: {GREEN}CRH380A, Vibrant Express, CRH430A
-STR_REFIT_ADDITIONAL_CRH380AJ                       :{BLACK}Existence of trains : {YELLOW}Test Train {}{BLACK}Changing model/livery: {RED}Unavailable {}{BLACK}Combined train: {RED}Unavailable
-STR_REFIT_ADDITIONAL_CRH380D                        :{BLACK}Existence of trains : {BLUE}Real train {}{BLACK}Changing model/livery: {GREEN}available {}{BLACK}Combined train: {GREEN}CRH380D
-STR_REFIT_ADDITIONAL_CRH430A                        :{BLACK}Existence of trains : {RED}Virtual Train {}{BLACK}Changing model/livery: {RED}Unavailable {}{BLACK}Combined train: {GREEN}CRH380A, CRH380A Red, CRH430A
-STR_REFIT_ADDITIONAL_CRH430D                        :{BLACK}Existence of trains : {RED}Virtual Train {}{BLACK}Changing model/livery: {GREEN}available {}{BLACK}Combined train: {GREEN}CRH430D
-STR_REFIT_ADDITIONAL_CRH600D                        :{BLACK}Existence of trains : {RED}Virtual Train {}{BLACK}Changing model/livery: {GREEN}available {}{BLACK}Combined train: {GREEN}CRH600D
-STR_REFIT_ADDITIONAL_CR400                          :{BLACK}Existence of trains : {BLUE}Real train {}{BLACK}Changing model/livery: {GREEN}Available {}{BLACK}Combined train: {GREEN}CR400
-STR_REFIT_ADDITIONAL_Eurostar_E300                  :{BLACK}Existence of trains : {BLUE}Real train {}{BLACK}Changing model/livery: {GREEN}Available {}{BLACK}Combined train: {RED}Unavailable
-STR_REFIT_ADDITIONAL_Eurostar_E320                  :{BLACK}Existence of trains : {BLUE}Real train {}{BLACK}Changing model/livery: {GREEN}Available {}{BLACK}Combined train: {RED}Unavailable
-STR_REFIT_ADDITIONAL_EMU150                         :{BLACK}Existence of trains : {PURPLE}Plan Train {}{BLACK}Changing model/livery: {GREEN}Available {}{BLACK}Combined train: {GREEN}EMU-150, EMU-260, EUM-320
-STR_REFIT_ADDITIONAL_EMU260                         :{BLACK}Existence of trains : {PURPLE}Plan Train {}{BLACK}Changing model/livery: {RED}Unavailable {}{BLACK}Combined train: {GREEN}EMU-150, EMU-260, EUM-320
-STR_REFIT_ADDITIONAL_EMU320                         :{BLACK}Existence of trains : {PURPLE}Plan Train {}{BLACK}Changing model/livery: {GREEN}Available {}{BLACK}Combined train: {GREEN}EMU-150, EMU-260, EUM-320
-STR_REFIT_ADDITIONAL_Glory600                       :{BLACK}Existence of trains : {RED}Virtual Train {}{BLACK}Changing model/livery: {GREEN}Available {}{BLACK}Combined train: {GREEN}Glory-600
-STR_REFIT_ADDITIONAL_GT26CW                         :{BLACK}Existence of trains : {BLUE}Real train {}{BLACK}Changing model/livery: {GREEN}Available {}{BLACK}Combined train: {GREEN}BB15000, GT26CW, HYEL-100, NJ2
-STR_REFIT_ADDITIONAL_GTX                            :{BLACK}Existence of trains : {PURPLE}Plan Train {}{BLACK}Changing model/livery: {RED}Unavailable {}{BLACK}Combined train: {GREEN}GTX
-STR_REFIT_ADDITIONAL_HEMU_430X                      :{BLACK}Existence of trains : {YELLOW}Test Train {}{BLACK}Changing model/livery: {RED}Unavailable {}{BLACK}Combined train: {GREEN}HEMU-430X
-STR_REFIT_ADDITIONAL_HMX                            :{BLACK}Existence of trains : {RED}Virtual Train {}{BLACK}Changing model/livery: {GREEN}Available {}{BLACK}Combined train: {GREEN}HMX
-STR_REFIT_ADDITIONAL_HSR_350X                       :{BLACK}Existence of trains : {YELLOW}Test Train {}{BLACK}Changing model/livery: {RED}Unavailable {}{BLACK}Combined train: {GREEN}HSR-350X
-STR_REFIT_ADDITIONAL_HYEL_100                       :{BLACK}Existence of trains : {RED}Virtual Train {}{BLACK}Changing model/livery: {GREEN}Available {}{BLACK}Combined train: {GREEN}BB15000, GT26CW, HYEL-100, NJ2
-STR_REFIT_ADDITIONAL_HYEL_200                       :{BLACK}Existence of trains : {RED}Virtual Train {}{BLACK}Changing model/livery: {RED}Unavailable {}{BLACK}Combined train: {GREEN}HYEL-200
-STR_REFIT_ADDITIONAL_ICE_SP                         :{BLACK}Existence of trains : {RED}Virtual Train {}{BLACK}Changing model/livery: {GREEN}available {}{BLACK}Combined train: {GREEN}ICE-SP
-STR_REFIT_ADDITIONAL_ICE3                           :{BLACK}Existence of trains : {BLUE}Real train {}{BLACK}Changing model/livery: {RED}Unavailable {}{BLACK}Combined train: {GREEN}ICE3
-STR_REFIT_ADDITIONAL_ITX_CW                         :{BLACK}Existence of trains : {RED}Virtual Train {}{BLACK}Changing model/livery: {GREEN}available {}{BLACK}Combined train: {GREEN}ITX-Chowol
-STR_REFIT_ADDITIONAL_ITX_SM2                        :{BLACK}Existence of trains : {RED}Virtual Train {}{BLACK}Changing model/livery: {GREEN}available {}{BLACK}Combined train: {GREEN}ITX-SM2
-STR_REFIT_ADDITIONAL_KTX_EM                         :{BLACK}Existence of trains : {RED}Virtual Train {}{BLACK}Changing model/livery: {RED}Unavailable {}{BLACK}Combined train: {GREEN}KTX-EM
-STR_REFIT_ADDITIONAL_KTX_N                          :{BLACK}Existence of trains : {RED}Virtual Train {}{BLACK}Changing model/livery: {RED}Unavailable {}{BLACK}Combined train: {GREEN}KTX-N
-STR_REFIT_ADDITIONAL_KTX_SC2                        :{BLACK}Existence of trains : {RED}Virtual Train {}{BLACK}Changing model/livery: {GREEN}available {}{BLACK}Combined train: {GREEN}KTX-SC2
-STR_REFIT_ADDITIONAL_NHSRCL_E5                      :{BLACK}Existence of trains : {PURPLE}Plan Train {}{BLACK}Changing model/livery: {RED}Unavailable {}{BLACK}Combined train: {GREEN}NHSRCL E5
-STR_REFIT_ADDITIONAL_NJ2                            :{BLACK}Existence of trains : {BLUE}Real train {}{BLACK}Changing model/livery: {GREEN}Available {}{BLACK}Combined train: {GREEN}BB15000, GT26CW, HYEL-100, NJ2
-STR_REFIT_ADDITIONAL_NKX                            :{BLACK}Existence of trains : {RED}Virtual Train {}{BLACK}Changing model/livery: {GREEN}available {}{BLACK}Combined train: {GREEN}NKX
-STR_REFIT_ADDITIONAL_NRT2                           :{BLACK}Existence of trains : {RED}Virtual Train {}{BLACK}Changing model/livery: {GREEN}available {}{BLACK}Combined train: {GREEN}NRT2
-STR_REFIT_ADDITIONAL_Renfe_S_100                    :{BLACK}Existence of trains : {BLUE}Real train {}{BLACK}Changing model/livery: {RED}Unavailable {}{BLACK}Combined train: {GREEN}Renfe S-100
-STR_REFIT_ADDITIONAL_Renfe_S_103                    :{BLACK}Existence of trains : {BLUE}Real train {}{BLACK}Changing model/livery: {RED}Unavailable {}{BLACK}Combined train: {GREEN}Renfe S-103
-STR_REFIT_ADDITIONAL_Renfe_S_130                    :{BLACK}Existence of trains : {BLUE}Real train {}{BLACK}Changing model/livery: {GREEN}available {}{BLACK}Combined train: {GREEN}Renfe S-130
-STR_REFIT_ADDITIONAL_Shinkansen_0                   :{BLACK}Existence of trains : {BLUE}Real train {}{BLACK}Changing model/livery: {RED}Unavailable {}{BLACK}Combined train: {RED}Unavailable
-STR_REFIT_ADDITIONAL_Shinkansen_500                 :{BLACK}Existence of trains : {BLUE}Real train {}{BLACK}Changing model/livery: {RED}Unavailable {}{BLACK}Combined train: {RED}Unavailable
-STR_REFIT_ADDITIONAL_Shinkansen_500_Cool            :{BLACK}Existence of trains : {RED}Virtual Train {}{BLACK}Changing model/livery: {RED}Unavailable {}{BLACK}Combined train: {RED}Unavailable
-STR_REFIT_ADDITIONAL_Shinkansen_500_KR              :{BLACK}Existence of trains : {RED}Virtual Train {}{BLACK}Changing model/livery: {GREEN}available {}{BLACK}Combined train: {RED}Unavailable
-STR_REFIT_ADDITIONAL_Shinkansen_800                 :{BLACK}Existence of trains : {BLUE}Real train {}{BLACK}Changing model/livery: {RED}Unavailable {}{BLACK}Combined train: {RED}Unavailable
-STR_REFIT_ADDITIONAL_Shinkansen_923                 :{BLACK}Existence of trains : {YELLOW}Test Train {}{BLACK}Changing model/livery: {RED}Unavailable {}{BLACK}Combined train: {RED}Unavailable
-STR_REFIT_ADDITIONAL_Shinkansen_E5_H5               :{BLACK}Existence of trains : {BLUE}Real train {}{BLACK}Changing model/livery: {GREEN}Available {}{BLACK}Combined train: {GREEN}E6, E8
-STR_REFIT_ADDITIONAL_Shinkansen_E6                  :{BLACK}Existence of trains : {BLUE}Real train {}{BLACK}Changing model/livery: {RED}Unavailable {}{BLACK}Combined train: {GREEN}E5, H5
-STR_REFIT_ADDITIONAL_Shinkansen_E7                  :{BLACK}Existence of trains : {BLUE}Real train {}{BLACK}Changing model/livery: {GREEN}available {}{BLACK}Combined train: {RED}Unavailable
-STR_REFIT_ADDITIONAL_Shinkansen_E8                  :{BLACK}Existence of trains : {PURPLE}Plan Train {}{BLACK}Changing model/livery: {RED}Unavailable {}{BLACK}Combined train: {GREEN}E5, H5
-STR_REFIT_ADDITIONAL_Shinkansen_N700                :{BLACK}Existence of trains : {BLUE}Real train {}{BLACK}Changing model/livery: {GREEN}available {}{BLACK}Combined train: {RED}Unavailable
-STR_REFIT_ADDITIONAL_Shinkansen_L0                  :{BLACK}Existence of trains : {PURPLE}Plan Train {}{BLACK}Changing model/livery: {RED}Unavailable {}{BLACK}Combined train: {RED}Unavailable
 STR_REFIT_ADDITIONAL_TAE_100                        :{BLACK}Existence of trains : {RED}Virtual Train {}{BLACK}Changing model/livery: {GREEN}available {}{BLACK}Combined train: {GREEN}TAE-100, TAE-200
 STR_REFIT_ADDITIONAL_TAE_200                        :{BLACK}Existence of trains : {RED}Virtual Train {}{BLACK}Changing model/livery: {GREEN}available {}{BLACK}Combined train: {GREEN}TAE-100, TAE-200
-STR_REFIT_ADDITIONAL_TGV_Duplex                     :{BLACK}Existence of trains : {BLUE}Real train {}{BLACK}Changing model/livery: {GREEN}available {}{BLACK}Combined train: {GREEN}TGV Old Duplex, TGV Duplex
-STR_REFIT_ADDITIONAL_TGV_OLD                        :{BLACK}Existence of trains : {BLUE}Real train {}{BLACK}Changing model/livery: {RED}Unavailable {}{BLACK}Combined train: {GREEN}TGV Old
-STR_REFIT_ADDITIONAL_TGV_Old_Duplex                 :{BLACK}Existence of trains : {BLUE}Real train {}{BLACK}Changing model/livery: {GREEN}available {}{BLACK}Combined train: {GREEN}TGV Old Duplex, TGV Duplex
-STR_REFIT_ADDITIONAL_TGV_Old_Pos                    :{BLACK}Existence of trains : {BLUE}Real train {}{BLACK}Changing model/livery: {GREEN}available {}{BLACK}Combined train: {GREEN}TGV Old Pos, TGV Pos
-STR_REFIT_ADDITIONAL_TGV_Old_Poste                  :{BLACK}Existence of trains : {BLUE}Real train {}{BLACK}Changing model/livery: {RED}Unavailable {}{BLACK}Combined train: {GREEN}TGV Old Poste, TGV Pos Poste
-STR_REFIT_ADDITIONAL_TGV_Ouigo                      :{BLACK}Existence of trains : {BLUE}Real train {}{BLACK}Changing model/livery: {RED}Unavailable {}{BLACK}Combined train: {GREEN}TGV Ouigo
-STR_REFIT_ADDITIONAL_TGV_Pos                        :{BLACK}Existence of trains : {BLUE}Real train {}{BLACK}Changing model/livery: {GREEN}available {}{BLACK}Combined train: {GREEN}TGV Old Pos, TGV Pos
-STR_REFIT_ADDITIONAL_TGV_Pos_Poste                  :{BLACK}Existence of trains : {RED}Virtual Train {}{BLACK}Changing model/livery: {RED}Unavailable {}{BLACK}Combined train: {GREEN}TGV Old Poste, TGV Pos Poste
-STR_REFIT_ADDITIONAL_THSR_700T                      :{BLACK}Existence of trains : {BLUE}Real train {}{BLACK}Changing model/livery: {RED}Unavailable {}{BLACK}Combined train: {RED}Unavailable
-STR_REFIT_ADDITIONAL_VHST_600X                      :{BLACK}Existence of trains : {PURPLE}Plan Train {}{BLACK}Changing model/livery: {RED}Unavailable {}{BLACK}Combined train: {GREEN}VHST-600X
 STR_REFIT_ADDITIONAL_VTX                            :{BLACK}Existence of trains : {RED}Virtual Train {}{BLACK}Changing model/livery: {RED}Unavailable {}{BLACK}Combined train: {GREEN}VTX
-STR_REFIT_ADDITIONAL_YFX                            :{BLACK}Existence of trains : {RED}Virtual Train {}{BLACK}Changing model/livery: {RED}Unavailable {}{BLACK}Combined train: {GREEN}YFX
 STR_REFIT_ADDITIONAL_YTX                            :{BLACK}Existence of trains : {RED}Virtual Train {}{BLACK}Changing model/livery: {RED}Unavailable {}{BLACK}Combined train: {GREEN}YTX
-STR_REFIT_ADDITIONAL_MTR_AD_Tranz_CAF_A             :{BLACK}Existence of trains : {BLUE}Real train {}{BLACK}Changing model/livery: {GREEN}Available {}{BLACK}Combined train: {RED}Unavailable
-STR_REFIT_ADDITIONAL_MTR_Cammall_AC                 :{BLACK}Existence of trains : {BLUE}Real train {}{BLACK}Changing model/livery: {RED}Unavailable {}{BLACK}Combined train: {RED}Unavailable
-STR_REFIT_ADDITIONAL_MTR_Cammall_DC                 :{BLACK}Existence of trains : {BLUE}Real train {}{BLACK}Changing model/livery: {GREEN}Available {}{BLACK}Combined train: {RED}Unavailable
-STR_REFIT_ADDITIONAL_MTR_CNR_Changchun              :{BLACK}Existence of trains : {BLUE}Real train {}{BLACK}Changing model/livery: {GREEN}Available {}{BLACK}Combined train: {RED}Unavailable
-STR_REFIT_ADDITIONAL_MTR_CRRC                       :{BLACK}Existence of trains : {BLUE}Real train {}{BLACK}Changing model/livery: {GREEN}Available {}{BLACK}Combined train: {RED}Unavailable
-STR_REFIT_ADDITIONAL_MTR_Hyundai_Rotem_Mitsubishi   :{BLACK}Existence of trains : {BLUE}Real train {}{BLACK}Changing model/livery: {RED}Unavailable {}{BLACK}Combined train: {RED}Unavailable
-STR_REFIT_ADDITIONAL_MTR_Hyundai_Rotem_R            :{BLACK}Existence of trains : {BLUE}Real train {}{BLACK}Changing model/livery: {RED}Unavailable {}{BLACK}Combined train: {RED}Unavailable
-STR_REFIT_ADDITIONAL_MTR_IKK_SP_1900                :{BLACK}Existence of trains : {BLUE}Real train {}{BLACK}Changing model/livery: {RED}Unavailable {}{BLACK}Combined train: {RED}Unavailable
 STR_REFIT_ADDITIONAL_YMT_100                        :{BLACK}Existence of trains : {RED}Virtual Train {}{BLACK}Changing model/livery: {RED}Unavailable {}{BLACK}Combined train: {RED}Unavailable
 STR_REFIT_ADDITIONAL_YMT_200                        :{BLACK}Existence of trains : {RED}Virtual Train {}{BLACK}Changing model/livery: {RED}Unavailable {}{BLACK}Combined train: {RED}Unavailable
 
 STR_REFIT_ADDITIONAL                                :{BLACK}Changing model/livery: {GREEN}Available
 STR_REFIT_train_configuration_1F                    :{BLACK}train configuration: {GREEN}1F passenger vehicles
-STR_REFIT_train_configuration_Magv                  :{BLACK}train configuration: {GREEN}maglev passenger vehicles
 STR_REFIT_train_configuration_2F                    :{BLACK}train configuration: {GREEN}2F passenger vehicles
-STR_REFIT_train_configuration_Coach                 :{BLACK}train configuration: {GREEN}Coach 2F Passenger vehicles
-STR_REFIT_train_configuration_Coach_Last            :{BLACK}train configuration: {GREEN}Coach 2F Passenger vehicles
-STR_REFIT_train_configuration_China_Railway_Type_25 :{BLACK}train configuration: {GREEN}China Railway Type 25 passenger vehicles
 STR_REFIT_train_configuration_Showcse_Flat_1F       :{BLACK}train configuration: {GREEN}Showcase Flat 1F Car
-STR_REFIT_train_configuration_TGV_Poste             :{BLACK}train configuration: {GREEN}TGV Old Poste, TGV Pos Poste
-STR_REFIT_train_configuration_YFX_Freight           :{BLACK}train configuration: {GREEN}YFX Freight Car
 
 # Liveries
-STR_REFIT_LIVERY_CRH380A                            :(CRH380A)
-STR_REFIT_LIVERY_Vibrant_Express                    :(Vibrant Express)
-STR_REFIT_LIVERY_CR400AF                            :(CR400AF)
-STR_REFIT_LIVERY_CR400BF                            :(CR400BF)
-STR_REFIT_LIVERY_Eurostar_E300_Old                  :(Eurostar Old Color)
-STR_REFIT_LIVERY_Eurostar_E300_New                  :(Eurostar New Color)
-STR_REFIT_LIVERY_EMU150R                            :(EMU-150 Red Color)
-STR_REFIT_LIVERY_EMU150G                            :(EMU-150 Green Color)
-STR_REFIT_LIVERY_EMU320                             :(EMU-320)
-STR_REFIT_LIVERY_EMU320_SRT                         :(EMU-320 SRT)
-STR_REFIT_LIVERY_Glory600A                          :(Glory 600 A Color)
-STR_REFIT_LIVERY_Glory600B                          :(Glory 600 B Color)
-STR_REFIT_LIVERY_Glory600C                          :(Glory 600 C Color)
-STR_REFIT_LIVERY_Glory600D                          :(Glory 600 D Color)
-STR_REFIT_LIVERY_Glory600E                          :(Glory 600 E Color)
-STR_REFIT_LIVERY_HMXG                               :(HMX Green Color)
-STR_REFIT_LIVERY_HMXR                               :(HMX Red Color)
-STR_REFIT_LIVERY_HYEL_100_SRT                       :(SRT)
-STR_REFIT_LIVERY_HYEL_100_CJ                        :(CJ Logistics)
-STR_REFIT_LIVERY_HYEL_100_poste                     :(Poste mail)
-STR_REFIT_LIVERY_HYEL_100_fedex                     :(Fedex)
-STR_REFIT_LIVERY_HYEL_100_SanCheon                  :(SanCheon)
-STR_REFIT_LIVERY_HYEL_100_Hanjin                    :(Hanjin Logistics)
-STR_REFIT_LIVERY_HYEL_100_logen                     :(logen Logistics)
-STR_REFIT_LIVERY_HYEL_100_lotte                     :(lotte Logistics)
-STR_REFIT_LIVERY_HYEL_100_DHL                       :(DHL)
-STR_REFIT_LIVERY_HYEL_100_Yellowcap                 :(Yellowcap)
-STR_REFIT_LIVERY_HYEL_100_Daesin                    :(Daesin Logistics)
-STR_REFIT_LIVERY_HYEL_100_Ilyang                    :(Ilyang Logistics)
-STR_REFIT_LIVERY_HYEL_100_Korail                    :(Korail)
-STR_REFIT_LIVERY_HYEL_100_Ironman                   :(Ironman)
-STR_REFIT_LIVERY_HYEL_100_K_Limousine               :(K Limousine)
-STR_REFIT_LIVERY_HYEL_JET_A                         :(HYEL-JET A Color)
-STR_REFIT_LIVERY_HYEL_JET_A_r                       :(HYEL-JET A Color OverTurn)
-STR_REFIT_LIVERY_ICE_Sancheon                       :(ICE-Sancheon)
-STR_REFIT_LIVERY_ICE_Patjug                         :(ICE-Patjug)
-STR_REFIT_LIVERY_ITX_SM2_R                          :(ITX-SM2 Red Color)
-STR_REFIT_LIVERY_ITX_SM2_G                          :(ITX-SM2 Green Color)
-STR_REFIT_LIVERY_ITX_SM2_W                          :(ITX-SM2 White Color)
-STR_REFIT_LIVERY_KTX_SC2_B                          :(KTX-SC2 Blue Color)
-STR_REFIT_LIVERY_KTX_SC2_G                          :(KTX-SC2 Green Color)
-STR_REFIT_LIVERY_KTX_SC2_W                          :(KTX-SC2 White Color)
-STR_REFIT_LIVERY_NKX_A                              :(NKX A Color)
-STR_REFIT_LIVERY_NKX_B                              :(NKX B Color)
-STR_REFIT_LIVERY_NKX_C                              :(NKX C Color)
-STR_REFIT_LIVERY_NRT2_B                             :(NRT2 Blue Color)
-STR_REFIT_LIVERY_NRT2_G                             :(NRT2 Green Color)
-STR_REFIT_LIVERY_NRT2_W                             :(NRT2 White Color)
-STR_REFIT_LIVERY_Shinkansen_0                       :(Original Livery)
-STR_REFIT_LIVERY_Shinkansen_0_renewal               :(Renewal Livery)
-STR_REFIT_LIVERY_Shinkansen_500_Sancheon            :(Shinkansen 500-Sancheon)
-STR_REFIT_LIVERY_Shinkansen_500_Patjug              :(Shinkansen 500-Patjug)
-STR_REFIT_LIVERY_N700_Tokaido_Sanyo                 :(Tokaido-Sanyo Shinkansen)
-STR_REFIT_LIVERY_N700_Sanyo_Kyushu                  :(Sanyo-Kyushu Shinkansen)
-STR_REFIT_LIVERY_N700S_Nishikyushu                  :(Nishikyushu Shinkansen)
-STR_REFIT_LIVERY_Shinkansen_E5                      :(Shinkansen E5)
-STR_REFIT_LIVERY_Shinkansen_H5                      :(Shinkansen H5)
-STR_REFIT_LIVERY_Nomal_wagon                        :(Nomal Car)
-STR_REFIT_LIVERY_Green_wagon                        :(Green Car)
-STR_REFIT_LIVERY_E5_Nomal_wagon                     :(E5 Nomal Car)
-STR_REFIT_LIVERY_H5_Nomal_wagon                     :(H5 Nomal Car)
-STR_REFIT_LIVERY_E5_Green_wagon                     :(E5 Green Car)
-STR_REFIT_LIVERY_H5_Green_wagon                     :(H5 Green Car)
 STR_REFIT_LIVERY_TAE_100                            :(TAE 100)
 STR_REFIT_LIVERY_TAE_100_Yellow                     :(TAE 100 Yellow)
-STR_REFIT_LIVERY_Renfe_S_130_Alvia                  :(Renfe S-130 Alvia)
-STR_REFIT_LIVERY_Renfe_S_130_Aprosiyob              :(Renfe S-130 Aprosiyob)
-STR_REFIT_LIVERY_TGV_Duplex                         :(TGV Duplex)
-STR_REFIT_LIVERY_TGV_LYAIR_Duplex                   :(TGV Lyair Duplex)
-STR_REFIT_LIVERY_TGV_OLD_Duplex                     :(TGV Old Duplex)
-STR_REFIT_LIVERY_TGV_OLD_LYAIR_Duplex               :(TGV Old Lyair Duplex)
-STR_REFIT_LIVERY_TGV_OLD_POS                        :(TGV Old Pos)
-STR_REFIT_LIVERY_TGV_OLD_LYAIR                      :(TGV Old Lyair)
-STR_REFIT_LIVERY_TGV_OLD_THALYS                     :(TGV Old Thalys)
-STR_REFIT_LIVERY_TGV_POS                            :(TGV Pos)
-STR_REFIT_LIVERY_TGV_LYAIR                          :(TGV Lyair)
-STR_REFIT_LIVERY_TGV_THALYS                         :(TGV Thalys)
 
 # Liveries metro
-STR_REFIT_LIVERY_MTR_AD_Tranz_CAF_A_Airport_Express :(MTR AD Tranz CAF A Type Airport Express)
-STR_REFIT_LIVERY_MTR_AD_Tranz_CAF_A_Tung_Chung      :(MTR AD Tranz CAF A Type Tung Chung)
-STR_REFIT_LIVERY_MTR_DC_Cammall                     :(no remoding Car)
-STR_REFIT_LIVERY_MTR_DC_Cammall_Remoding            :(remoding Car)
-STR_REFIT_LIVERY_MTR_DC_Cammall_Disney              :(Disney Car)
-STR_REFIT_LIVERY_MTR_CNR_Changchun                  :(MTR CNR Changchun)
-STR_REFIT_LIVERY_MTR_CNR_Changchun_South_Island     :(MTR CNR Changchun South Island)
-STR_REFIT_LIVERY_MTR_CRRC_Changchun                 :(MTR CRRC Changchun Train)
-STR_REFIT_LIVERY_MTR_CRRC_Sipang                    :(MTR CRRC Sipang Train)
-STR_REFIT_LIVERY_MTR_Hyundai_Rotem_R_Nomal          :(MTR Hyundai Rotem R Type Nomal)
-STR_REFIT_LIVERY_MTR_Hyundai_Rotem_R_special        :(MTR Hyundai Rotem R Type special)
 STR_REFIT_LIVERY_YMT_100_A                          :(YMT 100 A Color)
 STR_REFIT_LIVERY_YMT_100_B                          :(YMT 100 B Color)
 STR_REFIT_LIVERY_YMT_100_C                          :(YMT 100 C Color)
@@ -325,22 +65,6 @@ STR_REFIT_LIVERY_YMT_200_I                          :(YMT 200 I Color)
 STR_REFIT_LIVERY_YMT_200_J                          :(YMT 200 J Color)
 
 # Liveries wagon
-STR_REFIT_LIVERY_Coach_2F_BR                        :(Default Color)
-STR_REFIT_LIVERY_Coach_2F_Taegeuk                   :(Taegeuk Color)
-STR_REFIT_LIVERY_Coach_2F_SR                        :(SR Color)
-STR_REFIT_LIVERY_Coach_2F_K_Limousion               :(K Limousion Color)
-STR_REFIT_LIVERY_China_Railway_Type_25_1F_Red       :(Red Color Car)
-STR_REFIT_LIVERY_China_Railway_Type_25_1F_Green     :(Green Color Car)
-STR_REFIT_LIVERY_China_Railway_Type_25_1F_White     :(White Color Car)
-STR_REFIT_LIVERY_China_Railway_Type_25_3nd_Car      :(3nd Car)
-STR_REFIT_LIVERY_China_Railway_Type_25_2nd_Car      :(2nd Car)
-STR_REFIT_LIVERY_China_Railway_Type_25_1nd_Car      :(1nd Car)
-STR_REFIT_LIVERY_China_Railway_Type_25_Generatar_Car_White :(Generatar White Car)
-STR_REFIT_LIVERY_China_Railway_Type_25_Generatar_Car_Green :(Generatar Green Car)
-STR_REFIT_LIVERY_China_Railway_Type_25_Luggage_Car_Red     :(Luggage Red Car)
-STR_REFIT_LIVERY_China_Railway_Type_25_Luggage_Car_Green   :(Luggage Green Car)
-STR_REFIT_LIVERY_China_Railway_Type_25_Luggage_Car_WhiteA  :(Luggage White A Car)
-STR_REFIT_LIVERY_China_Railway_Type_25_Luggage_Car_WhiteB  :(Luggage White B Car)
 STR_REFIT_LIVERY_FlatGreen                          :(Flat Nomal Green Color)
 STR_REFIT_LIVERY_FlatPGreen                         :(Flat trailer Green Cololr)
 STR_REFIT_LIVERY_FlatRed                            :(Flat Nomal Red Color)
@@ -353,8 +77,4 @@ STR_REFIT_LIVERY_TANKC                              :(Tank C Color)
 
 # Errors
 STR_ERROR_NO_ATTACH                                 :You can't attach this car here
-STR_ERROR_NOT_ENOUGH_LENGTH3                        :It's too short. It should be equal or more than 3 cars at least.
-STR_ERROR_NOT_ENOUGH_LENGTH4                        :It's too short. It should be equal or more than 4 cars at least.
-STR_ERROR_NOT_ENOUGH_LENGTH5                        :It's too short. It should be equal or more than 5 cars at least.
 STR_ERROR_NOT_ENOUGH_LENGTH6                        :It's too short. It should be equal or more than 6 cars at least.
-STR_ERROR_NOT_ENOUGH_LENGTH8                        :It's too short. It should be equal or more than 8 cars at least.

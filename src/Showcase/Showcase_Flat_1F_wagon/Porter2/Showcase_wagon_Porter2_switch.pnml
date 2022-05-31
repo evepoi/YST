@@ -2,10 +2,6 @@
 스위치
 --------------------------------------------------------------------*/
 switch(FEAT_TRAINS, SELF, sw_Showcase_Flat_1F_Porter2_wagon_attach, vehicle_type_id) {
-    BB15000:    return CB_RESULT_ATTACH_ALLOW;
-    GT26CW:     return CB_RESULT_ATTACH_ALLOW;
-    HYEL_100:   return CB_RESULT_ATTACH_ALLOW;
-    NJ2:        return CB_RESULT_ATTACH_ALLOW;
     Showcase_Flat_1F: return CB_RESULT_ATTACH_ALLOW;
    return string(STR_ERROR_NO_ATTACH);
 }

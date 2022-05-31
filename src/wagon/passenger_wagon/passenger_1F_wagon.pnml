@@ -42,7 +42,6 @@ item (FEAT_TRAINS, YST_1F_Passenger_Car, 2001){
         loading_speed:                  25;
         cost_factor:                    10;
         running_cost_factor:            50;
-        cargo_subtype_text:             sw_Passenger_wagon_cargo_subtype_text;
-		additional_text:                string(STR_REFIT_train_configuration_1F);
+        additional_text:                string(STR_REFIT_train_configuration_1F);
         }
 	}

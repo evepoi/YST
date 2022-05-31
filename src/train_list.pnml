@@ -1,117 +1,22 @@
 //wagon
 #include "wagon/passenger_wagon/passenger_wagon.pnml"
-#include "wagon/Coach_2F_wagon/Coach_2F_wagon.pnml"
-#include "wagon/Coach_2F_Last_wagon/Coach_2F_Last_wagon.pnml"
-#include "wagon/TGV_Poste_wagon/TGV_Poste_wagon.pnml"
-#include "wagon/YFX_wagon/YFX_wagon.pnml"
 #include "wagon/flat_car/Flat_1F_Car/Flat_1F_Car.pnml"
 #include "wagon/flat_car/Flat_2F_Car/Flat_2F_Car.pnml"
 #include "wagon/flat_car/Flat_Tank_Car/Flat_Tank_Car.pnml"
 #include "wagon/tank_car/tank.pnml"
-#include "wagon/China_Railway_Type_25/1F_Car/China_Railway_Type_25_1F_Car.pnml"
-#include "wagon/China_Railway_Type_25/2F_Car/China_Railway_Type_25_2F_Car.pnml"
-#include "wagon/China_Railway_Type_25/Bed_Car/China_Railway_Type_25_Bed_Car.pnml"
-#include "wagon/China_Railway_Type_25/Luggage_Car/China_Railway_Type_25_luggage_Car.pnml"
-#include "wagon/China_Railway_Type_25/Generatar_Car/China_Railway_Type_25_Generatar_Car.pnml"
 
 //Showcase
 #include "Showcase/Showcase_Flat_1F_wagon/Porter2/Showcase_wagon_Porter2.pnml"
 
-//locomotive / Plan Trian
-#include "locomotive/Plan_Train/EMU/EMU150/EMU150.pnml"
-#include "locomotive/Plan_Train/EMU/EMU260/EMU260.pnml"
-#include "locomotive/Plan_Train/EMU/EMU320/EMU320.pnml"
-#include "locomotive/Plan_Train/GTX/GTX.pnml"
-#include "locomotive/Plan_Train/NHSRCL_E5/NHSRCL_E5.pnml"
-#include "locomotive/Plan_Train/Shinkansen_E8/Shinkansen_E8.pnml"
-#include "locomotive/Plan_Train/Shinkansen_L0/Shinkansen_L0.pnml"
-#include "locomotive/Plan_Train/VHST_600X/VHST_600X.pnml"
-
-//locomotive / Real_Train
-//locomotive / Real_Train / Chinese
-#include "locomotive/Real_Train/Chinese/CR400/CR400.pnml"
-#include "locomotive/Real_Train/Chinese/CRH1/CRH1.pnml"
-#include "locomotive/Real_Train/Chinese/CRH3/CRH3.pnml"
-#include "locomotive/Real_Train/Chinese/CRH380A/CRH380A.pnml"
-#include "locomotive/Real_Train/Chinese/CRH380D/CRH380D.pnml"
-#include "locomotive/Real_Train/Chinese/NJ2/NJ2.pnml"
-
-//locomotive / Real_Train / European
-#include "locomotive/Real_Train/European/AGV/AGV.pnml"
-#include "locomotive/Real_Train/European/Eurostar_E300/Eurostar_E300.pnml"
-#include "locomotive/Real_Train/European/Eurostar_E320/Eurostar_E320.pnml"
-#include "locomotive/Real_Train/European/ICE3/ICE3.pnml"
-#include "locomotive/Real_Train/European/Renfe_S_100/Renfe_S_100.pnml"
-#include "locomotive/Real_Train/European/Renfe_S_103/Renfe_S_103.pnml"
-#include "locomotive/Real_Train/European/Renfe_S_130/Renfe_S_130.pnml"
-#include "locomotive/Real_Train/European/TGV/New/TGV_Dulpex/TGV_Duplex.pnml"
-#include "locomotive/Real_Train/European/TGV/New/TGV_Pos/TGV_Pos.pnml"
-#include "locomotive/Real_Train/European/TGV/Old/TGV_Old/TGV_Old.pnml"
-#include "locomotive/Real_Train/European/TGV/Old/TGV_Old_Dulpex/TGV_Old_Duplex.pnml"
-#include "locomotive/Real_Train/European/TGV/Old/TGV_Old_Pos/TGV_Old_Pos.pnml"
-#include "locomotive/Real_Train/European/TGV/Old/TGV_Old_Poste/TGV_Old_Poste.pnml"
-#include "locomotive/Real_Train/European/TGV/TGV_Ouigo/TGV_Ouigo.pnml"
-
-//locomotive / Real_Train / Japanese
-#include "locomotive/Real_Train/Japanese/Shinkansen_0/Shinkansen_0.pnml"
-#include "locomotive/Real_Train/Japanese/Shinkansen_500/Shinkansen_500.pnml"
-#include "locomotive/Real_Train/Japanese/Shinkansen_800/Shinkansen_800.pnml"
-#include "locomotive/Real_Train/Japanese/Shinkansen_E5_H5/Shinkansen_E5_H5.pnml"
-#include "locomotive/Real_Train/Japanese/Shinkansen_E6/Shinkansen_E6.pnml"
-#include "locomotive/Real_Train/Japanese/Shinkansen_E7_W7/Shinkansen_E7_W7.pnml"
-#include "locomotive/Real_Train/Japanese/Shinkansen_N700/Shinkansen_N700.pnml"
-
-//locomotive / Real_Train / Korea
-#include "locomotive/Real_Train/Korea/GT26CW/GT26CW.pnml"
-
-//locomotive / Real_Train / Taiwanese
-#include "locomotive/Real_Train/Taiwanese/THSR_700T/THSR_700T.pnml"
-
-//locomotive / Test_train
-#include "locomotive/Test_Train/CR380AJ/CR380AJ.pnml"
-#include "locomotive/Test_Train/HEMU_430X/HEMU_430X.pnml"
-#include "locomotive/Test_Train/HSR_350X/HSR_350X.pnml"
-#include "locomotive/Test_Train/Shinkansen_923/Shinkansen_923.pnml"
-
-//locomotive / Virual_train
-#include "locomotive/Virtual_train/AGV_Cool/AGV_Cool.pnml"
-#include "locomotive/Virtual_train/BB15000/BB15000.pnml"
-#include "locomotive/Virtual_train/CRH430A/CRH430A.pnml"
-#include "locomotive/Virtual_train/CRH430D/CRH430D.pnml"
-#include "locomotive/Virtual_train/CRH600D/CRH600D.pnml"
-#include "locomotive/Virtual_train/Glory_600/Glory_600.pnml"
-#include "locomotive/Virtual_train/HMX/HMX.pnml"
-#include "locomotive/Virtual_train/HYEL/HYEL_100/HYEL_100.pnml"
-#include "locomotive/Virtual_train/HYEL/HYEL_200/HYEL_200.pnml"
-#include "locomotive/Virtual_train/ICE_SP/ICE_SP.pnml"
-#include "locomotive/Virtual_train/ITX_CW/ITX_CW.pnml"
-#include "locomotive/Virtual_train/ITX_SM2/ITX_SM2.pnml"
-#include "locomotive/Virtual_train/KTX_EM/KTX_EM.pnml"
-#include "locomotive/Virtual_train/KTX_N/KTX_N.pnml"
-#include "locomotive/Virtual_train/KTX_SC2/KTX_SC2.pnml"
-#include "locomotive/Virtual_train/NKX/NKX.pnml"
-#include "locomotive/Virtual_train/NRT2/NRT2.pnml"
-#include "locomotive/Virtual_train/Shinkansen_500_Cool/Shinkansen_500_Cool.pnml"
-#include "locomotive/Virtual_train/Shinkansen_500_KR/Shinkansen_500_KR.pnml"
-#include "locomotive/Virtual_train/TAE/TAE_100/TAE_100.pnml"
-#include "locomotive/Virtual_train/TAE/TAE_200/TAE_200.pnml"
-#include "locomotive/Virtual_train/TGV_Pos_Poste/TGV_Pos_Poste.pnml"
-#include "locomotive/Virtual_train/VTX/VTX.pnml"
-#include "locomotive/Virtual_train/YFX/YFX.pnml"
-#include "locomotive/Virtual_train/YTX/YTX.pnml"
+//locomotive
+#include "locomotive/TAE/TAE_100/TAE_100.pnml"
+#include "locomotive/TAE/TAE_200/TAE_200.pnml"
+#include "locomotive/VTX/VTX.pnml"
+#include "locomotive/YTX/YTX.pnml"
 
 //Metro
-//Metro / Real_Train / Hong_Kong
-#include "metro/Real_train/Hong_Kong/MTR/AD_Tranz_CAF_A/AD_Tranz_CAF_A.pnml"
-#include "metro/Real_train/Hong_Kong/MTR/Cammall_AC/Cammall_AC.pnml"
-#include "metro/Real_train/Hong_Kong/MTR/Cammall_DC/Cammall_DC.pnml"
-#include "metro/Real_train/Hong_Kong/MTR/CNR_Changchun/CNR_Changchun.pnml"
-#include "metro/Real_train/Hong_Kong/MTR/CRRC/CRRC.pnml"
-#include "metro/Real_train/Hong_Kong/MTR/Hyundai_Rotem_Mitsubishi/Hyundai_Rotem_Mitsubishi.pnml"
-#include "metro/Real_train/Hong_Kong/MTR/Hyundai_Rotem_R/Hyundai_Rotem_R.pnml"
-#include "metro/Real_train/Hong_Kong/MTR/IKK_SP_1900/IKK_SP_1900.pnml"
-#include "metro/Virtual_train/YMT/YMT_100/YMT_100.pnml"
-#include "metro/Virtual_train/YMT/YMT_200/YMT_200.pnml"
+#include "metro/YMT/YMT_100/YMT_100.pnml"
+#include "metro/YMT/YMT_200/YMT_200.pnml"
 
 // Sorting
 #include "sort.pnml"

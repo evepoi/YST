@@ -6,98 +6,18 @@ STR_GRF_NAME_WITH_VER                               :YST {VERSION}
 STR_GRF_DESC                                        :{}{RED} 업데이트 지원 중단!!{} {GREEN}분리되는 GRF는 계속 지원됨.{}{} 분리된 GRF 목록{}{}{ORANGE} - KTS+(한국열차세트 플러스){} - JTS+(일본열차세트 플러스){} - ETS (유럽열차세트){} - CTS (중국열차세트){} - WTS (국제열차세트){} - VTS (가상열차세트)
 
 # locomotive's name
-STR_AGV_NAME                                        :[ETS 이관] 삭제예정 (일정미정)
-STR_AGV_Cool_NAME                                   :[YST] AGV Cool
-STR_BB15000_NAME                                    :[ETS 이관] 삭제예정 (일정미정)
-STR_CRH1_NAME                                       :[CTS 이관] 삭제예정 (일정미정)
-STR_CRH3_NAME                                       :[CTS 이관] 삭제예정 (일정미정)
-STR_CRH380A_NAME                                    :[CTS 이관] 삭제예정 (일정미정)
-STR_CRH380AJ_NAME                                   :[CTS 이관] 삭제예정 (일정미정)
-STR_CRH380D_NAME                                    :[CTS 이관] 삭제예정 (일정미정)
-STR_CRH430A_NAME                                    :[YST] CRH430A
-STR_CRH430D_NAME                                    :[YST] CRH430D
-STR_CRH600D_NAME                                    :[YST] CRH600D
-STR_CR400_NAME                                      :[CTS 이관] 삭제예정 (일정미정)
-STR_Eurostar_E300_NAME                              :[ETS 이관] 삭제예정 (일정미정)
-STR_Eurostar_E320_NAME                              :[ETS 이관] 삭제예정 (일정미정)
-STR_EMU150_NAME                                     :[KTS+ 이관] 삭제예정 (일정미정)
-STR_EMU260_NAME                                     :[KTS+ 이관] 삭제예정 (일정미정)
-STR_EMU320_NAME                                     :[KTS+ 이관] 삭제예정 (일정미정)
-STR_Glory_600_NAME                                  :[MSset 이관] 삭제예정 (일정미정)
-STR_GT26CW_NAME                                     :[WTS 이관] 삭제예정 (일정미정)
-STR_GTX_NAME                                        :[KTS+ 이관] 삭제예정 (일정미정)
-STR_HEMU_430X_NAME                                  :[KTS+ 이관] 삭제예정 (일정미정)
-STR_HMX_NAME                                        :[MSset 이관] 삭제예정 (일정미정)
-STR_HSR_350X_NAME                                   :[KTS+ 이관] 삭제예정 (일정미정)
-STR_HYEL_100_NAME                                   :[VTS 이관] 삭제예정 (일정미정)
-STR_HYEL_200_NAME                                   :[VTS 이관] 삭제예정 (일정미정)
-STR_ICE3_NAME                                       :[ETS 이관] 삭제예정 (일정미정)
-STR_ICE_CW_NAME                                     :[KTS+ 이관] 삭제예정 (일정미정)
-STR_ICE_SP_NAME                                     :[MSset 이관] 삭제예정 (일정미정)
-STR_ITX_SM2_NAME                                    :[KTS+ 이관] 삭제예정 (일정미정)
-STR_KTX_EM_NAME                                     :[KTS+ 이관] 삭제예정 (일정미정)
-STR_KTX_N_NAME                                      :[KTS+ 이관] 삭제예정 (일정미정)
-STR_KTX_SC2_NAME                                    :[KTS+ 이관] 삭제예정 (일정미정)
-STR_NHSRCL_E5_NAME                                  :[WTS 이관] 삭제예정 (일정미정)
-STR_NJ2_NAME                                        :[CTS 이관] 삭제예정 (일정미정)
-STR_NKX_NAME                                        :[MSset 이관] 삭제예정 (일정미정)
-STR_NRT2_NAME                                       :[KTS+ 이관] 삭제예정 (일정미정)
-STR_Renfe_S_100_NAME                                :[ETS 이관] 삭제예정 (일정미정)
-STR_Renfe_S_103_NAME                                :[ETS 이관] 삭제예정 (일정미정)
-STR_Renfe_S_130_NAME                                :[ETS 이관] 삭제예정 (일정미정)
-STR_Shinkansen_0_NAME                               :[JTS+ 이관] 삭제예정 (일정미정)
-STR_Shinkansen_500_NAME                             :[JTS+ 이관] 삭제예정 (일정미정)
-STR_Shinkansen_500_Cool_NAME                        :[YST] 신칸센 500계 Cool
-STR_Shinkansen_500_KR_NAME                          :[MSset 이관] 삭제예정 (일정미정)
-STR_Shinkansen_800_NAME                             :[JTS+ 이관] 삭제예정 (일정미정)
-STR_Shinkansen_923_NAME                             :[JTS+ 이관] 삭제예정 (일정미정)
-STR_Shinkansen_E5_H5_NAME                           :[JTS+ 이관] 삭제예정 (일정미정)
-STR_Shinkansen_E6_NAME                              :[JTS+ 이관] 삭제예정 (일정미정)
-STR_Shinkansen_E7_W7_NAME                           :[JTS+ 이관] 삭제예정 (일정미정)
-STR_Shinkansen_E8_NAME                              :[JTS+ 이관] 삭제예정 (일정미정)
-STR_Shinkansen_N700_NAME                            :[JTS+ 이관] 삭제예정 (일정미정)
-STR_Shinkansen_L0_NAME                              :[JTS+ 이관] 삭제예정 (일정미정)
 STR_TAE_100_NAME                                    :[YST] TAE 100
 STR_TAE_200_NAME                                    :[YST] TAE 200
-STR_TGV_Duplex_NAME                                 :[ETS 이관] 삭제예정 (일정미정)
-STR_TGV_OLD_NAME                                    :[ETS 이관] 삭제예정 (일정미정)
-STR_TGV_OLD_Duplex_NAME                             :[ETS 이관] 삭제예정 (일정미정)
-STR_TGV_OLD_Pos_NAME                                :[ETS 이관] 삭제예정 (일정미정)
-STR_TGV_OLD_Poste_NAME                              :[ETS 이관] 삭제예정 (일정미정)
-STR_TGV_Ouigo_NAME                                  :[ETS 이관] 삭제예정 (일정미정)
-STR_TGV_Pos_NAME                                    :[ETS 이관] 삭제예정 (일정미정)
-STR_TGV_Pos_Poste_NAME                              :[YST] TGV Pos Poste
-STR_THSR_700T_NAME                                  :[WTS 이관] 삭제예정 (일정미정)
-STR_VHST_600X_NAME                                  :[MSset 이관] 삭제예정 (일정미정)
 STR_VTX_NAME                                        :[YST] VTX
-STR_YFX_NAME                                        :[VTS 이관] 삭제예정 (일정미정)
 STR_YTX_NAME                                        :[YST] YTX
 
 # Metro's name
-STR_MTR_AD_Tranz_CAF_A_NAME                         :[CTS 이관] 삭제예정 (일정미정)
-STR_MTR_AC_Cammall_NAME                             :[CTS 이관] 삭제예정 (일정미정)
-STR_MTR_DC_Cammall_NAME                             :[CTS 이관] 삭제예정 (일정미정)
-STR_MTR_CNR_Changchun_NAME                          :[CTS 이관] 삭제예정 (일정미정)
-STR_MTR_CRRC_NAME                                   :[CTS 이관] 삭제예정 (일정미정)
-STR_MTR_Hyundai_Rotem_Mitsubishi_NAME               :[CTS 이관] 삭제예정 (일정미정)
-STR_MTR_Hyundai_Rotem_R_NAME                        :[CTS 이관] 삭제예정 (일정미정)
-STR_MTR_IKK_SP_1900_NAME                            :[CTS 이관] 삭제예정 (일정미정)
 STR_YMT_100_NAME                                    :[YST] YMT 100
 STR_YMT_200_NAME                                    :[YST] YMT 200
 
 # wagon's name
 STR_YST_1F_PASS_NAME                                :[YST] 1층 공통 객차
-STR_YST_Magv_PASS_NAME                              :[JTS+ 이관] 삭제예정 (일정미정)
 STR_YST_2F_PASS_NAME                                :[YST] 2층 공통 객차
-STR_Coach_2F_NAME                                   :[VTS 이관] 삭제예정 (일정미정)
-STR_Coach_2F_Last_NAME                              :[VTS 이관] 삭제예정 (일정미정)
-STR_China_Railway_Type_25_1F_NAME                   :[CTS 이관] 삭제예정 (일정미정)
-STR_China_Railway_Type_25_2F_NAME                   :[CTS 이관] 삭제예정 (일정미정)
-STR_China_Railway_Type_25_Bed_Car_NAME              :[CTS 이관] 삭제예정 (일정미정)
-STR_China_Railway_Type_25_Generatar_Car_NAME        :[CTS 이관] 삭제예정 (일정미정)
-STR_China_Railway_Type_25_Luggage_Car_NAME          :[CTS 이관] 삭제예정 (일정미정)
-STR_TGV_Poste_wagon_NAME                            :[YST] TGV Poste 화차
-STR_YFXF_NAME                                       :[VTS 이관] 삭제예정 (일정미정)
 STR_FLAT_1F_NAME                                    :[YST] 평판화차
 STR_FLAT_2F_NAME                                    :[YST] 평판화차 - 미국형
 STR_FLAT_Tank_NAME                                  :[YST] 평판유조 화차
@@ -107,207 +27,27 @@ STR_Tank_NAME                                       :[YST] 유조차
 # Parameters
 STR_PARAM_Regular_SPEED_Train_NAME                  :일반열차 속도변수
 STR_PARAM_Regular_SPEED_Train_DESC                  :일반열차의 속도를 조정합니다. (기본:151km/h)
-STR_PARAM_Semi_High_SPEED_Train_NAME                :준고속열차 속도변수
-STR_PARAM_Semi_High_SPEED_Train_DESC                :준고속열차의 속도를 조정합니다. (기본:181km/h)
 STR_PARAM_High_SPEED_Train_NAME                     :고속열차 속도변수
 STR_PARAM_High_SPEED_Train_DESC                     :고속열차의 속도를 조정합니다. (기본:331km/h)
-STR_PARAM_High_SPEED_Train_430_NAME                 :고속열차 속도변수 (430km/h 열차속도조절)
-STR_PARAM_High_SPEED_Train_430_DESC                 :고속열차의 속도를 조정합니다. (기본:430km/h)
-STR_PARAM_MEset_NAME                                :MEset 이관
-STR_PARAM_MEset_DESC                                :MEset 이관 열차는 기본적으로 숨겨집니다.{}https://github.com/evepoi/MEset{}개인소장용 GRF이므로 온라인컨텐츠 비공개 자료입니다.
-STR_PARAM_KTS_Plus_NAME                             :KTS+ 이관
-STR_PARAM_KTS_Plus_DESC                             :KTS+ 이관 열차는 기본적으로 숨겨집니다.{}https://github.com/GBLINER/KoreanTrainSet_Plus
-STR_PARAM_JTS_Plus_NAME                             :JTS+ 이관
-STR_PARAM_JTS_Plus_DESC                             :JTS+ 이관 열차는 기본적으로 숨겨집니다.{}https://github.com/GBLINER/JapaneseTrainSet_Plus
-STR_PARAM_ETS_NAME                                  :ETS 이관
-STR_PARAM_ETS_DESC                                  :ETS 이관 열차는 기본적으로 숨겨집니다.{}https://github.com/GBLINER/EuropeanTrainSet
-STR_PARAM_CTS_NAME                                  :CTS 이관
-STR_PARAM_CTS_DESC                                  :CTS 이관 열차는 기본적으로 숨겨집니다.{}https://github.com/GBLINER/ChineseTrainSet
-STR_PARAM_WTS_NAME                                  :WTS 이관
-STR_PARAM_WTS_DESC                                  :WTS 이관 열차는 기본적으로 숨겨집니다.{}https://github.com/GBLINER/WorldTrainSet
-STR_PARAM_VTS_NAME                                  :VTS 이관
-STR_PARAM_VTS_DESC                                  :VTS 이관 열차는 기본적으로 숨겨집니다.{}https://github.com/GBLINER/VirtualTrainSet
 
 # Refit (Additional text) 실제(BLUE), 시험(YELLOW), 계획 (PURPLE), 가상 (RED)
-STR_REFIT_ADDITIONAL_AGV                            :{BLACK}열차 실존여부 : {BLUE}실제 {}{BLACK} 도색/모델 변경: {GREEN}가능 {}{BLACK}복합열차구성 : {RED}불가능
-STR_REFIT_ADDITIONAL_AGV_Cool                       :{BLACK}열차 실존여부 : {RED}가상 {}{BLACK} 도색/모델 변경: {GREEN}가능 {}{BLACK}복합열차구성 : {RED}불가능
-STR_REFIT_ADDITIONAL_BB15000                        :{BLACK}열차 실존여부 : {RED}가상 {}{BLACK}도색/모델 변경: {RED}불가능 {}{BLACK}복합가능열차{}{GREEN}BB15000, GT26CW, HYEL-100, NJ2
-STR_REFIT_ADDITIONAL_CRH1                           :{BLACK}열차 실존여부 : {BLUE}실제 {}{BLACK}도색/모델 변경: {RED}불가능 {}{BLACK}복합가능열차{}{GREEN}CRH1
-STR_REFIT_ADDITIONAL_CRH3                           :{BLACK}열차 실존여부 : {BLUE}실제 {}{BLACK}도색/모델 변경: {RED}불가능 {}{BLACK}복합가능열차{}{GREEN}CRH3
-STR_REFIT_ADDITIONAL_CRH380A                        :{BLACK}열차 실존여부 : {BLUE}실제 {}{BLACK}도색/모델 변경: {GREEN}가능 {}{BLACK}복합가능열차{}{GREEN}CRH380A, Vibrant Express, CRH430A
-STR_REFIT_ADDITIONAL_CRH380AJ                       :{BLACK}열차 실존여부 : {YELLOW}시험 {}{BLACK}도색/모델 변경: {RED}불가능 {}{BLACK}복합열차구성 : {RED}불가능
-STR_REFIT_ADDITIONAL_CRH380D                        :{BLACK}열차 실존여부 : {BLUE}실제 {}{BLACK}도색/모델 변경: {GREEN}가능 {}{BLACK}복합가능열차{}{GREEN}CRH380D
-STR_REFIT_ADDITIONAL_CRH430A                        :{BLACK}열차 실존여부 : {RED}가상 {}{BLACK}도색/모델 변경: {RED}불가능 {}{BLACK}복합가능열차{}{GREEN}CRH380A, CRH380A Red, CRH430A
-STR_REFIT_ADDITIONAL_CRH430D                        :{BLACK}열차 실존여부 : {RED}가상 {}{BLACK}도색/모델 변경: {GREEN}가능 {}{BLACK}복합가능열차{}{GREEN}CRH430D
-STR_REFIT_ADDITIONAL_CRH600D                        :{BLACK}열차 실존여부 : {RED}가상 {}{BLACK}도색/모델 변경: {GREEN}가능 {}{BLACK}복합가능열차{}{GREEN}CRH600D
-STR_REFIT_ADDITIONAL_CR400                          :{BLACK}열차 실존여부 : {BLUE}실제 {}{BLACK}도색/모델 변경: {GREEN}가능 {}{BLACK}복합가능열차{}{GREEN}CR400
-STR_REFIT_ADDITIONAL_Eurostar_E300                  :{BLACK}열차 실존여부 : {BLUE}실제 {}{BLACK}도색/모델 변경: {GREEN}가능 {}{BLACK}복합열차구성 : {RED}불가능
-STR_REFIT_ADDITIONAL_Eurostar_E320                  :{BLACK}열차 실존여부 : {BLUE}실제 {}{BLACK}도색/모델 변경: {GREEN}가능 {}{BLACK}복합열차구성 : {RED}불가능
-STR_REFIT_ADDITIONAL_EMU150                         :{BLACK}열차 실존여부 : {PURPLE}계획 {}{BLACK}도색/모델 변경: {GREEN}가능 {}{BLACK}복합가능열차{}{GREEN}EMU-150, EMU-260, EUM-320
-STR_REFIT_ADDITIONAL_EMU260                         :{BLACK}열차 실존여부 : {PURPLE}계획 {}{BLACK}도색/모델 변경: {RED}불가능 {}{BLACK}복합가능열차{}{GREEN}EMU-150, EMU-260, EUM-320
-STR_REFIT_ADDITIONAL_EMU320                         :{BLACK}열차 실존여부 : {PURPLE}계획 {}{BLACK}도색/모델 변경: {GREEN}가능 {}{BLACK}복합가능열차{}{GREEN}EMU-150, EMU-260, EUM-320
-STR_REFIT_ADDITIONAL_Glory600                       :{BLACK}열차 실존여부 : {RED}가상 {}{BLACK}도색/모델 변경: {GREEN}가능 {}{BLACK}복합가능열차{}{GREEN}Glory-600
-STR_REFIT_ADDITIONAL_GT26CW                         :{BLACK}열차 실존여부 : {BLUE}실제 {}{BLACK}도색/모델 변경: {GREEN}가능 {}{BLACK}복합가능열차{}{GREEN}BB15000, GT26CW, HYEL-100, NJ2
-STR_REFIT_ADDITIONAL_GTX                            :{BLACK}열차 실존여부 : {PURPLE}계획 {}{BLACK}도색/모델 변경: {RED}불가능 {}{BLACK}복합가능열차{}{GREEN}GTX
-STR_REFIT_ADDITIONAL_HEMU_430X                      :{BLACK}열차 실존여부 : {YELLOW}시험 {}{BLACK}도색/모델 변경: {RED}불가능 {}{BLACK}복합가능열차{}{GREEN}HEMU-430X
-STR_REFIT_ADDITIONAL_HMX                            :{BLACK}열차 실존여부 : {RED}가상 {}{BLACK}도색/모델 변경: {GREEN}가능 {}{BLACK}복합가능열차{}{GREEN}HMX
-STR_REFIT_ADDITIONAL_HSR_350X                       :{BLACK}열차 실존여부 : {YELLOW}시험 {}{BLACK}도색/모델 변경: {RED}불가능 {}{BLACK}복합가능열차{}{GREEN}HSR-350X
-STR_REFIT_ADDITIONAL_HYEL_100                       :{BLACK}열차 실존여부 : {RED}가상 {}{BLACK}도색/모델 변경: {GREEN}가능 {}{BLACK}복합가능열차{}{GREEN}BB15000, GT26CW, HYEL-100, NJ2
-STR_REFIT_ADDITIONAL_HYEL_200                       :{BLACK}열차 실존여부 : {RED}가상 {}{BLACK}도색/모델 변경: {RED}불가능 {}{BLACK}복합가능열차{}{GREEN}HYEL-200
-STR_REFIT_ADDITIONAL_ICE_SP                         :{BLACK}열차 실존여부 : {RED}가상 {}{BLACK}도색/모델 변경: {GREEN}가능 {}{BLACK}복합가능열차{}{GREEN}ICE-SP
-STR_REFIT_ADDITIONAL_ICE3                           :{BLACK}열차 실존여부 : {BLUE}실제 {}{BLACK}도색/모델 변경: {RED}불가능 {}{BLACK}복합가능열차{}{GREEN}ICE3
-STR_REFIT_ADDITIONAL_ITX_CW                         :{BLACK}열차 실존여부 : {RED}가상 {}{BLACK}도색/모델 변경: {GREEN}가능 {}{BLACK}복합가능열차{}{GREEN}ITX-초월
-STR_REFIT_ADDITIONAL_ITX_SM2                        :{BLACK}열차 실존여부 : {RED}가상 {}{BLACK}도색/모델 변경: {GREEN}가능 {}{BLACK}복합가능열차{}{GREEN}ITX-SM2
-STR_REFIT_ADDITIONAL_KTX_EM                         :{BLACK}열차 실존여부 : {RED}가상 {}{BLACK}도색/모델 변경: {RED}불가능 {}{BLACK}복합가능열차{}{GREEN}KTX-EM
-STR_REFIT_ADDITIONAL_KTX_N                          :{BLACK}열차 실존여부 : {RED}가상 {}{BLACK}도색/모델 변경: {RED}불가능 {}{BLACK}복합가능열차{}{GREEN}KTX-N
-STR_REFIT_ADDITIONAL_KTX_SC2                        :{BLACK}열차 실존여부 : {RED}가상 {}{BLACK}도색/모델 변경: {GREEN}가능 {}{BLACK}복합가능열차{}{GREEN}KTX-SC2
-STR_REFIT_ADDITIONAL_NHSRCL_E5                      :{BLACK}열차 실존여부 : {PURPLE}계획 {}{BLACK}도색/모델 변경: {RED}불가능 {}{BLACK}복합가능열차{}{GREEN}NHSRCL E5
-STR_REFIT_ADDITIONAL_NJ2                            :{BLACK}열차 실존여부 : {BLUE}실제 {}{BLACK}도색/모델 변경: {GREEN}가능 {}{BLACK}복합가능열차{}{GREEN}BB15000, GT26CW, HYEL-100, NJ2
-STR_REFIT_ADDITIONAL_NKX                            :{BLACK}열차 실존여부 : {RED}가상 {}{BLACK}도색/모델 변경: {GREEN}가능 {}{BLACK}복합가능열차{}{GREEN}NKX
-STR_REFIT_ADDITIONAL_NRT2                           :{BLACK}열차 실존여부 : {RED}가상 {}{BLACK}도색/모델 변경: {GREEN}가능 {}{BLACK}복합가능열차{}{GREEN}NRT2
-STR_REFIT_ADDITIONAL_Renfe_S_100                    :{BLACK}열차 실존여부 : {BLUE}실제 {}{BLACK}도색/모델 변경: {RED}불가능 {}{BLACK}복합가능열차{}{GREEN}Renfe S-100
-STR_REFIT_ADDITIONAL_Renfe_S_103                    :{BLACK}열차 실존여부 : {BLUE}실제 {}{BLACK}도색/모델 변경: {RED}불가능 {}{BLACK}복합가능열차{}{GREEN}Renfe S-103
-STR_REFIT_ADDITIONAL_Renfe_S_130                    :{BLACK}열차 실존여부 : {BLUE}실제 {}{BLACK}도색/모델 변경: {GREEN}가능 {}{BLACK}복합가능열차{}{GREEN}Renfe S-130
-STR_REFIT_ADDITIONAL_Shinkansen_0                   :{BLACK}열차 실존여부 : {BLUE}실제 {}{BLACK}도색/모델 변경: {RED}불가능 {}{BLACK}복합열차구성 : {RED}불가능
-STR_REFIT_ADDITIONAL_Shinkansen_500                 :{BLACK}열차 실존여부 : {BLUE}실제 {}{BLACK}도색/모델 변경: {RED}불가능 {}{BLACK}복합열차구성 : {RED}불가능
-STR_REFIT_ADDITIONAL_Shinkansen_500_Cool            :{BLACK}열차 실존여부 : {RED}가상 {}{BLACK}도색/모델 변경: {RED}불가능 {}{BLACK}복합열차구성 : {RED}불가능
-STR_REFIT_ADDITIONAL_Shinkansen_500_KR              :{BLACK}열차 실존여부 : {RED}가상 {}{BLACK}도색/모델 변경: {GREEN}가능 {}{BLACK}복합열차구성 : {RED}불가능
-STR_REFIT_ADDITIONAL_Shinkansen_800                 :{BLACK}열차 실존여부 : {BLUE}실제 {}{BLACK}도색/모델 변경: {RED}불가능 {}{BLACK}복합열차구성 : {RED}불가능
-STR_REFIT_ADDITIONAL_Shinkansen_923                 :{BLACK}열차 실존여부 : {YELLOW}시험 {}{BLACK}도색/모델 변경: {RED}불가능 {}{BLACK}복합열차구성 : {RED}불가능
-STR_REFIT_ADDITIONAL_Shinkansen_E5_H5               :{BLACK}열차 실존여부 : {BLUE}실제 {}{BLACK}도색/모델 변경: {GREEN}가능 {}{BLACK}복합가능열차{}{GREEN}E6, E8
-STR_REFIT_ADDITIONAL_Shinkansen_E6                  :{BLACK}열차 실존여부 : {BLUE}실제 {}{BLACK}도색/모델 변경: {RED}불가능 {}{BLACK}복합가능열차{}{GREEN}E5, H5
-STR_REFIT_ADDITIONAL_Shinkansen_E7                  :{BLACK}열차 실존여부 : {BLUE}실제 {}{BLACK}도색/모델 변경: {GREEN}가능 {}{BLACK}복합열차구성 : {RED}불가능
-STR_REFIT_ADDITIONAL_Shinkansen_E8                  :{BLACK}열차 실존여부 : {PURPLE}계획 {}{BLACK}도색/모델 변경: {RED}불가능 {}{BLACK}복합가능열차{}{GREEN}E5, H5
-STR_REFIT_ADDITIONAL_Shinkansen_N700                :{BLACK}열차 실존여부 : {BLUE}실제 {}{BLACK}도색/모델 변경: {GREEN}가능 {}{BLACK}복합열차구성 : {RED}불가능
-STR_REFIT_ADDITIONAL_Shinkansen_L0                  :{BLACK}열차 실존여부 : {PURPLE}계획 {}{BLACK}도색/모델 변경: {RED}불가능 {}{BLACK}복합가능열차: {RED}불가능
 STR_REFIT_ADDITIONAL_TAE_100                        :{BLACK}열차 실존여부 : {RED}가상 {}{BLACK}도색/모델 변경: {GREEN}가능 {}{BLACK}복합가능열차{}{GREEN}TAE-100, TAE-200
 STR_REFIT_ADDITIONAL_TAE_200                        :{BLACK}열차 실존여부 : {RED}가상 {}{BLACK}도색/모델 변경: {GREEN}가능 {}{BLACK}복합가능열차{}{GREEN}TAE-100, TAE-200
-STR_REFIT_ADDITIONAL_TGV_Duplex                     :{BLACK}열차 실존여부 : {BLUE}실제 {}{BLACK}도색/모델 변경: {GREEN}가능 {}{BLACK}복합가능열차{}{GREEN}TGV Old Duplex, TGV Duplex
-STR_REFIT_ADDITIONAL_TGV_OLD                        :{BLACK}열차 실존여부 : {BLUE}실제 {}{BLACK}도색/모델 변경: {RED}불가능 {}{BLACK}복합가능열차{}{GREEN}TGV Old
-STR_REFIT_ADDITIONAL_TGV_Old_Duplex                 :{BLACK}열차 실존여부 : {BLUE}실제 {}{BLACK}도색/모델 변경: {GREEN}가능 {}{BLACK}복합가능열차{}{GREEN}TGV Old Duplex, TGV Duplex
-STR_REFIT_ADDITIONAL_TGV_Old_Pos                    :{BLACK}열차 실존여부 : {BLUE}실제 {}{BLACK}도색/모델 변경: {GREEN}가능 {}{BLACK}복합가능열차{}{GREEN}TGV Old Pos, TGV Pos
-STR_REFIT_ADDITIONAL_TGV_Old_Poste                  :{BLACK}열차 실존여부 : {BLUE}실제 {}{BLACK}도색/모델 변경: {RED}불가능 {}{BLACK}복합가능열차{}{GREEN}TGV Old Poste, TGV Pos Poste
-STR_REFIT_ADDITIONAL_TGV_Ouigo                      :{BLACK}열차 실존여부 : {BLUE}실제 {}{BLACK}도색/모델 변경: {RED}불가능 {}{BLACK}복합가능열차{}{GREEN}TGV Ouigo
-STR_REFIT_ADDITIONAL_TGV_Pos                        :{BLACK}열차 실존여부 : {BLUE}실제 {}{BLACK}도색/모델 변경: {GREEN}가능 {}{BLACK}복합가능열차{}{GREEN}TGV Old Pos, TGV Pos
-STR_REFIT_ADDITIONAL_TGV_Pos_Poste                  :{BLACK}열차 실존여부 : {RED}가상 {}{BLACK}도색/모델 변경: {RED}불가능 {}{BLACK}복합가능열차{}{GREEN}TGV Old Poste, TGV Pos Poste
-STR_REFIT_ADDITIONAL_THSR_700T                      :{BLACK}열차 실존여부 : {BLUE}실제 {}{BLACK}도색/모델 변경: {RED}불가능 {}{BLACK}복합열차구성 : {RED}불가능
-STR_REFIT_ADDITIONAL_VHST_600X                      :{BLACK}열차 실존여부 : {PURPLE}계획 {}{BLACK}도색/모델 변경: {RED}불가능 {}{BLACK}복합가능열차{}{GREEN}VHST-600X
 STR_REFIT_ADDITIONAL_VTX                            :{BLACK}열차 실존여부 : {RED}가상 {}{BLACK}도색/모델 변경: {RED}불가능 {}{BLACK}복합가능열차{}{GREEN}VTX
-STR_REFIT_ADDITIONAL_YFX                            :{BLACK}열차 실존여부 : {RED}가상 {}{BLACK}도색/모델 변경: {RED}불가능 {}{BLACK}복합가능열차{}{GREEN}YFX
 STR_REFIT_ADDITIONAL_YTX                            :{BLACK}열차 실존여부 : {RED}가상 {}{BLACK}도색/모델 변경: {RED}불가능 {}{BLACK}복합가능열차{}{GREEN}YTX
-STR_REFIT_ADDITIONAL_MTR_AD_Tranz_CAF_A             :{BLACK}열차 실존여부 : {BLUE}실제 {}{BLACK}도색/모델 변경: {GREEN}가능 {}{BLACK}복합열차구성 : {RED}불가능
-STR_REFIT_ADDITIONAL_MTR_Cammall_AC                 :{BLACK}열차 실존여부 : {BLUE}실제 {}{BLACK}도색/모델 변경: {RED}불가능 {}{BLACK}복합열차구성 : {RED}불가능
-STR_REFIT_ADDITIONAL_MTR_Cammall_DC                 :{BLACK}열차 실존여부 : {BLUE}실제 {}{BLACK}도색/모델 변경: {GREEN}가능 {}{BLACK}복합열차구성 : {RED}불가능
-STR_REFIT_ADDITIONAL_MTR_CNR_Changchun              :{BLACK}열차 실존여부 : {BLUE}실제 {}{BLACK}도색/모델 변경: {GREEN}가능 {}{BLACK}복합열차구성 : {RED}불가능
-STR_REFIT_ADDITIONAL_MTR_CRRC                       :{BLACK}열차 실존여부 : {BLUE}실제 {}{BLACK}도색/모델 변경: {GREEN}가능 {}{BLACK}복합열차구성 : {RED}불가능
-STR_REFIT_ADDITIONAL_MTR_Hyundai_Rotem_Mitsubishi   :{BLACK}열차 실존여부 : {BLUE}실제 {}{BLACK}도색/모델 변경: {RED}불가능 {}{BLACK}복합열차구성 : {RED}불가능
-STR_REFIT_ADDITIONAL_MTR_Hyundai_Rotem_R            :{BLACK}열차 실존여부 : {BLUE}실제 {}{BLACK}도색/모델 변경: {RED}불가능 {}{BLACK}복합열차구성 : {RED}불가능
-STR_REFIT_ADDITIONAL_MTR_IKK_SP_1900                :{BLACK}열차 실존여부 : {BLUE}실제 {}{BLACK}도색/모델 변경: {RED}불가능 {}{BLACK}복합열차구성 : {RED}불가능
 STR_REFIT_ADDITIONAL_YMT_100                        :{BLACK}열차 실존여부 : {RED}가상 {}{BLACK}도색/모델 변경: {RED}불가능 {}{BLACK}복합열차구성 : {RED}불가능
 STR_REFIT_ADDITIONAL_YMT_200                        :{BLACK}열차 실존여부 : {RED}가상 {}{BLACK}도색/모델 변경: {RED}불가능 {}{BLACK}복합열차구성 : {RED}불가능
 
 STR_REFIT_ADDITIONAL                                :{BLACK}도색/모델 변경: {GREEN}가능
 STR_REFIT_train_configuration_1F                    :{BLACK}열차구성: {GREEN}1층 승객 차량용
-STR_REFIT_train_configuration_Magv                  :{BLACK}열차구성: {GREEN}자기부상 승객 차량용
 STR_REFIT_train_configuration_2F                    :{BLACK}열차구성: {GREEN}2층 승객 차량용
-STR_REFIT_train_configuration_Coach                 :{BLACK}열차구성: {GREEN}객차형 승객 차량용
-STR_REFIT_train_configuration_Coach_Last            :{BLACK}열차구성: {GREEN}객차형 승객 차량용
-STR_REFIT_train_configuration_China_Railway_Type_25 :{BLACK}열차구성: {GREEN}중국철도 25형 객차
 STR_REFIT_train_configuration_Showcse_Flat_1F       :{BLACK}열차구성: {GREEN}진열용 화차
-STR_REFIT_train_configuration_TGV_Poste             :{BLACK}열차구성: {GREEN}TGV Old Poste, TGV Pos Poste
-STR_REFIT_train_configuration_YFX_Freight           :{BLACK}열차구성: {GREEN}YFX용 화차
 
 # Liveries locomotive
-STR_REFIT_LIVERY_CRH380A                            :(CRH380A)
-STR_REFIT_LIVERY_Vibrant_Express                    :(Vibrant Express)
-STR_REFIT_LIVERY_CR400AF                            :(CR400AF)
-STR_REFIT_LIVERY_CR400BF                            :(CR400BF)
-STR_REFIT_LIVERY_Eurostar_E300_Old                  :(유로스타 구도색)
-STR_REFIT_LIVERY_Eurostar_E300_New                  :(유로스타 신도색)
-STR_REFIT_LIVERY_EMU150R                            :(EMU-150 빨강도색)
-STR_REFIT_LIVERY_EMU150G                            :(EMU-150 녹색도색)
-STR_REFIT_LIVERY_EMU320                             :(EMU-320)
-STR_REFIT_LIVERY_EMU320_SRT                         :(EMU-320 SRT)
-STR_REFIT_LIVERY_Glory600A                          :(Glory 600 A도색)
-STR_REFIT_LIVERY_Glory600B                          :(Glory 600 B도색)
-STR_REFIT_LIVERY_Glory600C                          :(Glory 600 C도색)
-STR_REFIT_LIVERY_Glory600D                          :(Glory 600 D도색)
-STR_REFIT_LIVERY_Glory600E                          :(Glory 600 E도색)
-STR_REFIT_LIVERY_HMXG                               :(HMX 녹색도색)
-STR_REFIT_LIVERY_HMXR                               :(HMX 빨강도색)
-STR_REFIT_LIVERY_HYEL_100_SRT                       :(SRT)
-STR_REFIT_LIVERY_HYEL_100_CJ                        :(CJ 대한통운)
-STR_REFIT_LIVERY_HYEL_100_poste                     :(우체국 택배)
-STR_REFIT_LIVERY_HYEL_100_fedex                     :(Fedex)
-STR_REFIT_LIVERY_HYEL_100_SanCheon                  :(산천)
-STR_REFIT_LIVERY_HYEL_100_Hanjin                    :(한진 택배)
-STR_REFIT_LIVERY_HYEL_100_logen                     :(로젠 택배)
-STR_REFIT_LIVERY_HYEL_100_lotte                     :(롯데 택배)
-STR_REFIT_LIVERY_HYEL_100_DHL                       :(DHL)
-STR_REFIT_LIVERY_HYEL_100_Yellowcap                 :(옐로우캡)
-STR_REFIT_LIVERY_HYEL_100_Daesin                    :(대신 택배)
-STR_REFIT_LIVERY_HYEL_100_Ilyang                    :(일양 택배)
-STR_REFIT_LIVERY_HYEL_100_Korail                    :(코레일)
-STR_REFIT_LIVERY_HYEL_100_Ironman                   :(아이언맨)
-STR_REFIT_LIVERY_HYEL_100_K_Limousine               :(K 리무진)
-STR_REFIT_LIVERY_HYEL_JET_A                         :(HYEL-JET A도색)
-STR_REFIT_LIVERY_HYEL_JET_A_r                       :(HYEL-JET A도색 뒤집힘)
-STR_REFIT_LIVERY_ICE_Sancheon                       :(ICE-산천)
-STR_REFIT_LIVERY_ICE_Patjug                         :(ICE-팥죽)
-STR_REFIT_LIVERY_ITX_SM2_R                          :(ITX-SM2 빨강도색)
-STR_REFIT_LIVERY_ITX_SM2_G                          :(ITX-SM2 녹색도색)
-STR_REFIT_LIVERY_ITX_SM2_W                          :(ITX-SM2 흰색도색)
-STR_REFIT_LIVERY_KTX_SC2_B                          :(KTX-SC2 파랑도색)
-STR_REFIT_LIVERY_KTX_SC2_G                          :(KTX-SC2 녹색도색)
-STR_REFIT_LIVERY_KTX_SC2_W                          :(KTX-SC2 흰색도색)
-STR_REFIT_LIVERY_NKX_A                              :(NKX A도색)
-STR_REFIT_LIVERY_NKX_B                              :(NKX B도색)
-STR_REFIT_LIVERY_NKX_C                              :(NKX C도색)
-STR_REFIT_LIVERY_NRT2_B                             :(NRT2 파랑도색)
-STR_REFIT_LIVERY_NRT2_G                             :(NRT2 녹색도색)
-STR_REFIT_LIVERY_NRT2_W                             :(NRT2 흰색도색)
-STR_REFIT_LIVERY_Shinkansen_0                       :(오리지널)
-STR_REFIT_LIVERY_Shinkansen_0_renewal               :(리뉴얼)
-STR_REFIT_LIVERY_Shinkansen_500_Sancheon            :(신칸센 500-산천)
-STR_REFIT_LIVERY_Shinkansen_500_Patjug              :(신칸센 500-팥죽)
-STR_REFIT_LIVERY_N700_Tokaido_Sanyo                 :(도카이도-산요 신칸센)
-STR_REFIT_LIVERY_N700_Sanyo_Kyushu                  :(산요-큐슈 신칸센)
-STR_REFIT_LIVERY_N700S_Nishikyushu                  :(니시큐슈 신칸센)
-STR_REFIT_LIVERY_Shinkansen_E5                      :(신칸센 E5)
-STR_REFIT_LIVERY_Shinkansen_H5                      :(신칸센 H5)
-STR_REFIT_LIVERY_Nomal_wagon                        :(일반실)
-STR_REFIT_LIVERY_Green_wagon                        :(그린샤)
-STR_REFIT_LIVERY_E5_Nomal_wagon                     :(E5 일반실)
-STR_REFIT_LIVERY_H5_Nomal_wagon                     :(H5 일반실)
-STR_REFIT_LIVERY_E5_Green_wagon                     :(E5 그린샤)
-STR_REFIT_LIVERY_H5_Green_wagon                     :(H5 그린샤)
 STR_REFIT_LIVERY_TAE_100                            :(TAE 100)
 STR_REFIT_LIVERY_TAE_100_Yellow                     :(TAE 100 Yellow)
-STR_REFIT_LIVERY_Renfe_S_130_Alvia                  :(Renfe S-130 Alvia)
-STR_REFIT_LIVERY_Renfe_S_130_Aprosiyob              :(Renfe S-130 Aprosiyob)
-STR_REFIT_LIVERY_TGV_Duplex                         :(TGV Duplex)
-STR_REFIT_LIVERY_TGV_LYAIR_Duplex                   :(TGV Lyair Duplex)
-STR_REFIT_LIVERY_TGV_OLD_Duplex                     :(TGV Old Duplex)
-STR_REFIT_LIVERY_TGV_OLD_LYAIR_Duplex               :(TGV Old Lyair Duplex)
-STR_REFIT_LIVERY_TGV_OLD_POS                        :(TGV Old Pos)
-STR_REFIT_LIVERY_TGV_OLD_LYAIR                      :(TGV Old Lyair)
-STR_REFIT_LIVERY_TGV_OLD_THALYS                     :(TGV Old Thalys)
-STR_REFIT_LIVERY_TGV_POS                            :(TGV Pos)
-STR_REFIT_LIVERY_TGV_LYAIR                          :(TGV Lyair)
-STR_REFIT_LIVERY_TGV_THALYS                         :(TGV Thalys)
 
 # Liveries metro
-STR_REFIT_LIVERY_MTR_AD_Tranz_CAF_A_Airport_Express :(MTR AD Tranz CAF A Type Airport Express)
-STR_REFIT_LIVERY_MTR_AD_Tranz_CAF_A_Tung_Chung      :(MTR AD Tranz CAF A Type Tung Chung)
-STR_REFIT_LIVERY_MTR_DC_Cammall                     :(미개조형)
-STR_REFIT_LIVERY_MTR_DC_Cammall_Remoding            :(개조형)
-STR_REFIT_LIVERY_MTR_DC_Cammall_Disney              :(디즈니선)
-STR_REFIT_LIVERY_MTR_CNR_Changchun                  :(MTR CNR 창춘 전동차)
-STR_REFIT_LIVERY_MTR_CNR_Changchun_South_Island     :(MTR CNR 창춘 남부섬선)
-STR_REFIT_LIVERY_MTR_CRRC_Changchun                 :(MTR CRRC 창춘 전동차)
-STR_REFIT_LIVERY_MTR_CRRC_Sipang                    :(MTR CRRC 쓰팡 전동차)
-STR_REFIT_LIVERY_MTR_Hyundai_Rotem_R_Nomal          :(MTR 현대로탬 R형 일반)
-STR_REFIT_LIVERY_MTR_Hyundai_Rotem_R_special        :(MTR 현대로탬 R형 특실)
 STR_REFIT_LIVERY_YMT_100_A                          :(YMT 100 A 도색)
 STR_REFIT_LIVERY_YMT_100_B                          :(YMT 100 B 도색)
 STR_REFIT_LIVERY_YMT_100_C                          :(YMT 100 C 도색)
@@ -325,22 +65,6 @@ STR_REFIT_LIVERY_YMT_200_I                          :(YMT 200 I 도색)
 STR_REFIT_LIVERY_YMT_200_J                          :(YMT 200 J 도색)
 
 # Liveries wagon
-STR_REFIT_LIVERY_Coach_2F_BR                        :(기본 도색)
-STR_REFIT_LIVERY_Coach_2F_Taegeuk                   :(태극 도색)
-STR_REFIT_LIVERY_Coach_2F_SR                        :(SR 도색)
-STR_REFIT_LIVERY_Coach_2F_K_Limousion               :(K 리무진 도색)
-STR_REFIT_LIVERY_China_Railway_Type_25_1F_Red       :(빨강 도색)
-STR_REFIT_LIVERY_China_Railway_Type_25_1F_Green     :(녹색 도색)
-STR_REFIT_LIVERY_China_Railway_Type_25_1F_White     :(흰색 도색)
-STR_REFIT_LIVERY_China_Railway_Type_25_3nd_Car      :(3등석 차량)
-STR_REFIT_LIVERY_China_Railway_Type_25_2nd_Car      :(2등석 차량)
-STR_REFIT_LIVERY_China_Railway_Type_25_1nd_Car      :(1등석 차량)
-STR_REFIT_LIVERY_China_Railway_Type_25_Generatar_Car_White :(발전차 흰색도색)
-STR_REFIT_LIVERY_China_Railway_Type_25_Generatar_Car_Green :(발전차 녹색도색)
-STR_REFIT_LIVERY_China_Railway_Type_25_Luggage_Car_Red     :(수화물차 빨강도색)
-STR_REFIT_LIVERY_China_Railway_Type_25_Luggage_Car_Green   :(수화물차 녹색도색)
-STR_REFIT_LIVERY_China_Railway_Type_25_Luggage_Car_WhiteA  :(수화물차 흰색도색 A)
-STR_REFIT_LIVERY_China_Railway_Type_25_Luggage_Car_WhiteB  :(수화물차 흰색도색 B)
 STR_REFIT_LIVERY_FlatGreen                          :(평판화차 녹색)
 STR_REFIT_LIVERY_FlatPGreen                         :(평판화차 패기형 녹색)
 STR_REFIT_LIVERY_FlatRed                            :(평판화차 빨강색)
@@ -353,8 +77,4 @@ STR_REFIT_LIVERY_TANKC                              :(유조차 C도색)
 
 # Errors
 STR_ERROR_NO_ATTACH                                 :여기에 이 차량을 붙일 수 없습니다
-STR_ERROR_NOT_ENOUGH_LENGTH3                        :열차 길이가 너무 짧습니다. 최소한 3량 이상을 연결해야 합니다.
-STR_ERROR_NOT_ENOUGH_LENGTH4                        :열차 길이가 너무 짧습니다. 최소한 4량 이상을 연결해야 합니다.
-STR_ERROR_NOT_ENOUGH_LENGTH5                        :열차 길이가 너무 짧습니다. 최소한 5량 이상을 연결해야 합니다.
 STR_ERROR_NOT_ENOUGH_LENGTH6                        :열차 길이가 너무 짧습니다. 최소한 6량 이상을 연결해야 합니다.
-STR_ERROR_NOT_ENOUGH_LENGTH8                        :열차 길이가 너무 짧습니다. 최소한 8량 이상을 연결해야 합니다.

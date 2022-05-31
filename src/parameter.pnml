@@ -13,17 +13,6 @@ param {
     }
 
 param {
-        Semi_High_SPEED_Train {
-            type: int;
-            name: string(STR_PARAM_Semi_High_SPEED_Train_NAME);
-            desc: string(STR_PARAM_Semi_High_SPEED_Train_DESC);
-            min_value: 180;
-            max_value: 259;
-            def_value: 180;
-            }
-    }
-
-param {
         High_Speed_Train {
             type: int;
             name: string(STR_PARAM_High_SPEED_Train_NAME);
@@ -32,78 +21,4 @@ param {
             max_value: 379;
             def_value: 330;
             }
-    }
-
-param {
-        High_Speed_Train_430 {
-            type: int;
-            name: string(STR_PARAM_High_SPEED_Train_430_NAME);
-            desc: string(STR_PARAM_High_SPEED_Train_430_DESC);
-            min_value: 430;
-            max_value: 597;
-            def_value: 430;
-            }
-    }
-
-param {
-    MEset {
-        type: bool;
-        name: string(STR_PARAM_MEset_NAME);
-        desc: string(STR_PARAM_MEset_DESC);
-        def_value: 1;
-        }
-    }
-
-param {
-    KTS_Plus {
-        type: bool;
-        name: string(STR_PARAM_KTS_Plus_NAME);
-        desc: string(STR_PARAM_KTS_Plus_DESC);
-        def_value: 1;
-        }
-    }
-
-param {
-    JTS_Plus {
-        type: bool;
-        name: string(STR_PARAM_JTS_Plus_NAME);
-        desc: string(STR_PARAM_JTS_Plus_DESC);
-        def_value: 1;
-        }
-    }
-
-param {
-    ETS {
-        type: bool;
-        name: string(STR_PARAM_ETS_NAME);
-        desc: string(STR_PARAM_ETS_DESC);
-        def_value: 1;
-        }
-    }
-
-param {
-    CTS {
-        type: bool;
-        name: string(STR_PARAM_CTS_NAME);
-        desc: string(STR_PARAM_CTS_DESC);
-        def_value: 1;
-        }
-    }
-
-param {
-    WTS {
-        type: bool;
-        name: string(STR_PARAM_WTS_NAME);
-        desc: string(STR_PARAM_WTS_DESC);
-        def_value: 1;
-        }
-    }
-
-param {
-    VTS {
-        type: bool;
-        name: string(STR_PARAM_VTS_NAME);
-        desc: string(STR_PARAM_VTS_DESC);
-        def_value: 1;
-        }
     }
